@@ -1,11 +1,11 @@
 {
- "generated": "2026-10-18T16:38:32+00:00",
+ "generated": "2026-10-18T16:45:03+00:00",
  "counties": 3222,
  "states": 52,
- "withData": 184,
- "parcels": 26492,
- "auctions": 1572,
- "withTaxSaleLink": 1036,
+ "withData": 194,
+ "parcels": 26719,
+ "auctions": 1647,
+ "withTaxSaleLink": 1042,
  "withSite": 3061,
  "withSheriffLink": 378,
  "withAssessorLink": 1545,
@@ -26,6 +26,15 @@
    "kind": "posted",
    "parcels": 2042,
    "page": "https://miamidade.realtaxdeed.com"
+  },
+  {
+   "fips": "39007",
+   "state": "OH",
+   "name": "Ashtabula County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 30,
+   "page": "https://ashtabula.sheriffsaleauction.ohio.gov"
   },
   {
    "fips": "39035",
@@ -98,6 +107,24 @@
    "kind": "posted",
    "parcels": 31,
    "page": "https://clermont.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39029",
+   "state": "OH",
+   "name": "Columbiana County",
+   "date": "2026-10-20",
+   "kind": "posted",
+   "parcels": 22,
+   "page": "https://columbiana.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39063",
+   "state": "OH",
+   "name": "Hancock County",
+   "date": "2026-10-20",
+   "kind": "posted",
+   "parcels": 13,
+   "page": "https://hancock.sheriffsaleauction.ohio.gov"
   },
   {
    "fips": "39153",
@@ -190,6 +217,15 @@
    "page": "https://lucas.sheriffsaleauction.ohio.gov"
   },
   {
+   "fips": "39169",
+   "state": "OH",
+   "name": "Wayne County",
+   "date": "2026-10-21",
+   "kind": "posted",
+   "parcels": 7,
+   "page": "https://wayne.sheriffsaleauction.ohio.gov"
+  },
+  {
    "fips": "12057",
    "state": "FL",
    "name": "Hillsborough County",
@@ -233,6 +269,15 @@
    "kind": "posted",
    "parcels": 46,
    "page": "https://medina.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39119",
+   "state": "OH",
+   "name": "Muskingum County",
+   "date": "2026-10-22",
+   "kind": "posted",
+   "parcels": 70,
+   "page": "https://muskingum.sheriffsaleauction.ohio.gov"
   },
   {
    "fips": "39155",
@@ -395,6 +440,15 @@
    "kind": "posted",
    "parcels": 162,
    "page": "https://pasco.realtaxdeed.com"
+  },
+  {
+   "fips": "39157",
+   "state": "OH",
+   "name": "Tuscarawas County",
+   "date": "2026-10-29",
+   "kind": "posted",
+   "parcels": 10,
+   "page": "https://tuscarawas.sheriffsaleauction.ohio.gov"
   },
   {
    "fips": "26001",
@@ -811,6 +865,15 @@
    "page": "https://www.tax-sale.info/listings/catalog/2952"
   },
   {
+   "fips": "39101",
+   "state": "OH",
+   "name": "Marion County",
+   "date": "2026-10-30",
+   "kind": "posted",
+   "parcels": 18,
+   "page": "https://marion.sheriffsaleauction.ohio.gov"
+  },
+  {
    "fips": "12069",
    "state": "FL",
    "name": "Lake County",
@@ -883,6 +946,15 @@
    "page": "https://sarasota.realtaxdeed.com"
   },
   {
+   "fips": "39145",
+   "state": "OH",
+   "name": "Scioto County",
+   "date": "2026-11-04",
+   "kind": "posted",
+   "parcels": 16,
+   "page": "https://scioto.sheriffsaleauction.ohio.gov"
+  },
+  {
    "fips": "12121",
    "state": "FL",
    "name": "Suwannee County",
@@ -890,6 +962,15 @@
    "kind": "posted",
    "parcels": 77,
    "page": "https://suwannee.realtaxdeed.com"
+  },
+  {
+   "fips": "39055",
+   "state": "OH",
+   "name": "Geauga County",
+   "date": "2026-11-05",
+   "kind": "posted",
+   "parcels": 17,
+   "page": "https://geauga.sheriffsaleauction.ohio.gov"
   },
   {
    "fips": "39173",
@@ -917,6 +998,15 @@
    "kind": "posted",
    "parcels": 187,
    "page": "https://osceola.realtaxdeed.com"
+  },
+  {
+   "fips": "39043",
+   "state": "OH",
+   "name": "Erie County",
+   "date": "2026-11-10",
+   "kind": "posted",
+   "parcels": 24,
+   "page": "https://erie.sheriffsaleauction.ohio.gov"
   },
   {
    "fips": "12117",
@@ -1016,7 +1106,7 @@
   "realauction": {
    "label": "RealAuction portals (Florida Clerk tax deed and foreclosure sales, Ohio and Texas sheriff sales)",
    "url": "https://www.realauction.com/",
-   "counties": 64,
+   "counties": 74,
    "ok": true,
    "checked": "2026-10-18T10:12:21+00:00"
   }
@@ -1182,29 +1272,39 @@
   "26165",
   "32003",
   "39003",
+  "39007",
   "39017",
   "39023",
   "39025",
+  "39029",
   "39035",
   "39041",
+  "39043",
   "39045",
   "39049",
+  "39055",
   "39057",
   "39061",
+  "39063",
   "39085",
   "39089",
   "39093",
   "39095",
   "39099",
+  "39101",
   "39103",
   "39109",
   "39113",
+  "39119",
   "39133",
   "39139",
+  "39145",
   "39151",
   "39153",
   "39155",
+  "39157",
   "39165",
+  "39169",
   "39173"
  ]
 }
