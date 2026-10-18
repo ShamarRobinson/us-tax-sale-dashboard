@@ -1,40 +1,20 @@
 {
- "generated": "2026-10-18T14:23:42+00:00",
- "previous": "2026-10-18T14:16:55+00:00",
+ "generated": "2026-10-18T14:46:20+00:00",
+ "previous": "2026-10-18T14:45:39+00:00",
  "newUpcoming": [
   {
-   "fips": "12073",
+   "fips": "12053",
    "state": "FL",
-   "name": "Leon County",
-   "date": "2026-10-21",
-   "kind": "posted",
-   "parcels": 194,
-   "page": "https://leon.realtaxdeed.com"
-  },
-  {
-   "fips": "12033",
-   "state": "FL",
-   "name": "Escambia County",
+   "name": "Hernando County",
    "date": "2026-11-04",
    "kind": "posted",
-   "parcels": 461,
-   "page": "https://escambia.realtaxdeed.com"
-  },
-  {
-   "fips": "12001",
-   "state": "FL",
-   "name": "Alachua County",
-   "date": "2026-12-01",
-   "kind": "posted",
-   "parcels": 42,
-   "page": "https://alachua.realtaxdeed.com"
+   "parcels": 149,
+   "page": "https://hernando.realtaxdeed.com"
   }
  ],
  "newCounties": [
-  "12001",
-  "12033",
-  "12073"
+  "12053"
  ],
- "parcelDelta": 697,
- "linkDelta": 2
+ "parcelDelta": 149,
+ "linkDelta": 0
 }

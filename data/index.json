@@ -1,11 +1,11 @@
 {
- "generated": "2026-10-18T14:23:42+00:00",
+ "generated": "2026-10-18T14:46:20+00:00",
  "counties": 3222,
  "states": 52,
- "withData": 139,
- "parcels": 20042,
- "auctions": 1019,
- "withTaxSaleLink": 1005,
+ "withData": 144,
+ "parcels": 20848,
+ "auctions": 1075,
+ "withTaxSaleLink": 1008,
  "withSite": 3061,
  "withSheriffLink": 378,
  "withAssessorLink": 1545,
@@ -28,6 +28,15 @@
    "page": "https://miamidade.realtaxdeed.com"
   },
   {
+   "fips": "12005",
+   "state": "FL",
+   "name": "Bay County",
+   "date": "2026-10-20",
+   "kind": "posted",
+   "parcels": 233,
+   "page": "https://bay.realtaxdeed.com"
+  },
+  {
    "fips": "12071",
    "state": "FL",
    "name": "Lee County",
@@ -35,6 +44,15 @@
    "kind": "posted",
    "parcels": 537,
    "page": "https://lee.realtaxdeed.com"
+  },
+  {
+   "fips": "12019",
+   "state": "FL",
+   "name": "Clay County",
+   "date": "2026-10-21",
+   "kind": "posted",
+   "parcels": 73,
+   "page": "https://clay.realtaxdeed.com"
   },
   {
    "fips": "12073",
@@ -80,6 +98,15 @@
    "kind": "posted",
    "parcels": 85,
    "page": "https://broward.realtaxdeed.com"
+  },
+  {
+   "fips": "12113",
+   "state": "FL",
+   "name": "Santa Rosa County",
+   "date": "2026-10-26",
+   "kind": "posted",
+   "parcels": 83,
+   "page": "https://santarosa.realtaxdeed.com"
   },
   {
    "fips": "12127",
@@ -550,6 +577,15 @@
    "page": "https://dekalbtaxga.gov/property-tax/tax-sales/"
   },
   {
+   "fips": "12017",
+   "state": "FL",
+   "name": "Citrus County",
+   "date": "2026-11-04",
+   "kind": "posted",
+   "parcels": 268,
+   "page": "https://citrus.realtaxdeed.com"
+  },
+  {
    "fips": "12033",
    "state": "FL",
    "name": "Escambia County",
@@ -557,6 +593,15 @@
    "kind": "posted",
    "parcels": 461,
    "page": "https://escambia.realtaxdeed.com"
+  },
+  {
+   "fips": "12053",
+   "state": "FL",
+   "name": "Hernando County",
+   "date": "2026-11-04",
+   "kind": "posted",
+   "parcels": 149,
+   "page": "https://hernando.realtaxdeed.com"
   },
   {
    "fips": "12115",
@@ -647,16 +692,20 @@
   "realauction": {
    "label": "RealAuction portals (Florida Clerk tax deed and foreclosure sales, Ohio and Texas sheriff sales)",
    "url": "https://www.realauction.com/",
-   "counties": 19,
+   "counties": 24,
    "ok": true,
    "checked": "2026-10-18T10:12:21+00:00"
   }
  },
  "countiesWithData": [
   "12001",
+  "12005",
   "12011",
+  "12017",
+  "12019",
   "12031",
   "12033",
+  "12053",
   "12057",
   "12069",
   "12071",
@@ -669,6 +718,7 @@
   "12101",
   "12103",
   "12105",
+  "12113",
   "12115",
   "12117",
   "12127",

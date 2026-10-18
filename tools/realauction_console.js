@@ -14,6 +14,7 @@ window.__p = (async () => {
   const KIND = window.__kind || "taxdeed", MONTHS_BACK = window.__monthsBack || 3, PAUSE = 150, GEN = window.__gen;
   const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
   const TOK = [["@A", '<div class="'], ["@B", "</div>"], ["@C", 'class="'], ["@D", "<div>"], ["@E", "AUCTION"], ["@F", "</td><td"], ["@G", "</td></tr>"], ["@H", "<tr><td "], ["@I", "table"], ["@J", 'p_back="NextCheck='], ["@K", 'style="Display:none"'], ["@L", "/index.cfm?zaction=auction&zmethod=details&AID="]];
+  const PK = ["Parcel ID", "Parcel Number", "Parcel Key", "Parcel No", "Parcel #", "Parcel", "Folio", "Folio Number", "Alternate Key", "Alt Key", "Tax ID", "Property ID", "Account #", "Account Number", "Strap", "PIN"];
   const get = async (u) => { const r = await fetch(u, { credentials: "include", headers: { "X-Requested-With": "XMLHttpRequest" } }); return r.text(); };
   const money = (s) => { if (s == null) return null; const v = parseFloat(String(s).replace(/[$,]/g, "")); return isNaN(v) ? null : v; };
   const strip = (h) => h.replace(/<[^>]+>/g, " ").replace(/&amp;/g, "&").replace(/&nbsp;/g, " ").replace(/\s+/g, " ").trim();
@@ -79,14 +80,14 @@ window.__p = (async () => {
         if ((s.A || "").toLowerCase().startsWith("auction sold")) { status = "Sold"; wb = money(s.D) || money(s.P); buyer = (s.ST || "").trim() || null; soldDate = s.B || null; }
         else if (["Withdrawn", "Canceled", "Cancelled", "Rescheduled", "Redeemed", "Bankruptcy"].includes(s.B)) status = s.B;
       }
-      const o = { parcel: rows["Parcel ID"] || rows["Parcel Number"] || rows["Folio"] || rows["Alternate Key"] || null,
+      const o = { parcel: PK.map((k) => rows[k]).find(Boolean) || null,
         caseNo: rows["Case #"] || rows["Case Number"] || null, certificate: rows["Certificate #"] || null,
         address: addr, fullAddress: [addr, city].filter(Boolean).join(", ") || null,
         area: city ? city.split(",")[0].trim().replace(/\b\w+/g, (w) => w[0] + w.slice(1).toLowerCase()) : null,
         zip: city ? (city.match(/(\d{5})(?:-\d{4})?\s*$/) || [])[1] : null,
         minBid: money(rows["Opening Bid"]), value: money(rows["Assessed Value"] || rows["Appraised Value"]), judgment: money(rows["Final Judgment Amount"]),
         type: rows["Auction Type"] || null, owner: rows["Owner"] || rows["Defendant"] || null, plaintiff: rows["Plaintiff"] || null,
-        parcelInfo: links["Parcel ID"] || links["Parcel Number"] || links["Folio"] || links["Alternate Key"] || null,
+        parcelInfo: PK.map((k) => links[k]).find(Boolean) || null,
         winningBid: wb, buyer, status, soldDate, link: `${location.origin}/index.cfm?zaction=auction&zmethod=details&AID=${aid}` };
       Object.keys(o).forEach((k) => { if (o[k] == null || o[k] === "") delete o[k]; });
       return o;

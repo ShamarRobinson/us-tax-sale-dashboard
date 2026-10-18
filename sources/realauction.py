@@ -181,10 +181,10 @@ def to_parcel(aid, rows, extra, st, base, upcoming, links=None):
     elif not upcoming:
         status = "Not published"
     return parcel(
-        parcel=rows.get("Parcel ID") or rows.get("Parcel Number") or rows.get("Folio") or rows.get("Alternate Key"),
+        parcel=next((rows[k] for k in PARCEL_KEYS if rows.get(k)), None),
         caseNo=rows.get("Case #") or rows.get("Case Number"), certificate=rows.get("Certificate #"),
         address=addr, fullAddress=full, area=city.split(",")[0].strip().title() if city else None, zip=zip_m.group(1) if zip_m else None,
-        parcelInfo=links.get("Parcel ID") or links.get("Parcel Number") or links.get("Folio") or links.get("Alternate Key"),
+        parcelInfo=next((links[k] for k in PARCEL_KEYS if links.get(k)), None),
         minBid=money(rows.get("Opening Bid")), value=money(rows.get("Assessed Value") or rows.get("Appraised Value")),
         judgment=money(rows.get("Final Judgment Amount")), type=rows.get("Auction Type"), owner=rows.get("Owner") or rows.get("Defendant"),
         plaintiff=rows.get("Plaintiff"), winningBid=wb, buyer=buyer, status=status, soldDate=sold_date,
@@ -193,6 +193,9 @@ def to_parcel(aid, rows, extra, st, base, upcoming, links=None):
 
 
 PARCEL_ISH = re.compile(r"\d")
+# Row labels the portals use for the parcel number (Hernando says "Parcel Key", Miami-Dade "Folio", and so on).
+PARCEL_KEYS = ["Parcel ID", "Parcel Number", "Parcel Key", "Parcel No", "Parcel #", "Parcel", "Folio", "Folio Number", "Alternate Key", "Alt Key",
+               "Tax ID", "Property ID", "Account #", "Account Number", "Strap", "PIN"]
 
 
 def clean_auctions(auctions, kind):
