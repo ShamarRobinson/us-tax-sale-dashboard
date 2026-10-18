@@ -1,0 +1,473 @@
+{
+ "generated": "2026-10-18T06:38:22+00:00",
+ "counties": 3222,
+ "states": 52,
+ "withData": 120,
+ "parcels": 12026,
+ "auctions": 673,
+ "withTaxSaleLink": 417,
+ "withSite": 3061,
+ "systems": {
+  "deed": 1294,
+  "lien": 912,
+  "redeemable": 590,
+  "hybrid": 426
+ },
+ "upcomingPosted": [
+  {
+   "fips": "26001",
+   "state": "MI",
+   "name": "Alcona County",
+   "date": "2026-10-30",
+   "kind": "posted",
+   "parcels": 32,
+   "page": "https://www.tax-sale.info/listings/catalog/2982"
+  },
+  {
+   "fips": "26005",
+   "state": "MI",
+   "name": "Allegan County",
+   "date": "2026-10-30",
+   "kind": "posted",
+   "parcels": 137,
+   "page": "https://www.tax-sale.info/listings/catalog/2956"
+  },
+  {
+   "fips": "26007",
+   "state": "MI",
+   "name": "Alpena County",
+   "date": "2026-10-30",
+   "kind": "posted",
+   "parcels": 23,
+   "page": "https://www.tax-sale.info/listings/catalog/2983"
+  },
+  {
+   "fips": "26009",
+   "state": "MI",
+   "name": "Antrim County",
+   "date": "2026-10-30",
+   "kind": "posted",
+   "parcels": 346,
+   "page": "https://www.tax-sale.info/listings/catalog/2981"
+  },
+  {
+   "fips": "26011",
+   "state": "MI",
+   "name": "Arenac County",
+   "date": "2026-10-30",
+   "kind": "posted",
+   "parcels": 54,
+   "page": "https://www.tax-sale.info/listings/catalog/2946"
+  },
+  {
+   "fips": "26017",
+   "state": "MI",
+   "name": "Bay County",
+   "date": "2026-10-30",
+   "kind": "posted",
+   "parcels": 65,
+   "page": "https://www.tax-sale.info/listings/catalog/2947"
+  },
+  {
+   "fips": "26021",
+   "state": "MI",
+   "name": "Berrien County",
+   "date": "2026-10-30",
+   "kind": "posted",
+   "parcels": 299,
+   "page": "https://www.tax-sale.info/listings/catalog/2957"
+  },
+  {
+   "fips": "26025",
+   "state": "MI",
+   "name": "Calhoun County",
+   "date": "2026-10-30",
+   "kind": "posted",
+   "parcels": 168,
+   "page": "https://www.tax-sale.info/listings/catalog/2953"
+  },
+  {
+   "fips": "26031",
+   "state": "MI",
+   "name": "Cheboygan County",
+   "date": "2026-10-30",
+   "kind": "posted",
+   "parcels": 37,
+   "page": "https://www.tax-sale.info/listings/catalog/2984"
+  },
+  {
+   "fips": "26037",
+   "state": "MI",
+   "name": "Clinton County",
+   "date": "2026-10-30",
+   "kind": "posted",
+   "parcels": 16,
+   "page": "https://www.tax-sale.info/listings/catalog/3015"
+  },
+  {
+   "fips": "26041",
+   "state": "MI",
+   "name": "Delta County",
+   "date": "2026-10-30",
+   "kind": "posted",
+   "parcels": 45,
+   "page": "https://www.tax-sale.info/listings/catalog/2971"
+  },
+  {
+   "fips": "26043",
+   "state": "MI",
+   "name": "Dickinson County",
+   "date": "2026-10-30",
+   "kind": "posted",
+   "parcels": 43,
+   "page": "https://www.tax-sale.info/listings/catalog/2973"
+  },
+  {
+   "fips": "26049",
+   "state": "MI",
+   "name": "Genesee County",
+   "date": "2026-10-30",
+   "kind": "posted",
+   "parcels": 1950,
+   "page": "https://www.tax-sale.info/listings/catalog/3013"
+  },
+  {
+   "fips": "26051",
+   "state": "MI",
+   "name": "Gladwin County",
+   "date": "2026-10-30",
+   "kind": "posted",
+   "parcels": 117,
+   "page": "https://www.tax-sale.info/listings/catalog/2948"
+  },
+  {
+   "fips": "26057",
+   "state": "MI",
+   "name": "Gratiot County",
+   "date": "2026-10-30",
+   "kind": "posted",
+   "parcels": 48,
+   "page": "https://www.tax-sale.info/listings/catalog/2958"
+  },
+  {
+   "fips": "26059",
+   "state": "MI",
+   "name": "Hillsdale County",
+   "date": "2026-10-30",
+   "kind": "posted",
+   "parcels": 43,
+   "page": "https://www.tax-sale.info/listings/catalog/3006"
+  },
+  {
+   "fips": "26063",
+   "state": "MI",
+   "name": "Huron County",
+   "date": "2026-10-30",
+   "kind": "posted",
+   "parcels": 44,
+   "page": "https://www.tax-sale.info/listings/catalog/2949"
+  },
+  {
+   "fips": "26067",
+   "state": "MI",
+   "name": "Ionia County",
+   "date": "2026-10-30",
+   "kind": "posted",
+   "parcels": 29,
+   "page": "https://www.tax-sale.info/listings/catalog/2959"
+  },
+  {
+   "fips": "26069",
+   "state": "MI",
+   "name": "Iosco County",
+   "date": "2026-10-30",
+   "kind": "posted",
+   "parcels": 103,
+   "page": "https://www.tax-sale.info/listings/catalog/2985"
+  },
+  {
+   "fips": "26071",
+   "state": "MI",
+   "name": "Iron County",
+   "date": "2026-10-30",
+   "kind": "posted",
+   "parcels": 36,
+   "page": "https://www.tax-sale.info/listings/catalog/2974"
+  },
+  {
+   "fips": "26075",
+   "state": "MI",
+   "name": "Jackson County",
+   "date": "2026-10-30",
+   "kind": "posted",
+   "parcels": 227,
+   "page": "https://www.tax-sale.info/listings/catalog/3009"
+  },
+  {
+   "fips": "26077",
+   "state": "MI",
+   "name": "Kalamazoo County",
+   "date": "2026-10-30",
+   "kind": "posted",
+   "parcels": 115,
+   "page": "https://www.tax-sale.info/listings/catalog/2954"
+  },
+  {
+   "fips": "26081",
+   "state": "MI",
+   "name": "Kent County",
+   "date": "2026-10-30",
+   "kind": "posted",
+   "parcels": 49,
+   "page": "https://www.tax-sale.info/listings/catalog/3000"
+  },
+  {
+   "fips": "26085",
+   "state": "MI",
+   "name": "Lake County",
+   "date": "2026-10-30",
+   "kind": "posted",
+   "parcels": 165,
+   "page": "https://www.tax-sale.info/listings/catalog/3008"
+  },
+  {
+   "fips": "26087",
+   "state": "MI",
+   "name": "Lapeer County",
+   "date": "2026-10-30",
+   "kind": "posted",
+   "parcels": 27,
+   "page": "https://www.tax-sale.info/listings/catalog/2950"
+  },
+  {
+   "fips": "26101",
+   "state": "MI",
+   "name": "Manistee County",
+   "date": "2026-10-30",
+   "kind": "posted",
+   "parcels": 27,
+   "page": "https://www.tax-sale.info/listings/catalog/3003"
+  },
+  {
+   "fips": "26103",
+   "state": "MI",
+   "name": "Marquette County",
+   "date": "2026-10-30",
+   "kind": "posted",
+   "parcels": 47,
+   "page": "https://www.tax-sale.info/listings/catalog/2975"
+  },
+  {
+   "fips": "26105",
+   "state": "MI",
+   "name": "Mason County",
+   "date": "2026-10-30",
+   "kind": "posted",
+   "parcels": 35,
+   "page": "https://www.tax-sale.info/listings/catalog/3005"
+  },
+  {
+   "fips": "26109",
+   "state": "MI",
+   "name": "Menominee County",
+   "date": "2026-10-30",
+   "kind": "posted",
+   "parcels": 18,
+   "page": "https://www.tax-sale.info/listings/catalog/2976"
+  },
+  {
+   "fips": "26115",
+   "state": "MI",
+   "name": "Monroe County",
+   "date": "2026-10-30",
+   "kind": "posted",
+   "parcels": 69,
+   "page": "https://www.tax-sale.info/listings/catalog/3010"
+  },
+  {
+   "fips": "26117",
+   "state": "MI",
+   "name": "Montcalm County",
+   "date": "2026-10-30",
+   "kind": "posted",
+   "parcels": 58,
+   "page": "https://www.tax-sale.info/listings/catalog/2960"
+  },
+  {
+   "fips": "26121",
+   "state": "MI",
+   "name": "Muskegon County",
+   "date": "2026-10-30",
+   "kind": "posted",
+   "parcels": 140,
+   "page": "https://www.tax-sale.info/listings/catalog/3001"
+  },
+  {
+   "fips": "26125",
+   "state": "MI",
+   "name": "Oakland County",
+   "date": "2026-10-30",
+   "kind": "posted",
+   "parcels": 364,
+   "page": "https://www.tax-sale.info/listings/catalog/2999"
+  },
+  {
+   "fips": "26131",
+   "state": "MI",
+   "name": "Ontonagon County",
+   "date": "2026-10-30",
+   "kind": "posted",
+   "parcels": 17,
+   "page": "https://www.tax-sale.info/listings/catalog/2977"
+  },
+  {
+   "fips": "26133",
+   "state": "MI",
+   "name": "Osceola County",
+   "date": "2026-10-30",
+   "kind": "posted",
+   "parcels": 102,
+   "page": "https://www.tax-sale.info/listings/catalog/2970"
+  },
+  {
+   "fips": "26135",
+   "state": "MI",
+   "name": "Oscoda County",
+   "date": "2026-10-30",
+   "kind": "posted",
+   "parcels": 29,
+   "page": "https://www.tax-sale.info/listings/catalog/2978"
+  },
+  {
+   "fips": "26137",
+   "state": "MI",
+   "name": "Otsego County",
+   "date": "2026-10-30",
+   "kind": "posted",
+   "parcels": 104,
+   "page": "https://www.tax-sale.info/listings/catalog/2979"
+  },
+  {
+   "fips": "26139",
+   "state": "MI",
+   "name": "Ottawa County",
+   "date": "2026-10-30",
+   "kind": "posted",
+   "parcels": 19,
+   "page": "https://www.tax-sale.info/listings/catalog/3002"
+  },
+  {
+   "fips": "26141",
+   "state": "MI",
+   "name": "Presque Isle County",
+   "date": "2026-10-30",
+   "kind": "posted",
+   "parcels": 102,
+   "page": "https://www.tax-sale.info/listings/catalog/2986"
+  },
+  {
+   "fips": "26143",
+   "state": "MI",
+   "name": "Roscommon County",
+   "date": "2026-10-30",
+   "kind": "posted",
+   "parcels": 79,
+   "page": "https://www.tax-sale.info/listings/catalog/2980"
+  },
+  {
+   "fips": "26145",
+   "state": "MI",
+   "name": "Saginaw County",
+   "date": "2026-10-30",
+   "kind": "posted",
+   "parcels": 685,
+   "page": "https://www.tax-sale.info/listings/catalog/3011"
+  },
+  {
+   "fips": "26153",
+   "state": "MI",
+   "name": "Schoolcraft County",
+   "date": "2026-10-30",
+   "kind": "posted",
+   "parcels": 43,
+   "page": "https://www.tax-sale.info/listings/catalog/2972"
+  },
+  {
+   "fips": "26155",
+   "state": "MI",
+   "name": "Shiawassee County",
+   "date": "2026-10-30",
+   "kind": "posted",
+   "parcels": 39,
+   "page": "https://www.tax-sale.info/listings/catalog/2961"
+  },
+  {
+   "fips": "26147",
+   "state": "MI",
+   "name": "St. Clair County",
+   "date": "2026-10-30",
+   "kind": "posted",
+   "parcels": 64,
+   "page": "https://www.tax-sale.info/listings/catalog/2951"
+  },
+  {
+   "fips": "26149",
+   "state": "MI",
+   "name": "St. Joseph County",
+   "date": "2026-10-30",
+   "kind": "posted",
+   "parcels": 48,
+   "page": "https://www.tax-sale.info/listings/catalog/2955"
+  },
+  {
+   "fips": "26157",
+   "state": "MI",
+   "name": "Tuscola County",
+   "date": "2026-10-30",
+   "kind": "posted",
+   "parcels": 65,
+   "page": "https://www.tax-sale.info/listings/catalog/2952"
+  },
+  {
+   "fips": "13063",
+   "state": "GA",
+   "name": "Clayton County",
+   "date": "2026-11-03",
+   "kind": "posted",
+   "parcels": 412,
+   "page": "https://publicaccess.claytoncountyga.gov/content/home_commissioner.htm"
+  },
+  {
+   "fips": "13089",
+   "state": "GA",
+   "name": "DeKalb County",
+   "date": "2026-11-03",
+   "kind": "posted",
+   "parcels": 436,
+   "page": "https://dekalbtaxga.gov/property-tax/tax-sales/"
+  }
+ ],
+ "sources": {
+  "atlanta": {
+   "label": "Metro Atlanta Tax Sale Tracker",
+   "url": "https://shamarrobinson.github.io/atlanta-tax-sale-dashboard/",
+   "counties": 40,
+   "ok": true,
+   "checked": "2026-10-18T06:25:48+00:00"
+  },
+  "clark": {
+   "label": "Clark County Tax Auction Tracker",
+   "url": "https://shamarrobinson.github.io/clark-county-tax-auction-dashboard/",
+   "counties": 1,
+   "ok": true,
+   "checked": "2026-10-18T06:25:49+00:00"
+  },
+  "michigan": {
+   "label": "Tax-Sale.info (Michigan Public Land Auction)",
+   "url": "https://www.tax-sale.info/",
+   "counties": 79,
+   "ok": true,
+   "checked": "2026-10-18T06:30:15+00:00"
+  }
+ }
+}

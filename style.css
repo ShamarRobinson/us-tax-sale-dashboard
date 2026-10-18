@@ -1,0 +1,140 @@
+/* US Tax Sale Tracker: the blue and white theme shared with the Clark County and Metro Atlanta trackers. */
+:root {
+  color-scheme: light;
+  --bg: #ffffff; --surface: #ffffff; --border: #000000; --rule: #c9d4e5;
+  --blue: #1f5fbf; --blue-dark: #174a96; --blue-tint: #eaf1fb;
+  --text: #0b0b0b; --text-2: #52514e; --text-3: #5b6778; --accent: #1f5fbf;
+  --deed: #2a78d6; --lien: #eb6834; --redeemable: #159c6c; --hybrid: #8e5ad6;
+  --has: #2a78d6; --link: #bcd3f3; --info: #eef1f5;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 15px/1.5 Inter, system-ui, -apple-system, "Segoe UI", sans-serif; }
+a { color: var(--accent); }
+.wrap { max-width: 1180px; margin: 0 auto; padding: 0 16px; }
+
+/* header */
+.top { background: var(--blue); border-bottom: 2px solid #000; color: #fff; padding: 22px 0 0; }
+.eyebrow { font-size: 12px; letter-spacing: .06em; text-transform: uppercase; font-weight: 600; color: #fff; }
+.titlerow { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 12px; }
+h1 { margin: 4px 0 0; font-size: 30px; line-height: 1.15; letter-spacing: -.02em; color: #fff; }
+h2 { margin: 0; font-size: 18px; letter-spacing: -.01em; color: var(--blue-dark); }
+h3 { margin: 0 0 8px; font-size: 14px; font-weight: 600; }
+.freshness { margin-top: 8px; font-size: 13px; color: #fff; }
+.freshness b { font-weight: 600; }
+.dotlive { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #7ee2b8; margin-right: 6px; }
+.searchbox { margin-top: 12px; }
+.searchbox input { width: 100%; font-size: 16px; padding: 11px 14px; min-height: 46px; border-radius: 10px; border: 1px solid #000; background: #fff; color: var(--text); }
+.searchbox input:focus { outline: 2px solid #fff; outline-offset: 1px; }
+.examples { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-top: 8px; font-size: 12.5px; color: #dce7f8; }
+.examples button { font-size: 12.5px; font-weight: 500; min-height: 0; padding: 3px 9px; border-radius: 99px; background: #fff; color: var(--blue-dark); border: 1px solid #000; }
+.searchhelp { margin-top: 8px; font-size: 13px; color: #eef3fb; line-height: 1.7; }
+.searchhelp code { background: rgba(255,255,255,.18); color: #fff; }
+code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; background: color-mix(in srgb, var(--accent) 9%, transparent); padding: 1px 5px; border-radius: 4px; }
+
+/* state tabs */
+.tabs { display: flex; gap: 4px; overflow-x: auto; padding: 10px 16px 0; max-width: 1180px; margin: 12px auto 0; scrollbar-width: thin; }
+.tabs a { flex: none; color: #fff; text-decoration: none; font-size: 13px; font-weight: 600; padding: 7px 11px; border: 1px solid #000; border-bottom: none; border-radius: 8px 8px 0 0; background: var(--blue-dark); white-space: nowrap; }
+.tabs a:hover, .tabs a.active { background: #fff; color: var(--blue-dark); }
+.tabs a .dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: #7ee2b8; margin-right: 5px; vertical-align: 1px; }
+
+/* layout */
+main { padding-bottom: 24px; }
+section { margin: 18px 0; }
+.card { background: var(--surface); border: 1px solid #000; border-radius: 12px; padding: 16px 18px; }
+.head { margin-bottom: 12px; }
+.head p { margin: 4px 0 0; color: var(--text-2); font-size: 14px; max-width: 900px; }
+.muted { color: var(--text-2); } .small { font-size: 13px; }
+.mt { margin-top: 16px; }
+.kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(165px, 1fr)); gap: 12px; }
+.kpi { background: #fff; border: 1px solid #000; border-radius: 12px; padding: 14px 16px; }
+.kpi .label { font-size: 12.5px; color: var(--text-2); font-weight: 500; }
+.kpi .value { font-size: 26px; font-weight: 700; letter-spacing: -.02em; margin-top: 2px; font-variant-numeric: tabular-nums; color: var(--blue-dark); }
+.kpi .note { font-size: 12.5px; color: var(--text-3); }
+.kpi.hero { border: 2px solid var(--blue); }
+.grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr)); gap: 18px; align-items: start; }
+.chart { position: relative; height: 280px; }
+.chart.short { height: 230px; }
+.takeaway { margin: 12px 0 0; padding: 10px 12px; border-left: 4px solid var(--blue); background: var(--blue-tint); border-radius: 0 8px 8px 0; color: var(--text-2); font-size: 14px; }
+.takeaway b { color: var(--text); }
+
+/* tables */
+.tablewrap { overflow-x: auto; border: 1px solid #000; }
+.tablewrap.tall { max-height: 420px; overflow: auto; }
+table.data { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+table.data th, table.data td { padding: 7px 9px; text-align: left; border-bottom: 1px solid var(--rule); white-space: nowrap; }
+table.data th { font-size: 12px; color: #fff; font-weight: 600; background: var(--blue); position: sticky; top: 0; z-index: 1; }
+table.data td.wrap { white-space: normal; min-width: 160px; }
+td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+table.sortable th { cursor: pointer; user-select: none; }
+table.sortable th[aria-sort="ascending"]::after { content: " \2191"; }
+table.sortable th[aria-sort="descending"]::after { content: " \2193"; }
+tr.row { cursor: pointer; }
+tr.row:hover td { background: var(--blue-tint); }
+td.links { white-space: nowrap; font-size: 13px; }
+td.links a + a { margin-left: 8px; }
+.sw { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; }
+
+/* pills, legend, maps */
+.pill { display: inline-block; font-size: 11.5px; padding: 1px 8px; border-radius: 99px; border: 1px solid #000; color: var(--text); white-space: nowrap; background: #fff; }
+.pill.deed { background: color-mix(in srgb, var(--deed) 16%, #fff); }
+.pill.lien { background: color-mix(in srgb, var(--lien) 18%, #fff); }
+.pill.redeemable { background: color-mix(in srgb, var(--redeemable) 18%, #fff); }
+.pill.hybrid { background: color-mix(in srgb, var(--hybrid) 18%, #fff); }
+.pill.posted { background: #e5f6ee; } .pill.statutory { background: var(--blue-tint); } .pill.window { background: #fff4dc; }
+.pill.big { font-size: 13px; padding: 4px 12px; }
+.map { height: 340px; border-radius: 10px; border: 1px solid #000; z-index: 0; background: #f6f8fb; }
+.map.tallmap { height: 460px; }
+.legend { display: flex; flex-wrap: wrap; gap: 14px; font-size: 12.5px; color: var(--text-2); margin-top: 8px; }
+.legend .sq { display: inline-block; width: 12px; height: 12px; border: 1px solid #000; margin-right: 6px; vertical-align: -1px; }
+.legend .sq.has { background: var(--has); } .legend .sq.link { background: var(--link); } .legend .sq.info { background: var(--info); }
+.leaflet-container { font: inherit; }
+.leaflet-tooltip { font: 12.5px/1.4 Inter, system-ui, sans-serif; border: 1px solid #000; }
+
+/* state / county headers */
+.countyhead .chead { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; align-items: flex-start; }
+.countyhead h2 { font-size: 24px; }
+.cinfo { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 8px 22px; margin-top: 12px; font-size: 14px; }
+.cinfo div { border-bottom: 1px dashed var(--rule); padding: 6px 0; }
+.cinfo b { display: block; font-size: 12px; color: var(--text-2); font-weight: 600; }
+.cinfo .wide { grid-column: 1 / -1; }
+.picker { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--text-2); font-weight: 600; max-width: 100%; }
+.picker select { max-width: min(420px, calc(100vw - 110px)); }
+details.rules { margin-top: 14px; }
+details.rules summary { cursor: pointer; list-style: none; display: flex; align-items: center; gap: 8px; }
+details.rules summary::-webkit-details-marker { display: none; }
+details.rules summary h3 { margin: 0; color: var(--blue-dark); }
+details.rules summary h3::before { content: "\25B8  "; color: var(--text-3); }
+details.rules[open] summary h3::before { content: "\25BE  "; }
+.emptyinfo h3 { margin-top: 4px; }
+.emptyinfo ul { margin: 6px 0 0; padding-left: 20px; }
+
+/* controls */
+.filters { display: flex; flex-wrap: wrap; gap: 10px; margin: 12px 0; }
+.filters input { flex: 1 1 240px; }
+.gridbar { align-items: center; }
+select, input, button { font: inherit; font-size: 14px; color: var(--text); background: #fff; border: 1px solid #000; border-radius: 8px; padding: 7px 10px; min-height: 36px; }
+button { cursor: pointer; font-weight: 600; }
+button:hover { background: var(--blue-tint); }
+#csvBtn, #resCsv, #sCsv { background: var(--blue); color: #fff; }
+#csvBtn:hover, #resCsv:hover, #sCsv:hover { background: var(--blue-dark); }
+.results { border: 2px solid var(--blue); }
+.reshead { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 10px; }
+.reshead h2 { flex: 1 1 auto; }
+
+/* detail dialog */
+.detail { border: 2px solid #000; border-radius: 14px; padding: 0; max-width: 720px; width: calc(100% - 32px); background: #fff; color: var(--text); }
+.detail::backdrop { background: rgba(0,0,0,.45); }
+#detailBody { padding: 18px 20px 6px; max-height: 75vh; overflow: auto; }
+#detailBody h2 { margin-bottom: 2px; }
+.dgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2px 22px; margin-top: 12px; }
+.dgrid div { display: flex; justify-content: space-between; gap: 10px; padding: 6px 0; border-bottom: 1px dashed var(--rule); font-size: 13.5px; }
+.dgrid span:first-child { color: var(--text-2); }
+.dgrid span:last-child { text-align: right; font-variant-numeric: tabular-nums; }
+.dlinks { display: flex; flex-wrap: wrap; gap: 14px; margin: 14px 0 4px; font-size: 13.5px; }
+.detail form { padding: 10px 20px 16px; text-align: right; }
+.detail p.desc { font-size: 13.5px; color: var(--text-2); }
+.foot { margin-top: 22px; line-height: 1.6; border-top: 1px solid #000; padding-top: 12px; }
+.open { color: #0f7a3d; font-weight: 600; }
+@media (max-width: 560px) { h1 { font-size: 25px; } .kpi .value { font-size: 22px; } .map { height: 280px; } .map.tallmap { height: 340px; } .countyhead h2 { font-size: 20px; } .kpis { grid-template-columns: 1fr 1fr; } }

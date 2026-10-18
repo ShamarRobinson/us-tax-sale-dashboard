@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>US Tax Sale Tracker</title>
+<meta name="description" content="Tax deed, tax lien and sheriff sale tracker for every county in every state: how each state sells delinquent property, who runs the sale, when it happens, official links for all 3,222 counties, and parcel-level auction data where it is published. Updates monthly.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <div class="eyebrow">Every County In Every State &middot; Tax Deed, Tax Lien And Sheriff Sales</div>
+    <div class="titlerow"><h1>US Tax Sale Tracker</h1></div>
+    <div class="freshness" id="freshness">Loading data&hellip;</div>
+    <div class="searchbox">
+      <input id="gSearch" type="search" autocomplete="off" placeholder="Search every county: name, state, sale type, who runs it..." aria-label="Search all counties">
+      <div class="examples">Try: <button type="button" data-q="state:tx">state:tx</button><button type="button" data-q="type:lien next:2026-12">type:lien next:2026-12</button><button type="button" data-q="data:yes state:mi">data:yes state:mi</button><button type="button" data-q="run:sheriff">run:sheriff</button><button type="button" id="searchHelpBtn">How search works</button></div>
+      <div class="searchhelp" id="searchHelp" hidden>
+        Type words to match a county or state name (all words must match). Narrow with <code>field:value</code>.<br>
+        Fields: <code>state</code> (abbreviation) &middot; <code>type</code> (deed, lien, redeemable, hybrid) &middot; <code>data</code> (yes or no: parcel data on file) &middot; <code>run</code> (who holds the sale, e.g. sheriff, treasurer, clerk) &middot; <code>platform</code> (bid4assets, realauction, govease...) &middot; <code>next</code> (sales on or before a date, e.g. <code>next:2026-12-31</code>) &middot; <code>pop</code> with <code>&gt;</code> or <code>&lt;</code> (e.g. <code>pop&gt;500k</code>) &middot; <code>unit</code> (parish, borough, city...)
+      </div>
+    </div>
+  </div>
+  <nav class="tabs" id="tabs" aria-label="States"></nav>
+</header>
+
+<main class="wrap">
+  <section class="card results" id="results" hidden>
+    <div class="reshead"><h2 id="resTitle">Search Results</h2><button type="button" id="resCsv">Download results</button><button type="button" id="resClear">Clear</button></div>
+    <div class="tablewrap tall"><table class="data sortable" id="resTable"></table></div>
+    <p class="muted small" id="resNote"></p>
+  </section>
+
+  <!-- NATIONAL OVERVIEW -->
+  <div id="viewNation">
+    <section class="kpis" id="nKpis"></section>
+    <section class="card">
+      <div class="head"><h2>How Each State Sells Delinquent Property</h2><p>Click a state to open its rules and county list. Four systems exist: the county sells the property itself (tax deed), sells a lien that earns interest until the owner redeems (tax lien), sells a deed the owner can still buy back for a set time (redeemable deed), or does both in sequence (hybrid).</p></div>
+      <div class="grid2">
+        <div><div id="nMap" class="map tallmap" role="img" aria-label="Map of the United States colored by tax sale system"></div>
+          <div class="legend" id="nLegend"></div></div>
+        <div><h3>Sale Systems</h3><div class="tablewrap"><table class="data" id="nSystems"></table></div>
+          <h3 class="mt">Parcel Data On File By State</h3><div class="chart short"><canvas id="nRich"></canvas></div>
+          <p class="muted small">Parcel-level data comes from the sources listed in the footer. Every other county still has its rules, schedule and official links.</p></div>
+      </div>
+    </section>
+    <section class="card">
+      <div class="head"><h2>Upcoming Sales</h2><p>Dates posted by an auction site or county come first. Below them are the next dates fixed by statute for the states that sell on a calendar (for example the first Tuesday of the month in Georgia and Texas), followed by states whose sale season is open now.</p></div>
+      <div class="grid2">
+        <div><h3>Posted By A Source</h3><div class="tablewrap tall"><table class="data sortable" id="nUpcoming"></table></div></div>
+        <div><h3>Fixed By Statute Or In Season</h3><div class="tablewrap tall"><table class="data" id="nStatutory"></table></div></div>
+      </div>
+    </section>
+    <section class="card">
+      <div class="head"><h2>All States</h2><p>Click a row to open the state. "With data" counts counties with parcel-level auction data on file.</p></div>
+      <div class="tablewrap tall"><table class="data sortable" id="nStates"></table></div>
+    </section>
+  </div>
+
+  <!-- STATE VIEW -->
+  <div id="viewState" hidden>
+    <section class="card countyhead">
+      <div class="chead"><div><h2 id="sName"></h2><p class="muted" id="sSub"></p></div><div id="sPill"></div></div>
+      <p class="takeaway" id="sSummary"></p>
+      <div class="cinfo" id="sInfo"></div>
+    </section>
+    <section class="card">
+      <div class="head"><h2 id="sCountiesTitle">Counties</h2><p>Click a county on the map or in the table. Blue counties have parcel-level auction data on file; light blue counties have a known tax sale page; the rest have an official site and search links.</p></div>
+      <div class="grid2">
+        <div><div id="sMap" class="map tallmap" role="img" aria-label="Map of counties in the state"></div>
+          <div class="legend"><span><i class="sq has"></i>Parcel data on file</span><span><i class="sq link"></i>Tax sale page known</span><span><i class="sq info"></i>Official site and search links</span></div></div>
+        <div><div class="filters gridbar"><input id="sFilter" type="search" placeholder="Filter counties"><button type="button" id="sCsv">Download CSV</button></div>
+          <div class="tablewrap tall"><table class="data sortable" id="sTable"></table></div></div>
+      </div>
+    </section>
+  </div>
+
+  <!-- COUNTY VIEW -->
+  <div id="viewCounty" hidden>
+    <section class="card countyhead">
+      <div class="chead">
+        <div><h2 id="cName"></h2><p class="muted" id="cSub"></p></div>
+        <label class="picker" id="cPickerWrap" hidden>Auction <select id="cAuction"></select></label>
+      </div>
+      <div class="cinfo" id="cInfo"></div>
+      <p class="takeaway" id="cNote" hidden></p>
+      <details class="rules"><summary><h3 id="cRulesTitle">State Rules</h3></summary><div class="cinfo" id="cRules"></div></details>
+    </section>
+    <div id="cEmpty" class="card" hidden></div>
+    <div id="cBody" hidden>
+      <section class="kpis" id="cKpis"></section>
+      <section class="card" id="secTiers">
+        <div class="head"><h2>Cost Tiers</h2><p>Parcels grouped by the amount owed or opening bid. Where winning bids are published, the average winning bid per tier is shown too.</p></div>
+        <div class="grid2"><div class="chart"><canvas id="cTiers"></canvas></div><div class="tablewrap"><table class="data" id="tTiers"></table></div></div>
+      </section>
+      <section class="card" id="secHistory">
+        <div class="head"><h2>Auction History</h2><p>Every sale on file for this county. The left chart counts parcels per sale; the right one shows the average winning bid where it was published.</p></div>
+        <div class="grid2"><div class="chart short"><canvas id="cHist"></canvas></div><div class="chart short"><canvas id="cHistBid"></canvas></div></div>
+        <div class="tablewrap tall mt"><table class="data sortable" id="tHist"></table></div>
+      </section>
+      <section class="card" id="secMap">
+        <div class="head"><h2>Location</h2><p>Parcels in the auction picked above, placed where the source published coordinates. Dot size follows the winning bid or the amount owed.</p></div>
+        <div id="cMap" class="map" role="img" aria-label="Map of parcels"></div>
+        <p class="muted small" id="mapNote"></p>
+      </section>
+      <section class="card" id="parcels">
+        <div class="head"><h2>All Parcels</h2><p>Every parcel in the auction picked above. Click a column header to sort and a row for details. <b>Multiple</b> is the winning bid divided by the opening bid.</p></div>
+        <div class="filters gridbar">
+          <input id="fSearch" type="search" placeholder="Search parcel, owner, address or buyer">
+          <button id="csvBtn" type="button">Download CSV</button>
+        </div>
+        <div class="tablewrap tall"><table class="data sortable" id="parcelTable"></table></div>
+        <p class="muted small" id="tableNote"></p>
+      </section>
+    </div>
+  </div>
+
+  <footer class="foot muted small" id="foot"></footer>
+</main>
+
+<dialog id="detail" class="detail"><div id="detailBody"></div><form method="dialog"><button class="closebtn" aria-label="Close">Close</button></form></dialog>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
