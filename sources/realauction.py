@@ -91,6 +91,14 @@ class Site:
 
     def calendar(self, year, month):
         txt = self.get(f"/index.cfm?zaction=USER&zmethod=CALENDAR&selCalDate={month:02d}/01/{year}")
+        if "CALBOX" not in txt:
+            # a first visit sometimes answers with an interstitial that sets a cookie; try once more with the jar warmed
+            time.sleep(PAUSE)
+            txt = self.get(f"/index.cfm?zaction=USER&zmethod=CALENDAR&selCalDate={month:02d}/01/{year}")
+        if "CALBOX" not in txt and not getattr(self, "_debugged", False):
+            self._debugged = True
+            t = re.search(r"<title>(.*?)</title>", txt, re.S)
+            print(f"  realauction/{self.base}: no calendar in the page (title: {(t.group(1).strip() if t else '')[:60]!r}, {len(txt)} chars, starts {txt[:160]!r})")
         days = []
         for day, body in CALBOX.findall(txt):
             lab = CALLABEL.search(body)
