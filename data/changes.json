@@ -1,7 +1,250 @@
 {
- "generated": "2026-10-18T22:31:56+00:00",
- "previous": "2026-10-18T22:29:59+00:00",
+ "generated": "2026-10-18T22:47:35+00:00",
+ "previous": "2026-10-18T22:31:56+00:00",
  "newUpcoming": [
+  {
+   "fips": "12091",
+   "state": "FL",
+   "name": "Okaloosa County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 18,
+   "page": "https://www.bid4assets.com/OkaloosaFL/listings"
+  },
+  {
+   "fips": "55079",
+   "state": "WI",
+   "name": "Milwaukee County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 68,
+   "page": "https://www.bid4assets.com/MilwaukeeSheriffSales/listings"
+  },
+  {
+   "fips": "22015",
+   "state": "LA",
+   "name": "Bossier Parish",
+   "date": "2026-10-21",
+   "kind": "posted",
+   "parcels": 50,
+   "page": "https://www.bid4assets.com/BossierSheriff/listings"
+  },
+  {
+   "fips": "22019",
+   "state": "LA",
+   "name": "Calcasieu Parish",
+   "date": "2026-10-21",
+   "kind": "posted",
+   "parcels": 111,
+   "page": "https://www.bid4assets.com/CPSOSheriff/listings"
+  },
+  {
+   "fips": "22033",
+   "state": "LA",
+   "name": "East Baton Rouge Parish",
+   "date": "2026-10-21",
+   "kind": "posted",
+   "parcels": 270,
+   "page": "https://www.bid4assets.com/ebrsosheriffsales"
+  },
+  {
+   "fips": "22073",
+   "state": "LA",
+   "name": "Ouachita Parish",
+   "date": "2026-10-21",
+   "kind": "posted",
+   "parcels": 67,
+   "page": "https://www.bid4assets.com/ouachitasheriffsales"
+  },
+  {
+   "fips": "22105",
+   "state": "LA",
+   "name": "Tangipahoa Parish",
+   "date": "2026-10-21",
+   "kind": "posted",
+   "parcels": 19,
+   "page": "https://www.bid4assets.com/tangipahoalasheriffsales"
+  },
+  {
+   "fips": "22115",
+   "state": "LA",
+   "name": "Vernon Parish",
+   "date": "2026-10-21",
+   "kind": "posted",
+   "parcels": 14,
+   "page": "https://www.bid4assets.com/vernonsheriffsales/listings"
+  },
+  {
+   "fips": "42037",
+   "state": "PA",
+   "name": "Columbia County",
+   "date": "2026-10-21",
+   "kind": "posted",
+   "parcels": 727,
+   "page": "https://www.bid4assets.com/ColumbiaPASheriffSales"
+  },
+  {
+   "fips": "12017",
+   "state": "FL",
+   "name": "Citrus County",
+   "date": "2026-10-22",
+   "kind": "posted",
+   "parcels": 314,
+   "page": "https://www.bid4assets.com/CitrusFLForeclosures/listings"
+  },
+  {
+   "fips": "42005",
+   "state": "PA",
+   "name": "Armstrong County",
+   "date": "2026-10-22",
+   "kind": "posted",
+   "parcels": 709,
+   "page": "https://www.bid4assets.com/armstrongpasheriffsales"
+  },
+  {
+   "fips": "42107",
+   "state": "PA",
+   "name": "Schuylkill County",
+   "date": "2026-10-23",
+   "kind": "posted",
+   "parcels": 1715,
+   "page": "https://www.bid4assets.com/SchuylkillSheriffSales"
+  },
+  {
+   "fips": "40109",
+   "state": "OK",
+   "name": "Oklahoma County",
+   "date": "2026-10-27",
+   "kind": "posted",
+   "parcels": 87,
+   "page": "https://www.bid4assets.com/OKCSheriff"
+  },
+  {
+   "fips": "22057",
+   "state": "LA",
+   "name": "Lafourche Parish",
+   "date": "2026-10-28",
+   "kind": "posted",
+   "parcels": 20,
+   "page": "https://www.bid4assets.com/LPSOSheriff"
+  },
+  {
+   "fips": "42015",
+   "state": "PA",
+   "name": "Bradford County",
+   "date": "2026-10-28",
+   "kind": "posted",
+   "parcels": 9,
+   "page": "https://www.bid4assets.com/BradfordPASheriffSales"
+  },
+  {
+   "fips": "42091",
+   "state": "PA",
+   "name": "Montgomery County",
+   "date": "2026-10-28",
+   "kind": "posted",
+   "parcels": 251,
+   "page": "https://www.bid4assets.com/MontcoPASheriff"
+  },
+  {
+   "fips": "42089",
+   "state": "PA",
+   "name": "Monroe County",
+   "date": "2026-10-29",
+   "kind": "posted",
+   "parcels": 4225,
+   "page": "https://www.bid4assets.com/monroecountysheriffsales"
+  },
+  {
+   "fips": "42063",
+   "state": "PA",
+   "name": "Indiana County",
+   "date": "2026-10-30",
+   "kind": "posted",
+   "parcels": 17,
+   "page": "https://www.bid4assets.com/IndianaCountyPASheriff/listings"
+  },
+  {
+   "fips": "53027",
+   "state": "WA",
+   "name": "Grays Harbor County",
+   "date": "2026-10-30",
+   "kind": "posted",
+   "parcels": 20,
+   "page": "https://www.bid4assets.com/graysharborsheriffsales"
+  },
+  {
+   "fips": "22113",
+   "state": "LA",
+   "name": "Vermilion Parish",
+   "date": "2026-11-04",
+   "kind": "posted",
+   "parcels": 15,
+   "page": "https://www.bid4assets.com/vermilionsheriffsales/listings"
+  },
+  {
+   "fips": "42007",
+   "state": "PA",
+   "name": "Beaver County",
+   "date": "2026-11-04",
+   "kind": "posted",
+   "parcels": 51,
+   "page": "https://www.bid4assets.com/beavercountypasheriffsales"
+  },
+  {
+   "fips": "42025",
+   "state": "PA",
+   "name": "Carbon County",
+   "date": "2026-11-11",
+   "kind": "posted",
+   "parcels": 80,
+   "page": "https://www.bid4assets.com/CarbonPASheriffSales"
+  },
+  {
+   "fips": "42055",
+   "state": "PA",
+   "name": "Franklin County",
+   "date": "2026-11-13",
+   "kind": "posted",
+   "parcels": 68,
+   "page": "https://www.bid4assets.com/franklincountypasheriffsales"
+  },
+  {
+   "fips": "22117",
+   "state": "LA",
+   "name": "Washington Parish",
+   "date": "2026-11-18",
+   "kind": "posted",
+   "parcels": 15,
+   "page": "https://www.bid4assets.com/WPSOSheriffSales/listings"
+  },
+  {
+   "fips": "42029",
+   "state": "PA",
+   "name": "Chester County",
+   "date": "2026-11-19",
+   "kind": "posted",
+   "parcels": 109,
+   "page": "https://www.bid4assets.com/chestercopasheriffsales"
+  },
+  {
+   "fips": "42047",
+   "state": "PA",
+   "name": "Elk County",
+   "date": "2026-11-19",
+   "kind": "posted",
+   "parcels": 3,
+   "page": "https://www.bid4assets.com/elksheriffsales"
+  },
+  {
+   "fips": "42001",
+   "state": "PA",
+   "name": "Adams County",
+   "date": "2026-11-20",
+   "kind": "posted",
+   "parcels": 49,
+   "page": "https://www.bid4assets.com/adamscountysheriffsales"
+  },
   {
    "fips": "39099",
    "state": "OH",
@@ -48,6 +291,15 @@
    "page": "https://liveauctions.govease.com/PA/paeriejudicial/1528/browsestandard"
   },
   {
+   "fips": "42009",
+   "state": "PA",
+   "name": "Bedford County",
+   "date": "2026-12-10",
+   "kind": "posted",
+   "parcels": 237,
+   "page": "https://www.bid4assets.com/BedfordPASheriffSales/listings"
+  },
+  {
    "fips": "12041",
    "state": "FL",
    "name": "Gilchrist County",
@@ -67,11 +319,28 @@
   }
  ],
  "newCounties": [
-  "48005",
-  "48037",
-  "48213",
-  "48217"
+  "12091",
+  "22015",
+  "22019",
+  "22033",
+  "22057",
+  "22073",
+  "22105",
+  "22113",
+  "22115",
+  "22117",
+  "40109",
+  "42001",
+  "42007",
+  "42015",
+  "42025",
+  "42029",
+  "42047",
+  "42055",
+  "42063",
+  "42091",
+  "55079"
  ],
- "parcelDelta": -5,
- "linkDelta": 4
+ "parcelDelta": 1803,
+ "linkDelta": 19
 }

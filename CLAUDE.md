@@ -62,7 +62,7 @@ GitHub Pages serves index.html / analyzer.html / sheet.html, which load that JSO
 - Adapter contract: a module in `sources/` with `NAME`, `LABEL`, `HOMEPAGE` and `fetch(counties)` that returns county
   records in the shape documented in `sources/__init__.py` (`auction(...)` and `parcel(...)` helpers, `get`,
   `get_json`, `money`). The dashboard needs no change for a new adapter; add its name to `sources.ADAPTERS`
-  (currently `atlanta`, `clark`, `michigan`, `realauction`, `govease`, `bid4assets`, `mvba`). GovEase (`sources/govease.py`)
+  (currently `atlanta`, `clark`, `michigan`, `realauction`, `govease`, `bid4assets`, `mvba`, `b4a_sheriff`). GovEase (`sources/govease.py`)
   is reachable from the GitHub runner and from Claude Code on the web, so it refreshes itself monthly; it publishes
   sale lists with starting bids (no results) for whichever auctions are open, in CO, TN, PA, TX, CA, IN, MO, WA, KS and
   OK. Bid4Assets (`sources/bid4assets.py`) covers the County Tax Sales calendar (CA, NV, WA, PA, MN, LA) with sale
@@ -70,20 +70,27 @@ GitHub Pages serves index.html / analyzer.html / sheet.html, which load that JSO
   a time because a Pennsylvania upset sale lists thousands of parcels. Its sheriff sale, Philadelphia and Florida
   (Okaloosa) channels are separate apps and are not read yet. MVBA Tax Sales (`sources/mvba.py`) reads the Texas
   online tax sales that MVBA conducts, open sales and about 3,000 past lots with final bids, through the site's JSON
-  API; MVBA's in-person sale list on mvbalaw.com refuses data-center addresses.
+  API; MVBA's in-person sale list on mvbalaw.com refuses data-center addresses. Bid4Assets sheriff's sales
+  (`sources/b4a_sheriff.py`) reads the 34 county and parish landing pages on bid4assets.com/sheriffsales (calendar API
+  plus the property table embedded in each sale day's page): upcoming lists with judgment amounts, plaintiffs and
+  defendants, and the last few days' outcomes, since a sale day's table disappears soon after the sale. Philadelphia
+  (bid4assets.com/philadelphia) is a different app whose calendar endpoint answers 500; it is the biggest piece not
+  yet read.
 - Deal score (`master.py`): value 40, property 20, market 15, competition 15, history 10; 70+ Strong, 50 to 69 Good,
   35 to 49 Fair, under 35 Weak.
 
 ## Data On File (As Of 2026-10-18, Night)
 
-55,857 parcels across 314 counties: FL 16,058 (35), PA 12,044 (10), MI 7,359 (79), CO 6,769 (20), GA 3,931 (24), OH
-3,501 (87), TX 3,076 (15), CA 1,591 (17), NV 1,156 (7), WA 181 (7), TN 124 (10), MN 35 (1), MO 31 (1), LA 1 (1). By
-adapter: realauction 19,612, bid4assets 13,234, govease 8,018, michigan 7,359, atlanta 3,931, mvba 2,967, clark 736.
-Raw portal dumps live in `data/raw/realauction/<fips>-<kind>.json` (135 files: FL taxdeed 35, FL foreclosure 9, CO
-taxdeed 4, OH sheriff 87). GovEase data is sale lists only (every auction open on the platform that day, with starting
-bids and sale dates); Bid4Assets data is sale lists plus results with winning bids for the past sales on its calendar;
-MVBA data is the open Texas sales plus every past online sale since 2017 with final bids. All three refresh themselves
-on the monthly run and with `python3 fetch_all.py --source govease` (or `bid4assets`, `mvba`).
+57,660 parcels across 335 counties: FL 16,126 (36), PA 13,041 (19), MI 7,359 (79), CO 6,769 (20), GA 3,931 (24), OH
+3,501 (87), TX 3,076 (15), CA 1,591 (17), NV 1,156 (7), LA 582 (10), WA 183 (7), TN 124 (10), OK 87 (1), WI 68 (1), MN
+35 (1), MO 31 (1). By adapter: realauction 19,612, bid4assets 13,234, govease 8,018, michigan 7,359, atlanta 3,931,
+mvba 2,967, b4a_sheriff 1,803, clark 736. Raw portal dumps live in `data/raw/realauction/<fips>-<kind>.json` (135
+files: FL taxdeed 35, FL foreclosure 9, CO taxdeed 4, OH sheriff 87). GovEase data is sale lists only (every auction
+open on the platform that day, with starting bids and sale dates); Bid4Assets data is sale lists plus results with
+winning bids for the past sales on its calendar; MVBA data is the open Texas sales plus every past online sale since
+2017 with final bids; Bid4Assets sheriff's sales are upcoming lists with judgment amounts plus the last few days'
+outcomes. All four refresh themselves on the monthly run and with `python3 fetch_all.py --source govease` (or
+`bid4assets`, `mvba`, `b4a_sheriff`).
 
 ## RealAuction Portals: The Main Open Work
 

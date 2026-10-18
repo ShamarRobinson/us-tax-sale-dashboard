@@ -168,11 +168,19 @@ monthly digest.
 
 ## 8. Ideas Not Yet Built
 
-- More statewide platforms as adapters: Bid4Assets, Zeus Auction, SRI, GovDeals, LienHub, Grant Street, Civic Source,
-  and the treasurer sites that publish PDF lists (reuse the Atlanta tracker's `ga_common.py` approach for PDF and
-  OCR). GovEase was added on 2026-10-18 (`sources/govease.py`); Bid4Assets, LienHub and GovDeals answered a cloud
-  address with 403 when probed that day, and Zeus Auction and Civic Source failed TLS through the cloud proxy, so
-  those may need the Mac too.
+- More statewide platforms as adapters: Zeus Auction and SRI (TLS fails through the cloud proxy), LienHub and Grant
+  Street (403 to a cloud address), GovDeals, Civic Source, and the treasurer sites that publish PDF lists (reuse the
+  Atlanta tracker's `ga_common.py` approach for PDF and OCR). Added on 2026-10-18 from Claude Code on the web:
+  GovEase (`sources/govease.py`), Bid4Assets county tax sales (`sources/bid4assets.py`), MVBA Texas online tax sales
+  (`sources/mvba.py`) and Bid4Assets sheriff's sales (`sources/b4a_sheriff.py`). Bid4Assets answers only browser user
+  agents (a plain Mozilla string, nothing appended).
+- Philadelphia sheriff sales on Bid4Assets (https://www.bid4assets.com/philadelphia, tax and mortgage foreclosure
+  sales, hundreds of properties a month): a different landing app whose calendar endpoint
+  (`/api/storefront/seller/calendar/index`) answers 500 for `/philadelphia`; find its own listing route before writing
+  the adapter.
+- The monthly workflow's fetch step takes about two hours because `sources/realauction.py` probes every portal from
+  the runner with a 40 second timeout; a per-host budget or skipping hosts that answered the marketing page last
+  time would cut it to minutes.
 - Deeper history for the big Florida foreclosure portals (rerun with the default 3 months or more from the Mac).
 - Per-county alert subscriptions and a saved-search feature in the analyzer.
 - A Street View and assessor photo cache like the Atlanta tracker's `photo_store.py` for counties without photos.
