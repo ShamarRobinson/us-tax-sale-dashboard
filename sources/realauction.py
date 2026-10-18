@@ -39,7 +39,7 @@ CALBOX = re.compile(r'<div[^>]*class=[\'"]CALBOX[^\'"]*[\'"][^>]*dayid=[\'"](\d\
 CALLABEL = re.compile(r'class=[\'"]CALTEXT[\'"][^>]*>(.*?)<br>|<b>(.*?)</b>', re.S)
 CALNUM = re.compile(r'class=[\'"](CALACT|CALSCH)[\'"]>\s*(\d+)')
 ITEM = re.compile(r'id="AITEM_(\d+)"(.*?)(?=<div[^>]*id="AITEM_|$)', re.S)
-ROW = re.compile(r'<t[dh][^>]*class="AD_LBL"[^>]*>(.*?)</t[dh]>\s*<td[^>]*class="AD_DTA"[^>]*>(.*?)(?:</td>|$)', re.S)
+ROW = re.compile(r'<t[dh][^>]*class="AD_LBL"[^>]*>(.*?)</t[dh]>\s*<td[^>]*class="AD_DTA[^"]*"[^>]*>(.*?)(?:</td>|$)', re.S)
 HREF = re.compile(r'href="([^"]+)"')
 MAXP = re.compile(r'id="max(WA|CA)">\s*(\d+)')
 PAGEOF = re.compile(r"page \d+ of (\d+)")
@@ -291,7 +291,7 @@ def to_parcel(aid, rows, extra, st, base, upcoming, links=None):
 PARCEL_ISH = re.compile(r"\d")
 # Row labels the portals use for the parcel number (Hernando says "Parcel Key", Miami-Dade "Folio", and so on).
 PARCEL_KEYS = ["Parcel ID", "Parcel Number", "Parcel Key", "Parcel No", "Parcel #", "Parcel", "Folio", "Folio Number", "Alternate Key", "Alt Key",
-               "Tax ID", "Property ID", "Account #", "Account Number", "Strap", "PIN"]
+               "Tax ID", "Property ID", "Account #", "Account Number", "Strap", "PIN", "Schedule Number", "Schedule #", "Schedule No"]
 
 
 def clean_auctions(auctions, kind):

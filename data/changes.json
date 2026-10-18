@@ -1,40 +1,32 @@
 {
- "generated": "2026-10-18T15:41:35+00:00",
- "previous": "2026-10-18T15:27:55+00:00",
+ "generated": "2026-10-18T15:48:34+00:00",
+ "previous": "2026-10-18T15:41:35+00:00",
  "newUpcoming": [
   {
-   "fips": "12063",
-   "state": "FL",
-   "name": "Jackson County",
+   "fips": "08041",
+   "state": "CO",
+   "name": "El Paso County",
    "date": "2026-10-27",
    "kind": "posted",
-   "parcels": 295,
-   "page": "https://jackson.realtaxdeed.com"
+   "parcels": 36,
+   "page": "https://elpasoco.treasurersdeedsale.realtaxdeed.com"
   },
   {
-   "fips": "12133",
-   "state": "FL",
-   "name": "Washington County",
-   "date": "2026-10-27",
+   "fips": "08123",
+   "state": "CO",
+   "name": "Weld County",
+   "date": "2026-10-28",
    "kind": "posted",
-   "parcels": 308,
-   "page": "https://washington.realtaxdeed.com"
-  },
-  {
-   "fips": "12041",
-   "state": "FL",
-   "name": "Gilchrist County",
-   "date": "2026-12-15",
-   "kind": "posted",
-   "parcels": 16,
-   "page": "https://gilchrist.realtaxdeed.com"
+   "parcels": 7,
+   "page": "https://weld.treasurersdeedsale.realtaxdeed.com"
   }
  ],
  "newCounties": [
-  "12041",
-  "12063",
-  "12133"
+  "08001",
+  "08031",
+  "08041",
+  "08123"
  ],
- "parcelDelta": 619,
- "linkDelta": 2
+ "parcelDelta": 53,
+ "linkDelta": 0
 }

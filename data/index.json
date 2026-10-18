@@ -1,10 +1,10 @@
 {
- "generated": "2026-10-18T15:41:35+00:00",
+ "generated": "2026-10-18T15:48:34+00:00",
  "counties": 3222,
  "states": 52,
- "withData": 155,
- "parcels": 23691,
- "auctions": 1202,
+ "withData": 159,
+ "parcels": 23744,
+ "auctions": 1226,
  "withTaxSaleLink": 1017,
  "withSite": 3061,
  "withSheriffLink": 378,
@@ -145,6 +145,15 @@
    "page": "https://santarosa.realtaxdeed.com"
   },
   {
+   "fips": "08041",
+   "state": "CO",
+   "name": "El Paso County",
+   "date": "2026-10-27",
+   "kind": "posted",
+   "parcels": 36,
+   "page": "https://elpasoco.treasurersdeedsale.realtaxdeed.com"
+  },
+  {
    "fips": "12063",
    "state": "FL",
    "name": "Jackson County",
@@ -170,6 +179,15 @@
    "kind": "posted",
    "parcels": 308,
    "page": "https://washington.realtaxdeed.com"
+  },
+  {
+   "fips": "08123",
+   "state": "CO",
+   "name": "Weld County",
+   "date": "2026-10-28",
+   "kind": "posted",
+   "parcels": 7,
+   "page": "https://weld.treasurersdeedsale.realtaxdeed.com"
   },
   {
    "fips": "12031",
@@ -782,12 +800,16 @@
   "realauction": {
    "label": "RealAuction portals (Florida Clerk tax deed and foreclosure sales, Ohio and Texas sheriff sales)",
    "url": "https://www.realauction.com/",
-   "counties": 35,
+   "counties": 39,
    "ok": true,
    "checked": "2026-10-18T10:12:21+00:00"
   }
  },
  "countiesWithData": [
+  "08001",
+  "08031",
+  "08041",
+  "08123",
   "12001",
   "12005",
   "12011",

@@ -14,7 +14,7 @@ window.__p = (async () => {
   const KIND = window.__kind || "taxdeed", MONTHS_BACK = window.__monthsBack || 3, PAUSE = 150, GEN = window.__gen;
   const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
   const TOK = [["@A", '<div class="'], ["@B", "</div>"], ["@C", 'class="'], ["@D", "<div>"], ["@E", "AUCTION"], ["@F", "</td><td"], ["@G", "</td></tr>"], ["@H", "<tr><td "], ["@I", "table"], ["@J", 'p_back="NextCheck='], ["@K", 'style="Display:none"'], ["@L", "/index.cfm?zaction=auction&zmethod=details&AID="]];
-  const PK = ["Parcel ID", "Parcel Number", "Parcel Key", "Parcel No", "Parcel #", "Parcel", "Folio", "Folio Number", "Alternate Key", "Alt Key", "Tax ID", "Property ID", "Account #", "Account Number", "Strap", "PIN"];
+  const PK = ["Parcel ID", "Parcel Number", "Parcel Key", "Parcel No", "Parcel #", "Parcel", "Folio", "Folio Number", "Alternate Key", "Alt Key", "Tax ID", "Property ID", "Account #", "Account Number", "Strap", "PIN", "Schedule Number", "Schedule #", "Schedule No"];
   const get = async (u) => { const r = await fetch(u, { credentials: "include", headers: { "X-Requested-With": "XMLHttpRequest" } }); return r.text(); };
   const money = (s) => { if (s == null) return null; const v = parseFloat(String(s).replace(/[$,]/g, "")); return isNaN(v) ? null : v; };
   const strip = (h) => h.replace(/<[^>]+>/g, " ").replace(/&amp;/g, "&").replace(/&nbsp;/g, " ").replace(/\s+/g, " ").trim();
@@ -42,7 +42,7 @@ window.__p = (async () => {
     let m;
     while ((m = re.exec(h))) {
       const rows = {}, links = {}, extra = [];
-      const rr = /<t[dh][^>]*class="AD_LBL"[^>]*>([\s\S]*?)<\/t[dh]>\s*<td[^>]*class="AD_DTA"[^>]*>([\s\S]*?)(?:<\/td>|$)/g;
+      const rr = /<t[dh][^>]*class="AD_LBL"[^>]*>([\s\S]*?)<\/t[dh]>\s*<td[^>]*class="AD_DTA[^"]*"[^>]*>([\s\S]*?)(?:<\/td>|$)/g;
       let r;
       while ((r = rr.exec(m[2]))) {
         const k = strip(r[1]).replace(/:$/, "").trim(), v = strip(r[2]), href = (r[2].match(/href="([^"]+)"/) || [])[1];
