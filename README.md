@@ -116,5 +116,7 @@ git add data && git commit -m "Collect RealAuction portal data" && git push
 - `index.html`, `app.js`, `county.js`, `common.js`, `style.css`: the dashboard (national and state views, county pages, shared helpers).
 - `sheet.html`: the printable deal sheet.
 - `notify.py`: the monthly email digest.
+- `collect_local.py`, `tools/realauction_console.js`, `tools/ingest_chunks.py`, `tools/decode_dumps.py`: collecting the RealAuction portals from a home connection or a browser tab.
+- `CLAUDE.md` and `docs/HANDOFF.md`: working notes and the full handoff for continuing the project in [Claude Code](https://claude.com/claude-code); `.claude/commands/` holds the `/collect` and `/ship` commands.
 
 Informational only and not affiliated with any county, state or auction platform. Rules change (several states rewrote theirs after *Tyler v. Hennepin County* in 2023) and lists change up to the day of the sale; always confirm with the county.
