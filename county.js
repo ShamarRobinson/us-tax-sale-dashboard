@@ -57,7 +57,7 @@
     }
     D = cache[c.fips];
     if (!D) {
-      try { D = await fetch(`data/counties/${c.fips}.json`).then((r) => r.json()); cache[c.fips] = D; }
+      try { D = await fetch(`data/counties/${c.fips}.json`, { cache: "no-cache" }).then((r) => r.json()); cache[c.fips] = D; }
       catch (e) { $("cEmpty").hidden = false; $("cEmpty").innerHTML = `<p class="muted">The county data file could not be loaded.</p>`; return; }
     }
     const srcLink = $("cSrcLink"); if (srcLink && D.sourceUrl) srcLink.href = D.sourceUrl;

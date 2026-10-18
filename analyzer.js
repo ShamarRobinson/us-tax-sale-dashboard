@@ -21,7 +21,7 @@
 
   // ---------- load ----------
   async function load() {
-    const [m, idx, reg] = await Promise.all([fetch("data/master.json").then((r) => r.json()), fetch("data/index.json").then((r) => r.json()).catch(() => null), fetch("data/registry.json").then((r) => r.json()).catch(() => null)]);
+    const [m, idx, reg] = await Promise.all([fetch("data/master.json", { cache: "no-cache" }).then((r) => r.json()), fetch("data/index.json", { cache: "no-cache" }).then((r) => r.json()).catch(() => null), fetch("data/registry.json", { cache: "no-cache" }).then((r) => r.json()).catch(() => null)]);
     if (reg) { for (const s of reg.states) STATES[s.abbr] = s; COUNTIES = reg.counties; }
     const cols = m.columns;
     ALL = m.rows.map((r) => { const o = {}; cols.forEach((c, i) => { o[c] = r[i]; }); return o; });

@@ -12,10 +12,10 @@
   // ---------- loading ----------
   async function load() {
     const [reg, topo, idx, chg] = await Promise.all([
-      fetch("data/registry.json").then((r) => r.json()),
+      fetch("data/registry.json", { cache: "no-cache" }).then((r) => r.json()),
       fetch("ref/us-counties-10m.json").then((r) => r.json()),
-      fetch("data/index.json").then((r) => r.json()).catch(() => null),
-      fetch("data/changes.json").then((r) => r.json()).catch(() => null),
+      fetch("data/index.json", { cache: "no-cache" }).then((r) => r.json()).catch(() => null),
+      fetch("data/changes.json", { cache: "no-cache" }).then((r) => r.json()).catch(() => null),
     ]);
     REG = reg; TOPO = topo; INDEX = idx; CHANGES = chg;
     for (const s of reg.states) STATES[s.abbr] = s;
@@ -271,7 +271,7 @@
   const matchesP = (p, ts) => ts.every((t) => { if (t.num) { const v = PN[t.num](p); if (v == null || isNaN(v)) return false; return t.op === ">" ? v > t.v : t.op === "<" ? v < t.v : t.op === ">=" ? v >= t.v : t.op === "<=" ? v <= t.v : Math.abs(v - t.v) < 0.5; } if (t.f) return String(PF[t.f](p) || "").toLowerCase().includes(t.s); return hay(p).includes(t.s); });
   async function loadMaster() {
     if (MASTER) return MASTER;
-    const m = await fetch("data/master.json").then((r) => r.json());
+    const m = await fetch("data/master.json", { cache: "no-cache" }).then((r) => r.json());
     MASTER = m.rows.map((r) => { const o = {}; m.columns.forEach((c, i) => { o[c] = r[i]; }); o.stateName = STATES[o.state]?.name || ""; return o; });
     return MASTER;
   }
