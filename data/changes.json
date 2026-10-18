@@ -1,101 +1,101 @@
 {
- "generated": "2026-10-18T17:07:38+00:00",
- "previous": "2026-10-18T17:02:18+00:00",
+ "generated": "2026-10-18T17:12:37+00:00",
+ "previous": "2026-10-18T17:07:38+00:00",
  "newUpcoming": [
   {
-   "fips": "39079",
+   "fips": "39001",
    "state": "OH",
-   "name": "Jackson County",
-   "date": "2026-10-23",
+   "name": "Adams County",
+   "date": "2026-10-19",
    "kind": "posted",
-   "parcels": 9,
-   "page": "https://jackson.sheriffsaleauction.ohio.gov"
+   "parcels": 8,
+   "page": "https://adams.sheriffsaleauction.ohio.gov"
   },
   {
-   "fips": "39019",
+   "fips": "39067",
    "state": "OH",
-   "name": "Carroll County",
-   "date": "2026-11-03",
+   "name": "Harrison County",
+   "date": "2026-10-19",
    "kind": "posted",
-   "parcels": 3,
-   "page": "https://carroll.sheriffsaleauction.ohio.gov"
+   "parcels": 8,
+   "page": "https://harrison.sheriffsaleauction.ohio.gov"
   },
   {
-   "fips": "39069",
+   "fips": "39175",
    "state": "OH",
-   "name": "Henry County",
-   "date": "2026-11-03",
-   "kind": "posted",
-   "parcels": 6,
-   "page": "https://henry.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "39047",
-   "state": "OH",
-   "name": "Fayette County",
-   "date": "2026-11-04",
+   "name": "Wyandot County",
+   "date": "2026-10-19",
    "kind": "posted",
    "parcels": 11,
-   "page": "https://fayette.sheriffsaleauction.ohio.gov"
+   "page": "https://wyandot.sheriffsaleauction.ohio.gov"
   },
   {
-   "fips": "39073",
+   "fips": "39105",
    "state": "OH",
-   "name": "Hocking County",
-   "date": "2026-11-06",
+   "name": "Meigs County",
+   "date": "2026-10-23",
    "kind": "posted",
-   "parcels": 6,
-   "page": "https://hocking.sheriffsaleauction.ohio.gov"
+   "parcels": 8,
+   "page": "https://meigs.sheriffsaleauction.ohio.gov"
   },
   {
-   "fips": "39127",
+   "fips": "39125",
    "state": "OH",
-   "name": "Perry County",
-   "date": "2026-11-06",
+   "name": "Paulding County",
+   "date": "2026-10-29",
    "kind": "posted",
-   "parcels": 6,
-   "page": "https://perry.sheriffsaleauction.ohio.gov"
+   "parcels": 7,
+   "page": "https://paulding.sheriffsaleauction.ohio.gov"
   },
   {
-   "fips": "39137",
+   "fips": "39161",
    "state": "OH",
-   "name": "Putnam County",
-   "date": "2026-11-09",
+   "name": "Van Wert County",
+   "date": "2026-10-29",
    "kind": "posted",
-   "parcels": 12,
-   "page": "https://putnam.sheriffsaleauction.ohio.gov"
+   "parcels": 16,
+   "page": "https://vanwert.sheriffsaleauction.ohio.gov"
   },
   {
-   "fips": "39053",
+   "fips": "39121",
    "state": "OH",
-   "name": "Gallia County",
+   "name": "Noble County",
    "date": "2026-11-13",
    "kind": "posted",
-   "parcels": 4,
-   "page": "https://gallia.sheriffsaleauction.ohio.gov"
+   "parcels": 2,
+   "page": "https://noble.sheriffsaleauction.ohio.gov"
   },
   {
-   "fips": "39131",
+   "fips": "39065",
    "state": "OH",
-   "name": "Pike County",
-   "date": "2026-11-20",
+   "name": "Hardin County",
+   "date": "2026-11-17",
    "kind": "posted",
-   "parcels": 9,
-   "page": "https://pike.sheriffsaleauction.ohio.gov"
+   "parcels": 11,
+   "page": "https://hardin.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39117",
+   "state": "OH",
+   "name": "Morrow County",
+   "date": "2026-12-18",
+   "kind": "posted",
+   "parcels": 6,
+   "page": "https://morrow.sheriffsaleauction.ohio.gov"
   }
  ],
  "newCounties": [
-  "39019",
-  "39031",
-  "39047",
-  "39053",
-  "39069",
-  "39073",
-  "39079",
-  "39127",
-  "39131",
-  "39137"
+  "39001",
+  "39065",
+  "39067",
+  "39075",
+  "39105",
+  "39117",
+  "39121",
+  "39125",
+  "39161",
+  "39175"
  ],
- "parcelDelta": 77,
- "linkDelta": 7
+ "parcelDelta": 81,
+ "linkDelta": 9
 }

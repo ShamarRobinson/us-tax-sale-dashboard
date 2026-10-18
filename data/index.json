@@ -1,11 +1,11 @@
 {
- "generated": "2026-10-18T17:07:38+00:00",
+ "generated": "2026-10-18T17:12:37+00:00",
  "counties": 3222,
  "states": 52,
- "withData": 234,
- "parcels": 27158,
- "auctions": 1879,
- "withTaxSaleLink": 1074,
+ "withData": 244,
+ "parcels": 27239,
+ "auctions": 1932,
+ "withTaxSaleLink": 1083,
  "withSite": 3061,
  "withSheriffLink": 378,
  "withAssessorLink": 1545,
@@ -28,6 +28,15 @@
    "page": "https://miamidade.realtaxdeed.com"
   },
   {
+   "fips": "39001",
+   "state": "OH",
+   "name": "Adams County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 8,
+   "page": "https://adams.sheriffsaleauction.ohio.gov"
+  },
+  {
    "fips": "39007",
    "state": "OH",
    "name": "Ashtabula County",
@@ -44,6 +53,15 @@
    "kind": "posted",
    "parcels": 984,
    "page": "https://cuyahoga.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39067",
+   "state": "OH",
+   "name": "Harrison County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 8,
+   "page": "https://harrison.sheriffsaleauction.ohio.gov"
   },
   {
    "fips": "39077",
@@ -71,6 +89,15 @@
    "kind": "posted",
    "parcels": 69,
    "page": "https://stark.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39175",
+   "state": "OH",
+   "name": "Wyandot County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 11,
+   "page": "https://wyandot.sheriffsaleauction.ohio.gov"
   },
   {
    "fips": "12005",
@@ -397,6 +424,15 @@
    "page": "https://knox.sheriffsaleauction.ohio.gov"
   },
   {
+   "fips": "39105",
+   "state": "OH",
+   "name": "Meigs County",
+   "date": "2026-10-23",
+   "kind": "posted",
+   "parcels": 8,
+   "page": "https://meigs.sheriffsaleauction.ohio.gov"
+  },
+  {
    "fips": "39113",
    "state": "OH",
    "name": "Montgomery County",
@@ -577,6 +613,15 @@
    "page": "https://jefferson.sheriffsaleauction.ohio.gov"
   },
   {
+   "fips": "39125",
+   "state": "OH",
+   "name": "Paulding County",
+   "date": "2026-10-29",
+   "kind": "posted",
+   "parcels": 7,
+   "page": "https://paulding.sheriffsaleauction.ohio.gov"
+  },
+  {
    "fips": "39157",
    "state": "OH",
    "name": "Tuscarawas County",
@@ -584,6 +629,15 @@
    "kind": "posted",
    "parcels": 10,
    "page": "https://tuscarawas.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39161",
+   "state": "OH",
+   "name": "Van Wert County",
+   "date": "2026-10-29",
+   "kind": "posted",
+   "parcels": 16,
+   "page": "https://vanwert.sheriffsaleauction.ohio.gov"
   },
   {
    "fips": "26001",
@@ -1288,6 +1342,15 @@
    "page": "https://gallia.sheriffsaleauction.ohio.gov"
   },
   {
+   "fips": "39121",
+   "state": "OH",
+   "name": "Noble County",
+   "date": "2026-11-13",
+   "kind": "posted",
+   "parcels": 2,
+   "page": "https://noble.sheriffsaleauction.ohio.gov"
+  },
+  {
    "fips": "39135",
    "state": "OH",
    "name": "Preble County",
@@ -1313,6 +1376,15 @@
    "kind": "posted",
    "parcels": 5,
    "page": "https://ashland.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39065",
+   "state": "OH",
+   "name": "Hardin County",
+   "date": "2026-11-17",
+   "kind": "posted",
+   "parcels": 11,
+   "page": "https://hardin.sheriffsaleauction.ohio.gov"
   },
   {
    "fips": "12083",
@@ -1385,6 +1457,15 @@
    "kind": "posted",
    "parcels": 16,
    "page": "https://gilchrist.realtaxdeed.com"
+  },
+  {
+   "fips": "39117",
+   "state": "OH",
+   "name": "Morrow County",
+   "date": "2026-12-18",
+   "kind": "posted",
+   "parcels": 6,
+   "page": "https://morrow.sheriffsaleauction.ohio.gov"
   }
  ],
  "sources": {
@@ -1412,7 +1493,7 @@
   "realauction": {
    "label": "RealAuction portals (Florida Clerk tax deed and foreclosure sales, Ohio and Texas sheriff sales)",
    "url": "https://www.realauction.com/",
-   "counties": 114,
+   "counties": 124,
    "ok": true,
    "checked": "2026-10-18T10:12:21+00:00"
   }
@@ -1577,6 +1658,7 @@
   "26163",
   "26165",
   "32003",
+  "39001",
   "39003",
   "39005",
   "39007",
@@ -1608,9 +1690,12 @@
   "39059",
   "39061",
   "39063",
+  "39065",
+  "39067",
   "39069",
   "39071",
   "39073",
+  "39075",
   "39077",
   "39079",
   "39081",
@@ -1625,11 +1710,15 @@
   "39099",
   "39101",
   "39103",
+  "39105",
   "39107",
   "39109",
   "39113",
+  "39117",
   "39119",
+  "39121",
   "39123",
+  "39125",
   "39127",
   "39129",
   "39131",
@@ -1647,10 +1736,12 @@
   "39155",
   "39157",
   "39159",
+  "39161",
   "39165",
   "39167",
   "39169",
   "39171",
-  "39173"
+  "39173",
+  "39175"
  ]
 }
