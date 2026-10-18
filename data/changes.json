@@ -1,8 +1,30 @@
 {
- "generated": "2026-10-18T14:01:45+00:00",
- "previous": "2026-10-18T13:58:33+00:00",
- "newUpcoming": [],
- "newCounties": [],
- "parcelDelta": 0,
- "linkDelta": 0
+ "generated": "2026-10-18T14:16:55+00:00",
+ "previous": "2026-10-18T14:01:45+00:00",
+ "newUpcoming": [
+  {
+   "fips": "12069",
+   "state": "FL",
+   "name": "Lake County",
+   "date": "2026-11-03",
+   "kind": "posted",
+   "parcels": 76,
+   "page": "https://lake.realtaxdeed.com"
+  },
+  {
+   "fips": "12097",
+   "state": "FL",
+   "name": "Osceola County",
+   "date": "2026-11-10",
+   "kind": "posted",
+   "parcels": 187,
+   "page": "https://osceola.realtaxdeed.com"
+  }
+ ],
+ "newCounties": [
+  "12069",
+  "12097"
+ ],
+ "parcelDelta": 263,
+ "linkDelta": 2
 }

@@ -1,11 +1,11 @@
 {
- "generated": "2026-10-18T14:01:45+00:00",
+ "generated": "2026-10-18T14:16:55+00:00",
  "counties": 3222,
  "states": 52,
- "withData": 134,
- "parcels": 19082,
- "auctions": 971,
- "withTaxSaleLink": 1001,
+ "withData": 136,
+ "parcels": 19345,
+ "auctions": 990,
+ "withTaxSaleLink": 1003,
  "withSite": 3061,
  "withSheriffLink": 378,
  "withAssessorLink": 1545,
@@ -514,6 +514,15 @@
    "page": "https://www.tax-sale.info/listings/catalog/2952"
   },
   {
+   "fips": "12069",
+   "state": "FL",
+   "name": "Lake County",
+   "date": "2026-11-03",
+   "kind": "posted",
+   "parcels": 76,
+   "page": "https://lake.realtaxdeed.com"
+  },
+  {
    "fips": "13063",
    "state": "GA",
    "name": "Clayton County",
@@ -539,6 +548,15 @@
    "kind": "posted",
    "parcels": 347,
    "page": "https://sarasota.realtaxdeed.com"
+  },
+  {
+   "fips": "12097",
+   "state": "FL",
+   "name": "Osceola County",
+   "date": "2026-11-10",
+   "kind": "posted",
+   "parcels": 187,
+   "page": "https://osceola.realtaxdeed.com"
   },
   {
    "fips": "12117",
@@ -602,7 +620,7 @@
   "realauction": {
    "label": "RealAuction portals (Florida Clerk tax deed and foreclosure sales, Ohio and Texas sheriff sales)",
    "url": "https://www.realauction.com/",
-   "counties": 14,
+   "counties": 16,
    "ok": true,
    "checked": "2026-10-18T10:12:21+00:00"
   }
@@ -611,10 +629,12 @@
   "12011",
   "12031",
   "12057",
+  "12069",
   "12071",
   "12083",
   "12086",
   "12095",
+  "12097",
   "12099",
   "12101",
   "12103",
