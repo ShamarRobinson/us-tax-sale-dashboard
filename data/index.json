@@ -1,11 +1,11 @@
 {
- "generated": "2026-10-18T16:56:33+00:00",
+ "generated": "2026-10-18T17:02:18+00:00",
  "counties": 3222,
  "states": 52,
- "withData": 214,
- "parcels": 27002,
- "auctions": 1781,
- "withTaxSaleLink": 1060,
+ "withData": 224,
+ "parcels": 27081,
+ "auctions": 1831,
+ "withTaxSaleLink": 1067,
  "withSite": 3061,
  "withSheriffLink": 378,
  "withAssessorLink": 1545,
@@ -280,6 +280,15 @@
    "page": "https://belmont.sheriffsaleauction.ohio.gov"
   },
   {
+   "fips": "39015",
+   "state": "OH",
+   "name": "Brown County",
+   "date": "2026-10-22",
+   "kind": "posted",
+   "parcels": 11,
+   "page": "https://brown.sheriffsaleauction.ohio.gov"
+  },
+  {
    "fips": "39017",
    "state": "OH",
    "name": "Butler County",
@@ -359,6 +368,15 @@
    "kind": "posted",
    "parcels": 206,
    "page": "https://franklin.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39059",
+   "state": "OH",
+   "name": "Guernsey County",
+   "date": "2026-10-23",
+   "kind": "posted",
+   "parcels": 7,
+   "page": "https://guernsey.sheriffsaleauction.ohio.gov"
   },
   {
    "fips": "39083",
@@ -521,6 +539,24 @@
    "kind": "posted",
    "parcels": 162,
    "page": "https://pasco.realtaxdeed.com"
+  },
+  {
+   "fips": "39039",
+   "state": "OH",
+   "name": "Defiance County",
+   "date": "2026-10-29",
+   "kind": "posted",
+   "parcels": 8,
+   "page": "https://defiance.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39071",
+   "state": "OH",
+   "name": "Highland County",
+   "date": "2026-10-29",
+   "kind": "posted",
+   "parcels": 7,
+   "page": "https://highland.sheriffsaleauction.ohio.gov"
   },
   {
    "fips": "39081",
@@ -1045,6 +1081,15 @@
    "page": "https://sarasota.realtaxdeed.com"
   },
   {
+   "fips": "39107",
+   "state": "OH",
+   "name": "Mercer County",
+   "date": "2026-11-04",
+   "kind": "posted",
+   "parcels": 13,
+   "page": "https://mercer.sheriffsaleauction.ohio.gov"
+  },
+  {
    "fips": "39141",
    "state": "OH",
    "name": "Ross County",
@@ -1135,6 +1180,15 @@
    "page": "https://osceola.realtaxdeed.com"
   },
   {
+   "fips": "39021",
+   "state": "OH",
+   "name": "Champaign County",
+   "date": "2026-11-10",
+   "kind": "posted",
+   "parcels": 12,
+   "page": "https://champaign.sheriffsaleauction.ohio.gov"
+  },
+  {
    "fips": "39043",
    "state": "OH",
    "name": "Erie County",
@@ -1153,6 +1207,24 @@
    "page": "https://seminole.realtaxdeed.com"
   },
   {
+   "fips": "39033",
+   "state": "OH",
+   "name": "Crawford County",
+   "date": "2026-11-13",
+   "kind": "posted",
+   "parcels": 3,
+   "page": "https://crawford.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39135",
+   "state": "OH",
+   "name": "Preble County",
+   "date": "2026-11-13",
+   "kind": "posted",
+   "parcels": 7,
+   "page": "https://preble.sheriffsaleauction.ohio.gov"
+  },
+  {
    "fips": "12035",
    "state": "FL",
    "name": "Flagler County",
@@ -1160,6 +1232,15 @@
    "kind": "posted",
    "parcels": 77,
    "page": "https://flagler.realtaxdeed.com"
+  },
+  {
+   "fips": "39005",
+   "state": "OH",
+   "name": "Ashland County",
+   "date": "2026-11-17",
+   "kind": "posted",
+   "parcels": 5,
+   "page": "https://ashland.sheriffsaleauction.ohio.gov"
   },
   {
    "fips": "12083",
@@ -1250,7 +1331,7 @@
   "realauction": {
    "label": "RealAuction portals (Florida Clerk tax deed and foreclosure sales, Ohio and Texas sheriff sales)",
    "url": "https://www.realauction.com/",
-   "counties": 94,
+   "counties": 104,
    "ok": true,
    "checked": "2026-10-18T10:12:21+00:00"
   }
@@ -1416,17 +1497,22 @@
   "26165",
   "32003",
   "39003",
+  "39005",
   "39007",
   "39009",
   "39011",
   "39013",
+  "39015",
   "39017",
+  "39021",
   "39023",
   "39025",
   "39027",
   "39029",
+  "39033",
   "39035",
   "39037",
+  "39039",
   "39041",
   "39043",
   "39045",
@@ -1434,8 +1520,10 @@
   "39051",
   "39055",
   "39057",
+  "39059",
   "39061",
   "39063",
+  "39071",
   "39077",
   "39081",
   "39083",
@@ -1449,12 +1537,14 @@
   "39099",
   "39101",
   "39103",
+  "39107",
   "39109",
   "39113",
   "39119",
   "39123",
   "39129",
   "39133",
+  "39135",
   "39139",
   "39141",
   "39143",
@@ -1469,6 +1559,7 @@
   "39165",
   "39167",
   "39169",
+  "39171",
   "39173"
  ]
 }
