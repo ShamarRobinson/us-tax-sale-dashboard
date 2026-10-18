@@ -1,16 +1,16 @@
 {
- "generated": "2026-10-18T22:20:28+00:00",
+ "generated": "2026-10-18T22:31:56+00:00",
  "counties": 3222,
  "states": 52,
- "withData": 321,
- "parcels": 52890,
- "auctions": 2514,
- "withTaxSaleLink": 1135,
+ "withData": 330,
+ "parcels": 55857,
+ "auctions": 2615,
+ "withTaxSaleLink": 1141,
  "withSite": 3061,
  "withSheriffLink": 378,
  "withAssessorLink": 1545,
- "withPhotos": 124,
- "photos": 16901,
+ "withPhotos": 132,
+ "photos": 19825,
  "systems": {
   "deed": 1294,
   "lien": 912,
@@ -1288,6 +1288,24 @@
    "page": "https://liveauctions.govease.com/TN/gibsonhumboldt/1097/browsestandard"
   },
   {
+   "fips": "48073",
+   "state": "TX",
+   "name": "Cherokee County",
+   "date": "2026-11-03",
+   "kind": "posted",
+   "parcels": 272,
+   "page": "https://www.mvbataxsales.com/auction/cherokee-county-online-property-tax-sale-november-3-2026-186/"
+  },
+  {
+   "fips": "48091",
+   "state": "TX",
+   "name": "Comal County",
+   "date": "2026-11-03",
+   "kind": "posted",
+   "parcels": 254,
+   "page": "https://www.mvbataxsales.com/auction/comal-county-online-property-tax-sale-november-3-2026-185/"
+  },
+  {
    "fips": "48121",
    "state": "TX",
    "name": "Denton County",
@@ -1304,6 +1322,15 @@
    "kind": "posted",
    "parcels": 22,
    "page": "https://liveauctions.govease.com/TX/txgrayson/1280/browsestandard"
+  },
+  {
+   "fips": "48183",
+   "state": "TX",
+   "name": "Gregg County",
+   "date": "2026-11-03",
+   "kind": "posted",
+   "parcels": 78,
+   "page": "https://www.mvbataxsales.com/auction/gladewater-isdcity-of-gladewaterpine-tree-isd-gregg-county-online-property-tax-sale-november-3-2026-187/"
   },
   {
    "fips": "48309",
@@ -1790,33 +1817,6 @@
    "kind": "posted",
    "parcels": 9,
    "page": "https://pike.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "39099",
-   "state": "OH",
-   "name": "Mahoning County",
-   "date": "2026-11-24",
-   "kind": "posted",
-   "parcels": 45,
-   "page": "https://mahoning.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "08097",
-   "state": "CO",
-   "name": "Pitkin County",
-   "date": "2026-11-25",
-   "kind": "posted",
-   "parcels": 6,
-   "page": "https://liveauctions.govease.com/CO/copitkinforeclosure/1327/browsestandard"
-  },
-  {
-   "fips": "12001",
-   "state": "FL",
-   "name": "Alachua County",
-   "date": "2026-12-01",
-   "kind": "posted",
-   "parcels": 42,
-   "page": "https://alachua.realtaxdeed.com"
   }
  ],
  "sources": {
@@ -1861,6 +1861,13 @@
    "counties": 35,
    "ok": true,
    "checked": "2026-10-18T22:20:27+00:00"
+  },
+  "mvba": {
+   "label": "MVBA Tax Sales (Texas online property tax sales)",
+   "url": "https://www.mvbataxsales.com/",
+   "counties": 9,
+   "ok": true,
+   "checked": "2026-10-18T22:31:55+00:00"
   }
  },
  "countiesWithData": [
@@ -2172,8 +2179,17 @@
   "47163",
   "47179",
   "47181",
+  "48005",
+  "48037",
+  "48053",
+  "48073",
+  "48091",
   "48121",
   "48181",
+  "48183",
+  "48203",
+  "48213",
+  "48217",
   "48309",
   "48363",
   "48367",

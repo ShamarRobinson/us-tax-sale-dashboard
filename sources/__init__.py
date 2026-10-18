@@ -67,4 +67,4 @@ def money(s):
         return None
 
 
-ADAPTERS = ["atlanta", "clark", "michigan", "realauction", "govease", "bid4assets"]
+ADAPTERS = ["atlanta", "clark", "michigan", "realauction", "govease", "bid4assets", "mvba"]

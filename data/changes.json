@@ -1,117 +1,77 @@
 {
- "generated": "2026-10-18T22:20:28+00:00",
- "previous": "2026-10-18T21:24:48+00:00",
+ "generated": "2026-10-18T22:31:56+00:00",
+ "previous": "2026-10-18T22:29:59+00:00",
  "newUpcoming": [
   {
-   "fips": "42041",
+   "fips": "39099",
+   "state": "OH",
+   "name": "Mahoning County",
+   "date": "2026-11-24",
+   "kind": "posted",
+   "parcels": 45,
+   "page": "https://mahoning.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "08097",
+   "state": "CO",
+   "name": "Pitkin County",
+   "date": "2026-11-25",
+   "kind": "posted",
+   "parcels": 6,
+   "page": "https://liveauctions.govease.com/CO/copitkinforeclosure/1327/browsestandard"
+  },
+  {
+   "fips": "12001",
+   "state": "FL",
+   "name": "Alachua County",
+   "date": "2026-12-01",
+   "kind": "posted",
+   "parcels": 42,
+   "page": "https://alachua.realtaxdeed.com"
+  },
+  {
+   "fips": "42017",
    "state": "PA",
-   "name": "Cumberland County",
-   "date": "2026-10-23",
+   "name": "Bucks County",
+   "date": "2026-12-08",
    "kind": "posted",
-   "parcels": 405,
-   "page": "https://www.bid4assets.com/storefront/CumberlandPATaxSaleSep26"
+   "parcels": 2,
+   "page": "https://liveauctions.govease.com/PA/pabucksjudicial/1554/browsestandard"
   },
   {
-   "fips": "53053",
-   "state": "WA",
-   "name": "Pierce County",
-   "date": "2026-10-26",
-   "kind": "posted",
-   "parcels": 123,
-   "page": "https://www.bid4assets.com/storefront/PierceFDOct26"
-  },
-  {
-   "fips": "06085",
-   "state": "CA",
-   "name": "Santa Clara County",
-   "date": "2026-11-02",
-   "kind": "posted",
-   "parcels": 52,
-   "page": "https://www.bid4assets.com/storefront/SantaClaraOct26"
-  },
-  {
-   "fips": "06017",
-   "state": "CA",
-   "name": "El Dorado County",
-   "date": "2026-11-06",
-   "kind": "posted",
-   "parcels": 143,
-   "page": "https://www.bid4assets.com/storefront/ElDoradoNov26"
-  },
-  {
-   "fips": "06009",
-   "state": "CA",
-   "name": "Calaveras County",
-   "date": "2026-11-16",
-   "kind": "posted",
-   "parcels": 41,
-   "page": "https://www.bid4assets.com/storefront/CalaverasNov26"
-  },
-  {
-   "fips": "53051",
-   "state": "WA",
-   "name": "Pend Oreille County",
-   "date": "2026-11-17",
-   "kind": "posted",
-   "parcels": 5,
-   "page": "https://www.bid4assets.com/storefront/PendOreilleNov26"
-  },
-  {
-   "fips": "27153",
-   "state": "MN",
-   "name": "Todd County",
-   "date": "2026-11-18",
-   "kind": "posted",
-   "parcels": 35,
-   "page": "https://www.bid4assets.com/storefront/ToddMNOct26MarketValueAuction"
-  },
-  {
-   "fips": "42107",
+   "fips": "42049",
    "state": "PA",
-   "name": "Schuylkill County",
-   "date": "2026-11-19",
+   "name": "Erie County",
+   "date": "2026-12-09",
    "kind": "posted",
-   "parcels": 1565,
-   "page": "https://www.bid4assets.com/storefront/SchuylkillPATaxSaleJun26"
+   "parcels": 48,
+   "page": "https://liveauctions.govease.com/PA/paeriejudicial/1528/browsestandard"
+  },
+  {
+   "fips": "12041",
+   "state": "FL",
+   "name": "Gilchrist County",
+   "date": "2026-12-15",
+   "kind": "posted",
+   "parcels": 16,
+   "page": "https://gilchrist.realtaxdeed.com"
+  },
+  {
+   "fips": "39117",
+   "state": "OH",
+   "name": "Morrow County",
+   "date": "2026-12-18",
+   "kind": "posted",
+   "parcels": 6,
+   "page": "https://morrow.sheriffsaleauction.ohio.gov"
   }
  ],
  "newCounties": [
-  "06007",
-  "06009",
-  "06017",
-  "06035",
-  "06039",
-  "06049",
-  "06053",
-  "06085",
-  "06087",
-  "06093",
-  "06099",
-  "06109",
-  "06111",
-  "06113",
-  "22121",
-  "27153",
-  "32001",
-  "32005",
-  "32007",
-  "32015",
-  "32023",
-  "32510",
-  "42009",
-  "42011",
-  "42037",
-  "42041",
-  "42051",
-  "42089",
-  "42107",
-  "53011",
-  "53027",
-  "53039",
-  "53049",
-  "53051",
-  "53053"
+  "48005",
+  "48037",
+  "48213",
+  "48217"
  ],
- "parcelDelta": 13234,
- "linkDelta": 25
+ "parcelDelta": -5,
+ "linkDelta": 4
 }
