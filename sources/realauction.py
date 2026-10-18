@@ -310,6 +310,11 @@ def clean_auctions(auctions, kind):
             info = p.get("parcelInfo") or ""
             if info.endswith(("folio=", "parcel=", "id=", "=")):
                 p.pop("parcelInfo", None)
+            fa = p.get("fullAddress") or ""
+            z = re.search(r"(\d{5})(?:-?\d{4})?\s*$", fa)
+            if z:
+                p["zip"] = z.group(1)  # nine-digit ZIPs without a hyphen used to yield the last five digits
+                p["fullAddress"] = re.sub(r"\s*,\s*(\d{5})(\d{4})\s*$", r", \1", fa)
             if p.get("type"):
                 types.add(p["type"].strip().upper())
         label = (a.get("label") or "").lower()

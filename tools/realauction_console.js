@@ -84,7 +84,7 @@ window.__p = (async () => {
         caseNo: rows["Case #"] || rows["Case Number"] || null, certificate: rows["Certificate #"] || null,
         address: addr, fullAddress: [addr, city].filter(Boolean).join(", ") || null,
         area: city ? city.split(",")[0].trim().replace(/\b\w+/g, (w) => w[0] + w.slice(1).toLowerCase()) : null,
-        zip: city ? (city.match(/(\d{5})(?:-\d{4})?\s*$/) || [])[1] : null,
+        zip: city ? (city.match(/(\d{5})(?:-?\d{4})?\s*$/) || [])[1] : null,
         minBid: money(rows["Opening Bid"]), value: money(rows["Assessed Value"] || rows["Appraised Value"]), judgment: money(rows["Final Judgment Amount"]),
         type: rows["Auction Type"] || null, owner: rows["Owner"] || rows["Defendant"] || null, plaintiff: rows["Plaintiff"] || null,
         parcelInfo: PK.map((k) => links[k]).find(Boolean) || null,
