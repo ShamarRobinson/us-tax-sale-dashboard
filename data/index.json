@@ -1,11 +1,11 @@
 {
- "generated": "2026-10-18T16:45:03+00:00",
+ "generated": "2026-10-18T16:51:02+00:00",
  "counties": 3222,
  "states": 52,
- "withData": 194,
- "parcels": 26719,
- "auctions": 1647,
- "withTaxSaleLink": 1042,
+ "withData": 204,
+ "parcels": 26881,
+ "auctions": 1713,
+ "withTaxSaleLink": 1051,
  "withSite": 3061,
  "withSheriffLink": 378,
  "withAssessorLink": 1545,
@@ -44,6 +44,15 @@
    "kind": "posted",
    "parcels": 984,
    "page": "https://cuyahoga.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39077",
+   "state": "OH",
+   "name": "Huron County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 26,
+   "page": "https://huron.sheriffsaleauction.ohio.gov"
   },
   {
    "fips": "39085",
@@ -217,6 +226,15 @@
    "page": "https://lucas.sheriffsaleauction.ohio.gov"
   },
   {
+   "fips": "39143",
+   "state": "OH",
+   "name": "Sandusky County",
+   "date": "2026-10-21",
+   "kind": "posted",
+   "parcels": 10,
+   "page": "https://sandusky.sheriffsaleauction.ohio.gov"
+  },
+  {
    "fips": "39169",
    "state": "OH",
    "name": "Wayne County",
@@ -242,6 +260,15 @@
    "kind": "posted",
    "parcels": 394,
    "page": "https://orange.realtaxdeed.com"
+  },
+  {
+   "fips": "39013",
+   "state": "OH",
+   "name": "Belmont County",
+   "date": "2026-10-22",
+   "kind": "posted",
+   "parcels": 15,
+   "page": "https://belmont.sheriffsaleauction.ohio.gov"
   },
   {
    "fips": "39017",
@@ -305,6 +332,15 @@
    "kind": "posted",
    "parcels": 206,
    "page": "https://franklin.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39083",
+   "state": "OH",
+   "name": "Knox County",
+   "date": "2026-10-23",
+   "kind": "posted",
+   "parcels": 42,
+   "page": "https://knox.sheriffsaleauction.ohio.gov"
   },
   {
    "fips": "39113",
@@ -424,6 +460,15 @@
    "page": "https://miami.sheriffsaleauction.ohio.gov"
   },
   {
+   "fips": "39159",
+   "state": "OH",
+   "name": "Union County",
+   "date": "2026-10-28",
+   "kind": "posted",
+   "parcels": 4,
+   "page": "https://union.sheriffsaleauction.ohio.gov"
+  },
+  {
    "fips": "12051",
    "state": "FL",
    "name": "Hendry County",
@@ -440,6 +485,15 @@
    "kind": "posted",
    "parcels": 162,
    "page": "https://pasco.realtaxdeed.com"
+  },
+  {
+   "fips": "39081",
+   "state": "OH",
+   "name": "Jefferson County",
+   "date": "2026-10-29",
+   "kind": "posted",
+   "parcels": 16,
+   "page": "https://jefferson.sheriffsaleauction.ohio.gov"
   },
   {
    "fips": "39157",
@@ -946,6 +1000,15 @@
    "page": "https://sarasota.realtaxdeed.com"
   },
   {
+   "fips": "39141",
+   "state": "OH",
+   "name": "Ross County",
+   "date": "2026-11-04",
+   "kind": "posted",
+   "parcels": 18,
+   "page": "https://ross.sheriffsaleauction.ohio.gov"
+  },
+  {
    "fips": "39145",
    "state": "OH",
    "name": "Scioto County",
@@ -989,6 +1052,15 @@
    "kind": "posted",
    "parcels": 23,
    "page": "https://fairfield.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39167",
+   "state": "OH",
+   "name": "Washington County",
+   "date": "2026-11-06",
+   "kind": "posted",
+   "parcels": 13,
+   "page": "https://washington.sheriffsaleauction.ohio.gov"
   },
   {
    "fips": "12097",
@@ -1106,7 +1178,7 @@
   "realauction": {
    "label": "RealAuction portals (Florida Clerk tax deed and foreclosure sales, Ohio and Texas sheriff sales)",
    "url": "https://www.realauction.com/",
-   "counties": 74,
+   "counties": 84,
    "ok": true,
    "checked": "2026-10-18T10:12:21+00:00"
   }
@@ -1273,6 +1345,8 @@
   "32003",
   "39003",
   "39007",
+  "39009",
+  "39013",
   "39017",
   "39023",
   "39025",
@@ -1286,6 +1360,9 @@
   "39057",
   "39061",
   "39063",
+  "39077",
+  "39081",
+  "39083",
   "39085",
   "39089",
   "39093",
@@ -1296,14 +1373,19 @@
   "39109",
   "39113",
   "39119",
+  "39129",
   "39133",
   "39139",
+  "39141",
+  "39143",
   "39145",
   "39151",
   "39153",
   "39155",
   "39157",
+  "39159",
   "39165",
+  "39167",
   "39169",
   "39173"
  ]

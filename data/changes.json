@@ -1,110 +1,92 @@
 {
- "generated": "2026-10-18T16:45:03+00:00",
- "previous": "2026-10-18T16:38:32+00:00",
+ "generated": "2026-10-18T16:51:02+00:00",
+ "previous": "2026-10-18T16:45:03+00:00",
  "newUpcoming": [
   {
-   "fips": "39007",
+   "fips": "39077",
    "state": "OH",
-   "name": "Ashtabula County",
+   "name": "Huron County",
    "date": "2026-10-19",
    "kind": "posted",
-   "parcels": 30,
-   "page": "https://ashtabula.sheriffsaleauction.ohio.gov"
+   "parcels": 26,
+   "page": "https://huron.sheriffsaleauction.ohio.gov"
   },
   {
-   "fips": "39029",
+   "fips": "39143",
    "state": "OH",
-   "name": "Columbiana County",
-   "date": "2026-10-20",
-   "kind": "posted",
-   "parcels": 22,
-   "page": "https://columbiana.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "39063",
-   "state": "OH",
-   "name": "Hancock County",
-   "date": "2026-10-20",
-   "kind": "posted",
-   "parcels": 13,
-   "page": "https://hancock.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "39169",
-   "state": "OH",
-   "name": "Wayne County",
+   "name": "Sandusky County",
    "date": "2026-10-21",
    "kind": "posted",
-   "parcels": 7,
-   "page": "https://wayne.sheriffsaleauction.ohio.gov"
+   "parcels": 10,
+   "page": "https://sandusky.sheriffsaleauction.ohio.gov"
   },
   {
-   "fips": "39119",
+   "fips": "39013",
    "state": "OH",
-   "name": "Muskingum County",
+   "name": "Belmont County",
    "date": "2026-10-22",
    "kind": "posted",
-   "parcels": 70,
-   "page": "https://muskingum.sheriffsaleauction.ohio.gov"
+   "parcels": 15,
+   "page": "https://belmont.sheriffsaleauction.ohio.gov"
   },
   {
-   "fips": "39157",
+   "fips": "39083",
    "state": "OH",
-   "name": "Tuscarawas County",
+   "name": "Knox County",
+   "date": "2026-10-23",
+   "kind": "posted",
+   "parcels": 42,
+   "page": "https://knox.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39159",
+   "state": "OH",
+   "name": "Union County",
+   "date": "2026-10-28",
+   "kind": "posted",
+   "parcels": 4,
+   "page": "https://union.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39081",
+   "state": "OH",
+   "name": "Jefferson County",
    "date": "2026-10-29",
    "kind": "posted",
-   "parcels": 10,
-   "page": "https://tuscarawas.sheriffsaleauction.ohio.gov"
+   "parcels": 16,
+   "page": "https://jefferson.sheriffsaleauction.ohio.gov"
   },
   {
-   "fips": "39101",
+   "fips": "39141",
    "state": "OH",
-   "name": "Marion County",
-   "date": "2026-10-30",
-   "kind": "posted",
-   "parcels": 18,
-   "page": "https://marion.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "39145",
-   "state": "OH",
-   "name": "Scioto County",
+   "name": "Ross County",
    "date": "2026-11-04",
    "kind": "posted",
-   "parcels": 16,
-   "page": "https://scioto.sheriffsaleauction.ohio.gov"
+   "parcels": 18,
+   "page": "https://ross.sheriffsaleauction.ohio.gov"
   },
   {
-   "fips": "39055",
+   "fips": "39167",
    "state": "OH",
-   "name": "Geauga County",
-   "date": "2026-11-05",
+   "name": "Washington County",
+   "date": "2026-11-06",
    "kind": "posted",
-   "parcels": 17,
-   "page": "https://geauga.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "39043",
-   "state": "OH",
-   "name": "Erie County",
-   "date": "2026-11-10",
-   "kind": "posted",
-   "parcels": 24,
-   "page": "https://erie.sheriffsaleauction.ohio.gov"
+   "parcels": 13,
+   "page": "https://washington.sheriffsaleauction.ohio.gov"
   }
  ],
  "newCounties": [
-  "39007",
-  "39029",
-  "39043",
-  "39055",
-  "39063",
-  "39101",
-  "39119",
-  "39145",
-  "39157",
-  "39169"
+  "39009",
+  "39013",
+  "39077",
+  "39081",
+  "39083",
+  "39129",
+  "39141",
+  "39143",
+  "39159",
+  "39167"
  ],
- "parcelDelta": 227,
- "linkDelta": 6
+ "parcelDelta": 162,
+ "linkDelta": 9
 }
