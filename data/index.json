@@ -1,11 +1,11 @@
 {
- "generated": "2026-10-18T17:12:37+00:00",
+ "generated": "2026-10-18T17:15:29+00:00",
  "counties": 3222,
  "states": 52,
- "withData": 244,
- "parcels": 27239,
- "auctions": 1932,
- "withTaxSaleLink": 1083,
+ "withData": 246,
+ "parcels": 27245,
+ "auctions": 1938,
+ "withTaxSaleLink": 1085,
  "withSite": 3061,
  "withSheriffLink": 378,
  "withAssessorLink": 1545,
@@ -1493,7 +1493,7 @@
   "realauction": {
    "label": "RealAuction portals (Florida Clerk tax deed and foreclosure sales, Ohio and Texas sheriff sales)",
    "url": "https://www.realauction.com/",
-   "counties": 124,
+   "counties": 126,
    "ok": true,
    "checked": "2026-10-18T10:12:21+00:00"
   }
@@ -1713,7 +1713,9 @@
   "39105",
   "39107",
   "39109",
+  "39111",
   "39113",
+  "39115",
   "39117",
   "39119",
   "39121",
