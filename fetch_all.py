@@ -172,6 +172,16 @@ def main(offline=False):
     if kept:
         print(f"kept {kept} county files from the previous run")
 
+    # the footer counts what is on file per source, so counties collected in a browser (collect_local.py) count too
+    for name in sources.ADAPTERS:
+        n = sum(1 for r in records.values() if r.get("source") == name)
+        st = source_status.get(name)
+        if st is None:
+            mod = importlib.import_module(f"sources.{name}")
+            st = source_status[name] = dict(label=mod.LABEL, url=mod.HOMEPAGE, counties=0, ok=False)
+        if n:
+            st.update(counties=n, ok=True)
+
     # write county files and fold summaries into the registry
     for fips, rec in records.items():
         c = by_fips.get(fips)

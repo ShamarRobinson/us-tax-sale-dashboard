@@ -192,6 +192,37 @@ def to_parcel(aid, rows, extra, st, base, upcoming, links=None):
     )
 
 
+PARCEL_ISH = re.compile(r"\d")
+
+
+def clean_auctions(auctions, kind):
+    """Tidy portal output in place: drop link text stored as a parcel number ("Property Appraiser", "MULTIPLE PARCELS"),
+    drop appraiser links with no folio, tag every sale with the portal it came from, and type a sale day by what was
+    sold on it (Florida tax deed portals also list the Clerk's foreclosure sales)."""
+    for a in auctions:
+        a["portal"] = kind
+        types = set()
+        for p in a.get("parcels") or []:
+            v = p.get("parcel")
+            if v and not PARCEL_ISH.search(v):
+                if "multiple" in v.lower():
+                    p["note"] = "Multiple parcels; see the listing"
+                p.pop("parcel", None)
+            info = p.get("parcelInfo") or ""
+            if info.endswith(("folio=", "parcel=", "id=", "=")):
+                p.pop("parcelInfo", None)
+            if p.get("type"):
+                types.add(p["type"].strip().upper())
+        label = (a.get("label") or "").lower()
+        if kind == "taxdeed" and (types == {"FORECLOSURE"} or (not types and label.startswith("foreclosure"))):
+            a["saleKind"] = "foreclosure"
+        elif kind == "taxdeed":
+            a["saleKind"] = "taxdeed"
+        else:
+            a["saleKind"] = a.get("saleKind") or kind
+    return auctions
+
+
 def collect_day(site, day, kind, base, upcoming):
     """All items for one sale date, with status."""
     site.get(f"/index.cfm?zaction=AUCTION&Zmethod=PREVIEW&AUCTIONDATE={day}")
@@ -276,6 +307,7 @@ def fetch(counties):
                                     saleKind=kind, status="upcoming" if upcoming else "past", parcels=ps))
             if not aucs:
                 continue
+            clean_auctions(aucs, kind)
             rec = out.setdefault(fips, dict(fips=fips, source=NAME, sourceUrl=base, lastChecked=checked, lastChanged=None, info={}, auctions=[]))
             rec["auctions"].extend(aucs)
             info = rec["info"]

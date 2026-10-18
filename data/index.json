@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-18T13:58:33+00:00",
+ "generated": "2026-10-18T14:01:45+00:00",
  "counties": 3222,
  "states": 52,
  "withData": 134,
@@ -595,14 +595,14 @@
   "michigan": {
    "label": "Tax-Sale.info (Michigan Public Land Auction)",
    "url": "https://www.tax-sale.info/",
-   "counties": 0,
-   "ok": false,
+   "counties": 79,
+   "ok": true,
    "error": "https://www.tax-sale.info/auctions: HTTP Error 404: Not Found"
   },
   "realauction": {
    "label": "RealAuction portals (Florida Clerk tax deed and foreclosure sales, Ohio and Texas sheriff sales)",
    "url": "https://www.realauction.com/",
-   "counties": 0,
+   "counties": 14,
    "ok": true,
    "checked": "2026-10-18T10:12:21+00:00"
   }

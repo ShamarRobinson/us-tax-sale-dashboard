@@ -1,60 +1,8 @@
 {
- "generated": "2026-10-18T13:58:33+00:00",
- "previous": "2026-10-18T13:08:19+00:00",
- "newUpcoming": [
-  {
-   "fips": "12086",
-   "state": "FL",
-   "name": "Miami-Dade County",
-   "date": "2026-10-19",
-   "kind": "posted",
-   "parcels": 2042,
-   "page": "https://miamidade.realtaxdeed.com"
-  },
-  {
-   "fips": "12101",
-   "state": "FL",
-   "name": "Pasco County",
-   "date": "2026-10-29",
-   "kind": "posted",
-   "parcels": 162,
-   "page": "https://pasco.realtaxdeed.com"
-  },
-  {
-   "fips": "12115",
-   "state": "FL",
-   "name": "Sarasota County",
-   "date": "2026-11-04",
-   "kind": "posted",
-   "parcels": 347,
-   "page": "https://sarasota.realtaxdeed.com"
-  },
-  {
-   "fips": "12117",
-   "state": "FL",
-   "name": "Seminole County",
-   "date": "2026-11-12",
-   "kind": "posted",
-   "parcels": 50,
-   "page": "https://seminole.realtaxdeed.com"
-  },
-  {
-   "fips": "12083",
-   "state": "FL",
-   "name": "Marion County",
-   "date": "2026-11-18",
-   "kind": "posted",
-   "parcels": 867,
-   "page": "https://marion.realtaxdeed.com"
-  }
- ],
- "newCounties": [
-  "12083",
-  "12086",
-  "12101",
-  "12115",
-  "12117"
- ],
- "parcelDelta": 3468,
- "linkDelta": 2
+ "generated": "2026-10-18T14:01:45+00:00",
+ "previous": "2026-10-18T13:58:33+00:00",
+ "newUpcoming": [],
+ "newCounties": [],
+ "parcelDelta": 0,
+ "linkDelta": 0
 }

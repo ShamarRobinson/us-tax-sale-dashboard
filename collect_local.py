@@ -59,7 +59,8 @@ def merge(fips, county, kind, base, auctions, checked):
     rec = load_json(path) if os.path.exists(path) else None
     if not rec or rec.get("source") != realauction.NAME:
         rec = dict(fips=fips, source=realauction.NAME, sourceUrl=base, lastChecked=checked, lastChanged=None, info={}, auctions=[])
-    kept = [a for a in rec.get("auctions", []) if a.get("saleKind") != kind]
+    realauction.clean_auctions(auctions, kind)
+    kept = [a for a in rec.get("auctions", []) if (a.get("portal") or a.get("saleKind")) != kind]
     new = sorted(kept + auctions, key=lambda a: a.get("date") or "", reverse=True)
     before = json.dumps(rec.get("auctions", []), sort_keys=True)
     rec.update(name=county["name"], state=county["state"], lastChecked=checked, auctions=new)
@@ -100,7 +101,7 @@ def collect(counties, checked):
         c = next(x for x in counties if x["fips"] == fips)
         got = realauction.fetch([c])
         rec = got.get(fips)
-        aucs = [a for a in (rec or {}).get("auctions", []) if a.get("saleKind") == kind]
+        aucs = [a for a in (rec or {}).get("auctions", []) if (a.get("portal") or a.get("saleKind")) == kind]
         if not aucs:
             continue
         merge(fips, c, kind, base, aucs, checked)
