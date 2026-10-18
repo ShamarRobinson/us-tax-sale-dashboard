@@ -1,11 +1,11 @@
 {
- "generated": "2026-10-18T15:16:17+00:00",
+ "generated": "2026-10-18T15:27:55+00:00",
  "counties": 3222,
  "states": 52,
- "withData": 149,
- "parcels": 22838,
- "auctions": 1137,
- "withTaxSaleLink": 1013,
+ "withData": 152,
+ "parcels": 23072,
+ "auctions": 1155,
+ "withTaxSaleLink": 1015,
  "withSite": 3061,
  "withSheriffLink": 378,
  "withAssessorLink": 1545,
@@ -161,6 +161,15 @@
    "kind": "posted",
    "parcels": 566,
    "page": "https://duval.realtaxdeed.com"
+  },
+  {
+   "fips": "12051",
+   "state": "FL",
+   "name": "Hendry County",
+   "date": "2026-10-29",
+   "kind": "posted",
+   "parcels": 80,
+   "page": "https://hendry.realtaxdeed.com"
   },
   {
    "fips": "12101",
@@ -649,6 +658,15 @@
    "page": "https://sarasota.realtaxdeed.com"
   },
   {
+   "fips": "12121",
+   "state": "FL",
+   "name": "Suwannee County",
+   "date": "2026-11-05",
+   "kind": "posted",
+   "parcels": 77,
+   "page": "https://suwannee.realtaxdeed.com"
+  },
+  {
    "fips": "12097",
    "state": "FL",
    "name": "Osceola County",
@@ -665,6 +683,15 @@
    "kind": "posted",
    "parcels": 50,
    "page": "https://seminole.realtaxdeed.com"
+  },
+  {
+   "fips": "12035",
+   "state": "FL",
+   "name": "Flagler County",
+   "date": "2026-11-17",
+   "kind": "posted",
+   "parcels": 77,
+   "page": "https://flagler.realtaxdeed.com"
   },
   {
    "fips": "12083",
@@ -728,7 +755,7 @@
   "realauction": {
    "label": "RealAuction portals (Florida Clerk tax deed and foreclosure sales, Ohio and Texas sheriff sales)",
    "url": "https://www.realauction.com/",
-   "counties": 29,
+   "counties": 32,
    "ok": true,
    "checked": "2026-10-18T10:12:21+00:00"
   }
@@ -741,6 +768,8 @@
   "12019",
   "12031",
   "12033",
+  "12035",
+  "12051",
   "12053",
   "12055",
   "12057",
@@ -762,6 +791,7 @@
   "12113",
   "12115",
   "12117",
+  "12121",
   "12127",
   "13013",
   "13015",

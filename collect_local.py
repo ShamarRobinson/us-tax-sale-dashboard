@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """Collect RealAuction portal data from an ordinary connection and fold it into the tracker.
 
-The Florida Clerk tax deed and foreclosure portals ({county}.realtaxdeed.com, {county}.realforeclose.com), Ohio's
-sheriff sale portal and the Texas sheriff sale portals answer data-center addresses (GitHub's runners included) with a
+The RealAuction portals (Florida Clerk tax deed and foreclosure sales, Arizona and Colorado tax deed sales, Ohio and
+Texas sheriff sales; the full roster is realauction.SITES) answer data-center addresses (GitHub's runners included) with a
 marketing page instead of the auction calendar. Run this on a home or office machine instead, then commit what it wrote:
 
-    python3 collect_local.py                      # every Florida, Ohio and Texas county with a portal (slow: hundreds of sites)
+    python3 collect_local.py                      # every county with a portal (slow: hundreds of sites)
     python3 collect_local.py --state FL           # one state
     python3 collect_local.py --county duval,orange,hillsborough   # a few counties by name (any state)
     python3 collect_local.py --import             # fold browser dumps in data/raw/realauction/*.json into county files
@@ -44,13 +44,7 @@ def load_json(path):
 
 
 def info_for(kind, state, base):
-    if kind == "taxdeed":
-        return dict(run="Clerk of the Court (tax deeds)", page=base, note="Tax deed auctions are read from the Clerk's RealTaxDeed portal; foreclosure sales from the Clerk's RealForeclose portal where it exists.")
-    if kind == "sheriff" and state == "OH":
-        return dict(run="County Sheriff (foreclosure and tax foreclosure sales)", page=base, note="Sales are read from Ohio's statewide online sheriff sale portal.")
-    if kind == "sheriff":
-        return dict(run="County Sheriff or Constable (tax sales, resales and foreclosure sales)", page=base, note="Sales are read from the county's online sheriff sale portal.")
-    return dict(page=base, note="Foreclosure sales are read from the Clerk's RealForeclose portal.")
+    return realauction.info_for(kind, state, base)
 
 
 def merge(fips, county, kind, base, auctions, checked):
@@ -123,7 +117,7 @@ def main():
         n = import_raw(by_fips, checked)
         print(f"imported {n} dump(s)")
     else:
-        wanted = [c for c in counties if c["state"] in ("FL", "OH", "TX")]
+        wanted = [c for c in counties if c["state"] in ("AZ", "CO", "FL", "NJ", "OH", "TX")]
         if a.state:
             wanted = [c for c in wanted if c["state"] == a.state.upper()]
         if a.county:

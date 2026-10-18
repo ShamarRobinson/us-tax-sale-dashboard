@@ -29,7 +29,7 @@ import urllib.request
 from . import UA, parcel, auction, money
 
 NAME = "realauction"
-LABEL = "RealAuction portals (Florida Clerk tax deed and foreclosure sales, Ohio and Texas sheriff sales)"
+LABEL = "RealAuction portals (Florida, Arizona and Colorado tax deed sales, Clerk and Public Trustee foreclosure sales, Ohio and Texas sheriff sales)"
 HOMEPAGE = "https://www.realauction.com/"
 
 TOKENS = [("@A", '<div class="'), ("@B", "</div>"), ("@C", 'class="'), ("@D", "<div>"), ("@E", "AUCTION"), ("@F", "</td><td"),
@@ -50,17 +50,113 @@ KIND_LABEL = {"taxdeed": "Tax deed sale", "foreclosure": "Foreclosure sale", "sh
 PAUSE = 0.25
 
 
+def info_for(kind, state, base):
+    """Who runs the sale and what the portal is, for the county page."""
+    if kind == "taxdeed" and state == "AZ":
+        return dict(run="Board of Supervisors (tax deed land sales)", page=base, note="Tax deed sales are read from the county's RealAuction tax deed portal.")
+    if kind == "taxdeed" and state == "CO":
+        return dict(run="County Treasurer (Treasurer's deed sales)", page=base, note="Treasurer's deed sales are read from the Treasurer's RealAuction portal; foreclosure sales from the Public Trustee's portal where it exists.")
+    if kind == "taxdeed":
+        return dict(run="Clerk of the Court (tax deeds)", page=base, note="Tax deed auctions are read from the Clerk's RealTaxDeed portal; foreclosure sales from the Clerk's RealForeclose portal where it exists.")
+    if kind == "sheriff" and state == "OH":
+        return dict(run="County Sheriff (foreclosure and tax foreclosure sales)", page=base, note="Sales are read from Ohio's statewide online sheriff sale portal.")
+    if kind == "sheriff":
+        return dict(run="County Sheriff or Constable (tax sales, resales and foreclosure sales)", page=base, note="Sales are read from the county's online sheriff sale portal.")
+    if state == "CO":
+        return dict(page=base, note="Foreclosure sales are read from the Public Trustee's RealAuction portal.")
+    if state == "NJ":
+        return dict(page=base, note="Sheriff foreclosure sales are read from the municipality's RealAuction portal.")
+    return dict(page=base, note="Foreclosure sales are read from the Clerk's RealForeclose portal.")
+
+
 def _host(name):
     return re.sub(r"[^a-z0-9]", "", name.lower())
 
 
+# Every portal RealAuction runs, taken from the "Jump To" menu each portal carries (October 2026), keyed by state and
+# the county name used in the registry. Kinds: taxdeed (Clerk tax deed sales in Florida, Board of Supervisors tax deed
+# sales in Arizona, Treasurer's deed sales in Colorado) and foreclosure (Clerk, Public Trustee or Sheriff foreclosure
+# sales). Counties missing here have no RealAuction portal: their hostnames answer with the marketing page.
+SITES = {
+    "AZ": {
+        "Apache": {"taxdeed": "apache.realtaxdeed.com"},
+        "Coconino": {"taxdeed": "coconino.realtaxdeed.com"},
+        "Mohave": {"taxdeed": "mohave.realtaxdeed.com"},
+    },
+    "CO": {
+        "Adams": {"taxdeed": "adams.treasurersdeedsale.realtaxdeed.com", "foreclosure": "adams.realforeclose.com"},
+        "Denver": {"taxdeed": "denver.treasurersdeedsale.realtaxdeed.com", "foreclosure": "denver.realforeclose.com"},
+        "Eagle": {"taxdeed": "eagle.treasurersdeedsale.realtaxdeed.com", "foreclosure": "eagle.realforeclose.com"},
+        "El Paso": {"taxdeed": "elpasoco.treasurersdeedsale.realtaxdeed.com", "foreclosure": "elpasoco.realforeclose.com"},
+        "Larimer": {"taxdeed": "larimer.treasurersdeedsale.realtaxdeed.com", "foreclosure": "larimer.realforeclose.com"},
+        "Mesa": {"taxdeed": "mesa.treasurersdeedsale.realtaxdeed.com", "foreclosure": "mesa.realforeclose.com"},
+        "Pitkin": {"taxdeed": "pitkin.treasurersdeedsale.realtaxdeed.com"},
+        "Summit": {"foreclosure": "summit.realforeclose.com"},
+        "Weld": {"taxdeed": "weld.treasurersdeedsale.realtaxdeed.com", "foreclosure": "weld.realforeclose.com"},
+    },
+    "FL": {
+        "Alachua": {"taxdeed": "alachua.realtaxdeed.com", "foreclosure": "alachua.realforeclose.com"},
+        "Baker": {"foreclosure": "baker.realforeclose.com"},
+        "Bay": {"taxdeed": "bay.realtaxdeed.com", "foreclosure": "bay.realforeclose.com"},
+        "Brevard": {"foreclosure": "brevard.realforeclose.com"},
+        "Broward": {"taxdeed": "broward.realtaxdeed.com", "foreclosure": "broward.realforeclose.com"},
+        "Calhoun": {"foreclosure": "calhoun.realforeclose.com"},
+        "Charlotte": {"foreclosure": "charlotte.realforeclose.com"},
+        "Citrus": {"taxdeed": "citrus.realtaxdeed.com"},
+        "Clay": {"taxdeed": "clay.realtaxdeed.com", "foreclosure": "clay.realforeclose.com"},
+        "Duval": {"taxdeed": "duval.realtaxdeed.com", "foreclosure": "duval.realforeclose.com"},
+        "Escambia": {"taxdeed": "escambia.realtaxdeed.com", "foreclosure": "escambia.realforeclose.com"},
+        "Flagler": {"taxdeed": "flagler.realtaxdeed.com", "foreclosure": "flagler.realforeclose.com"},
+        "Gilchrist": {"taxdeed": "gilchrist.realtaxdeed.com", "foreclosure": "gilchrist.realforeclose.com"},
+        "Gulf": {"taxdeed": "gulf.realtaxdeed.com", "foreclosure": "gulf.realforeclose.com"},
+        "Hendry": {"taxdeed": "hendry.realtaxdeed.com"},
+        "Hernando": {"taxdeed": "hernando.realtaxdeed.com"},
+        "Highlands": {"taxdeed": "highlands.realtaxdeed.com"},
+        "Hillsborough": {"taxdeed": "hillsborough.realtaxdeed.com", "foreclosure": "hillsborough.realforeclose.com"},
+        "Indian River": {"taxdeed": "indian-river.realtaxdeed.com", "foreclosure": "indian-river.realforeclose.com"},
+        "Jackson": {"taxdeed": "jackson.realtaxdeed.com", "foreclosure": "jackson.realforeclose.com"},
+        "Lake": {"taxdeed": "lake.realtaxdeed.com"},
+        "Lee": {"taxdeed": "lee.realtaxdeed.com", "foreclosure": "lee.realforeclose.com"},
+        "Leon": {"taxdeed": "leon.realtaxdeed.com", "foreclosure": "leon.realforeclose.com"},
+        "Manatee": {"foreclosure": "manatee.realforeclose.com"},
+        "Marion": {"taxdeed": "marion.realtaxdeed.com", "foreclosure": "marion.realforeclose.com"},
+        "Martin": {"taxdeed": "martin.realtaxdeed.com", "foreclosure": "martin.realforeclose.com"},
+        "Miami-Dade": {"taxdeed": "miamidade.realtaxdeed.com", "foreclosure": "miamidade.realforeclose.com"},
+        "Monroe": {"taxdeed": "monroe.realtaxdeed.com"},
+        "Nassau": {"taxdeed": "nassau.realtaxdeed.com", "foreclosure": "nassauclerk.realforeclose.com"},
+        "Okeechobee": {"foreclosure": "okeechobee.realforeclose.com"},
+        "Orange": {"taxdeed": "orange.realtaxdeed.com", "foreclosure": "myorangeclerk.realforeclose.com"},
+        "Osceola": {"taxdeed": "osceola.realtaxdeed.com"},
+        "Palm Beach": {"taxdeed": "palmbeach.realtaxdeed.com", "foreclosure": "palmbeach.realforeclose.com"},
+        "Pasco": {"taxdeed": "pasco.realtaxdeed.com", "foreclosure": "pasco.realforeclose.com"},
+        "Pinellas": {"taxdeed": "pinellas.realtaxdeed.com", "foreclosure": "pinellas.realforeclose.com"},
+        "Polk": {"taxdeed": "polk.realtaxdeed.com", "foreclosure": "polk.realforeclose.com"},
+        "Putnam": {"taxdeed": "putnam.realtaxdeed.com", "foreclosure": "putnam.realforeclose.com"},
+        "St. Johns": {"foreclosure": "saintjohns.realforeclose.com"},
+        "St. Lucie": {"foreclosure": "stlucie.realforeclose.com"},
+        "Santa Rosa": {"taxdeed": "santarosa.realtaxdeed.com", "foreclosure": "santarosa.realforeclose.com"},
+        "Sarasota": {"taxdeed": "sarasota.realtaxdeed.com", "foreclosure": "sarasota.realforeclose.com"},
+        "Seminole": {"taxdeed": "seminole.realtaxdeed.com", "foreclosure": "seminole.realforeclose.com"},
+        "Suwannee": {"taxdeed": "suwannee.realtaxdeed.com"},
+        "Volusia": {"taxdeed": "volusia.realtaxdeed.com", "foreclosure": "volusia.realforeclose.com"},
+        "Walton": {"foreclosure": "walton.realforeclose.com"},
+        "Washington": {"taxdeed": "washington.realtaxdeed.com", "foreclosure": "washington.realforeclose.com"},
+    },
+    "NJ": {
+        "Sussex": {"foreclosure": "hardystonnj.realforeclose.com"},  # Hardyston Township
+        "Essex": {"foreclosure": "newarknj.realforeclose.com"},  # City of Newark
+    },
+}
+
+
 def sites_for(counties):
-    """Yield (fips, kind, base_url) for every county that may have a portal."""
+    """Yield (fips, kind, base_url) for every county that has a portal (tax deed portals first)."""
     for c in counties:
-        if c["state"] == "FL":
-            h = _host(c["name"])
-            yield c["fips"], "taxdeed", f"https://{h}.realtaxdeed.com"
-            yield c["fips"], "foreclosure", f"https://{h}.realforeclose.com"
+        hosts = SITES.get(c["state"], {}).get(c["name"])
+        if hosts:
+            for kind in ("taxdeed", "foreclosure"):
+                if hosts.get(kind):
+                    yield c["fips"], kind, f"https://{hosts[kind]}"
         elif c["state"] == "OH":
             yield c["fips"], "sheriff", f"https://{_host(c['name'])}.sheriffsaleauction.ohio.gov"
         elif c["state"] == "TX":
@@ -314,14 +410,9 @@ def fetch(counties):
             rec = out.setdefault(fips, dict(fips=fips, source=NAME, sourceUrl=base, lastChecked=checked, lastChanged=None, info={}, auctions=[]))
             rec["auctions"].extend(aucs)
             info = rec["info"]
-            if kind == "taxdeed":
-                info.update(run="Clerk of the Court (tax deeds)", page=base, note="Tax deed auctions are read from the Clerk's RealTaxDeed portal; foreclosure sales from the Clerk's RealForeclose portal where it exists.")
-            elif kind == "sheriff" and c["state"] == "OH":
-                info.update(run="County Sheriff (foreclosure and tax foreclosure sales)", page=base, note="Sales are read from Ohio's statewide online sheriff sale portal.")
-            elif kind == "sheriff":
-                info.update(run="County Sheriff or Constable (tax sales, resales and foreclosure sales)", page=base, note="Sales are read from the county's online sheriff sale portal.")
-            elif "page" not in info:
-                info.update(page=base, note="Foreclosure sales are read from the Clerk's RealForeclose portal.")
+            new_info = info_for(kind, c["state"], base)
+            if kind != "foreclosure" or "page" not in info:
+                info.update(new_info)
             print(f"  {c['label']}, {c['state']} {kind}: {len(aucs)} sale days, {sum(len(a['parcels']) for a in aucs)} items")
         except Exception as e:
             print(f"  realauction/{base}: {e}")
