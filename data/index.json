@@ -1,11 +1,11 @@
 {
- "generated": "2026-10-18T16:30:50+00:00",
+ "generated": "2026-10-18T16:38:32+00:00",
  "counties": 3222,
  "states": 52,
- "withData": 174,
- "parcels": 26236,
- "auctions": 1491,
- "withTaxSaleLink": 1027,
+ "withData": 184,
+ "parcels": 26492,
+ "auctions": 1572,
+ "withTaxSaleLink": 1036,
  "withSite": 3061,
  "withSheriffLink": 378,
  "withAssessorLink": 1545,
@@ -226,6 +226,33 @@
    "page": "https://licking.sheriffsaleauction.ohio.gov"
   },
   {
+   "fips": "39103",
+   "state": "OH",
+   "name": "Medina County",
+   "date": "2026-10-22",
+   "kind": "posted",
+   "parcels": 46,
+   "page": "https://medina.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39155",
+   "state": "OH",
+   "name": "Trumbull County",
+   "date": "2026-10-22",
+   "kind": "posted",
+   "parcels": 48,
+   "page": "https://trumbull.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39023",
+   "state": "OH",
+   "name": "Clark County",
+   "date": "2026-10-23",
+   "kind": "posted",
+   "parcels": 16,
+   "page": "https://clark.sheriffsaleauction.ohio.gov"
+  },
+  {
    "fips": "39049",
    "state": "OH",
    "name": "Franklin County",
@@ -244,6 +271,15 @@
    "page": "https://montgomery.sheriffsaleauction.ohio.gov"
   },
   {
+   "fips": "39139",
+   "state": "OH",
+   "name": "Richland County",
+   "date": "2026-10-23",
+   "kind": "posted",
+   "parcels": 21,
+   "page": "https://richland.sheriffsaleauction.ohio.gov"
+  },
+  {
    "fips": "12011",
    "state": "FL",
    "name": "Broward County",
@@ -260,6 +296,15 @@
    "kind": "posted",
    "parcels": 83,
    "page": "https://santarosa.realtaxdeed.com"
+  },
+  {
+   "fips": "39133",
+   "state": "OH",
+   "name": "Portage County",
+   "date": "2026-10-26",
+   "kind": "posted",
+   "parcels": 11,
+   "page": "https://portage.sheriffsaleauction.ohio.gov"
   },
   {
    "fips": "08041",
@@ -314,6 +359,24 @@
    "kind": "posted",
    "parcels": 566,
    "page": "https://duval.realtaxdeed.com"
+  },
+  {
+   "fips": "39003",
+   "state": "OH",
+   "name": "Allen County",
+   "date": "2026-10-28",
+   "kind": "posted",
+   "parcels": 26,
+   "page": "https://allen.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39109",
+   "state": "OH",
+   "name": "Miami County",
+   "date": "2026-10-28",
+   "kind": "posted",
+   "parcels": 34,
+   "page": "https://miami.sheriffsaleauction.ohio.gov"
   },
   {
    "fips": "12051",
@@ -775,6 +838,15 @@
    "page": "https://dekalbtaxga.gov/property-tax/tax-sales/"
   },
   {
+   "fips": "39057",
+   "state": "OH",
+   "name": "Greene County",
+   "date": "2026-11-03",
+   "kind": "posted",
+   "parcels": 17,
+   "page": "https://greene.sheriffsaleauction.ohio.gov"
+  },
+  {
    "fips": "12017",
    "state": "FL",
    "name": "Citrus County",
@@ -818,6 +890,24 @@
    "kind": "posted",
    "parcels": 77,
    "page": "https://suwannee.realtaxdeed.com"
+  },
+  {
+   "fips": "39173",
+   "state": "OH",
+   "name": "Wood County",
+   "date": "2026-11-05",
+   "kind": "posted",
+   "parcels": 14,
+   "page": "https://wood.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39045",
+   "state": "OH",
+   "name": "Fairfield County",
+   "date": "2026-11-06",
+   "kind": "posted",
+   "parcels": 23,
+   "page": "https://fairfield.sheriffsaleauction.ohio.gov"
   },
   {
    "fips": "12097",
@@ -926,7 +1016,7 @@
   "realauction": {
    "label": "RealAuction portals (Florida Clerk tax deed and foreclosure sales, Ohio and Texas sheriff sales)",
    "url": "https://www.realauction.com/",
-   "counties": 54,
+   "counties": 64,
    "ok": true,
    "checked": "2026-10-18T10:12:21+00:00"
   }
@@ -1091,20 +1181,30 @@
   "26163",
   "26165",
   "32003",
+  "39003",
   "39017",
+  "39023",
   "39025",
   "39035",
   "39041",
+  "39045",
   "39049",
+  "39057",
   "39061",
   "39085",
   "39089",
   "39093",
   "39095",
   "39099",
+  "39103",
+  "39109",
   "39113",
+  "39133",
+  "39139",
   "39151",
   "39153",
-  "39165"
+  "39155",
+  "39165",
+  "39173"
  ]
 }

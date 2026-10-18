@@ -1,101 +1,110 @@
 {
- "generated": "2026-10-18T16:30:50+00:00",
- "previous": "2026-10-18T16:16:29+00:00",
+ "generated": "2026-10-18T16:38:32+00:00",
+ "previous": "2026-10-18T16:30:50+00:00",
  "newUpcoming": [
   {
-   "fips": "39085",
+   "fips": "39103",
    "state": "OH",
-   "name": "Lake County",
-   "date": "2026-10-19",
-   "kind": "posted",
-   "parcels": 86,
-   "page": "https://lake.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "39151",
-   "state": "OH",
-   "name": "Stark County",
-   "date": "2026-10-19",
-   "kind": "posted",
-   "parcels": 69,
-   "page": "https://stark.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "39025",
-   "state": "OH",
-   "name": "Clermont County",
-   "date": "2026-10-20",
-   "kind": "posted",
-   "parcels": 31,
-   "page": "https://clermont.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "39165",
-   "state": "OH",
-   "name": "Warren County",
-   "date": "2026-10-20",
-   "kind": "posted",
-   "parcels": 60,
-   "page": "https://warren.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "39093",
-   "state": "OH",
-   "name": "Lorain County",
-   "date": "2026-10-21",
-   "kind": "posted",
-   "parcels": 151,
-   "page": "https://lorain.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "39095",
-   "state": "OH",
-   "name": "Lucas County",
-   "date": "2026-10-21",
-   "kind": "posted",
-   "parcels": 154,
-   "page": "https://lucas.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "39017",
-   "state": "OH",
-   "name": "Butler County",
+   "name": "Medina County",
    "date": "2026-10-22",
    "kind": "posted",
-   "parcels": 91,
-   "page": "https://butler.sheriffsaleauction.ohio.gov"
+   "parcels": 46,
+   "page": "https://medina.sheriffsaleauction.ohio.gov"
   },
   {
-   "fips": "39089",
+   "fips": "39155",
    "state": "OH",
-   "name": "Licking County",
+   "name": "Trumbull County",
    "date": "2026-10-22",
+   "kind": "posted",
+   "parcels": 48,
+   "page": "https://trumbull.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39023",
+   "state": "OH",
+   "name": "Clark County",
+   "date": "2026-10-23",
+   "kind": "posted",
+   "parcels": 16,
+   "page": "https://clark.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39139",
+   "state": "OH",
+   "name": "Richland County",
+   "date": "2026-10-23",
+   "kind": "posted",
+   "parcels": 21,
+   "page": "https://richland.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39133",
+   "state": "OH",
+   "name": "Portage County",
+   "date": "2026-10-26",
+   "kind": "posted",
+   "parcels": 11,
+   "page": "https://portage.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39003",
+   "state": "OH",
+   "name": "Allen County",
+   "date": "2026-10-28",
+   "kind": "posted",
+   "parcels": 26,
+   "page": "https://allen.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39109",
+   "state": "OH",
+   "name": "Miami County",
+   "date": "2026-10-28",
    "kind": "posted",
    "parcels": 34,
-   "page": "https://licking.sheriffsaleauction.ohio.gov"
+   "page": "https://miami.sheriffsaleauction.ohio.gov"
   },
   {
-   "fips": "39099",
+   "fips": "39057",
    "state": "OH",
-   "name": "Mahoning County",
-   "date": "2026-11-24",
+   "name": "Greene County",
+   "date": "2026-11-03",
    "kind": "posted",
-   "parcels": 45,
-   "page": "https://mahoning.sheriffsaleauction.ohio.gov"
+   "parcels": 17,
+   "page": "https://greene.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39173",
+   "state": "OH",
+   "name": "Wood County",
+   "date": "2026-11-05",
+   "kind": "posted",
+   "parcels": 14,
+   "page": "https://wood.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39045",
+   "state": "OH",
+   "name": "Fairfield County",
+   "date": "2026-11-06",
+   "kind": "posted",
+   "parcels": 23,
+   "page": "https://fairfield.sheriffsaleauction.ohio.gov"
   }
  ],
  "newCounties": [
-  "39017",
-  "39025",
-  "39041",
-  "39085",
-  "39089",
-  "39093",
-  "39095",
-  "39099",
-  "39151",
-  "39165"
+  "39003",
+  "39023",
+  "39045",
+  "39057",
+  "39103",
+  "39109",
+  "39133",
+  "39139",
+  "39155",
+  "39173"
  ],
- "parcelDelta": 735,
- "linkDelta": 8
+ "parcelDelta": 256,
+ "linkDelta": 9
 }
