@@ -1,11 +1,11 @@
 {
- "generated": "2026-10-18T14:16:55+00:00",
+ "generated": "2026-10-18T14:23:42+00:00",
  "counties": 3222,
  "states": 52,
- "withData": 136,
- "parcels": 19345,
- "auctions": 990,
- "withTaxSaleLink": 1003,
+ "withData": 139,
+ "parcels": 20042,
+ "auctions": 1019,
+ "withTaxSaleLink": 1005,
  "withSite": 3061,
  "withSheriffLink": 378,
  "withAssessorLink": 1545,
@@ -35,6 +35,15 @@
    "kind": "posted",
    "parcels": 537,
    "page": "https://lee.realtaxdeed.com"
+  },
+  {
+   "fips": "12073",
+   "state": "FL",
+   "name": "Leon County",
+   "date": "2026-10-21",
+   "kind": "posted",
+   "parcels": 194,
+   "page": "https://leon.realtaxdeed.com"
   },
   {
    "fips": "12103",
@@ -541,6 +550,15 @@
    "page": "https://dekalbtaxga.gov/property-tax/tax-sales/"
   },
   {
+   "fips": "12033",
+   "state": "FL",
+   "name": "Escambia County",
+   "date": "2026-11-04",
+   "kind": "posted",
+   "parcels": 461,
+   "page": "https://escambia.realtaxdeed.com"
+  },
+  {
    "fips": "12115",
    "state": "FL",
    "name": "Sarasota County",
@@ -593,6 +611,15 @@
    "kind": "posted",
    "parcels": 246,
    "page": "https://polk.realtaxdeed.com"
+  },
+  {
+   "fips": "12001",
+   "state": "FL",
+   "name": "Alachua County",
+   "date": "2026-12-01",
+   "kind": "posted",
+   "parcels": 42,
+   "page": "https://alachua.realtaxdeed.com"
   }
  ],
  "sources": {
@@ -620,17 +647,20 @@
   "realauction": {
    "label": "RealAuction portals (Florida Clerk tax deed and foreclosure sales, Ohio and Texas sheriff sales)",
    "url": "https://www.realauction.com/",
-   "counties": 16,
+   "counties": 19,
    "ok": true,
    "checked": "2026-10-18T10:12:21+00:00"
   }
  },
  "countiesWithData": [
+  "12001",
   "12011",
   "12031",
+  "12033",
   "12057",
   "12069",
   "12071",
+  "12073",
   "12083",
   "12086",
   "12095",
