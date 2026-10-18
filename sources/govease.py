@@ -2,11 +2,12 @@
 Indiana, Missouri, Washington, Kansas and Oklahoma (https://www.govease.com/).
 
 Every county auction on liveauctions.govease.com can be browsed without a login. The "Select Auctions" menu on any
-browse page lists every open auction as state|slug|id; a browse page carries the auction name, its type (Tax Deed, Tax
-Lien, Foreclosure, Redeemable Tax Deed) and a link to each parcel; the parcel page states when the auction begins or
-ends; and a CSV of every parcel (parcel number, owner, address, starting bid, assessed value, legal and property
-descriptions) downloads from one of two endpoints depending on the auction layout. Auctions disappear from the menu
-once they close, so results are not published here; what we keep is each sale list with its starting bids.
+browse page lists every open auction as state|slug|id; the public register (/PublicPortal/PublicRegisterAuctions)
+gives each auction's name, entity (Treasurer, Public Trustee, Clerk and Master, Tax Claim Bureau), type (Tax Deed,
+Tax Lien, Foreclosure, Redeemable Tax Deed) and start date; a browse page links each parcel; the parcel page says when
+a live auction ends; and a CSV of every parcel (parcel number, owner, address, starting bid, assessed value, legal and
+property descriptions) downloads from one of two endpoints depending on the auction layout. Auctions disappear from
+the menu once they close, so results are not published here; what we keep is each sale list with its starting bids.
 
 The site drops connections that arrive too quickly, so requests are paced and retried.
 """
@@ -34,6 +35,8 @@ SELECT = re.compile(r'<select class="select2 form-control select2countybuilder".
 PARCEL_LINK = re.compile(r'href="(/[a-z]{2}/[^/"]+/\d+/(open(?:standard)?parcel)/(\d+)/[^"]*)"', re.I)
 AUCTION_NAME = re.compile(r'no-translate-auctionname">\s*<span class="no-translate">\s*([^<]+?)\s*</span>')
 AUCTION_TYPE = re.compile(r'no-translate-auctiontype">\s*<span class="no-translate">\s*([^<]+?)\s*</span>')
+REGISTER_ROW = re.compile(r'<tr role="row"[^>]*>\s*<td[^>]*></td>\s*<td>([^<]*)</td>\s*<td>([^<]*)</td>\s*<td>([^<]*)</td>\s*<td>([^<]*)</td>\s*<td>\s*<span>([^<]*)</span>.*?name="auctionEntry\.AuctionID"[^>]*value="(\d+)"', re.S)
+MDY = re.compile(r"(\d{1,2})/(\d{1,2})/(\d{4})")
 BEGIN = re.compile(r"scheduled to (begin|end)\s+(\d{1,2})/(\d{1,2})/(\d{4})", re.I)
 ENDED = re.compile(r"auction (?:has )?(?:ended|closed|is closed|is complete)", re.I)
 COUNTDOWN = re.compile(r">\s*(\d+)d \d+h\s*<")
@@ -60,11 +63,11 @@ class Session:
         self.opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar()))
         self.opener.addheaders = [("User-Agent", UA)]
 
-    def get(self, path, retries=4, timeout=90):
+    def get(self, path, retries=4, timeout=90, data=None):
         last = None
         for attempt in range(retries):
             try:
-                with self.opener.open(BASE + path, timeout=timeout) as r:
+                with self.opener.open(BASE + path, data=data, timeout=timeout) as r:
                     raw = r.read()
                 time.sleep(PAUSE)
                 return raw.decode("utf-8", "replace")
@@ -81,6 +84,35 @@ def roster(session):
     if not m:
         raise RuntimeError("GovEase: auction menu not found")
     return [(v.split("|")[0].upper(), v.split("|")[1], v.split("|")[2], htmllib.unescape(t).strip()) for v, t in OPTION.findall(m.group(0))]
+
+
+def register(session):
+    """The public register, keyed by auction id: name, entity, type and start date. The page only renders after the
+    site's time zone form has been posted once in the session."""
+    out = {}
+    try:
+        session.get("/PublicPortal/PublicRegisterAuctions")
+        try:
+            session.get("/PublicPortal/ClientRequestInfo", data=b"hdut=Sat+Jan+01+2026+12%3A00%3A00+GMT-0600&hdps=&hdst=&hdc=&hdci=")
+        except RuntimeError:
+            pass  # it answers with a redirect to a page that does not exist; the session flag is set regardless
+    except RuntimeError as e:
+        print(f"  govease/register: {e}")
+        return out
+    for page_no in range(1, 20):  # 75 auctions per page
+        try:
+            page = session.get(f"/PublicPortal/PublicRegisterAuctions?pageNumber={page_no}")
+        except RuntimeError as e:
+            print(f"  govease/register page {page_no}: {e}")
+            break
+        rows = REGISTER_ROW.findall(page)
+        if not rows or all(cid in out for *_, cid in rows):
+            break
+        for name, state, entity, atype, start, cid in rows:
+            m = MDY.search(start)
+            out[cid] = dict(name=htmllib.unescape(name).strip(), state=state.strip(), entity=htmllib.unescape(entity).strip(), type=atype.strip(),
+                            start=f"{m.group(3)}-{int(m.group(1)):02d}-{int(m.group(2)):02d}" if m else None)
+    return out
 
 
 def _norm(s):
@@ -107,7 +139,7 @@ def county_for(state, slug, title, csv_name, by_state):
 def sale_kind(auction_type, name, state):
     t = (auction_type or "").lower()
     n = (name or "").lower()
-    if "lien" in t:
+    if "lien" in t and state != "PA":  # Pennsylvania upset and judicial sales convey a deed, whatever the site calls them
         return "taxlien"
     if "foreclosure" in t or ("foreclosure" in n and "tax" not in n):
         return "foreclosure"
@@ -116,18 +148,23 @@ def sale_kind(auction_type, name, state):
     return "taxdeed"
 
 
-def info_for(kind, state, page):
-    run = {"taxlien": "County Treasurer (tax lien sale)", "foreclosure": "Public Trustee or Sheriff (foreclosure sales)" if state == "CO" else "Sheriff or court (foreclosure sales)",
-           "sheriff": "County Sheriff or Constable (tax sales and resales)"}.get(kind)
+def info_for(kind, state, page, entity=None):
+    run = entity.replace("&amp;", "and").replace("&", "and") if entity else None
+    if not run:
+        run = {"taxlien": "County Treasurer (tax lien sale)", "foreclosure": "Public Trustee or Sheriff (foreclosure sales)" if state == "CO" else "Sheriff or court (foreclosure sales)",
+               "sheriff": "County Sheriff or Constable (tax sales and resales)"}.get(kind)
     if not run:
         run = {"PA": "County Tax Claim Bureau (upset and judicial sales)", "TN": "Clerk and Master (delinquent tax sales)", "CA": "County Treasurer-Tax Collector (tax deed sales)",
                "IN": "County Treasurer and Auditor (tax sales)", "CO": "County Treasurer (Treasurer's deed sales)"}.get(state, "County Treasurer or Tax Collector (tax sales)")
     return dict(run=run, page=page, note="Sale lists and starting bids are read from the county's GovEase auction site, which lists each sale until it closes; results are not published there.")
 
 
-def sale_date(session, state, name, browse_page, link):
-    """(date, status) from the parcel page, the browse page countdown, or the month in the auction's name."""
+def sale_date(session, state, name, browse_page, link, start=None):
+    """(date, status) from the register's start date, the parcel page, the browse page countdown, or the month in the
+    auction's name. A sale that started already is live until its posted end date, then past."""
     today = dt.date.today()
+    if start and start >= today.isoformat():
+        return start, "upcoming"
     if link:
         try:
             text = re.sub(r"\s+", " ", TAGS.sub(" ", re.sub(r"<script.*?</script>", "", session.get(link), flags=re.S)))
@@ -137,8 +174,8 @@ def sale_date(session, state, name, browse_page, link):
         m = BEGIN.search(text)
         if m:
             return f"{m.group(4)}-{int(m.group(2)):02d}-{int(m.group(3)):02d}", "upcoming"
-        if ENDED.search(text):
-            return None, "past"
+        if ENDED.search(text) or start:
+            return start, "past"
     m = COUNTDOWN.search(browse_page)
     if m:
         return (today + dt.timedelta(days=int(m.group(1)))).isoformat(), "upcoming"
@@ -195,7 +232,11 @@ def fetch(counties):
     session = Session()
     checked = dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds")
     out = {}
-    for state, slug, cid, title in roster(session):
+    listed = roster(session)
+    reg = register(session)
+    print(f"  govease: {len(listed)} auctions in the menu, {len(reg)} in the register")
+    for state, slug, cid, title in listed:
+        meta = reg.get(cid) or {}
         browse = f"/{state}/{slug}/{cid}/browsestandard"
         try:
             page = session.get(browse)
@@ -211,19 +252,19 @@ def fetch(counties):
         except RuntimeError as e:
             print(f"  govease/{slug} csv: {e}")
             rows = []
-        name = htmllib.unescape((AUCTION_NAME.search(page) or [None, title])[1]).strip()
-        atype = htmllib.unescape((AUCTION_TYPE.search(page) or [None, ""])[1]).strip()
+        name = meta.get("name") or htmllib.unescape((AUCTION_NAME.search(page) or [None, title])[1]).strip()
+        atype = meta.get("type") or htmllib.unescape((AUCTION_TYPE.search(page) or [None, ""])[1]).strip()
         county = county_for(state, slug, title, (rows[0].get("County Name") or "").strip() if rows else "", by_state)
         if not county:
             print(f"  govease/{slug}: no county match for {title!r}")
             continue
-        date, status = sale_date(session, state, name, page, links[0][0])
+        date, status = sale_date(session, state, name, page, links[0][0], meta.get("start"))
         kind = sale_kind(atype, name, state)
         ps = parcels_from(rows, state, slug, cid, layout, status == "upcoming")
         rec = out.setdefault(county["fips"], dict(fips=county["fips"], source=NAME, sourceUrl=HOMEPAGE, lastChecked=checked, lastChanged=None,
-                                                 info=info_for(kind, state, BASE + browse), auctions=[]))
+                                                 info=info_for(kind, state, BASE + browse, meta.get("entity")), auctions=[]))
         rec["auctions"].append(auction(
-            id=f"ge-{cid}-{date or 'tbd'}", date=date, kind="list" if status == "upcoming" else "results", saleKind=kind,
+            id=f"ge-{cid}-{date or 'tbd'}", date=date, kind="list", saleKind=kind,
             label=f"{name} ({atype})" if atype and atype.lower() not in name.lower() else name, source=BASE + browse, status=status, parcels=ps,
         ))
         print(f"  govease/{slug}: {county['name']}, {state}: {len(ps)} parcels, {date or 'date not posted'}")

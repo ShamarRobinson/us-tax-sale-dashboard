@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-18T21:02:46+00:00",
+ "generated": "2026-10-18T21:24:48+00:00",
  "counties": 3222,
  "states": 52,
  "withData": 286,
@@ -379,6 +379,15 @@
    "page": "https://wayne.sheriffsaleauction.ohio.gov"
   },
   {
+   "fips": "47083",
+   "state": "TN",
+   "name": "Houston County",
+   "date": "2026-10-21",
+   "kind": "posted",
+   "parcels": 11,
+   "page": "https://liveauctions.govease.com/TN/tnhouston/1551/browsestandard"
+  },
+  {
    "fips": "08059",
    "state": "CO",
    "name": "Jefferson County",
@@ -559,6 +568,15 @@
    "page": "https://richland.sheriffsaleauction.ohio.gov"
   },
   {
+   "fips": "08113",
+   "state": "CO",
+   "name": "San Miguel County",
+   "date": "2026-10-26",
+   "kind": "posted",
+   "parcels": 215,
+   "page": "https://liveauctions.govease.com/CO/cosanmiguel/1292/browsestandard"
+  },
+  {
    "fips": "12113",
    "state": "FL",
    "name": "Santa Rosa County",
@@ -728,6 +746,24 @@
    "kind": "posted",
    "parcels": 16,
    "page": "https://vanwert.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "47119",
+   "state": "TN",
+   "name": "Maury County",
+   "date": "2026-10-29",
+   "kind": "posted",
+   "parcels": 1,
+   "page": "https://liveauctions.govease.com/TN/tnmaurycircuitcourt/1562/browsestandard"
+  },
+  {
+   "fips": "06069",
+   "state": "CA",
+   "name": "San Benito County",
+   "date": "2026-10-30",
+   "kind": "posted",
+   "parcels": 20,
+   "page": "https://liveauctions.govease.com/CA/casanbenito/1376/browsestandard"
   },
   {
    "fips": "26001",
@@ -1216,6 +1252,15 @@
    "page": "https://henry.sheriffsaleauction.ohio.gov"
   },
   {
+   "fips": "47053",
+   "state": "TN",
+   "name": "Gibson County",
+   "date": "2026-11-03",
+   "kind": "posted",
+   "parcels": 25,
+   "page": "https://liveauctions.govease.com/TN/gibsonhumboldt/1097/browsestandard"
+  },
+  {
    "fips": "48121",
    "state": "TX",
    "name": "Denton County",
@@ -1268,6 +1313,33 @@
    "kind": "posted",
    "parcels": 14,
    "page": "https://liveauctions.govease.com/TX/txwichita/1429/browsestandard"
+  },
+  {
+   "fips": "08083",
+   "state": "CO",
+   "name": "Montezuma County",
+   "date": "2026-11-04",
+   "kind": "posted",
+   "parcels": 823,
+   "page": "https://liveauctions.govease.com/CO/comontezuma/1233/browsestandard"
+  },
+  {
+   "fips": "08099",
+   "state": "CO",
+   "name": "Prowers County",
+   "date": "2026-11-04",
+   "kind": "posted",
+   "parcels": 482,
+   "page": "https://liveauctions.govease.com/CO/coprowers/1234/browsestandard"
+  },
+  {
+   "fips": "08121",
+   "state": "CO",
+   "name": "Washington County",
+   "date": "2026-11-04",
+   "kind": "posted",
+   "parcels": 376,
+   "page": "https://liveauctions.govease.com/CO/cowashington/1293/browsestandard"
   },
   {
    "fips": "12017",
@@ -1342,6 +1414,24 @@
    "page": "https://scioto.sheriffsaleauction.ohio.gov"
   },
   {
+   "fips": "08011",
+   "state": "CO",
+   "name": "Bent County",
+   "date": "2026-11-05",
+   "kind": "posted",
+   "parcels": 419,
+   "page": "https://liveauctions.govease.com/CO/cobent/1295/browsestandard"
+  },
+  {
+   "fips": "08065",
+   "state": "CO",
+   "name": "Lake County",
+   "date": "2026-11-05",
+   "kind": "posted",
+   "parcels": 320,
+   "page": "https://liveauctions.govease.com/CO/colake/1386/browsestandard"
+  },
+  {
    "fips": "12121",
    "state": "FL",
    "name": "Suwannee County",
@@ -1376,6 +1466,15 @@
    "kind": "posted",
    "parcels": 14,
    "page": "https://wood.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "47161",
+   "state": "TN",
+   "name": "Stewart County",
+   "date": "2026-11-05",
+   "kind": "posted",
+   "parcels": 26,
+   "page": "https://liveauctions.govease.com/TN/tnstewart/1244/browsestandard"
   },
   {
    "fips": "39045",
@@ -1432,6 +1531,15 @@
    "page": "https://putnam.sheriffsaleauction.ohio.gov"
   },
   {
+   "fips": "08095",
+   "state": "CO",
+   "name": "Phillips County",
+   "date": "2026-11-10",
+   "kind": "posted",
+   "parcels": 92,
+   "page": "https://liveauctions.govease.com/CO/cophillips/1356/browsestandard"
+  },
+  {
    "fips": "12097",
    "state": "FL",
    "name": "Osceola County",
@@ -1457,6 +1565,15 @@
    "kind": "posted",
    "parcels": 24,
    "page": "https://erie.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "47163",
+   "state": "TN",
+   "name": "Sullivan County",
+   "date": "2026-11-10",
+   "kind": "posted",
+   "parcels": 3,
+   "page": "https://liveauctions.govease.com/TN/tnsullivanjudicialfc/1557/browsestandard"
   },
   {
    "fips": "12117",
@@ -1513,6 +1630,15 @@
    "page": "https://liveauctions.govease.com/CA/cakernreoffer/1564/browsestandard"
   },
   {
+   "fips": "53005",
+   "state": "WA",
+   "name": "Benton County",
+   "date": "2026-11-16",
+   "kind": "posted",
+   "parcels": 3,
+   "page": "https://liveauctions.govease.com/WA/wabenton/1296/browsestandard"
+  },
+  {
    "fips": "12035",
    "state": "FL",
    "name": "Flagler County",
@@ -1540,6 +1666,24 @@
    "page": "https://hardin.sheriffsaleauction.ohio.gov"
   },
   {
+   "fips": "42005",
+   "state": "PA",
+   "name": "Armstrong County",
+   "date": "2026-11-17",
+   "kind": "posted",
+   "parcels": 692,
+   "page": "https://liveauctions.govease.com/PA/paarmstrongupset/1560/browsestandard"
+  },
+  {
+   "fips": "47073",
+   "state": "TN",
+   "name": "Hawkins County",
+   "date": "2026-11-17",
+   "kind": "posted",
+   "parcels": 52,
+   "page": "https://liveauctions.govease.com/TN/tnhawkins/1283/browsestandard"
+  },
+  {
    "fips": "12083",
    "state": "FL",
    "name": "Marion County",
@@ -1556,6 +1700,15 @@
    "kind": "posted",
    "parcels": 14,
    "page": "https://clinton.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "08009",
+   "state": "CO",
+   "name": "Baca County",
+   "date": "2026-11-19",
+   "kind": "posted",
+   "parcels": 424,
+   "page": "https://liveauctions.govease.com/CO/cobaca/1235/browsestandard"
   },
   {
    "fips": "39131",
@@ -1664,7 +1817,7 @@
    "url": "https://www.govease.com/",
    "counties": 40,
    "ok": true,
-   "checked": "2026-10-18T21:02:44+00:00"
+   "checked": "2026-10-18T21:24:46+00:00"
   }
  },
  "countiesWithData": [
