@@ -1,11 +1,11 @@
 {
- "generated": "2026-10-18T16:16:29+00:00",
+ "generated": "2026-10-18T16:30:50+00:00",
  "counties": 3222,
  "states": 52,
- "withData": 164,
- "parcels": 25501,
- "auctions": 1339,
- "withTaxSaleLink": 1019,
+ "withData": 174,
+ "parcels": 26236,
+ "auctions": 1491,
+ "withTaxSaleLink": 1027,
  "withSite": 3061,
  "withSheriffLink": 378,
  "withAssessorLink": 1545,
@@ -35,6 +35,24 @@
    "kind": "posted",
    "parcels": 984,
    "page": "https://cuyahoga.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39085",
+   "state": "OH",
+   "name": "Lake County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 86,
+   "page": "https://lake.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39151",
+   "state": "OH",
+   "name": "Stark County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 69,
+   "page": "https://stark.sheriffsaleauction.ohio.gov"
   },
   {
    "fips": "12005",
@@ -73,6 +91,15 @@
    "page": "https://nassau.realtaxdeed.com"
   },
   {
+   "fips": "39025",
+   "state": "OH",
+   "name": "Clermont County",
+   "date": "2026-10-20",
+   "kind": "posted",
+   "parcels": 31,
+   "page": "https://clermont.sheriffsaleauction.ohio.gov"
+  },
+  {
    "fips": "39153",
    "state": "OH",
    "name": "Summit County",
@@ -80,6 +107,15 @@
    "kind": "posted",
    "parcels": 307,
    "page": "https://summit.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39165",
+   "state": "OH",
+   "name": "Warren County",
+   "date": "2026-10-20",
+   "kind": "posted",
+   "parcels": 60,
+   "page": "https://warren.sheriffsaleauction.ohio.gov"
   },
   {
    "fips": "12019",
@@ -136,6 +172,24 @@
    "page": "https://hamilton.sheriffsaleauction.ohio.gov"
   },
   {
+   "fips": "39093",
+   "state": "OH",
+   "name": "Lorain County",
+   "date": "2026-10-21",
+   "kind": "posted",
+   "parcels": 151,
+   "page": "https://lorain.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39095",
+   "state": "OH",
+   "name": "Lucas County",
+   "date": "2026-10-21",
+   "kind": "posted",
+   "parcels": 154,
+   "page": "https://lucas.sheriffsaleauction.ohio.gov"
+  },
+  {
    "fips": "12057",
    "state": "FL",
    "name": "Hillsborough County",
@@ -152,6 +206,24 @@
    "kind": "posted",
    "parcels": 394,
    "page": "https://orange.realtaxdeed.com"
+  },
+  {
+   "fips": "39017",
+   "state": "OH",
+   "name": "Butler County",
+   "date": "2026-10-22",
+   "kind": "posted",
+   "parcels": 91,
+   "page": "https://butler.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39089",
+   "state": "OH",
+   "name": "Licking County",
+   "date": "2026-10-22",
+   "kind": "posted",
+   "parcels": 34,
+   "page": "https://licking.sheriffsaleauction.ohio.gov"
   },
   {
    "fips": "39049",
@@ -802,6 +874,15 @@
    "page": "https://polk.realtaxdeed.com"
   },
   {
+   "fips": "39099",
+   "state": "OH",
+   "name": "Mahoning County",
+   "date": "2026-11-24",
+   "kind": "posted",
+   "parcels": 45,
+   "page": "https://mahoning.sheriffsaleauction.ohio.gov"
+  },
+  {
    "fips": "12001",
    "state": "FL",
    "name": "Alachua County",
@@ -845,7 +926,7 @@
   "realauction": {
    "label": "RealAuction portals (Florida Clerk tax deed and foreclosure sales, Ohio and Texas sheriff sales)",
    "url": "https://www.realauction.com/",
-   "counties": 44,
+   "counties": 54,
    "ok": true,
    "checked": "2026-10-18T10:12:21+00:00"
   }
@@ -1010,10 +1091,20 @@
   "26163",
   "26165",
   "32003",
+  "39017",
+  "39025",
   "39035",
+  "39041",
   "39049",
   "39061",
+  "39085",
+  "39089",
+  "39093",
+  "39095",
+  "39099",
   "39113",
-  "39153"
+  "39151",
+  "39153",
+  "39165"
  ]
 }
