@@ -72,14 +72,15 @@ GitHub Pages serves index.html / analyzer.html / sheet.html, which load that JSO
 - Deal score (`master.py`): value 40, property 20, market 15, competition 15, history 10; 70+ Strong, 50 to 69 Good,
   35 to 49 Fair, under 35 Weak.
 
-## Data On File (As Of 2026-10-18, Evening)
+## Data On File (As Of 2026-10-18, Night)
 
-39,656 parcels across 270 counties: FL 16,058 (35 counties), MI 7,359 (79), CO 6,769 (20), GA 3,931 (24), OH 3,501
-(87), PA 742 (3), NV 736 (1), CA 293 (3), TN 124 (10), TX 109 (6), MO 31 (1), WA 3 (1). By adapter: realauction
-19,612, govease 8,018, michigan 7,359, atlanta 3,931, clark 736. Raw portal dumps live in
-`data/raw/realauction/<fips>-<kind>.json` (135 files: FL taxdeed 35, FL foreclosure 9, CO taxdeed 4, OH sheriff 87).
-GovEase data is sale lists only (every auction open on the platform that day, with starting bids and sale dates); it
-refreshes itself on the monthly run and with `python3 fetch_all.py --source govease`.
+52,890 parcels across 305 counties: FL 16,058 (35), PA 12,044 (10), MI 7,359 (79), CO 6,769 (20), GA 3,931 (24), OH
+3,501 (87), CA 1,591 (17), NV 1,156 (7), WA 181 (7), TN 124 (10), TX 109 (6), MN 35 (1), MO 31 (1), LA 1 (1). By
+adapter: realauction 19,612, bid4assets 13,234, govease 8,018, michigan 7,359, atlanta 3,931, clark 736. Raw portal
+dumps live in `data/raw/realauction/<fips>-<kind>.json` (135 files: FL taxdeed 35, FL foreclosure 9, CO taxdeed 4, OH
+sheriff 87). GovEase data is sale lists only (every auction open on the platform that day, with starting bids and sale
+dates); Bid4Assets data is sale lists plus results with winning bids for the past sales on its calendar. Both refresh
+themselves on the monthly run and with `python3 fetch_all.py --source govease` or `--source bid4assets`.
 
 ## RealAuction Portals: The Main Open Work
 

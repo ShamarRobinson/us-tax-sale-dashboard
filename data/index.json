@@ -1,16 +1,16 @@
 {
- "generated": "2026-10-18T21:24:48+00:00",
+ "generated": "2026-10-18T22:20:28+00:00",
  "counties": 3222,
  "states": 52,
- "withData": 286,
- "parcels": 39656,
- "auctions": 2462,
- "withTaxSaleLink": 1110,
+ "withData": 321,
+ "parcels": 52890,
+ "auctions": 2514,
+ "withTaxSaleLink": 1135,
  "withSite": 3061,
  "withSheriffLink": 378,
  "withAssessorLink": 1545,
- "withPhotos": 89,
- "photos": 3667,
+ "withPhotos": 124,
+ "photos": 16901,
  "systems": {
   "deed": 1294,
   "lien": 912,
@@ -568,6 +568,15 @@
    "page": "https://richland.sheriffsaleauction.ohio.gov"
   },
   {
+   "fips": "42041",
+   "state": "PA",
+   "name": "Cumberland County",
+   "date": "2026-10-23",
+   "kind": "posted",
+   "parcels": 405,
+   "page": "https://www.bid4assets.com/storefront/CumberlandPATaxSaleSep26"
+  },
+  {
    "fips": "08113",
    "state": "CO",
    "name": "San Miguel County",
@@ -593,6 +602,15 @@
    "kind": "posted",
    "parcels": 11,
    "page": "https://portage.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "53053",
+   "state": "WA",
+   "name": "Pierce County",
+   "date": "2026-10-26",
+   "kind": "posted",
+   "parcels": 123,
+   "page": "https://www.bid4assets.com/storefront/PierceFDOct26"
   },
   {
    "fips": "08023",
@@ -1198,6 +1216,15 @@
    "page": "https://marion.sheriffsaleauction.ohio.gov"
   },
   {
+   "fips": "06085",
+   "state": "CA",
+   "name": "Santa Clara County",
+   "date": "2026-11-02",
+   "kind": "posted",
+   "parcels": 52,
+   "page": "https://www.bid4assets.com/storefront/SantaClaraOct26"
+  },
+  {
    "fips": "12069",
    "state": "FL",
    "name": "Lake County",
@@ -1477,6 +1504,15 @@
    "page": "https://liveauctions.govease.com/TN/tnstewart/1244/browsestandard"
   },
   {
+   "fips": "06017",
+   "state": "CA",
+   "name": "El Dorado County",
+   "date": "2026-11-06",
+   "kind": "posted",
+   "parcels": 143,
+   "page": "https://www.bid4assets.com/storefront/ElDoradoNov26"
+  },
+  {
    "fips": "39045",
    "state": "OH",
    "name": "Fairfield County",
@@ -1621,6 +1657,15 @@
    "page": "https://preble.sheriffsaleauction.ohio.gov"
   },
   {
+   "fips": "06009",
+   "state": "CA",
+   "name": "Calaveras County",
+   "date": "2026-11-16",
+   "kind": "posted",
+   "parcels": 41,
+   "page": "https://www.bid4assets.com/storefront/CalaverasNov26"
+  },
+  {
    "fips": "06029",
    "state": "CA",
    "name": "Kern County",
@@ -1684,6 +1729,15 @@
    "page": "https://liveauctions.govease.com/TN/tnhawkins/1283/browsestandard"
   },
   {
+   "fips": "53051",
+   "state": "WA",
+   "name": "Pend Oreille County",
+   "date": "2026-11-17",
+   "kind": "posted",
+   "parcels": 5,
+   "page": "https://www.bid4assets.com/storefront/PendOreilleNov26"
+  },
+  {
    "fips": "12083",
    "state": "FL",
    "name": "Marion County",
@@ -1691,6 +1745,15 @@
    "kind": "posted",
    "parcels": 867,
    "page": "https://marion.realtaxdeed.com"
+  },
+  {
+   "fips": "27153",
+   "state": "MN",
+   "name": "Todd County",
+   "date": "2026-11-18",
+   "kind": "posted",
+   "parcels": 35,
+   "page": "https://www.bid4assets.com/storefront/ToddMNOct26MarketValueAuction"
   },
   {
    "fips": "39027",
@@ -1709,6 +1772,15 @@
    "kind": "posted",
    "parcels": 424,
    "page": "https://liveauctions.govease.com/CO/cobaca/1235/browsestandard"
+  },
+  {
+   "fips": "42107",
+   "state": "PA",
+   "name": "Schuylkill County",
+   "date": "2026-11-19",
+   "kind": "posted",
+   "parcels": 1565,
+   "page": "https://www.bid4assets.com/storefront/SchuylkillPATaxSaleJun26"
   },
   {
    "fips": "39131",
@@ -1745,42 +1817,6 @@
    "kind": "posted",
    "parcels": 42,
    "page": "https://alachua.realtaxdeed.com"
-  },
-  {
-   "fips": "42017",
-   "state": "PA",
-   "name": "Bucks County",
-   "date": "2026-12-08",
-   "kind": "posted",
-   "parcels": 2,
-   "page": "https://liveauctions.govease.com/PA/pabucksjudicial/1554/browsestandard"
-  },
-  {
-   "fips": "42049",
-   "state": "PA",
-   "name": "Erie County",
-   "date": "2026-12-09",
-   "kind": "posted",
-   "parcels": 48,
-   "page": "https://liveauctions.govease.com/PA/paeriejudicial/1528/browsestandard"
-  },
-  {
-   "fips": "12041",
-   "state": "FL",
-   "name": "Gilchrist County",
-   "date": "2026-12-15",
-   "kind": "posted",
-   "parcels": 16,
-   "page": "https://gilchrist.realtaxdeed.com"
-  },
-  {
-   "fips": "39117",
-   "state": "OH",
-   "name": "Morrow County",
-   "date": "2026-12-18",
-   "kind": "posted",
-   "parcels": 6,
-   "page": "https://morrow.sheriffsaleauction.ohio.gov"
   }
  ],
  "sources": {
@@ -1818,12 +1854,33 @@
    "counties": 40,
    "ok": true,
    "checked": "2026-10-18T21:24:46+00:00"
+  },
+  "bid4assets": {
+   "label": "Bid4Assets (county tax sale auctions)",
+   "url": "https://www.bid4assets.com/county-tax-sales",
+   "counties": 35,
+   "ok": true,
+   "checked": "2026-10-18T22:20:27+00:00"
   }
  },
  "countiesWithData": [
+  "06007",
+  "06009",
+  "06017",
   "06029",
+  "06035",
   "06037",
+  "06039",
+  "06049",
+  "06053",
   "06069",
+  "06085",
+  "06087",
+  "06093",
+  "06099",
+  "06109",
+  "06111",
+  "06113",
   "08001",
   "08009",
   "08011",
@@ -1919,6 +1976,7 @@
   "13285",
   "13293",
   "13297",
+  "22121",
   "26001",
   "26003",
   "26005",
@@ -1998,8 +2056,15 @@
   "26161",
   "26163",
   "26165",
+  "27153",
   "29047",
+  "32001",
   "32003",
+  "32005",
+  "32007",
+  "32015",
+  "32023",
+  "32510",
   "39001",
   "39003",
   "39005",
@@ -2088,8 +2153,15 @@
   "39173",
   "39175",
   "42005",
+  "42009",
+  "42011",
   "42017",
+  "42037",
+  "42041",
   "42049",
+  "42051",
+  "42089",
+  "42107",
   "47035",
   "47053",
   "47073",
@@ -2106,6 +2178,12 @@
   "48363",
   "48367",
   "48485",
-  "53005"
+  "53005",
+  "53011",
+  "53027",
+  "53039",
+  "53049",
+  "53051",
+  "53053"
  ]
 }
