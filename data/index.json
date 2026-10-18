@@ -1,11 +1,11 @@
 {
- "generated": "2026-10-18T15:48:34+00:00",
+ "generated": "2026-10-18T16:16:29+00:00",
  "counties": 3222,
  "states": 52,
- "withData": 159,
- "parcels": 23744,
- "auctions": 1226,
- "withTaxSaleLink": 1017,
+ "withData": 164,
+ "parcels": 25501,
+ "auctions": 1339,
+ "withTaxSaleLink": 1019,
  "withSite": 3061,
  "withSheriffLink": 378,
  "withAssessorLink": 1545,
@@ -26,6 +26,15 @@
    "kind": "posted",
    "parcels": 2042,
    "page": "https://miamidade.realtaxdeed.com"
+  },
+  {
+   "fips": "39035",
+   "state": "OH",
+   "name": "Cuyahoga County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 984,
+   "page": "https://cuyahoga.sheriffsaleauction.ohio.gov"
   },
   {
    "fips": "12005",
@@ -62,6 +71,15 @@
    "kind": "posted",
    "parcels": 21,
    "page": "https://nassau.realtaxdeed.com"
+  },
+  {
+   "fips": "39153",
+   "state": "OH",
+   "name": "Summit County",
+   "date": "2026-10-20",
+   "kind": "posted",
+   "parcels": 307,
+   "page": "https://summit.sheriffsaleauction.ohio.gov"
   },
   {
    "fips": "12019",
@@ -109,6 +127,15 @@
    "page": "https://putnam.realtaxdeed.com"
   },
   {
+   "fips": "39061",
+   "state": "OH",
+   "name": "Hamilton County",
+   "date": "2026-10-21",
+   "kind": "posted",
+   "parcels": 141,
+   "page": "https://hamilton.sheriffsaleauction.ohio.gov"
+  },
+  {
    "fips": "12057",
    "state": "FL",
    "name": "Hillsborough County",
@@ -125,6 +152,24 @@
    "kind": "posted",
    "parcels": 394,
    "page": "https://orange.realtaxdeed.com"
+  },
+  {
+   "fips": "39049",
+   "state": "OH",
+   "name": "Franklin County",
+   "date": "2026-10-23",
+   "kind": "posted",
+   "parcels": 206,
+   "page": "https://franklin.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39113",
+   "state": "OH",
+   "name": "Montgomery County",
+   "date": "2026-10-23",
+   "kind": "posted",
+   "parcels": 119,
+   "page": "https://montgomery.sheriffsaleauction.ohio.gov"
   },
   {
    "fips": "12011",
@@ -800,7 +845,7 @@
   "realauction": {
    "label": "RealAuction portals (Florida Clerk tax deed and foreclosure sales, Ohio and Texas sheriff sales)",
    "url": "https://www.realauction.com/",
-   "counties": 39,
+   "counties": 44,
    "ok": true,
    "checked": "2026-10-18T10:12:21+00:00"
   }
@@ -964,6 +1009,11 @@
   "26161",
   "26163",
   "26165",
-  "32003"
+  "32003",
+  "39035",
+  "39049",
+  "39061",
+  "39113",
+  "39153"
  ]
 }

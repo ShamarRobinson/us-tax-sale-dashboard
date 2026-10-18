@@ -1,32 +1,60 @@
 {
- "generated": "2026-10-18T15:48:34+00:00",
- "previous": "2026-10-18T15:41:35+00:00",
+ "generated": "2026-10-18T16:16:29+00:00",
+ "previous": "2026-10-18T15:48:34+00:00",
  "newUpcoming": [
   {
-   "fips": "08041",
-   "state": "CO",
-   "name": "El Paso County",
-   "date": "2026-10-27",
+   "fips": "39035",
+   "state": "OH",
+   "name": "Cuyahoga County",
+   "date": "2026-10-19",
    "kind": "posted",
-   "parcels": 36,
-   "page": "https://elpasoco.treasurersdeedsale.realtaxdeed.com"
+   "parcels": 984,
+   "page": "https://cuyahoga.sheriffsaleauction.ohio.gov"
   },
   {
-   "fips": "08123",
-   "state": "CO",
-   "name": "Weld County",
-   "date": "2026-10-28",
+   "fips": "39153",
+   "state": "OH",
+   "name": "Summit County",
+   "date": "2026-10-20",
    "kind": "posted",
-   "parcels": 7,
-   "page": "https://weld.treasurersdeedsale.realtaxdeed.com"
+   "parcels": 307,
+   "page": "https://summit.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39061",
+   "state": "OH",
+   "name": "Hamilton County",
+   "date": "2026-10-21",
+   "kind": "posted",
+   "parcels": 141,
+   "page": "https://hamilton.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39049",
+   "state": "OH",
+   "name": "Franklin County",
+   "date": "2026-10-23",
+   "kind": "posted",
+   "parcels": 206,
+   "page": "https://franklin.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39113",
+   "state": "OH",
+   "name": "Montgomery County",
+   "date": "2026-10-23",
+   "kind": "posted",
+   "parcels": 119,
+   "page": "https://montgomery.sheriffsaleauction.ohio.gov"
   }
  ],
  "newCounties": [
-  "08001",
-  "08031",
-  "08041",
-  "08123"
+  "39035",
+  "39049",
+  "39061",
+  "39113",
+  "39153"
  ],
- "parcelDelta": 53,
- "linkDelta": 0
+ "parcelDelta": 1757,
+ "linkDelta": 2
 }
