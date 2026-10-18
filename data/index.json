@@ -1,11 +1,11 @@
 {
- "generated": "2026-10-18T14:46:20+00:00",
+ "generated": "2026-10-18T15:16:17+00:00",
  "counties": 3222,
  "states": 52,
- "withData": 144,
- "parcels": 20848,
- "auctions": 1075,
- "withTaxSaleLink": 1008,
+ "withData": 149,
+ "parcels": 22838,
+ "auctions": 1137,
+ "withTaxSaleLink": 1013,
  "withSite": 3061,
  "withSheriffLink": 378,
  "withAssessorLink": 1545,
@@ -37,6 +37,15 @@
    "page": "https://bay.realtaxdeed.com"
   },
   {
+   "fips": "12061",
+   "state": "FL",
+   "name": "Indian River County",
+   "date": "2026-10-20",
+   "kind": "posted",
+   "parcels": 55,
+   "page": "https://indianriver.realtaxdeed.com"
+  },
+  {
    "fips": "12071",
    "state": "FL",
    "name": "Lee County",
@@ -46,6 +55,15 @@
    "page": "https://lee.realtaxdeed.com"
   },
   {
+   "fips": "12089",
+   "state": "FL",
+   "name": "Nassau County",
+   "date": "2026-10-20",
+   "kind": "posted",
+   "parcels": 21,
+   "page": "https://nassau.realtaxdeed.com"
+  },
+  {
    "fips": "12019",
    "state": "FL",
    "name": "Clay County",
@@ -53,6 +71,15 @@
    "kind": "posted",
    "parcels": 73,
    "page": "https://clay.realtaxdeed.com"
+  },
+  {
+   "fips": "12055",
+   "state": "FL",
+   "name": "Highlands County",
+   "date": "2026-10-21",
+   "kind": "posted",
+   "parcels": 716,
+   "page": "https://highlands.realtaxdeed.com"
   },
   {
    "fips": "12073",
@@ -71,6 +98,15 @@
    "kind": "posted",
    "parcels": 72,
    "page": "https://pinellas.realtaxdeed.com"
+  },
+  {
+   "fips": "12107",
+   "state": "FL",
+   "name": "Putnam County",
+   "date": "2026-10-21",
+   "kind": "posted",
+   "parcels": 1174,
+   "page": "https://putnam.realtaxdeed.com"
   },
   {
    "fips": "12057",
@@ -692,7 +728,7 @@
   "realauction": {
    "label": "RealAuction portals (Florida Clerk tax deed and foreclosure sales, Ohio and Texas sheriff sales)",
    "url": "https://www.realauction.com/",
-   "counties": 24,
+   "counties": 29,
    "ok": true,
    "checked": "2026-10-18T10:12:21+00:00"
   }
@@ -706,18 +742,23 @@
   "12031",
   "12033",
   "12053",
+  "12055",
   "12057",
+  "12061",
   "12069",
   "12071",
   "12073",
   "12083",
+  "12085",
   "12086",
+  "12089",
   "12095",
   "12097",
   "12099",
   "12101",
   "12103",
   "12105",
+  "12107",
   "12113",
   "12115",
   "12117",

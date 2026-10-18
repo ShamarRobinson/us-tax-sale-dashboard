@@ -1,20 +1,51 @@
 {
- "generated": "2026-10-18T14:46:20+00:00",
- "previous": "2026-10-18T14:45:39+00:00",
+ "generated": "2026-10-18T15:16:17+00:00",
+ "previous": "2026-10-18T14:46:20+00:00",
  "newUpcoming": [
   {
-   "fips": "12053",
+   "fips": "12061",
    "state": "FL",
-   "name": "Hernando County",
-   "date": "2026-11-04",
+   "name": "Indian River County",
+   "date": "2026-10-20",
    "kind": "posted",
-   "parcels": 149,
-   "page": "https://hernando.realtaxdeed.com"
+   "parcels": 55,
+   "page": "https://indianriver.realtaxdeed.com"
+  },
+  {
+   "fips": "12089",
+   "state": "FL",
+   "name": "Nassau County",
+   "date": "2026-10-20",
+   "kind": "posted",
+   "parcels": 21,
+   "page": "https://nassau.realtaxdeed.com"
+  },
+  {
+   "fips": "12055",
+   "state": "FL",
+   "name": "Highlands County",
+   "date": "2026-10-21",
+   "kind": "posted",
+   "parcels": 716,
+   "page": "https://highlands.realtaxdeed.com"
+  },
+  {
+   "fips": "12107",
+   "state": "FL",
+   "name": "Putnam County",
+   "date": "2026-10-21",
+   "kind": "posted",
+   "parcels": 1174,
+   "page": "https://putnam.realtaxdeed.com"
   }
  ],
  "newCounties": [
-  "12053"
+  "12055",
+  "12061",
+  "12085",
+  "12089",
+  "12107"
  ],
- "parcelDelta": 149,
- "linkDelta": 0
+ "parcelDelta": 1990,
+ "linkDelta": 5
 }
