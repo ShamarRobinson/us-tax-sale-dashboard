@@ -1,40 +1,40 @@
 {
- "generated": "2026-10-18T15:27:55+00:00",
- "previous": "2026-10-18T15:16:17+00:00",
+ "generated": "2026-10-18T15:41:35+00:00",
+ "previous": "2026-10-18T15:27:55+00:00",
  "newUpcoming": [
   {
-   "fips": "12051",
+   "fips": "12063",
    "state": "FL",
-   "name": "Hendry County",
-   "date": "2026-10-29",
+   "name": "Jackson County",
+   "date": "2026-10-27",
    "kind": "posted",
-   "parcels": 80,
-   "page": "https://hendry.realtaxdeed.com"
+   "parcels": 295,
+   "page": "https://jackson.realtaxdeed.com"
   },
   {
-   "fips": "12121",
+   "fips": "12133",
    "state": "FL",
-   "name": "Suwannee County",
-   "date": "2026-11-05",
+   "name": "Washington County",
+   "date": "2026-10-27",
    "kind": "posted",
-   "parcels": 77,
-   "page": "https://suwannee.realtaxdeed.com"
+   "parcels": 308,
+   "page": "https://washington.realtaxdeed.com"
   },
   {
-   "fips": "12035",
+   "fips": "12041",
    "state": "FL",
-   "name": "Flagler County",
-   "date": "2026-11-17",
+   "name": "Gilchrist County",
+   "date": "2026-12-15",
    "kind": "posted",
-   "parcels": 77,
-   "page": "https://flagler.realtaxdeed.com"
+   "parcels": 16,
+   "page": "https://gilchrist.realtaxdeed.com"
   }
  ],
  "newCounties": [
-  "12035",
-  "12051",
-  "12121"
+  "12041",
+  "12063",
+  "12133"
  ],
- "parcelDelta": 234,
+ "parcelDelta": 619,
  "linkDelta": 2
 }

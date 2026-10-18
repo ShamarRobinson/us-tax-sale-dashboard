@@ -1,11 +1,11 @@
 {
- "generated": "2026-10-18T15:27:55+00:00",
+ "generated": "2026-10-18T15:41:35+00:00",
  "counties": 3222,
  "states": 52,
- "withData": 152,
- "parcels": 23072,
- "auctions": 1155,
- "withTaxSaleLink": 1015,
+ "withData": 155,
+ "parcels": 23691,
+ "auctions": 1202,
+ "withTaxSaleLink": 1017,
  "withSite": 3061,
  "withSheriffLink": 378,
  "withAssessorLink": 1545,
@@ -145,6 +145,15 @@
    "page": "https://santarosa.realtaxdeed.com"
   },
   {
+   "fips": "12063",
+   "state": "FL",
+   "name": "Jackson County",
+   "date": "2026-10-27",
+   "kind": "posted",
+   "parcels": 295,
+   "page": "https://jackson.realtaxdeed.com"
+  },
+  {
    "fips": "12127",
    "state": "FL",
    "name": "Volusia County",
@@ -152,6 +161,15 @@
    "kind": "posted",
    "parcels": 510,
    "page": "https://volusia.realtaxdeed.com"
+  },
+  {
+   "fips": "12133",
+   "state": "FL",
+   "name": "Washington County",
+   "date": "2026-10-27",
+   "kind": "posted",
+   "parcels": 308,
+   "page": "https://washington.realtaxdeed.com"
   },
   {
    "fips": "12031",
@@ -728,6 +746,15 @@
    "kind": "posted",
    "parcels": 42,
    "page": "https://alachua.realtaxdeed.com"
+  },
+  {
+   "fips": "12041",
+   "state": "FL",
+   "name": "Gilchrist County",
+   "date": "2026-12-15",
+   "kind": "posted",
+   "parcels": 16,
+   "page": "https://gilchrist.realtaxdeed.com"
   }
  ],
  "sources": {
@@ -755,7 +782,7 @@
   "realauction": {
    "label": "RealAuction portals (Florida Clerk tax deed and foreclosure sales, Ohio and Texas sheriff sales)",
    "url": "https://www.realauction.com/",
-   "counties": 32,
+   "counties": 35,
    "ok": true,
    "checked": "2026-10-18T10:12:21+00:00"
   }
@@ -769,11 +796,13 @@
   "12031",
   "12033",
   "12035",
+  "12041",
   "12051",
   "12053",
   "12055",
   "12057",
   "12061",
+  "12063",
   "12069",
   "12071",
   "12073",
@@ -793,6 +822,7 @@
   "12117",
   "12121",
   "12127",
+  "12133",
   "13013",
   "13015",
   "13035",
