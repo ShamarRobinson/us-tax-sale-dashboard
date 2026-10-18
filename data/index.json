@@ -1,11 +1,11 @@
 {
- "generated": "2026-10-18T19:33:37+00:00",
+ "generated": "2026-10-18T21:02:46+00:00",
  "counties": 3222,
  "states": 52,
- "withData": 246,
- "parcels": 31638,
- "auctions": 2414,
- "withTaxSaleLink": 1085,
+ "withData": 286,
+ "parcels": 39656,
+ "auctions": 2462,
+ "withTaxSaleLink": 1110,
  "withSite": 3061,
  "withSheriffLink": 378,
  "withAssessorLink": 1545,
@@ -136,6 +136,15 @@
    "page": "https://wyandot.sheriffsaleauction.ohio.gov"
   },
   {
+   "fips": "06037",
+   "state": "CA",
+   "name": "Los Angeles County",
+   "date": "2026-10-20",
+   "kind": "posted",
+   "parcels": 215,
+   "page": "https://liveauctions.govease.com/CA/calosangeles/1391/browsestandard"
+  },
+  {
    "fips": "12005",
    "state": "FL",
    "name": "Bay County",
@@ -244,6 +253,42 @@
    "page": "https://warren.sheriffsaleauction.ohio.gov"
   },
   {
+   "fips": "08035",
+   "state": "CO",
+   "name": "Douglas County",
+   "date": "2026-10-21",
+   "kind": "posted",
+   "parcels": 171,
+   "page": "https://liveauctions.govease.com/CO/codouglasforeclosure/1400/browsestandard"
+  },
+  {
+   "fips": "08045",
+   "state": "CO",
+   "name": "Garfield County",
+   "date": "2026-10-21",
+   "kind": "posted",
+   "parcels": 11,
+   "page": "https://liveauctions.govease.com/CO/cogarfieldforeclosure/1324/browsestandard"
+  },
+  {
+   "fips": "08117",
+   "state": "CO",
+   "name": "Summit County",
+   "date": "2026-10-21",
+   "kind": "posted",
+   "parcels": 267,
+   "page": "https://liveauctions.govease.com/CO/cosummit/1392/browsestandard"
+  },
+  {
+   "fips": "08119",
+   "state": "CO",
+   "name": "Teller County",
+   "date": "2026-10-21",
+   "kind": "posted",
+   "parcels": 691,
+   "page": "https://liveauctions.govease.com/CO/cotellerlien/1555/browsestandard"
+  },
+  {
    "fips": "12019",
    "state": "FL",
    "name": "Clay County",
@@ -332,6 +377,24 @@
    "kind": "posted",
    "parcels": 7,
    "page": "https://wayne.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "08059",
+   "state": "CO",
+   "name": "Jefferson County",
+   "date": "2026-10-22",
+   "kind": "posted",
+   "parcels": 159,
+   "page": "https://liveauctions.govease.com/CO/cojeffersonforeclosure/1281/browsestandard"
+  },
+  {
+   "fips": "08093",
+   "state": "CO",
+   "name": "Park County",
+   "date": "2026-10-22",
+   "kind": "posted",
+   "parcels": 13,
+   "page": "https://liveauctions.govease.com/CO/coparktread/1438/browsestandard"
   },
   {
    "fips": "39013",
@@ -512,6 +575,15 @@
    "kind": "posted",
    "parcels": 11,
    "page": "https://portage.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "08023",
+   "state": "CO",
+   "name": "Costilla County",
+   "date": "2026-10-27",
+   "kind": "posted",
+   "parcels": 2247,
+   "page": "https://liveauctions.govease.com/CO/cocostilla/1387/browsestandard"
   },
   {
    "fips": "08041",
@@ -1144,6 +1216,60 @@
    "page": "https://henry.sheriffsaleauction.ohio.gov"
   },
   {
+   "fips": "48121",
+   "state": "TX",
+   "name": "Denton County",
+   "date": "2026-11-03",
+   "kind": "posted",
+   "parcels": 18,
+   "page": "https://liveauctions.govease.com/TX/txdenton/1355/browsestandard"
+  },
+  {
+   "fips": "48181",
+   "state": "TX",
+   "name": "Grayson County",
+   "date": "2026-11-03",
+   "kind": "posted",
+   "parcels": 22,
+   "page": "https://liveauctions.govease.com/TX/txgrayson/1280/browsestandard"
+  },
+  {
+   "fips": "48309",
+   "state": "TX",
+   "name": "McLennan County",
+   "date": "2026-11-03",
+   "kind": "posted",
+   "parcels": 35,
+   "page": "https://liveauctions.govease.com/TX/txmclennan/1444/browsestandard"
+  },
+  {
+   "fips": "48363",
+   "state": "TX",
+   "name": "Palo Pinto County",
+   "date": "2026-11-03",
+   "kind": "posted",
+   "parcels": 11,
+   "page": "https://liveauctions.govease.com/TX/txpalopinto/1558/browsestandard"
+  },
+  {
+   "fips": "48367",
+   "state": "TX",
+   "name": "Parker County",
+   "date": "2026-11-03",
+   "kind": "posted",
+   "parcels": 9,
+   "page": "https://liveauctions.govease.com/TX/txparker/1545/browsestandard"
+  },
+  {
+   "fips": "48485",
+   "state": "TX",
+   "name": "Wichita County",
+   "date": "2026-11-03",
+   "kind": "posted",
+   "parcels": 14,
+   "page": "https://liveauctions.govease.com/TX/txwichita/1429/browsestandard"
+  },
+  {
    "fips": "12017",
    "state": "FL",
    "name": "Citrus County",
@@ -1378,6 +1504,15 @@
    "page": "https://preble.sheriffsaleauction.ohio.gov"
   },
   {
+   "fips": "06029",
+   "state": "CA",
+   "name": "Kern County",
+   "date": "2026-11-16",
+   "kind": "posted",
+   "parcels": 58,
+   "page": "https://liveauctions.govease.com/CA/cakernreoffer/1564/browsestandard"
+  },
+  {
    "fips": "12035",
    "state": "FL",
    "name": "Flagler County",
@@ -1441,6 +1576,15 @@
    "page": "https://mahoning.sheriffsaleauction.ohio.gov"
   },
   {
+   "fips": "08097",
+   "state": "CO",
+   "name": "Pitkin County",
+   "date": "2026-11-25",
+   "kind": "posted",
+   "parcels": 6,
+   "page": "https://liveauctions.govease.com/CO/copitkinforeclosure/1327/browsestandard"
+  },
+  {
    "fips": "12001",
    "state": "FL",
    "name": "Alachua County",
@@ -1448,6 +1592,24 @@
    "kind": "posted",
    "parcels": 42,
    "page": "https://alachua.realtaxdeed.com"
+  },
+  {
+   "fips": "42017",
+   "state": "PA",
+   "name": "Bucks County",
+   "date": "2026-12-08",
+   "kind": "posted",
+   "parcels": 2,
+   "page": "https://liveauctions.govease.com/PA/pabucksjudicial/1554/browsestandard"
+  },
+  {
+   "fips": "42049",
+   "state": "PA",
+   "name": "Erie County",
+   "date": "2026-12-09",
+   "kind": "posted",
+   "parcels": 48,
+   "page": "https://liveauctions.govease.com/PA/paeriejudicial/1528/browsestandard"
   },
   {
    "fips": "12041",
@@ -1496,12 +1658,38 @@
    "counties": 126,
    "ok": true,
    "checked": "2026-10-18T10:12:21+00:00"
+  },
+  "govease": {
+   "label": "GovEase (online tax sale platform)",
+   "url": "https://www.govease.com/",
+   "counties": 40,
+   "ok": true,
+   "checked": "2026-10-18T21:02:44+00:00"
   }
  },
  "countiesWithData": [
+  "06029",
+  "06037",
+  "06069",
   "08001",
+  "08009",
+  "08011",
+  "08023",
   "08031",
+  "08035",
   "08041",
+  "08045",
+  "08059",
+  "08065",
+  "08083",
+  "08093",
+  "08095",
+  "08097",
+  "08099",
+  "08113",
+  "08117",
+  "08119",
+  "08121",
   "08123",
   "12001",
   "12005",
@@ -1657,6 +1845,7 @@
   "26161",
   "26163",
   "26165",
+  "29047",
   "32003",
   "39001",
   "39003",
@@ -1744,6 +1933,26 @@
   "39169",
   "39171",
   "39173",
-  "39175"
+  "39175",
+  "42005",
+  "42017",
+  "42049",
+  "47035",
+  "47053",
+  "47073",
+  "47083",
+  "47099",
+  "47119",
+  "47161",
+  "47163",
+  "47179",
+  "47181",
+  "48121",
+  "48181",
+  "48309",
+  "48363",
+  "48367",
+  "48485",
+  "53005"
  ]
 }

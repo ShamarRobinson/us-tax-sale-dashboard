@@ -1,36 +1,212 @@
 {
- "generated": "2026-10-18T19:33:37+00:00",
- "previous": "2026-10-18T18:34:04+00:00",
+ "generated": "2026-10-18T21:02:46+00:00",
+ "previous": "2026-10-18T20:49:03+00:00",
  "newUpcoming": [
   {
-   "fips": "12031",
-   "state": "FL",
-   "name": "Duval County",
-   "date": "2026-10-19",
-   "kind": "posted",
-   "parcels": 913,
-   "page": "https://duval.realtaxdeed.com"
-  },
-  {
-   "fips": "12103",
-   "state": "FL",
-   "name": "Pinellas County",
+   "fips": "06037",
+   "state": "CA",
+   "name": "Los Angeles County",
    "date": "2026-10-20",
    "kind": "posted",
-   "parcels": 303,
-   "page": "https://pinellas.realtaxdeed.com"
+   "parcels": 215,
+   "page": "https://liveauctions.govease.com/CA/calosangeles/1391/browsestandard"
   },
   {
-   "fips": "12105",
-   "state": "FL",
-   "name": "Polk County",
-   "date": "2026-10-20",
+   "fips": "08035",
+   "state": "CO",
+   "name": "Douglas County",
+   "date": "2026-10-21",
    "kind": "posted",
-   "parcels": 643,
-   "page": "https://polk.realtaxdeed.com"
+   "parcels": 171,
+   "page": "https://liveauctions.govease.com/CO/codouglasforeclosure/1400/browsestandard"
+  },
+  {
+   "fips": "08045",
+   "state": "CO",
+   "name": "Garfield County",
+   "date": "2026-10-21",
+   "kind": "posted",
+   "parcels": 11,
+   "page": "https://liveauctions.govease.com/CO/cogarfieldforeclosure/1324/browsestandard"
+  },
+  {
+   "fips": "08117",
+   "state": "CO",
+   "name": "Summit County",
+   "date": "2026-10-21",
+   "kind": "posted",
+   "parcels": 267,
+   "page": "https://liveauctions.govease.com/CO/cosummit/1392/browsestandard"
+  },
+  {
+   "fips": "08119",
+   "state": "CO",
+   "name": "Teller County",
+   "date": "2026-10-21",
+   "kind": "posted",
+   "parcels": 691,
+   "page": "https://liveauctions.govease.com/CO/cotellerlien/1555/browsestandard"
+  },
+  {
+   "fips": "08059",
+   "state": "CO",
+   "name": "Jefferson County",
+   "date": "2026-10-22",
+   "kind": "posted",
+   "parcels": 159,
+   "page": "https://liveauctions.govease.com/CO/cojeffersonforeclosure/1281/browsestandard"
+  },
+  {
+   "fips": "08093",
+   "state": "CO",
+   "name": "Park County",
+   "date": "2026-10-22",
+   "kind": "posted",
+   "parcels": 13,
+   "page": "https://liveauctions.govease.com/CO/coparktread/1438/browsestandard"
+  },
+  {
+   "fips": "08023",
+   "state": "CO",
+   "name": "Costilla County",
+   "date": "2026-10-27",
+   "kind": "posted",
+   "parcels": 2247,
+   "page": "https://liveauctions.govease.com/CO/cocostilla/1387/browsestandard"
+  },
+  {
+   "fips": "48121",
+   "state": "TX",
+   "name": "Denton County",
+   "date": "2026-11-03",
+   "kind": "posted",
+   "parcels": 18,
+   "page": "https://liveauctions.govease.com/TX/txdenton/1355/browsestandard"
+  },
+  {
+   "fips": "48181",
+   "state": "TX",
+   "name": "Grayson County",
+   "date": "2026-11-03",
+   "kind": "posted",
+   "parcels": 22,
+   "page": "https://liveauctions.govease.com/TX/txgrayson/1280/browsestandard"
+  },
+  {
+   "fips": "48309",
+   "state": "TX",
+   "name": "McLennan County",
+   "date": "2026-11-03",
+   "kind": "posted",
+   "parcels": 35,
+   "page": "https://liveauctions.govease.com/TX/txmclennan/1444/browsestandard"
+  },
+  {
+   "fips": "48363",
+   "state": "TX",
+   "name": "Palo Pinto County",
+   "date": "2026-11-03",
+   "kind": "posted",
+   "parcels": 11,
+   "page": "https://liveauctions.govease.com/TX/txpalopinto/1558/browsestandard"
+  },
+  {
+   "fips": "48367",
+   "state": "TX",
+   "name": "Parker County",
+   "date": "2026-11-03",
+   "kind": "posted",
+   "parcels": 9,
+   "page": "https://liveauctions.govease.com/TX/txparker/1545/browsestandard"
+  },
+  {
+   "fips": "48485",
+   "state": "TX",
+   "name": "Wichita County",
+   "date": "2026-11-03",
+   "kind": "posted",
+   "parcels": 14,
+   "page": "https://liveauctions.govease.com/TX/txwichita/1429/browsestandard"
+  },
+  {
+   "fips": "06029",
+   "state": "CA",
+   "name": "Kern County",
+   "date": "2026-11-16",
+   "kind": "posted",
+   "parcels": 58,
+   "page": "https://liveauctions.govease.com/CA/cakernreoffer/1564/browsestandard"
+  },
+  {
+   "fips": "08097",
+   "state": "CO",
+   "name": "Pitkin County",
+   "date": "2026-11-25",
+   "kind": "posted",
+   "parcels": 6,
+   "page": "https://liveauctions.govease.com/CO/copitkinforeclosure/1327/browsestandard"
+  },
+  {
+   "fips": "42017",
+   "state": "PA",
+   "name": "Bucks County",
+   "date": "2026-12-08",
+   "kind": "posted",
+   "parcels": 2,
+   "page": "https://liveauctions.govease.com/PA/pabucksjudicial/1554/browsestandard"
+  },
+  {
+   "fips": "42049",
+   "state": "PA",
+   "name": "Erie County",
+   "date": "2026-12-09",
+   "kind": "posted",
+   "parcels": 48,
+   "page": "https://liveauctions.govease.com/PA/paeriejudicial/1528/browsestandard"
   }
  ],
- "newCounties": [],
- "parcelDelta": 1387,
- "linkDelta": 0
+ "newCounties": [
+  "06029",
+  "06037",
+  "06069",
+  "08009",
+  "08011",
+  "08023",
+  "08035",
+  "08045",
+  "08059",
+  "08065",
+  "08083",
+  "08093",
+  "08095",
+  "08097",
+  "08099",
+  "08113",
+  "08117",
+  "08119",
+  "08121",
+  "29047",
+  "42005",
+  "42017",
+  "42049",
+  "47035",
+  "47053",
+  "47073",
+  "47083",
+  "47099",
+  "47119",
+  "47161",
+  "47163",
+  "47179",
+  "47181",
+  "48121",
+  "48181",
+  "48309",
+  "48363",
+  "48367",
+  "48485",
+  "53005"
+ ],
+ "parcelDelta": 8018,
+ "linkDelta": 25
 }
