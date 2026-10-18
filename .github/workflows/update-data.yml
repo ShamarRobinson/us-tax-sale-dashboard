@@ -56,11 +56,32 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/ ref/discovered_links.json
-          if git diff --cached --quiet; then
-            echo "No changes"
-          else
-            git commit -m "Update tax sale data $(date -u +%Y-%m-%d)"
-            git pull --rebase origin main
-            git push
-          fi
+          # The fetch can take two hours and main moves meanwhile (portal data pushed from the Mac), and the derived
+          # files never merge cleanly. So: keep this run's output aside, take main as the base, lay this run's county
+          # files on top except where main changed a county since the run began, rebuild the derived files from that
+          # union, and push; retry if main moves again in between.
+          START=$(git rev-parse HEAD)
+          rm -rf /tmp/run && mkdir -p /tmp/run && cp -r data /tmp/run/data && cp ref/discovered_links.json /tmp/run/
+          for attempt in 1 2 3; do
+            git fetch -q origin main
+            git reset -q --hard origin/main
+            git diff --name-only "$START" origin/main -- data/counties data/raw ref/discovered_links.json | sort > /tmp/run/main_changed.txt
+            for f in /tmp/run/data/counties/*.json; do
+              rel="data/counties/$(basename "$f")"
+              grep -qx "$rel" /tmp/run/main_changed.txt || cp "$f" "$rel"
+            done
+            grep -qx ref/discovered_links.json /tmp/run/main_changed.txt || cp /tmp/run/discovered_links.json ref/discovered_links.json
+            cp /tmp/run/data/index.json data/index.json   # carries this run's source status into the rebuild
+            python fetch_all.py --offline
+            git add data/ ref/discovered_links.json
+            if git diff --cached --quiet; then
+              echo "No changes"
+              exit 0
+            fi
+            git commit -q -m "Update tax sale data $(date -u +%Y-%m-%d)"
+            if git push; then
+              exit 0
+            fi
+            echo "main moved during the rebuild (attempt $attempt), retrying"
+          done
+          exit 1
