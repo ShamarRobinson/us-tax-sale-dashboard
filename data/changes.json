@@ -1,8 +1,50 @@
 {
- "generated": "2026-10-18T12:24:42+00:00",
- "previous": "2026-10-18T12:23:37+00:00",
- "newUpcoming": [],
- "newCounties": [],
- "parcelDelta": 0,
+ "generated": "2026-10-18T13:08:19+00:00",
+ "previous": "2026-10-18T12:24:42+00:00",
+ "newUpcoming": [
+  {
+   "fips": "12071",
+   "state": "FL",
+   "name": "Lee County",
+   "date": "2026-10-20",
+   "kind": "posted",
+   "parcels": 537,
+   "page": "https://lee.realtaxdeed.com"
+  },
+  {
+   "fips": "12011",
+   "state": "FL",
+   "name": "Broward County",
+   "date": "2026-10-26",
+   "kind": "posted",
+   "parcels": 85,
+   "page": "https://broward.realtaxdeed.com"
+  },
+  {
+   "fips": "12127",
+   "state": "FL",
+   "name": "Volusia County",
+   "date": "2026-10-27",
+   "kind": "posted",
+   "parcels": 510,
+   "page": "https://volusia.realtaxdeed.com"
+  },
+  {
+   "fips": "12105",
+   "state": "FL",
+   "name": "Polk County",
+   "date": "2026-11-19",
+   "kind": "posted",
+   "parcels": 246,
+   "page": "https://polk.realtaxdeed.com"
+  }
+ ],
+ "newCounties": [
+  "12011",
+  "12071",
+  "12105",
+  "12127"
+ ],
+ "parcelDelta": 1378,
  "linkDelta": 0
 }

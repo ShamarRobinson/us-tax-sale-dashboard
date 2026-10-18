@@ -1,10 +1,10 @@
 {
- "generated": "2026-10-18T12:24:42+00:00",
+ "generated": "2026-10-18T13:08:19+00:00",
  "counties": 3222,
  "states": 52,
- "withData": 125,
- "parcels": 14236,
- "auctions": 749,
+ "withData": 129,
+ "parcels": 15614,
+ "auctions": 800,
  "withTaxSaleLink": 999,
  "withSite": 3061,
  "withSheriffLink": 378,
@@ -18,6 +18,15 @@
   "hybrid": 426
  },
  "upcomingPosted": [
+  {
+   "fips": "12071",
+   "state": "FL",
+   "name": "Lee County",
+   "date": "2026-10-20",
+   "kind": "posted",
+   "parcels": 537,
+   "page": "https://lee.realtaxdeed.com"
+  },
   {
    "fips": "12103",
    "state": "FL",
@@ -44,6 +53,24 @@
    "kind": "posted",
    "parcels": 394,
    "page": "https://orange.realtaxdeed.com"
+  },
+  {
+   "fips": "12011",
+   "state": "FL",
+   "name": "Broward County",
+   "date": "2026-10-26",
+   "kind": "posted",
+   "parcels": 85,
+   "page": "https://broward.realtaxdeed.com"
+  },
+  {
+   "fips": "12127",
+   "state": "FL",
+   "name": "Volusia County",
+   "date": "2026-10-27",
+   "kind": "posted",
+   "parcels": 510,
+   "page": "https://volusia.realtaxdeed.com"
   },
   {
    "fips": "12031",
@@ -494,6 +521,15 @@
    "kind": "posted",
    "parcels": 685,
    "page": "https://palmbeach.realtaxdeed.com"
+  },
+  {
+   "fips": "12105",
+   "state": "FL",
+   "name": "Polk County",
+   "date": "2026-11-19",
+   "kind": "posted",
+   "parcels": 246,
+   "page": "https://polk.realtaxdeed.com"
   }
  ],
  "sources": {
@@ -527,11 +563,15 @@
   }
  },
  "countiesWithData": [
+  "12011",
   "12031",
   "12057",
+  "12071",
   "12095",
   "12099",
   "12103",
+  "12105",
+  "12127",
   "13013",
   "13015",
   "13035",

@@ -42,6 +42,7 @@ for p in sorted(glob.glob(os.path.join(RAW, "*.chunks"))):
             continue
         i, crc, data = line.split("\t", 2)
         i = int(i)
+        data = "".join(data.split())  # base64 never holds whitespace, so any that crept in while copying is noise
         if format(zlib.crc32(data.encode("latin-1")) & 0xFFFFFFFF, "x") != crc.lower():
             bad.append(i)
         else:
