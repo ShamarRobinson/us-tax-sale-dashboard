@@ -1,10 +1,10 @@
 {
- "generated": "2026-10-18T18:34:04+00:00",
+ "generated": "2026-10-18T19:33:37+00:00",
  "counties": 3222,
  "states": 52,
  "withData": 246,
- "parcels": 30251,
- "auctions": 2239,
+ "parcels": 31638,
+ "auctions": 2414,
  "withTaxSaleLink": 1085,
  "withSite": 3061,
  "withSheriffLink": 378,
@@ -18,6 +18,15 @@
   "hybrid": 426
  },
  "upcomingPosted": [
+  {
+   "fips": "12031",
+   "state": "FL",
+   "name": "Duval County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 913,
+   "page": "https://duval.realtaxdeed.com"
+  },
   {
    "fips": "12057",
    "state": "FL",
@@ -159,7 +168,7 @@
    "name": "Lee County",
    "date": "2026-10-20",
    "kind": "posted",
-   "parcels": 537,
+   "parcels": 949,
    "page": "https://lee.realtaxdeed.com"
   },
   {
@@ -170,6 +179,24 @@
    "kind": "posted",
    "parcels": 21,
    "page": "https://nassau.realtaxdeed.com"
+  },
+  {
+   "fips": "12103",
+   "state": "FL",
+   "name": "Pinellas County",
+   "date": "2026-10-20",
+   "kind": "posted",
+   "parcels": 303,
+   "page": "https://pinellas.realtaxdeed.com"
+  },
+  {
+   "fips": "12105",
+   "state": "FL",
+   "name": "Polk County",
+   "date": "2026-10-20",
+   "kind": "posted",
+   "parcels": 643,
+   "page": "https://polk.realtaxdeed.com"
   },
   {
    "fips": "39025",
@@ -242,15 +269,6 @@
    "kind": "posted",
    "parcels": 194,
    "page": "https://leon.realtaxdeed.com"
-  },
-  {
-   "fips": "12103",
-   "state": "FL",
-   "name": "Pinellas County",
-   "date": "2026-10-21",
-   "kind": "posted",
-   "parcels": 72,
-   "page": "https://pinellas.realtaxdeed.com"
   },
   {
    "fips": "12107",
@@ -539,15 +557,6 @@
    "kind": "posted",
    "parcels": 7,
    "page": "https://weld.treasurersdeedsale.realtaxdeed.com"
-  },
-  {
-   "fips": "12031",
-   "state": "FL",
-   "name": "Duval County",
-   "date": "2026-10-28",
-   "kind": "posted",
-   "parcels": 566,
-   "page": "https://duval.realtaxdeed.com"
   },
   {
    "fips": "39003",
@@ -1412,15 +1421,6 @@
    "kind": "posted",
    "parcels": 14,
    "page": "https://clinton.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "12105",
-   "state": "FL",
-   "name": "Polk County",
-   "date": "2026-11-19",
-   "kind": "posted",
-   "parcels": 246,
-   "page": "https://polk.realtaxdeed.com"
   },
   {
    "fips": "39131",

@@ -1,45 +1,36 @@
 {
- "generated": "2026-10-18T18:34:04+00:00",
- "previous": "2026-10-18T17:15:29+00:00",
+ "generated": "2026-10-18T19:33:37+00:00",
+ "previous": "2026-10-18T18:34:04+00:00",
  "newUpcoming": [
   {
-   "fips": "12057",
+   "fips": "12031",
    "state": "FL",
-   "name": "Hillsborough County",
+   "name": "Duval County",
    "date": "2026-10-19",
    "kind": "posted",
-   "parcels": 999,
-   "page": "https://hillsborough.realtaxdeed.com"
+   "parcels": 913,
+   "page": "https://duval.realtaxdeed.com"
   },
   {
-   "fips": "12095",
+   "fips": "12103",
    "state": "FL",
-   "name": "Orange County",
-   "date": "2026-10-19",
-   "kind": "posted",
-   "parcels": 1162,
-   "page": "https://orange.realtaxdeed.com"
-  },
-  {
-   "fips": "12099",
-   "state": "FL",
-   "name": "Palm Beach County",
-   "date": "2026-10-19",
-   "kind": "posted",
-   "parcels": 1099,
-   "page": "https://palmbeach.realtaxdeed.com"
-  },
-  {
-   "fips": "12011",
-   "state": "FL",
-   "name": "Broward County",
+   "name": "Pinellas County",
    "date": "2026-10-20",
    "kind": "posted",
-   "parcels": 723,
-   "page": "https://broward.realtaxdeed.com"
+   "parcels": 303,
+   "page": "https://pinellas.realtaxdeed.com"
+  },
+  {
+   "fips": "12105",
+   "state": "FL",
+   "name": "Polk County",
+   "date": "2026-10-20",
+   "kind": "posted",
+   "parcels": 643,
+   "page": "https://polk.realtaxdeed.com"
   }
  ],
  "newCounties": [],
- "parcelDelta": 3006,
+ "parcelDelta": 1387,
  "linkDelta": 0
 }
