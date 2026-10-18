@@ -1,101 +1,101 @@
 {
- "generated": "2026-10-18T17:02:18+00:00",
- "previous": "2026-10-18T16:56:33+00:00",
+ "generated": "2026-10-18T17:07:38+00:00",
+ "previous": "2026-10-18T17:02:18+00:00",
  "newUpcoming": [
   {
-   "fips": "39015",
+   "fips": "39079",
    "state": "OH",
-   "name": "Brown County",
-   "date": "2026-10-22",
-   "kind": "posted",
-   "parcels": 11,
-   "page": "https://brown.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "39059",
-   "state": "OH",
-   "name": "Guernsey County",
+   "name": "Jackson County",
    "date": "2026-10-23",
    "kind": "posted",
-   "parcels": 7,
-   "page": "https://guernsey.sheriffsaleauction.ohio.gov"
+   "parcels": 9,
+   "page": "https://jackson.sheriffsaleauction.ohio.gov"
   },
   {
-   "fips": "39039",
+   "fips": "39019",
    "state": "OH",
-   "name": "Defiance County",
-   "date": "2026-10-29",
-   "kind": "posted",
-   "parcels": 8,
-   "page": "https://defiance.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "39071",
-   "state": "OH",
-   "name": "Highland County",
-   "date": "2026-10-29",
-   "kind": "posted",
-   "parcels": 7,
-   "page": "https://highland.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "39107",
-   "state": "OH",
-   "name": "Mercer County",
-   "date": "2026-11-04",
-   "kind": "posted",
-   "parcels": 13,
-   "page": "https://mercer.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "39021",
-   "state": "OH",
-   "name": "Champaign County",
-   "date": "2026-11-10",
-   "kind": "posted",
-   "parcels": 12,
-   "page": "https://champaign.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "39033",
-   "state": "OH",
-   "name": "Crawford County",
-   "date": "2026-11-13",
+   "name": "Carroll County",
+   "date": "2026-11-03",
    "kind": "posted",
    "parcels": 3,
-   "page": "https://crawford.sheriffsaleauction.ohio.gov"
+   "page": "https://carroll.sheriffsaleauction.ohio.gov"
   },
   {
-   "fips": "39135",
+   "fips": "39069",
    "state": "OH",
-   "name": "Preble County",
+   "name": "Henry County",
+   "date": "2026-11-03",
+   "kind": "posted",
+   "parcels": 6,
+   "page": "https://henry.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39047",
+   "state": "OH",
+   "name": "Fayette County",
+   "date": "2026-11-04",
+   "kind": "posted",
+   "parcels": 11,
+   "page": "https://fayette.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39073",
+   "state": "OH",
+   "name": "Hocking County",
+   "date": "2026-11-06",
+   "kind": "posted",
+   "parcels": 6,
+   "page": "https://hocking.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39127",
+   "state": "OH",
+   "name": "Perry County",
+   "date": "2026-11-06",
+   "kind": "posted",
+   "parcels": 6,
+   "page": "https://perry.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39137",
+   "state": "OH",
+   "name": "Putnam County",
+   "date": "2026-11-09",
+   "kind": "posted",
+   "parcels": 12,
+   "page": "https://putnam.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39053",
+   "state": "OH",
+   "name": "Gallia County",
    "date": "2026-11-13",
    "kind": "posted",
-   "parcels": 7,
-   "page": "https://preble.sheriffsaleauction.ohio.gov"
+   "parcels": 4,
+   "page": "https://gallia.sheriffsaleauction.ohio.gov"
   },
   {
-   "fips": "39005",
+   "fips": "39131",
    "state": "OH",
-   "name": "Ashland County",
-   "date": "2026-11-17",
+   "name": "Pike County",
+   "date": "2026-11-20",
    "kind": "posted",
-   "parcels": 5,
-   "page": "https://ashland.sheriffsaleauction.ohio.gov"
+   "parcels": 9,
+   "page": "https://pike.sheriffsaleauction.ohio.gov"
   }
  ],
  "newCounties": [
-  "39005",
-  "39015",
-  "39021",
-  "39033",
-  "39039",
-  "39059",
-  "39071",
-  "39107",
-  "39135",
-  "39171"
+  "39019",
+  "39031",
+  "39047",
+  "39053",
+  "39069",
+  "39073",
+  "39079",
+  "39127",
+  "39131",
+  "39137"
  ],
- "parcelDelta": 79,
+ "parcelDelta": 77,
  "linkDelta": 7
 }
