@@ -3,8 +3,8 @@
   "use strict";
   const T = window.TS;
   const { $, esc, money, money2, short, int, pct, sum, avg, median, mode, fmtDate, TODAY, NOWYEAR, chart, Drill, makeTable, downloadCsv, downloadText, gmapUrl, svUrl, photos, addrText, copyBtn, TYPES, TIERS, tierOf, scoreHtml, prepCounty, WATCH, ics, redemptionTable } = T;
-  const KIND = { list: "Sale list", results: "Results", excess: "Excess funds list", taxdeed: "Tax deed sale", foreclosure: "Foreclosure sale", sheriff: "Sheriff sale" };
-  const KIND_HELP = { results: "Full results published by the county (sold and not sold)", excess: "From the excess funds list: only parcels that sold above what was owed", list: "Parcels advertised for the sale; outcomes not published", taxdeed: "Clerk tax deed auction", foreclosure: "Clerk foreclosure (judicial) sale", sheriff: "Sheriff sale" };
+  const KIND = { list: "Sale list", results: "Results", excess: "Excess funds list", taxdeed: "Tax deed sale", foreclosure: "Foreclosure sale", sheriff: "Sheriff sale", taxlien: "Tax lien sale" };
+  const KIND_HELP = { results: "Full results published by the county (sold and not sold)", excess: "From the excess funds list: only parcels that sold above what was owed", list: "Parcels advertised for the sale; outcomes not published", taxdeed: "Clerk tax deed auction", foreclosure: "Clerk foreclosure (judicial) sale", sheriff: "Sheriff sale", taxlien: "Tax lien certificate sale (the Treasurer sells the lien, not the property)" };
   const sysPill = (k, label) => `<span class="pill ${k}">${esc(label)}</span>`;
 
   let C = null, D = null, PREP = null, SEL = null;   // county, data file, prepared data, current selection

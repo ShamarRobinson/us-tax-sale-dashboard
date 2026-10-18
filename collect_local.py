@@ -48,16 +48,20 @@ def info_for(kind, state, base):
 
 
 def merge(fips, county, kind, base, auctions, checked):
-    """Replace this portal's auctions in the county file, keeping auctions from the county's other portals."""
+    """Replace this portal's auctions in the county file, keeping auctions from the county's other portals and from
+    other adapters (fetch_all.py tags each auction with its adapter as `src`)."""
     path = os.path.join(COUNTY_DIR, f"{fips}.json")
     rec = load_json(path) if os.path.exists(path) else None
-    if not rec or rec.get("source") != realauction.NAME:
+    if not rec:
         rec = dict(fips=fips, source=realauction.NAME, sourceUrl=base, lastChecked=checked, lastChanged=None, info={}, auctions=[])
     realauction.clean_auctions(auctions, kind)
-    kept = [a for a in rec.get("auctions", []) if (a.get("portal") or a.get("saleKind")) != kind]
+    for a in auctions:
+        a["src"] = realauction.NAME
+    kept = [a for a in rec.get("auctions", []) if (a.get("src") or rec.get("source")) != realauction.NAME or (a.get("portal") or a.get("saleKind")) != kind]
     new = sorted(kept + auctions, key=lambda a: a.get("date") or "", reverse=True)
     before = json.dumps(rec.get("auctions", []), sort_keys=True)
-    rec.update(name=county["name"], state=county["state"], lastChecked=checked, auctions=new)
+    rec.update(name=county["name"], state=county["state"], lastChecked=checked, auctions=new,
+               sources=sorted(set(rec.get("sources") or [rec.get("source")]) | {realauction.NAME}))
     if json.dumps(new, sort_keys=True) != before:
         rec["lastChanged"] = checked
     info = rec.setdefault("info", {})

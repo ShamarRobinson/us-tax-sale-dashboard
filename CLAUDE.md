@@ -50,15 +50,21 @@ sources/*.py adapters ──> fetch_all.py ──> data/counties/<fips>.json   (
 GitHub Pages serves index.html / analyzer.html / sheet.html, which load that JSON and CSV (Chart.js, Leaflet, d3-geo).
 ```
 
-- `python3 fetch_all.py` refreshes every source; `python3 fetch_all.py --offline` rebuilds everything from the county
-  files without calling any source (use this after editing data by hand or importing dumps).
+- `python3 fetch_all.py` refreshes every source; `python3 fetch_all.py --source govease` refreshes one adapter and
+  keeps the rest from disk; `python3 fetch_all.py --offline` rebuilds everything from the county files without calling
+  any source (use this after editing data by hand or importing dumps).
+- A county can be on two platforms at once (Summit County, CO is on RealAuction and GovEase), so `fetch_all.py` tags
+  each auction with its adapter (`src`) and merges adapters into one county file instead of replacing it; the county
+  record's `sources` lists them and `source` names the first. `collect_local.py` follows the same rule.
 - `.github/workflows/update-data.yml` runs on the 1st of each month (`23 13 1 * *`), on dispatch, and on pushes to
   `main` that touch `*.py`, `sources/*.py` or the workflow. It keeps county files for FIPS codes an adapter did not
   return, so portal data collected by hand survives the monthly run.
 - Adapter contract: a module in `sources/` with `NAME`, `LABEL`, `HOMEPAGE` and `fetch(counties)` that returns county
   records in the shape documented in `sources/__init__.py` (`auction(...)` and `parcel(...)` helpers, `get`,
   `get_json`, `money`). The dashboard needs no change for a new adapter; add its name to `sources.ADAPTERS`
-  (currently `atlanta`, `clark`, `michigan`, `realauction`).
+  (currently `atlanta`, `clark`, `michigan`, `realauction`, `govease`). GovEase (`sources/govease.py`) is reachable
+  from the GitHub runner and from Claude Code on the web, so it refreshes itself monthly; it publishes sale lists with
+  starting bids (no results) for whichever auctions are open, in CO, TN, PA, TX, CA, IN, MO, WA, KS and OK.
 - Deal score (`master.py`): value 40, property 20, market 15, competition 15, history 10; 70+ Strong, 50 to 69 Good,
   35 to 49 Fair, under 35 Weak.
 

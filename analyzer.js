@@ -37,7 +37,7 @@
     bind();
     run();
   }
-  const kindLabel = (k) => ({ taxdeed: "Tax deed sale (Clerk portal)", foreclosure: "Foreclosure sale (Clerk portal)", sheriff: "Sheriff sale", list: "County sale list", results: "County results", excess: "Excess funds list" }[k] || k);
+  const kindLabel = (k) => ({ taxdeed: "Tax deed sale (Clerk portal)", foreclosure: "Foreclosure sale (Clerk portal)", sheriff: "Sheriff sale", taxlien: "Tax lien sale", list: "County sale list", results: "County results", excess: "Excess funds list" }[k] || k);
   function fillSelect(id, vals, label) { const s = $(id); s.innerHTML = `<option value="">All</option>` + vals.map((v) => `<option value="${esc(v)}">${esc(label ? label(v) : v)}</option>`).join(""); }
   function fillCounties() {
     const st = $("fState").value; const s = $("fCounty");

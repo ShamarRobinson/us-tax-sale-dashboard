@@ -168,9 +168,11 @@ monthly digest.
 
 ## 8. Ideas Not Yet Built
 
-- More statewide platforms as adapters: GovEase, Bid4Assets, Zeus Auction, SRI, GovDeals, LienHub, Grant Street,
-  Civic Source, and the treasurer sites that publish PDF lists (reuse the Atlanta tracker's `ga_common.py` approach
-  for PDF and OCR).
+- More statewide platforms as adapters: Bid4Assets, Zeus Auction, SRI, GovDeals, LienHub, Grant Street, Civic Source,
+  and the treasurer sites that publish PDF lists (reuse the Atlanta tracker's `ga_common.py` approach for PDF and
+  OCR). GovEase was added on 2026-10-18 (`sources/govease.py`); Bid4Assets, LienHub and GovDeals answered a cloud
+  address with 403 when probed that day, and Zeus Auction and Civic Source failed TLS through the cloud proxy, so
+  those may need the Mac too.
 - Deeper history for the big Florida foreclosure portals (rerun with the default 3 months or more from the Mac).
 - Per-county alert subscriptions and a saved-search feature in the analyzer.
 - A Street View and assessor photo cache like the Atlanta tracker's `photo_store.py` for counties without photos.

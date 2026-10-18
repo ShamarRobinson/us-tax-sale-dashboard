@@ -159,7 +159,7 @@ def build(counties, records, data_dir):
                 priors = priors_for(p, a.get("date"))
                 score, cat = deal_score(p, c, cmult, priors)
                 rows.append([
-                    fips, c["label"], c["state"], SYSTEM_LABELS[st["system"]], a.get("saleKind") or a.get("kind"), rec.get("source"), a.get("date"), a.get("status"), a.get("label"),
+                    fips, c["label"], c["state"], SYSTEM_LABELS[st["system"]], a.get("saleKind") or a.get("kind"), a.get("src") or rec.get("source"), a.get("date"), a.get("status"), a.get("label"),
                     p.get("parcel"), p.get("caseNo"), p.get("certificate"), p.get("lot"), p.get("address"), p.get("fullAddress"), p.get("area"), p.get("zip"), p.get("owner"), p.get("buyer"), p.get("plaintiff"), cat, p.get("status"), p.get("soldDate"),
                     mb, wb, round(wb / mb, 2) if wb and mb else None, num(p.get("excess")), v,
                     round(mb / v, 3) if mb is not None and v else None, round(wb / v, 3) if wb and v else None, num(p.get("judgment")), num(p.get("taxes")),

@@ -1,7 +1,8 @@
 """Build every data file the dashboard reads.
 
-    python3 fetch_all.py            refresh everything (sources that fail keep their last saved data)
-    python3 fetch_all.py --offline  rebuild the registry from local reference files without calling any source
+    python3 fetch_all.py                  refresh everything (sources that fail keep their last saved data)
+    python3 fetch_all.py --source govease  refresh one adapter (repeatable); the rest keep their saved county files
+    python3 fetch_all.py --offline        rebuild the registry from local reference files without calling any source
 
 Writes:
     data/registry.json        every county with its state rules, links, next sale and data summary
@@ -131,7 +132,24 @@ def write_ics(path, events, name):
         f.write("\r\n".join(lines))
 
 
-def main(offline=False):
+def fold(records, fips, rec, name):
+    """Merge one adapter's county record into the run. A county can be on two platforms at once (Summit County, CO
+    is on RealAuction and GovEase), so every auction is tagged with the adapter it came from and a second adapter adds
+    its auctions to the record instead of replacing it; the first adapter to report a county owns its info card."""
+    for a in rec.get("auctions", []):
+        a["src"] = name
+    have = records.get(fips)
+    if not have:
+        rec["sources"] = [name]
+        records[fips] = rec
+        return
+    have["auctions"] = sorted([a for a in have.get("auctions", []) if (a.get("src") or have.get("source")) != name] + rec.get("auctions", []),
+                              key=lambda a: a.get("date") or "", reverse=True)
+    have["sources"] = sorted(set(have.get("sources") or [have.get("source")]) | {name})
+    have["lastChecked"] = max(have.get("lastChecked") or "", rec.get("lastChecked") or "")
+
+
+def main(offline=False, only=None):
     previous = load_json(os.path.join(DATA, "index.json")) or {}
     counties = build_counties()
     by_fips = {c["fips"]: c for c in counties}
@@ -144,37 +162,52 @@ def main(offline=False):
 
     # run every source; keep the previous file for any county a source fails on
     records = {}
+    returned = {}  # fips -> adapters that reported it this run
     source_status = {}
-    if offline:  # keep the last run's source status so the dashboard footer stays accurate
+    if offline or only:  # keep the last run's source status so the dashboard footer stays accurate
         source_status = (load_json(os.path.join(DATA, "index.json")) or {}).get("sources", {})
-    for name in ([] if offline else sources.ADAPTERS):
+    for name in ([] if offline else (only or sources.ADAPTERS)):
         mod = importlib.import_module(f"sources.{name}")
         print(f"Fetching {mod.LABEL} ...")
         try:
             got = mod.fetch(counties)
-            records.update(got)
+            for fips, rec in got.items():
+                fold(records, fips, rec, name)
+                returned.setdefault(fips, set()).add(name)
             source_status[name] = dict(label=mod.LABEL, url=mod.HOMEPAGE, counties=len(got), ok=True, checked=dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"))
             print(f"  {len(got)} counties")
         except Exception as e:
             source_status[name] = dict(label=mod.LABEL, url=mod.HOMEPAGE, counties=0, ok=False, error=str(e)[:300])
             print(f"  FAILED: {e}")
 
-    # previously saved county files fill in for sources that failed this run
+    # previously saved county files fill in for sources that failed this run, or that did not report a county this
+    # run while another adapter did (portal data collected by hand stays beside freshly fetched GovEase data)
     kept = 0
     if os.path.isdir(COUNTY_DIR):
         for fn in os.listdir(COUNTY_DIR):
             fips = fn[:-5]
-            if fn.endswith(".json") and fips not in records and fips in by_fips:
-                old = load_json(os.path.join(COUNTY_DIR, fn))
-                if old:
-                    records[fips] = old
-                    kept += 1
+            if not (fn.endswith(".json") and fips in by_fips):
+                continue
+            old = load_json(os.path.join(COUNTY_DIR, fn))
+            if not old:
+                continue
+            if fips not in records:
+                records[fips] = old
+                kept += 1
+                continue
+            extra = {}
+            for a in old.get("auctions", []):
+                src = a.get("src") or old.get("source")
+                if src not in returned.get(fips, set()):
+                    extra.setdefault(src, []).append(a)
+            for src, aucs in extra.items():
+                fold(records, fips, dict(auctions=aucs, lastChecked=old.get("lastChecked")), src)
     if kept:
         print(f"kept {kept} county files from the previous run")
 
     # the footer counts what is on file per source, so counties collected in a browser (collect_local.py) count too
     for name in sources.ADAPTERS:
-        n = sum(1 for r in records.values() if r.get("source") == name)
+        n = sum(1 for r in records.values() if name in (r.get("sources") or [r.get("source")]))
         st = source_status.get(name)
         if st is None:
             mod = importlib.import_module(f"sources.{name}")
@@ -306,4 +339,6 @@ def main(offline=False):
 
 
 if __name__ == "__main__":
-    main(offline="--offline" in sys.argv)
+    args = sys.argv[1:]
+    only = [args[i + 1] for i, a in enumerate(args) if a == "--source" and i + 1 < len(args)]
+    main(offline="--offline" in args, only=only or None)
