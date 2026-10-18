@@ -68,11 +68,14 @@ GitHub Pages serves index.html / analyzer.html / sheet.html, which load that JSO
 - Deal score (`master.py`): value 40, property 20, market 15, competition 15, history 10; 70+ Strong, 50 to 69 Good,
   35 to 49 Fair, under 35 Weak.
 
-## Data On File (As Of 2026-10-18)
+## Data On File (As Of 2026-10-18, Evening)
 
-31,638 parcels across 230 counties: FL 16,058 (35 counties), MI 7,359 (79), GA 3,931 (24), OH 3,501 (87), NV 736 (1),
-CO 53 (4). By adapter: realauction 19,612, michigan 7,359, atlanta 3,931, clark 736. Raw portal dumps live in
+39,656 parcels across 270 counties: FL 16,058 (35 counties), MI 7,359 (79), CO 6,769 (20), GA 3,931 (24), OH 3,501
+(87), PA 742 (3), NV 736 (1), CA 293 (3), TN 124 (10), TX 109 (6), MO 31 (1), WA 3 (1). By adapter: realauction
+19,612, govease 8,018, michigan 7,359, atlanta 3,931, clark 736. Raw portal dumps live in
 `data/raw/realauction/<fips>-<kind>.json` (135 files: FL taxdeed 35, FL foreclosure 9, CO taxdeed 4, OH sheriff 87).
+GovEase data is sale lists only (every auction open on the platform that day, with starting bids and sale dates); it
+refreshes itself on the monthly run and with `python3 fetch_all.py --source govease`.
 
 ## RealAuction Portals: The Main Open Work
 
