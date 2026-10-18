@@ -21,7 +21,7 @@
 "from": "https://www.bullockcountyal.com/"
 },
 "01013": {
-"checked": "2026-10-18T08:10:35+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "<urlopen error [Errno -5] No address associated with hostname>",
 "from": "https://butlercountyal.com"
 },
@@ -48,7 +48,7 @@
 "treasurer": "https://chiltoncounty.org/revenue-commissioner/"
 },
 "01023": {
-"checked": "2026-10-18T08:10:50+00:00",
+"checked": "2026-10-18T09:00:30+00:00",
 "error": "<urlopen error timed out>",
 "from": "https://www.choctawcountyal.org/"
 },
@@ -73,12 +73,12 @@
 "from": "https://www.colbertcounty.org/"
 },
 "01035": {
-"checked": "2026-10-18T08:10:35+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "HTTP Error 404: Not Found",
 "from": "https://www.conecuhcounty.us/"
 },
 "01037": {
-"checked": "2026-10-18T08:10:50+00:00",
+"checked": "2026-10-18T09:00:30+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.coosacountyal.com/"
 },
@@ -117,7 +117,7 @@
 "treasurer": "http://isv.kcsgis.com/al.elmore_revenue/"
 },
 "01053": {
-"checked": "2026-10-18T08:10:35+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.co.escambia.al.us"
 },
@@ -146,17 +146,17 @@
 "from": "http://ww547.greenecountyalabama.com/?tkn=19vnMT3S"
 },
 "01065": {
-"checked": "2026-10-18T08:10:50+00:00",
+"checked": "2026-10-18T09:00:30+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.halecountyal.com"
 },
 "01067": {
-"checked": "2026-10-18T08:10:35+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.henrycountyalabama.org"
 },
 "01069": {
-"checked": "2026-10-18T08:10:36+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f",
 "from": "http://www.houstoncounty.org"
 },
@@ -166,17 +166,17 @@
 "treasurer": "https://www.jacksoncountyal.gov/245/Revenue-Commissioner"
 },
 "01073": {
-"checked": "2026-10-18T08:10:35+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://jeffconline.jccal.org"
 },
 "01075": {
-"checked": "2026-10-18T08:10:35+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.lamarcounty.com"
 },
 "01077": {
-"checked": "2026-10-18T08:10:35+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://lauderdalecountyonline.com/"
 },
@@ -209,7 +209,7 @@
 "treasurer": "https://maconcountyal.com/notice-sale-of-tax-liens-for-collecting-delinquent-property-tax-2/"
 },
 "01089": {
-"checked": "2026-10-18T08:10:35+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.madisoncountyal.gov/"
 },
@@ -221,7 +221,7 @@
 "treasurer": "https://www.marengocountyal.com/home/revenue/pay-property-tax/"
 },
 "01093": {
-"checked": "2026-10-18T08:10:35+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "<urlopen error [Errno -5] No address associated with hostname>",
 "from": "http://marioncountyalabama.org"
 },
@@ -239,7 +239,7 @@
 "from": "https://www.monroecountyal.com/"
 },
 "01103": {
-"checked": "2026-10-18T08:10:50+00:00",
+"checked": "2026-10-18T09:00:30+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.co.morgan.al.us"
 },
@@ -261,7 +261,7 @@
 "from": "http://randolphcountyalabama.gov"
 },
 "01113": {
-"checked": "2026-10-18T08:10:36+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "<urlopen error [Errno -3] Temporary failure in name resolution>",
 "from": "http://www.rcala.com"
 },
@@ -306,7 +306,7 @@
 "treasurer": "https://www.tuscco.com/tax-collector/"
 },
 "01127": {
-"checked": "2026-10-18T08:10:35+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.walkercounty.com"
 },
@@ -350,7 +350,7 @@
 "treasurer": "https://www.officialpayments.com/pc_template_standard.jsp?body=pc_step2_amount_body.jsp&OWASP_CSRFTOKEN=DNA5-VA4R-IPIZ-SXXT-7CCS-D6HR-GJEX-BH7X"
 },
 "02100": {
-"checked": "2026-10-18T08:10:35+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.hainesborough.us"
 },
@@ -396,7 +396,7 @@
 "from": "https://www.nwabor.org/"
 },
 "02195": {
-"checked": "2026-10-18T08:10:35+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "Remote end closed connection without response",
 "from": "http://ci.petersburg.ak.us"
 },
@@ -407,22 +407,22 @@
 "treasurer": "https://www.cityofsitka.com/Government/City-Departments/Finance-Department"
 },
 "02230": {
-"checked": "2026-10-18T08:10:35+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.skagway.org/"
 },
 "02275": {
-"checked": "2026-10-18T08:10:35+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "Remote end closed connection without response",
 "from": "http://www.wrangell.com/"
 },
 "02282": {
-"checked": "2026-10-18T08:10:36+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f",
 "from": "http://www.yakutatak.govoffice2.com/"
 },
 "04001": {
-"checked": "2026-10-18T08:10:35+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.apachecountyaz.gov/"
 },
@@ -433,7 +433,7 @@
 "treasurer": "https://azstateparks.com/state-historic-property-tax-reclassification-spt-for-owneroccupied-homes"
 },
 "04005": {
-"checked": "2026-10-18T08:10:35+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.coconino.az.gov/"
 },
@@ -444,7 +444,7 @@
 "treasurer": "https://www.gilacountyaz.gov/documents/treasurer.php"
 },
 "04009": {
-"checked": "2026-10-18T08:10:35+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.graham.az.gov/"
 },
@@ -469,7 +469,7 @@
 "treasurer": "https://www.mohave.gov/departments/treasurer/"
 },
 "04017": {
-"checked": "2026-10-18T08:10:35+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.navajocountyaz.gov/"
 },
@@ -478,12 +478,12 @@
 "from": "https://www.pima.gov/"
 },
 "04021": {
-"checked": "2026-10-18T08:10:35+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.pinal.gov/"
 },
 "04023": {
-"checked": "2026-10-18T08:10:35+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.santacruzcountyaz.gov/"
 },
@@ -496,12 +496,12 @@
 "treasurer": "https://www.yavapaiaz.gov/Mapping-and-Properties/Property-Taxes/Treasurers-Office"
 },
 "04027": {
-"checked": "2026-10-18T08:10:35+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.yumacountyaz.gov/"
 },
 "05003": {
-"checked": "2026-10-18T08:10:35+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://ashleycounty.arkansas.gov/"
 },
@@ -513,7 +513,7 @@
 "treasurer": "https://www.baxtercountyar.gov/treasurer.php"
 },
 "05007": {
-"checked": "2026-10-18T08:10:36+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "<urlopen error [Errno -3] Temporary failure in name resolution>",
 "from": "http://www.co.benton.ar.us"
 },
@@ -528,12 +528,12 @@
 "from": "http://www.bradleycountyarkansas.com"
 },
 "05013": {
-"checked": "2026-10-18T08:10:37+00:00",
+"checked": "2026-10-18T09:00:16+00:00",
 "error": "HTTP Error 404: Not Found",
 "from": "http://local.arkansas.gov/local.php?agency=Calhoun%20County"
 },
 "05015": {
-"checked": "2026-10-18T08:10:36+00:00",
+"checked": "2026-10-18T09:00:16+00:00",
 "error": "<urlopen error [Errno -3] Temporary failure in name resolution>",
 "from": "http://www.co.carroll.ar.us"
 },
@@ -580,12 +580,12 @@
 "treasurer": "https://conwaycountyar.com/home/county-treasurer/"
 },
 "05031": {
-"checked": "2026-10-18T08:10:35+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.",
 "from": "http://craigheadcounty.org"
 },
 "05033": {
-"checked": "2026-10-18T08:10:35+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.crawford-county.org/"
 },
@@ -623,12 +623,12 @@
 "treasurer": "https://www.faulknercountyar.gov/government/departments-2/treasurer"
 },
 "05047": {
-"checked": "2026-10-18T08:10:35+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.franklincountyar.org"
 },
 "05049": {
-"checked": "2026-10-18T08:10:35+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://fulton.ark.org"
 },
@@ -672,7 +672,7 @@
 "from": "https://jacksoncountyar.com"
 },
 "05069": {
-"checked": "2026-10-18T08:10:35+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://jeffersoncounty.arkansas.gov/"
 },
@@ -706,7 +706,7 @@
 "treasurer": "https://portal.arkansas.gov/service/property-tax-center/"
 },
 "05081": {
-"checked": "2026-10-18T08:10:35+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.littlerivercounty.org"
 },
@@ -727,7 +727,7 @@
 "treasurer": "https://marioncounty.arkansas.gov/Marion-County-Treasurer"
 },
 "05091": {
-"checked": "2026-10-18T08:10:35+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.millercountyar.org"
 },
@@ -743,7 +743,7 @@
 "treasurer": "https://portal.arkansas.gov/service/property-tax-center/"
 },
 "05099": {
-"checked": "2026-10-18T08:10:35+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://nevadacounty.arkansas.gov/"
 },
@@ -779,7 +779,7 @@
 "treasurer": "https://www.popecountyar.gov/tax-collector"
 },
 "05119": {
-"checked": "2026-10-18T08:10:45+00:00",
+"checked": "2026-10-18T09:00:20+00:00",
 "error": "<urlopen error [Errno -3] Temporary failure in name resolution>",
 "from": "http://www.co.pulaski.ar.us"
 },
@@ -804,7 +804,7 @@
 "from": "https://www.sebastiancountyonline.com/"
 },
 "05133": {
-"checked": "2026-10-18T08:10:35+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "<urlopen error [Errno -5] No address associated with hostname>",
 "from": "http://www.seviercounty-ar.gov"
 },
@@ -832,7 +832,7 @@
 "from": "http://www.vanburencounty.com/"
 },
 "05143": {
-"checked": "2026-10-18T08:10:35+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.co.washington.ar.us"
 },
@@ -865,12 +865,12 @@
 "treasurer": "https://countytaxretriever.com/counties/county/16"
 },
 "06005": {
-"checked": "2026-10-18T08:10:35+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.amadorcounty.gov/"
 },
 "06007": {
-"checked": "2026-10-18T08:10:35+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.buttecounty.net/"
 },
@@ -887,7 +887,7 @@
 "treasurer": "https://www.countyofcolusaca.gov/CivicAlerts.aspx?AID=694"
 },
 "06013": {
-"checked": "2026-10-18T08:10:35+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.contracosta.ca.gov/"
 },
@@ -911,7 +911,7 @@
 "treasurer": "https://www.fresnocountyca.gov/Departments/Auditor-Controller-Treasurer-Tax-Collector"
 },
 "06021": {
-"checked": "2026-10-18T08:10:35+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.countyofglenn.net/"
 },
@@ -934,12 +934,12 @@
 "treasurer": "https://www.inyocounty.us/services/treasurer-tax-collector"
 },
 "06029": {
-"checked": "2026-10-18T08:10:35+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.kerncounty.com/"
 },
 "06031": {
-"checked": "2026-10-18T08:10:36+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.countyofkings.com/"
 },
@@ -963,12 +963,12 @@
 "treasurer": "https://www.propertytax.lacounty.gov/"
 },
 "06039": {
-"checked": "2026-10-18T08:10:35+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.maderacounty.com/"
 },
 "06041": {
-"checked": "2026-10-18T08:10:35+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.co.marin.ca.us/"
 },
@@ -978,12 +978,12 @@
 "sheriff": "https://www.mariposacounty.gov/2836/Civil-Processing"
 },
 "06045": {
-"checked": "2026-10-18T08:10:36+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.mendocinocounty.org/"
 },
 "06047": {
-"checked": "2026-10-18T08:10:35+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.countyofmerced.com/"
 },
@@ -998,12 +998,12 @@
 "from": "https://monocounty.ca.gov/"
 },
 "06053": {
-"checked": "2026-10-18T08:10:35+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.countyofmonterey.gov/"
 },
 "06055": {
-"checked": "2026-10-18T08:10:35+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.napacounty.gov/"
 },
@@ -1022,7 +1022,7 @@
 "treasurer": "https://octreasurer.gov/"
 },
 "06061": {
-"checked": "2026-10-18T08:10:35+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.placer.ca.gov/"
 },
@@ -1044,7 +1044,7 @@
 "treasurer": "https://county-taxes.net/sacramento/property-tax"
 },
 "06069": {
-"checked": "2026-10-18T08:10:35+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.sanbenitocountyca.gov/"
 },
@@ -1085,7 +1085,7 @@
 "from": "https://www.countyofsb.org/"
 },
 "06085": {
-"checked": "2026-10-18T08:10:35+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.santaclaracounty.gov/"
 },
@@ -1096,7 +1096,7 @@
 "treasurer": "https://santacruzcountyca.gov/Departments/TaxCollector.aspx"
 },
 "06089": {
-"checked": "2026-10-18T08:10:35+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.shastacounty.gov/"
 },
@@ -1106,7 +1106,7 @@
 "treasurer": "https://countytaxretriever.com/"
 },
 "06093": {
-"checked": "2026-10-18T08:10:36+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "Remote end closed connection without response",
 "from": "https://www.siskiyoucounty.gov/"
 },
@@ -1130,7 +1130,7 @@
 "treasurer": "https://www.stancounty.com/tr-tax/"
 },
 "06101": {
-"checked": "2026-10-18T08:10:35+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.sutter.gov/"
 },
@@ -1147,12 +1147,12 @@
 "treasurer": "https://common2.mptsweb.com/MBC/trinity/tax/search"
 },
 "06107": {
-"checked": "2026-10-18T08:10:35+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://tularecounty.ca.gov/"
 },
 "06109": {
-"checked": "2026-10-18T08:10:35+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://tuolumnecounty.ca.gov/"
 },
@@ -1161,7 +1161,7 @@
 "from": "https://venturacounty.gov/"
 },
 "06113": {
-"checked": "2026-10-18T08:10:35+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.yolocounty.gov/"
 },
@@ -1172,7 +1172,7 @@
 "treasurer": "https://www.yuba.gov/departments/treasurer_tax_collector/index.php"
 },
 "08001": {
-"checked": "2026-10-18T08:10:36+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.co.adams.co.us"
 },
@@ -1244,7 +1244,7 @@
 "treasurer": "https://conejoscounty.colorado.gov/elected-officials/treasurer/public-trustee"
 },
 "08023": {
-"checked": "2026-10-18T08:10:36+00:00",
+"checked": "2026-10-18T09:00:16+00:00",
 "error": "HTTP Error 404: Not Found",
 "from": "http://www.costillacounty-co.gov"
 },
@@ -1274,7 +1274,7 @@
 "treasurer": "https://www.denvergov.org/My-Property/Property-Tax"
 },
 "08033": {
-"checked": "2026-10-18T08:10:37+00:00",
+"checked": "2026-10-18T09:00:17+00:00",
 "error": "HTTP Error 404: Not Found",
 "from": "http://www.dolorescounty.org"
 },
@@ -1322,7 +1322,7 @@
 "treasurer": "https://www.garfieldcountyco.gov/treasurer/property-tax-payments"
 },
 "08047": {
-"checked": "2026-10-18T08:10:36+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "HTTP Error 404: Not Found",
 "from": "http://www.co.gilpin.co.us"
 },
@@ -1355,7 +1355,7 @@
 "treasurer": "https://huerfano.us/treasurer/"
 },
 "08057": {
-"checked": "2026-10-18T08:10:36+00:00",
+"checked": "2026-10-18T09:00:19+00:00",
 "error": "HTTP Error 404: Not Found",
 "from": "http://www.ccionline.org/counties/jackson.html"
 },
@@ -1392,7 +1392,7 @@
 "treasurer": "https://www.lpcgov.org/departments/treasurer___public_trustee_s_office/questions_about_my_property_tax_bill.php"
 },
 "08069": {
-"checked": "2026-10-18T08:10:36+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.co.larimer.co.us"
 },
@@ -1401,12 +1401,12 @@
 "from": "http://lasanimascounty.org"
 },
 "08073": {
-"checked": "2026-10-18T08:10:35+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.lincolncountyco.us"
 },
 "08075": {
-"checked": "2026-10-18T08:10:35+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "<urlopen error [Errno -5] No address associated with hostname>",
 "from": "http://www.loganco.gov"
 },
@@ -1419,12 +1419,12 @@
 "treasurer": "https://www.mesacounty.us/departments-and-services/treasurer/property-tax-deferral-program"
 },
 "08079": {
-"checked": "2026-10-18T08:10:36+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.mineralcountycolorado.com"
 },
 "08081": {
-"checked": "2026-10-18T08:10:51+00:00",
+"checked": "2026-10-18T09:00:30+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.co.moffat.co.us"
 },
@@ -1442,7 +1442,7 @@
 "sheriff": "https://montrosecountysheriffsoffice.com/civil-process/"
 },
 "08087": {
-"checked": "2026-10-18T08:10:36+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f",
 "from": "http://www.co.morgan.co.us"
 },
@@ -1476,12 +1476,12 @@
 "from": "https://aspen.gov/"
 },
 "08099": {
-"checked": "2026-10-18T08:10:36+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.prowerscounty.net"
 },
 "08101": {
-"checked": "2026-10-18T08:10:51+00:00",
+"checked": "2026-10-18T09:00:30+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.co.pueblo.co.us"
 },
@@ -1527,7 +1527,7 @@
 "treasurer": "https://onlinepayments.sanmiguelcountyco.gov/treasurer/web/"
 },
 "08115": {
-"checked": "2026-10-18T08:10:51+00:00",
+"checked": "2026-10-18T09:00:30+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.sedgwickcountygov.net"
 },
@@ -1551,12 +1551,12 @@
 "treasurer": "https://washingtoncounty.colorado.gov/treasurers-corner"
 },
 "08123": {
-"checked": "2026-10-18T08:10:36+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "HTTP Error 400: Bad Request",
 "from": "http://www.co.weld.co.us"
 },
 "08125": {
-"checked": "2026-10-18T08:10:37+00:00",
+"checked": "2026-10-18T09:00:17+00:00",
 "error": "HTTP Error 404: Not Found",
 "from": "http://www.yumacounty.net"
 },
@@ -1567,7 +1567,7 @@
 "sheriff": "https://www.kentcountyde.gov/files/sharedassets/public/v/1/content-publishers/sheriff/sheriff-pdf/sheriff-sales-procedures-effective-may-1-2025.pdf"
 },
 "10003": {
-"checked": "2026-10-18T08:10:36+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.newcastlede.gov"
 },
@@ -1591,7 +1591,7 @@
 "treasurer": "https://propertytaxinfo.alachuacounty.us/"
 },
 "12003": {
-"checked": "2026-10-18T08:10:36+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.bakercountyfl.org"
 },
@@ -1603,22 +1603,22 @@
 "treasurer": "https://www.baytaxcollector.com/"
 },
 "12007": {
-"checked": "2026-10-18T08:10:36+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.bradford-co-fla.org"
 },
 "12009": {
-"checked": "2026-10-18T08:10:36+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.brevardcounty.us"
 },
 "12011": {
-"checked": "2026-10-18T08:10:36+00:00",
+"checked": "2026-10-18T09:00:16+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.broward.org/"
 },
 "12013": {
-"checked": "2026-10-18T08:10:36+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.calhouncountyfl.org"
 },
@@ -1636,7 +1636,7 @@
 "treasurer": "https://www.citruscounty.gov/news_detail_T1_R71.php"
 },
 "12019": {
-"checked": "2026-10-18T08:10:36+00:00",
+"checked": "2026-10-18T09:00:15+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.claycountygov.com/"
 },
@@ -1646,7 +1646,7 @@
 "from": "https://www.collier.gov/Home"
 },
 "12023": {
-"checked": "2026-10-18T08:10:51+00:00",
+"checked": "2026-10-18T09:00:30+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.columbiacountyfla.com"
 },
@@ -1668,7 +1668,7 @@
 "from": "https://myescambia.com/"
 },
 "12035": {
-"checked": "2026-10-18T08:10:36+00:00",
+"checked": "2026-10-18T09:00:16+00:00",
 "error": "HTTP Error 400: Bad Request",
 "from": "http://www.flaglercounty.org"
 },
@@ -1697,7 +1697,7 @@
 "from": "http://www.gulfcountygovernment.com"
 },
 "12047": {
-"checked": "2026-10-18T08:10:51+00:00",
+"checked": "2026-10-18T09:00:30+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.hamiltoncountyflorida.com"
 },
@@ -1789,7 +1789,7 @@
 "treasurer": "https://www.mymanatee.org/government/other-government-organizations/tax-collector"
 },
 "12083": {
-"checked": "2026-10-18T08:10:36+00:00",
+"checked": "2026-10-18T09:00:16+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.marioncountyfl.org"
 },
@@ -1815,12 +1815,12 @@
 "from": "https://www.nassaucountyfl.com/"
 },
 "12091": {
-"checked": "2026-10-18T08:10:51+00:00",
+"checked": "2026-10-18T09:00:30+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.co.okaloosa.fl.us"
 },
 "12093": {
-"checked": "2026-10-18T08:10:36+00:00",
+"checked": "2026-10-18T09:00:16+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.co.okeechobee.fl.us"
 },
@@ -1864,7 +1864,7 @@
 "treasurer": "https://sjctax.us/"
 },
 "12111": {
-"checked": "2026-10-18T08:10:36+00:00",
+"checked": "2026-10-18T09:00:16+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.stlucieco.gov/"
 },
@@ -1873,7 +1873,7 @@
 "from": "https://www.santarosa.fl.gov/"
 },
 "12115": {
-"checked": "2026-10-18T08:10:36+00:00",
+"checked": "2026-10-18T09:00:16+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.scgov.net/"
 },
@@ -1888,7 +1888,7 @@
 "from": "https://www.sumtercountyfl.gov/"
 },
 "12121": {
-"checked": "2026-10-18T08:10:36+00:00",
+"checked": "2026-10-18T09:00:16+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.suwclerk.org/bcc.html"
 },
@@ -1967,7 +1967,7 @@
 "treasurer": "https://www.bartowcountyga.gov/departments/tax_commissioner/index.php"
 },
 "13017": {
-"checked": "2026-10-18T08:10:51+00:00",
+"checked": "2026-10-18T09:00:31+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.benhillcounty.com"
 },
@@ -1999,7 +1999,7 @@
 "from": "https://vps402.strip2.co/videocat/tag/seks-na-vpiske/top-rated/p5/"
 },
 "13029": {
-"checked": "2026-10-18T08:10:36+00:00",
+"checked": "2026-10-18T09:00:16+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.bryancountyga.org/"
 },
@@ -2040,7 +2040,7 @@
 "from": "https://www.carrollcountyga.gov/"
 },
 "13047": {
-"checked": "2026-10-18T08:10:36+00:00",
+"checked": "2026-10-18T09:00:16+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.catoosa.com"
 },
@@ -2074,12 +2074,12 @@
 "treasurer": "https://www.accgov.com/CivicAlerts.aspx?AID=6976"
 },
 "13061": {
-"checked": "2026-10-18T08:10:36+00:00",
+"checked": "2026-10-18T09:00:16+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.claycountyga.org/"
 },
 "13063": {
-"checked": "2026-10-18T08:10:36+00:00",
+"checked": "2026-10-18T09:00:16+00:00",
 "error": "HTTP Error 307: Temporary Redirect",
 "from": "http://www.claytoncountyga.gov"
 },
@@ -2140,7 +2140,7 @@
 "treasurer": "https://dadecounty-ga.gov/CivicAlerts.aspx?AID=127"
 },
 "13085": {
-"checked": "2026-10-18T08:10:36+00:00",
+"checked": "2026-10-18T09:00:16+00:00",
 "error": "Remote end closed connection without response",
 "from": "http://www.dawsoncounty.org/"
 },
@@ -2179,7 +2179,7 @@
 "from": "https://douglascountygeorgia.com/"
 },
 "13099": {
-"checked": "2026-10-18T08:10:36+00:00",
+"checked": "2026-10-18T09:00:16+00:00",
 "error": "<urlopen error [Errno -5] No address associated with hostname>",
 "from": "http://earlycounty.georgia.gov/"
 },
@@ -2188,7 +2188,7 @@
 "from": "https://www.echolscountygeorgia.com/"
 },
 "13103": {
-"checked": "2026-10-18T08:10:38+00:00",
+"checked": "2026-10-18T09:00:17+00:00",
 "error": "<urlopen error [Errno -3] Temporary failure in name resolution>",
 "from": "http://www.effga.com"
 },
@@ -2206,7 +2206,7 @@
 "from": "http://evanscounty.org/"
 },
 "13111": {
-"checked": "2026-10-18T08:10:51+00:00",
+"checked": "2026-10-18T09:00:31+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://fannincountyga.org/"
 },
@@ -2247,7 +2247,7 @@
 "treasurer": "https://tax.gilmercountypay.com/"
 },
 "13125": {
-"checked": "2026-10-18T08:10:36+00:00",
+"checked": "2026-10-18T09:00:16+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.glascockcountyga.com"
 },
@@ -2283,7 +2283,7 @@
 "treasurer": "https://www.gwinnetttaxcommissioner.com/property-tax/view-pay-your-taxes"
 },
 "13137": {
-"checked": "2026-10-18T08:10:38+00:00",
+"checked": "2026-10-18T09:00:17+00:00",
 "error": "<urlopen error [Errno -3] Temporary failure in name resolution>",
 "from": "http://www.co.habersham.ga.us"
 },
@@ -2356,7 +2356,7 @@
 "treasurer": "https://www.jenkinscountytax.com"
 },
 "13167": {
-"checked": "2026-10-18T08:10:36+00:00",
+"checked": "2026-10-18T09:00:16+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.johnsonco.org"
 },
@@ -2401,7 +2401,7 @@
 "from": "https://lincolncountyga.com/"
 },
 "13183": {
-"checked": "2026-10-18T08:10:36+00:00",
+"checked": "2026-10-18T09:00:16+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.longcountyboc.com/"
 },
@@ -2416,17 +2416,17 @@
 "from": "http://www.lumpkincounty.gov/"
 },
 "13189": {
-"checked": "2026-10-18T08:10:36+00:00",
+"checked": "2026-10-18T09:00:16+00:00",
 "error": "Remote end closed connection without response",
 "from": "http://www.thomson-mcduffie.com/"
 },
 "13191": {
-"checked": "2026-10-18T08:10:36+00:00",
+"checked": "2026-10-18T09:00:16+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.mcintoshcounty.com/"
 },
 "13193": {
-"checked": "2026-10-18T08:10:36+00:00",
+"checked": "2026-10-18T09:00:16+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.maconcountyga.org/"
 },
@@ -2463,7 +2463,7 @@
 "treasurer": "https://www.monroecoga.org/tax-commissioner/"
 },
 "13209": {
-"checked": "2026-10-18T08:10:36+00:00",
+"checked": "2026-10-18T09:00:16+00:00",
 "error": "<urlopen error [Errno -5] No address associated with hostname>",
 "from": "http://montgomerycountyga.gov"
 },
@@ -2480,7 +2480,7 @@
 "from": "https://muscogeecounty.net/"
 },
 "13217": {
-"checked": "2026-10-18T08:10:37+00:00",
+"checked": "2026-10-18T09:00:16+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.co.newton.ga.us"
 },
@@ -2518,12 +2518,12 @@
 "treasurer": "https://piercecountyga.gov/finance-department/"
 },
 "13231": {
-"checked": "2026-10-18T08:10:36+00:00",
+"checked": "2026-10-18T09:00:16+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.pikecounty.us"
 },
 "13233": {
-"checked": "2026-10-18T08:10:51+00:00",
+"checked": "2026-10-18T09:00:31+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.polkcountygeorgia.us/"
 },
@@ -2544,7 +2544,7 @@
 "treasurer": "https://www.gqc-ga.org/home/government/tax-commissioner/"
 },
 "13241": {
-"checked": "2026-10-18T08:10:39+00:00",
+"checked": "2026-10-18T09:00:16+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.rabuncounty.ga.gov"
 },
@@ -2558,7 +2558,7 @@
 "from": "https://www.augustaga.gov/"
 },
 "13247": {
-"checked": "2026-10-18T08:10:37+00:00",
+"checked": "2026-10-18T09:00:17+00:00",
 "error": "HTTP Error 409: Conflict",
 "from": "http://www.rockdalecounty.org"
 },
@@ -2598,7 +2598,7 @@
 "from": "https://www.sumtercountyga.us/"
 },
 "13263": {
-"checked": "2026-10-18T08:10:37+00:00",
+"checked": "2026-10-18T09:00:16+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://talbotcountyga.org/"
 },
@@ -2684,12 +2684,12 @@
 "treasurer": "https://bisconsultants.com/"
 },
 "13297": {
-"checked": "2026-10-18T08:10:37+00:00",
+"checked": "2026-10-18T09:00:17+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.waltoncountyga.org"
 },
 "13299": {
-"checked": "2026-10-18T08:10:37+00:00",
+"checked": "2026-10-18T09:00:17+00:00",
 "error": "<urlopen error [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1010)>",
 "from": "http://www.warecounty.com"
 },
@@ -2704,7 +2704,7 @@
 "from": "https://www.washingtoncountyga.com"
 },
 "13305": {
-"checked": "2026-10-18T08:10:37+00:00",
+"checked": "2026-10-18T09:00:16+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.co.wayne.ga.us/home/"
 },
@@ -2715,7 +2715,7 @@
 "treasurer": "http://webstercountyga.org/taxcommissioner/"
 },
 "13309": {
-"checked": "2026-10-18T08:10:37+00:00",
+"checked": "2026-10-18T09:00:17+00:00",
 "error": "<urlopen error [Errno -5] No address associated with hostname>",
 "from": "http://wheelercounty.georgia.gov/"
 },
@@ -2748,12 +2748,12 @@
 "treasurer": "https://www.wilkinsoncounty.net/notice-current-2026-property-tax-digest-and-5-year-history-of-levy/"
 },
 "13321": {
-"checked": "2026-10-18T08:10:37+00:00",
+"checked": "2026-10-18T09:00:17+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://worthcountyboc.com"
 },
 "15001": {
-"checked": "2026-10-18T08:10:37+00:00",
+"checked": "2026-10-18T09:00:17+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.hawaiicounty.gov/"
 },
@@ -2763,12 +2763,12 @@
 "treasurer": "https://www.kauai.gov/Residents/Pay-Your-Property-Taxes"
 },
 "15009": {
-"checked": "2026-10-18T08:10:37+00:00",
+"checked": "2026-10-18T09:00:17+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.mauicounty.gov/"
 },
 "16001": {
-"checked": "2026-10-18T08:10:39+00:00",
+"checked": "2026-10-18T09:00:19+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.adaweb.net"
 },
@@ -2792,22 +2792,22 @@
 "treasurer": "https://www.bearlakecounty.info/treasurer.html"
 },
 "16009": {
-"checked": "2026-10-18T08:10:40+00:00",
+"checked": "2026-10-18T09:00:19+00:00",
 "error": "HTTP Error 404: Not Found",
 "from": "https://www.idaho.gov/counties/benewah/"
 },
 "16011": {
-"checked": "2026-10-18T08:10:39+00:00",
+"checked": "2026-10-18T09:00:19+00:00",
 "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f",
 "from": "http://www.co.bingham.id.us"
 },
 "16013": {
-"checked": "2026-10-18T08:10:39+00:00",
+"checked": "2026-10-18T09:00:19+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.co.blaine.id.us"
 },
 "16015": {
-"checked": "2026-10-18T08:10:39+00:00",
+"checked": "2026-10-18T09:00:19+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.boisecounty.us/Department/243/visit_boise_county_page.aspx"
 },
@@ -2874,7 +2874,7 @@
 "treasurer": "http://www.clearwatercounty.org/departments/treasurer/index.php"
 },
 "16037": {
-"checked": "2026-10-18T08:10:39+00:00",
+"checked": "2026-10-18T09:00:19+00:00",
 "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f",
 "from": "http://www.co.custer.id.us/"
 },
@@ -2892,12 +2892,12 @@
 "treasurer": "https://franklincountyidaho.org/departments/treasurer.php"
 },
 "16043": {
-"checked": "2026-10-18T08:10:39+00:00",
+"checked": "2026-10-18T09:00:19+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.co.fremont.id.us"
 },
 "16045": {
-"checked": "2026-10-18T08:10:54+00:00",
+"checked": "2026-10-18T09:00:34+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.co.gem.id.us"
 },
@@ -2950,7 +2950,7 @@
 "treasurer": "http://www.lewiscountyid.us/Elected-Officials/Treasurer"
 },
 "16063": {
-"checked": "2026-10-18T08:10:40+00:00",
+"checked": "2026-10-18T09:00:21+00:00",
 "error": "<urlopen error [Errno -3] Temporary failure in name resolution>",
 "from": "http://www.lincolncountyid.us/"
 },
@@ -2975,7 +2975,7 @@
 "treasurer": "https://www.co.nezperce.id.us/Elected-Officials/Treasurer"
 },
 "16071": {
-"checked": "2026-10-18T08:10:40+00:00",
+"checked": "2026-10-18T09:00:20+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://oneidacountyid.com/"
 },
@@ -3031,7 +3031,7 @@
 "treasurer": "https://www.co.washington.id.us/164/Treasurer"
 },
 "17001": {
-"checked": "2026-10-18T08:10:40+00:00",
+"checked": "2026-10-18T09:00:20+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.co.adams.il.us"
 },
@@ -3060,7 +3060,7 @@
 "from": "https://browncountyil.com"
 },
 "17011": {
-"checked": "2026-10-18T08:10:40+00:00",
+"checked": "2026-10-18T09:00:20+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.bureaucounty-il.us/"
 },
@@ -3081,7 +3081,7 @@
 "from": "http://champaigncountyil.gov"
 },
 "17021": {
-"checked": "2026-10-18T08:10:42+00:00",
+"checked": "2026-10-18T09:00:20+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://christiancountyil.com/"
 },
@@ -3090,7 +3090,7 @@
 "from": "https://www.clarkcountyil.org/"
 },
 "17025": {
-"checked": "2026-10-18T08:10:41+00:00",
+"checked": "2026-10-18T09:00:21+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://claycountyillinois.org/"
 },
@@ -3099,7 +3099,7 @@
 "from": "https://clintonco.illinois.gov"
 },
 "17029": {
-"checked": "2026-10-18T08:10:56+00:00",
+"checked": "2026-10-18T09:00:36+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.co.coles.il.us"
 },
@@ -3150,7 +3150,7 @@
 "treasurer": "https://www.dupagecounty.gov/elected_officials/treasurer/index.php"
 },
 "17045": {
-"checked": "2026-10-18T08:10:57+00:00",
+"checked": "2026-10-18T09:00:36+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.co.edgar.il.us"
 },
@@ -3188,7 +3188,7 @@
 "treasurer": "https://fultoncountyil.gov/officials/elected/fulton-county-treasurer/treasurer-mission-and-duties/"
 },
 "17059": {
-"checked": "2026-10-18T08:10:45+00:00",
+"checked": "2026-10-18T09:00:21+00:00",
 "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.",
 "from": "https://gallatinco.illinois.gov/"
 },
@@ -3218,7 +3218,7 @@
 "treasurer": "https://hancockcounty-il.gov/county-treasurer/"
 },
 "17069": {
-"checked": "2026-10-18T08:10:45+00:00",
+"checked": "2026-10-18T09:00:21+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.hardincountyil.org/"
 },
@@ -3253,7 +3253,7 @@
 "treasurer": "https://jeffersoncounty.illinois.gov/services/treasurercollector/property_taxes_and_online_payment.php"
 },
 "17083": {
-"checked": "2026-10-18T08:11:01+00:00",
+"checked": "2026-10-18T09:00:37+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.jerseycounty-il.us"
 },
@@ -3273,7 +3273,7 @@
 "treasurer": "https://www.k3county.net/CivicAlerts.aspx?AID=46"
 },
 "17095": {
-"checked": "2026-10-18T08:11:03+00:00",
+"checked": "2026-10-18T09:00:42+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.knoxcountyil.com"
 },
@@ -3289,12 +3289,12 @@
 "from": "https://lasallecountyil.gov/"
 },
 "17101": {
-"checked": "2026-10-18T08:10:48+00:00",
-"error": "HTTP Error 403: Forbidden",
+"checked": "2026-10-18T09:00:28+00:00",
+"error": "HTTP Error 503: Service Unavailable",
 "from": "http://www.lawrencecountyillinois.com"
 },
 "17103": {
-"checked": "2026-10-18T08:10:48+00:00",
+"checked": "2026-10-18T09:00:28+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.countyoflee.org"
 },
@@ -3317,7 +3317,7 @@
 "from": "http://illinois.outfitters.com/illinois/mcdonough/"
 },
 "17111": {
-"checked": "2026-10-18T08:10:50+00:00",
+"checked": "2026-10-18T09:00:30+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.co.mchenry.il.us"
 },
@@ -3360,7 +3360,7 @@
 "treasurer": "https://marshallcountyillinois.gov/directory/treasurer/"
 },
 "17125": {
-"checked": "2026-10-18T08:11:05+00:00",
+"checked": "2026-10-18T09:00:43+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.masoncountyil.org"
 },
@@ -3384,12 +3384,12 @@
 "treasurer": "https://www.mercercountyil.org/deparments/treasurer.php"
 },
 "17133": {
-"checked": "2026-10-18T08:10:50+00:00",
+"checked": "2026-10-18T09:00:30+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.monroecountyil.org"
 },
 "17135": {
-"checked": "2026-10-18T08:10:50+00:00",
+"checked": "2026-10-18T09:00:30+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.montgomeryco.com"
 },
@@ -3421,12 +3421,12 @@
 "from": "http://www.perrycountyil.org"
 },
 "17147": {
-"checked": "2026-10-18T08:11:10+00:00",
+"checked": "2026-10-18T09:00:49+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.piattcounty.org"
 },
 "17149": {
-"checked": "2026-10-18T08:10:50+00:00",
+"checked": "2026-10-18T09:00:30+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.pikecountyil.org/"
 },
@@ -3441,7 +3441,7 @@
 "treasurer": "https://www.pulaskicountyil.net/county-treasurer.html"
 },
 "17155": {
-"checked": "2026-10-18T08:11:00+00:00",
+"checked": "2026-10-18T09:00:40+00:00",
 "error": "<urlopen error [Errno -3] Temporary failure in name resolution>",
 "from": "http://www.co.putnam.il.us/"
 },
@@ -3452,12 +3452,12 @@
 "treasurer": "https://randolphcountyil.gov/treasurer/"
 },
 "17161": {
-"checked": "2026-10-18T08:11:06+00:00",
+"checked": "2026-10-18T09:00:45+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.co.rock-island.il.us"
 },
 "17163": {
-"checked": "2026-10-18T08:11:06+00:00",
+"checked": "2026-10-18T09:00:45+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.co.st-clair.il.us"
 },
@@ -3485,7 +3485,7 @@
 "from": "https://www.scottco.org/"
 },
 "17173": {
-"checked": "2026-10-18T08:10:51+00:00",
+"checked": "2026-10-18T09:00:35+00:00",
 "error": "HTTP Error 404: Not Found",
 "from": "http://www.shelbycounty-il.com"
 },
@@ -3505,7 +3505,7 @@
 "treasurer": "https://stephensoncountyil.gov/government/treasurer-collector/index.php"
 },
 "17179": {
-"checked": "2026-10-18T08:10:51+00:00",
+"checked": "2026-10-18T09:00:31+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.tazewell.com"
 },
@@ -3530,7 +3530,7 @@
 "treasurer": "https://washingtonco.illinois.gov/treasurer/"
 },
 "17191": {
-"checked": "2026-10-18T08:10:53+00:00",
+"checked": "2026-10-18T09:00:33+00:00",
 "error": "HTTP Error 404: Not Found",
 "from": "http://www.fairfield-il.com/county/"
 },
@@ -3560,7 +3560,7 @@
 "from": "http://www.williamsoncountyil.gov/"
 },
 "17201": {
-"checked": "2026-10-18T08:10:53+00:00",
+"checked": "2026-10-18T09:00:31+00:00",
 "error": "HTTP Error 404: Not Found",
 "from": "http://www.wincoil.us/"
 },
@@ -3623,7 +3623,7 @@
 "treasurer": "http://treasurer.casscounty09.us/cgi.exe?PAGEID=0004&CALL_PROGRAM=C009LIST"
 },
 "18019": {
-"checked": "2026-10-18T08:10:51+00:00",
+"checked": "2026-10-18T09:00:31+00:00",
 "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f",
 "from": "http://www.co.clark.in.us"
 },
@@ -3679,12 +3679,12 @@
 "treasurer": "https://www.duboiscountyin.org/alert_detail_2.php"
 },
 "18039": {
-"checked": "2026-10-18T08:10:51+00:00",
+"checked": "2026-10-18T09:00:31+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.elkhartcountyindiana.com"
 },
 "18041": {
-"checked": "2026-10-18T08:10:51+00:00",
+"checked": "2026-10-18T09:00:31+00:00",
 "error": "HTTP Error 404: Not Found",
 "from": "https://www.connersvillecommunity.com/fayette-county/"
 },
@@ -3703,7 +3703,7 @@
 "treasurer": "https://www.fountaincounty.net/topic/index.php?topicid=25&structureid=12"
 },
 "18047": {
-"checked": "2026-10-18T08:10:51+00:00",
+"checked": "2026-10-18T09:00:31+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.franklincountyin.com"
 },
@@ -3757,7 +3757,7 @@
 "from": "https://www.co.hendricks.in.us:443/"
 },
 "18065": {
-"checked": "2026-10-18T08:10:52+00:00",
+"checked": "2026-10-18T09:00:32+00:00",
 "error": "<urlopen error [Errno -3] Temporary failure in name resolution>",
 "from": "http://www.henryco.net/"
 },
@@ -3793,7 +3793,7 @@
 "treasurer": "https://www.jaspercountyin.gov/departments/treasurer"
 },
 "18075": {
-"checked": "2026-10-18T08:11:07+00:00",
+"checked": "2026-10-18T09:00:46+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.co.jay.in.us"
 },
@@ -3816,7 +3816,7 @@
 "treasurer": "https://johnsoncounty.in.gov/department/index.php?structureid=42"
 },
 "18083": {
-"checked": "2026-10-18T08:10:51+00:00",
+"checked": "2026-10-18T09:00:31+00:00",
 "error": "<urlopen error [Errno -5] No address associated with hostname>",
 "from": "http://www.knoxcounty.in.gov"
 },
@@ -3856,7 +3856,7 @@
 "from": "http://www.madisoncty.com"
 },
 "18097": {
-"checked": "2026-10-18T08:10:51+00:00",
+"checked": "2026-10-18T09:00:31+00:00",
 "error": "HTTP Error 404: Not Found",
 "from": "http://www.indy.gov/eGov/County"
 },
@@ -3875,12 +3875,12 @@
 "from": "https://www.miamicountyin.gov/"
 },
 "18105": {
-"checked": "2026-10-18T08:10:51+00:00",
+"checked": "2026-10-18T09:00:31+00:00",
 "error": "HTTP Error 404: Not Found",
 "from": "http://www.co.monroe.in.us"
 },
 "18107": {
-"checked": "2026-10-18T08:11:07+00:00",
+"checked": "2026-10-18T09:00:46+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.montgomeryco.net"
 },
@@ -3896,7 +3896,7 @@
 "from": "https://www.newtoncounty.in.gov:443/"
 },
 "18113": {
-"checked": "2026-10-18T08:10:52+00:00",
+"checked": "2026-10-18T09:00:31+00:00",
 "error": "HTTP Error 404: Not Found",
 "from": "http://nobleco.squarespace.com/"
 },
@@ -3925,7 +3925,7 @@
 "from": "https://parkecounty.org/"
 },
 "18123": {
-"checked": "2026-10-18T08:10:52+00:00",
+"checked": "2026-10-18T09:00:31+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.perrycounty.in.gov/"
 },
@@ -3934,12 +3934,12 @@
 "from": "https://www.pikecounty.in.gov/"
 },
 "18127": {
-"checked": "2026-10-18T08:10:52+00:00",
+"checked": "2026-10-18T09:00:32+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.porterco.org"
 },
 "18129": {
-"checked": "2026-10-18T08:10:51+00:00",
+"checked": "2026-10-18T09:00:31+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://poseycountygov.org/"
 },
@@ -3981,7 +3981,7 @@
 "treasurer": "https://rushcounty.in.gov/treasurer/"
 },
 "18141": {
-"checked": "2026-10-18T08:10:51+00:00",
+"checked": "2026-10-18T09:00:31+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.sjcindiana.gov/"
 },
@@ -4008,7 +4008,7 @@
 "treasurer": "https://www.in.gov/counties/spencer/departments/treasurer"
 },
 "18149": {
-"checked": "2026-10-18T08:11:01+00:00",
+"checked": "2026-10-18T09:00:41+00:00",
 "error": "<urlopen error [Errno -3] Temporary failure in name resolution>",
 "from": "http://www.co.starke.in.us"
 },
@@ -4025,12 +4025,12 @@
 "from": "https://sullivancountyindiana.us/"
 },
 "18155": {
-"checked": "2026-10-18T08:10:52+00:00",
+"checked": "2026-10-18T09:00:31+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.switzerland-county.com/"
 },
 "18157": {
-"checked": "2026-10-18T08:10:52+00:00",
+"checked": "2026-10-18T09:00:31+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.county.tippecanoe.in.us"
 },
@@ -4040,7 +4040,7 @@
 "taxsale": "https://www.tiptongov.com/egov/apps/document/center.egov?view=item&id=3358"
 },
 "18161": {
-"checked": "2026-10-18T08:10:52+00:00",
+"checked": "2026-10-18T09:00:31+00:00",
 "error": "<urlopen error [Errno -5] No address associated with hostname>",
 "from": "http://www.unioncountyin.gov"
 },
@@ -4115,12 +4115,12 @@
 "treasurer": "https://www.whitleycounty.in.gov/department/index.php?structureid=11"
 },
 "19001": {
-"checked": "2026-10-18T08:10:37+00:00",
+"checked": "2026-10-18T09:00:17+00:00",
 "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f",
 "from": "http://www.adaircountyiowa.org"
 },
 "19003": {
-"checked": "2026-10-18T08:10:37+00:00",
+"checked": "2026-10-18T09:00:17+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.adamscountyia.com"
 },
@@ -4143,7 +4143,7 @@
 "from": "https://3tex.io/"
 },
 "19011": {
-"checked": "2026-10-18T08:10:37+00:00",
+"checked": "2026-10-18T09:00:17+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.cobentoniaus.com"
 },
@@ -4161,17 +4161,17 @@
 "treasurer": "https://www.boonecounty.iowa.gov/treasurer/"
 },
 "19017": {
-"checked": "2026-10-18T08:10:37+00:00",
+"checked": "2026-10-18T09:00:17+00:00",
 "error": "HTTP Error 500: Internal Server Error",
 "from": "http://www.co.bremer.ia.us"
 },
 "19019": {
-"checked": "2026-10-18T08:10:52+00:00",
+"checked": "2026-10-18T09:00:32+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.co.buchanan.ia.us"
 },
 "19021": {
-"checked": "2026-10-18T08:10:52+00:00",
+"checked": "2026-10-18T09:00:32+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.co.buena-vista.ia.us"
 },
@@ -4187,12 +4187,12 @@
 "from": "https://www.calhouncountyiowa.com/"
 },
 "19027": {
-"checked": "2026-10-18T08:10:37+00:00",
+"checked": "2026-10-18T09:00:17+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.co.carroll.ia.us"
 },
 "19029": {
-"checked": "2026-10-18T08:10:37+00:00",
+"checked": "2026-10-18T09:00:17+00:00",
 "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f",
 "from": "http://www.casscountyiowa.us"
 },
@@ -4255,7 +4255,7 @@
 "treasurer": "https://www.clintoncounty-ia.gov/treasurer/property_taxes"
 },
 "19047": {
-"checked": "2026-10-18T08:10:37+00:00",
+"checked": "2026-10-18T09:00:17+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.crawfordcounty.org"
 },
@@ -4275,7 +4275,7 @@
 "treasurer": "https://www.iowatreasurers.org/treshome.php?idCounty=26"
 },
 "19053": {
-"checked": "2026-10-18T08:10:37+00:00",
+"checked": "2026-10-18T09:00:17+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.decaturcountyiowa.org/"
 },
@@ -4288,7 +4288,7 @@
 "treasurer": "https://delawarecounty.iowa.gov/treasurer/"
 },
 "19057": {
-"checked": "2026-10-18T08:10:37+00:00",
+"checked": "2026-10-18T09:00:17+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.co.des-moines.ia.us"
 },
@@ -4330,7 +4330,7 @@
 "treasurer": "https://www.iowatreasurers.org/treshome.php?idCounty=35"
 },
 "19071": {
-"checked": "2026-10-18T08:10:38+00:00",
+"checked": "2026-10-18T09:00:17+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.co.fremont.ia.us"
 },
@@ -4350,7 +4350,7 @@
 "treasurer": "https://www.grundycountyiowa.gov/departments/treasurer/property-tax-payment-options"
 },
 "19077": {
-"checked": "2026-10-18T08:10:38+00:00",
+"checked": "2026-10-18T09:00:17+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.guthriecounty.org"
 },
@@ -4363,17 +4363,17 @@
 "treasurer": "https://www.hamiltoncounty.iowa.gov/departments/treasurer/index.php"
 },
 "19081": {
-"checked": "2026-10-18T08:10:38+00:00",
+"checked": "2026-10-18T09:00:18+00:00",
 "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f",
 "from": "http://www.hancockcountyia.org"
 },
 "19083": {
-"checked": "2026-10-18T08:10:48+00:00",
+"checked": "2026-10-18T09:00:27+00:00",
 "error": "<urlopen error [Errno -3] Temporary failure in name resolution>",
 "from": "http://www.co.hardin.ia.us"
 },
 "19085": {
-"checked": "2026-10-18T08:10:38+00:00",
+"checked": "2026-10-18T09:00:17+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.harrisoncountyia.org"
 },
@@ -4409,12 +4409,12 @@
 "treasurer": "https://iowacounty.iowa.gov/treasurer/"
 },
 "19097": {
-"checked": "2026-10-18T08:10:38+00:00",
+"checked": "2026-10-18T09:00:18+00:00",
 "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f",
 "from": "http://www.co.jackson.ia.us"
 },
 "19099": {
-"checked": "2026-10-18T08:10:48+00:00",
+"checked": "2026-10-18T09:00:27+00:00",
 "error": "<urlopen error [Errno -3] Temporary failure in name resolution>",
 "from": "http://www.co.jasper.ia.us"
 },
@@ -4428,8 +4428,8 @@
 "from": "https://www.johnsoncountyiowa.gov/"
 },
 "19105": {
-"checked": "2026-10-18T08:10:38+00:00",
-"error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f",
+"checked": "2026-10-18T09:00:33+00:00",
+"error": "timed out",
 "from": "http://www.jonescountyiowa.org"
 },
 "19107": {
@@ -4440,7 +4440,7 @@
 "treasurer": "https://keokukcounty.iowa.gov/treasurer/"
 },
 "19109": {
-"checked": "2026-10-18T08:10:53+00:00",
+"checked": "2026-10-18T09:00:33+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.co.kossuth.ia.us"
 },
@@ -4493,7 +4493,7 @@
 "treasurer": "https://marioncountyiowa.gov/treasurer/property_taxes/"
 },
 "19127": {
-"checked": "2026-10-18T08:10:38+00:00",
+"checked": "2026-10-18T09:00:17+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.co.marshall.ia.us"
 },
@@ -4526,7 +4526,7 @@
 "treasurer": "https://monroecounty.iowa.gov/offices/treasurer/"
 },
 "19137": {
-"checked": "2026-10-18T08:10:38+00:00",
+"checked": "2026-10-18T09:00:18+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.montgomerycountyiowa.com"
 },
@@ -4550,7 +4550,7 @@
 "treasurer": "https://pagecounty.iowa.gov/offices/treasurer/"
 },
 "19147": {
-"checked": "2026-10-18T08:10:38+00:00",
+"checked": "2026-10-18T09:00:18+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://paloaltocountyiowa.com/"
 },
@@ -4559,7 +4559,7 @@
 "from": "https://www.co.plymouth.ia.us/"
 },
 "19151": {
-"checked": "2026-10-18T08:10:38+00:00",
+"checked": "2026-10-18T09:00:18+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.pocahontas-county.com"
 },
@@ -4571,7 +4571,7 @@
 "treasurer": "https://www.polkcountyiowa.gov/treasurer/property-tax/"
 },
 "19155": {
-"checked": "2026-10-18T08:10:38+00:00",
+"checked": "2026-10-18T09:00:18+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.pottcounty.com"
 },
@@ -4630,12 +4630,12 @@
 "treasurer": "https://tamacounty.iowa.gov/treasurer/property_tax/"
 },
 "19173": {
-"checked": "2026-10-18T08:10:39+00:00",
+"checked": "2026-10-18T09:00:18+00:00",
 "error": "HTTP Error 525: <none>",
 "from": "http://www.taylorcountyiowa.org/"
 },
 "19175": {
-"checked": "2026-10-18T08:10:38+00:00",
+"checked": "2026-10-18T09:00:18+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.unioncountyiowa.org"
 },
@@ -4671,7 +4671,7 @@
 "from": "http://www.waynecountyiowa.com"
 },
 "19187": {
-"checked": "2026-10-18T08:10:39+00:00",
+"checked": "2026-10-18T09:00:18+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.webstercountyia.org"
 },
@@ -4687,12 +4687,12 @@
 "treasurer": "https://winneshiekcounty.iowa.gov/departments/treasurer"
 },
 "19193": {
-"checked": "2026-10-18T08:10:54+00:00",
+"checked": "2026-10-18T09:00:33+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.woodbury-ia.com"
 },
 "19195": {
-"checked": "2026-10-18T08:10:39+00:00",
+"checked": "2026-10-18T09:00:18+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.worthcounty.org"
 },
@@ -4721,7 +4721,7 @@
 "treasurer": "https://www.kansas.gov/propertytax/"
 },
 "20007": {
-"checked": "2026-10-18T08:11:07+00:00",
+"checked": "2026-10-18T09:00:46+00:00",
 "error": "timed out",
 "from": "http://BarberCounty.net"
 },
@@ -4754,12 +4754,12 @@
 "from": "https://www.heartoftheflinthills.com/"
 },
 "20019": {
-"checked": "2026-10-18T08:10:52+00:00",
+"checked": "2026-10-18T09:00:32+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.chautauquacountyks.com"
 },
 "20021": {
-"checked": "2026-10-18T08:11:07+00:00",
+"checked": "2026-10-18T09:00:47+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://CherokeeCountyKS.com"
 },
@@ -4769,7 +4769,7 @@
 "treasurer": "https://cncoks.us/treasurers-office/"
 },
 "20025": {
-"checked": "2026-10-18T08:10:52+00:00",
+"checked": "2026-10-18T09:00:32+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://ClarkCountyKS.com"
 },
@@ -4872,12 +4872,12 @@
 "from": "https://www.gearycounty.gov/"
 },
 "20063": {
-"checked": "2026-10-18T08:11:07+00:00",
+"checked": "2026-10-18T09:00:47+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.govecountyks.com"
 },
 "20065": {
-"checked": "2026-10-18T08:10:53+00:00",
+"checked": "2026-10-18T09:00:32+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://GrahamCountyKS.com"
 },
@@ -4887,7 +4887,7 @@
 "from": "http://www.GrantCoKS.org"
 },
 "20069": {
-"checked": "2026-10-18T08:10:52+00:00",
+"checked": "2026-10-18T09:00:32+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.GrayCo.org"
 },
@@ -4919,7 +4919,7 @@
 "treasurer": "https://www.harveycounty.gov/treasurer"
 },
 "20081": {
-"checked": "2026-10-18T08:10:53+00:00",
+"checked": "2026-10-18T09:00:32+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://HaskellCounty.org"
 },
@@ -4929,7 +4929,7 @@
 "treasurer": "https://hodgemancountyks.com/treasurers-office"
 },
 "20085": {
-"checked": "2026-10-18T08:10:52+00:00",
+"checked": "2026-10-18T09:00:32+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://ks-jackson.manatron.com"
 },
@@ -4938,7 +4938,7 @@
 "from": "http://www.jfcountyks.com"
 },
 "20089": {
-"checked": "2026-10-18T08:10:52+00:00",
+"checked": "2026-10-18T09:00:32+00:00",
 "error": "HTTP Error 307: Temporary Redirect",
 "from": "http://www.nckcn.com/homepage/jewell_co/jewell.htm"
 },
@@ -4949,7 +4949,7 @@
 "sheriff": "https://www.jocogov.org/johnson-county-sheriff/operations-bureau/civil/foreclosure-sales"
 },
 "20093": {
-"checked": "2026-10-18T08:10:53+00:00",
+"checked": "2026-10-18T09:00:33+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://KearnyCountyKansas.com"
 },
@@ -4983,7 +4983,7 @@
 "treasurer": "https://www.leavenworthcounty.gov/government/county_treasurer_s_office/index.php"
 },
 "20105": {
-"checked": "2026-10-18T08:10:53+00:00",
+"checked": "2026-10-18T09:00:33+00:00",
 "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f",
 "from": "http://www.LincolnCoKS.com"
 },
@@ -4994,7 +4994,7 @@
 "treasurer": "https://www.linncountyks.gov/179"
 },
 "20109": {
-"checked": "2026-10-18T08:10:54+00:00",
+"checked": "2026-10-18T09:00:34+00:00",
 "error": "HTTP Error 404: Not Found",
 "from": "http://www.discoveroakley.com/county"
 },
@@ -5014,7 +5014,7 @@
 "from": "https://www.marioncoks.net/"
 },
 "20117": {
-"checked": "2026-10-18T08:10:53+00:00",
+"checked": "2026-10-18T09:00:33+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.marshall.kansasgov.com"
 },
@@ -5048,7 +5048,7 @@
 "treasurer": "https://mtcoks.com/200/Treasurer"
 },
 "20131": {
-"checked": "2026-10-18T08:10:53+00:00",
+"checked": "2026-10-18T09:00:33+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.Nemaha.KansasGov.com"
 },
@@ -5105,7 +5105,7 @@
 "from": "https://rawlinscounty.info/"
 },
 "20155": {
-"checked": "2026-10-18T08:10:53+00:00",
+"checked": "2026-10-18T09:00:33+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.RenoGov.org"
 },
@@ -5138,17 +5138,17 @@
 "from": "https://www.RushCounty.org/"
 },
 "20167": {
-"checked": "2026-10-18T08:10:53+00:00",
+"checked": "2026-10-18T09:00:33+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://ks-russellco.manatron.com"
 },
 "20169": {
-"checked": "2026-10-18T08:10:54+00:00",
+"checked": "2026-10-18T09:00:34+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.Saline.org"
 },
 "20171": {
-"checked": "2026-10-18T08:10:53+00:00",
+"checked": "2026-10-18T09:00:33+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://ks-scott.manatron.com"
 },
@@ -5173,12 +5173,12 @@
 "treasurer": "https://www.snco.gov/treasurer/"
 },
 "20179": {
-"checked": "2026-10-18T08:10:54+00:00",
+"checked": "2026-10-18T09:00:34+00:00",
 "error": "<urlopen error [Errno -3] Temporary failure in name resolution>",
 "from": "http://www.accesskansas.org/sheridan"
 },
 "20181": {
-"checked": "2026-10-18T08:10:53+00:00",
+"checked": "2026-10-18T09:00:33+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.Sherman.KansasGov.com"
 },
@@ -5193,7 +5193,7 @@
 "treasurer": "https://www.staffordcounty.org/treasurer.html"
 },
 "20187": {
-"checked": "2026-10-18T08:10:53+00:00",
+"checked": "2026-10-18T09:00:33+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://StantonCountyKS.com"
 },
@@ -5220,12 +5220,12 @@
 "from": "https://tregocountyks.gov/"
 },
 "20197": {
-"checked": "2026-10-18T08:10:53+00:00",
+"checked": "2026-10-18T09:00:33+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://Wabaunsee.KansasGov.com"
 },
 "20199": {
-"checked": "2026-10-18T08:10:53+00:00",
+"checked": "2026-10-18T09:00:33+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://WallaceCounty.net"
 },
@@ -5239,7 +5239,7 @@
 "treasurer": "https://www.wichitacounty.org/195/Treasurer"
 },
 "20205": {
-"checked": "2026-10-18T08:10:53+00:00",
+"checked": "2026-10-18T09:00:33+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.Wilson.KansasGov.com"
 },
@@ -5280,7 +5280,7 @@
 "from": "http://www.barrencounty.com"
 },
 "21011": {
-"checked": "2026-10-18T08:11:03+00:00",
+"checked": "2026-10-18T09:00:43+00:00",
 "error": "<urlopen error [Errno -3] Temporary failure in name resolution>",
 "from": "http://owingsville.com"
 },
@@ -5294,7 +5294,7 @@
 "treasurer": "https://www.boonecountyky.org/government/tax_information/current_property_tax_rates.php"
 },
 "21017": {
-"checked": "2026-10-18T08:10:53+00:00",
+"checked": "2026-10-18T09:00:33+00:00",
 "error": "HTTP Error 409: Conflict",
 "from": "http://www.parisky.com"
 },
@@ -5320,22 +5320,22 @@
 "from": "https://www.breckinridgecounty.net/"
 },
 "21029": {
-"checked": "2026-10-18T08:11:09+00:00",
+"checked": "2026-10-18T09:00:49+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://bullittcounty.ky.gov"
 },
 "21031": {
-"checked": "2026-10-18T08:10:54+00:00",
+"checked": "2026-10-18T09:00:34+00:00",
 "error": "HTTP Error 404: Not Found",
 "from": "http://www.butlercounty.ky.gov"
 },
 "21033": {
-"checked": "2026-10-18T08:10:54+00:00",
+"checked": "2026-10-18T09:00:34+00:00",
 "error": "HTTP Error 404: Not Found",
 "from": "http://www.caldwellcounty.ky.gov"
 },
 "21035": {
-"checked": "2026-10-18T08:10:54+00:00",
+"checked": "2026-10-18T09:00:34+00:00",
 "error": "<urlopen error [Errno -5] No address associated with hostname>",
 "from": "http://www.callowaycounty-ky.gov"
 },
@@ -5344,12 +5344,12 @@
 "from": "https://campbellcountyky.gov/"
 },
 "21039": {
-"checked": "2026-10-18T08:10:55+00:00",
+"checked": "2026-10-18T09:00:34+00:00",
 "error": "<urlopen error [Errno -5] No address associated with hostname>",
 "from": "https://carlislecounty.ky.gov/Pages/default.aspx"
 },
 "21041": {
-"checked": "2026-10-18T08:10:55+00:00",
+"checked": "2026-10-18T09:00:34+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.carrollcountyky.com"
 },
@@ -5358,7 +5358,7 @@
 "from": "http://ww547.kyhometown.com/?tkn=19vnMT3S"
 },
 "21045": {
-"checked": "2026-10-18T08:11:04+00:00",
+"checked": "2026-10-18T09:00:44+00:00",
 "error": "<urlopen error [Errno -3] Temporary failure in name resolution>",
 "from": "http://www.libertykentucky.org"
 },
@@ -5380,7 +5380,7 @@
 "from": "https://www.albanyclintonco.com/"
 },
 "21055": {
-"checked": "2026-10-18T08:10:55+00:00",
+"checked": "2026-10-18T09:00:35+00:00",
 "error": "HTTP Error 404: Not Found",
 "from": "http://www.marionky.gov/index.shtml"
 },
@@ -5396,7 +5396,7 @@
 "treasurer": "http://www.dcsdky.com/contact-us/"
 },
 "21061": {
-"checked": "2026-10-18T08:10:55+00:00",
+"checked": "2026-10-18T09:00:35+00:00",
 "error": "HTTP Error 404: Not Found",
 "from": "http://www.edmonsoncounty.ky.gov"
 },
@@ -5423,12 +5423,12 @@
 "treasurer": "https://franklincounty.ky.gov/treasurer/"
 },
 "21075": {
-"checked": "2026-10-18T08:10:55+00:00",
+"checked": "2026-10-18T09:00:35+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.fultoncounty.ky.gov/"
 },
 "21077": {
-"checked": "2026-10-18T08:10:55+00:00",
+"checked": "2026-10-18T09:00:35+00:00",
 "error": "<urlopen error [Errno -5] No address associated with hostname>",
 "from": "http://gallatincounty.ky.gov"
 },
@@ -5441,7 +5441,7 @@
 "from": "https://grantcounty.ky.gov/"
 },
 "21083": {
-"checked": "2026-10-18T08:10:55+00:00",
+"checked": "2026-10-18T09:00:35+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.gravescountyky.com"
 },
@@ -5487,12 +5487,12 @@
 "treasurer": "https://hendersonsheriff.countyoffice.us/"
 },
 "21103": {
-"checked": "2026-10-18T08:10:55+00:00",
+"checked": "2026-10-18T09:00:35+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.henrycountygov.com"
 },
 "21105": {
-"checked": "2026-10-18T08:10:55+00:00",
+"checked": "2026-10-18T09:00:35+00:00",
 "error": "<urlopen error [Errno -5] No address associated with hostname>",
 "from": "http://hickmancounty.ky.gov/Pages/default.aspx"
 },
@@ -5508,7 +5508,7 @@
 "from": "https://chatrazvrat.com/"
 },
 "21111": {
-"checked": "2026-10-18T08:10:55+00:00",
+"checked": "2026-10-18T09:00:35+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.louisvilleky.gov"
 },
@@ -5538,7 +5538,7 @@
 "from": "https://knoxfiscalcourt.com/"
 },
 "21123": {
-"checked": "2026-10-18T08:10:55+00:00",
+"checked": "2026-10-18T09:00:35+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.laruecounty.org"
 },
@@ -5547,17 +5547,17 @@
 "from": "https://www.londonky.gov/"
 },
 "21127": {
-"checked": "2026-10-18T08:11:21+00:00",
+"checked": "2026-10-18T09:00:50+00:00",
 "error": "timed out",
 "from": "http://www.lawrencecoky.com"
 },
 "21129": {
-"checked": "2026-10-18T08:10:56+00:00",
+"checked": "2026-10-18T09:00:35+00:00",
 "error": "HTTP Error 404: Not Found",
 "from": "http://www.leecounty.ky.gov"
 },
 "21131": {
-"checked": "2026-10-18T08:10:55+00:00",
+"checked": "2026-10-18T09:00:35+00:00",
 "error": "HTTP Error 404: Not Found",
 "from": "http://www.lesliecounty.ky.gov"
 },
@@ -5579,7 +5579,7 @@
 "from": "http://www.joshuaarmbruster.com/"
 },
 "21141": {
-"checked": "2026-10-18T08:10:56+00:00",
+"checked": "2026-10-18T09:00:37+00:00",
 "error": "HTTP Error 404: Not Found",
 "from": "https://logancounty.ky.gov/Pages/default.aspx"
 },
@@ -5588,7 +5588,7 @@
 "from": "http://www.lyoncounty.com"
 },
 "21145": {
-"checked": "2026-10-18T08:11:11+00:00",
+"checked": "2026-10-18T09:00:51+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://mccrackencounty.org"
 },
@@ -5597,7 +5597,7 @@
 "from": "https://mccrearycounty.com/"
 },
 "21149": {
-"checked": "2026-10-18T08:10:56+00:00",
+"checked": "2026-10-18T09:00:36+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.mcleancounty.ky.gov"
 },
@@ -5612,7 +5612,7 @@
 "treasurer": "https://magoffincounty.ky.gov/elected-officials/sheriffs-office/Pages/property-tax.aspx"
 },
 "21155": {
-"checked": "2026-10-18T08:10:56+00:00",
+"checked": "2026-10-18T09:00:35+00:00",
 "error": "HTTP Error 404: Not Found",
 "from": "http://www.marioncounty.ky.gov"
 },
@@ -5625,7 +5625,7 @@
 "from": "https://martincountykentucky.com/"
 },
 "21161": {
-"checked": "2026-10-18T08:11:06+00:00",
+"checked": "2026-10-18T09:00:45+00:00",
 "error": "<urlopen error [Errno -3] Temporary failure in name resolution>",
 "from": "http://www.masoncountykentucky.com"
 },
@@ -5634,12 +5634,12 @@
 "from": "https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FMeadeCountyTourism"
 },
 "21165": {
-"checked": "2026-10-18T08:10:56+00:00",
+"checked": "2026-10-18T09:00:36+00:00",
 "error": "HTTP Error 404: Not Found",
 "from": "http://www.menifeecounty.ky.gov"
 },
 "21167": {
-"checked": "2026-10-18T08:10:57+00:00",
+"checked": "2026-10-18T09:00:36+00:00",
 "error": "HTTP Error 404: Not Found",
 "from": "http://www.mercercounty.ky.gov"
 },
@@ -5648,7 +5648,7 @@
 "from": "http://www.metcalfecounty.com"
 },
 "21171": {
-"checked": "2026-10-18T08:10:57+00:00",
+"checked": "2026-10-18T09:00:36+00:00",
 "error": "HTTP Error 404: Not Found",
 "from": "http://www.monroecounty.ky.gov"
 },
@@ -5657,7 +5657,7 @@
 "from": "https://www.mtsterlingchamber.com/"
 },
 "21175": {
-"checked": "2026-10-18T08:10:57+00:00",
+"checked": "2026-10-18T09:00:36+00:00",
 "error": "HTTP Error 404: Not Found",
 "from": "http://www.morgancounty.ky.gov"
 },
@@ -5674,7 +5674,7 @@
 "from": "https://nicholascounty.ky.gov/Pages/default.aspx"
 },
 "21183": {
-"checked": "2026-10-18T08:10:57+00:00",
+"checked": "2026-10-18T09:00:36+00:00",
 "error": "HTTP Error 404: Not Found",
 "from": "http://www.ohiocounty.ky.gov"
 },
@@ -5684,7 +5684,7 @@
 "from": "https://www.oldhamcountyky.gov/"
 },
 "21187": {
-"checked": "2026-10-18T08:10:57+00:00",
+"checked": "2026-10-18T09:00:37+00:00",
 "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>",
 "from": "http://www.owencounty.ky.gov"
 },
@@ -5698,27 +5698,27 @@
 "treasurer": "https://pendletoncounty.ky.gov/About Us/Pages/County-Treasurer.aspx"
 },
 "21193": {
-"checked": "2026-10-18T08:10:57+00:00",
+"checked": "2026-10-18T09:00:37+00:00",
 "error": "HTTP Error 502: Bad Gateway",
 "from": "https://perrycounty.ky.gov"
 },
 "21195": {
-"checked": "2026-10-18T08:10:57+00:00",
+"checked": "2026-10-18T09:00:36+00:00",
 "error": "<urlopen error [Errno -5] No address associated with hostname>",
 "from": "http://www.pikecountyky.gov/"
 },
 "21197": {
-"checked": "2026-10-18T08:10:57+00:00",
+"checked": "2026-10-18T09:00:37+00:00",
 "error": "HTTP Error 404: Not Found",
 "from": "http://www.powellcounty.ky.gov"
 },
 "21199": {
-"checked": "2026-10-18T08:10:57+00:00",
+"checked": "2026-10-18T09:00:37+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.somersetpulaskichamber.com"
 },
 "21201": {
-"checked": "2026-10-18T08:10:57+00:00",
+"checked": "2026-10-18T09:00:37+00:00",
 "error": "HTTP Error 404: Not Found",
 "from": "http://www.robertsoncounty.ky.gov"
 },
@@ -5727,7 +5727,7 @@
 "from": "https://rockcastlecountyky.com/"
 },
 "21205": {
-"checked": "2026-10-18T08:10:57+00:00",
+"checked": "2026-10-18T09:00:37+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.moreheadrowan.org/rowancounty/"
 },
@@ -5736,7 +5736,7 @@
 "from": "https://lakecumberlandvacation.com/"
 },
 "21209": {
-"checked": "2026-10-18T08:10:57+00:00",
+"checked": "2026-10-18T09:00:37+00:00",
 "error": "HTTP Error 404: Not Found",
 "from": "http://www.scottky.com"
 },
@@ -5759,17 +5759,17 @@
 "treasurer": "https://taylorcountyky.gov/treasurer"
 },
 "21219": {
-"checked": "2026-10-18T08:10:57+00:00",
+"checked": "2026-10-18T09:00:37+00:00",
 "error": "HTTP Error 404: Not Found",
 "from": "http://www.toddcounty.ky.gov"
 },
 "21221": {
-"checked": "2026-10-18T08:10:57+00:00",
+"checked": "2026-10-18T09:00:37+00:00",
 "error": "HTTP Error 404: Not Found",
 "from": "http://www.triggcounty.ky.gov"
 },
 "21223": {
-"checked": "2026-10-18T08:10:58+00:00",
+"checked": "2026-10-18T09:00:37+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.trimblecounty.ky.gov"
 },
@@ -5792,7 +5792,7 @@
 "from": "http://www.monticellokychamber.com"
 },
 "21233": {
-"checked": "2026-10-18T08:10:57+00:00",
+"checked": "2026-10-18T09:00:37+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.webstercountyky.com"
 },
@@ -5812,7 +5812,7 @@
 "from": "https://acadiaparishclerk.com/"
 },
 "22003": {
-"checked": "2026-10-18T08:11:12+00:00",
+"checked": "2026-10-18T09:00:52+00:00",
 "error": "<urlopen error timed out>",
 "from": "https://www.allenparish.com/"
 },
@@ -5831,12 +5831,12 @@
 "from": "https://www.avoypj.org/"
 },
 "22011": {
-"checked": "2026-10-18T08:11:12+00:00",
+"checked": "2026-10-18T09:00:52+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.beauparish.org/"
 },
 "22013": {
-"checked": "2026-10-18T08:10:59+00:00",
+"checked": "2026-10-18T09:00:37+00:00",
 "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.",
 "from": "http://www.bienvilleparish.org/"
 },
@@ -5847,17 +5847,17 @@
 "sheriff": "https://www.bossiersheriff.com/sheriffSales"
 },
 "22017": {
-"checked": "2026-10-18T08:10:58+00:00",
+"checked": "2026-10-18T09:00:37+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.caddo.org"
 },
 "22019": {
-"checked": "2026-10-18T08:10:58+00:00",
+"checked": "2026-10-18T09:00:37+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.cppj.net/"
 },
 "22021": {
-"checked": "2026-10-18T08:10:59+00:00",
+"checked": "2026-10-18T09:00:39+00:00",
 "error": "<urlopen error [Errno -3] Temporary failure in name resolution>",
 "from": "http://www.caldwellparish.org"
 },
@@ -5880,12 +5880,12 @@
 "treasurer": "https://www.desotoppj.com/government/officers/parish_treasurer.php"
 },
 "22033": {
-"checked": "2026-10-18T08:10:58+00:00",
+"checked": "2026-10-18T09:00:37+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.brgov.com"
 },
 "22037": {
-"checked": "2026-10-18T08:10:58+00:00",
+"checked": "2026-10-18T09:00:37+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "https://www.eastfelicianaparish.org/home.html"
 },
@@ -5908,12 +5908,12 @@
 "from": "https://ibervilleparish.com/"
 },
 "22049": {
-"checked": "2026-10-18T08:10:58+00:00",
+"checked": "2026-10-18T09:00:38+00:00",
 "error": "Remote end closed connection without response",
 "from": "http://www.jacksonparishpolicejury.org/Default.aspx"
 },
 "22051": {
-"checked": "2026-10-18T08:10:58+00:00",
+"checked": "2026-10-18T09:00:37+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.jeffparish.gov/"
 },
@@ -5932,7 +5932,7 @@
 "from": "https://www.lafourchegov.org/"
 },
 "22061": {
-"checked": "2026-10-18T08:10:58+00:00",
+"checked": "2026-10-18T09:00:38+00:00",
 "error": "HTTP Error 520: <none>",
 "from": "http://www.lincolnparish.org/"
 },
@@ -5942,7 +5942,7 @@
 "from": "https://www.livingstonparishla.gov/"
 },
 "22065": {
-"checked": "2026-10-18T08:11:13+00:00",
+"checked": "2026-10-18T09:00:53+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://madisonparish.org"
 },
@@ -5985,7 +5985,7 @@
 "from": "https://www.rppjinfo.com/"
 },
 "22085": {
-"checked": "2026-10-18T08:10:59+00:00",
+"checked": "2026-10-18T09:00:38+00:00",
 "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)>",
 "from": "https://sabineparishpolicejury.com/"
 },
@@ -5994,7 +5994,7 @@
 "from": "https://www.sbpg.net/"
 },
 "22089": {
-"checked": "2026-10-18T08:10:59+00:00",
+"checked": "2026-10-18T09:00:38+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.stcharlesgov.net"
 },
@@ -6087,7 +6087,7 @@
 "from": "http://www.stfrancisville.com/"
 },
 "22127": {
-"checked": "2026-10-18T08:10:59+00:00",
+"checked": "2026-10-18T09:00:38+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://sites.rootsweb.com/~lawinn/"
 },
@@ -6117,7 +6117,7 @@
 "from": "https://hancockcountymaine.gov/"
 },
 "23011": {
-"checked": "2026-10-18T08:11:00+00:00",
+"checked": "2026-10-18T09:00:38+00:00",
 "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f",
 "from": "https://kennebeccounty.org/"
 },
@@ -6127,7 +6127,7 @@
 "sheriff": "https://www.google.com/maps/place/301 Park St, Rockland, ME 04841/@44.102314,-69.1336383,17z/data=!3m1!4b1!4m5!3m4!1s0x4cadcfce0b1b2e99:0x1c723055d8ed971d!8m2!3d44.1023102!4d-69.1314496"
 },
 "23015": {
-"checked": "2026-10-18T08:11:10+00:00",
+"checked": "2026-10-18T09:00:48+00:00",
 "error": "<urlopen error [Errno -3] Temporary failure in name resolution>",
 "from": "http://co.lincoln.me.us"
 },
@@ -6146,7 +6146,7 @@
 "from": "https://www.piscataquis.us/"
 },
 "23023": {
-"checked": "2026-10-18T08:11:01+00:00",
+"checked": "2026-10-18T09:00:39+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.sagcounty.com"
 },
@@ -6208,7 +6208,7 @@
 "from": "https://www.cecilcountymd.gov/"
 },
 "24017": {
-"checked": "2026-10-18T08:10:59+00:00",
+"checked": "2026-10-18T09:00:38+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.charlescountymd.gov/"
 },
@@ -6251,7 +6251,7 @@
 "treasurer": "https://apps.montgomerycountymd.gov/realpropertytax/"
 },
 "24033": {
-"checked": "2026-10-18T08:11:00+00:00",
+"checked": "2026-10-18T09:00:38+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.princegeorgescountymd.gov/"
 },
@@ -6267,7 +6267,7 @@
 "treasurer": "https://www.stmaryscountymd.gov/Treasurer/"
 },
 "24039": {
-"checked": "2026-10-18T08:11:01+00:00",
+"checked": "2026-10-18T09:00:40+00:00",
 "error": "<urlopen error [Errno -3] Temporary failure in name resolution>",
 "from": "http://www.co.somerset.md.us"
 },
@@ -6346,7 +6346,7 @@
 "treasurer": "https://www.norfolkcounty.org/treasurer/index.php"
 },
 "25023": {
-"checked": "2026-10-18T08:10:59+00:00",
+"checked": "2026-10-18T09:00:38+00:00",
 "error": "<urlopen error [Errno -5] No address associated with hostname>",
 "from": "http://www.plymouthcounty-ma.gov"
 },
@@ -6363,7 +6363,7 @@
 "taxsale": "https://algercounty.gov/departments/treasurer/delinquent-taxes-forfeiture-and-foreclosure/"
 },
 "26005": {
-"checked": "2026-10-18T08:11:01+00:00",
+"checked": "2026-10-18T09:00:40+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.allegancounty.org"
 },
@@ -6397,7 +6397,7 @@
 "treasurer": "https://www.barrycounty.org/departments_and_officials/officials/county_treasurer.php"
 },
 "26017": {
-"checked": "2026-10-18T08:11:01+00:00",
+"checked": "2026-10-18T09:00:40+00:00",
 "error": "<urlopen error [Errno -5] No address associated with hostname>",
 "from": "http://www.baycounty-mi.gov"
 },
@@ -6408,17 +6408,17 @@
 "treasurer": "https://www.benzieco.net/government/county_treasurer.php"
 },
 "26021": {
-"checked": "2026-10-18T08:11:01+00:00",
+"checked": "2026-10-18T09:00:40+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.berriencounty.org"
 },
 "26023": {
-"checked": "2026-10-18T08:11:03+00:00",
+"checked": "2026-10-18T09:00:43+00:00",
 "error": "<urlopen error [Errno -3] Temporary failure in name resolution>",
 "from": "http://co.branch.mi.us"
 },
 "26025": {
-"checked": "2026-10-18T08:11:02+00:00",
+"checked": "2026-10-18T09:00:40+00:00",
 "error": "<urlopen error [Errno -3] Temporary failure in name resolution>",
 "from": "http://www.calhouncountymi.org"
 },
@@ -6508,7 +6508,7 @@
 "treasurer": "http://www.geneseecountymi.gov/departments/treasurer/index.php"
 },
 "26051": {
-"checked": "2026-10-18T08:11:02+00:00",
+"checked": "2026-10-18T09:00:40+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.gladwinco.com"
 },
@@ -6524,7 +6524,7 @@
 "from": "https://www.gtcountymi.gov/2747/86th-District-Court"
 },
 "26057": {
-"checked": "2026-10-18T08:11:17+00:00",
+"checked": "2026-10-18T09:00:55+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.co.gratiot.mi.us"
 },
@@ -6555,12 +6555,12 @@
 "treasurer": "https://www.ingham.org/departments_and_officials/treasurer/index.php"
 },
 "26067": {
-"checked": "2026-10-18T08:11:02+00:00",
+"checked": "2026-10-18T09:00:40+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.ioniacounty.org"
 },
 "26069": {
-"checked": "2026-10-18T08:11:12+00:00",
+"checked": "2026-10-18T09:00:51+00:00",
 "error": "<urlopen error [Errno -3] Temporary failure in name resolution>",
 "from": "http://iosco.m33access.com"
 },
@@ -6582,7 +6582,7 @@
 "from": "https://www.mijackson.org/"
 },
 "26077": {
-"checked": "2026-10-18T08:11:02+00:00",
+"checked": "2026-10-18T09:00:41+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.kalcounty.com"
 },
@@ -6595,7 +6595,7 @@
 "treasurer": "https://www.kalkaskacounty.net/government/treasurer/index.php"
 },
 "26081": {
-"checked": "2026-10-18T08:11:02+00:00",
+"checked": "2026-10-18T09:00:41+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.accesskent.com/"
 },
@@ -6606,7 +6606,7 @@
 "treasurer": "https://www.keweenawcountyonline.org/department-treasurer.php"
 },
 "26085": {
-"checked": "2026-10-18T08:11:02+00:00",
+"checked": "2026-10-18T09:00:42+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.lakecounty-michigan.com/"
 },
@@ -6627,7 +6627,7 @@
 "from": "https://www.lenawee.mi.us/"
 },
 "26093": {
-"checked": "2026-10-18T08:11:02+00:00",
+"checked": "2026-10-18T09:00:42+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.co.livingston.mi.us"
 },
@@ -6646,7 +6646,7 @@
 "treasurer": "https://www.mackinaccounty.net/departments/treasurer/"
 },
 "26099": {
-"checked": "2026-10-18T08:11:17+00:00",
+"checked": "2026-10-18T09:00:57+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://macombcountymi.gov"
 },
@@ -6702,12 +6702,12 @@
 "from": "https://www.co.monroe.mi.us/"
 },
 "26117": {
-"checked": "2026-10-18T08:11:03+00:00",
+"checked": "2026-10-18T09:00:42+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.montcalm.org"
 },
 "26119": {
-"checked": "2026-10-18T08:11:03+00:00",
+"checked": "2026-10-18T09:00:42+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.montmorencycountymichigan.us"
 },
@@ -6736,7 +6736,7 @@
 "treasurer": "https://oceana.mi.us/departments/treasurer/"
 },
 "26129": {
-"checked": "2026-10-18T08:11:03+00:00",
+"checked": "2026-10-18T09:00:42+00:00",
 "error": "<urlopen error [Errno -5] No address associated with hostname>",
 "from": "http://www.OgemawCountyMi.Gov"
 },
@@ -6790,7 +6790,7 @@
 "treasurer": "https://www.saginawcountymi.gov/departments/treasurer/"
 },
 "26147": {
-"checked": "2026-10-18T08:11:18+00:00",
+"checked": "2026-10-18T09:00:58+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.stclaircounty.org"
 },
@@ -6829,7 +6829,7 @@
 "treasurer": "https://www.tuscolacounty.org/treasurer"
 },
 "26159": {
-"checked": "2026-10-18T08:11:18+00:00",
+"checked": "2026-10-18T09:00:58+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.vbco.org"
 },
@@ -6862,7 +6862,7 @@
 "treasurer": "https://pay.anokacountymn.gov/"
 },
 "27005": {
-"checked": "2026-10-18T08:11:04+00:00",
+"checked": "2026-10-18T09:00:43+00:00",
 "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.",
 "from": "http://www.co.becker.mn.us"
 },
@@ -6889,7 +6889,7 @@
 "treasurer": "https://bigstonecounty.gov/departments/auditor-treasurer/"
 },
 "27013": {
-"checked": "2026-10-18T08:11:04+00:00",
+"checked": "2026-10-18T09:00:43+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.co.blue-earth.mn.us"
 },
@@ -6907,12 +6907,12 @@
 "treasurer": "https://www.revenue.state.mn.us/individuals"
 },
 "27019": {
-"checked": "2026-10-18T08:11:04+00:00",
+"checked": "2026-10-18T09:00:44+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.co.carver.mn.us"
 },
 "27021": {
-"checked": "2026-10-18T08:11:04+00:00",
+"checked": "2026-10-18T09:00:44+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.co.cass.mn.us"
 },
@@ -6923,7 +6923,7 @@
 "treasurer": "https://www.chippewacountymn.gov/182/Property-Tax-Administration"
 },
 "27025": {
-"checked": "2026-10-18T08:11:04+00:00",
+"checked": "2026-10-18T09:00:44+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.chisagocountymn.gov/"
 },
@@ -7029,7 +7029,7 @@
 "treasurer": "https://www.hennepincounty.gov/services/property/property-taxes/pay-property-taxes"
 },
 "27055": {
-"checked": "2026-10-18T08:11:05+00:00",
+"checked": "2026-10-18T09:00:44+00:00",
 "error": "<urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1010)>",
 "from": "https://www.co.houston.mn.us/"
 },
@@ -7041,7 +7041,7 @@
 "treasurer": "https://www.hubbardcounty.gov/auditor_treasurer"
 },
 "27059": {
-"checked": "2026-10-18T08:11:05+00:00",
+"checked": "2026-10-18T09:00:44+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.co.isanti.mn.us"
 },
@@ -7121,7 +7121,7 @@
 "treasurer": "https://www.co.lincoln.mn.us/departments_agencies/auditor_-_treasurer/index.php"
 },
 "27083": {
-"checked": "2026-10-18T08:11:08+00:00",
+"checked": "2026-10-18T09:00:46+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.lyonco.org/"
 },
@@ -7224,7 +7224,7 @@
 "treasurer": "https://www.pinecountymn.gov/departments/auditor/pay_your_property_taxes.php"
 },
 "27117": {
-"checked": "2026-10-18T08:11:20+00:00",
+"checked": "2026-10-18T09:00:59+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.co.pipestone.mn.us"
 },
@@ -7236,7 +7236,7 @@
 "treasurer": "https://mn-polk.publicaccessnow.com/"
 },
 "27121": {
-"checked": "2026-10-18T08:11:05+00:00",
+"checked": "2026-10-18T09:00:44+00:00",
 "error": "<urlopen error [Errno -5] No address associated with hostname>",
 "from": "http://www.co.pope.mn.us"
 },
@@ -7246,7 +7246,7 @@
 "treasurer": "https://www.ramseycountymn.gov/news/second-half-2026-property-tax-payments-due-oct-15"
 },
 "27125": {
-"checked": "2026-10-18T08:11:05+00:00",
+"checked": "2026-10-18T09:00:44+00:00",
 "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f",
 "from": "https://www.co.red-lake.mn.us"
 },
@@ -7258,12 +7258,12 @@
 "treasurer": "https://redwoodcounty-mn.gov/departments/auditor-treasurer/"
 },
 "27129": {
-"checked": "2026-10-18T08:11:06+00:00",
+"checked": "2026-10-18T09:00:45+00:00",
 "error": "<urlopen error [Errno -3] Temporary failure in name resolution>",
 "from": "http://www.co.renville.mn.us"
 },
 "27131": {
-"checked": "2026-10-18T08:11:06+00:00",
+"checked": "2026-10-18T09:00:45+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.co.rice.mn.us"
 },
@@ -7288,7 +7288,7 @@
 "treasurer": "https://www.stlouiscountymn.gov/departments-a-z/auditor/property-tax-payments-and-services"
 },
 "27139": {
-"checked": "2026-10-18T08:11:06+00:00",
+"checked": "2026-10-18T09:00:45+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.co.scott.mn.us"
 },
@@ -7312,7 +7312,7 @@
 "treasurer": "https://www.stearnscountymn.gov/792/Elections"
 },
 "27147": {
-"checked": "2026-10-18T08:11:06+00:00",
+"checked": "2026-10-18T09:00:45+00:00",
 "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.",
 "from": "http://www.co.steele.mn.us"
 },
@@ -7330,7 +7330,7 @@
 "treasurer": "https://www.swiftcounty.com/treasurer"
 },
 "27153": {
-"checked": "2026-10-18T08:11:21+00:00",
+"checked": "2026-10-18T09:01:00+00:00",
 "error": "<urlopen error timed out>",
 "from": "https://www.co.todd.mn.us/"
 },
@@ -7400,22 +7400,22 @@
 "treasurer": "https://www.co.ym.mn.gov/auditor-treasurer"
 },
 "28001": {
-"checked": "2026-10-18T08:11:22+00:00",
+"checked": "2026-10-18T09:01:01+00:00",
 "error": "<urlopen error timed out>",
 "from": "https://www.adamscountyms.net/"
 },
 "28003": {
-"checked": "2026-10-18T08:11:22+00:00",
+"checked": "2026-10-18T09:01:02+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.alcorncounty.org"
 },
 "28005": {
-"checked": "2026-10-18T08:11:23+00:00",
+"checked": "2026-10-18T09:01:02+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.amitecounty.ms"
 },
 "28007": {
-"checked": "2026-10-18T08:11:22+00:00",
+"checked": "2026-10-18T09:01:02+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.attalacounty.net"
 },
@@ -7439,27 +7439,27 @@
 "from": "https://carrollcountyms.org/"
 },
 "28017": {
-"checked": "2026-10-18T08:11:23+00:00",
+"checked": "2026-10-18T09:01:02+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.chickasawcoms.com"
 },
 "28019": {
-"checked": "2026-10-18T08:11:09+00:00",
+"checked": "2026-10-18T09:00:47+00:00",
 "error": "<urlopen error [Errno -5] No address associated with hostname>",
 "from": "http://choctawcountyms.com/"
 },
 "28021": {
-"checked": "2026-10-18T08:11:10+00:00",
+"checked": "2026-10-18T09:00:47+00:00",
 "error": "HTTP Error 503: Service Unavailable",
 "from": "https://www.ccmsgov.us/"
 },
 "28023": {
-"checked": "2026-10-18T08:11:10+00:00",
+"checked": "2026-10-18T09:00:48+00:00",
 "error": "HTTP Error 500: Internal Server Error",
 "from": "http://www.visitclarkecounty.com/"
 },
 "28025": {
-"checked": "2026-10-18T08:11:25+00:00",
+"checked": "2026-10-18T09:01:03+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.claycountyms.com"
 },
@@ -7470,7 +7470,7 @@
 "treasurer": "https://coahomacounty.net/tax-assessor-tax-collector/"
 },
 "28029": {
-"checked": "2026-10-18T08:11:10+00:00",
+"checked": "2026-10-18T09:00:49+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.copiahcounty.org"
 },
@@ -7491,7 +7491,7 @@
 "from": "http://www.co.forrest.ms.us"
 },
 "28037": {
-"checked": "2026-10-18T08:11:25+00:00",
+"checked": "2026-10-18T09:01:03+00:00",
 "error": "timed out",
 "from": "http://www.franklincountyms.com"
 },
@@ -7508,22 +7508,22 @@
 "treasurer": "https://www.greenecountyms.gov/about-5-5"
 },
 "28045": {
-"checked": "2026-10-18T08:11:11+00:00",
+"checked": "2026-10-18T09:00:49+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://hancockcounty.ms.gov/"
 },
 "28047": {
-"checked": "2026-10-18T08:11:10+00:00",
+"checked": "2026-10-18T09:00:49+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://harrisoncountyms.gov/"
 },
 "28049": {
-"checked": "2026-10-18T08:11:11+00:00",
+"checked": "2026-10-18T09:00:49+00:00",
 "error": "<urlopen error [Errno 111] Connection refused>",
 "from": "http://www.hindscountyms.com/"
 },
 "28051": {
-"checked": "2026-10-18T08:11:26+00:00",
+"checked": "2026-10-18T09:01:04+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://holmescountyms.org/"
 },
@@ -7532,7 +7532,7 @@
 "from": "https://ubuku.cz/"
 },
 "28057": {
-"checked": "2026-10-18T08:11:26+00:00",
+"checked": "2026-10-18T09:01:04+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://itawambacoms.com/"
 },
@@ -7550,12 +7550,12 @@
 "taxsale": "https://co.jasper.ms.us/delinquent-taxes/"
 },
 "28063": {
-"checked": "2026-10-18T08:11:26+00:00",
+"checked": "2026-10-18T09:01:05+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.jeffersoncountyms.com/"
 },
 "28065": {
-"checked": "2026-10-18T08:11:26+00:00",
+"checked": "2026-10-18T09:01:05+00:00",
 "error": "<urlopen error timed out>",
 "from": "https://www.jeffersondaviscountyms.com/"
 },
@@ -7564,7 +7564,7 @@
 "from": "https://www.jonescounty.com/"
 },
 "28069": {
-"checked": "2026-10-18T08:11:27+00:00",
+"checked": "2026-10-18T09:01:06+00:00",
 "error": "The read operation timed out",
 "from": "https://kempercountyms.gov/"
 },
@@ -7576,7 +7576,7 @@
 "treasurer": "https://lafayettems.com/how-do-i/pay-property-taxes/"
 },
 "28073": {
-"checked": "2026-10-18T08:11:12+00:00",
+"checked": "2026-10-18T09:00:51+00:00",
 "error": "HTTP Error 404: Not Found",
 "from": "http://www.lamarcountyms.gov/11/index.php"
 },
@@ -7585,7 +7585,7 @@
 "from": "https://www.lauderdalecounty.org/"
 },
 "28077": {
-"checked": "2026-10-18T08:11:12+00:00",
+"checked": "2026-10-18T09:00:51+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://lawrencecountyms.com/"
 },
@@ -7596,12 +7596,12 @@
 "treasurer": "https://leakecountyms.org/tax-assessorcollector/"
 },
 "28081": {
-"checked": "2026-10-18T08:11:28+00:00",
+"checked": "2026-10-18T09:01:06+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://leecoms.com/"
 },
 "28083": {
-"checked": "2026-10-18T08:11:13+00:00",
+"checked": "2026-10-18T09:00:52+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.leflorecounty.org/"
 },
@@ -7612,7 +7612,7 @@
 "treasurer": "https://www.golincolnms.com/tax-collector"
 },
 "28087": {
-"checked": "2026-10-18T08:11:13+00:00",
+"checked": "2026-10-18T09:00:52+00:00",
 "error": "<urlopen error [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1010)>",
 "from": "http://www.lowndescountygov.com"
 },
@@ -7627,7 +7627,7 @@
 "from": "https://9-anime.com/"
 },
 "28093": {
-"checked": "2026-10-18T08:11:28+00:00",
+"checked": "2026-10-18T09:01:07+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.marshall-county.com"
 },
@@ -7640,12 +7640,12 @@
 "from": "http://www.montgomerycountyms.org"
 },
 "28099": {
-"checked": "2026-10-18T08:11:13+00:00",
+"checked": "2026-10-18T09:00:52+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.neshobacounty.net"
 },
 "28101": {
-"checked": "2026-10-18T08:11:29+00:00",
+"checked": "2026-10-18T09:01:08+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.newtoncountyms.net/"
 },
@@ -7673,7 +7673,7 @@
 "taxsale": "https://www.pearlrivercounty.net/231/Online-Tax-Sale"
 },
 "28111": {
-"checked": "2026-10-18T08:11:17+00:00",
+"checked": "2026-10-18T09:00:53+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.co.quitman.ms.us"
 },
@@ -7685,7 +7685,7 @@
 "treasurer": "https://www.deltacomputersystems.com/MS/MS57MAI/plinkquerym.html"
 },
 "28115": {
-"checked": "2026-10-18T08:11:32+00:00",
+"checked": "2026-10-18T09:01:08+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://pontotoccoms.com/"
 },
@@ -7707,12 +7707,12 @@
 "treasurer": "https://www.rankincounty.org/topic/index.php?topicid=19&structureid=14"
 },
 "28123": {
-"checked": "2026-10-18T08:11:17+00:00",
+"checked": "2026-10-18T09:00:56+00:00",
 "error": "HTTP Error 503: Service Unavailable",
 "from": "https://www.scottcountyms.gov/"
 },
 "28125": {
-"checked": "2026-10-18T08:11:18+00:00",
+"checked": "2026-10-18T09:00:56+00:00",
 "error": "HTTP Error 404: Not Found",
 "from": "http://www.sharkeycounty.net/"
 },
@@ -7722,12 +7722,12 @@
 "from": "http://simpsoncountyms.com/"
 },
 "28129": {
-"checked": "2026-10-18T08:11:18+00:00",
+"checked": "2026-10-18T09:00:56+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.smithcounty.ms.gov"
 },
 "28131": {
-"checked": "2026-10-18T08:11:18+00:00",
+"checked": "2026-10-18T09:00:56+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.stonecountygov.com"
 },
@@ -7742,12 +7742,12 @@
 "taxsale": "https://tatecounty.org/faq-items/when-and-where-is-the-tax-sale-held/"
 },
 "28139": {
-"checked": "2026-10-18T08:11:33+00:00",
+"checked": "2026-10-18T09:01:11+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.co.tippah.ms.us"
 },
 "28141": {
-"checked": "2026-10-18T08:11:33+00:00",
+"checked": "2026-10-18T09:01:12+00:00",
 "error": "<urlopen error timed out>",
 "from": "https://www.co.tishomingo.ms.us/"
 },
@@ -7767,7 +7767,7 @@
 "treasurer": "https://www.treasury.ms.gov/Pages/default.aspx"
 },
 "28149": {
-"checked": "2026-10-18T08:11:19+00:00",
+"checked": "2026-10-18T09:00:58+00:00",
 "error": "HTTP Error 503: Service Unavailable",
 "from": "http://www.co.warren.ms.us"
 },
@@ -7777,7 +7777,7 @@
 "treasurer": "http://ww547.washingtoncountyms.us/kw-click"
 },
 "28153": {
-"checked": "2026-10-18T08:11:34+00:00",
+"checked": "2026-10-18T09:01:13+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.waynecounty.ms"
 },
@@ -7786,7 +7786,7 @@
 "from": "http://www.webstercountyms.org/"
 },
 "28157": {
-"checked": "2026-10-18T08:11:35+00:00",
+"checked": "2026-10-18T09:01:13+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.wilkinson.co.ms.gov"
 },
@@ -7795,12 +7795,12 @@
 "from": "http://www.winstoncountyms.com/"
 },
 "28161": {
-"checked": "2026-10-18T08:11:36+00:00",
+"checked": "2026-10-18T09:01:14+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.yalobushaonline.org/"
 },
 "28163": {
-"checked": "2026-10-18T08:11:36+00:00",
+"checked": "2026-10-18T09:01:15+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.yazoocounty.net/"
 },
@@ -7918,7 +7918,7 @@
 "treasurer": "https://www.charitonco.com/collector-treasurer"
 },
 "29043": {
-"checked": "2026-10-18T08:11:21+00:00",
+"checked": "2026-10-18T09:01:00+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://christiancountymo.gov"
 },
@@ -7972,7 +7972,7 @@
 "from": "https://www.daviesscountymo.gov/"
 },
 "29063": {
-"checked": "2026-10-18T08:11:21+00:00",
+"checked": "2026-10-18T09:01:00+00:00",
 "error": "timed out",
 "from": "http://www.dekalbcountymo.org"
 },
@@ -8099,7 +8099,7 @@
 "treasurer": "https://www.lawrencecountymo.org/treasurer"
 },
 "29111": {
-"checked": "2026-10-18T08:11:07+00:00",
+"checked": "2026-10-18T09:00:45+00:00",
 "error": "<urlopen error [Errno -5] No address associated with hostname>",
 "from": "http://lewiscountymo.org"
 },
@@ -8118,7 +8118,7 @@
 "from": "https://www.livingstoncountymo.gov/"
 },
 "29119": {
-"checked": "2026-10-18T08:11:07+00:00",
+"checked": "2026-10-18T09:00:46+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://mcdonaldcountygov.com"
 },
@@ -8146,7 +8146,7 @@
 "treasurer": "https://marioncounty-mo.gov/departments/collector-of-revenue/"
 },
 "29131": {
-"checked": "2026-10-18T08:11:07+00:00",
+"checked": "2026-10-18T09:00:46+00:00",
 "error": "HTTP Error 404: Not Found",
 "from": "http://www.millercountymissouri.org"
 },
@@ -8249,7 +8249,7 @@
 "treasurer": "http://www.pulaskicountymo.org/collector-of-revenue.html"
 },
 "29171": {
-"checked": "2026-10-18T08:11:07+00:00",
+"checked": "2026-10-18T09:00:46+00:00",
 "error": "HTTP Error 404: Not Found",
 "from": "http://nemr.net/~putco/"
 },
@@ -8279,7 +8279,7 @@
 "from": "https://www.sccmo.org/"
 },
 "29185": {
-"checked": "2026-10-18T08:11:07+00:00",
+"checked": "2026-10-18T09:00:46+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.stclaircomo.com"
 },
@@ -8340,7 +8340,7 @@
 "from": "https://www.taneycounty.org/"
 },
 "29215": {
-"checked": "2026-10-18T08:11:07+00:00",
+"checked": "2026-10-18T09:00:46+00:00",
 "error": "<urlopen error [Errno -3] Temporary failure in name resolution>",
 "from": "http://www.texascountymissouri.org"
 },
@@ -8352,7 +8352,7 @@
 "treasurer": "https://vernoncountymo.org/?page_id=23"
 },
 "29219": {
-"checked": "2026-10-18T08:11:10+00:00",
+"checked": "2026-10-18T09:00:48+00:00",
 "error": "HTTP Error 404: Not Found",
 "from": "http://www.warrencountymo.org"
 },
@@ -8373,7 +8373,7 @@
 "from": "http://www.worthcounty.us"
 },
 "29229": {
-"checked": "2026-10-18T08:11:07+00:00",
+"checked": "2026-10-18T09:00:46+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.wrightcountymo.com"
 },
@@ -8388,17 +8388,17 @@
 "treasurer": "https://beaverheadcountymt.gov/treasurer-motor-vehicle-licensing/"
 },
 "30003": {
-"checked": "2026-10-18T08:11:23+00:00",
+"checked": "2026-10-18T09:01:00+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://bighorn.mt.gov"
 },
 "30005": {
-"checked": "2026-10-18T08:11:21+00:00",
+"checked": "2026-10-18T09:01:01+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.co.blaine.mt.gov"
 },
 "30007": {
-"checked": "2026-10-18T08:11:22+00:00",
+"checked": "2026-10-18T09:01:01+00:00",
 "error": "<urlopen error [Errno -3] Temporary failure in name resolution>",
 "from": "http://www.co.broadwater.mt.us"
 },
@@ -8413,12 +8413,12 @@
 "from": "http://www.cartercountymt.info"
 },
 "30013": {
-"checked": "2026-10-18T08:11:37+00:00",
+"checked": "2026-10-18T09:01:16+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.co.cascade.mt.us"
 },
 "30015": {
-"checked": "2026-10-18T08:11:22+00:00",
+"checked": "2026-10-18T09:01:01+00:00",
 "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f",
 "from": "http://www.co.chouteau.mt.us"
 },
@@ -8428,12 +8428,12 @@
 "treasurer": "https://custercountymt.gov/services/treasurer/"
 },
 "30019": {
-"checked": "2026-10-18T08:11:22+00:00",
+"checked": "2026-10-18T09:01:02+00:00",
 "error": "<urlopen error [Errno -3] Temporary failure in name resolution>",
 "from": "http://www.scobey.org/index.html"
 },
 "30021": {
-"checked": "2026-10-18T08:11:22+00:00",
+"checked": "2026-10-18T09:01:02+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.dawsoncountymontana.org"
 },
@@ -8455,12 +8455,12 @@
 "treasurer": "https://fergusmt.gov/departments/finance-dept"
 },
 "30029": {
-"checked": "2026-10-18T08:11:37+00:00",
+"checked": "2026-10-18T09:01:17+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://flathead.mt.gov"
 },
 "30031": {
-"checked": "2026-10-18T08:11:23+00:00",
+"checked": "2026-10-18T09:01:02+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.gallatin.mt.gov"
 },
@@ -8473,7 +8473,7 @@
 "from": "http://glaciercountymt.gov/"
 },
 "30037": {
-"checked": "2026-10-18T08:11:24+00:00",
+"checked": "2026-10-18T09:01:03+00:00",
 "error": "<urlopen error [Errno -3] Temporary failure in name resolution>",
 "from": "http://www.co.golden-valley.mt.us"
 },
@@ -8489,17 +8489,17 @@
 "treasurer": "https://hillcounty.us/departments/treasurer.php"
 },
 "30043": {
-"checked": "2026-10-18T08:11:23+00:00",
+"checked": "2026-10-18T09:01:02+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.jeffco.mt.gov"
 },
 "30045": {
-"checked": "2026-10-18T08:11:23+00:00",
+"checked": "2026-10-18T09:01:02+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.jbcounty.org"
 },
 "30047": {
-"checked": "2026-10-18T08:11:23+00:00",
+"checked": "2026-10-18T09:01:02+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.lakecounty-mt.org"
 },
@@ -8510,7 +8510,7 @@
 "treasurer": "https://www.lccountymt.gov/Government/Clerk-and-Recorder-Treasurer"
 },
 "30051": {
-"checked": "2026-10-18T08:11:24+00:00",
+"checked": "2026-10-18T09:01:03+00:00",
 "error": "<urlopen error [Errno -3] Temporary failure in name resolution>",
 "from": "http://www.co.liberty.mt.us"
 },
@@ -8546,7 +8546,7 @@
 "treasurer": "https://www.missoulacounty.gov/departments/clerk-treasurer/property-taxes/"
 },
 "30065": {
-"checked": "2026-10-18T08:11:23+00:00",
+"checked": "2026-10-18T09:01:03+00:00",
 "error": "HTTP Error 404: Not Found",
 "from": "http://mt.gov/maco/Counties/Musselshell.htm"
 },
@@ -8561,7 +8561,7 @@
 "from": "https://www.brickellbio.com/"
 },
 "30071": {
-"checked": "2026-10-18T08:11:23+00:00",
+"checked": "2026-10-18T09:01:02+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.phillipscounty.mt.gov"
 },
@@ -8572,7 +8572,7 @@
 "treasurer": "https://www.ponderacountymt.gov/treasurer"
 },
 "30075": {
-"checked": "2026-10-18T08:11:23+00:00",
+"checked": "2026-10-18T09:01:03+00:00",
 "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f",
 "from": "http://www.prco.mt.gov"
 },
@@ -8581,7 +8581,7 @@
 "from": "http://www.powellcountymontana.com"
 },
 "30079": {
-"checked": "2026-10-18T08:11:24+00:00",
+"checked": "2026-10-18T09:01:03+00:00",
 "error": "HTTP Error 404: Not Found",
 "from": "http://www.prairie.mt.gov"
 },
@@ -8596,7 +8596,7 @@
 "treasurer": "https://www.richland.org/treasurer.html"
 },
 "30085": {
-"checked": "2026-10-18T08:11:23+00:00",
+"checked": "2026-10-18T09:01:03+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.rooseveltcounty.org"
 },
@@ -8612,7 +8612,7 @@
 "from": "https://www.co.sanders.mt.us/"
 },
 "30091": {
-"checked": "2026-10-18T08:11:23+00:00",
+"checked": "2026-10-18T09:01:03+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.co.sheridan.mt.us"
 },
@@ -8627,7 +8627,7 @@
 "from": "https://www.stillwatercountymt.gov/"
 },
 "30097": {
-"checked": "2026-10-18T08:11:25+00:00",
+"checked": "2026-10-18T09:01:04+00:00",
 "error": "<urlopen error [Errno -3] Temporary failure in name resolution>",
 "from": "http://www.co.sweetgrass.mt.us"
 },
@@ -8660,7 +8660,7 @@
 "from": "http://www.wibauxcounty.com/"
 },
 "30111": {
-"checked": "2026-10-18T08:11:23+00:00",
+"checked": "2026-10-18T09:01:03+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.co.yellowstone.mt.gov"
 },
@@ -8685,8 +8685,8 @@
 "treasurer": "https://arthurcounty.nebraska.gov/node/13"
 },
 "31007": {
-"checked": "2026-10-18T08:11:31+00:00",
-"error": "HTTP Error 523: <none>",
+"checked": "2026-10-18T09:01:21+00:00",
+"error": "The read operation timed out",
 "from": "http://www.bannercounty-gov.us"
 },
 "31009": {
@@ -8703,7 +8703,7 @@
 "treasurer": "https://boonecountyne.gov/treasurer-office/"
 },
 "31013": {
-"checked": "2026-10-18T08:11:28+00:00",
+"checked": "2026-10-18T09:01:07+00:00",
 "error": "<urlopen error [Errno -3] Temporary failure in name resolution>",
 "from": "http://www.co.box-butte.ne.us"
 },
@@ -8721,7 +8721,7 @@
 "treasurer": "https://browncountyne.gov/county-treasurer/"
 },
 "31019": {
-"checked": "2026-10-18T08:11:27+00:00",
+"checked": "2026-10-18T09:01:06+00:00",
 "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f",
 "from": "http://www.buffalogov.org"
 },
@@ -8811,7 +8811,7 @@
 "treasurer": "https://dawescounty.ne.gov/what-we-do/county-offices/treasurer.html"
 },
 "31047": {
-"checked": "2026-10-18T08:11:26+00:00",
+"checked": "2026-10-18T09:01:06+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.dawsoncountyne.net"
 },
@@ -8837,7 +8837,7 @@
 "treasurer": "https://dodgecounty.nebraska.gov/treasurer"
 },
 "31055": {
-"checked": "2026-10-18T08:11:26+00:00",
+"checked": "2026-10-18T09:01:06+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.douglascounty-ne.gov/"
 },
@@ -8849,7 +8849,7 @@
 "treasurer": "https://dundycounty.ne.gov/treasurer-office/"
 },
 "31059": {
-"checked": "2026-10-18T08:11:26+00:00",
+"checked": "2026-10-18T09:01:06+00:00",
 "error": "HTTP Error 404: Not Found",
 "from": "http://www.fillmorecounty.org"
 },
@@ -8882,7 +8882,7 @@
 "treasurer": "https://gagecountyne.gov/treasurer-office/"
 },
 "31069": {
-"checked": "2026-10-18T08:11:41+00:00",
+"checked": "2026-10-18T09:01:21+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.gardencone.com"
 },
@@ -9017,12 +9017,12 @@
 "treasurer": "https://knoxcountyne.gov/county-treasurer/"
 },
 "31109": {
-"checked": "2026-10-18T08:11:27+00:00",
+"checked": "2026-10-18T09:01:06+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://lancaster.ne.gov"
 },
 "31111": {
-"checked": "2026-10-18T08:11:27+00:00",
+"checked": "2026-10-18T09:01:07+00:00",
 "error": "HTTP Error 404: Not Found",
 "from": "http://www.co.lincoln.ne.us/"
 },
@@ -9109,7 +9109,7 @@
 "treasurer": "https://perkinscounty.ne.gov/treasurer-office/"
 },
 "31137": {
-"checked": "2026-10-18T08:11:28+00:00",
+"checked": "2026-10-18T09:01:07+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.lava345.co/"
 },
@@ -9128,7 +9128,7 @@
 "treasurer": "https://plattecounty.ne.gov/treasurer/"
 },
 "31143": {
-"checked": "2026-10-18T08:11:27+00:00",
+"checked": "2026-10-18T09:01:06+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.polkcounty.ne.gov"
 },
@@ -9182,7 +9182,7 @@
 "treasurer": "https://scottsbluffcountyne.gov/treasurer-office/"
 },
 "31159": {
-"checked": "2026-10-18T08:11:28+00:00",
+"checked": "2026-10-18T09:01:07+00:00",
 "error": "HTTP Error 404: Not Found",
 "from": "http://www.connectseward.org/cgov"
 },
@@ -9211,7 +9211,7 @@
 "treasurer": "https://stantoncounty.nebraska.gov/about/treasurer"
 },
 "31169": {
-"checked": "2026-10-18T08:11:27+00:00",
+"checked": "2026-10-18T09:01:07+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.thayercounty.ne.gov/"
 },
@@ -9295,7 +9295,7 @@
 "treasurer": "https://www.accessesmeralda.com/county_offices/clerk_treasurer/index.php"
 },
 "32011": {
-"checked": "2026-10-18T08:11:29+00:00",
+"checked": "2026-10-18T09:01:08+00:00",
 "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f",
 "from": "http://www.co.eureka.nv.us"
 },
@@ -9358,12 +9358,12 @@
 "from": "https://www.whitepinecounty.net"
 },
 "32510": {
-"checked": "2026-10-18T08:11:29+00:00",
+"checked": "2026-10-18T09:01:08+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "https://www.carson.org"
 },
 "33001": {
-"checked": "2026-10-18T08:11:28+00:00",
+"checked": "2026-10-18T09:01:07+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.belknapcounty.org"
 },
@@ -9395,7 +9395,7 @@
 "treasurer": "https://www.merrimackcounty.net/departments/finance/treasurer.php"
 },
 "33015": {
-"checked": "2026-10-18T08:11:28+00:00",
+"checked": "2026-10-18T09:01:08+00:00",
 "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)>",
 "from": "http://co.rockingham.nh.us"
 },
@@ -9409,7 +9409,7 @@
 "from": "https://www.sullivancountynh.gov"
 },
 "34001": {
-"checked": "2026-10-18T08:11:28+00:00",
+"checked": "2026-10-18T09:01:08+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.aclink.org/"
 },
@@ -9423,22 +9423,22 @@
 "sheriff": "https://www.burlingtoncountynj.gov/169/Sheriffs-Sales-Foreclosures"
 },
 "34007": {
-"checked": "2026-10-18T08:11:28+00:00",
+"checked": "2026-10-18T09:01:07+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.camdencounty.com/"
 },
 "34009": {
-"checked": "2026-10-18T08:11:43+00:00",
+"checked": "2026-10-18T09:01:22+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.co.cape-may.nj.us/"
 },
 "34011": {
-"checked": "2026-10-18T08:11:29+00:00",
+"checked": "2026-10-18T09:01:08+00:00",
 "error": "HTTP Error 404: Not Found",
 "from": "http://www.co.cumberland.nj.us/content/159/3747.aspx"
 },
 "34013": {
-"checked": "2026-10-18T08:11:28+00:00",
+"checked": "2026-10-18T09:01:07+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.essex-countynj.org/"
 },
@@ -9448,8 +9448,8 @@
 "from": "https://www.gloucestercountynj.gov/"
 },
 "34017": {
-"checked": "2026-10-18T08:11:28+00:00",
-"error": "HTTP Error 403: Forbidden",
+"checked": "2026-10-18T09:01:08+00:00",
+"error": "HTTP Error 307: Temporary Redirect",
 "from": "https://www.hudsoncountynj.org/"
 },
 "34019": {
@@ -9458,12 +9458,12 @@
 "sheriff": "https://www.co.hunterdon.nj.us/428/sheriffs-sales"
 },
 "34021": {
-"checked": "2026-10-18T08:11:28+00:00",
+"checked": "2026-10-18T09:01:08+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.mercercounty.org/"
 },
 "34023": {
-"checked": "2026-10-18T08:11:29+00:00",
+"checked": "2026-10-18T09:01:08+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.co.middlesex.nj.us/"
 },
@@ -9475,7 +9475,7 @@
 "treasurer": "https://secure.njappealonline.com/prodappeals/login.aspx"
 },
 "34027": {
-"checked": "2026-10-18T08:11:43+00:00",
+"checked": "2026-10-18T09:01:23+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.co.morris.nj.us/"
 },
@@ -9484,7 +9484,7 @@
 "from": "https://www.co.ocean.nj.us/"
 },
 "34031": {
-"checked": "2026-10-18T08:11:28+00:00",
+"checked": "2026-10-18T09:01:08+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.passaiccountynj.org/"
 },
@@ -9494,7 +9494,7 @@
 "treasurer": "https://www.salemcountynj.gov/chief-financial-officer-treasurer/"
 },
 "34035": {
-"checked": "2026-10-18T08:11:29+00:00",
+"checked": "2026-10-18T09:01:08+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.co.somerset.nj.us/"
 },
@@ -9508,7 +9508,7 @@
 "sheriff": "https://ucnj.org/sheriff/functions/sheriffs-sale-information/"
 },
 "34041": {
-"checked": "2026-10-18T08:11:29+00:00",
+"checked": "2026-10-18T09:01:08+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.co.warren.nj.us/"
 },
@@ -9528,7 +9528,7 @@
 "treasurer": "https://www.catroncounty.us/government/county_treasurer_s_office/index.php"
 },
 "35005": {
-"checked": "2026-10-18T08:11:29+00:00",
+"checked": "2026-10-18T09:01:08+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://co.chaves.nm.us"
 },
@@ -9543,7 +9543,7 @@
 "treasurer": "https://www.co.colfax.nm.us/government/finance_department.php"
 },
 "35009": {
-"checked": "2026-10-18T08:11:29+00:00",
+"checked": "2026-10-18T09:01:08+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.currycounty.org"
 },
@@ -9586,7 +9586,7 @@
 "treasurer": "http://liveweb.leacounty-nm.org/treasurer.aspx?source=treasurer"
 },
 "35027": {
-"checked": "2026-10-18T08:11:44+00:00",
+"checked": "2026-10-18T09:01:23+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.lincolncountynm.net"
 },
@@ -9610,7 +9610,7 @@
 "from": "http://www.co.mckinley.nm.us"
 },
 "35033": {
-"checked": "2026-10-18T08:11:29+00:00",
+"checked": "2026-10-18T09:01:08+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://countyofmora.com"
 },
@@ -9638,17 +9638,17 @@
 "treasurer": "https://www.rooseveltcounty.com/treasurer/"
 },
 "35043": {
-"checked": "2026-10-18T08:11:32+00:00",
+"checked": "2026-10-18T09:01:12+00:00",
 "error": "<urlopen error [Errno -3] Temporary failure in name resolution>",
 "from": "http://www.sandovalcounty.com"
 },
 "35045": {
-"checked": "2026-10-18T08:11:29+00:00",
+"checked": "2026-10-18T09:01:08+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.sjcounty.net"
 },
 "35047": {
-"checked": "2026-10-18T08:11:29+00:00",
+"checked": "2026-10-18T09:01:08+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.smcounty.net"
 },
@@ -9659,7 +9659,7 @@
 "treasurer": "https://www.santafecountynm.gov/treasurer"
 },
 "35051": {
-"checked": "2026-10-18T08:11:29+00:00",
+"checked": "2026-10-18T09:01:08+00:00",
 "error": "<urlopen error [Errno -5] No address associated with hostname>",
 "from": "http://www.sierracountynm.gov/"
 },
@@ -9684,7 +9684,7 @@
 "treasurer": "https://www.torrancecountynm.org/departments/county-treasurer"
 },
 "35059": {
-"checked": "2026-10-18T08:11:29+00:00",
+"checked": "2026-10-18T09:01:09+00:00",
 "error": "HTTP Error 404: Not Found",
 "from": "http://www.unionnm.us/home.html"
 },
@@ -9719,7 +9719,7 @@
 "treasurer": "https://www.cattco.gov/treasurers-office"
 },
 "36011": {
-"checked": "2026-10-18T08:11:30+00:00",
+"checked": "2026-10-18T09:01:09+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.cayugacounty.us/"
 },
@@ -9754,9 +9754,8 @@
 "treasurer": "https://www.cortlandcountyny.gov/AlertCenter.aspx?AID=City-Property-Tax-Collection-Transition-64"
 },
 "36025": {
-"checked": "2026-10-18T08:11:45+00:00",
-"error": "The read operation timed out",
-"from": "http://www.co.delaware.ny.us"
+"checked": "2026-10-18T09:01:18+00:00",
+"from": "https://www.delcony.gov/"
 },
 "36027": {
 "assessor": "https://www.dutchessny.gov/County-Government/Geographic-Information-Systems-and-Mapping.htm",
@@ -9816,7 +9815,7 @@
 "from": "https://www.jeffersoncountyny.gov/"
 },
 "36049": {
-"checked": "2026-10-18T08:11:30+00:00",
+"checked": "2026-10-18T09:01:09+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.lewiscountyny.org"
 },
@@ -9850,7 +9849,7 @@
 "from": "https://www.nassaucountyny.gov/"
 },
 "36061": {
-"checked": "2026-10-18T08:11:30+00:00",
+"checked": "2026-10-18T09:01:09+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.manhattanbp.nyc.gov/"
 },
@@ -9871,12 +9870,12 @@
 "from": "https://onondaga.gov/"
 },
 "36069": {
-"checked": "2026-10-18T08:11:30+00:00",
+"checked": "2026-10-18T09:01:09+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.co.ontario.ny.us"
 },
 "36071": {
-"checked": "2026-10-18T08:11:30+00:00",
+"checked": "2026-10-18T09:01:09+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.orangecountygov.com"
 },
@@ -9910,7 +9909,7 @@
 "from": "https://www.rensco.com/"
 },
 "36087": {
-"checked": "2026-10-18T08:11:31+00:00",
+"checked": "2026-10-18T09:01:10+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.co.rockland.ny.us"
 },
@@ -9960,7 +9959,7 @@
 "from": "https://suffolkcountyny.gov/"
 },
 "36105": {
-"checked": "2026-10-18T08:11:31+00:00",
+"checked": "2026-10-18T09:01:09+00:00",
 "error": "<urlopen error [Errno -5] No address associated with hostname>",
 "from": "https://sullivanny.us/"
 },
@@ -9978,7 +9977,7 @@
 "treasurer": "https://www.tompkinscountyny.gov/All-Departments/Finance-Department/Property-Taxes"
 },
 "36111": {
-"checked": "2026-10-18T08:11:46+00:00",
+"checked": "2026-10-18T09:01:24+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.co.ulster.ny.us"
 },
@@ -9989,7 +9988,7 @@
 "treasurer": "https://www.warrencountyny.gov/treasurer"
 },
 "36115": {
-"checked": "2026-10-18T08:11:31+00:00",
+"checked": "2026-10-18T09:01:09+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.co.washington.ny.us"
 },
@@ -10006,7 +10005,7 @@
 "treasurer": "http://www.wyomingcountyny.gov/150/Real-Property-Tax-Services"
 },
 "36123": {
-"checked": "2026-10-18T08:11:31+00:00",
+"checked": "2026-10-18T09:01:09+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.yatescountyny.gov"
 },
@@ -10060,12 +10059,12 @@
 "from": "https://bladennc.govoffice3.com:443/"
 },
 "37019": {
-"checked": "2026-10-18T08:11:39+00:00",
+"checked": "2026-10-18T09:01:18+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.brunsco.net"
 },
 "37021": {
-"checked": "2026-10-18T08:11:24+00:00",
+"checked": "2026-10-18T09:01:04+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.buncombecounty.org"
 },
@@ -10108,7 +10107,7 @@
 "sheriff": "http://gis.catawbacountync.gov/parcel_analysis/"
 },
 "37037": {
-"checked": "2026-10-18T08:11:24+00:00",
+"checked": "2026-10-18T09:01:03+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.chathamcountync.gov/"
 },
@@ -10148,17 +10147,17 @@
 "treasurer": "https://www.cravencountync.gov/CivicAlerts.aspx?AID=1075"
 },
 "37051": {
-"checked": "2026-10-18T08:11:24+00:00",
+"checked": "2026-10-18T09:01:03+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.co.cumberland.nc.us"
 },
 "37053": {
-"checked": "2026-10-18T08:11:39+00:00",
+"checked": "2026-10-18T09:01:20+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.co.currituck.nc.us"
 },
 "37055": {
-"checked": "2026-10-18T08:11:24+00:00",
+"checked": "2026-10-18T09:01:03+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.darenc.gov/"
 },
@@ -10208,17 +10207,17 @@
 "treasurer": "https://www.gastongov.com/CivicAlerts.aspx?AID=842"
 },
 "37073": {
-"checked": "2026-10-18T08:11:25+00:00",
+"checked": "2026-10-18T09:01:04+00:00",
 "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f",
 "from": "http://www.gatescounty.govoffice2.com"
 },
 "37075": {
-"checked": "2026-10-18T08:11:24+00:00",
+"checked": "2026-10-18T09:01:03+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "https://www.grahamcounty.org/"
 },
 "37077": {
-"checked": "2026-10-18T08:11:24+00:00",
+"checked": "2026-10-18T09:01:03+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.granvillecounty.org"
 },
@@ -10230,7 +10229,7 @@
 "treasurer": "https://greenecountync.gov/departments/tax/nc-combined-vehicle-registration-and-property-tax-notices/"
 },
 "37081": {
-"checked": "2026-10-18T08:11:25+00:00",
+"checked": "2026-10-18T09:01:03+00:00",
 "error": "<urlopen error [Errno -3] Temporary failure in name resolution>",
 "from": "http://www.co.guilford.nc.us"
 },
@@ -10245,12 +10244,12 @@
 "from": "https://www.harnett.org/"
 },
 "37087": {
-"checked": "2026-10-18T08:11:25+00:00",
+"checked": "2026-10-18T09:01:03+00:00",
 "error": "<urlopen error [Errno -5] No address associated with hostname>",
 "from": "http://haywoodnc.net"
 },
 "37089": {
-"checked": "2026-10-18T08:11:25+00:00",
+"checked": "2026-10-18T09:01:04+00:00",
 "error": "Remote end closed connection without response",
 "from": "http://www.hendersoncountync.org"
 },
@@ -10268,7 +10267,7 @@
 "taxsale": "https://www.hokecounty.net/474/Surplus-Properties-for-Sale"
 },
 "37095": {
-"checked": "2026-10-18T08:11:25+00:00",
+"checked": "2026-10-18T09:01:04+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.hydecountync.gov"
 },
@@ -10339,12 +10338,12 @@
 "treasurer": "https://www.martincountync.gov/departments/_tax_collector/index.php"
 },
 "37119": {
-"checked": "2026-10-18T08:11:35+00:00",
+"checked": "2026-10-18T09:01:14+00:00",
 "error": "<urlopen error [Errno -3] Temporary failure in name resolution>",
 "from": "http://www.charmeck.nc.us"
 },
 "37121": {
-"checked": "2026-10-18T08:11:40+00:00",
+"checked": "2026-10-18T09:01:19+00:00",
 "error": "timed out",
 "from": "http://www.mitchellcounty.org"
 },
@@ -10358,7 +10357,7 @@
 "from": "https://www.moorecountync.gov/"
 },
 "37127": {
-"checked": "2026-10-18T08:11:25+00:00",
+"checked": "2026-10-18T09:01:04+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.co.nash.nc.us"
 },
@@ -10372,7 +10371,7 @@
 "from": "https://www.northamptonnc.com/"
 },
 "37133": {
-"checked": "2026-10-18T08:11:25+00:00",
+"checked": "2026-10-18T09:01:04+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.onslowcountync.gov"
 },
@@ -10382,7 +10381,7 @@
 "treasurer": "https://www.orangecountync.gov/DocumentCenter/View/40075/PROPERTY-TAX-LEVY-LIMIT-version2"
 },
 "37137": {
-"checked": "2026-10-18T08:11:40+00:00",
+"checked": "2026-10-18T09:01:19+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.co.pamlico.nc.us"
 },
@@ -10404,7 +10403,7 @@
 "from": "https://www.perquimanscountync.gov/"
 },
 "37145": {
-"checked": "2026-10-18T08:11:25+00:00",
+"checked": "2026-10-18T09:01:04+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.personcounty.net"
 },
@@ -10497,7 +10496,7 @@
 "from": "http://tyrrellcounty.org/index.php/en/"
 },
 "37179": {
-"checked": "2026-10-18T08:11:25+00:00",
+"checked": "2026-10-18T09:01:06+00:00",
 "error": "HTTP Error 400: Bad Request",
 "from": "http://www.co.union.nc.us"
 },
@@ -10545,7 +10544,7 @@
 "from": "https://wilkescounty.net/"
 },
 "37195": {
-"checked": "2026-10-18T08:11:26+00:00",
+"checked": "2026-10-18T09:01:06+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.wilson-co.com"
 },
@@ -10598,7 +10597,7 @@
 "from": "https://burleighco.com/"
 },
 "38017": {
-"checked": "2026-10-18T08:11:26+00:00",
+"checked": "2026-10-18T09:01:04+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.co.cass.nd.us"
 },
@@ -10644,7 +10643,7 @@
 "from": "http://www.BeachND.com"
 },
 "38035": {
-"checked": "2026-10-18T08:11:26+00:00",
+"checked": "2026-10-18T09:01:04+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.gfcounty.nd.gov"
 },
@@ -10668,7 +10667,7 @@
 "from": "http://www.lamourend.com"
 },
 "38047": {
-"checked": "2026-10-18T08:11:26+00:00",
+"checked": "2026-10-18T09:01:04+00:00",
 "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.",
 "from": "https://logancountynd.com/"
 },
@@ -10741,7 +10740,7 @@
 "treasurer": "https://www.ramseycountynd.gov/170/online-property-tax-payments"
 },
 "38073": {
-"checked": "2026-10-18T08:11:41+00:00",
+"checked": "2026-10-18T09:01:19+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.ransomcountynd.com"
 },
@@ -10752,7 +10751,7 @@
 "treasurer": "http://www.renvillecountynd.org/department/treasurer/"
 },
 "38077": {
-"checked": "2026-10-18T08:11:26+00:00",
+"checked": "2026-10-18T09:01:05+00:00",
 "error": "HTTP Error 404: Not Found",
 "from": "http://www.co.richland.nd.us"
 },
@@ -10827,7 +10826,7 @@
 "treasurer": "https://www.williamsnd.com/about-your-property-tax-statement/"
 },
 "39003": {
-"checked": "2026-10-18T08:11:46+00:00",
+"checked": "2026-10-18T09:01:24+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.co.allen.oh.us"
 },
@@ -10836,7 +10835,7 @@
 "from": "https://www.ashlandcountyoh.us/"
 },
 "39007": {
-"checked": "2026-10-18T08:11:41+00:00",
+"checked": "2026-10-18T09:01:20+00:00",
 "error": "<urlopen error [Errno -3] Temporary failure in name resolution>",
 "from": "http://www.co.ashtabula.oh.us"
 },
@@ -10849,7 +10848,7 @@
 "treasurer": "http://www.athenscountytreasurer.com/"
 },
 "39011": {
-"checked": "2026-10-18T08:11:47+00:00",
+"checked": "2026-10-18T09:01:27+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.auglaizecounty.org"
 },
@@ -10938,7 +10937,7 @@
 "treasurer": "https://www.defiance-county.com/treasurer/index.php"
 },
 "39041": {
-"checked": "2026-10-18T08:11:48+00:00",
+"checked": "2026-10-18T09:01:27+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.co.delaware.oh.us"
 },
@@ -10986,12 +10985,12 @@
 "treasurer": "https://galliacountyoh.gov/treasurer/"
 },
 "39055": {
-"checked": "2026-10-18T08:11:33+00:00",
+"checked": "2026-10-18T09:01:12+00:00",
 "error": "HTTP Error 500: Internal Server Error",
 "from": "http://www.co.geauga.oh.us"
 },
 "39057": {
-"checked": "2026-10-18T08:11:43+00:00",
+"checked": "2026-10-18T09:01:22+00:00",
 "error": "<urlopen error [Errno -3] Temporary failure in name resolution>",
 "from": "http://www.co.greene.oh.us"
 },
@@ -11005,7 +11004,7 @@
 "from": "https://www.co.hancock.oh.us/"
 },
 "39065": {
-"checked": "2026-10-18T08:11:49+00:00",
+"checked": "2026-10-18T09:01:28+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.co.hardin.oh.us/"
 },
@@ -11049,7 +11048,7 @@
 "from": "https://jeffersoncountyoh.com/"
 },
 "39083": {
-"checked": "2026-10-18T08:11:34+00:00",
+"checked": "2026-10-18T09:01:13+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.knoxcountyohio.org"
 },
@@ -11118,7 +11117,7 @@
 "treasurer": "https://www.mercercountyoh.gov/elected-officials/treasurer/"
 },
 "39109": {
-"checked": "2026-10-18T08:11:35+00:00",
+"checked": "2026-10-18T09:01:13+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.co.miami.oh.us"
 },
@@ -11128,7 +11127,7 @@
 "treasurer": "https://www.monroecountyohio.net/government/treasurer/index.php"
 },
 "39113": {
-"checked": "2026-10-18T08:11:35+00:00",
+"checked": "2026-10-18T09:01:14+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.mcohio.org/"
 },
@@ -11144,7 +11143,7 @@
 "treasurer": "https://www.morrowcountyohio.gov/government/treasurer/index.php"
 },
 "39119": {
-"checked": "2026-10-18T08:11:50+00:00",
+"checked": "2026-10-18T09:01:29+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.muskingumcounty.org"
 },
@@ -11179,7 +11178,7 @@
 "from": "https://www.pikecountyohcommissioners.gov/"
 },
 "39133": {
-"checked": "2026-10-18T08:11:35+00:00",
+"checked": "2026-10-18T09:01:14+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.portagecounty-oh.gov/"
 },
@@ -11201,7 +11200,7 @@
 "from": "https://www.richlandcountyoh.gov/"
 },
 "39141": {
-"checked": "2026-10-18T08:11:36+00:00",
+"checked": "2026-10-18T09:01:14+00:00",
 "error": "HTTP Error 404: Not Found",
 "from": "http://www.pickawayross.com/Default.aspx"
 },
@@ -11226,7 +11225,7 @@
 "treasurer": "https://www.co.shelby.oh.us/279/Treasurer"
 },
 "39151": {
-"checked": "2026-10-18T08:11:54+00:00",
+"checked": "2026-10-18T09:01:31+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.co.stark.oh.us"
 },
@@ -11263,7 +11262,7 @@
 "treasurer": "https://www.vanwertcountyohio.gov/government/treasurer_s_office/index.php"
 },
 "39163": {
-"checked": "2026-10-18T08:11:36+00:00",
+"checked": "2026-10-18T09:01:14+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://co.vinton.oh.us"
 },
@@ -11403,7 +11402,7 @@
 "from": "https://www.gradycountyok.com/"
 },
 "40053": {
-"checked": "2026-10-18T08:11:51+00:00",
+"checked": "2026-10-18T09:01:29+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.grantcountyok.com"
 },
@@ -11415,12 +11414,12 @@
 "treasurer": "https://greer.okcounties.org/departments/county-treasurer"
 },
 "40057": {
-"checked": "2026-10-18T08:11:36+00:00",
+"checked": "2026-10-18T09:01:16+00:00",
 "error": "HTTP Error 404: Not Found",
 "from": "https://oklahoma.gov/okdhs/library/resources/harmonrd211.html"
 },
 "40061": {
-"checked": "2026-10-18T08:11:36+00:00",
+"checked": "2026-10-18T09:01:16+00:00",
 "error": "HTTP Error 404: Not Found",
 "from": "https://oklahoma.gov/okdhs/library/resources/haskellrd211.html"
 },
@@ -11433,7 +11432,7 @@
 "treasurer": "https://www.jacksoncountyok.com/government/treasurer/index.php"
 },
 "40067": {
-"checked": "2026-10-18T08:11:36+00:00",
+"checked": "2026-10-18T09:01:16+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.jeffcoinfo.org"
 },
@@ -11544,7 +11543,7 @@
 "treasurer": "https://www.oklahomacounty.org/Elected-Offices/Treasurer"
 },
 "40111": {
-"checked": "2026-10-18T08:11:36+00:00",
+"checked": "2026-10-18T09:01:16+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://okmulgeecounty.net/"
 },
@@ -11556,7 +11555,7 @@
 "treasurer": "https://osage.okcounties.org/offices/county-treasurer"
 },
 "40115": {
-"checked": "2026-10-18T08:11:37+00:00",
+"checked": "2026-10-18T09:01:16+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.ottawacountygov.com/"
 },
@@ -11578,7 +11577,7 @@
 "treasurer": "https://pittsburg.okcounties.org/offices/county-treasurer"
 },
 "40125": {
-"checked": "2026-10-18T08:11:37+00:00",
+"checked": "2026-10-18T09:01:16+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://pottawatomiecountyok.com/"
 },
@@ -11605,17 +11604,17 @@
 "treasurer": "https://sequoyah.okcounties.org/offices/county-treasurer"
 },
 "40137": {
-"checked": "2026-10-18T08:11:37+00:00",
+"checked": "2026-10-18T09:01:16+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "https://www.stephenscountyok.com/"
 },
 "40139": {
-"checked": "2026-10-18T08:11:52+00:00",
+"checked": "2026-10-18T09:01:31+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.txcountyok.com"
 },
 "40141": {
-"checked": "2026-10-18T08:11:37+00:00",
+"checked": "2026-10-18T09:01:16+00:00",
 "error": "HTTP Error 301: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error messag",
 "from": "http://www.tillmancounty.org"
 },
@@ -11624,12 +11623,12 @@
 "from": "https://www.tulsacounty.org/"
 },
 "40145": {
-"checked": "2026-10-18T08:11:39+00:00",
+"checked": "2026-10-18T09:01:18+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.ok.gov/wagonercounty"
 },
 "40147": {
-"checked": "2026-10-18T08:11:37+00:00",
+"checked": "2026-10-18T09:01:17+00:00",
 "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f",
 "from": "http://www.countycourthouse.org"
 },
@@ -11645,7 +11644,7 @@
 "treasurer": "https://woodward.okcounties.org/offices/county-treasurer"
 },
 "41001": {
-"checked": "2026-10-18T08:11:37+00:00",
+"checked": "2026-10-18T09:01:18+00:00",
 "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.",
 "from": "http://www.bakercounty.org"
 },
@@ -11722,7 +11721,7 @@
 "treasurer": "https://jacksoncountyor.gov/departments/finance/taxation/property_tax_payment_information/index.php"
 },
 "41031": {
-"checked": "2026-10-18T08:11:37+00:00",
+"checked": "2026-10-18T09:01:18+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.co.jefferson.or.us"
 },
@@ -11755,13 +11754,13 @@
 "from": "https://www.co.lincoln.or.us/"
 },
 "41043": {
-"checked": "2026-10-18T08:11:38+00:00",
+"checked": "2026-10-18T09:01:18+00:00",
 "error": "Remote end closed connection without response",
 "from": "http://www.co.linn.or.us"
 },
 "41045": {
-"checked": "2026-10-18T08:11:53+00:00",
-"error": "timed out",
+"checked": "2026-10-18T09:01:21+00:00",
+"error": "HTTP Error 403: Forbidden",
 "from": "http://www.malheurco.org"
 },
 "41047": {
@@ -11772,7 +11771,7 @@
 "treasurer": "https://www.co.marion.or.us/TO/Pages/default.aspx"
 },
 "41049": {
-"checked": "2026-10-18T08:11:38+00:00",
+"checked": "2026-10-18T09:01:18+00:00",
 "error": "Remote end closed connection without response",
 "from": "http://www.morrowcountyoregon.com"
 },
@@ -11789,12 +11788,12 @@
 "treasurer": "https://www.polkcountyor.gov/448/Tax-Payments"
 },
 "41055": {
-"checked": "2026-10-18T08:11:39+00:00",
+"checked": "2026-10-18T09:01:18+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.sherman-county.com"
 },
 "41057": {
-"checked": "2026-10-18T08:11:39+00:00",
+"checked": "2026-10-18T09:01:18+00:00",
 "error": "Remote end closed connection without response",
 "from": "http://www.co.tillamook.or.us"
 },
@@ -11940,12 +11939,12 @@
 "treasurer": "https://www.co.clarion.pa.us/government/elected_officials/treasurer/index.php"
 },
 "42033": {
-"checked": "2026-10-18T08:11:41+00:00",
+"checked": "2026-10-18T09:01:21+00:00",
 "error": "HTTP Error 500: Internal Server Error",
 "from": "http://www.clearfieldco.org"
 },
 "42035": {
-"checked": "2026-10-18T08:11:39+00:00",
+"checked": "2026-10-18T09:01:19+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.clintoncountypa.com"
 },
@@ -11974,7 +11973,7 @@
 "treasurer": "https://www.dauphincounty.gov/government/publicly-elected-officials/treasurer"
 },
 "42045": {
-"checked": "2026-10-18T08:11:39+00:00",
+"checked": "2026-10-18T09:01:19+00:00",
 "error": "HTTP Error 403: Site Disabled",
 "from": "http://www.co.delaware.pa.us"
 },
@@ -12002,7 +12001,7 @@
 "treasurer": "https://www.co.forest.pa.us/departments/assessment_tax_claim.php"
 },
 "42055": {
-"checked": "2026-10-18T08:11:54+00:00",
+"checked": "2026-10-18T09:01:34+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.co.franklin.pa.us"
 },
@@ -12014,7 +12013,7 @@
 "treasurer": "https://www.co.fulton.pa.us/treasurer.php"
 },
 "42059": {
-"checked": "2026-10-18T08:11:54+00:00",
+"checked": "2026-10-18T09:01:34+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.co.greene.pa.us"
 },
@@ -12065,7 +12064,7 @@
 "treasurer": "https://lebanoncountypa.gov/departments/treasurer"
 },
 "42077": {
-"checked": "2026-10-18T08:11:39+00:00",
+"checked": "2026-10-18T09:01:19+00:00",
 "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.",
 "from": "http://www.lehighcounty.org"
 },
@@ -12104,7 +12103,7 @@
 "treasurer": "https://mifflincountypa.gov/treasurer"
 },
 "42089": {
-"checked": "2026-10-18T08:11:39+00:00",
+"checked": "2026-10-18T09:01:19+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.co.monroe.pa.us"
 },
@@ -12126,7 +12125,7 @@
 "treasurer": "https://northamptonco.recoanywhere.com/propertytax"
 },
 "42097": {
-"checked": "2026-10-18T08:11:39+00:00",
+"checked": "2026-10-18T09:01:19+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.northumberlandco.org"
 },
@@ -12168,7 +12167,7 @@
 "treasurer": "http://www.co.somerset.pa.us/pages/Assessment/taxcollectors.asp"
 },
 "42113": {
-"checked": "2026-10-18T08:11:39+00:00",
+"checked": "2026-10-18T09:01:19+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.sullivancounty-pa.us"
 },
@@ -12187,12 +12186,12 @@
 "treasurer": "https://www.tiogacountypa.us/departments/tax-claim"
 },
 "42119": {
-"checked": "2026-10-18T08:11:40+00:00",
+"checked": "2026-10-18T09:01:20+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.unionco.org"
 },
 "42121": {
-"checked": "2026-10-18T08:11:40+00:00",
+"checked": "2026-10-18T09:01:20+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "https://www.co.venango.pa.us/"
 },
@@ -12201,17 +12200,17 @@
 "from": "https://nbbcdetroit.com/events"
 },
 "42125": {
-"checked": "2026-10-18T08:11:42+00:00",
+"checked": "2026-10-18T09:01:20+00:00",
 "error": "HTTP Error 401: Unauthorized",
 "from": "http://www.co.washington.pa.us"
 },
 "42127": {
-"checked": "2026-10-18T08:11:50+00:00",
+"checked": "2026-10-18T09:01:30+00:00",
 "error": "<urlopen error [Errno -3] Temporary failure in name resolution>",
 "from": "http://www.co.wayne.pa.us"
 },
 "42129": {
-"checked": "2026-10-18T08:11:41+00:00",
+"checked": "2026-10-18T09:01:20+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.co.westmoreland.pa.us"
 },
@@ -12224,7 +12223,7 @@
 "treasurer": "https://wyomingcountypa.gov/tax-claim/"
 },
 "42133": {
-"checked": "2026-10-18T08:11:41+00:00",
+"checked": "2026-10-18T09:01:20+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.york-county.org"
 },
@@ -12236,7 +12235,7 @@
 "treasurer": "https://abbevillecountysc.com/delinquent-tax-collector/"
 },
 "45003": {
-"checked": "2026-10-18T08:11:42+00:00",
+"checked": "2026-10-18T09:01:21+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.aikencountysc.gov"
 },
@@ -12271,12 +12270,12 @@
 "treasurer": "https://www.beaufortcountytreasurer.com/"
 },
 "45015": {
-"checked": "2026-10-18T08:11:42+00:00",
+"checked": "2026-10-18T09:01:21+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://berkeleycountysc.gov"
 },
 "45017": {
-"checked": "2026-10-18T08:11:42+00:00",
+"checked": "2026-10-18T09:01:21+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.calhouncounty.sc.gov"
 },
@@ -12305,7 +12304,7 @@
 "taxsale": "https://www.chesterfieldcountysc.com/_files/ugd/1d4971_0d56c8fbd4634b52941bde5634462723.pdf"
 },
 "45027": {
-"checked": "2026-10-18T08:11:57+00:00",
+"checked": "2026-10-18T09:01:36+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.clarendoncounty.sc.gov"
 },
@@ -12329,7 +12328,7 @@
 "treasurer": "https://dilloncountysc.org/departments/treasurer.php"
 },
 "45035": {
-"checked": "2026-10-18T08:11:57+00:00",
+"checked": "2026-10-18T09:01:36+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.dorchestercounty.net"
 },
@@ -12355,12 +12354,12 @@
 "treasurer": "https://www.gtcountysc.gov/286/Tax-Collector"
 },
 "45045": {
-"checked": "2026-10-18T08:11:42+00:00",
+"checked": "2026-10-18T09:01:21+00:00",
 "error": "[Errno 104] Connection reset by peer",
 "from": "http://www.greenvillecounty.org"
 },
 "45047": {
-"checked": "2026-10-18T08:11:57+00:00",
+"checked": "2026-10-18T09:01:36+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.co.greenwood.sc.us"
 },
@@ -12369,7 +12368,7 @@
 "from": "https://www.hamptoncountysc.org/"
 },
 "45051": {
-"checked": "2026-10-18T08:11:43+00:00",
+"checked": "2026-10-18T09:01:22+00:00",
 "error": "HTTP Error 500: Internal Server Error",
 "from": "http://www.horrycounty.org"
 },
@@ -12381,12 +12380,12 @@
 "taxsale": "https://www.jaspercountysc.gov/services/taxes/delinquent-tax-collection/"
 },
 "45055": {
-"checked": "2026-10-18T08:11:42+00:00",
+"checked": "2026-10-18T09:01:21+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.kershaw.sc.gov"
 },
 "45059": {
-"checked": "2026-10-18T08:11:43+00:00",
+"checked": "2026-10-18T09:01:22+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://laurenscounty.us/"
 },
@@ -12396,7 +12395,7 @@
 "treasurer": "http://leetreasurer.qpaybill.com/"
 },
 "45063": {
-"checked": "2026-10-18T08:11:43+00:00",
+"checked": "2026-10-18T09:01:21+00:00",
 "error": "[Errno 104] Connection reset by peer",
 "from": "http://www.lex-co.com"
 },
@@ -12420,7 +12419,7 @@
 "from": "https://www.marlborocounty.sc.gov/"
 },
 "45071": {
-"checked": "2026-10-18T08:11:45+00:00",
+"checked": "2026-10-18T09:01:22+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.newberrycounty.org"
 },
@@ -12432,7 +12431,7 @@
 "treasurer": "https://oconeesc.com/treasurer-home"
 },
 "45075": {
-"checked": "2026-10-18T08:11:43+00:00",
+"checked": "2026-10-18T09:01:22+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.orangeburgcounty.org"
 },
@@ -12453,12 +12452,12 @@
 "treasurer": "https://www.richlandcountysc.gov/Property-Business/Taxes/Property-Tax"
 },
 "45081": {
-"checked": "2026-10-18T08:11:43+00:00",
+"checked": "2026-10-18T09:01:22+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.saludacounty.sc.gov"
 },
 "45083": {
-"checked": "2026-10-18T08:11:43+00:00",
+"checked": "2026-10-18T09:01:22+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.spartanburgcounty.org"
 },
@@ -12484,12 +12483,12 @@
 "treasurer": "https://www.williamsburgcounty.sc.gov/237"
 },
 "45091": {
-"checked": "2026-10-18T08:11:43+00:00",
+"checked": "2026-10-18T09:01:23+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.yorkcountygov.com"
 },
 "46003": {
-"checked": "2026-10-18T08:11:44+00:00",
+"checked": "2026-10-18T09:01:22+00:00",
 "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.",
 "from": "https://www.districtiii.org/district/aurora.php"
 },
@@ -12514,17 +12513,17 @@
 "treasurer": "http://www.brown.sd.us/department/treasurer"
 },
 "46015": {
-"checked": "2026-10-18T08:11:43+00:00",
+"checked": "2026-10-18T09:01:22+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.brulecounty.org"
 },
 "46017": {
-"checked": "2026-10-18T08:11:44+00:00",
+"checked": "2026-10-18T09:01:23+00:00",
 "error": "HTTP Error 404: Not Found",
 "from": "https://gannvalley.com/buffalo-county-1"
 },
 "46019": {
-"checked": "2026-10-18T08:11:44+00:00",
+"checked": "2026-10-18T09:01:23+00:00",
 "error": "HTTP Error 404: Not Found",
 "from": "http://butte.sdcounties.org"
 },
@@ -12598,7 +12597,7 @@
 "treasurer": "https://fallrivercountysd.gov/treasurer/"
 },
 "46051": {
-"checked": "2026-10-18T08:11:44+00:00",
+"checked": "2026-10-18T09:01:23+00:00",
 "error": "HTTP Error 404: Not Found",
 "from": "http://www.grantcountysd.com/gcdc"
 },
@@ -12614,7 +12613,7 @@
 "treasurer": "https://govtechtaxpro.com/"
 },
 "46059": {
-"checked": "2026-10-18T08:11:44+00:00",
+"checked": "2026-10-18T09:01:22+00:00",
 "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f",
 "from": "https://hand.sdcounties.org/"
 },
@@ -12624,7 +12623,7 @@
 "treasurer": "https://www.hansoncountysd.gov/treasurer/"
 },
 "46063": {
-"checked": "2026-10-18T08:11:44+00:00",
+"checked": "2026-10-18T09:01:22+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.hardingcountysd.com/"
 },
@@ -12640,7 +12639,7 @@
 "treasurer": "http://www.hutchinsoncountysd.gov/"
 },
 "46069": {
-"checked": "2026-10-18T08:11:45+00:00",
+"checked": "2026-10-18T09:01:24+00:00",
 "error": "<urlopen error [Errno -3] Temporary failure in name resolution>",
 "from": "http://hydeco.org/"
 },
@@ -12650,7 +12649,7 @@
 "treasurer": "https://jerauldcountysd.com/treasurer"
 },
 "46077": {
-"checked": "2026-10-18T08:11:44+00:00",
+"checked": "2026-10-18T09:01:22+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://kingsbury.sdcounties.org"
 },
@@ -12680,7 +12679,7 @@
 "treasurer": "http://lymancounty.org/treasurer/"
 },
 "46087": {
-"checked": "2026-10-18T08:11:59+00:00",
+"checked": "2026-10-18T09:01:37+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.mccookcountysd.com"
 },
@@ -12703,7 +12702,7 @@
 "treasurer": "https://www.meadecounty.org/treasurer"
 },
 "46095": {
-"checked": "2026-10-18T08:11:44+00:00",
+"checked": "2026-10-18T09:01:23+00:00",
 "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)>",
 "from": "https://mellettecounty.org/"
 },
@@ -12713,7 +12712,7 @@
 "treasurer": "https://miner.sdcounty.gov/departments/treasurer/"
 },
 "46099": {
-"checked": "2026-10-18T08:11:59+00:00",
+"checked": "2026-10-18T09:01:38+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.minnehahacounty.org"
 },
@@ -12731,7 +12730,7 @@
 "treasurer": "https://oglalalakotacountysd.gov/treasurer/"
 },
 "46103": {
-"checked": "2026-10-18T08:11:59+00:00",
+"checked": "2026-10-18T09:01:38+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.co.pennington.sd.us"
 },
@@ -12883,7 +12882,7 @@
 "treasurer": "https://cumberlandcountytn.gov/directory/trustee/"
 },
 "47039": {
-"checked": "2026-10-18T08:11:44+00:00",
+"checked": "2026-10-18T09:01:23+00:00",
 "error": "Remote end closed connection without response",
 "from": "http://decaturcountytn.org"
 },
@@ -13048,7 +13047,7 @@
 "from": "https://www.lewiscountytn.com/"
 },
 "47103": {
-"checked": "2026-10-18T08:11:44+00:00",
+"checked": "2026-10-18T09:01:23+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.vallnet.com/lincolncounty"
 },
@@ -13064,7 +13063,7 @@
 "treasurer": "https://www.mcminncountytn.gov/finance_dept.html"
 },
 "47109": {
-"checked": "2026-10-18T08:11:44+00:00",
+"checked": "2026-10-18T09:01:23+00:00",
 "error": "HTTP Error 409: Conflict",
 "from": "http://www.mcnairycountytn.com"
 },
@@ -13074,7 +13073,7 @@
 "from": "https://maconcountytn.gov/"
 },
 "47113": {
-"checked": "2026-10-18T08:11:44+00:00",
+"checked": "2026-10-18T09:01:23+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.co.madison.tn.us"
 },
@@ -13111,7 +13110,7 @@
 "from": "https://metromoorecounty.org/"
 },
 "47129": {
-"checked": "2026-10-18T08:11:45+00:00",
+"checked": "2026-10-18T09:01:23+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.morgancountytn.org"
 },
@@ -13126,7 +13125,7 @@
 "from": "https://overtoncountytn.gov/"
 },
 "47135": {
-"checked": "2026-10-18T08:11:45+00:00",
+"checked": "2026-10-18T09:01:23+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://gov.perrycountytn.com/"
 },
@@ -13139,7 +13138,7 @@
 "from": "https://putnamcountytn.gov/"
 },
 "47143": {
-"checked": "2026-10-18T08:11:45+00:00",
+"checked": "2026-10-18T09:01:23+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.rheacountytn.com"
 },
@@ -13173,7 +13172,7 @@
 "from": "https://www.seviercountytn.gov/"
 },
 "47157": {
-"checked": "2026-10-18T08:11:45+00:00",
+"checked": "2026-10-18T09:01:23+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.shelbycountytn.gov"
 },
@@ -13243,7 +13242,7 @@
 "treasurer": "https://citisenportal.com/Search/Weakley%20County%20Trustee"
 },
 "47185": {
-"checked": "2026-10-18T08:11:45+00:00",
+"checked": "2026-10-18T09:01:23+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://whitecountytn.gov/"
 },
@@ -13361,12 +13360,12 @@
 "from": "https://www.bowiecounty.org/"
 },
 "48039": {
-"checked": "2026-10-18T08:11:45+00:00",
+"checked": "2026-10-18T09:01:23+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.brazoriacountytx.gov/"
 },
 "48041": {
-"checked": "2026-10-18T08:11:46+00:00",
+"checked": "2026-10-18T09:01:24+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.brazoscountytx.gov/"
 },
@@ -13413,7 +13412,7 @@
 "treasurer": "https://www.co.caldwell.tx.us/page/County.Treasurer"
 },
 "48057": {
-"checked": "2026-10-18T08:11:46+00:00",
+"checked": "2026-10-18T09:01:24+00:00",
 "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)>",
 "from": "https://www.calhouncotx.org/"
 },
@@ -13600,7 +13599,7 @@
 "treasurer": "https://www.co.deaf-smith.tx.us/page/deafsmith.County.Treasurer"
 },
 "48119": {
-"checked": "2026-10-18T08:11:46+00:00",
+"checked": "2026-10-18T09:01:23+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.deltacountytx.com/"
 },
@@ -13671,7 +13670,7 @@
 "treasurer": "https://apps.epcountytx.gov/taxofficeportal/Identity/Account/Login"
 },
 "48143": {
-"checked": "2026-10-18T08:11:46+00:00",
+"checked": "2026-10-18T09:01:23+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.co.erath.tx.us/"
 },
@@ -13743,7 +13742,7 @@
 "treasurer": "https://www.co.gaines.tx.us/page/gaines.County.Treasurer"
 },
 "48167": {
-"checked": "2026-10-18T08:11:46+00:00",
+"checked": "2026-10-18T09:01:24+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.galvestoncountytx.gov/"
 },
@@ -13878,7 +13877,7 @@
 "treasurer": "https://www.haskellcountytx.gov/page/haskell.County.Treasurer"
 },
 "48209": {
-"checked": "2026-10-18T08:11:46+00:00",
+"checked": "2026-10-18T09:01:24+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.hayscountytx.gov/"
 },
@@ -13956,7 +13955,7 @@
 "from": "https://www.co.irion.tx.us/"
 },
 "48237": {
-"checked": "2026-10-18T08:11:46+00:00",
+"checked": "2026-10-18T09:01:24+00:00",
 "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)>",
 "from": "https://www.jackcounty.org/"
 },
@@ -13999,7 +13998,7 @@
 "treasurer": "https://www.co.jim-wells.tx.us/page/co.county.treasurer"
 },
 "48251": {
-"checked": "2026-10-18T08:11:46+00:00",
+"checked": "2026-10-18T09:01:24+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.johnsoncountytx.org/"
 },
@@ -14176,7 +14175,7 @@
 "treasurer": "https://www.co.mcculloch.tx.us/page/mcculloch.County.Treasurer"
 },
 "48309": {
-"checked": "2026-10-18T08:11:46+00:00",
+"checked": "2026-10-18T09:01:24+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.mclennan.gov/"
 },
@@ -14312,7 +14311,7 @@
 "treasurer": "https://www.co.nolan.tx.us/page/nolan.County.Treasurer"
 },
 "48355": {
-"checked": "2026-10-18T08:11:46+00:00",
+"checked": "2026-10-18T09:01:24+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.nuecesco.com/"
 },
@@ -14407,7 +14406,7 @@
 "treasurer": "https://www.co.red-river.tx.us/page/redriver.County.Treasurer"
 },
 "48389": {
-"checked": "2026-10-18T08:11:46+00:00",
+"checked": "2026-10-18T09:01:24+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.reevescounty.org/"
 },
@@ -14717,7 +14716,7 @@
 "treasurer": "https://www.willacy.gov/page/willacy.County.Treasurer"
 },
 "48491": {
-"checked": "2026-10-18T08:11:46+00:00",
+"checked": "2026-10-18T09:01:24+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.wilcotx.gov/"
 },
@@ -14773,7 +14772,7 @@
 "from": "https://www.beaver.utah.gov/"
 },
 "49003": {
-"checked": "2026-10-18T08:11:46+00:00",
+"checked": "2026-10-18T09:01:24+00:00",
 "error": "HTTP Error 404: Not Found",
 "from": "http://www.boxeldercounty.org"
 },
@@ -14783,7 +14782,7 @@
 "treasurer": "https://www.cachecounty.gov/treasurer/pay-property-taxes.html"
 },
 "49007": {
-"checked": "2026-10-18T08:11:47+00:00",
+"checked": "2026-10-18T09:01:25+00:00",
 "error": "HTTP Error 301: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error messag",
 "from": "http://www.carbon.utah.gov"
 },
@@ -14794,7 +14793,7 @@
 "taxsale": "https://www.daggettcounty.gov/87/Tax-Sales"
 },
 "49011": {
-"checked": "2026-10-18T08:12:01+00:00",
+"checked": "2026-10-18T09:01:39+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.co.davis.ut.us"
 },
@@ -14831,7 +14830,7 @@
 "treasurer": "https://ironcounty.billtrax.com/welcome"
 },
 "49023": {
-"checked": "2026-10-18T08:12:01+00:00",
+"checked": "2026-10-18T09:01:39+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.co.juab.ut.us"
 },
@@ -14840,7 +14839,7 @@
 "from": "https://kane.utah.gov/"
 },
 "49027": {
-"checked": "2026-10-18T08:12:01+00:00",
+"checked": "2026-10-18T09:01:39+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.millardcounty.org"
 },
@@ -14852,7 +14851,7 @@
 "treasurer": "https://www.morgancountyutah.gov/treasurer"
 },
 "49031": {
-"checked": "2026-10-18T08:11:46+00:00",
+"checked": "2026-10-18T09:01:24+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://piutecounty.org"
 },
@@ -14864,7 +14863,7 @@
 "treasurer": "http://search.richcounty.gov/PropertyTaxSearch.aspx"
 },
 "49037": {
-"checked": "2026-10-18T08:11:46+00:00",
+"checked": "2026-10-18T09:01:24+00:00",
 "error": "Remote end closed connection without response",
 "from": "http://www.sanjuancounty.org"
 },
@@ -14910,7 +14909,7 @@
 "treasurer": "https://www.wasatchcounty.gov/281"
 },
 "49053": {
-"checked": "2026-10-18T08:11:46+00:00",
+"checked": "2026-10-18T09:01:24+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.washco.state.ut.us"
 },
@@ -14948,7 +14947,7 @@
 "from": "https://rutlandvermont.com/"
 },
 "50027": {
-"checked": "2026-10-18T08:11:49+00:00",
+"checked": "2026-10-18T09:01:28+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.swcrpc.org"
 },
@@ -14957,7 +14956,7 @@
 "from": "https://www.accomack.gov/"
 },
 "51003": {
-"checked": "2026-10-18T08:11:46+00:00",
+"checked": "2026-10-18T09:01:25+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.albemarle.org"
 },
@@ -14991,17 +14990,17 @@
 "treasurer": "https://www.arlingtonva.us/Government/Departments/Treasurers-Office"
 },
 "51015": {
-"checked": "2026-10-18T08:11:47+00:00",
+"checked": "2026-10-18T09:01:25+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.co.augusta.va.us"
 },
 "51017": {
-"checked": "2026-10-18T08:11:47+00:00",
+"checked": "2026-10-18T09:01:25+00:00",
 "error": "<urlopen error [Errno -5] No address associated with hostname>",
 "from": "http://www.bathcountyva.org"
 },
 "51019": {
-"checked": "2026-10-18T08:11:47+00:00",
+"checked": "2026-10-18T09:01:25+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.bedfordcountyva.gov/"
 },
@@ -15025,7 +15024,7 @@
 "treasurer": "https://www.brunswickco.com/government/constitutional_officers__elected_officials/treasurer"
 },
 "51027": {
-"checked": "2026-10-18T08:11:47+00:00",
+"checked": "2026-10-18T09:01:25+00:00",
 "error": "<urlopen error [Errno -5] No address associated with hostname>",
 "from": "http://www.buchanancountyonline.com"
 },
@@ -15068,7 +15067,7 @@
 "from": "https://www.chesterfield.gov/"
 },
 "51043": {
-"checked": "2026-10-18T08:11:57+00:00",
+"checked": "2026-10-18T09:01:35+00:00",
 "error": "<urlopen error [Errno -3] Temporary failure in name resolution>",
 "from": "http://www.co.clarke.va.us"
 },
@@ -15111,17 +15110,17 @@
 "treasurer": "https://www.fairfaxcounty.gov/dta_mobileepayre/"
 },
 "51061": {
-"checked": "2026-10-18T08:11:47+00:00",
+"checked": "2026-10-18T09:01:25+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.fauquiercounty.gov"
 },
 "51063": {
-"checked": "2026-10-18T08:11:47+00:00",
+"checked": "2026-10-18T09:01:25+00:00",
 "error": "HTTP Error 404: Not Found",
 "from": "http://www.floydcova.org"
 },
 "51065": {
-"checked": "2026-10-18T08:11:47+00:00",
+"checked": "2026-10-18T09:01:25+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.co.fluvanna.va.us"
 },
@@ -15131,17 +15130,17 @@
 "from": "https://www.franklincountyva.gov/"
 },
 "51069": {
-"checked": "2026-10-18T08:11:47+00:00",
+"checked": "2026-10-18T09:01:25+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.fcva.us"
 },
 "51071": {
-"checked": "2026-10-18T08:12:03+00:00",
+"checked": "2026-10-18T09:01:41+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.gilescounty.org"
 },
 "51073": {
-"checked": "2026-10-18T08:11:49+00:00",
+"checked": "2026-10-18T09:01:27+00:00",
 "error": "<urlopen error [Errno -3] Temporary failure in name resolution>",
 "from": "http://www.co.gloucester.va.us"
 },
@@ -15155,7 +15154,7 @@
 "from": "https://www.graysoncountyva.com/"
 },
 "51079": {
-"checked": "2026-10-18T08:12:03+00:00",
+"checked": "2026-10-18T09:01:40+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.gcva.us"
 },
@@ -15184,7 +15183,7 @@
 "from": "http://www.co.henry.va.us"
 },
 "51091": {
-"checked": "2026-10-18T08:11:48+00:00",
+"checked": "2026-10-18T09:01:27+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.highlandcova.org"
 },
@@ -15195,7 +15194,7 @@
 "treasurer": "https://www.isleofwight.gov/government/commissioner_of_the_revenue/personal_property_tax_questions.php"
 },
 "51095": {
-"checked": "2026-10-18T08:11:48+00:00",
+"checked": "2026-10-18T09:01:27+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.jamescitycountyva.gov"
 },
@@ -15240,7 +15239,7 @@
 "from": "https://www.louisacounty.gov/"
 },
 "51111": {
-"checked": "2026-10-18T08:11:48+00:00",
+"checked": "2026-10-18T09:01:27+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.lunenburgva.org"
 },
@@ -15279,7 +15278,7 @@
 "treasurer": "https://www.nelsoncounty-va.gov/government/treasurer/"
 },
 "51127": {
-"checked": "2026-10-18T08:11:58+00:00",
+"checked": "2026-10-18T09:01:37+00:00",
 "error": "<urlopen error [Errno -3] Temporary failure in name resolution>",
 "from": "http://www.co.new-kent.va.us"
 },
@@ -15307,7 +15306,7 @@
 "treasurer": "https://orangecountyva.gov/CivicAlerts.aspx?AID=2121"
 },
 "51139": {
-"checked": "2026-10-18T08:11:49+00:00",
+"checked": "2026-10-18T09:01:27+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.co.page.va.us"
 },
@@ -15333,12 +15332,12 @@
 "treasurer": "https://www.co.prince-edward.va.us/Departments/Treasurer"
 },
 "51149": {
-"checked": "2026-10-18T08:11:49+00:00",
+"checked": "2026-10-18T09:01:28+00:00",
 "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010)>",
 "from": "https://www.princegeorgeva.org/"
 },
 "51153": {
-"checked": "2026-10-18T08:11:49+00:00",
+"checked": "2026-10-18T09:01:28+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.pwcgov.org/"
 },
@@ -15517,12 +15516,12 @@
 "from": "https://www.fallschurchva.gov/"
 },
 "51620": {
-"checked": "2026-10-18T08:11:48+00:00",
+"checked": "2026-10-18T09:01:25+00:00",
 "error": "HTTP Error 404: Site Not Found",
 "from": "http://www.franklinva.com/"
 },
 "51630": {
-"checked": "2026-10-18T08:11:47+00:00",
+"checked": "2026-10-18T09:01:25+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.fredericksburgva.gov"
 },
@@ -15532,7 +15531,7 @@
 "treasurer": "https://wipp.edmundsgovtech.cloud/home?wippId=GLAX"
 },
 "51650": {
-"checked": "2026-10-18T08:11:48+00:00",
+"checked": "2026-10-18T09:01:27+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.hampton.gov/"
 },
@@ -15546,7 +15545,7 @@
 "from": "https://www.hopewellva.gov/"
 },
 "51678": {
-"checked": "2026-10-18T08:11:48+00:00",
+"checked": "2026-10-18T09:01:27+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.lexingtonva.gov/"
 },
@@ -15562,7 +15561,7 @@
 "treasurer": "https://www.manassasva.gov/connect/treasurer/index.php"
 },
 "51685": {
-"checked": "2026-10-18T08:11:48+00:00",
+"checked": "2026-10-18T09:01:27+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.cityofmanassaspark.us/"
 },
@@ -15612,7 +15611,7 @@
 "treasurer": "https://www.radfordva.gov/CivicAlerts.aspx?AID=1029"
 },
 "51770": {
-"checked": "2026-10-18T08:11:49+00:00",
+"checked": "2026-10-18T09:01:28+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://roanokeva.gov"
 },
@@ -15623,7 +15622,7 @@
 "sheriff": "https://www.salemva.gov/381/Civil-Process"
 },
 "51790": {
-"checked": "2026-10-18T08:11:49+00:00",
+"checked": "2026-10-18T09:01:28+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.staunton.va.us/"
 },
@@ -15640,7 +15639,7 @@
 "treasurer": "https://treasurer.virginiabeach.gov"
 },
 "51820": {
-"checked": "2026-10-18T08:11:49+00:00",
+"checked": "2026-10-18T09:01:28+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.waynesboro.va.us/"
 },
@@ -15679,7 +15678,7 @@
 "treasurer": "https://www.co.chelan.wa.us/treasurer"
 },
 "53009": {
-"checked": "2026-10-18T08:11:49+00:00",
+"checked": "2026-10-18T09:01:28+00:00",
 "error": "Remote end closed connection without response",
 "from": "http://www.clallam.net"
 },
@@ -15719,7 +15718,7 @@
 "from": "https://www.franklincountywa.gov/"
 },
 "53023": {
-"checked": "2026-10-18T08:11:53+00:00",
+"checked": "2026-10-18T09:01:33+00:00",
 "error": "Remote end closed connection without response",
 "from": "https://www.co.garfield.wa.us/"
 },
@@ -15760,7 +15759,7 @@
 "treasurer": "https://psearch.kitsapgov.com/pdetails/default.aspx"
 },
 "53037": {
-"checked": "2026-10-18T08:11:50+00:00",
+"checked": "2026-10-18T09:01:29+00:00",
 "error": "HTTP Error 503: Service Unavailable",
 "from": "http://www.co.kittitas.wa.us"
 },
@@ -15769,7 +15768,7 @@
 "from": "http://www.klickitatcounty.gov/"
 },
 "53041": {
-"checked": "2026-10-18T08:12:00+00:00",
+"checked": "2026-10-18T09:01:38+00:00",
 "error": "<urlopen error [Errno -3] Temporary failure in name resolution>",
 "from": "http://www.co.lewis.wa.us"
 },
@@ -15827,7 +15826,7 @@
 "treasurer": "https://www.skagitcountywa.gov/services/property-taxes/"
 },
 "53059": {
-"checked": "2026-10-18T08:11:50+00:00",
+"checked": "2026-10-18T09:01:29+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.skamaniacounty.org"
 },
@@ -15837,12 +15836,12 @@
 "from": "https://snohomishcountywa.gov"
 },
 "53063": {
-"checked": "2026-10-18T08:11:50+00:00",
+"checked": "2026-10-18T09:01:29+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.spokanecounty.org"
 },
 "53065": {
-"checked": "2026-10-18T08:11:50+00:00",
+"checked": "2026-10-18T09:01:29+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.co.stevens.wa.us"
 },
@@ -15865,7 +15864,7 @@
 "treasurer": "https://www.wwcowa.gov/departments/treasurer/index.php"
 },
 "53073": {
-"checked": "2026-10-18T08:11:51+00:00",
+"checked": "2026-10-18T09:01:30+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.co.whatcom.wa.us/"
 },
@@ -15885,7 +15884,7 @@
 "treasurer": "https://barbourcountywv.gov/sheriff-tax-office/"
 },
 "54003": {
-"checked": "2026-10-18T08:12:09+00:00",
+"checked": "2026-10-18T09:01:47+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.berkeleycountycomm.org"
 },
@@ -15917,7 +15916,7 @@
 "from": "https://claycounty.wv.gov/Pages/default.aspx"
 },
 "54017": {
-"checked": "2026-10-18T08:11:54+00:00",
+"checked": "2026-10-18T09:01:33+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.doddridgecounty.wv.gov"
 },
@@ -15932,7 +15931,7 @@
 "from": "https://gilmercounty.wv.gov/Pages/default.aspx"
 },
 "54023": {
-"checked": "2026-10-18T08:11:54+00:00",
+"checked": "2026-10-18T09:01:33+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.grantcounty.wv.gov"
 },
@@ -15942,7 +15941,7 @@
 "from": "https://www.greenbrierwv.gov/"
 },
 "54027": {
-"checked": "2026-10-18T08:11:54+00:00",
+"checked": "2026-10-18T09:01:33+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.hampshirecounty.wv.gov"
 },
@@ -16000,7 +15999,7 @@
 "from": "https://logancounty.wv.gov/Pages/default.aspx"
 },
 "54047": {
-"checked": "2026-10-18T08:11:54+00:00",
+"checked": "2026-10-18T09:01:33+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.mcdowellcounty.wv.gov"
 },
@@ -16012,17 +16011,17 @@
 "treasurer": "https://www.marioncountywv.com/departments/sheriff_tax_office/index.php"
 },
 "54051": {
-"checked": "2026-10-18T08:11:54+00:00",
+"checked": "2026-10-18T09:01:33+00:00",
 "error": "HTTP Error 404: Unknown site",
 "from": "http://www.marshallcountywv.org"
 },
 "54053": {
-"checked": "2026-10-18T08:11:54+00:00",
+"checked": "2026-10-18T09:01:33+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.masoncounty.wv.gov"
 },
 "54055": {
-"checked": "2026-10-18T08:11:54+00:00",
+"checked": "2026-10-18T09:01:33+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.mercercounty.wv.gov"
 },
@@ -16054,22 +16053,22 @@
 "from": "https://nicholascountywv.org/"
 },
 "54069": {
-"checked": "2026-10-18T08:11:54+00:00",
+"checked": "2026-10-18T09:01:33+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.ohiocounty.wv.gov"
 },
 "54071": {
-"checked": "2026-10-18T08:11:55+00:00",
+"checked": "2026-10-18T09:01:34+00:00",
 "error": "HTTP Error 401: Unauthorized",
 "from": "http://www.pendletoncounty.wv.gov"
 },
 "54073": {
-"checked": "2026-10-18T08:12:04+00:00",
+"checked": "2026-10-18T09:01:43+00:00",
 "error": "<urlopen error [Errno -3] Temporary failure in name resolution>",
 "from": "http://www.wvgenweb.org/pleasants/"
 },
 "54075": {
-"checked": "2026-10-18T08:11:55+00:00",
+"checked": "2026-10-18T09:01:34+00:00",
 "error": "HTTP Error 401: Unauthorized",
 "from": "http://www.pocahontascounty.wv.gov"
 },
@@ -16099,7 +16098,7 @@
 "from": "https://ritchiecounty.wv.gov/Pages/default.aspx"
 },
 "54087": {
-"checked": "2026-10-18T08:11:54+00:00",
+"checked": "2026-10-18T09:01:34+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.roanecounty.wv.gov"
 },
@@ -16110,7 +16109,7 @@
 "treasurer": "https://www.summerscountywv.gov/taxoffice"
 },
 "54091": {
-"checked": "2026-10-18T08:11:54+00:00",
+"checked": "2026-10-18T09:01:34+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.taylorcounty.wv.gov"
 },
@@ -16143,7 +16142,7 @@
 "from": "https://webstercounty.wv.gov/Pages/default.aspx"
 },
 "54103": {
-"checked": "2026-10-18T08:11:55+00:00",
+"checked": "2026-10-18T09:01:34+00:00",
 "error": "HTTP Error 401: Unauthorized",
 "from": "http://www.wetzelcounty.wv.gov"
 },
@@ -16171,7 +16170,7 @@
 "treasurer": "https://www.co.adams.wi.us/departments/county-treasurer"
 },
 "55003": {
-"checked": "2026-10-18T08:11:50+00:00",
+"checked": "2026-10-18T09:01:29+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.co.ashland.wi.us"
 },
@@ -16230,7 +16229,7 @@
 "treasurer": "https://www.clarkcountywi.gov/treasurer"
 },
 "55021": {
-"checked": "2026-10-18T08:12:05+00:00",
+"checked": "2026-10-18T09:01:44+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.co.columbia.wi.us"
 },
@@ -16247,7 +16246,7 @@
 "treasurer": "https://treasurer.danecounty.gov/taxpayment"
 },
 "55027": {
-"checked": "2026-10-18T08:11:51+00:00",
+"checked": "2026-10-18T09:01:30+00:00",
 "error": "HTTP Error 404: Not Found",
 "from": "http://www.co.dodge.wi.us"
 },
@@ -16279,12 +16278,12 @@
 "from": "http://www.co.eau-claire.wi.us"
 },
 "55037": {
-"checked": "2026-10-18T08:12:06+00:00",
+"checked": "2026-10-18T09:01:45+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.florencewisconsin.com"
 },
 "55039": {
-"checked": "2026-10-18T08:11:51+00:00",
+"checked": "2026-10-18T09:01:30+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.fdlco.wi.gov"
 },
@@ -16304,12 +16303,12 @@
 "treasurer": "https://gcinternetwebsite.co.grant.wi.gov/county-treasurer/"
 },
 "55045": {
-"checked": "2026-10-18T08:11:51+00:00",
+"checked": "2026-10-18T09:01:30+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.co.green.wi.gov"
 },
 "55047": {
-"checked": "2026-10-18T08:11:51+00:00",
+"checked": "2026-10-18T09:01:30+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.co.green-lake.wi.us"
 },
@@ -16347,7 +16346,7 @@
 "treasurer": "https://www.co.juneau.wi.gov/departments/treasurer/index.php"
 },
 "55059": {
-"checked": "2026-10-18T08:11:52+00:00",
+"checked": "2026-10-18T09:01:30+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.kenoshacounty.org/"
 },
@@ -16359,12 +16358,12 @@
 "treasurer": "https://www.kewauneeco.org/departments/county-treasurer/"
 },
 "55063": {
-"checked": "2026-10-18T08:11:52+00:00",
+"checked": "2026-10-18T09:01:31+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.co.la-crosse.wi.us"
 },
 "55065": {
-"checked": "2026-10-18T08:11:52+00:00",
+"checked": "2026-10-18T09:01:31+00:00",
 "error": "Remote end closed connection without response",
 "from": "http://www.co.lafayette.wi.gov"
 },
@@ -16377,17 +16376,17 @@
 "treasurer": "https://www.co.langlade.wi.us/departments/county-treasurer/"
 },
 "55069": {
-"checked": "2026-10-18T08:11:54+00:00",
+"checked": "2026-10-18T09:01:33+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.co.lincoln.wi.us"
 },
 "55071": {
-"checked": "2026-10-18T08:11:52+00:00",
+"checked": "2026-10-18T09:01:31+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.co.manitowoc.wi.us"
 },
 "55073": {
-"checked": "2026-10-18T08:11:52+00:00",
+"checked": "2026-10-18T09:01:31+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.co.marathon.wi.us"
 },
@@ -16408,12 +16407,12 @@
 "from": "https://www.co.menominee.wi.us/"
 },
 "55079": {
-"checked": "2026-10-18T08:11:52+00:00",
+"checked": "2026-10-18T09:01:31+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.county.milwaukee.gov"
 },
 "55081": {
-"checked": "2026-10-18T08:11:54+00:00",
+"checked": "2026-10-18T09:01:33+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.co.monroe.wi.us/"
 },
@@ -16422,7 +16421,7 @@
 "from": "https://www.ocontocountywi.gov/"
 },
 "55085": {
-"checked": "2026-10-18T08:11:52+00:00",
+"checked": "2026-10-18T09:01:31+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.co.oneida.wi.gov"
 },
@@ -16473,7 +16472,7 @@
 "treasurer": "https://co.price.wi.us/154/Property-Taxes"
 },
 "55101": {
-"checked": "2026-10-18T08:11:53+00:00",
+"checked": "2026-10-18T09:01:31+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.racineco.com"
 },
@@ -16486,7 +16485,7 @@
 "treasurer": "https://richlandcountywi.gov/index.asp?SEC=BDCE2053-3048-4A1E-AB19-0452A4E99D03"
 },
 "55105": {
-"checked": "2026-10-18T08:11:53+00:00",
+"checked": "2026-10-18T09:01:31+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "https://www.co.rock.wi.us/"
 },
@@ -16504,7 +16503,7 @@
 "from": "https://www.sccwi.gov/"
 },
 "55111": {
-"checked": "2026-10-18T08:11:53+00:00",
+"checked": "2026-10-18T09:01:31+00:00",
 "error": "Remote end closed connection without response",
 "from": "http://www.co.sauk.wi.us"
 },
@@ -16520,7 +16519,7 @@
 "treasurer": "https://www.co.shawano.wi.us/departments/treasurer/"
 },
 "55117": {
-"checked": "2026-10-18T08:11:53+00:00",
+"checked": "2026-10-18T09:01:31+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.SheboyganCounty.com"
 },
@@ -16533,12 +16532,12 @@
 "from": "https://www.tremplocounty.com/"
 },
 "55123": {
-"checked": "2026-10-18T08:12:08+00:00",
+"checked": "2026-10-18T09:01:46+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.co.vernon.wi.gov"
 },
 "55125": {
-"checked": "2026-10-18T08:11:53+00:00",
+"checked": "2026-10-18T09:01:32+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.co.vilas.wi.us"
 },
@@ -16555,7 +16554,7 @@
 "treasurer": "https://co.washburn.wi.us/departments/county-treasurer/"
 },
 "55131": {
-"checked": "2026-10-18T08:12:08+00:00",
+"checked": "2026-10-18T09:01:46+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://www.co.washington.wi.us"
 },
@@ -16574,17 +16573,17 @@
 "treasurer": "https://www.waupacacounty-wi.gov/departments/government_departments/county_treasurer/index.php"
 },
 "55137": {
-"checked": "2026-10-18T08:11:53+00:00",
+"checked": "2026-10-18T09:01:32+00:00",
 "error": "<urlopen error [Errno -5] No address associated with hostname>",
 "from": "http://co.waushara.wi.us"
 },
 "55139": {
-"checked": "2026-10-18T08:11:53+00:00",
+"checked": "2026-10-18T09:01:32+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.co.winnebago.wi.us"
 },
 "55141": {
-"checked": "2026-10-18T08:11:54+00:00",
+"checked": "2026-10-18T09:01:32+00:00",
 "error": "<urlopen error [Errno 111] Connection refused>",
 "from": "http://www.co.wood.wi.us"
 },
@@ -16642,12 +16641,12 @@
 "treasurer": "https://www.hscounty.com/departments/treasurer"
 },
 "56019": {
-"checked": "2026-10-18T08:11:54+00:00",
+"checked": "2026-10-18T09:01:34+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.johnsoncountywyoming.org"
 },
 "56021": {
-"checked": "2026-10-18T08:12:10+00:00",
+"checked": "2026-10-18T09:01:50+00:00",
 "error": "<urlopen error timed out>",
 "from": "http://webgate.co.laramie.wy.us"
 },
@@ -16659,7 +16658,7 @@
 "treasurer": "https://www.lincolncountywy.gov/government/treasurer/property_tax.php"
 },
 "56025": {
-"checked": "2026-10-18T08:11:55+00:00",
+"checked": "2026-10-18T09:01:34+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.natronacounty-wy.gov"
 },
@@ -16696,7 +16695,7 @@
 "treasurer": "https://www.sublettecountywy.gov/140/Treasurer"
 },
 "56037": {
-"checked": "2026-10-18T08:11:55+00:00",
+"checked": "2026-10-18T09:01:34+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.sweet.wy.us"
 },
@@ -16726,7 +16725,7 @@
 "from": "http://adjuntas.com/"
 },
 "72003": {
-"checked": "2026-10-18T08:11:41+00:00",
+"checked": "2026-10-18T09:01:20+00:00",
 "error": "HTTP Error 444: ",
 "from": "http://www.aguadapuertorico.com/"
 },
@@ -16735,17 +16734,17 @@
 "from": "https://aguadilla.city/"
 },
 "72007": {
-"checked": "2026-10-18T08:11:41+00:00",
+"checked": "2026-10-18T09:01:20+00:00",
 "error": "HTTP Error 409: Conflict",
 "from": "http://www.gobierno.pr/OCAM/DirectorioMunicipios/Aguas_Buenas.htm"
 },
 "72009": {
-"checked": "2026-10-18T08:11:41+00:00",
+"checked": "2026-10-18T09:01:20+00:00",
 "error": "HTTP Error 409: Conflict",
 "from": "http://www.gobierno.pr/OCAM/DirectorioMunicipios/Aibonito.htm"
 },
 "72011": {
-"checked": "2026-10-18T08:11:41+00:00",
+"checked": "2026-10-18T09:01:20+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.anascopr.net/"
 },
@@ -16758,7 +16757,7 @@
 "from": "https://www.arroyopr.gov/"
 },
 "72019": {
-"checked": "2026-10-18T08:11:51+00:00",
+"checked": "2026-10-18T09:01:30+00:00",
 "error": "<urlopen error [Errno -3] Temporary failure in name resolution>",
 "from": "http://barranquitaspr.org/"
 },
@@ -16767,7 +16766,7 @@
 "from": "https://www.municipiodebayamon.com/"
 },
 "72023": {
-"checked": "2026-10-18T08:11:41+00:00",
+"checked": "2026-10-18T09:01:20+00:00",
 "error": "HTTP Error 409: Conflict",
 "from": "http://www.gobierno.pr/OCAM/DirectorioMunicipios/Cabo_Rojo.htm"
 },
@@ -16776,27 +16775,27 @@
 "from": "https://caguas.gov.pr/"
 },
 "72027": {
-"checked": "2026-10-18T08:11:41+00:00",
+"checked": "2026-10-18T09:01:20+00:00",
 "error": "HTTP Error 409: Conflict",
 "from": "http://www.gobierno.pr/OCAM/DirectorioMunicipios/Camuy.htm"
 },
 "72029": {
-"checked": "2026-10-18T08:11:41+00:00",
+"checked": "2026-10-18T09:01:21+00:00",
 "error": "HTTP Error 409: Conflict",
 "from": "http://www.gobierno.pr/OCAM/DirectorioMunicipios/Canovanas.htm"
 },
 "72031": {
-"checked": "2026-10-18T08:11:42+00:00",
+"checked": "2026-10-18T09:01:21+00:00",
 "error": "HTTP Error 409: Conflict",
 "from": "http://www.gobierno.pr/OCAM/DirectorioMunicipios/Carolina.htm"
 },
 "72033": {
-"checked": "2026-10-18T08:11:42+00:00",
+"checked": "2026-10-18T09:01:21+00:00",
 "error": "HTTP Error 409: Conflict",
 "from": "http://www.gobierno.pr/OCAM/DirectorioMunicipios/Cata%C3%B1o.htm"
 },
 "72035": {
-"checked": "2026-10-18T08:11:42+00:00",
+"checked": "2026-10-18T09:01:21+00:00",
 "error": "HTTP Error 502: Bad Gateway",
 "from": "http://www.cayey.gobierno.pr/"
 },
@@ -16805,7 +16804,7 @@
 "from": "http://www.ceiba-pr.com/"
 },
 "72039": {
-"checked": "2026-10-18T08:11:42+00:00",
+"checked": "2026-10-18T09:01:21+00:00",
 "error": "HTTP Error 409: Conflict",
 "from": "http://www.gobierno.pr/OCAM/DirectorioMunicipios/Ciales.htm"
 },
@@ -16818,7 +16817,7 @@
 "from": "https://www.pr.gov/directorio-municipos/corozal"
 },
 "72051": {
-"checked": "2026-10-18T08:11:42+00:00",
+"checked": "2026-10-18T09:01:21+00:00",
 "error": "HTTP Error 409: Conflict",
 "from": "http://www.gobierno.pr/OCAM/DirectorioMunicipios/Dorado.htm"
 },
@@ -16827,22 +16826,22 @@
 "from": "https://fajardopr.org/"
 },
 "72054": {
-"checked": "2026-10-18T08:11:42+00:00",
+"checked": "2026-10-18T09:01:21+00:00",
 "error": "HTTP Error 409: Conflict",
 "from": "http://www.gobierno.pr/OCAM/DirectorioMunicipios/Florida.htm"
 },
 "72055": {
-"checked": "2026-10-18T08:11:42+00:00",
+"checked": "2026-10-18T09:01:21+00:00",
 "error": "HTTP Error 409: Conflict",
 "from": "http://www.gobierno.pr/OCAM/DirectorioMunicipios/Guanica.htm"
 },
 "72057": {
-"checked": "2026-10-18T08:11:42+00:00",
+"checked": "2026-10-18T09:01:21+00:00",
 "error": "HTTP Error 409: Conflict",
 "from": "http://www.gobierno.pr/OCAM/DirectorioMunicipios/Guayama.htm"
 },
 "72059": {
-"checked": "2026-10-18T08:11:42+00:00",
+"checked": "2026-10-18T09:01:21+00:00",
 "error": "HTTP Error 409: Conflict",
 "from": "http://www.gobierno.pr/OCAM/DirectorioMunicipios/Guayanilla.htm"
 },
@@ -16855,22 +16854,22 @@
 "from": "http://www.gurabopr.com/"
 },
 "72065": {
-"checked": "2026-10-18T08:11:42+00:00",
+"checked": "2026-10-18T09:01:21+00:00",
 "error": "HTTP Error 409: Conflict",
 "from": "http://www.gobierno.pr/OCAM/DirectorioMunicipios/Hatillo.htm"
 },
 "72067": {
-"checked": "2026-10-18T08:11:42+00:00",
+"checked": "2026-10-18T09:01:21+00:00",
 "error": "HTTP Error 409: Conflict",
 "from": "http://www.gobierno.pr/OCAM/DirectorioMunicipios/Hormigueros.htm"
 },
 "72069": {
-"checked": "2026-10-18T08:11:42+00:00",
+"checked": "2026-10-18T09:01:21+00:00",
 "error": "HTTP Error 409: Conflict",
 "from": "http://www.gobierno.pr/OCAM/DirectorioMunicipios/Humacao.htm"
 },
 "72073": {
-"checked": "2026-10-18T08:11:42+00:00",
+"checked": "2026-10-18T09:01:21+00:00",
 "error": "HTTP Error 403: Forbidden",
 "from": "http://www.jayuya.net/"
 },
@@ -16883,32 +16882,32 @@
 "from": "https://www.municipiodejuncos.gov.pr/"
 },
 "72079": {
-"checked": "2026-10-18T08:11:42+00:00",
+"checked": "2026-10-18T09:01:21+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.lajaspr.com/"
 },
 "72081": {
-"checked": "2026-10-18T08:11:42+00:00",
+"checked": "2026-10-18T09:01:21+00:00",
 "error": "HTTP Error 409: Conflict",
 "from": "http://www.gobierno.pr/OCAM/DirectorioMunicipios/Lares.htm"
 },
 "72083": {
-"checked": "2026-10-18T08:11:42+00:00",
+"checked": "2026-10-18T09:01:21+00:00",
 "error": "HTTP Error 409: Conflict",
 "from": "http://www.gobierno.pr/OCAM/DirectorioMunicipios/Las_Marias.htm"
 },
 "72085": {
-"checked": "2026-10-18T08:11:42+00:00",
+"checked": "2026-10-18T09:01:21+00:00",
 "error": "HTTP Error 409: Conflict",
 "from": "http://www.gobierno.pr/OCAM/DirectorioMunicipios/Las_Piedras.htm"
 },
 "72087": {
-"checked": "2026-10-18T08:11:42+00:00",
+"checked": "2026-10-18T09:01:21+00:00",
 "error": "HTTP Error 409: Conflict",
 "from": "http://www.gobierno.pr/OCAM/DirectorioMunicipios/Loiza.htm"
 },
 "72089": {
-"checked": "2026-10-18T08:11:42+00:00",
+"checked": "2026-10-18T09:01:21+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "https://www.municipiodeluquillo.com/"
 },
@@ -16917,17 +16916,17 @@
 "from": "https://www.pr.gov/directorio-municipos/mayaguez"
 },
 "72109": {
-"checked": "2026-10-18T08:11:42+00:00",
+"checked": "2026-10-18T09:01:21+00:00",
 "error": "HTTP Error 409: Conflict",
 "from": "http://www.gobierno.pr/OCAM/DirectorioMunicipios/Patillas.htm"
 },
 "72111": {
-"checked": "2026-10-18T08:11:42+00:00",
+"checked": "2026-10-18T09:01:21+00:00",
 "error": "HTTP Error 404: Not Found",
 "from": "https://www.municipiodepenuelas.com/"
 },
 "72115": {
-"checked": "2026-10-18T08:11:42+00:00",
+"checked": "2026-10-18T09:01:21+00:00",
 "error": "HTTP Error 409: Conflict",
 "from": "http://www.gobierno.pr/OCAM/DirectorioMunicipios/Quebradillas.htm"
 },
@@ -16936,7 +16935,7 @@
 "from": "https://rincon.gov.pr/"
 },
 "72125": {
-"checked": "2026-10-18T08:11:42+00:00",
+"checked": "2026-10-18T09:01:21+00:00",
 "error": "<urlopen error [Errno -2] Name or service not known>",
 "from": "http://www.municipiodesangerman.com/"
 },

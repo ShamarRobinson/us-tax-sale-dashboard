@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-18T08:58:40+00:00",
+ "generated": "2026-10-18T10:12:21+00:00",
  "counties": 3222,
  "states": 52,
  "withData": 120,
@@ -457,28 +457,28 @@
    "url": "https://shamarrobinson.github.io/atlanta-tax-sale-dashboard/",
    "counties": 40,
    "ok": true,
-   "checked": "2026-10-18T08:12:16+00:00"
+   "checked": "2026-10-18T09:01:55+00:00"
   },
   "clark": {
    "label": "Clark County Tax Auction Tracker",
    "url": "https://shamarrobinson.github.io/clark-county-tax-auction-dashboard/",
    "counties": 1,
    "ok": true,
-   "checked": "2026-10-18T08:12:16+00:00"
+   "checked": "2026-10-18T09:01:55+00:00"
   },
   "michigan": {
    "label": "Tax-Sale.info (Michigan Public Land Auction)",
    "url": "https://www.tax-sale.info/",
-   "counties": 79,
-   "ok": true,
-   "checked": "2026-10-18T08:17:24+00:00"
+   "counties": 0,
+   "ok": false,
+   "error": "https://www.tax-sale.info/auctions: HTTP Error 404: Not Found"
   },
   "realauction": {
    "label": "RealAuction portals (Florida Clerk tax deed and foreclosure sales, Ohio and Texas sheriff sales)",
    "url": "https://www.realauction.com/",
    "counties": 0,
    "ok": true,
-   "checked": "2026-10-18T08:58:40+00:00"
+   "checked": "2026-10-18T10:12:21+00:00"
   }
  },
  "countiesWithData": [
