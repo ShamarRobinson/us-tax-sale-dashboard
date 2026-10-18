@@ -8,17 +8,41 @@ Tax deed auctions, tax lien sales, redeemable deed sales and sheriff sales for e
 
 - **National overview:** a map of the United States colored by how each state sells delinquent property (tax deed, tax lien, redeemable deed or hybrid), the next sale dates fixed by statute, every sale date posted by a source, and a table of all states with their rules.
 - **A tab per state** (with its own link, e.g. `#ga`): who holds the sale, when, how bidding works, the interest or penalty rate, the redemption period, how mortgage foreclosures and sheriff sales work in that state, the statute, the auction platforms in use, and a county map and table.
-- **A page per county** (e.g. `#ga/fulton` or `#c/13121`): who runs the sale, the next sale date (posted or by statute), the tax sale page when known, the official county site, parcel lookup and sheriff sale links, population and land area, and the state rules.
-- **Parcel-level data** where a source publishes it: an auction picker, bid statistics, cost tiers, auction history, a parcel map and a sortable parcel grid with CSV download, the same way the Atlanta tracker works.
+- **A page per county** (e.g. `#ga/fulton`, `#c/13121`, or `#ga/gwinnett?parcel=R6023%20008` to open straight to a parcel): who runs the sale, the next sale date (posted or by statute), the tax sale, sheriff sale, assessor, treasurer and excess funds pages, the official site, population and land area, the state rules with a redemption-return table, calendar export and a shareable link.
+- **Every capability of the Clark County and Metro Atlanta trackers, on every county with data:** an auction picker (any sale or all sales on file); KPIs (parcels, sold, average, median, lowest, highest and most frequent winning bid, typical multiple, bidding wars, total bids, excess funds); cost tiers; parcel types (vacant, single-family, condo or townhouse, manufactured, multi-family, commercial) from county land-use codes or catalog descriptions; auction history; bidding wars with the biggest jumps and the most active buyers; a parcel map with winning bid and bidding-war rate by area (click an area to highlight it and filter the grid); time in default (years unpaid, how long former owners held the parcel) and excess funds waiting to be claimed; a parcel grid with sorting, a column chooser, drag-to-reorder, pivots on any column with click-to-filter, address copy buttons, per-parcel county record and county map links, prior auctions for the same parcel, a 0 to 100 deal score with its parts, and CSV download; a photo gallery and lightbox with stored photos and live Street View; and parcel detail dialogs with ownership history, the score breakdown, a watchlist note, a redemption calculator and a printable deal sheet.
 - **Dropdown navigation:** State, County, Sale type and Show menus in the header cascade into each other (pick a state, then a county, then an auction).
 - **Drill-down charts:** every chart is nested. On the national page, sale system > states > state page; parcels by state > counties > county page; posted sales by month > counties. On a state page, group counties by data status, next sale month, population tier or who holds the sale, then click a bar to list the counties, then open one. On a county page, cost tier > parcels (opening bid against winning bid) > parcel details, and the auction history bars switch the auction picker.
-- **Search** across every county, e.g. `state:tx`, `type:lien next:2026-12`, `data:yes state:mi`, `run:sheriff`, `pop>500k`.
+- **Search** across every county (`state:tx`, `type:lien next:2026-12`, `data:yes state:mi`, `run:sheriff`, `pop>500k`, `coverage:4`) or across every parcel on file (`county:gwinnett won>100000`, `status:listed score>70 state:mi`, `buyer:capital`, `excess>5k`), with CSV download of the results.
+- **Beyond the two trackers:** a watchlist with notes (kept in your browser, exportable), calendar (.ics) downloads for a county, a state or every posted sale nationwide, a redemption-return calculator using each state's statutory interest and penalties, printable one-page deal sheets (`sheet.html`), a "what changed in this refresh" card, a coverage score per county (rules, site, sale page, data, photos), distance-from-home filtering in the analyzer, excess-funds recovery leads, buyer intelligence, shareable links to any analyzer view, monthly email digests of newly posted and upcoming sales, and pages that recheck for new data every 30 minutes.
 
 ## Property Deal Analyzer And Master CSV
 
 - **[Property Deal Analyzer](https://shamarrobinson.github.io/us-tax-sale-dashboard/analyzer.html)** (`analyzer.html`): every parcel on file, rescored with your own assumptions (target discount to county value, repair and closing allowance, budget, value fallback). Filters by state, county, sale type and kind, status, property type, bid and value ranges, photos and coordinates; drill-down charts; a bid-against-value scatter; a map; a sortable grid; a photo and Street View gallery; CSV download of whatever is in view.
 - **Master CSVs**, rebuilt by `fetch_all.py` on every run so every source flows into them: `data/master_parcels.csv` (one row per parcel: county, sale, parcel, address, owner, buyer, bids, multiple, excess, county value, bid-to-value, size, coordinates, Google Maps and Street View links, photo, listing and source links, redemption period, rate, county median multiple, deal score) and `data/master_counties.csv` (every county with its rules, links and next sale). `data/master.json` is the same parcel data for the analyzer page.
-- **Deal score** (0 to 100, a screening aid): value 40 (opening bid against county value), property 20 (improved beats vacant), competition 15 (how far above the opening bid parcels sell in that county), timing and redemption 15, data 10 (coordinates, value, photo). 70 and up Strong, 50 to 69 Good, 35 to 49 Fair, under 35 Weak.
+- **Deal score** (0 to 100, a screening aid, identical in the county pages, the analyzer and the master CSV): value 40 (cost against county value, or entry cost when none is published), property 20 (type from county records; improved beats vacant), market 15 (county population), competition 15 (the parcel's own multiple, or the county's median multiple), history 10 (earlier auctions for the same parcel; a prior no-bid scores lowest). 70 and up Strong, 50 to 69 Good, 35 to 49 Fair, under 35 Weak. Every parcel detail shows how its score was built.
+
+## Email Alerts
+
+`notify.py` runs after each monthly refresh and emails one digest: sale dates newly posted since the last refresh, posted sales in the next 45 days, and statutory dates in the next 45 days. It sends nothing unless the repository secrets `ALERT_TO` (comma-separated recipients), `SMTP_USER` and `SMTP_PASS` (an app password) are set; `SMTP_HOST`, `SMTP_PORT` and `ALERT_STATES` (e.g. `NV,GA,MI`) are optional. Recipients are never written to the repository. To test: **Actions > Update tax sale data > Run workflow**, check "Send a test alert digest".
+
+## Use It As An API
+
+Everything the pages read is a static file you can fetch from the site:
+
+| File | Contents |
+|---|---|
+| `data/registry.json` | every county (FIPS, name, state, coordinates, population, links, next sale, data summary, coverage) and every state's rules |
+| `data/index.json` | national totals, posted upcoming sales, source status |
+| `data/counties/{fips}.json` | every sale and parcel on file for one county |
+| `data/master.json`, `data/master_parcels.csv` | every parcel on file with the deal-analyzer fields |
+| `data/master_counties.csv` | every county with its rules and links |
+| `data/changes.json` | what changed in the latest refresh |
+| `data/upcoming.ics` | calendar of posted sales and statutory dates |
+| `ref/discovered_links.json` | the pages found on each county's website |
+
+### Master Parcel Columns
+
+`fips`, `county`, `state`, `system`, `saleKind` (list, results, excess, taxdeed, foreclosure, sheriff), `source`, `auctionDate`, `auctionStatus`, `auctionLabel`, `parcel`, `caseNo`, `lot`, `address`, `fullAddress`, `area`, `owner`, `buyer`, `type` (normalized category), `typeDetail` (CSV only), `status`, `minBid` (amount owed or opening bid), `winningBid`, `multiple`, `excess`, `value` (county value; Michigan is 2x SEV), `bidToValue`, `winToValue`, `judgment`, `taxes`, `acres`, `sqft`, `yearBuilt`, `years`, `yearsUnpaid`, `tenure` (years the former owner held it), `priorAuctions`, `lat`, `lon`, `googleMaps`, `streetView`, `photo`, `photoCredit`, `listing`, `sourceDoc`, `parcelRecord`, `countyMap`, `countyPage`, `redemptionMonths`, `rate`, `countyMedianMultiple`, `dealScore`, `dealRating`, `desc`.
 
 ## Where The Data Comes From
 
@@ -77,6 +101,8 @@ python3 -m http.server 8000     # then open http://localhost:8000
 - `master.py`: builds the master parcel and county files and the deal score.
 - `discover_links.py`: finds sale and assessor links on county websites.
 - `analyzer.html`, `analyzer.js`, `analyzer.css`: the Property Deal Analyzer page.
-- `index.html`, `app.js`, `style.css`: the dashboard.
+- `index.html`, `app.js`, `county.js`, `common.js`, `style.css`: the dashboard (national and state views, county pages, shared helpers).
+- `sheet.html`: the printable deal sheet.
+- `notify.py`: the monthly email digest.
 
 Informational only and not affiliated with any county, state or auction platform. Rules change (several states rewrote theirs after *Tyler v. Hennepin County* in 2023) and lists change up to the day of the sale; always confirm with the county.

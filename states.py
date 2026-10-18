@@ -554,3 +554,19 @@ SYSTEM_LABELS = {
     "redeemable": "Redeemable deed",
     "hybrid": "Hybrid (lien then deed)",
 }
+
+
+# Numeric return terms for the redemption calculator: annual interest %, flat penalty % in the first year, and the
+# extra penalty % added for each later year (Georgia adds 10% a year, Texas 25%). Deed states earn nothing: the buyer
+# keeps the property. Where a state sets a range, the common figure is used.
+RETURN_TERMS = {
+    "AL": (12, 0, 0), "AK": (0, 0, 0), "AZ": (16, 0, 0), "AR": (0, 0, 0), "CA": (0, 0, 0), "CO": (14, 0, 0), "CT": (18, 0, 0), "DE": (0, 15, 0), "DC": (18, 0, 0),
+    "FL": (18, 0, 0), "GA": (0, 20, 10), "HI": (12, 0, 0), "ID": (0, 0, 0), "IL": (18, 0, 0), "IN": (0, 10, 5), "IA": (24, 0, 0), "KS": (0, 0, 0), "KY": (12, 0, 0),
+    "LA": (12, 5, 0), "ME": (8, 0, 0), "MD": (12, 0, 0), "MA": (16, 0, 0), "MI": (0, 0, 0), "MN": (0, 0, 0), "MS": (18, 0, 0), "MO": (10, 0, 0), "MT": (10, 2, 0),
+    "NE": (14, 0, 0), "NV": (0, 0, 0), "NH": (14, 0, 0), "NJ": (18, 0, 0), "NM": (0, 0, 0), "NY": (12, 0, 0), "NC": (0, 0, 0), "ND": (0, 0, 0), "OH": (18, 0, 0),
+    "OK": (0, 0, 0), "OR": (0, 0, 0), "PA": (0, 0, 0), "RI": (12, 10, 0), "SC": (0, 12, 0), "SD": (10, 0, 0), "TN": (12, 0, 0), "TX": (0, 25, 25), "UT": (0, 0, 0),
+    "VT": (12, 0, 0), "VA": (0, 0, 0), "WA": (0, 0, 0), "WV": (12, 0, 0), "WI": (12, 0, 0), "WY": (15, 3, 0), "PR": (0, 0, 0),
+}
+for _s in STATES:
+    _r = RETURN_TERMS.get(_s["abbr"], (0, 0, 0))
+    _s["rate_pct"], _s["penalty_pct"], _s["penalty_step_pct"] = _r

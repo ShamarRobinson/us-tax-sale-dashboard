@@ -9,8 +9,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
-<link rel="stylesheet" href="style.css?v=20261018c">
-<link rel="stylesheet" href="analyzer.css?v=20261018c">
+<link rel="stylesheet" href="style.css?v=20261018d">
+<link rel="stylesheet" href="analyzer.css?v=20261018d">
 </head>
 <body>
 <header class="top">
@@ -55,7 +55,16 @@
       <label class="check"><input id="fPhoto" type="checkbox"> Has photo</label>
       <label class="check"><input id="fGeo" type="checkbox"> Has coordinates</label>
       <label class="check"><input id="fValue" type="checkbox"> Has county value</label>
+      <label class="check"><input id="fExcess" type="checkbox"> Excess funds owed (recovery leads)</label>
+      <label class="check"><input id="fWatch" type="checkbox"> My watchlist only</label>
       <button type="button" id="fClear">Clear filters</button>
+    </div>
+    <div class="fgrid mt">
+      <label>Near (home base) <select id="fHome"><option value="">Anywhere</option></select></label>
+      <label>Within <span class="unit">miles</span><input id="fMiles" type="number" min="1" step="25" placeholder="e.g. 100"></label>
+      <label class="check"><button type="button" id="fGeo2">Use my location</button></label>
+      <label class="check"><button type="button" id="fShare">Copy link to this view</button></label>
+      <label class="check"><button type="button" id="wExport">Download my watchlist</button></label>
     </div>
   </section>
 
@@ -66,6 +75,8 @@
     <div class="grid2">
       <div><div class="crumbs" id="byStateCrumb"></div><div class="chart"><canvas id="byState"></canvas></div></div>
       <div><div class="crumbs" id="byScoreCrumb"></div><div class="chart"><canvas id="byScore"></canvas></div></div>
+      <div><div class="crumbs" id="byBuyerCrumb"></div><div class="chart"><canvas id="byBuyer"></canvas></div><p class="muted small">Buyer intelligence: who wins the most parcels in view, and what they paid. Click a buyer to list their parcels.</p></div>
+      <div><div class="crumbs" id="byMonthCrumb"></div><div class="chart"><canvas id="byMonth"></canvas></div><p class="muted small">Sales by month in view, upcoming in purple. Click a month to list its parcels.</p></div>
     </div>
   </section>
 
@@ -81,7 +92,7 @@
   </section>
 
   <section class="card">
-    <div class="reshead"><h2 id="resTitle">Parcels</h2><label class="inline">Sort by <select id="sortBy"><option value="dealScore">Deal score</option><option value="headroom">Headroom</option><option value="minBid">Opening bid</option><option value="winningBid">Winning bid</option><option value="value">County value</option><option value="bidToValue">Bid to value</option><option value="auctionDate">Auction date</option></select></label><button type="button" id="csvBtn">Download CSV (in view)</button></div>
+    <div class="reshead"><h2 id="resTitle">Parcels</h2><label class="inline">Sort by <select id="sortBy"><option value="dealScore">Deal score</option><option value="headroom">Headroom</option><option value="minBid">Opening bid</option><option value="winningBid">Winning bid</option><option value="value">County value</option><option value="bidToValue">Bid to value</option><option value="auctionDate">Auction date</option><option value="miles">Distance</option><option value="excess">Excess funds</option></select></label><button type="button" id="csvBtn">Download CSV (in view)</button></div>
     <div class="tablewrap tall"><table class="data sortable" id="grid"></table></div>
     <p class="muted small" id="gridNote"></p>
   </section>
@@ -98,6 +109,7 @@
 <dialog id="detail" class="detail"><div id="detailBody"></div><form method="dialog"><button class="closebtn" aria-label="Close">Close</button></form></dialog>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
-<script src="analyzer.js?v=20261018c"></script>
+<script src="common.js?v=20261018d"></script>
+<script src="analyzer.js?v=20261018d"></script>
 </body>
 </html>

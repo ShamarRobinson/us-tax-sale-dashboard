@@ -9,6 +9,10 @@ on:
         description: "Recrawl every county website for sale links (not just stale ones)"
         type: boolean
         default: false
+      send_test_email:
+        description: "Send a test alert digest"
+        type: boolean
+        default: false
   push:
     branches: [main]
     paths:
@@ -37,6 +41,17 @@ jobs:
           if [ "${{ inputs.recrawl_links }}" = "true" ]; then python discover_links.py --stale 0 --threads 24; else python discover_links.py --threads 24; fi
       - name: Fetch every source, rebuild the registry and the master CSV
         run: python fetch_all.py
+      - name: Email the digest of newly posted and upcoming sales (only when alert secrets are set)
+        if: github.event_name != 'push'
+        env:
+          ALERT_TO: ${{ secrets.ALERT_TO }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          ALERT_STATES: ${{ secrets.ALERT_STATES }}
+          ALERT_TEST: ${{ inputs.send_test_email }}
+        run: python notify.py
       - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deal Sheet</title>
+<meta name="description" content="A one-page printable deal sheet for a single parcel from the US Tax Sale Tracker.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<style>
+  :root { --blue: #1f5fbf; --blue-dark: #174a96; --rule: #c9d4e5; --text: #0b0b0b; --text-2: #52514e; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 13px/1.45 Inter, system-ui, sans-serif; color: var(--text); background: #fff; }
+  .page { max-width: 8.5in; margin: 0 auto; padding: 0.45in 0.5in; }
+  .band { background: var(--blue); color: #fff; padding: 12px 16px; border-radius: 8px; display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+  .band h1 { margin: 0; font-size: 20px; } .band .sub { font-size: 12px; opacity: .9; }
+  .pill { display: inline-block; border: 1px solid #000; border-radius: 99px; padding: 1px 9px; font-size: 12px; font-weight: 600; background: #fff; color: var(--text); }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 14px; }
+  .box { border: 1px solid #000; border-radius: 8px; padding: 10px 12px; }
+  .box h2 { margin: 0 0 6px; font-size: 13px; color: var(--blue-dark); text-transform: uppercase; letter-spacing: .04em; }
+  .kv div { display: flex; justify-content: space-between; gap: 10px; padding: 3px 0; border-bottom: 1px dashed var(--rule); }
+  .kv span:first-child { color: var(--text-2); } .kv span:last-child { text-align: right; font-weight: 600; }
+  .media { height: 230px; border: 1px solid #000; border-radius: 8px; overflow: hidden; background: #eef1f5; }
+  .media img, .media iframe { width: 100%; height: 100%; border: 0; object-fit: cover; }
+  #map { height: 230px; border: 1px solid #000; border-radius: 8px; }
+  .score { font-size: 34px; font-weight: 700; color: var(--blue-dark); line-height: 1; }
+  ul.parts { margin: 6px 0 0; padding-left: 18px; font-size: 12px; } ul.parts li { margin: 2px 0; }
+  table.mini { width: 100%; border-collapse: collapse; font-size: 12px; } table.mini th, table.mini td { padding: 3px 6px; border-bottom: 1px solid var(--rule); text-align: left; } table.mini td.num, table.mini th.num { text-align: right; }
+  .notes { margin-top: 14px; } .notes .line { border-bottom: 1px solid var(--rule); height: 22px; }
+  .links { margin-top: 10px; font-size: 11.5px; color: var(--text-2); word-break: break-all; }
+  .foot { margin-top: 12px; font-size: 10.5px; color: var(--text-2); border-top: 1px solid #000; padding-top: 6px; }
+  .toolbar { display: flex; gap: 8px; justify-content: flex-end; margin-bottom: 10px; }
+  .toolbar button { font: inherit; font-weight: 600; padding: 6px 12px; border: 1px solid #000; border-radius: 8px; background: #fff; cursor: pointer; }
+  @media print { .toolbar { display: none; } .page { padding: 0; max-width: none; } body { font-size: 12px; } .media, #map { height: 210px; } }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="toolbar"><button type="button" onclick="window.print()">Print or save as PDF</button><button type="button" onclick="history.back()">Back</button></div>
+  <div id="sheet">Loading…</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="common.js?v=20261018d"></script>
+<script>
+(async function () {
+  const T = window.TS, { $, esc, money, money2, int, fmtDate, NOWYEAR, prepCounty, photos, svUrl, gmapUrl, redemptionTable } = T;
+  const q = new URLSearchParams(location.search), fips = q.get("fips"), id = q.get("id");
+  try {
+    const [reg, d] = await Promise.all([fetch("data/registry.json").then((r) => r.json()), fetch(`data/counties/${fips}.json`).then((r) => r.json())]);
+    const c = reg.counties.find((x) => x.fips === fips), st = reg.states.find((s) => s.abbr === c.state);
+    const prep = prepCounty(d, c);
+    const p = prep.all.find((x) => x.id === id) || prep.all.find((x) => x.key === (id || "").split("|").pop());
+    if (!p) { $("sheet").textContent = "Parcel not found."; return; }
+    document.title = `Deal Sheet: ${p.parcel || p.lot || ""} ${c.label}`;
+    const ph = photos(p)[0], sv = svUrl(p), gm = gmapUrl(p, c.label, st.name);
+    const kv = (rows) => `<div class="kv">${rows.filter((r) => r[1] !== "" && r[1] != null).map(([k, v]) => `<div><span>${k}</span><span>${v}</span></div>`).join("")}</div>`;
+    $("sheet").innerHTML = `
+      <div class="band"><div><h1>${esc(p.parcel || p.lot || p.caseNo || "Parcel")}</h1><div class="sub">${esc(p.fullAddress || p.address || "No address published")} · ${esc(c.label)}, ${esc(st.name)}</div></div><div><span class="pill">${esc(st.systemLabel)}</span> <span class="pill">${esc(p.status)}</span></div></div>
+      <div class="grid">
+        <div class="media">${ph ? `<img src="${esc(ph)}" alt="Photo">` : sv ? `<iframe src="${sv}" title="Street View"></iframe>` : `<div style="padding:20px;color:#5b6778">No image on file</div>`}</div>
+        <div id="map"></div>
+        <div class="box"><h2>The Numbers</h2>${kv([["Sale", `${fmtDate(p._date)}${p._upcoming ? " (upcoming)" : ""}`], ["Amount owed / opening bid", money2(p.minBid)], ["Sold for", p.winningBid > 0 ? money(p.winningBid) : ""], ["Multiple", p.multiple ? p.multiple.toFixed(2) + "x" : ""], ["Excess funds", money(p.excess)], ["County value", money(p.value)], ["Bid to value", p.value && p.minBid != null ? Math.round(100 * p.minBid / p.value) + "%" : ""], ["Current taxes", money(p.taxes)], ["Buyer", esc(p.buyer)]])}</div>
+        <div class="box"><h2>The Property</h2>${kv([["Type", esc(p.cat) + (p.type && p.type !== p.cat ? ` (${esc(p.type)})` : "")], ["Area", esc(p.area)], ["Owner", esc(p.owner)], ["Lot size", p.acres != null ? p.acres + " acres" : ""], ["Home sq ft", p.sqft ? int(p.sqft) : ""], ["Year built", p.yearBuilt ? `${p.yearBuilt} (${NOWYEAR - p.yearBuilt} years)` : ""], ["Years unpaid", (p.defaultYrs ?? p.yearsUnpaid) != null ? (+(p.defaultYrs ?? p.yearsUnpaid)).toFixed(1) : ""], ["Former owner held", p.tenure != null ? Math.round(p.tenure) + " years" : ""], ["Prior auctions on file", (p.priors || []).length || ""], ["Coordinates", p.lat ? `${(+p.lat).toFixed(5)}, ${(+p.lon).toFixed(5)}` : ""]])}</div>
+        <div class="box"><h2>Deal Score</h2><div class="score">${p.score} <span style="font-size:16px">${esc(p.rating)}</span></div><ul class="parts">${p.ds.parts.map((x) => `<li><b>${x[0]} ${x[1]}/${x[2]}:</b> ${esc(x[3])}</li>`).join("")}</ul></div>
+        <div class="box"><h2>${esc(st.name)} Rules</h2>${kv([["Who holds the sale", esc(c.run || st.conducted_by)], ["When", esc(st.sale_timing)], ["Bidding", esc(st.bidding)], ["Rate or penalty", esc(st.rate)], ["Redemption", esc(st.redemption)], ["Statute", esc(st.statute)]])}</div>
+        <div class="box" style="grid-column:1/-1"><h2>If The Owner Redeems</h2>${redemptionTable(st, p.winningBid || p.minBid || 0)}</div>
+      </div>
+      <div class="notes box" style="margin-top:14px"><h2>Due Diligence Notes</h2><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div></div>
+      <div class="links">${[p.parcelInfo && "Parcel record: " + p.parcelInfo, p.parcelMap && "County map: " + p.parcelMap, p.link && "Listing: " + p.link, p._src && "Source: " + p._src, c.taxsale && "County tax sale page: " + c.taxsale, gm && "Google Maps: " + gm, "Tracker: " + location.origin + location.pathname.replace(/sheet\\.html$/, "") + "#c/" + c.fips].filter(Boolean).map(esc).join("<br>")}</div>
+      <div class="foot">Printed ${new Date().toLocaleDateString("en-US", { dateStyle: "medium" })} from the US Tax Sale Tracker. Scores are a screening aid, not advice; every figure comes from the county or auction source named above. Confirm with the county before bidding.</div>`;
+    const m = L.map("map", { zoomControl: false, scrollWheelZoom: false, dragging: false });
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 19, attribution: "&copy; OpenStreetMap" }).addTo(m);
+    if (p.lat && p.lon) { L.circleMarker([p.lat, p.lon], { radius: 9, color: "#000", weight: 1.5, fillColor: "#eb6834", fillOpacity: 0.9 }).addTo(m); m.setView([p.lat, p.lon], 15); } else m.setView([c.lat, c.lon], 9);
+  } catch (e) { $("sheet").textContent = "Could not load the parcel: " + e.message; }
+})();
+</script>
+</body>
+</html>

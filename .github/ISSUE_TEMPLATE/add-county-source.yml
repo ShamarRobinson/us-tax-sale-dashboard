@@ -1,0 +1,30 @@
+name: Add a county source
+description: Point the tracker at a page that lists a county's tax sales, sheriff sales or results
+title: "Source: [County], [State]"
+labels: [source]
+body:
+  - type: input
+    id: county
+    attributes:
+      label: County and state
+      placeholder: Harris County, TX
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Page that lists the sales
+      description: A spreadsheet, PDF, HTML table or JSON that can be read automatically
+      placeholder: https://...
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What the page contains
+      options: [Upcoming sale list, Results with winning bids, Excess funds list, Sheriff or foreclosure sales, Several of these]
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else
+      description: How often it updates, whether it needs a login, which fields it has

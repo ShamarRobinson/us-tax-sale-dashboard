@@ -114,7 +114,25 @@ def summarize(rec):
 
 # ---------- main ----------
 
+def write_ics(path, events, name):
+    """Minimal iCalendar file of all-day events."""
+    stamp = dt.datetime.now(dt.timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+    def esc(v):
+        v = str(v or "")
+        v = v.replace(chr(92), chr(92) * 2).replace(chr(10), chr(92) + "n")
+        return v.replace(",", chr(92) + ",").replace(";", chr(92) + ";")
+    lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//US Tax Sale Tracker//EN", f"X-WR-CALNAME:{esc(name)}"]
+    for ev in events:
+        d = dt.date.fromisoformat(ev["date"])
+        lines += ["BEGIN:VEVENT", f"UID:{esc(ev['uid'])}@ustaxsale", f"DTSTAMP:{stamp}", f"DTSTART;VALUE=DATE:{d:%Y%m%d}", f"DTEND;VALUE=DATE:{d + dt.timedelta(days=1):%Y%m%d}",
+                  f"SUMMARY:{esc(ev['title'])}", f"DESCRIPTION:{esc(ev.get('desc'))}", f"URL:{esc(ev.get('url'))}", "END:VEVENT"]
+    lines.append("END:VCALENDAR")
+    with open(path, "w", encoding="utf-8") as f:
+        f.write("\r\n".join(lines))
+
+
 def main(offline=False):
+    previous = load_json(os.path.join(DATA, "index.json")) or {}
     counties = build_counties()
     by_fips = {c["fips"]: c for c in counties}
     print(f"{len(counties)} counties in the registry")
@@ -208,6 +226,9 @@ def main(offline=False):
         if d.get("lastSale"):
             c["lastSale"] = d["lastSale"]
 
+    for c in counties:
+        c["coverage"] = sum([1, bool(c.get("site")), bool(c.get("taxsale")), bool(c.get("data")), bool(c.get("data") and c["data"].get("photos"))])
+
     # drop empty keys to keep the registry small
     slim = []
     for c in counties:
@@ -246,6 +267,28 @@ def main(offline=False):
         upcomingPosted=upcoming[:200], sources=source_status,
     )
     dump(os.path.join(DATA, "index.json"), index, compact=False)
+
+    # what changed since the previous refresh
+    prev_up = {(u["fips"], u["date"]) for u in previous.get("upcomingPosted", [])}
+    prev_with = set(previous.get("countiesWithData", []))
+    now_with = sorted(c["fips"] for c in counties if c.get("data"))
+    index["countiesWithData"] = now_with
+    dump(os.path.join(DATA, "index.json"), index, compact=False)
+    changes = dict(generated=generated, previous=previous.get("generated"),
+                   newUpcoming=[u for u in upcoming if (u["fips"], u["date"]) not in prev_up],
+                   newCounties=[f for f in now_with if f not in prev_with] if prev_with else [],
+                   parcelDelta=(index["parcels"] - previous["parcels"]) if previous.get("parcels") is not None else 0,
+                   linkDelta=(index["withTaxSaleLink"] - previous["withTaxSaleLink"]) if previous.get("withTaxSaleLink") is not None else 0)
+    dump(os.path.join(DATA, "changes.json"), changes, compact=False)
+
+    # calendar of every posted sale date plus each state's next statutory date
+    site = "https://shamarrobinson.github.io/us-tax-sale-dashboard/"
+    events = [dict(date=u["date"], uid=f"{u['fips']}-{u['date']}", title=f"{u['name']}, {u['state']}: tax sale ({u['parcels'] or 0} parcels on file)", desc=u.get("page") or "", url=f"{site}#c/{u['fips']}") for u in upcoming]
+    for s in states_out:
+        if s.get("nextStatutory"):
+            events.append(dict(date=s["nextStatutory"], uid=f"{s['abbr']}-{s['nextStatutory']}", title=f"{s['name']}: statutory sale date ({s['sale_timing']})", desc=s["summary"], url=f"{site}#{s['abbr'].lower()}"))
+    write_ics(os.path.join(DATA, "upcoming.ics"), sorted(events, key=lambda e: e["date"]), "US tax sales")
+
     n = master.build(counties, records, DATA)
     print(f"wrote data/master_parcels.csv and data/master.json ({n} parcels), data/master_counties.csv")
     print(f"wrote data/registry.json ({os.path.getsize(os.path.join(DATA, 'registry.json'))//1024} KB), "

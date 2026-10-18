@@ -142,3 +142,58 @@ button:hover { background: var(--blue-tint); }
 .foot { margin-top: 22px; line-height: 1.6; border-top: 1px solid #000; padding-top: 12px; }
 .open { color: #0f7a3d; font-weight: 600; }
 @media (max-width: 560px) { h1 { font-size: 25px; } .kpi .value { font-size: 22px; } .map { height: 280px; } .map.tallmap { height: 340px; } .countyhead h2 { font-size: 20px; } .kpis { grid-template-columns: 1fr 1fr; } }
+
+/* county page additions ported from the Atlanta and Clark trackers */
+.searchrow { display: flex; gap: 8px; }
+.searchrow select { flex: none; min-height: 46px; border-radius: 10px; }
+.searchrow input { flex: 1; }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.actions button { font-size: 13px; }
+.redeem { margin-top: 12px; }
+.redeem h3 { color: var(--blue-dark); }
+table.mini { width: 100%; margin: 6px 0 10px; font-size: 0.86rem; }
+table.mini td, table.mini th { padding: 5px 8px; }
+.warstats { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.stat { border: 1px solid #000; border-radius: 10px; padding: 10px 12px; }
+.stat .v { font-size: 22px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.stat .l { font-size: 12.5px; color: var(--text-2); }
+.kind { display: inline-block; font-size: 11px; padding: 1px 7px; border-radius: 99px; border: 1px solid #000; white-space: nowrap; }
+.kind.results, .kind.taxdeed { background: #e5f6ee; } .kind.excess { background: #fff4dc; } .kind.list { background: var(--blue-tint); } .kind.foreclosure, .kind.sheriff { background: #f1e9fb; }
+.pill.ok { border-color: color-mix(in srgb, #1baf7a 60%, transparent); color: #0f7a3d; }
+.pill.r-strong { border-color: #159c6c; color: #0f7a3d; background: #e5f6ee; }
+.pill.r-good { border-color: #2a78d6; color: #1d5fae; background: var(--blue-tint); }
+.pill.r-fair { border-color: #eda100; color: #8a5d00; background: #fff4dc; }
+.pill.r-weak { color: var(--text-3); }
+button.copy { display: inline-block; font: inherit; font-size: 11px; font-weight: 600; padding: 1px 8px; margin-left: 4px; min-height: 0; height: auto; border: 1px solid #000; border-radius: 99px; background: var(--blue-tint); color: var(--blue-dark); cursor: pointer; line-height: 1.45; vertical-align: 1px; white-space: nowrap; }
+button.copy:hover { background: var(--blue); color: #fff; } button.copy.ok { background: #e5f6ee; color: #0f7a3d; }
+button.linkbtn { font: inherit; font-size: inherit; padding: 0; min-height: 0; border: 0; background: none; color: var(--blue); text-decoration: underline; cursor: pointer; white-space: nowrap; }
+button.star { font: inherit; font-size: 17px; line-height: 1; padding: 0 4px; min-height: 0; border: 0; background: none; color: var(--text-3); cursor: pointer; vertical-align: -1px; }
+button.star.on { color: #eda100; }
+.colmenu { position: relative; }
+.colpanel { position: absolute; right: 0; top: calc(100% + 6px); z-index: 20; background: #fff; border: 1px solid #000; border-radius: 10px; box-shadow: 0 8px 24px rgba(0,0,0,.14); padding: 8px; min-width: 320px; max-height: 380px; overflow: auto; }
+.colrow { display: flex; align-items: center; gap: 6px; padding: 3px 4px; font-size: 13px; }
+.colrow label { flex: 1; display: flex; align-items: center; gap: 8px; cursor: pointer; justify-content: flex-start; text-align: left; }
+.colrow button { min-height: 0; padding: 1px 7px; font-size: 12px; }
+.colpanel input[type=checkbox] { flex: none; width: 16px; height: 16px; padding: 0; min-height: 0; margin: 0; }
+.chipbar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 0 0 10px; font-size: 13px; color: var(--text-2); }
+.chipbar button { min-height: 0; padding: 3px 10px; border-radius: 99px; font-size: 12.5px; }
+th.dragging { opacity: .4; } th.dropzone { box-shadow: inset 3px 0 0 var(--accent); }
+table.data tfoot td { font-weight: 700; border-top: 1px solid #000; background: var(--blue-tint); position: sticky; bottom: 0; }
+tr.pivotrow { cursor: pointer; } tr.pivotrow:hover td { background: var(--blue-tint); }
+tr.flash td { animation: flash 2.5s ease-out; } @keyframes flash { 0% { background: #fff4dc; } 100% { background: transparent; } }
+.areabar { display: flex; align-items: center; justify-content: space-between; gap: 10px; min-height: 32px; margin-bottom: 6px; font-size: 13px; }
+.areabar button { min-height: 0; padding: 3px 10px; font-size: 12.5px; border-radius: 99px; }
+#tAreas tr.arearow { cursor: pointer; } #tAreas tr.arearow:hover td { background: var(--blue-tint); }
+#tAreas tr.arearow.sel td { background: var(--blue-tint); } #tAreas tr.arearow.sel td:first-child { box-shadow: inset 4px 0 0 var(--blue); font-weight: 700; }
+.areaname { border-bottom: 1px dashed var(--text-3); }
+.scorehelp { margin-top: 12px; font-size: 13.5px; color: var(--text-2); } .scorehelp summary { font-weight: 600; color: var(--accent); cursor: pointer; } .scorehelp ul { margin: 6px 0; padding-left: 20px; }
+.watchnote { margin-top: 12px; } .watchnote label { display: block; font-size: 12.5px; font-weight: 600; color: var(--text-2); } .watchnote textarea { width: 100%; margin-top: 4px; }
+.lightbox .lbthumbs { display: flex; gap: 6px; flex-wrap: wrap; padding: 8px 20px 0; }
+.lightbox .lbthumbs button { padding: 2px; min-height: 0; width: 64px; height: 48px; overflow: hidden; font-size: 10px; } .lightbox .lbthumbs button img { width: 100%; height: 100%; object-fit: cover; } .lightbox .lbthumbs button.on { outline: 2px solid var(--blue); }
+.lightbox .lbmedia { padding: 16px 20px 0; } .lightbox #lbCredit { padding: 0 20px; } .lightbox #lbInfo { padding: 0 20px; }
+.lightbox .lbmedia img, .lightbox .lbmedia iframe { width: 100%; height: 420px; border: 0; border-radius: 8px; object-fit: contain; background: #eef1f5; }
+.lightbox .na.big { display: flex; align-items: center; justify-content: center; height: 200px; color: var(--text-3); }
+.dlinks button.primary { background: var(--blue); color: #fff; min-height: 0; padding: 4px 12px; }
+.kpilink { color: var(--blue); }
+.btnlink { display: inline-block; font-size: 13px; font-weight: 600; padding: 7px 10px; border: 1px solid #000; border-radius: 8px; background: #fff; color: var(--blue-dark); text-decoration: none; min-height: 36px; }
+.btnlink:hover { background: var(--blue-tint); }

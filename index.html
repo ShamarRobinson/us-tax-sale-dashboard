@@ -9,8 +9,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
-<link rel="stylesheet" href="style.css?v=20261018c">
-<link rel="stylesheet" href="analyzer.css?v=20261018c">
+<link rel="stylesheet" href="style.css?v=20261018d">
+<link rel="stylesheet" href="analyzer.css?v=20261018d">
 </head>
 <body>
 <header class="top">
@@ -19,11 +19,11 @@
     <div class="titlerow"><h1>US Tax Sale Tracker</h1><nav class="toplinks"><a href="analyzer.html">Property Deal Analyzer</a><a href="data/master_parcels.csv" download>Master CSV (parcels)</a><a href="data/master_counties.csv" download>Master CSV (counties)</a></nav></div>
     <div class="freshness" id="freshness">Loading data&hellip;</div>
     <div class="searchbox">
-      <input id="gSearch" type="search" autocomplete="off" placeholder="Search every county: name, state, sale type, who runs it..." aria-label="Search all counties">
-      <div class="examples">Try: <button type="button" data-q="state:tx">state:tx</button><button type="button" data-q="type:lien next:2026-12">type:lien next:2026-12</button><button type="button" data-q="data:yes state:mi">data:yes state:mi</button><button type="button" data-q="run:sheriff">run:sheriff</button><button type="button" id="searchHelpBtn">How search works</button></div>
+      <div class="searchrow"><select id="searchMode" aria-label="What to search"><option value="counties">Counties</option><option value="parcels">Parcels</option></select><input id="gSearch" type="search" autocomplete="off" placeholder="Search every county: name, state, sale type, who runs it..." aria-label="Search"></div>
+      <div class="examples">Try: <button type="button" data-q="state:tx">state:tx</button><button type="button" data-q="type:lien next:2026-12">type:lien next:2026-12</button><button type="button" data-q="data:yes state:mi">data:yes state:mi</button><button type="button" data-q="run:sheriff">run:sheriff</button><button type="button" data-q="county:gwinnett won>100000" data-mode="parcels">county:gwinnett won&gt;100000</button><button type="button" data-q="status:listed score>70" data-mode="parcels">status:listed score&gt;70</button><button type="button" id="searchHelpBtn">How search works</button></div>
       <div class="searchhelp" id="searchHelp" hidden>
-        Type words to match a county or state name (all words must match). Narrow with <code>field:value</code>.<br>
-        Fields: <code>state</code> (abbreviation) &middot; <code>type</code> (deed, lien, redeemable, hybrid) &middot; <code>data</code> (yes or no: parcel data on file) &middot; <code>run</code> (who holds the sale, e.g. sheriff, treasurer, clerk) &middot; <code>platform</code> (bid4assets, realauction, govease...) &middot; <code>next</code> (sales on or before a date, e.g. <code>next:2026-12-31</code>) &middot; <code>pop</code> with <code>&gt;</code> or <code>&lt;</code> (e.g. <code>pop&gt;500k</code>) &middot; <code>unit</code> (parish, borough, city...)
+        <b>Counties:</b> type words to match a county or state name (all words must match). Narrow with <code>field:value</code>: <code>state</code> (abbreviation) &middot; <code>type</code> (deed, lien, redeemable, hybrid) &middot; <code>data</code> (yes or no: parcel data on file) &middot; <code>run</code> (who holds the sale) &middot; <code>platform</code> &middot; <code>next</code> (sales on or before a date, e.g. <code>next:2026-12-31</code>) &middot; <code>pop</code> with <code>&gt;</code> or <code>&lt;</code> (e.g. <code>pop&gt;500k</code>) &middot; <code>unit</code> (parish, borough, city...)<br>
+        <b>Parcels</b> (every parcel on file, all counties): <code>county</code> <code>state</code> <code>parcel</code> <code>owner</code> <code>address</code> <code>area</code> <code>type</code> <code>buyer</code> <code>status</code> <code>kind</code> <code>date</code> and numbers with <code>&gt;</code>, <code>&lt;</code> or <code>=</code> (k for thousands): <code>owed</code> <code>won</code> <code>multiple</code> <code>excess</code> <code>value</code> <code>score</code> <code>acres</code> <code>sqft</code> <code>age</code> <code>built</code> <code>year</code>
       </div>
     </div>
   </div>
@@ -47,6 +47,10 @@
   <!-- NATIONAL OVERVIEW -->
   <div id="viewNation">
     <section class="kpis" id="nKpis"></section>
+    <section class="card" id="nChanges" hidden>
+      <div class="head"><h2>What Changed In This Refresh</h2></div>
+      <div id="nChangesBody"></div>
+    </section>
     <section class="card">
       <div class="head"><h2>How Each State Sells Delinquent Property</h2><p>Click a state to open its rules and county list. Four systems exist: the county sells the property itself (tax deed), sells a lien that earns interest until the owner redeems (tax lien), sells a deed the owner can still buy back for a set time (redeemable deed), or does both in sequence (hybrid).</p></div>
       <div class="grid2">
@@ -83,10 +87,15 @@
       <div class="chead"><div><h2 id="sName"></h2><p class="muted" id="sSub"></p></div><div id="sPill"></div></div>
       <p class="takeaway" id="sSummary"></p>
       <div class="cinfo" id="sInfo"></div>
+      <div class="actions" id="sActions"></div>
+    </section>
+    <section class="card" id="sPrices" hidden>
+      <div class="head"><h2>Prices Across Counties</h2><p>Counties in this state with published winning bids. Click a bar to open the county.</p></div>
+      <div class="crumbs" id="sPriceCrumb"></div><div class="chart"><canvas id="sPriceChart"></canvas></div>
     </section>
     <section class="card">
       <div class="head"><h2>Counties At A Glance</h2><p>Group the counties, then click a bar to list the counties in that group, then click a county to open it.</p></div>
-      <div class="filters gridbar"><label class="inline">Group by <select id="sGroup"><option value="status">Data on file</option><option value="month">Next sale month</option><option value="pop">Population tier</option><option value="run">Who holds the sale</option></select></label></div>
+      <div class="filters gridbar"><label class="inline">Group by <select id="sGroup"><option value="status">Data on file</option><option value="month">Next sale month</option><option value="pop">Population tier</option><option value="run">Who holds the sale</option><option value="coverage">Coverage</option></select></label></div>
       <div class="crumbs" id="sChartCrumb"></div><div class="chart"><canvas id="sChart"></canvas></div>
     </section>
     <section class="card">
@@ -109,38 +118,66 @@
       </div>
       <div class="cinfo" id="cInfo"></div>
       <p class="takeaway" id="cNote" hidden></p>
-      <details class="rules"><summary><h3 id="cRulesTitle">State Rules</h3></summary><div class="cinfo" id="cRules"></div></details>
+      <div class="actions" id="cActions"></div>
+      <details class="rules"><summary><h3 id="cRulesTitle">State Rules</h3></summary><div class="cinfo" id="cRules"></div><div class="redeem" id="cRedeem"></div></details>
     </section>
     <div id="cEmpty" class="card" hidden></div>
     <div id="cBody" hidden>
       <section class="kpis" id="cKpis"></section>
       <section class="card" id="secTiers">
-        <div class="head"><h2>Cost Tiers</h2><p>Parcels grouped by the amount owed or opening bid. Click a tier to see its parcels (opening bid against winning bid), then a parcel for its details.</p></div>
+        <div class="head"><h2>Cost Tiers</h2><p>Parcels grouped by the amount owed or opening bid. Click a tier to see its parcels (amount owed against winning bid), then a parcel for its details.</p></div>
         <div class="grid2"><div><div class="crumbs" id="cTiersCrumb"></div><div class="chart"><canvas id="cTiers"></canvas></div></div><div class="tablewrap"><table class="data" id="tTiers"></table></div></div>
+        <p class="takeaway" id="kTiers"></p>
+      </section>
+      <section class="card" id="secTypes">
+        <div class="head"><h2>Parcel Types</h2><p>Vacant land, single-family, condo or townhouse, manufactured, multi-family and commercial, from county land-use records or the auction catalog. Click a type to see its parcels ranked by deal score.</p></div>
+        <div class="grid2"><div><div class="crumbs" id="cTypesCrumb"></div><div class="chart"><canvas id="cTypes"></canvas></div></div><div class="tablewrap"><table class="data" id="tTypes"></table></div></div>
+        <p class="takeaway" id="kTypes"></p>
       </section>
       <section class="card" id="secHistory">
-        <div class="head"><h2>Auction History</h2><p>Every sale on file for this county. Click a bar to switch the auction picker to that sale. The right chart shows the average winning bid where it was published.</p></div>
+        <div class="head"><h2>Auction History</h2><p>Every sale on file for this county. Click a bar or a row to switch the auction picker to that sale. The right chart shows the average winning bid where it was published.</p></div>
         <div class="grid2"><div class="chart short"><canvas id="cHist"></canvas></div><div class="chart short"><canvas id="cHistBid"></canvas></div></div>
         <div class="tablewrap tall mt"><table class="data sortable" id="tHist"></table></div>
       </section>
+      <section class="card" id="secBids">
+        <div class="head"><h2>Bidding Wars</h2><p>How far above the amount owed parcels sold. A multiple of 1.0x means it sold for exactly what was owed. Click a bar to see the parcels in that band; click a buyer to see everything they won.</p></div>
+        <div class="grid2"><div><div class="crumbs" id="cMultCrumb"></div><div class="chart short"><canvas id="cMult"></canvas></div></div><div><div class="warstats" id="cWar"></div><h3 class="mt">Biggest Bidding Wars</h3><div class="tablewrap"><table class="data" id="tWars"></table></div></div></div>
+        <h3 class="mt" id="buyersTitle">Most Active Buyers</h3><div class="tablewrap"><table class="data" id="tBuyers"></table></div>
+      </section>
       <section class="card" id="secMap">
-        <div class="head"><h2>Location</h2><p>Parcels in the auction picked above, placed where the source published coordinates. Dot size follows the winning bid or the amount owed.</p></div>
-        <div id="cMap" class="map" role="img" aria-label="Map of parcels"></div>
-        <p class="muted small" id="mapNote"></p>
+        <div class="head"><h2>Location</h2><p>Parcels placed where the source published coordinates, and the average winning bid and bidding-war rate by area. Click an area to highlight it on the map and filter the parcel grid.</p></div>
+        <div class="grid2">
+          <div><div id="cMap" class="map tallmap" role="img" aria-label="Map of parcels"></div><p class="muted small" id="mapNote"></p></div>
+          <div><div class="areabar"><span id="areaNote"></span><button type="button" id="areaClear" hidden>Clear</button></div><div class="tablewrap tall"><table class="data" id="tAreas"></table></div></div>
+        </div>
+        <p class="takeaway" id="kAreas"></p>
+      </section>
+      <section class="card" id="secTenure">
+        <div class="head"><h2>Time In Default And Unclaimed Money</h2><p>How long taxes went unpaid before the sale (or how long former owners held the parcel), and the excess funds sitting with the county after sales above the amount owed.</p></div>
+        <div class="grid2">
+          <div><h3 id="tenureTitle">Years taxes went unpaid before the sale</h3><div class="chart short"><canvas id="cTenure"></canvas></div></div>
+          <div><h3>Excess Funds Waiting For Former Owners</h3><div class="tablewrap"><table class="data" id="tClaims"></table></div></div>
+        </div>
+        <p class="takeaway" id="kTenure"></p>
       </section>
       <section class="card" id="parcels">
-        <div class="head"><h2>All Parcels</h2><p>Every parcel in the auction picked above. Click a column header to sort and a row for details. <b>Multiple</b> is the winning bid divided by the opening bid.</p></div>
+        <div class="head"><h2>All Parcels</h2><p>Every parcel in the auction picked above. Click a column header to sort, drag a header to reorder, use <b>Columns</b> to show, hide or pivot columns, and <b>Pivot by</b> to summarize; click a pivot row to filter the grid to that group. Click a row for details. Every address has a <b>Copy</b> button. <b>Parcel record</b> opens the county assessor's record, <b>County map</b> the county's parcel map, <b>Listing</b> the auction catalog, and <b>Google Maps</b> the address or the parcel's coordinates. <b>Prior Auctions</b> counts earlier sales on file for the same parcel. The star adds a parcel to your watchlist (kept in this browser; see the analyzer).</p>
+          <p class="small muted"><b>Deal Score</b> (0 to 100) is a screening aid, not advice: value 40 (cost against county value, or entry cost when no value is published), property 20 (type from county records; improved beats vacant), market 15 (county population), competition 15 (how far above the amount owed parcels sell), history 10 (earlier auctions for the same parcel). 70 and up Strong, 50 to 69 Good, 35 to 49 Fair, under 35 Weak. Open any parcel to see how its score was built.</p></div>
         <div class="filters gridbar">
-          <input id="fSearch" type="search" placeholder="Search parcel, owner, address or buyer">
+          <input id="fSearch" type="search" placeholder="Search parcel, owner, address, buyer or area">
+          <label class="inline">Pivot by <select id="pivotBy"></select></label>
+          <div class="colmenu"><button type="button" id="colBtn">Columns</button><div class="colpanel" id="colPanel" hidden></div></div>
           <button id="csvBtn" type="button">Download CSV</button>
         </div>
+        <div class="chipbar" id="pivotFilter" hidden></div>
         <div class="tablewrap tall"><table class="data sortable" id="parcelTable"></table></div>
         <p class="muted small" id="tableNote"></p>
       </section>
       <section class="card" id="gallery">
-        <div class="head"><h2>Parcel Photo Gallery</h2><p>One tile per parcel in the auction picked above. Stored photos come first (county assessor photos, auction catalog photos); where none is published, the tile shows a live Google Street View near the parcel. Click a tile for details.</p></div>
-        <div class="filters gbar"><label class="inline">Show <select id="gFilter"><option value="all">All with an image</option><option value="photo">Stored photos</option><option value="sv">Street View</option></select></label><span class="pager"><button type="button" id="gPrev">Previous</button><span id="gPage" class="muted small"></span><button type="button" id="gNext">Next</button></span></div>
+        <div class="head"><h2>Parcel Photo Gallery</h2><p>One tile per parcel in the auction picked above. Stored photos come first (county assessor and historic survey photos, auction catalog photos); where none is published, the tile shows a live Google Street View near the parcel. Parcels with neither show <b>Image N/A</b>. Click a tile to enlarge it and see the details.</p></div>
+        <div class="filters gbar"><label class="inline">Show <select id="gFilter"></select></label><span class="pager"><button type="button" id="gPrev">Previous</button><span id="gPage" class="muted small"></span><button type="button" id="gNext">Next</button></span></div>
         <div class="ggrid" id="gGrid"></div>
+        <p class="muted small" id="gNote"></p>
       </section>
     </div>
   </div>
@@ -148,11 +185,14 @@
   <footer class="foot muted small" id="foot"></footer>
 </main>
 
+<dialog id="lightbox" class="detail lightbox"><div id="lbMedia" class="lbmedia"></div><div id="lbThumbs" class="lbthumbs"></div><p id="lbCredit" class="small muted"></p><div id="lbInfo"></div><form method="dialog"><button class="closebtn" aria-label="Close">Close</button></form></dialog>
 <dialog id="detail" class="detail"><div id="detailBody"></div><form method="dialog"><button class="closebtn" aria-label="Close">Close</button></form></dialog>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
-<script src="app.js?v=20261018c"></script>
+<script src="common.js?v=20261018d"></script>
+<script src="county.js?v=20261018d"></script>
+<script src="app.js?v=20261018d"></script>
 </body>
 </html>

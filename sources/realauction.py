@@ -54,8 +54,8 @@ def sites_for(counties):
     for c in counties:
         if c["state"] == "FL":
             h = _host(c["name"])
-            yield c["fips"], "taxdeed", f"https://www.{h}.realtaxdeed.com"
-            yield c["fips"], "foreclosure", f"https://www.{h}.realforeclose.com"
+            yield c["fips"], "taxdeed", f"https://{h}.realtaxdeed.com"
+            yield c["fips"], "foreclosure", f"https://{h}.realforeclose.com"
         elif c["state"] == "OH":
             yield c["fips"], "sheriff", f"https://{_host(c['name'])}.sheriffsaleauction.ohio.gov"
         elif c["state"] == "TX":
@@ -68,8 +68,16 @@ class Site:
         self.jar = http.cookiejar.CookieJar()
         self.opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(self.jar))
 
+    HEADERS = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", "Accept-Language": "en-US,en;q=0.9", "Connection": "keep-alive",
+    }
+
     def get(self, path, timeout=40):
-        req = urllib.request.Request(self.base + path, headers={"User-Agent": UA, "Accept": "*/*", "X-Requested-With": "XMLHttpRequest"})
+        hdrs = dict(self.HEADERS)
+        if "Zmethod=UPDATE" in path or "ZMETHOD=UPDATE" in path:
+            hdrs.update({"Accept": "application/json, text/javascript, */*; q=0.01", "X-Requested-With": "XMLHttpRequest", "Referer": self.base + "/index.cfm?zaction=USER&zmethod=CALENDAR"})
+        req = urllib.request.Request(self.base + path, headers=hdrs)
         with self.opener.open(req, timeout=timeout) as r:
             return r.read().decode("utf-8", "replace")
 
@@ -190,6 +198,7 @@ def fetch(counties):
     checked = dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds")
     by_fips = {c["fips"]: c for c in counties}
     out = {}
+    refused = []
     for fips, kind, base in sites_for(counties):
         site = Site(base)
         if not site.resolves():
@@ -206,14 +215,22 @@ def fetch(counties):
                     mm -= 12; yy += 1
                 months.append((yy, mm))
             days = {}
+            blocked = None
             for yy, mm in months:
                 try:
                     for d in site.calendar(yy, mm):
                         if d["active"] or d["scheduled"]:
                             days[d["date"]] = d
+                except urllib.error.HTTPError as e:
+                    blocked = f"HTTP {e.code}"
+                    break
                 except Exception as e:
-                    print(f"  realauction/{base} calendar {yy}-{mm}: {e}")
+                    blocked = str(e)[:80]
+                    break
                 time.sleep(PAUSE)
+            if blocked:
+                refused.append(f"{urllib.parse.urlparse(base).hostname}: {blocked}")
+                continue
             if not days:
                 continue
             aucs = []
@@ -247,6 +264,8 @@ def fetch(counties):
             print(f"  {c['label']}, {c['state']} {kind}: {len(aucs)} sale days, {sum(len(a['parcels']) for a in aucs)} items")
         except Exception as e:
             print(f"  realauction/{base}: {e}")
+    if refused:
+        print(f"  {len(refused)} portals refused or unreachable, e.g. {'; '.join(refused[:5])}")
     for rec in out.values():
         rec["auctions"].sort(key=lambda a: a.get("date") or "", reverse=True)
     return out
