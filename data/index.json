@@ -1,11 +1,11 @@
 {
- "generated": "2026-10-18T16:51:02+00:00",
+ "generated": "2026-10-18T16:56:33+00:00",
  "counties": 3222,
  "states": 52,
- "withData": 204,
- "parcels": 26881,
- "auctions": 1713,
- "withTaxSaleLink": 1051,
+ "withData": 214,
+ "parcels": 27002,
+ "auctions": 1781,
+ "withTaxSaleLink": 1060,
  "withSite": 3061,
  "withSheriffLink": 378,
  "withAssessorLink": 1545,
@@ -208,6 +208,15 @@
    "page": "https://hamilton.sheriffsaleauction.ohio.gov"
   },
   {
+   "fips": "39091",
+   "state": "OH",
+   "name": "Logan County",
+   "date": "2026-10-21",
+   "kind": "posted",
+   "parcels": 14,
+   "page": "https://logan.sheriffsaleauction.ohio.gov"
+  },
+  {
    "fips": "39093",
    "state": "OH",
    "name": "Lorain County",
@@ -280,6 +289,15 @@
    "page": "https://butler.sheriffsaleauction.ohio.gov"
   },
   {
+   "fips": "39051",
+   "state": "OH",
+   "name": "Fulton County",
+   "date": "2026-10-22",
+   "kind": "posted",
+   "parcels": 5,
+   "page": "https://fulton.sheriffsaleauction.ohio.gov"
+  },
+  {
    "fips": "39089",
    "state": "OH",
    "name": "Licking County",
@@ -325,6 +343,15 @@
    "page": "https://clark.sheriffsaleauction.ohio.gov"
   },
   {
+   "fips": "39037",
+   "state": "OH",
+   "name": "Darke County",
+   "date": "2026-10-23",
+   "kind": "posted",
+   "parcels": 20,
+   "page": "https://darke.sheriffsaleauction.ohio.gov"
+  },
+  {
    "fips": "39049",
    "state": "OH",
    "name": "Franklin County",
@@ -350,6 +377,15 @@
    "kind": "posted",
    "parcels": 119,
    "page": "https://montgomery.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39123",
+   "state": "OH",
+   "name": "Ottawa County",
+   "date": "2026-10-23",
+   "kind": "posted",
+   "parcels": 15,
+   "page": "https://ottawa.sheriffsaleauction.ohio.gov"
   },
   {
    "fips": "39139",
@@ -919,6 +955,15 @@
    "page": "https://www.tax-sale.info/listings/catalog/2952"
   },
   {
+   "fips": "39097",
+   "state": "OH",
+   "name": "Madison County",
+   "date": "2026-10-30",
+   "kind": "posted",
+   "parcels": 12,
+   "page": "https://madison.sheriffsaleauction.ohio.gov"
+  },
+  {
    "fips": "39101",
    "state": "OH",
    "name": "Marion County",
@@ -1027,6 +1072,15 @@
    "page": "https://suwannee.realtaxdeed.com"
   },
   {
+   "fips": "39011",
+   "state": "OH",
+   "name": "Auglaize County",
+   "date": "2026-11-05",
+   "kind": "posted",
+   "parcels": 15,
+   "page": "https://auglaize.sheriffsaleauction.ohio.gov"
+  },
+  {
    "fips": "39055",
    "state": "OH",
    "name": "Geauga County",
@@ -1052,6 +1106,15 @@
    "kind": "posted",
    "parcels": 23,
    "page": "https://fairfield.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39087",
+   "state": "OH",
+   "name": "Lawrence County",
+   "date": "2026-11-06",
+   "kind": "posted",
+   "parcels": 17,
+   "page": "https://lawrence.sheriffsaleauction.ohio.gov"
   },
   {
    "fips": "39167",
@@ -1117,6 +1180,15 @@
    "page": "https://palmbeach.realtaxdeed.com"
   },
   {
+   "fips": "39027",
+   "state": "OH",
+   "name": "Clinton County",
+   "date": "2026-11-18",
+   "kind": "posted",
+   "parcels": 14,
+   "page": "https://clinton.sheriffsaleauction.ohio.gov"
+  },
+  {
    "fips": "12105",
    "state": "FL",
    "name": "Polk County",
@@ -1178,7 +1250,7 @@
   "realauction": {
    "label": "RealAuction portals (Florida Clerk tax deed and foreclosure sales, Ohio and Texas sheriff sales)",
    "url": "https://www.realauction.com/",
-   "counties": 84,
+   "counties": 94,
    "ok": true,
    "checked": "2026-10-18T10:12:21+00:00"
   }
@@ -1346,16 +1418,20 @@
   "39003",
   "39007",
   "39009",
+  "39011",
   "39013",
   "39017",
   "39023",
   "39025",
+  "39027",
   "39029",
   "39035",
+  "39037",
   "39041",
   "39043",
   "39045",
   "39049",
+  "39051",
   "39055",
   "39057",
   "39061",
@@ -1364,21 +1440,27 @@
   "39081",
   "39083",
   "39085",
+  "39087",
   "39089",
+  "39091",
   "39093",
   "39095",
+  "39097",
   "39099",
   "39101",
   "39103",
   "39109",
   "39113",
   "39119",
+  "39123",
   "39129",
   "39133",
   "39139",
   "39141",
   "39143",
   "39145",
+  "39147",
+  "39149",
   "39151",
   "39153",
   "39155",
