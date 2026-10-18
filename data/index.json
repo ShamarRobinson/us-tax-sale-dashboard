@@ -1,11 +1,11 @@
 {
- "generated": "2026-10-18T13:08:19+00:00",
+ "generated": "2026-10-18T13:58:33+00:00",
  "counties": 3222,
  "states": 52,
- "withData": 129,
- "parcels": 15614,
- "auctions": 800,
- "withTaxSaleLink": 999,
+ "withData": 134,
+ "parcels": 19082,
+ "auctions": 971,
+ "withTaxSaleLink": 1001,
  "withSite": 3061,
  "withSheriffLink": 378,
  "withAssessorLink": 1545,
@@ -18,6 +18,15 @@
   "hybrid": 426
  },
  "upcomingPosted": [
+  {
+   "fips": "12086",
+   "state": "FL",
+   "name": "Miami-Dade County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 2042,
+   "page": "https://miamidade.realtaxdeed.com"
+  },
   {
    "fips": "12071",
    "state": "FL",
@@ -80,6 +89,15 @@
    "kind": "posted",
    "parcels": 566,
    "page": "https://duval.realtaxdeed.com"
+  },
+  {
+   "fips": "12101",
+   "state": "FL",
+   "name": "Pasco County",
+   "date": "2026-10-29",
+   "kind": "posted",
+   "parcels": 162,
+   "page": "https://pasco.realtaxdeed.com"
   },
   {
    "fips": "26001",
@@ -514,6 +532,33 @@
    "page": "https://dekalbtaxga.gov/property-tax/tax-sales/"
   },
   {
+   "fips": "12115",
+   "state": "FL",
+   "name": "Sarasota County",
+   "date": "2026-11-04",
+   "kind": "posted",
+   "parcels": 347,
+   "page": "https://sarasota.realtaxdeed.com"
+  },
+  {
+   "fips": "12117",
+   "state": "FL",
+   "name": "Seminole County",
+   "date": "2026-11-12",
+   "kind": "posted",
+   "parcels": 50,
+   "page": "https://seminole.realtaxdeed.com"
+  },
+  {
+   "fips": "12083",
+   "state": "FL",
+   "name": "Marion County",
+   "date": "2026-11-18",
+   "kind": "posted",
+   "parcels": 867,
+   "page": "https://marion.realtaxdeed.com"
+  },
+  {
    "fips": "12099",
    "state": "FL",
    "name": "Palm Beach County",
@@ -567,10 +612,15 @@
   "12031",
   "12057",
   "12071",
+  "12083",
+  "12086",
   "12095",
   "12099",
+  "12101",
   "12103",
   "12105",
+  "12115",
+  "12117",
   "12127",
   "13013",
   "13015",
