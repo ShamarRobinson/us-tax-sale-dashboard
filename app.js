@@ -219,6 +219,7 @@
     const out = [];
     if (c.taxsale) out.push(`<a href="${esc(c.taxsale)}" target="_blank" rel="noopener">${c.taxsaleKind === "state" ? "State sale site" : "Tax sale page"}</a>`);
     else out.push(`<a href="${searchUrl(`${c.label} ${c.st.name} tax sale`)}" target="_blank" rel="noopener">Find sale page</a>`);
+    if (c.sheriffSale) out.push(`<a href="${esc(c.sheriffSale)}" target="_blank" rel="noopener">Sheriff sales</a>`);
     if (c.site) out.push(`<a href="${esc(c.site)}" target="_blank" rel="noopener">Official site</a>`);
     return out.join("");
   };
@@ -237,6 +238,7 @@
       ["Counties with parcel data", int(withData.length), `${int(parcels)} parcels on file`],
       ["Posted upcoming sales", int(posted.length), "dates published by a source"],
       ["Tax sale pages linked", int(withLink), `plus ${int(withSite)} official county sites`],
+      ["Parcel photos on file", int(INDEX?.photos || 0), "plus Street View for every parcel with coordinates"],
     ].map(([l, v, n, hero]) => `<div class="kpi${hero ? " hero" : ""}"><div class="label">${l}</div><div class="value">${v}</div><div class="note">${n}</div></div>`).join("");
 
     // systems table + legend
@@ -418,7 +420,11 @@
       ["Parcel lookup", c.parcelLookup ? `<a href="${esc(c.parcelLookup)}" target="_blank" rel="noopener">County parcel records</a>` : `<a href="${searchUrl(`${c.label} ${s.name} property search parcel assessor`)}" target="_blank" rel="noopener">Search the assessor</a>`],
       ["Sheriff and foreclosure sales", `<a href="${searchUrl(`${c.label} ${s.name} sheriff sale`)}" target="_blank" rel="noopener">Search sheriff sales</a> &middot; ${esc(s.foreclosure === "judicial" ? "judicial foreclosure state" : s.foreclosure === "nonjudicial" ? "nonjudicial foreclosure state" : "both judicial and nonjudicial foreclosure")}`],
     ];
-    if (c.excess) info.push(["Excess funds", `<a href="${esc(c.excess)}" target="_blank" rel="noopener">Excess funds list</a>`]);
+    if (c.sheriffSale) info.push(["Sheriff sale page", `<a href="${esc(c.sheriffSale)}" target="_blank" rel="noopener">${esc(c.sheriffSale.replace(/^https?:\/\/(www\.)?/, "").slice(0, 60))}</a>`]);
+    if (c.assessor && !c.parcelLookup) info.push(["Assessor / property search", `<a href="${esc(c.assessor)}" target="_blank" rel="noopener">${esc(c.assessor.replace(/^https?:\/\/(www\.)?/, "").slice(0, 60))}</a>`]);
+    if (c.treasurer) info.push(["Treasurer / tax office", `<a href="${esc(c.treasurer)}" target="_blank" rel="noopener">${esc(c.treasurer.replace(/^https?:\/\/(www\.)?/, "").slice(0, 60))}</a>`]);
+    if (c.excess) info.push(["Excess funds", `<a href="${esc(c.excess)}" target="_blank" rel="noopener">Excess funds page</a>`]);
+    if (c.taxsaleKind === "crawl") info.push(["About this link", "The tax sale page was found automatically on the county's website; check it is the current one."]);
     if (c.platform) info.push(["Platform", esc(c.platform)]);
     if (c.data) info.push(["Data source", `<a href="${esc(COUNTY_CACHE[c.fips]?.sourceUrl || "#")}" id="cSrcLink" target="_blank" rel="noopener">${esc((INDEX?.sources?.[c.data.source]?.label) || c.data.source)}</a> &middot; checked ${esc(fmtDate((c.data.lastChecked || "").slice(0, 10)))}`]);
     $("cInfo").innerHTML = info.map(([k, v]) => `<div><b>${k}</b>${v}</div>`).join("");
@@ -530,6 +536,7 @@
       { key: "buyer", label: "Buyer", wrap: true },
       { key: "value", label: "County value", num: true, html: (p) => money(p.value) },
       { key: "_date", label: "Auction", html: (p) => fmtDate(p._date) },
+      { key: "img", label: "Image", val: (p) => p.photo ? "Photo" : svUrl(p) ? "Street View" : "" },
     ];
     const draw = () => {
       const q = $("fSearch").value.trim().toLowerCase();
@@ -539,7 +546,30 @@
       $("csvBtn").onclick = () => downloadCsv(`${c.state.toLowerCase()}-${c.slug}-parcels.csv`, [...cols, { key: "lat", label: "Latitude" }, { key: "lon", label: "Longitude" }, { key: "_src", label: "Source" }], rows);
     };
     $("fSearch").value = ""; $("fSearch").oninput = draw; draw();
+    GAL.items = parcels; GAL.page = 0; GAL.c = c; gallery();
   }
+
+  // ---------- photo gallery ----------
+  const GAL = { items: [], page: 0, per: 24, c: null };
+  const svUrl = (p) => {
+    if (p.sv && p.sv.length >= 2) return `https://www.google.com/maps/embed?pb=!6m7!1m6!2m2!1d${(+p.sv[0]).toFixed(6)}!2d${(+p.sv[1]).toFixed(6)}!5f1!6d${Math.round(Math.min(300, Math.max(100, (p.sv[3] || 0) + 60)))}!7e1`;
+    if (p.lat && p.lon) return `https://www.google.com/maps/embed?pb=!6m7!1m6!2m2!1d${(+p.lat).toFixed(6)}!2d${(+p.lon).toFixed(6)}!5f1!6d150!7e1`;
+    return null;
+  };
+  function gallery() {
+    const f = $("gFilter").value;
+    const items = GAL.items.filter((p) => f === "all" ? (p.photo || svUrl(p)) : f === "photo" ? p.photo : (!p.photo && svUrl(p)));
+    const pages = Math.max(1, Math.ceil(items.length / GAL.per)); GAL.page = Math.min(GAL.page, pages - 1);
+    const page = items.slice(GAL.page * GAL.per, (GAL.page + 1) * GAL.per);
+    $("gallery").hidden = !items.length;
+    $("gPage").textContent = `${int(items.length)} with an image (${int(GAL.items.filter((p) => p.photo).length)} stored photos) · page ${GAL.page + 1} of ${pages}`;
+    $("gGrid").innerHTML = page.map((p, i) => `<div class="gtile" data-i="${i}"><div class="media">${p.photo ? `<img loading="lazy" src="${esc(p.photo)}" alt="Photo of ${esc(p.address || p.parcel || "")}">` : `<iframe loading="lazy" src="${svUrl(p)}" title="Street View" tabindex="-1"></iframe>`}<span class="badge">${p.photo ? "Photo" : "Street View"}</span></div><div class="cap"><b>${esc(p.address || p.fullAddress || p.parcel || p.lot || "")}</b>${p.minBid != null ? "Owed " + money(p.minBid) : ""}${p.winningBid ? " · sold " + money(p.winningBid) : ""}${p.status ? " · " + esc(p.status) : ""}</div></div>`).join("");
+    $("gGrid").querySelectorAll(".gtile").forEach((t) => t.onclick = () => showDetail(GAL.c, page[+t.dataset.i]));
+    $("gGrid").querySelectorAll("img").forEach((im) => im.addEventListener("error", () => { const p = page[+im.closest(".gtile").dataset.i]; const sv = svUrl(p); im.outerHTML = sv ? `<iframe loading="lazy" src="${sv}" tabindex="-1"></iframe>` : `<div class="na">Image N/A</div>`; }));
+  }
+  $("gFilter").onchange = () => { GAL.page = 0; gallery(); };
+  $("gPrev").onclick = () => { GAL.page = Math.max(0, GAL.page - 1); gallery(); };
+  $("gNext").onclick = () => { GAL.page++; gallery(); };
 
   function drawHistory(c, aucs) {
     const hist = [...aucs].sort((a, b) => (a.date || "").localeCompare(b.date || ""));
@@ -576,7 +606,8 @@
     if (p.link) links.push(`<a href="${esc(p.link)}" target="_blank" rel="noopener">Listing</a>`);
     if (p._src) links.push(`<a href="${esc(p._src)}" target="_blank" rel="noopener">Source document</a>`);
     if (c.parcelLookup) links.push(`<a href="${esc(c.parcelLookup)}" target="_blank" rel="noopener">County parcel records</a>`);
-    $("detailBody").innerHTML = `<h2>${esc(p.parcel || p.lot || "Parcel")}</h2><p class="muted small">${esc(c.label)}, ${esc(c.st.name)}</p>${p.desc ? `<p class="desc">${esc(p.desc)}</p>` : ""}<div class="dgrid">${rows.map(([k, v]) => `<div><span>${esc(k)}</span><span>${esc(v)}</span></div>`).join("")}</div><div class="dlinks">${links.join("")}</div>`;
+    const media = p.photo ? `<div class="lbmedia"><img src="${esc(p.photo)}" alt="Photo"></div>${p.photoCredit ? `<p class="small muted">${esc(p.photoCredit)}</p>` : ""}` : svUrl(p) ? `<div class="lbmedia"><iframe src="${svUrl(p)}" title="Street View" allowfullscreen></iframe></div><p class="small muted">Live Google Street View near the parcel.</p>` : "";
+    $("detailBody").innerHTML = `<h2>${esc(p.parcel || p.lot || "Parcel")}</h2><p class="muted small">${esc(c.label)}, ${esc(c.st.name)}</p>${media}${p.desc ? `<p class="desc">${esc(p.desc)}</p>` : ""}<div class="dgrid">${rows.map(([k, v]) => `<div><span>${esc(k)}</span><span>${esc(v)}</span></div>`).join("")}</div><div class="dlinks">${links.join("")}</div>`;
     $("detail").showModal();
   }
 

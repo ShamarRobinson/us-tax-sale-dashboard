@@ -9,13 +9,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
-<link rel="stylesheet" href="style.css?v=20261018b">
+<link rel="stylesheet" href="style.css?v=20261018c">
+<link rel="stylesheet" href="analyzer.css?v=20261018c">
 </head>
 <body>
 <header class="top">
   <div class="wrap">
     <div class="eyebrow">Every County In Every State &middot; Tax Deed, Tax Lien And Sheriff Sales</div>
-    <div class="titlerow"><h1>US Tax Sale Tracker</h1></div>
+    <div class="titlerow"><h1>US Tax Sale Tracker</h1><nav class="toplinks"><a href="analyzer.html">Property Deal Analyzer</a><a href="data/master_parcels.csv" download>Master CSV (parcels)</a><a href="data/master_counties.csv" download>Master CSV (counties)</a></nav></div>
     <div class="freshness" id="freshness">Loading data&hellip;</div>
     <div class="searchbox">
       <input id="gSearch" type="search" autocomplete="off" placeholder="Search every county: name, state, sale type, who runs it..." aria-label="Search all counties">
@@ -136,6 +137,11 @@
         <div class="tablewrap tall"><table class="data sortable" id="parcelTable"></table></div>
         <p class="muted small" id="tableNote"></p>
       </section>
+      <section class="card" id="gallery">
+        <div class="head"><h2>Parcel Photo Gallery</h2><p>One tile per parcel in the auction picked above. Stored photos come first (county assessor photos, auction catalog photos); where none is published, the tile shows a live Google Street View near the parcel. Click a tile for details.</p></div>
+        <div class="filters gbar"><label class="inline">Show <select id="gFilter"><option value="all">All with an image</option><option value="photo">Stored photos</option><option value="sv">Street View</option></select></label><span class="pager"><button type="button" id="gPrev">Previous</button><span id="gPage" class="muted small"></span><button type="button" id="gNext">Next</button></span></div>
+        <div class="ggrid" id="gGrid"></div>
+      </section>
     </div>
   </div>
 
@@ -147,6 +153,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
-<script src="app.js?v=20261018b"></script>
+<script src="app.js?v=20261018c"></script>
 </body>
 </html>

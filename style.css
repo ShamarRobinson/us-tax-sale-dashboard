@@ -17,7 +17,7 @@ a { color: var(--accent); }
 /* header */
 .top { background: var(--blue); border-bottom: 2px solid #000; color: #fff; padding: 22px 0 0; }
 .eyebrow { font-size: 12px; letter-spacing: .06em; text-transform: uppercase; font-weight: 600; color: #fff; }
-.titlerow { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 12px; }
+.titlerow { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; }
 h1 { margin: 4px 0 0; font-size: 30px; line-height: 1.15; letter-spacing: -.02em; color: #fff; }
 h2 { margin: 0; font-size: 18px; letter-spacing: -.01em; color: var(--blue-dark); }
 h3 { margin: 0 0 8px; font-size: 14px; font-weight: 600; }

@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "23 13 1 * *"   # monthly, the 1st at about 6:23 AM Pacific
   workflow_dispatch:
+    inputs:
+      recrawl_links:
+        description: "Recrawl every county website for sale links (not just stale ones)"
+        type: boolean
+        default: false
   push:
     branches: [main]
     paths:
@@ -21,19 +26,22 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 300
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Fetch every source and rebuild the registry
+      - name: Find sale links on county websites (counties not checked in the last 45 days)
+        run: |
+          if [ "${{ inputs.recrawl_links }}" = "true" ]; then python discover_links.py --stale 0 --threads 24; else python discover_links.py --threads 24; fi
+      - name: Fetch every source, rebuild the registry and the master CSV
         run: python fetch_all.py
       - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/
+          git add data/ ref/discovered_links.json
           if git diff --cached --quiet; then
             echo "No changes"
           else

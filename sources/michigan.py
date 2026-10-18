@@ -25,6 +25,7 @@ DATE = re.compile(r'([A-Z][a-z]+ \d{1,2}, \d{4})')
 CATALOG = re.compile(r'<a href="/listings/catalog/(\d+)">([^<]+)</a>')
 LOT = re.compile(r'<a href="/lot/show/id/(\d+)" aria-label="Lot (\d+) - ([^"]*)"(.*?)</a>', re.S)
 PRICE = re.compile(r'(Sold for|Minimum Bid:?)\s*\$?([\d,\.]+)')
+PHOTO = re.compile(r'src="(https?://taxsaleimg\.com/[^"]+)"')
 TIME = re.compile(r'<time datetime="([^"]+)"')
 
 MONTHS = {m: i for i, m in enumerate(["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"], 1)}
@@ -72,12 +73,15 @@ def _coord(s):
 def _catalog(cat_id):
     """Return (date, status_by_lot, type_by_lot, note) from the catalog page and the list of parcels from its CSV."""
     page = get(f"{BASE}/listings/catalog/{cat_id}")
-    sold, types = {}, {}
+    sold, types, photos = {}, {}, {}
     for lot_id, lot, typ, body in LOT.findall(page):
         types[lot] = htmllib.unescape(typ)
         m = PRICE.search(body)
         if m and m.group(1).startswith("Sold"):
             sold[lot] = money(m.group(2))
+        ph = PHOTO.search(body)
+        if ph:
+            photos[lot] = ph.group(1)
     t = TIME.search(page)
     date = t.group(1)[:10] if t else None
     rows = []
@@ -86,7 +90,7 @@ def _catalog(cat_id):
         rows = list(csv.DictReader(io.StringIO(text)))
     except Exception as e:
         print(f"  michigan/catalog {cat_id} csv: {e}")
-    return date, sold, types, rows
+    return date, sold, types, photos, rows
 
 
 def fetch(counties):
@@ -112,7 +116,7 @@ def fetch(counties):
                 if not fips:
                     continue
                 try:
-                    cdate, sold, types, rows = _catalog(cat_id)
+                    cdate, sold, types, photos, rows = _catalog(cat_id)
                 except Exception as e:
                     print(f"  michigan/catalog {cat_id}: {e}")
                     continue
@@ -126,10 +130,10 @@ def fetch(counties):
                     parcels.append(parcel(
                         lot=lot, parcel=(r.get("Parcel Id") or "").strip(), address=(r.get("Address") or "").strip() or None,
                         area=(r.get("Local Unit") or "").strip().title() or None, minBid=money(r.get("Minimum Bid")),
-                        taxes=money(r.get("Current Taxes")), value=money(r.get("SEV")), winningBid=wb,
+                        taxes=money(r.get("Current Taxes")), sev=money(r.get("SEV")), value=(money(r.get("SEV")) or 0) * 2 or None, winningBid=wb,
                         status="Sold" if wb else ("Listed" if upcoming else "Not published"), type=types.get(lot),
                         lat=_coord(r.get("Latitude")), lon=_coord(r.get("Longitude")), desc=desc[:400] + ("..." if len(desc) > 400 else ""),
-                        link=f"{BASE}/listings/catalog/{cat_id}",
+                        link=f"{BASE}/listings/catalog/{cat_id}", photo=photos.get(lot), photoCredit="Title Check / tax-sale.info" if photos.get(lot) else None,
                     ))
                 variant = ""
                 if re.search(r"DNR", county_label):
@@ -139,7 +143,7 @@ def fetch(counties):
                 rec = out.setdefault(fips, dict(
                     fips=fips, source=NAME, sourceUrl=HOMEPAGE, lastChecked=checked, lastChanged=None,
                     info=dict(run="County Treasurer", page=f"{BASE}/auctions", schedule="Online, usually a minimum-bid round in July or August and a no-reserve round in the fall",
-                              parcel="https://www.tax-sale.info/", note="Catalogs, inspector notes and results come from Title Check's tax-sale.info, which runs the auctions for most Michigan treasurers."),
+                              parcel="https://www.tax-sale.info/", note="Catalogs, inspector notes, photos and results come from Title Check's tax-sale.info, which runs the auctions for most Michigan treasurers. County value is twice the State Equalized Value (SEV), since Michigan sets SEV at half of market value."),
                     auctions=[]))
                 rec["auctions"].append(auction(
                     id=f"mi-{cat_id}", date=date, kind="list" if upcoming else "results",

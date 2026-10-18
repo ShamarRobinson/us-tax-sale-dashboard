@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Property Deal Analyzer</title>
+<meta name="description" content="Screen every parcel on file in the US Tax Sale Tracker with your own assumptions: filter by state, county, sale type, price, value and deal score; see max bids, bid-to-value ratios, maps, photos and Street View; download the master CSV.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="style.css?v=20261018c">
+<link rel="stylesheet" href="analyzer.css?v=20261018c">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <div class="eyebrow">US Tax Sale Tracker &middot; Every Parcel On File, Scored Against Your Numbers</div>
+    <div class="titlerow"><h1>Property Deal Analyzer</h1><nav class="toplinks"><a href="index.html">Tracker home</a><a href="data/master_parcels.csv" download>Master CSV (parcels)</a><a href="data/master_counties.csv" download>Master CSV (counties)</a></nav></div>
+    <div class="freshness" id="freshness">Loading the master data&hellip;</div>
+    <div class="searchbox">
+      <input id="q" type="search" autocomplete="off" placeholder="Search parcel number, address, owner, buyer, county..." aria-label="Search parcels">
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="card assumptions">
+    <div class="head"><h2>Your Assumptions</h2><p>Change any number and every parcel is rescored. Max bid is the most you would pay: county value times (1 minus your target discount) minus your allowance for repairs, title work and closing. Headroom is max bid minus the opening bid. Settings are kept in this browser.</p></div>
+    <div class="agrid">
+      <label>Target discount to county value <span class="unit">%</span><input id="aDiscount" type="number" min="0" max="95" step="5" value="40"></label>
+      <label>Repairs, title and closing allowance <span class="unit">$</span><input id="aAllow" type="number" min="0" step="500" value="5000"></label>
+      <label>Budget per parcel <span class="unit">$</span><input id="aBudget" type="number" min="0" step="1000" value="50000"></label>
+      <label>Value fallback when the county publishes none <span class="unit">x opening bid</span><input id="aFallback" type="number" min="1" step="0.5" value="4"></label>
+      <label>Minimum deal score <input id="aScore" type="number" min="0" max="100" step="5" value="0"></label>
+      <label class="check"><input id="aUpcoming" type="checkbox"> Upcoming sales only</label>
+      <label class="check"><input id="aHeadroom" type="checkbox"> Only parcels with positive headroom</label>
+      <button type="button" id="aReset">Reset</button>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="head"><h2>Filters</h2></div>
+    <div class="fgrid">
+      <label>State <select id="fState"><option value="">All</option></select></label>
+      <label>County <select id="fCounty" disabled><option value="">All</option></select></label>
+      <label>Sale type <select id="fSystem"><option value="">All</option></select></label>
+      <label>Sale kind <select id="fKind"><option value="">All</option></select></label>
+      <label>Status <select id="fStatus"><option value="">All</option><option value="Listed">Listed (not yet sold)</option><option value="Sold">Sold</option><option value="No bid">No bid</option><option value="Not published">Not published</option></select></label>
+      <label>Property type <input id="fType" type="text" placeholder="home, vacant, commercial..."></label>
+      <label>Opening bid from <input id="fMin" type="number" min="0" step="500" placeholder="$"></label>
+      <label>Opening bid to <input id="fMax" type="number" min="0" step="500" placeholder="$"></label>
+      <label>County value from <input id="fValMin" type="number" min="0" step="1000" placeholder="$"></label>
+      <label>Sold since <input id="fSince" type="date"></label>
+      <label class="check"><input id="fPhoto" type="checkbox"> Has photo</label>
+      <label class="check"><input id="fGeo" type="checkbox"> Has coordinates</label>
+      <label class="check"><input id="fValue" type="checkbox"> Has county value</label>
+      <button type="button" id="fClear">Clear filters</button>
+    </div>
+  </section>
+
+  <section class="kpis" id="kpis"></section>
+
+  <section class="card">
+    <div class="head"><h2>Where The Deals Are</h2><p>Click a bar to drill into it, then a county, then a parcel.</p></div>
+    <div class="grid2">
+      <div><div class="crumbs" id="byStateCrumb"></div><div class="chart"><canvas id="byState"></canvas></div></div>
+      <div><div class="crumbs" id="byScoreCrumb"></div><div class="chart"><canvas id="byScore"></canvas></div></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="head"><h2>Bid Against Value</h2><p>Each dot is a parcel with a published county value: opening bid (or winning bid when sold) against county value. Dots under the line sold or are listed below county value. Click a dot for details.</p></div>
+    <div class="chart tall"><canvas id="scatter"></canvas></div>
+  </section>
+
+  <section class="card">
+    <div class="head"><h2>Map</h2><p>Up to 3,000 of the parcels in view, colored by deal rating. Click a dot for details.</p></div>
+    <div id="map" class="map tallmap" role="img" aria-label="Map of parcels in view"></div>
+    <div class="legend"><span><i class="dot r-strong"></i>Strong (70+)</span><span><i class="dot r-good"></i>Good (50 to 69)</span><span><i class="dot r-fair"></i>Fair (35 to 49)</span><span><i class="dot r-weak"></i>Weak (under 35)</span></div>
+  </section>
+
+  <section class="card">
+    <div class="reshead"><h2 id="resTitle">Parcels</h2><label class="inline">Sort by <select id="sortBy"><option value="dealScore">Deal score</option><option value="headroom">Headroom</option><option value="minBid">Opening bid</option><option value="winningBid">Winning bid</option><option value="value">County value</option><option value="bidToValue">Bid to value</option><option value="auctionDate">Auction date</option></select></label><button type="button" id="csvBtn">Download CSV (in view)</button></div>
+    <div class="tablewrap tall"><table class="data sortable" id="grid"></table></div>
+    <p class="muted small" id="gridNote"></p>
+  </section>
+
+  <section class="card" id="gallery">
+    <div class="head"><h2>Photos And Street View</h2><p>Stored photos come first (county assessor, auction catalog), then a live Google Street View near the parcel for everything with coordinates. Click a tile for details.</p></div>
+    <div class="filters gbar"><label class="inline">Show <select id="gFilter"><option value="all">All in view</option><option value="photo">Stored photos</option><option value="sv">Street View</option></select></label><span class="pager"><button type="button" id="gPrev">Previous</button><span id="gPage" class="muted small"></span><button type="button" id="gNext">Next</button></span></div>
+    <div class="ggrid" id="gGrid"></div>
+  </section>
+
+  <footer class="foot muted small">Deal scores are a screening aid, not advice: value 40 (opening bid against county value), property 20, competition 15 (how far above the opening bid parcels sell in that county), timing and redemption 15, data 10. Every number comes from the sources listed on the <a href="index.html">tracker home</a>; confirm with the county before bidding. Not affiliated with any government. <a href="https://github.com/ShamarRobinson/us-tax-sale-dashboard" target="_blank" rel="noopener">Source on GitHub</a>.</footer>
+</main>
+
+<dialog id="detail" class="detail"><div id="detailBody"></div><form method="dialog"><button class="closebtn" aria-label="Close">Close</button></form></dialog>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="analyzer.js?v=20261018c"></script>
+</body>
+</html>

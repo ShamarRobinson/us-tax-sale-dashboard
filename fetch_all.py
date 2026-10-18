@@ -15,6 +15,7 @@ import json
 import os
 import sys
 
+import master
 import sources
 from registry import build_counties
 from states import STATES, STATE_BY_ABBR, SYSTEM_LABELS
@@ -102,10 +103,11 @@ def summarize(rec):
     parcels = sum(len(a.get("parcels", [])) for a in aucs)
     sold = sum(1 for a in aucs for p in a.get("parcels", []) if p.get("status") == "Sold")
     priced = sum(1 for a in aucs for p in a.get("parcels", []) if p.get("winningBid"))
+    photos = sum(1 for a in aucs for p in a.get("parcels", []) if p.get("photo"))
     dates = sorted(a["date"] for a in aucs if a.get("date"))
     upcoming = [d for d in dates if d >= TODAY.isoformat()]
     past = [d for d in dates if d < TODAY.isoformat()]
-    return dict(auctions=len(aucs), parcels=parcels, sold=sold, withPrice=priced,
+    return dict(auctions=len(aucs), parcels=parcels, sold=sold, withPrice=priced, photos=photos,
                 nextSale=upcoming[0] if upcoming else None, lastSale=past[-1] if past else None,
                 source=rec.get("source"), lastChecked=rec.get("lastChecked"))
 
@@ -176,6 +178,23 @@ def main(offline=False):
             c["parcelLookup"] = info["parcel"]
         c["data"] = summarize(rec)
 
+    # links found by discover_links.py on each county's own website
+    found = load_json(os.path.join(HERE, "ref", "discovered_links.json")) or {}
+    crawled = 0
+    for c in counties:
+        f = found.get(c["fips"]) or {}
+        if f.get("error"):
+            continue
+        if f.get("taxsale") and not c.get("taxsale"):
+            c["taxsale"], c["taxsaleKind"] = f["taxsale"], "crawl"
+        for src, dst in (("sheriff", "sheriffSale"), ("assessor", "assessor"), ("treasurer", "treasurer"), ("excess", "excess")):
+            if f.get(src) and not c.get(dst):
+                c[dst] = f[src]
+        if f.get("checked"):
+            crawled += 1
+    if crawled:
+        print(f"merged crawled links for {crawled} counties")
+
     # next sale for every county: posted date beats the statutory one
     for c in counties:
         d = c.get("data") or {}
@@ -219,10 +238,16 @@ def main(offline=False):
         auctions=sum(c["data"]["auctions"] for c in counties if c.get("data")),
         withTaxSaleLink=sum(1 for c in counties if c.get("taxsale")),
         withSite=sum(1 for c in counties if c.get("site")),
+        withSheriffLink=sum(1 for c in counties if c.get("sheriffSale")),
+        withAssessorLink=sum(1 for c in counties if c.get("assessor") or c.get("parcelLookup")),
+        withPhotos=sum(1 for c in counties if c.get("data") and c["data"].get("photos")),
+        photos=sum(c["data"].get("photos", 0) for c in counties if c.get("data")),
         systems={k: sum(1 for c in counties if STATE_BY_ABBR[c["state"]]["system"] == k) for k in SYSTEM_LABELS},
         upcomingPosted=upcoming[:200], sources=source_status,
     )
     dump(os.path.join(DATA, "index.json"), index, compact=False)
+    n = master.build(counties, records, DATA)
+    print(f"wrote data/master_parcels.csv and data/master.json ({n} parcels), data/master_counties.csv")
     print(f"wrote data/registry.json ({os.path.getsize(os.path.join(DATA, 'registry.json'))//1024} KB), "
           f"{index['withData']} counties with parcel data, {index['parcels']} parcels")
 

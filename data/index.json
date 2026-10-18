@@ -1,12 +1,16 @@
 {
- "generated": "2026-10-18T06:44:12+00:00",
+ "generated": "2026-10-18T07:17:03+00:00",
  "counties": 3222,
  "states": 52,
  "withData": 120,
  "parcels": 12026,
  "auctions": 673,
- "withTaxSaleLink": 417,
+ "withTaxSaleLink": 936,
  "withSite": 3061,
+ "withSheriffLink": 342,
+ "withAssessorLink": 1389,
+ "withPhotos": 89,
+ "photos": 3667,
  "systems": {
   "deed": 1294,
   "lien": 912,
@@ -453,21 +457,21 @@
    "url": "https://shamarrobinson.github.io/atlanta-tax-sale-dashboard/",
    "counties": 40,
    "ok": true,
-   "checked": "2026-10-18T06:40:45+00:00"
+   "checked": "2026-10-18T07:11:51+00:00"
   },
   "clark": {
    "label": "Clark County Tax Auction Tracker",
    "url": "https://shamarrobinson.github.io/clark-county-tax-auction-dashboard/",
    "counties": 1,
    "ok": true,
-   "checked": "2026-10-18T06:40:45+00:00"
+   "checked": "2026-10-18T07:11:51+00:00"
   },
   "michigan": {
    "label": "Tax-Sale.info (Michigan Public Land Auction)",
    "url": "https://www.tax-sale.info/",
    "counties": 79,
    "ok": true,
-   "checked": "2026-10-18T06:44:12+00:00"
+   "checked": "2026-10-18T07:16:14+00:00"
   }
  }
 }

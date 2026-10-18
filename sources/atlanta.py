@@ -42,7 +42,9 @@ def fetch(counties):
             kind = a.get("kind") or "list"
             parcels = []
             for p in a.get("parcels", []):
+                phs = [(HOMEPAGE + x["src"]) if x.get("src") else x.get("url") for x in (p.get("photos") or []) if x.get("src") or x.get("url")]
                 parcels.append(parcel(
+                    photo=phs[0] if phs else None, photos=phs if len(phs) > 1 else None, photoCredit=(p.get("photos") or [{}])[0].get("credit") if phs else None, sv=p.get("sv"),
                     parcel=p.get("parcel"), owner=p.get("owner"), address=p.get("address"), fullAddress=p.get("fullAddress"),
                     minBid=p.get("minBid"), winningBid=p.get("winningBid"), excess=p.get("excess"), status=_status(p),
                     buyer=p.get("buyer"), lat=p.get("lat"), lon=p.get("lon"), type=p.get("ptype") or p.get("type"),
