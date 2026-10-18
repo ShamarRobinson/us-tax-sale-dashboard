@@ -149,6 +149,14 @@ SITES = {
 }
 
 
+# Texas counties whose sheriff sale portal (<county>.texas.sheriffsaleauctions.com) actually exists. The other 226
+# hostnames do not resolve (checked from a browser in October 2026), so the adapter skips them.
+TX_SHERIFF = frozenset("""
+angelina aransas atascosa bexar brooks caldwell cameron cherokee dallas elpaso ellis fortbend galveston gregg harris
+hidalgo hopkins jackson kaufman llano matagorda nueces orange rusk sanpatricio smith victoria wilson
+""".split())
+
+
 def sites_for(counties):
     """Yield (fips, kind, base_url) for every county that has a portal (tax deed portals first)."""
     for c in counties:
@@ -159,7 +167,7 @@ def sites_for(counties):
                     yield c["fips"], kind, f"https://{hosts[kind]}"
         elif c["state"] == "OH":
             yield c["fips"], "sheriff", f"https://{_host(c['name'])}.sheriffsaleauction.ohio.gov"
-        elif c["state"] == "TX":
+        elif c["state"] == "TX" and _host(c["name"]) in TX_SHERIFF:
             yield c["fips"], "sheriff", f"https://{_host(c['name'])}.texas.sheriffsaleauctions.com"
 
 

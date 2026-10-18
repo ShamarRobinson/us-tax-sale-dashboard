@@ -1,10 +1,10 @@
 {
- "generated": "2026-10-18T17:15:29+00:00",
+ "generated": "2026-10-18T18:34:04+00:00",
  "counties": 3222,
  "states": 52,
  "withData": 246,
- "parcels": 27245,
- "auctions": 1938,
+ "parcels": 30251,
+ "auctions": 2239,
  "withTaxSaleLink": 1085,
  "withSite": 3061,
  "withSheriffLink": 378,
@@ -19,13 +19,40 @@
  },
  "upcomingPosted": [
   {
+   "fips": "12057",
+   "state": "FL",
+   "name": "Hillsborough County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 999,
+   "page": "https://hillsborough.realtaxdeed.com"
+  },
+  {
    "fips": "12086",
    "state": "FL",
    "name": "Miami-Dade County",
    "date": "2026-10-19",
    "kind": "posted",
-   "parcels": 2042,
+   "parcels": 2722,
    "page": "https://miamidade.realtaxdeed.com"
+  },
+  {
+   "fips": "12095",
+   "state": "FL",
+   "name": "Orange County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 1162,
+   "page": "https://orange.realtaxdeed.com"
+  },
+  {
+   "fips": "12099",
+   "state": "FL",
+   "name": "Palm Beach County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 1099,
+   "page": "https://palmbeach.realtaxdeed.com"
   },
   {
    "fips": "39001",
@@ -107,6 +134,15 @@
    "kind": "posted",
    "parcels": 233,
    "page": "https://bay.realtaxdeed.com"
+  },
+  {
+   "fips": "12011",
+   "state": "FL",
+   "name": "Broward County",
+   "date": "2026-10-20",
+   "kind": "posted",
+   "parcels": 723,
+   "page": "https://broward.realtaxdeed.com"
   },
   {
    "fips": "12061",
@@ -280,24 +316,6 @@
    "page": "https://wayne.sheriffsaleauction.ohio.gov"
   },
   {
-   "fips": "12057",
-   "state": "FL",
-   "name": "Hillsborough County",
-   "date": "2026-10-22",
-   "kind": "posted",
-   "parcels": 493,
-   "page": "https://hillsborough.realtaxdeed.com"
-  },
-  {
-   "fips": "12095",
-   "state": "FL",
-   "name": "Orange County",
-   "date": "2026-10-22",
-   "kind": "posted",
-   "parcels": 394,
-   "page": "https://orange.realtaxdeed.com"
-  },
-  {
    "fips": "39013",
    "state": "OH",
    "name": "Belmont County",
@@ -458,15 +476,6 @@
    "kind": "posted",
    "parcels": 21,
    "page": "https://richland.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "12011",
-   "state": "FL",
-   "name": "Broward County",
-   "date": "2026-10-26",
-   "kind": "posted",
-   "parcels": 85,
-   "page": "https://broward.realtaxdeed.com"
   },
   {
    "fips": "12113",
@@ -1394,15 +1403,6 @@
    "kind": "posted",
    "parcels": 867,
    "page": "https://marion.realtaxdeed.com"
-  },
-  {
-   "fips": "12099",
-   "state": "FL",
-   "name": "Palm Beach County",
-   "date": "2026-11-18",
-   "kind": "posted",
-   "parcels": 685,
-   "page": "https://palmbeach.realtaxdeed.com"
   },
   {
    "fips": "39027",
