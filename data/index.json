@@ -1,10 +1,10 @@
 {
- "generated": "2026-10-18T10:12:21+00:00",
+ "generated": "2026-10-18T12:24:42+00:00",
  "counties": 3222,
  "states": 52,
- "withData": 120,
- "parcels": 12026,
- "auctions": 673,
+ "withData": 125,
+ "parcels": 14236,
+ "auctions": 749,
  "withTaxSaleLink": 999,
  "withSite": 3061,
  "withSheriffLink": 378,
@@ -18,6 +18,42 @@
   "hybrid": 426
  },
  "upcomingPosted": [
+  {
+   "fips": "12103",
+   "state": "FL",
+   "name": "Pinellas County",
+   "date": "2026-10-21",
+   "kind": "posted",
+   "parcels": 72,
+   "page": "https://pinellas.realtaxdeed.com"
+  },
+  {
+   "fips": "12057",
+   "state": "FL",
+   "name": "Hillsborough County",
+   "date": "2026-10-22",
+   "kind": "posted",
+   "parcels": 493,
+   "page": "https://hillsborough.realtaxdeed.com"
+  },
+  {
+   "fips": "12095",
+   "state": "FL",
+   "name": "Orange County",
+   "date": "2026-10-22",
+   "kind": "posted",
+   "parcels": 394,
+   "page": "https://orange.realtaxdeed.com"
+  },
+  {
+   "fips": "12031",
+   "state": "FL",
+   "name": "Duval County",
+   "date": "2026-10-28",
+   "kind": "posted",
+   "parcels": 566,
+   "page": "https://duval.realtaxdeed.com"
+  },
   {
    "fips": "26001",
    "state": "MI",
@@ -449,6 +485,15 @@
    "kind": "posted",
    "parcels": 436,
    "page": "https://dekalbtaxga.gov/property-tax/tax-sales/"
+  },
+  {
+   "fips": "12099",
+   "state": "FL",
+   "name": "Palm Beach County",
+   "date": "2026-11-18",
+   "kind": "posted",
+   "parcels": 685,
+   "page": "https://palmbeach.realtaxdeed.com"
   }
  ],
  "sources": {
@@ -482,6 +527,11 @@
   }
  },
  "countiesWithData": [
+  "12031",
+  "12057",
+  "12095",
+  "12099",
+  "12103",
   "13013",
   "13015",
   "13035",

@@ -5,11 +5,15 @@ All three run the same software and expose the same public, login-free pages:
   calendar   index.cfm?zaction=USER&zmethod=CALENDAR&selCalDate=MM/DD/YYYY
              CALBOX divs with dayid="MM/DD/YYYY", a <b>label</b>, and CALACT / CALSCH counts
   preview    index.cfm?zaction=AUCTION&Zmethod=PREVIEW&AUCTIONDATE=MM/DD/YYYY   (sets the session's sale date)
-  page load  index.cfm?zaction=AUCTION&Zmethod=UPDATE&FNC=LOAD&AREA=W|C&PageDir=0|1&doR=0&bypassPage=0&test=1
+  page load  index.cfm?zaction=AUCTION&Zmethod=UPDATE&FNC=LOAD&AREA=W|C&PageDir=0|1&doR=1&bypassPage=0&test=1
              JSON {retHTML, rlist}; retHTML uses @A..@L tokens that stand for common HTML fragments
-  status     index.cfm?zaction=AUCTION&ZMETHOD=UPDATE&FNC=UPDATE&ref=ID,ID,
-             JSON {ADATA: {AITEM: [{AID, A: "Auction Sold"|"B", B: date|"Withdrawn"|..., D: amount, ST: sold to}]}}
+  status     index.cfm?zaction=AUCTION&ZMETHOD=UPDATE&FNC=UPDATE&ref=ID,ID,   (only the page the session is on)
+             JSON {ADATA: {AITEM: [{AID, A: "Auction Sold"|"B", B: date|"Withdrawn"|"Redeemed"|..., D: amount, ST: sold to}]}}
 Counties are probed by host name; the ones that do not resolve are skipped.
+
+The portals answer data-center addresses (GitHub's runners included) with the RealAuction marketing page instead of a
+calendar, so this adapter only succeeds from an ordinary connection. collect_local.py runs it on a home machine, and
+tools/realauction_console.js does the same job from a browser tab; both drop files that the next refresh keeps.
 """
 import datetime as dt
 import html as htmllib
@@ -31,11 +35,12 @@ HOMEPAGE = "https://www.realauction.com/"
 TOKENS = [("@A", '<div class="'), ("@B", "</div>"), ("@C", 'class="'), ("@D", "<div>"), ("@E", "AUCTION"), ("@F", "</td><td"),
           ("@G", "</td></tr>"), ("@H", "<tr><td "), ("@I", "table"), ("@J", 'p_back="NextCheck='), ("@K", 'style="Display:none"'),
           ("@L", "/index.cfm?zaction=auction&zmethod=details&AID=")]
-CALBOX = re.compile(r'<div[^>]*class="CALBOX[^"]*"[^>]*dayid="(\d\d/\d\d/\d{4})"[^>]*>(.*?)</div>', re.S)
-CALLABEL = re.compile(r"<b>(.*?)</b>", re.S)
-CALNUM = re.compile(r'class="(CALACT|CALSCH)">\s*(\d+)')
+CALBOX = re.compile(r'<div[^>]*class=[\'"]CALBOX[^\'"]*[\'"][^>]*dayid=[\'"](\d\d/\d\d/\d{4})[\'"][^>]*>(.*?)</div>', re.S)
+CALLABEL = re.compile(r'class=[\'"]CALTEXT[\'"][^>]*>(.*?)<br>|<b>(.*?)</b>', re.S)
+CALNUM = re.compile(r'class=[\'"](CALACT|CALSCH)[\'"]>\s*(\d+)')
 ITEM = re.compile(r'id="AITEM_(\d+)"(.*?)(?=<div[^>]*id="AITEM_|$)', re.S)
-ROW = re.compile(r'<th[^>]*class="AD_LBL"[^>]*>(.*?)</th>\s*<td[^>]*class="AD_DTA"[^>]*>(.*?)(?:</td>|$)', re.S)
+ROW = re.compile(r'<t[dh][^>]*class="AD_LBL"[^>]*>(.*?)</t[dh]>\s*<td[^>]*class="AD_DTA"[^>]*>(.*?)(?:</td>|$)', re.S)
+HREF = re.compile(r'href="([^"]+)"')
 MAXP = re.compile(r'id="max(WA|CA)">\s*(\d+)')
 PAGEOF = re.compile(r"page \d+ of (\d+)")
 
@@ -105,12 +110,12 @@ class Site:
             nums = dict((k, int(v)) for k, v in CALNUM.findall(body))
             if not lab and not nums:
                 continue
-            days.append(dict(date=day, label=htmllib.unescape(re.sub(r"<[^>]+>", "", lab.group(1))).strip() if lab else "Sale",
+            days.append(dict(date=day, label=htmllib.unescape(re.sub(r"<[^>]+>", "", lab.group(1) or lab.group(2) or "")).strip() if lab else "Sale",
                              active=nums.get("CALACT", 0), scheduled=nums.get("CALSCH", 0)))
         return days
 
     def load(self, area, pagedir):
-        txt = self.get(f"/index.cfm?zaction=AUCTION&Zmethod=UPDATE&FNC=LOAD&AREA={area}&PageDir={pagedir}&doR=0&tx={int(time.time()*1000)}&bypassPage=0&test=1")
+        txt = self.get(f"/index.cfm?zaction=AUCTION&Zmethod=UPDATE&FNC=LOAD&AREA={area}&PageDir={pagedir}&doR=1&tx={int(time.time()*1000)}&bypassPage=0&test=1")
         j = json.loads(txt.strip())
         h = j.get("retHTML", "")
         for a, b in TOKENS:
@@ -118,17 +123,18 @@ class Site:
         return h, [x for x in (j.get("rlist") or "").split(",") if x]
 
     def status(self, ids):
+        """Statuses for the items on the page the session is currently on (the portal ignores other ids)."""
         out = {}
-        for i in range(0, len(ids), 40):
-            chunk = ids[i:i + 40]
-            txt = self.get(f"/index.cfm?zaction=AUCTION&ZMETHOD=UPDATE&FNC=UPDATE&ref={','.join(chunk)},&tx={int(time.time()*1000)}")
-            try:
-                j = json.loads(txt.strip())
-            except ValueError:
-                continue
-            for it in (j.get("ADATA") or {}).get("AITEM") or []:
-                out[str(it.get("AID"))] = it
-            time.sleep(PAUSE)
+        if not ids:
+            return out
+        txt = self.get(f"/index.cfm?zaction=AUCTION&ZMETHOD=UPDATE&FNC=UPDATE&ref={','.join(ids)},&tx={int(time.time()*1000)}")
+        try:
+            j = json.loads(txt.strip())
+        except ValueError:
+            return out
+        for it in (j.get("ADATA") or {}).get("AITEM") or []:
+            out[str(it.get("AID"))] = it
+        time.sleep(PAUSE)
         return out
 
 
@@ -136,23 +142,29 @@ def parse_items(h):
     items = []
     for aid, body in ITEM.findall(h):
         rows = {}
+        links = {}
         extra_lines = []
         for k, v in ROW.findall(body):
             k = htmllib.unescape(re.sub(r"<[^>]+>", "", k)).strip().rstrip(":").strip()
+            href = HREF.search(v)
             v = htmllib.unescape(re.sub(r"<[^>]+>", " ", v)).strip()
             v = re.sub(r"\s+", " ", v)
             if not k:
                 extra_lines.append(v)
             elif k not in rows:
                 rows[k] = v
-        items.append((aid, rows, extra_lines))
+                if href:
+                    links[k] = href.group(1)
+        items.append((aid, rows, extra_lines, links))
     return items
 
 
-def to_parcel(aid, rows, extra, st, base, upcoming):
+def to_parcel(aid, rows, extra, st, base, upcoming, links=None):
+    links = links or {}
     addr = rows.get("Property Address") or rows.get("Address")
     city = extra[0] if extra else None
     full = ", ".join(x for x in (addr, city) if x) or None
+    zip_m = re.search(r"(\d{5})(?:-\d{4})?\s*$", city or "")
     status = "Listed"
     wb = buyer = None
     sold_date = None
@@ -162,7 +174,7 @@ def to_parcel(aid, rows, extra, st, base, upcoming):
             wb = money(st.get("D")) or money(st.get("P"))
             buyer = (st.get("ST") or "").strip() or None
             sold_date = st.get("B")
-        elif st.get("B") in ("Withdrawn", "Canceled", "Cancelled", "Rescheduled", "Redeemed"):
+        elif st.get("B") in ("Withdrawn", "Canceled", "Cancelled", "Rescheduled", "Redeemed", "Bankruptcy"):
             status = st.get("B")
         elif not upcoming:
             status = "Not published"
@@ -170,8 +182,9 @@ def to_parcel(aid, rows, extra, st, base, upcoming):
         status = "Not published"
     return parcel(
         parcel=rows.get("Parcel ID") or rows.get("Parcel Number") or rows.get("Folio") or rows.get("Alternate Key"),
-        caseNo=rows.get("Case #") or rows.get("Case Number") or rows.get("Certificate #"),
-        address=addr, fullAddress=full, area=city.split(",")[0].strip().title() if city else None,
+        caseNo=rows.get("Case #") or rows.get("Case Number"), certificate=rows.get("Certificate #"),
+        address=addr, fullAddress=full, area=city.split(",")[0].strip().title() if city else None, zip=zip_m.group(1) if zip_m else None,
+        parcelInfo=links.get("Parcel ID") or links.get("Parcel Number") or links.get("Folio") or links.get("Alternate Key"),
         minBid=money(rows.get("Opening Bid")), value=money(rows.get("Assessed Value") or rows.get("Appraised Value")),
         judgment=money(rows.get("Final Judgment Amount")), type=rows.get("Auction Type"), owner=rows.get("Owner") or rows.get("Defendant"),
         plaintiff=rows.get("Plaintiff"), winningBid=wb, buyer=buyer, status=status, soldDate=sold_date,
@@ -184,21 +197,26 @@ def collect_day(site, day, kind, base, upcoming):
     site.get(f"/index.cfm?zaction=AUCTION&Zmethod=PREVIEW&AUCTIONDATE={day}")
     time.sleep(PAUSE)
     items = []
+    seen_all = set()
+    st = {}
     for area in ("W", "C"):
         seen = set()
         pagedir = 0
-        for _ in range(60):
+        for _ in range(120):
             h, rlist = site.load(area, pagedir)
             time.sleep(PAUSE)
             new = [r for r in rlist if r not in seen]
             if not new:
                 break
             seen.update(rlist)
-            items.extend(parse_items(h))
+            for it in parse_items(h):
+                if it[0] not in seen_all:
+                    seen_all.add(it[0])
+                    items.append(it)
+            # the portal only answers status questions about the page the session is on, so ask after every page
+            st.update(site.status(rlist))
             pagedir = 1
-    ids = [aid for aid, _, _ in items]
-    st = site.status(ids) if ids else {}
-    return [to_parcel(aid, rows, extra, st.get(aid), base, upcoming) for aid, rows, extra in items]
+    return [to_parcel(aid, rows, extra, st.get(aid), base, upcoming, links) for aid, rows, extra, links in items]
 
 
 def fetch(counties):

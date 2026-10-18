@@ -42,7 +42,7 @@ Everything the pages read is a static file you can fetch from the site:
 
 ### Master Parcel Columns
 
-`fips`, `county`, `state`, `system`, `saleKind` (list, results, excess, taxdeed, foreclosure, sheriff), `source`, `auctionDate`, `auctionStatus`, `auctionLabel`, `parcel`, `caseNo`, `lot`, `address`, `fullAddress`, `area`, `owner`, `buyer`, `type` (normalized category), `typeDetail` (CSV only), `status`, `minBid` (amount owed or opening bid), `winningBid`, `multiple`, `excess`, `value` (county value; Michigan is 2x SEV), `bidToValue`, `winToValue`, `judgment`, `taxes`, `acres`, `sqft`, `yearBuilt`, `years`, `yearsUnpaid`, `tenure` (years the former owner held it), `priorAuctions`, `lat`, `lon`, `googleMaps`, `streetView`, `photo`, `photoCredit`, `listing`, `sourceDoc`, `parcelRecord`, `countyMap`, `countyPage`, `redemptionMonths`, `rate`, `countyMedianMultiple`, `dealScore`, `dealRating`, `desc`.
+`fips`, `county`, `state`, `system`, `saleKind` (list, results, excess, taxdeed, foreclosure, sheriff), `source`, `auctionDate`, `auctionStatus`, `auctionLabel`, `parcel`, `caseNo`, `certificate` (Florida tax certificate), `lot`, `address`, `fullAddress`, `area`, `zip`, `owner`, `buyer`, `plaintiff`, `type` (normalized category), `typeDetail` (CSV only), `status`, `soldAt` (time the hammer fell, where the portal publishes it), `minBid` (amount owed or opening bid), `winningBid`, `multiple`, `excess`, `value` (county value; Michigan is 2x SEV), `bidToValue`, `winToValue`, `judgment`, `taxes`, `acres`, `sqft`, `yearBuilt`, `years`, `yearsUnpaid`, `tenure` (years the former owner held it), `priorAuctions`, `lat`, `lon`, `googleMaps`, `streetView`, `photo`, `photoCredit`, `listing`, `sourceDoc`, `parcelRecord`, `countyMap`, `countyPage`, `redemptionMonths`, `rate`, `countyMedianMultiple`, `dealScore`, `dealRating`, `desc`.
 
 ## Where The Data Comes From
 
@@ -65,7 +65,7 @@ Everything the pages read is a static file you can fetch from the site:
 | `sources/atlanta.py` | 40 Georgia counties | The Metro Atlanta tracker's published `data/*.json`: sale lists, results, excess funds lists, geocoded parcels |
 | `sources/clark.py` | Clark County, Nevada | The Clark County tracker's `auctions.json` and `parcels.json`: every Treasurer auction since 2012 |
 | `sources/michigan.py` | 79 Michigan counties | [Tax-Sale.info](https://www.tax-sale.info/) (Title Check): the upcoming-auction calendar, two years of past results, and each county catalog's CSV, photos and sold prices |
-| `sources/realauction.py` | Florida (67 counties probed), Ohio (88), Texas (254) | RealAuction portals: Florida Clerk tax deed sales (`{county}.realtaxdeed.com`) and foreclosure sales (`{county}.realforeclose.com`), Ohio's statewide sheriff sale portal (`{county}.sheriffsaleauction.ohio.gov`) and Texas sheriff sale portals (`{county}.texas.sheriffsaleauctions.com`): calendars, every item with parcel, address, value and opening bid, and sold prices and buyers |
+| `sources/realauction.py` | Florida (67 counties probed), Ohio (88), Texas (254) | RealAuction portals: Florida Clerk tax deed sales (`{county}.realtaxdeed.com`) and foreclosure sales (`{county}.realforeclose.com`), Ohio's statewide sheriff sale portal (`{county}.sheriffsaleauction.ohio.gov`) and Texas sheriff sale portals (`{county}.texas.sheriffsaleauctions.com`): calendars, every item with parcel, address, value and opening bid, and sold prices and buyers. These portals refuse data-center addresses, GitHub's runners included, so they are collected from a home connection (below) and the monthly refresh keeps what was collected |
 
 Every other county has its state rules, statutory sale date, official site and search links. Adding a county means writing one adapter that returns the record shape documented in `sources/__init__.py`; the dashboard needs no changes.
 
@@ -90,6 +90,18 @@ python3 fetch_all.py            # refresh everything (a few minutes)
 python3 fetch_all.py --offline  # rebuild the registry without calling any source
 python3 -m http.server 8000     # then open http://localhost:8000
 ```
+
+### Collecting The RealAuction Portals (Florida, Ohio, Texas)
+
+RealAuction's portals answer GitHub's runners with a marketing page instead of the auction calendar, so Florida tax deed and foreclosure sales and the Ohio and Texas sheriff sales are collected from an ordinary connection and committed:
+
+```bash
+python3 collect_local.py --state FL                      # every Florida portal (an hour or more)
+python3 collect_local.py --county duval,orange,hillsborough
+git add data && git commit -m "Collect RealAuction portal data" && git push
+```
+
+`collect_local.py` writes `data/counties/<fips>.json`, rebuilds the registry, master CSV and calendar, and the next monthly refresh keeps those files whenever the portals refuse the runner. `tools/realauction_console.js` does the same job from a browser tab (paste it into the console on a county's calendar page, save `window.__ra` as `data/raw/realauction/<fips>-<kind>.json`, then `python3 collect_local.py --import`).
 
 ## Files
 

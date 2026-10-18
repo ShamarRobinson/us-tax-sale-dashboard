@@ -16,7 +16,7 @@ from states import STATE_BY_ABBR, SYSTEM_LABELS
 
 PARCEL_COLUMNS = [
     "fips", "county", "state", "system", "saleKind", "source", "auctionDate", "auctionStatus", "auctionLabel",
-    "parcel", "caseNo", "lot", "address", "fullAddress", "area", "owner", "buyer", "type", "status",
+    "parcel", "caseNo", "certificate", "lot", "address", "fullAddress", "area", "zip", "owner", "buyer", "plaintiff", "type", "status", "soldAt",
     "minBid", "winningBid", "multiple", "excess", "value", "bidToValue", "winToValue", "judgment", "taxes",
     "acres", "sqft", "yearBuilt", "years", "yearsUnpaid", "tenure", "priorAuctions", "lat", "lon", "googleMaps", "streetView", "photo", "photoCredit",
     "listing", "sourceDoc", "parcelRecord", "countyMap", "countyPage", "redemptionMonths", "rate", "countyMedianMultiple", "dealScore", "dealRating", "typeDetail", "desc",
@@ -160,7 +160,7 @@ def build(counties, records, data_dir):
                 score, cat = deal_score(p, c, cmult, priors)
                 rows.append([
                     fips, c["label"], c["state"], SYSTEM_LABELS[st["system"]], a.get("saleKind") or a.get("kind"), rec.get("source"), a.get("date"), a.get("status"), a.get("label"),
-                    p.get("parcel"), p.get("caseNo"), p.get("lot"), p.get("address"), p.get("fullAddress"), p.get("area"), p.get("owner"), p.get("buyer"), cat, p.get("status"),
+                    p.get("parcel"), p.get("caseNo"), p.get("certificate"), p.get("lot"), p.get("address"), p.get("fullAddress"), p.get("area"), p.get("zip"), p.get("owner"), p.get("buyer"), p.get("plaintiff"), cat, p.get("status"), p.get("soldDate"),
                     mb, wb, round(wb / mb, 2) if wb and mb else None, num(p.get("excess")), v,
                     round(mb / v, 3) if mb is not None and v else None, round(wb / v, 3) if wb and v else None, num(p.get("judgment")), num(p.get("taxes")),
                     num(p.get("acres")), num(p.get("sqft")), p.get("yearBuilt") or None, p.get("years"), num(p.get("defaultYrs")) if p.get("defaultYrs") is not None else p.get("yearsUnpaid"), num(p.get("tenure")), len(priors), num(p.get("lat")), num(p.get("lon")),
