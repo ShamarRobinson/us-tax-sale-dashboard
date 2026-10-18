@@ -54,13 +54,25 @@
   }
 
   function renderTabs() {
-    const nav = $("tabs");
-    const parts = [`<a href="#" data-tab="us">United States</a>`];
-    for (const s of REG.states) {
-      const withData = (BY_STATE[s.abbr] || []).some((c) => c.data);
-      parts.push(`<a href="#${s.abbr.toLowerCase()}" data-tab="${s.abbr}" title="${esc(s.name)}">${withData ? '<span class="dot"></span>' : ""}${s.abbr}</a>`);
-    }
-    nav.innerHTML = parts.join("");
+    const sel = $("selState");
+    sel.innerHTML = `<option value="us">United States (all)</option>` + REG.states.map((s) => `<option value="${s.abbr}">${esc(s.name)}${s.withData ? ` (${s.withData} with data)` : ""}</option>`).join("");
+    sel.onchange = () => { location.hash = sel.value === "us" ? "" : sel.value.toLowerCase(); };
+    $("selCounty").onchange = () => { const v = $("selCounty").value; if (v) location.hash = countyHref(BY_FIPS[v]).slice(1); };
+    $("selType").onchange = () => { const v = $("selType").value; $("selShow").value = ""; location.hash = v ? "q=type:" + v : ""; };
+    $("selShow").onchange = () => {
+      let v = $("selShow").value; $("selType").value = "";
+      if (v === "next:__soon__") { const d = new Date(); d.setDate(d.getDate() + 60); v = "next:" + d.toISOString().slice(0, 10); }
+      location.hash = v ? "q=" + v : "";
+    };
+  }
+
+  function fillCountyDropdown(abbr, fips) {
+    const sel = $("selCounty");
+    const list = BY_STATE[abbr] || [];
+    if (!list.length) { sel.disabled = true; sel.innerHTML = `<option value="">Pick a state first</option>`; return; }
+    sel.disabled = false;
+    sel.innerHTML = `<option value="">All of ${esc(STATES[abbr].name)}</option>` + list.map((c) => `<option value="${c.fips}">${esc(c.label)}${c.data ? ` (${int(c.data.parcels)} parcels)` : ""}</option>`).join("");
+    sel.value = fips || "";
   }
 
   function renderFooter() {
@@ -71,7 +83,6 @@
   // ---------- routing ----------
   function route() {
     const h = decodeURIComponent(location.hash.replace(/^#/, "")).trim();
-    document.querySelectorAll(".tabs a").forEach((a) => a.classList.remove("active"));
     if (h.startsWith("q=")) { $("gSearch").value = h.slice(2); runSearch(h.slice(2)); return; }
     $("results").hidden = true;
     if (!h || h === "us") { showNation(); return; }
@@ -87,12 +98,41 @@
   }
   window.addEventListener("hashchange", route);
 
-  function setView(name, tab) {
+  function setView(name, tab, fips) {
     for (const v of ["viewNation", "viewState", "viewCounty"]) $(v).hidden = v !== name;
-    const a = document.querySelector(`.tabs a[data-tab="${tab}"]`);
-    if (a) { a.classList.add("active"); a.scrollIntoView({ block: "nearest", inline: "nearest" }); }
+    $("selState").value = tab;
+    fillCountyDropdown(tab === "us" ? null : tab, fips);
+    $("selType").value = ""; $("selShow").value = "";
     window.scrollTo({ top: 0 });
   }
+
+  // ---------- drill-down charts ----------
+  // A level is { name, title, labels, values, colors?, horizontal?, money?, click(i) -> next level | undefined }.
+  class Drill {
+    constructor(canvasId, crumbId, root) { this.id = canvasId; this.crumb = $(crumbId); this.stack = [root]; this.render(); }
+    push(level) { this.stack.push(level); this.render(); }
+    pop(i) { this.stack.length = i + 1; this.render(); }
+    render() {
+      const lv = this.stack[this.stack.length - 1];
+      this.crumb.innerHTML = this.stack.map((l, i) => i < this.stack.length - 1 ? `<button type="button" data-i="${i}">${esc(l.name)}</button><span class="sep">&rsaquo;</span>` : `<span class="here">${esc(l.name)}</span>`).join("");
+      this.crumb.querySelectorAll("button").forEach((b) => b.onclick = () => this.pop(+b.dataset.i));
+      const fmt = lv.money ? money : int;
+      const box = $(this.id).parentElement;
+      box.style.height = lv.horizontal ? Math.max(box.classList.contains("short") ? 230 : 280, lv.labels.length * 22 + 70) + "px" : "";
+      chart(this.id, {
+        type: "bar",
+        data: { labels: lv.labels, datasets: [{ label: lv.series || "", data: lv.values, backgroundColor: lv.colors || "#2a78d6", borderRadius: 4, maxBarThickness: 34 }, ...(lv.values2 ? [{ label: lv.series2, data: lv.values2, backgroundColor: "#eb6834", borderRadius: 4, maxBarThickness: 34 }] : [])] },
+        options: {
+          indexAxis: lv.horizontal ? "y" : "x", maintainAspectRatio: false,
+          onClick: (e, els) => { if (!els.length) return; const i = els[0].index; setTimeout(() => { const next = lv.click && lv.click(i); if (next) this.push(next); }, 0); },
+          onHover: (e, els) => { e.native.target.style.cursor = els.length && lv.click ? "pointer" : "default"; },
+          plugins: { legend: { display: !!lv.values2 }, title: { display: true, text: lv.title }, tooltip: { callbacks: { label: (c) => `${c.dataset.label ? c.dataset.label + ": " : ""}${fmt(c.raw)}${lv.hint ? " " + lv.hint(c.dataIndex) : ""}` } } },
+          scales: { [lv.horizontal ? "x" : "y"]: { beginAtZero: true, grid: { color: "#ebe9e4" }, ticks: { callback: (v) => fmt(v), precision: 0 } }, [lv.horizontal ? "y" : "x"]: { grid: { display: false }, ticks: { autoSkip: false, maxRotation: lv.horizontal ? 0 : 45 } } },
+        },
+      });
+    }
+  }
+  const go = (hash) => { location.hash = hash; };
 
   // ---------- helpers for maps ----------
   function simpleMap(id) {
@@ -225,10 +265,30 @@
     }).addTo(m);
     m.fitBounds(layer.getBounds(), { padding: [6, 6] });
 
-    // parcels by state chart
-    const byState = REG.states.filter((s) => s.parcels > 0).sort((a, b) => b.parcels - a.parcels).slice(0, 8);
-    chart("nRich", { type: "bar", data: { labels: byState.map((s) => s.name), datasets: [{ label: "Parcels on file", data: byState.map((s) => s.parcels), backgroundColor: "#2a78d6", borderRadius: 4, maxBarThickness: 28 }] },
-      options: { indexAxis: "y", maintainAspectRatio: false, plugins: { legend: { display: false }, tooltip: { callbacks: { label: (c) => `${int(c.raw)} parcels in ${REG.states.find((s) => s.name === c.label)?.withData} counties` } } }, scales: { x: { grid: { color: "#ebe9e4" }, ticks: { callback: (v) => int(v) } }, y: { grid: { display: false } } } } });
+    // drill 1: systems -> states in the system -> open state
+    const stateLevel = (k) => {
+      const sts = REG.states.filter((s) => s.system === k).sort((a, b) => b.counties - a.counties);
+      return { name: SYS[k].label, title: `Counties per state (${SYS[k].label.toLowerCase()})`, labels: sts.map((s) => s.abbr), values: sts.map((s) => s.counties), colors: SYS[k].color, series: "Counties",
+        hint: (i) => `in ${sts[i].name}`, click: (i) => { go(sts[i].abbr.toLowerCase()); } };
+    };
+    new Drill("nSys", "nSysCrumb", { name: "All systems", title: "Counties by sale system", labels: sysRows.map((r) => SYS[r.k].label), values: sysRows.map((r) => r.counties), colors: sysRows.map((r) => SYS[r.k].color), series: "Counties", click: (i) => stateLevel(sysRows[i].k) });
+
+    // drill 2: parcels by state -> counties in the state -> open county
+    const byState = REG.states.filter((s) => s.parcels > 0).sort((a, b) => b.parcels - a.parcels);
+    const countyLevel = (st) => {
+      const cs = (BY_STATE[st.abbr] || []).filter((c) => c.data && c.data.parcels).sort((a, b) => b.data.parcels - a.data.parcels).slice(0, 30);
+      return { name: st.name, title: `Parcels on file by county in ${st.name}${cs.length === 30 ? " (top 30)" : ""}`, labels: cs.map((c) => c.name), values: cs.map((c) => c.data.parcels), horizontal: true, series: "Parcels",
+        click: (i) => { go(countyHref(cs[i]).slice(1)); } };
+    };
+    new Drill("nRich", "nRichCrumb", { name: "All states", title: "Parcels on file by state", labels: byState.map((s) => s.name), values: byState.map((s) => s.parcels), horizontal: true, series: "Parcels", hint: (i) => `in ${byState[i].withData} counties`, click: (i) => countyLevel(byState[i]) });
+
+    // drill 3: posted sales by month -> counties selling that month -> open county
+    const months = {};
+    for (const c of posted) { const k = c.nextSale.slice(0, 7); (months[k] = months[k] || []).push(c); }
+    const mk = Object.keys(months).sort();
+    const mlabel = (k) => new Date(k + "-15T12:00:00").toLocaleDateString("en-US", { month: "short", year: "numeric" });
+    new Drill("nCal", "nCalCrumb", { name: "All months", title: "Counties with a posted sale, by month", labels: mk.map(mlabel), values: mk.map((k) => months[k].length), series: "Counties", colors: "#8e5ad6",
+      click: (i) => { const cs = months[mk[i]].sort((a, b) => (b.data?.parcels || 0) - (a.data?.parcels || 0)).slice(0, 30); return { name: mlabel(mk[i]), title: `Parcels listed for sale in ${mlabel(mk[i])}`, labels: cs.map((c) => `${c.name}, ${c.state}`), values: cs.map((c) => c.data?.parcels || 0), horizontal: true, series: "Parcels", colors: "#8e5ad6", hint: (j) => fmtDate(cs[j].nextSale), click: (j) => { go(countyHref(cs[j]).slice(1)); } }; } });
 
     // upcoming posted
     const upcoming = posted.map((c) => ({ c, date: c.nextSale, name: c.label, state: c.state, parcels: c.data ? c.data.parcels : null, kind: whoRuns(c) })).sort((a, b) => a.date.localeCompare(b.date));
@@ -263,7 +323,7 @@
   function showState(abbr) {
     const s = STATES[abbr];
     const list = BY_STATE[abbr] || [];
-    setView("viewState", abbr);
+    setView("viewState", abbr, "");
     $("sName").textContent = s.name;
     $("sSub").textContent = `${int(s.counties)} ${s.unit.toLowerCase().includes("county") ? "counties" : s.unit.toLowerCase() + "s"} · ${s.withData ? `${s.withData} with parcel data on file · ` : ""}population ${int(s.pop)}`;
     $("sPill").innerHTML = sysPill(s.system, true);
@@ -288,6 +348,26 @@
       },
     }).addTo(m);
     if (feats.length) m.fitBounds(layer.getBounds(), { padding: [8, 8] });
+
+    // grouped drill-down chart
+    const popTier = (p) => p == null ? "Unknown" : p < 10000 ? "Under 10k" : p < 50000 ? "10k to 50k" : p < 250000 ? "50k to 250k" : p < 1000000 ? "250k to 1M" : "1M and up";
+    const groupers = {
+      status: { title: "Counties by data on file", key: (c) => c.data ? "Parcel data on file" : c.taxsale ? "Tax sale page known" : "Official site and search links", order: ["Parcel data on file", "Tax sale page known", "Official site and search links"], colors: ["#2a78d6", "#bcd3f3", "#c9d4e5"] },
+      month: { title: "Counties by next sale month", key: (c) => c.nextSale ? mlabelOf(c.nextSale) : (c.nextSaleLabel || "No date on file"), order: null },
+      pop: { title: "Counties by population tier", key: (c) => popTier(c.pop), order: ["Under 10k", "10k to 50k", "50k to 250k", "250k to 1M", "1M and up", "Unknown"] },
+      run: { title: "Counties by who holds the sale", key: (c) => shortRun(c), order: null },
+    };
+    const mlabelOf = (d) => new Date(d.slice(0, 7) + "-15T12:00:00").toLocaleDateString("en-US", { month: "short", year: "numeric" });
+    const drawGroup = () => {
+      const g = groupers[$("sGroup").value];
+      const groups = {};
+      for (const c of list) { const k = g.key(c); (groups[k] = groups[k] || []).push(c); }
+      let keys = g.order ? g.order.filter((k) => groups[k]) : Object.keys(groups).sort((a, b) => groups[b].length - groups[a].length);
+      if ($("sGroup").value === "month") keys = Object.keys(groups).sort((a, b) => { const da = groups[a][0].nextSale || "9999", db = groups[b][0].nextSale || "9999"; return da.localeCompare(db); });
+      new Drill("sChart", "sChartCrumb", { name: "All counties", title: g.title, labels: keys, values: keys.map((k) => groups[k].length), colors: g.colors || "#2a78d6", series: "Counties",
+        click: (i) => { const cs = groups[keys[i]].sort((a, b) => (b.pop || 0) - (a.pop || 0)).slice(0, 40); return { name: keys[i], title: `${keys[i]}: population by county${cs.length === 40 ? " (top 40)" : ""}`, labels: cs.map((c) => c.name), values: cs.map((c) => c.pop || 0), horizontal: true, series: "Population", hint: (j) => cs[j].data ? `· ${int(cs[j].data.parcels)} parcels on file` : "", click: (j) => { go(countyHref(cs[j]).slice(1)); } }; } });
+    };
+    $("sGroup").onchange = drawGroup; drawGroup();
 
     const cols = [
       { key: "label", label: s.unit.includes("County") ? "County" : s.unit.replace(/ \(.*\)/, ""), html: (c) => `<a href="${countyHref(c)}">${esc(c.label)}</a>` },
@@ -326,7 +406,7 @@
   // ---------- COUNTY ----------
   async function showCounty(c) {
     const s = c.st;
-    setView("viewCounty", c.state);
+    setView("viewCounty", c.state, c.fips);
     $("cName").textContent = `${c.label}, ${s.name}`;
     $("cSub").innerHTML = `${sysPill(s.system)} &nbsp;<a href="#${c.state.toLowerCase()}">All of ${esc(s.name)}</a> &middot; FIPS ${c.fips}${c.pop ? ` &middot; population ${int(c.pop)}` : ""}${c.landSqmi ? ` &middot; ${int(Math.round(c.landSqmi))} sq mi` : ""}`;
     const info = [
@@ -409,8 +489,10 @@
     const tr = tiers(parcels);
     $("secTiers").hidden = !tr.length;
     if (tr.length) {
-      chart("cTiers", { type: "bar", data: { labels: tr.map((t) => t.name), datasets: [{ label: "Parcels", data: tr.map((t) => t.parcels), backgroundColor: "#2a78d6", borderRadius: 4, maxBarThickness: 36 }] },
-        options: { maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true, grid: { color: "#ebe9e4" }, ticks: { precision: 0 } }, x: { grid: { display: false } } } } });
+      const tierParcels = (t) => parcels.filter((p) => p.minBid != null && tiers([p])[0]?.name === t.name).sort((a, b) => (b.winningBid || b.minBid || 0) - (a.winningBid || a.minBid || 0)).slice(0, 40);
+      new Drill("cTiers", "cTiersCrumb", { name: "All tiers", title: "Parcels by amount owed", labels: tr.map((t) => t.name), values: tr.map((t) => t.parcels), series: "Parcels",
+        hint: (i) => tr[i].bids.length ? `· avg winning bid ${money(avg(tr[i].bids))}` : "",
+        click: (i) => { const ps = tierParcels(tr[i]); return { name: tr[i].name, title: `${tr[i].name}: opening bid and winning bid per parcel${ps.length === 40 ? " (top 40)" : ""}`, labels: ps.map((p) => p.parcel || p.lot || ""), values: ps.map((p) => p.minBid || 0), values2: ps.map((p) => p.winningBid || 0), series: "Opening bid", series2: "Winning bid", horizontal: true, money: true, hint: (j) => ps[j].address ? `· ${ps[j].address}` : "", click: (j) => { showDetail(c, ps[j]); } }; } });
       $("tTiers").innerHTML = `<thead><tr><th>Amount owed</th><th class="num">Parcels</th><th class="num">With price</th><th class="num">Avg winning bid</th><th class="num">Median multiple</th></tr></thead><tbody>${tr.map((t) => `<tr><td>${t.name}</td><td class="num">${int(t.parcels)}</td><td class="num">${int(t.bids.length)}</td><td class="num">${t.bids.length ? money(avg(t.bids)) : ""}</td><td class="num">${t.mults.length ? median(t.mults).toFixed(2) + "x" : ""}</td></tr>`).join("")}</tbody>`;
     }
 
@@ -463,7 +545,10 @@
     const hist = [...aucs].sort((a, b) => (a.date || "").localeCompare(b.date || ""));
     const labels = hist.map((a) => (a.date ? fmtDate(a.date) : a.label));
     chart("cHist", { type: "bar", data: { labels, datasets: [{ label: "Parcels", data: hist.map((a) => a.parcels.length), backgroundColor: hist.map((a) => a.status === "upcoming" ? "#8e5ad6" : "#2a78d6"), borderRadius: 4, maxBarThickness: 30 }] },
-      options: { maintainAspectRatio: false, plugins: { legend: { display: false }, title: { display: true, text: "Parcels per sale (purple = upcoming)" } }, scales: { y: { beginAtZero: true, grid: { color: "#ebe9e4" }, ticks: { precision: 0 } }, x: { grid: { display: false }, ticks: { maxRotation: 45, autoSkip: true } } } } });
+      options: { maintainAspectRatio: false,
+        onClick: (e, els) => { if (!els.length) return; const a = hist[els[0].index]; setTimeout(() => { const sel = $("cAuction"); sel.value = String(aucs.indexOf(a)); sel.dispatchEvent(new Event("change")); $("cKpis").scrollIntoView({ behavior: "smooth", block: "start" }); }, 0); },
+        onHover: (e, els) => { e.native.target.style.cursor = els.length ? "pointer" : "default"; },
+        plugins: { legend: { display: false }, title: { display: true, text: "Parcels per sale (purple = upcoming); click a bar to pick that sale" } }, scales: { y: { beginAtZero: true, grid: { color: "#ebe9e4" }, ticks: { precision: 0 } }, x: { grid: { display: false }, ticks: { maxRotation: 45, autoSkip: true } } } } });
     const avgs = hist.map((a) => { const b = a.parcels.filter((p) => p.winningBid).map((p) => p.winningBid); return b.length ? avg(b) : null; });
     chart("cHistBid", { type: "line", data: { labels, datasets: [{ label: "Average winning bid", data: avgs, borderColor: "#eb6834", backgroundColor: "#eb6834", borderWidth: 2, pointRadius: 4, spanGaps: true, tension: 0.2 }] },
       options: { maintainAspectRatio: false, plugins: { legend: { display: false }, title: { display: true, text: "Average winning bid per sale" }, tooltip: { callbacks: { label: (x) => money(x.raw) } } }, scales: { y: { beginAtZero: true, grid: { color: "#ebe9e4" }, ticks: { callback: (v) => money(v) } }, x: { grid: { display: false }, ticks: { maxRotation: 45, autoSkip: true } } } } });
@@ -523,8 +608,9 @@
       const hay = `${c.label} ${c.st.name} ${c.state} ${whoRuns(c)} ${SYS[c.st.system].label}`.toLowerCase();
       return t.words.every((w) => hay.includes(w));
     });
-    document.querySelectorAll(".tabs a").forEach((a) => a.classList.remove("active"));
     for (const v of ["viewNation", "viewState", "viewCounty"]) $(v).hidden = true;
+    $("selState").value = "us"; fillCountyDropdown(null);
+    const tf = t.fields.type; $("selType").value = tf ? (sysKey(tf.v) || "") : "";
     $("results").hidden = false;
     $("resTitle").textContent = `Search Results: ${int(rows.length)} counties`;
     const cols = [

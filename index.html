@@ -26,7 +26,14 @@
       </div>
     </div>
   </div>
-  <nav class="tabs" id="tabs" aria-label="States"></nav>
+  <div class="wrap">
+    <nav class="navbar" aria-label="Browse by state and county">
+      <label>State <select id="selState"><option value="us">United States (all)</option></select></label>
+      <label>County <select id="selCounty" disabled><option value="">Pick a state first</option></select></label>
+      <label>Sale type <select id="selType"><option value="">Any</option><option value="deed">Tax deed states</option><option value="lien">Tax lien states</option><option value="redeemable">Redeemable deed states</option><option value="hybrid">Hybrid states</option></select></label>
+      <label>Show <select id="selShow"><option value="">All counties</option><option value="data:yes">Counties with parcel data</option><option value="next:__soon__">Sales in the next 60 days</option><option value="pop>250k">Population over 250k</option></select></label>
+    </nav>
+  </div>
 </header>
 
 <main class="wrap">
@@ -45,8 +52,15 @@
         <div><div id="nMap" class="map tallmap" role="img" aria-label="Map of the United States colored by tax sale system"></div>
           <div class="legend" id="nLegend"></div></div>
         <div><h3>Sale Systems</h3><div class="tablewrap"><table class="data" id="nSystems"></table></div>
-          <h3 class="mt">Parcel Data On File By State</h3><div class="chart short"><canvas id="nRich"></canvas></div>
-          <p class="muted small">Parcel-level data comes from the sources listed in the footer. Every other county still has its rules, schedule and official links.</p></div>
+          <div class="crumbs" id="nSysCrumb"></div><div class="chart short"><canvas id="nSys"></canvas></div>
+          <p class="muted small">Click a bar to drill down: system, then the states that use it, then the state itself.</p></div>
+      </div>
+    </section>
+    <section class="card">
+      <div class="head"><h2>Where The Data Is Richest</h2><p>Parcel-level data on file, by state. Click a state to see its counties, then a county to open it.</p></div>
+      <div class="grid2">
+        <div><div class="crumbs" id="nRichCrumb"></div><div class="chart"><canvas id="nRich"></canvas></div></div>
+        <div><div class="crumbs" id="nCalCrumb"></div><div class="chart"><canvas id="nCal"></canvas></div><p class="muted small">Posted sale dates by month. Click a month to see the counties selling that month.</p></div>
       </div>
     </section>
     <section class="card">
@@ -68,6 +82,11 @@
       <div class="chead"><div><h2 id="sName"></h2><p class="muted" id="sSub"></p></div><div id="sPill"></div></div>
       <p class="takeaway" id="sSummary"></p>
       <div class="cinfo" id="sInfo"></div>
+    </section>
+    <section class="card">
+      <div class="head"><h2>Counties At A Glance</h2><p>Group the counties, then click a bar to list the counties in that group, then click a county to open it.</p></div>
+      <div class="filters gridbar"><label class="inline">Group by <select id="sGroup"><option value="status">Data on file</option><option value="month">Next sale month</option><option value="pop">Population tier</option><option value="run">Who holds the sale</option></select></label></div>
+      <div class="crumbs" id="sChartCrumb"></div><div class="chart"><canvas id="sChart"></canvas></div>
     </section>
     <section class="card">
       <div class="head"><h2 id="sCountiesTitle">Counties</h2><p>Click a county on the map or in the table. Blue counties have parcel-level auction data on file; light blue counties have a known tax sale page; the rest have an official site and search links.</p></div>
@@ -95,11 +114,11 @@
     <div id="cBody" hidden>
       <section class="kpis" id="cKpis"></section>
       <section class="card" id="secTiers">
-        <div class="head"><h2>Cost Tiers</h2><p>Parcels grouped by the amount owed or opening bid. Where winning bids are published, the average winning bid per tier is shown too.</p></div>
-        <div class="grid2"><div class="chart"><canvas id="cTiers"></canvas></div><div class="tablewrap"><table class="data" id="tTiers"></table></div></div>
+        <div class="head"><h2>Cost Tiers</h2><p>Parcels grouped by the amount owed or opening bid. Click a tier to see its parcels (opening bid against winning bid), then a parcel for its details.</p></div>
+        <div class="grid2"><div><div class="crumbs" id="cTiersCrumb"></div><div class="chart"><canvas id="cTiers"></canvas></div></div><div class="tablewrap"><table class="data" id="tTiers"></table></div></div>
       </section>
       <section class="card" id="secHistory">
-        <div class="head"><h2>Auction History</h2><p>Every sale on file for this county. The left chart counts parcels per sale; the right one shows the average winning bid where it was published.</p></div>
+        <div class="head"><h2>Auction History</h2><p>Every sale on file for this county. Click a bar to switch the auction picker to that sale. The right chart shows the average winning bid where it was published.</p></div>
         <div class="grid2"><div class="chart short"><canvas id="cHist"></canvas></div><div class="chart short"><canvas id="cHistBid"></canvas></div></div>
         <div class="tablewrap tall mt"><table class="data sortable" id="tHist"></table></div>
       </section>

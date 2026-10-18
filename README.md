@@ -10,6 +10,8 @@ Tax deed auctions, tax lien sales, redeemable deed sales and sheriff sales for e
 - **A tab per state** (with its own link, e.g. `#ga`): who holds the sale, when, how bidding works, the interest or penalty rate, the redemption period, how mortgage foreclosures and sheriff sales work in that state, the statute, the auction platforms in use, and a county map and table.
 - **A page per county** (e.g. `#ga/fulton` or `#c/13121`): who runs the sale, the next sale date (posted or by statute), the tax sale page when known, the official county site, parcel lookup and sheriff sale links, population and land area, and the state rules.
 - **Parcel-level data** where a source publishes it: an auction picker, bid statistics, cost tiers, auction history, a parcel map and a sortable parcel grid with CSV download, the same way the Atlanta tracker works.
+- **Dropdown navigation:** State, County, Sale type and Show menus in the header cascade into each other (pick a state, then a county, then an auction).
+- **Drill-down charts:** every chart is nested. On the national page, sale system > states > state page; parcels by state > counties > county page; posted sales by month > counties. On a state page, group counties by data status, next sale month, population tier or who holds the sale, then click a bar to list the counties, then open one. On a county page, cost tier > parcels (opening bid against winning bid) > parcel details, and the auction history bars switch the auction picker.
 - **Search** across every county, e.g. `state:tx`, `type:lien next:2026-12`, `data:yes state:mi`, `run:sheriff`, `pop>500k`.
 
 ## Where The Data Comes From
