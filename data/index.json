@@ -1,11 +1,11 @@
 {
- "generated": "2026-10-18T22:47:35+00:00",
+ "generated": "2026-10-19T03:12:40+00:00",
  "counties": 3222,
  "states": 52,
- "withData": 351,
- "parcels": 57660,
- "auctions": 2746,
- "withTaxSaleLink": 1160,
+ "withData": 379,
+ "parcels": 66240,
+ "auctions": 3900,
+ "withTaxSaleLink": 1175,
  "withSite": 3061,
  "withSheriffLink": 378,
  "withAssessorLink": 1545,
@@ -19,12 +19,30 @@
  },
  "upcomingPosted": [
   {
+   "fips": "12005",
+   "state": "FL",
+   "name": "Bay County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 330,
+   "page": "https://bay.realtaxdeed.com"
+  },
+  {
+   "fips": "12015",
+   "state": "FL",
+   "name": "Charlotte County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 693,
+   "page": "https://charlotte.realforeclose.com"
+  },
+  {
    "fips": "12031",
    "state": "FL",
    "name": "Duval County",
    "date": "2026-10-19",
    "kind": "posted",
-   "parcels": 913,
+   "parcels": 1029,
    "page": "https://duval.realtaxdeed.com"
   },
   {
@@ -33,8 +51,26 @@
    "name": "Hillsborough County",
    "date": "2026-10-19",
    "kind": "posted",
-   "parcels": 999,
+   "parcels": 1139,
    "page": "https://hillsborough.realtaxdeed.com"
+  },
+  {
+   "fips": "12073",
+   "state": "FL",
+   "name": "Leon County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 282,
+   "page": "https://leon.realtaxdeed.com"
+  },
+  {
+   "fips": "12083",
+   "state": "FL",
+   "name": "Marion County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 1081,
+   "page": "https://marion.realtaxdeed.com"
   },
   {
    "fips": "12086",
@@ -42,7 +78,7 @@
    "name": "Miami-Dade County",
    "date": "2026-10-19",
    "kind": "posted",
-   "parcels": 2722,
+   "parcels": 2992,
    "page": "https://miamidade.realtaxdeed.com"
   },
   {
@@ -60,7 +96,7 @@
    "name": "Orange County",
    "date": "2026-10-19",
    "kind": "posted",
-   "parcels": 1162,
+   "parcels": 1396,
    "page": "https://orange.realtaxdeed.com"
   },
   {
@@ -69,8 +105,26 @@
    "name": "Palm Beach County",
    "date": "2026-10-19",
    "kind": "posted",
-   "parcels": 1103,
-   "page": "https://www.bid4assets.com/pbsosheriffsales"
+   "parcels": 1269,
+   "page": "https://palmbeach.realtaxdeed.com"
+  },
+  {
+   "fips": "12101",
+   "state": "FL",
+   "name": "Pasco County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 400,
+   "page": "https://pasco.realtaxdeed.com"
+  },
+  {
+   "fips": "12127",
+   "state": "FL",
+   "name": "Volusia County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 799,
+   "page": "https://volusia.realtaxdeed.com"
   },
   {
    "fips": "39001",
@@ -163,13 +217,13 @@
    "page": "https://liveauctions.govease.com/CA/calosangeles/1391/browsestandard"
   },
   {
-   "fips": "12005",
+   "fips": "12001",
    "state": "FL",
-   "name": "Bay County",
+   "name": "Alachua County",
    "date": "2026-10-20",
    "kind": "posted",
-   "parcels": 233,
-   "page": "https://bay.realtaxdeed.com"
+   "parcels": 118,
+   "page": "https://alachua.realtaxdeed.com"
   },
   {
    "fips": "12011",
@@ -177,7 +231,7 @@
    "name": "Broward County",
    "date": "2026-10-20",
    "kind": "posted",
-   "parcels": 723,
+   "parcels": 918,
    "page": "https://broward.realtaxdeed.com"
   },
   {
@@ -186,8 +240,8 @@
    "name": "Indian River County",
    "date": "2026-10-20",
    "kind": "posted",
-   "parcels": 55,
-   "page": "https://indianriver.realtaxdeed.com"
+   "parcels": 119,
+   "page": "https://indian-river.realtaxdeed.com"
   },
   {
    "fips": "12071",
@@ -195,7 +249,7 @@
    "name": "Lee County",
    "date": "2026-10-20",
    "kind": "posted",
-   "parcels": 949,
+   "parcels": 1047,
    "page": "https://lee.realtaxdeed.com"
   },
   {
@@ -204,7 +258,7 @@
    "name": "Nassau County",
    "date": "2026-10-20",
    "kind": "posted",
-   "parcels": 21,
+   "parcels": 55,
    "page": "https://nassau.realtaxdeed.com"
   },
   {
@@ -213,7 +267,7 @@
    "name": "Pinellas County",
    "date": "2026-10-20",
    "kind": "posted",
-   "parcels": 303,
+   "parcels": 368,
    "page": "https://pinellas.realtaxdeed.com"
   },
   {
@@ -222,8 +276,44 @@
    "name": "Polk County",
    "date": "2026-10-20",
    "kind": "posted",
-   "parcels": 643,
+   "parcels": 759,
    "page": "https://polk.realtaxdeed.com"
+  },
+  {
+   "fips": "12113",
+   "state": "FL",
+   "name": "Santa Rosa County",
+   "date": "2026-10-20",
+   "kind": "posted",
+   "parcels": 148,
+   "page": "https://santarosa.realtaxdeed.com"
+  },
+  {
+   "fips": "12115",
+   "state": "FL",
+   "name": "Sarasota County",
+   "date": "2026-10-20",
+   "kind": "posted",
+   "parcels": 488,
+   "page": "https://sarasota.realtaxdeed.com"
+  },
+  {
+   "fips": "12117",
+   "state": "FL",
+   "name": "Seminole County",
+   "date": "2026-10-20",
+   "kind": "posted",
+   "parcels": 173,
+   "page": "https://seminole.realtaxdeed.com"
+  },
+  {
+   "fips": "12111",
+   "state": "FL",
+   "name": "St. Lucie County",
+   "date": "2026-10-20",
+   "kind": "posted",
+   "parcels": 300,
+   "page": "https://stlucie.realforeclose.com"
   },
   {
    "fips": "39025",
@@ -271,6 +361,15 @@
    "page": "https://warren.sheriffsaleauction.ohio.gov"
   },
   {
+   "fips": "08001",
+   "state": "CO",
+   "name": "Adams County",
+   "date": "2026-10-21",
+   "kind": "posted",
+   "parcels": 109,
+   "page": "https://adams.treasurersdeedsale.realtaxdeed.com"
+  },
+  {
    "fips": "08035",
    "state": "CO",
    "name": "Douglas County",
@@ -280,6 +379,15 @@
    "page": "https://liveauctions.govease.com/CO/codouglasforeclosure/1400/browsestandard"
   },
   {
+   "fips": "08041",
+   "state": "CO",
+   "name": "El Paso County",
+   "date": "2026-10-21",
+   "kind": "posted",
+   "parcels": 1858,
+   "page": "https://elpasoco.treasurersdeedsale.realtaxdeed.com"
+  },
+  {
    "fips": "08045",
    "state": "CO",
    "name": "Garfield County",
@@ -287,6 +395,24 @@
    "kind": "posted",
    "parcels": 11,
    "page": "https://liveauctions.govease.com/CO/cogarfieldforeclosure/1324/browsestandard"
+  },
+  {
+   "fips": "08069",
+   "state": "CO",
+   "name": "Larimer County",
+   "date": "2026-10-21",
+   "kind": "posted",
+   "parcels": 22,
+   "page": "https://larimer.realforeclose.com"
+  },
+  {
+   "fips": "08077",
+   "state": "CO",
+   "name": "Mesa County",
+   "date": "2026-10-21",
+   "kind": "posted",
+   "parcels": 321,
+   "page": "https://mesa.treasurersdeedsale.realtaxdeed.com"
   },
   {
    "fips": "08117",
@@ -307,13 +433,31 @@
    "page": "https://liveauctions.govease.com/CO/cotellerlien/1555/browsestandard"
   },
   {
+   "fips": "12009",
+   "state": "FL",
+   "name": "Brevard County",
+   "date": "2026-10-21",
+   "kind": "posted",
+   "parcels": 411,
+   "page": "https://brevard.realforeclose.com"
+  },
+  {
    "fips": "12019",
    "state": "FL",
    "name": "Clay County",
    "date": "2026-10-21",
    "kind": "posted",
-   "parcels": 73,
+   "parcels": 177,
    "page": "https://clay.realtaxdeed.com"
+  },
+  {
+   "fips": "12033",
+   "state": "FL",
+   "name": "Escambia County",
+   "date": "2026-10-21",
+   "kind": "posted",
+   "parcels": 607,
+   "page": "https://escambia.realtaxdeed.com"
   },
   {
    "fips": "12055",
@@ -325,13 +469,13 @@
    "page": "https://highlands.realtaxdeed.com"
   },
   {
-   "fips": "12073",
+   "fips": "12081",
    "state": "FL",
-   "name": "Leon County",
+   "name": "Manatee County",
    "date": "2026-10-21",
    "kind": "posted",
-   "parcels": 194,
-   "page": "https://leon.realtaxdeed.com"
+   "parcels": 398,
+   "page": "https://manatee.realforeclose.com"
   },
   {
    "fips": "12107",
@@ -339,7 +483,7 @@
    "name": "Putnam County",
    "date": "2026-10-21",
    "kind": "posted",
-   "parcels": 1174,
+   "parcels": 1214,
    "page": "https://putnam.realtaxdeed.com"
   },
   {
@@ -457,7 +601,7 @@
    "date": "2026-10-21",
    "kind": "posted",
    "parcels": 727,
-   "page": "https://www.bid4assets.com/ColumbiaPASheriffSales"
+   "page": "https://www.bid4assets.com/storefront/ColumbiaPATaxSaleSep26"
   },
   {
    "fips": "47083",
@@ -487,13 +631,40 @@
    "page": "https://liveauctions.govease.com/CO/coparktread/1438/browsestandard"
   },
   {
+   "fips": "12003",
+   "state": "FL",
+   "name": "Baker County",
+   "date": "2026-10-22",
+   "kind": "posted",
+   "parcels": 17,
+   "page": "https://baker.realforeclose.com"
+  },
+  {
    "fips": "12017",
    "state": "FL",
    "name": "Citrus County",
    "date": "2026-10-22",
    "kind": "posted",
    "parcels": 314,
-   "page": "https://www.bid4assets.com/CitrusFLForeclosures/listings"
+   "page": "https://citrus.realtaxdeed.com"
+  },
+  {
+   "fips": "12063",
+   "state": "FL",
+   "name": "Jackson County",
+   "date": "2026-10-22",
+   "kind": "posted",
+   "parcels": 315,
+   "page": "https://jackson.realtaxdeed.com"
+  },
+  {
+   "fips": "12131",
+   "state": "FL",
+   "name": "Walton County",
+   "date": "2026-10-22",
+   "kind": "posted",
+   "parcels": 127,
+   "page": "https://walton.realforeclose.com"
   },
   {
    "fips": "39013",
@@ -574,7 +745,16 @@
    "date": "2026-10-22",
    "kind": "posted",
    "parcels": 709,
-   "page": "https://www.bid4assets.com/armstrongpasheriffsales"
+   "page": "https://liveauctions.govease.com/PA/paarmstrongupset/1560/browsestandard"
+  },
+  {
+   "fips": "48361",
+   "state": "TX",
+   "name": "Orange County",
+   "date": "2026-10-22",
+   "kind": "posted",
+   "parcels": 45,
+   "page": "https://orange.texas.sheriffsaleauctions.com"
   },
   {
    "fips": "39023",
@@ -682,7 +862,7 @@
    "date": "2026-10-23",
    "kind": "posted",
    "parcels": 1715,
-   "page": "https://www.bid4assets.com/SchuylkillSheriffSales"
+   "page": "https://www.bid4assets.com/storefront/SchuylkillPATaxSaleJun26"
   },
   {
    "fips": "08113",
@@ -694,13 +874,13 @@
    "page": "https://liveauctions.govease.com/CO/cosanmiguel/1292/browsestandard"
   },
   {
-   "fips": "12113",
+   "fips": "12041",
    "state": "FL",
-   "name": "Santa Rosa County",
+   "name": "Gilchrist County",
    "date": "2026-10-26",
    "kind": "posted",
-   "parcels": 83,
-   "page": "https://santarosa.realtaxdeed.com"
+   "parcels": 25,
+   "page": "https://gilchrist.realtaxdeed.com"
   },
   {
    "fips": "39133",
@@ -730,39 +910,12 @@
    "page": "https://liveauctions.govease.com/CO/cocostilla/1387/browsestandard"
   },
   {
-   "fips": "08041",
-   "state": "CO",
-   "name": "El Paso County",
-   "date": "2026-10-27",
-   "kind": "posted",
-   "parcels": 36,
-   "page": "https://elpasoco.treasurersdeedsale.realtaxdeed.com"
-  },
-  {
-   "fips": "12063",
-   "state": "FL",
-   "name": "Jackson County",
-   "date": "2026-10-27",
-   "kind": "posted",
-   "parcels": 295,
-   "page": "https://jackson.realtaxdeed.com"
-  },
-  {
-   "fips": "12127",
-   "state": "FL",
-   "name": "Volusia County",
-   "date": "2026-10-27",
-   "kind": "posted",
-   "parcels": 510,
-   "page": "https://volusia.realtaxdeed.com"
-  },
-  {
    "fips": "12133",
    "state": "FL",
    "name": "Washington County",
    "date": "2026-10-27",
    "kind": "posted",
-   "parcels": 308,
+   "parcels": 318,
    "page": "https://washington.realtaxdeed.com"
   },
   {
@@ -780,7 +933,7 @@
    "name": "Weld County",
    "date": "2026-10-28",
    "kind": "posted",
-   "parcels": 7,
+   "parcels": 54,
    "page": "https://weld.treasurersdeedsale.realtaxdeed.com"
   },
   {
@@ -847,13 +1000,22 @@
    "page": "https://hendry.realtaxdeed.com"
   },
   {
-   "fips": "12101",
+   "fips": "12085",
    "state": "FL",
-   "name": "Pasco County",
+   "name": "Martin County",
    "date": "2026-10-29",
    "kind": "posted",
-   "parcels": 162,
-   "page": "https://pasco.realtaxdeed.com"
+   "parcels": 62,
+   "page": "https://martin.realtaxdeed.com"
+  },
+  {
+   "fips": "12093",
+   "state": "FL",
+   "name": "Okeechobee County",
+   "date": "2026-10-29",
+   "kind": "posted",
+   "parcels": 83,
+   "page": "https://okeechobee.realforeclose.com"
   },
   {
    "fips": "39039",
@@ -916,7 +1078,7 @@
    "date": "2026-10-29",
    "kind": "posted",
    "parcels": 4225,
-   "page": "https://www.bid4assets.com/monroecountysheriffsales"
+   "page": "https://www.bid4assets.com/storefront/MonroePATaxMay26"
   },
   {
    "fips": "47119",
@@ -1384,7 +1546,7 @@
    "date": "2026-10-30",
    "kind": "posted",
    "parcels": 20,
-   "page": "https://www.bid4assets.com/graysharborsheriffsales"
+   "page": "https://www.bid4assets.com/storefront/GraysHarborSept26"
   },
   {
    "fips": "06085",
@@ -1459,6 +1621,24 @@
    "page": "https://liveauctions.govease.com/TN/gibsonhumboldt/1097/browsestandard"
   },
   {
+   "fips": "48055",
+   "state": "TX",
+   "name": "Caldwell County",
+   "date": "2026-11-03",
+   "kind": "posted",
+   "parcels": 10,
+   "page": "https://caldwell.texas.sheriffsaleauctions.com"
+  },
+  {
+   "fips": "48061",
+   "state": "TX",
+   "name": "Cameron County",
+   "date": "2026-11-03",
+   "kind": "posted",
+   "parcels": 117,
+   "page": "https://cameron.texas.sheriffsaleauctions.com"
+  },
+  {
    "fips": "48073",
    "state": "TX",
    "name": "Cherokee County",
@@ -1477,6 +1657,15 @@
    "page": "https://www.mvbataxsales.com/auction/comal-county-online-property-tax-sale-november-3-2026-185/"
   },
   {
+   "fips": "48113",
+   "state": "TX",
+   "name": "Dallas County",
+   "date": "2026-11-03",
+   "kind": "posted",
+   "parcels": 149,
+   "page": "https://dallas.texas.sheriffsaleauctions.com"
+  },
+  {
    "fips": "48121",
    "state": "TX",
    "name": "Denton County",
@@ -1484,6 +1673,24 @@
    "kind": "posted",
    "parcels": 18,
    "page": "https://liveauctions.govease.com/TX/txdenton/1355/browsestandard"
+  },
+  {
+   "fips": "48141",
+   "state": "TX",
+   "name": "El Paso County",
+   "date": "2026-11-03",
+   "kind": "posted",
+   "parcels": 49,
+   "page": "https://elpaso.texas.sheriffsaleauctions.com"
+  },
+  {
+   "fips": "48167",
+   "state": "TX",
+   "name": "Galveston County",
+   "date": "2026-11-03",
+   "kind": "posted",
+   "parcels": 131,
+   "page": "https://galveston.texas.sheriffsaleauctions.com"
   },
   {
    "fips": "48181",
@@ -1500,8 +1707,8 @@
    "name": "Gregg County",
    "date": "2026-11-03",
    "kind": "posted",
-   "parcels": 78,
-   "page": "https://www.mvbataxsales.com/auction/gladewater-isdcity-of-gladewaterpine-tree-isd-gregg-county-online-property-tax-sale-november-3-2026-187/"
+   "parcels": 99,
+   "page": "https://gregg.texas.sheriffsaleauctions.com"
   },
   {
    "fips": "48309",
@@ -1511,6 +1718,15 @@
    "kind": "posted",
    "parcels": 35,
    "page": "https://liveauctions.govease.com/TX/txmclennan/1444/browsestandard"
+  },
+  {
+   "fips": "48355",
+   "state": "TX",
+   "name": "Nueces County",
+   "date": "2026-11-03",
+   "kind": "posted",
+   "parcels": 124,
+   "page": "https://nueces.texas.sheriffsaleauctions.com"
   },
   {
    "fips": "48363",
@@ -1529,6 +1745,15 @@
    "kind": "posted",
    "parcels": 9,
    "page": "https://liveauctions.govease.com/TX/txparker/1545/browsestandard"
+  },
+  {
+   "fips": "48423",
+   "state": "TX",
+   "name": "Smith County",
+   "date": "2026-11-03",
+   "kind": "posted",
+   "parcels": 44,
+   "page": "https://smith.texas.sheriffsaleauctions.com"
   },
   {
    "fips": "48485",
@@ -1567,15 +1792,6 @@
    "page": "https://liveauctions.govease.com/CO/cowashington/1293/browsestandard"
   },
   {
-   "fips": "12033",
-   "state": "FL",
-   "name": "Escambia County",
-   "date": "2026-11-04",
-   "kind": "posted",
-   "parcels": 461,
-   "page": "https://escambia.realtaxdeed.com"
-  },
-  {
    "fips": "12053",
    "state": "FL",
    "name": "Hernando County",
@@ -1583,15 +1799,6 @@
    "kind": "posted",
    "parcels": 149,
    "page": "https://hernando.realtaxdeed.com"
-  },
-  {
-   "fips": "12115",
-   "state": "FL",
-   "name": "Sarasota County",
-   "date": "2026-11-04",
-   "kind": "posted",
-   "parcels": 347,
-   "page": "https://sarasota.realtaxdeed.com"
   },
   {
    "fips": "22113",
@@ -1610,213 +1817,6 @@
    "kind": "posted",
    "parcels": 11,
    "page": "https://fayette.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "39107",
-   "state": "OH",
-   "name": "Mercer County",
-   "date": "2026-11-04",
-   "kind": "posted",
-   "parcels": 13,
-   "page": "https://mercer.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "39141",
-   "state": "OH",
-   "name": "Ross County",
-   "date": "2026-11-04",
-   "kind": "posted",
-   "parcels": 18,
-   "page": "https://ross.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "39145",
-   "state": "OH",
-   "name": "Scioto County",
-   "date": "2026-11-04",
-   "kind": "posted",
-   "parcels": 16,
-   "page": "https://scioto.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "42007",
-   "state": "PA",
-   "name": "Beaver County",
-   "date": "2026-11-04",
-   "kind": "posted",
-   "parcels": 51,
-   "page": "https://www.bid4assets.com/beavercountypasheriffsales"
-  },
-  {
-   "fips": "08011",
-   "state": "CO",
-   "name": "Bent County",
-   "date": "2026-11-05",
-   "kind": "posted",
-   "parcels": 419,
-   "page": "https://liveauctions.govease.com/CO/cobent/1295/browsestandard"
-  },
-  {
-   "fips": "08065",
-   "state": "CO",
-   "name": "Lake County",
-   "date": "2026-11-05",
-   "kind": "posted",
-   "parcels": 320,
-   "page": "https://liveauctions.govease.com/CO/colake/1386/browsestandard"
-  },
-  {
-   "fips": "12121",
-   "state": "FL",
-   "name": "Suwannee County",
-   "date": "2026-11-05",
-   "kind": "posted",
-   "parcels": 77,
-   "page": "https://suwannee.realtaxdeed.com"
-  },
-  {
-   "fips": "39011",
-   "state": "OH",
-   "name": "Auglaize County",
-   "date": "2026-11-05",
-   "kind": "posted",
-   "parcels": 15,
-   "page": "https://auglaize.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "39055",
-   "state": "OH",
-   "name": "Geauga County",
-   "date": "2026-11-05",
-   "kind": "posted",
-   "parcels": 17,
-   "page": "https://geauga.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "39173",
-   "state": "OH",
-   "name": "Wood County",
-   "date": "2026-11-05",
-   "kind": "posted",
-   "parcels": 14,
-   "page": "https://wood.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "47161",
-   "state": "TN",
-   "name": "Stewart County",
-   "date": "2026-11-05",
-   "kind": "posted",
-   "parcels": 26,
-   "page": "https://liveauctions.govease.com/TN/tnstewart/1244/browsestandard"
-  },
-  {
-   "fips": "06017",
-   "state": "CA",
-   "name": "El Dorado County",
-   "date": "2026-11-06",
-   "kind": "posted",
-   "parcels": 143,
-   "page": "https://www.bid4assets.com/storefront/ElDoradoNov26"
-  },
-  {
-   "fips": "39045",
-   "state": "OH",
-   "name": "Fairfield County",
-   "date": "2026-11-06",
-   "kind": "posted",
-   "parcels": 23,
-   "page": "https://fairfield.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "39073",
-   "state": "OH",
-   "name": "Hocking County",
-   "date": "2026-11-06",
-   "kind": "posted",
-   "parcels": 6,
-   "page": "https://hocking.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "39087",
-   "state": "OH",
-   "name": "Lawrence County",
-   "date": "2026-11-06",
-   "kind": "posted",
-   "parcels": 17,
-   "page": "https://lawrence.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "39127",
-   "state": "OH",
-   "name": "Perry County",
-   "date": "2026-11-06",
-   "kind": "posted",
-   "parcels": 6,
-   "page": "https://perry.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "39167",
-   "state": "OH",
-   "name": "Washington County",
-   "date": "2026-11-06",
-   "kind": "posted",
-   "parcels": 13,
-   "page": "https://washington.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "39137",
-   "state": "OH",
-   "name": "Putnam County",
-   "date": "2026-11-09",
-   "kind": "posted",
-   "parcels": 12,
-   "page": "https://putnam.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "08095",
-   "state": "CO",
-   "name": "Phillips County",
-   "date": "2026-11-10",
-   "kind": "posted",
-   "parcels": 92,
-   "page": "https://liveauctions.govease.com/CO/cophillips/1356/browsestandard"
-  },
-  {
-   "fips": "12097",
-   "state": "FL",
-   "name": "Osceola County",
-   "date": "2026-11-10",
-   "kind": "posted",
-   "parcels": 187,
-   "page": "https://osceola.realtaxdeed.com"
-  },
-  {
-   "fips": "39021",
-   "state": "OH",
-   "name": "Champaign County",
-   "date": "2026-11-10",
-   "kind": "posted",
-   "parcels": 12,
-   "page": "https://champaign.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "39043",
-   "state": "OH",
-   "name": "Erie County",
-   "date": "2026-11-10",
-   "kind": "posted",
-   "parcels": 24,
-   "page": "https://erie.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "47163",
-   "state": "TN",
-   "name": "Sullivan County",
-   "date": "2026-11-10",
-   "kind": "posted",
-   "parcels": 3,
-   "page": "https://liveauctions.govease.com/TN/tnsullivanjudicialfc/1557/browsestandard"
   }
  ],
  "sources": {
@@ -1825,56 +1825,56 @@
    "url": "https://shamarrobinson.github.io/atlanta-tax-sale-dashboard/",
    "counties": 40,
    "ok": true,
-   "checked": "2026-10-18T09:01:55+00:00"
+   "checked": "2026-10-19T00:07:22+00:00"
   },
   "clark": {
    "label": "Clark County Tax Auction Tracker",
    "url": "https://shamarrobinson.github.io/clark-county-tax-auction-dashboard/",
    "counties": 1,
    "ok": true,
-   "checked": "2026-10-18T09:01:55+00:00"
+   "checked": "2026-10-19T00:07:22+00:00"
   },
   "michigan": {
    "label": "Tax-Sale.info (Michigan Public Land Auction)",
    "url": "https://www.tax-sale.info/",
    "counties": 79,
    "ok": true,
-   "error": "https://www.tax-sale.info/auctions: HTTP Error 404: Not Found"
+   "checked": "2026-10-19T00:12:19+00:00"
   },
   "realauction": {
-   "label": "RealAuction portals (Florida Clerk tax deed and foreclosure sales, Ohio and Texas sheriff sales)",
+   "label": "RealAuction portals (Florida, Arizona and Colorado tax deed sales, Clerk and Public Trustee foreclosure sales, Ohio and Texas sheriff sales)",
    "url": "https://www.realauction.com/",
-   "counties": 126,
+   "counties": 155,
    "ok": true,
-   "checked": "2026-10-18T10:12:21+00:00"
+   "checked": "2026-10-19T02:54:54+00:00"
   },
   "govease": {
    "label": "GovEase (online tax sale platform)",
    "url": "https://www.govease.com/",
    "counties": 40,
    "ok": true,
-   "checked": "2026-10-18T21:24:46+00:00"
+   "checked": "2026-10-19T03:02:25+00:00"
   },
   "bid4assets": {
    "label": "Bid4Assets (county tax sale auctions)",
    "url": "https://www.bid4assets.com/county-tax-sales",
    "counties": 35,
    "ok": true,
-   "checked": "2026-10-18T22:20:27+00:00"
+   "checked": "2026-10-19T03:09:48+00:00"
   },
   "mvba": {
    "label": "MVBA Tax Sales (Texas online property tax sales)",
    "url": "https://www.mvbataxsales.com/",
    "counties": 9,
    "ok": true,
-   "checked": "2026-10-18T22:31:55+00:00"
+   "error": "https://www.mvbataxsales.com/api/auctions: Expecting value: line 1 column 1 (char 0)"
   },
   "b4a_sheriff": {
    "label": "Bid4Assets (sheriff and foreclosure sales)",
    "url": "https://www.bid4assets.com/sheriffsales",
    "counties": 30,
    "ok": true,
-   "checked": "2026-10-18T22:47:34+00:00"
+   "checked": "2026-10-19T03:12:31+00:00"
   }
  },
  "countiesWithData": [
@@ -1901,10 +1901,13 @@
   "08023",
   "08031",
   "08035",
+  "08037",
   "08041",
   "08045",
   "08059",
   "08065",
+  "08069",
+  "08077",
   "08083",
   "08093",
   "08095",
@@ -1916,14 +1919,18 @@
   "08121",
   "08123",
   "12001",
+  "12003",
   "12005",
+  "12009",
   "12011",
+  "12015",
   "12017",
   "12019",
   "12031",
   "12033",
   "12035",
   "12041",
+  "12045",
   "12051",
   "12053",
   "12055",
@@ -1933,11 +1940,13 @@
   "12069",
   "12071",
   "12073",
+  "12081",
   "12083",
   "12085",
   "12086",
   "12089",
   "12091",
+  "12093",
   "12095",
   "12097",
   "12099",
@@ -1945,11 +1954,14 @@
   "12103",
   "12105",
   "12107",
+  "12109",
+  "12111",
   "12113",
   "12115",
   "12117",
   "12121",
   "12127",
+  "12131",
   "12133",
   "13013",
   "13015",
@@ -2207,19 +2219,35 @@
   "47179",
   "47181",
   "48005",
+  "48007",
+  "48013",
   "48037",
   "48053",
+  "48055",
+  "48061",
   "48073",
   "48091",
+  "48113",
   "48121",
+  "48139",
+  "48141",
+  "48167",
   "48181",
   "48183",
   "48203",
   "48213",
   "48217",
+  "48239",
+  "48257",
+  "48299",
   "48309",
+  "48321",
+  "48355",
+  "48361",
   "48363",
   "48367",
+  "48423",
+  "48469",
   "48485",
   "53005",
   "53011",
