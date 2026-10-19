@@ -1,10 +1,10 @@
 {
- "generated": "2026-10-19T03:12:40+00:00",
+ "generated": "2026-10-19T06:27:49+00:00",
  "counties": 3222,
  "states": 52,
- "withData": 379,
- "parcels": 66240,
- "auctions": 3900,
+ "withData": 380,
+ "parcels": 67804,
+ "auctions": 3918,
  "withTaxSaleLink": 1175,
  "withSite": 3061,
  "withSheriffLink": 378,
@@ -106,7 +106,7 @@
    "date": "2026-10-19",
    "kind": "posted",
    "parcels": 1269,
-   "page": "https://palmbeach.realtaxdeed.com"
+   "page": "https://www.bid4assets.com/pbsosheriffsales"
   },
   {
    "fips": "12101",
@@ -601,7 +601,16 @@
    "date": "2026-10-21",
    "kind": "posted",
    "parcels": 727,
-   "page": "https://www.bid4assets.com/storefront/ColumbiaPATaxSaleSep26"
+   "page": "https://www.bid4assets.com/ColumbiaPASheriffSales"
+  },
+  {
+   "fips": "42101",
+   "state": "PA",
+   "name": "Philadelphia County",
+   "date": "2026-10-21",
+   "kind": "posted",
+   "parcels": 1564,
+   "page": "https://www.bid4assets.com/philataxsales"
   },
   {
    "fips": "47083",
@@ -646,7 +655,7 @@
    "date": "2026-10-22",
    "kind": "posted",
    "parcels": 314,
-   "page": "https://citrus.realtaxdeed.com"
+   "page": "https://www.bid4assets.com/CitrusFLForeclosures/listings"
   },
   {
    "fips": "12063",
@@ -745,7 +754,7 @@
    "date": "2026-10-22",
    "kind": "posted",
    "parcels": 709,
-   "page": "https://liveauctions.govease.com/PA/paarmstrongupset/1560/browsestandard"
+   "page": "https://www.bid4assets.com/armstrongpasheriffsales"
   },
   {
    "fips": "48361",
@@ -862,7 +871,7 @@
    "date": "2026-10-23",
    "kind": "posted",
    "parcels": 1715,
-   "page": "https://www.bid4assets.com/storefront/SchuylkillPATaxSaleJun26"
+   "page": "https://www.bid4assets.com/SchuylkillSheriffSales"
   },
   {
    "fips": "08113",
@@ -1078,7 +1087,7 @@
    "date": "2026-10-29",
    "kind": "posted",
    "parcels": 4225,
-   "page": "https://www.bid4assets.com/storefront/MonroePATaxMay26"
+   "page": "https://www.bid4assets.com/monroecountysheriffsales"
   },
   {
    "fips": "47119",
@@ -1546,7 +1555,7 @@
    "date": "2026-10-30",
    "kind": "posted",
    "parcels": 20,
-   "page": "https://www.bid4assets.com/storefront/GraysHarborSept26"
+   "page": "https://www.bid4assets.com/graysharborsheriffsales"
   },
   {
    "fips": "06085",
@@ -1808,15 +1817,6 @@
    "kind": "posted",
    "parcels": 15,
    "page": "https://www.bid4assets.com/vermilionsheriffsales/listings"
-  },
-  {
-   "fips": "39047",
-   "state": "OH",
-   "name": "Fayette County",
-   "date": "2026-11-04",
-   "kind": "posted",
-   "parcels": 11,
-   "page": "https://fayette.sheriffsaleauction.ohio.gov"
   }
  ],
  "sources": {
@@ -1872,9 +1872,9 @@
   "b4a_sheriff": {
    "label": "Bid4Assets (sheriff and foreclosure sales)",
    "url": "https://www.bid4assets.com/sheriffsales",
-   "counties": 30,
+   "counties": 31,
    "ok": true,
-   "checked": "2026-10-19T03:12:31+00:00"
+   "checked": "2026-10-19T06:27:46+00:00"
   }
  },
  "countiesWithData": [
@@ -2207,6 +2207,7 @@
   "42063",
   "42089",
   "42091",
+  "42101",
   "42107",
   "47035",
   "47053",

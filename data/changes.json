@@ -1,7 +1,16 @@
 {
- "generated": "2026-10-19T03:12:40+00:00",
- "previous": "2026-10-19T03:12:33+00:00",
+ "generated": "2026-10-19T06:27:49+00:00",
+ "previous": "2026-10-19T03:12:40+00:00",
  "newUpcoming": [
+  {
+   "fips": "42101",
+   "state": "PA",
+   "name": "Philadelphia County",
+   "date": "2026-10-21",
+   "kind": "posted",
+   "parcels": 1564,
+   "page": "https://www.bid4assets.com/philataxsales"
+  },
   {
    "fips": "39107",
    "state": "OH",
@@ -459,7 +468,7 @@
    "date": "2026-12-10",
    "kind": "posted",
    "parcels": 237,
-   "page": "https://www.bid4assets.com/storefront/BedfordPATaxSept26"
+   "page": "https://www.bid4assets.com/BedfordPASheriffSales/listings"
   },
   {
    "fips": "39117",
@@ -471,7 +480,9 @@
    "page": "https://morrow.sheriffsaleauction.ohio.gov"
   }
  ],
- "newCounties": [],
- "parcelDelta": 0,
+ "newCounties": [
+  "42101"
+ ],
+ "parcelDelta": 1564,
  "linkDelta": 0
 }

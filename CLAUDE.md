@@ -80,16 +80,16 @@ GitHub Pages serves index.html / analyzer.html / sheet.html, which load that JSO
 
 ## Data On File (As Of 2026-10-19)
 
-66,240 parcels across 363 counties after the runner's pass on the night of 2026-10-18: FL 21,478 (45), PA 13,041 (19),
-CO 9,155 (23), MI 7,359 (79), GA 3,931 (24), TX 3,918 (31), OH 3,501 (87), CA 1,591 (17), NV 1,156 (7), LA 582 (10),
-WA 183 (7), TN 124 (10), OK 87 (1), WI 68 (1), MN 35 (1), MO 31 (1). By adapter: realauction 28,192, bid4assets
-13,234, govease 8,018, michigan 7,359, atlanta 3,931, mvba 2,967, b4a_sheriff 1,803, clark 736. Raw portal dumps live
-in `data/raw/realauction/<fips>-<kind>.json` (135 files: FL taxdeed 35, FL foreclosure 9, CO taxdeed 4, OH sheriff
-87). GovEase data is sale lists only (every auction open on the platform that day, with starting bids and sale dates);
-Bid4Assets data is sale lists plus results with winning bids for the past sales on its calendar; MVBA data is the open
-Texas sales plus every past online sale since 2017 with final bids; Bid4Assets sheriff's sales are upcoming lists with
-judgment amounts plus the last few days' outcomes. All of these, RealAuction included, refresh on the monthly run and
-with `python3 fetch_all.py --source <adapter>`.
+67,804 parcels across 364 counties: FL 21,478 (45), PA 14,605 (20), CO 9,155 (23), MI 7,359 (79), GA 3,931 (24), TX
+3,918 (31), OH 3,501 (87), CA 1,591 (17), NV 1,156 (7), LA 582 (10), WA 183 (7), TN 124 (10), OK 87 (1), WI 68 (1), MN
+35 (1), MO 31 (1). By adapter: realauction 28,192, bid4assets 13,234, govease 8,018, michigan 7,359, atlanta 3,931,
+b4a_sheriff 3,367, mvba 2,967, clark 736. Raw portal dumps live in `data/raw/realauction/<fips>-<kind>.json` (135
+files: FL taxdeed 35, FL foreclosure 9, CO taxdeed 4, OH sheriff 87). GovEase data is sale lists only (every auction
+open on the platform that day, with starting bids and sale dates); Bid4Assets data is sale lists plus results with
+winning bids for the past sales on its calendar; MVBA data is the open Texas sales plus every past online sale since
+2017 with final bids; Bid4Assets sheriff's sales are upcoming lists with judgment amounts plus the last few days'
+outcomes. All of these, RealAuction included, refresh on the monthly run and with `python3 fetch_all.py --source
+<adapter>`.
 
 ## RealAuction Portals: The Main Open Work
 
