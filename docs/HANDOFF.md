@@ -170,12 +170,17 @@ monthly digest.
 
 ## 8. Ideas Not Yet Built
 
-- More statewide platforms as adapters: Zeus Auction and SRI (TLS fails through the cloud proxy), LienHub and Grant
-  Street (403 to a cloud address), GovDeals, Civic Source, and the treasurer sites that publish PDF lists (reuse the
+- More statewide platforms as adapters: LienHub and Grant Street (403 to a cloud address), GovDeals, Civic Source,
+  and the treasurer sites that publish PDF lists (reuse the
   Atlanta tracker's `ga_common.py` approach for PDF and OCR). Added on 2026-10-18 from Claude Code on the web:
   GovEase (`sources/govease.py`), Bid4Assets county tax sales (`sources/bid4assets.py`), MVBA Texas online tax sales
   (`sources/mvba.py`) and Bid4Assets sheriff's sales (`sources/b4a_sheriff.py`). Bid4Assets answers only browser user
-  agents (a plain Mozilla string, nothing appended).
+  agents (a plain Mozilla string, nothing appended). Added on 2026-10-19: SRI Inc. (`sources/sri.py`), which reads the
+  public JSON API behind https://www.sriservices.com/properties (the client key is in the site's own JavaScript), so
+  the Zeus Auction site itself never has to be scraped. If zeusauction.com or civicsource.com ever do have to be read,
+  both serve an incomplete TLS chain; load GoDaddy's intermediates (gdig2.crt and gd_tls_issuing_dv-r1v1.crt from
+  https://certificates.godaddy.com/repository/) into `ssl.create_default_context()` with `load_verify_locations` and
+  they verify.
 - Philadelphia sheriff sales (https://www.bid4assets.com/philadelphia) turned out to be a hub in front of two
   ordinary landing pages, `/philataxsales` and `/philaforeclosures`; `sources/b4a_sheriff.py` reads them since
   2026-10-19 (about 1,500 properties listed at a time).

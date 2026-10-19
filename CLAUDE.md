@@ -62,7 +62,7 @@ GitHub Pages serves index.html / analyzer.html / sheet.html, which load that JSO
 - Adapter contract: a module in `sources/` with `NAME`, `LABEL`, `HOMEPAGE` and `fetch(counties)` that returns county
   records in the shape documented in `sources/__init__.py` (`auction(...)` and `parcel(...)` helpers, `get`,
   `get_json`, `money`). The dashboard needs no change for a new adapter; add its name to `sources.ADAPTERS`
-  (currently `atlanta`, `clark`, `michigan`, `realauction`, `govease`, `bid4assets`, `mvba`, `b4a_sheriff`). GovEase (`sources/govease.py`)
+  (currently `atlanta`, `clark`, `michigan`, `realauction`, `govease`, `bid4assets`, `mvba`, `b4a_sheriff`, `sri`). GovEase (`sources/govease.py`)
   is reachable from the GitHub runner and from Claude Code on the web, so it refreshes itself monthly; it publishes
   sale lists with starting bids (no results) for whichever auctions are open, in CO, TN, PA, TX, CA, IN, MO, WA, KS and
   OK. Bid4Assets (`sources/bid4assets.py`) covers the County Tax Sales calendar (CA, NV, WA, PA, MN, LA) with sale
@@ -74,7 +74,12 @@ GitHub Pages serves index.html / analyzer.html / sheet.html, which load that JSO
   plus the property table embedded in each sale day's page): upcoming lists with judgment amounts, plaintiffs and
   defendants, and the last few days' outcomes, since a sale day's table disappears soon after the sale. Philadelphia's
   entry is a hub in front of two landing pages of the same kind (`/philataxsales`, `/philaforeclosures`), the largest
-  on the platform, and is read through the same adapter. `sources/realauction.py` collects six portals at a time.
+  on the platform, and is read through the same adapter. SRI Inc. (`sources/sri.py`) reads the public JSON API behind
+  the property search on sriservices.com (`/api/property/carddetail` per state, `/downloadpropertylist` per upcoming
+  sale for owners and minimum bids, `/detail` for the price of each parcel that sold): twelve months of tax sales,
+  commissioners' certificate sales, deed sales, tax lien sales and sheriff's foreclosure sales in IN, CO, LA, TN, FL and
+  MI, with online bidding on Zeus Auction. Parcels paid, removed or cancelled before a past sale are left out so the
+  master CSV stays under GitHub's 100 MB file limit. `sources/realauction.py` collects six portals at a time.
 - Deal score (`master.py`): value 40, property 20, market 15, competition 15, history 10; 70+ Strong, 50 to 69 Good,
   35 to 49 Fair, under 35 Weak.
 
@@ -138,7 +143,7 @@ CORS and the transcription helpers are `tools/ingest_chunks.py` and `tools/decod
 ## Suggested Next Steps
 
 1. `python3 collect_local.py --state FL` (then TX, CO, AZ, NJ) from the Mac, import, commit, push, confirm the deploy.
-2. Add adapters for more statewide platforms (GovEase, Bid4Assets, Zeus Auction, SRI, GovDeals, LienHub, Grant Street
+2. Add adapters for more statewide platforms (GovDeals, LienHub, Grant Street
    and the county treasurer sites that publish lists), one module each in `sources/`.
 3. Keep the analyzer and county pages in parity with the sibling trackers as those gain features.
 4. Rerun `python3 discover_links.py --stale 45` monthly (the workflow does this) and review `ref/discovered_links.json`.
