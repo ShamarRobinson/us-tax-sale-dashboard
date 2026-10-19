@@ -1,15 +1,16 @@
 """Bid4Assets sheriff and foreclosure sales: the online sheriff's sales, foreclosure auctions and clerk tax sales that
 counties and parishes run through Bid4Assets landing pages (https://www.bid4assets.com/sheriffsales): Pennsylvania
 sheriff's offices, Louisiana parish sheriffs, Milwaukee, Palm Beach, Citrus and Okaloosa (Florida), Oklahoma County,
-Chelan and Grays Harbor (Washington).
+Chelan and Grays Harbor (Washington), and the Philadelphia Sheriff's tax and mortgage foreclosure sales.
 
 Each landing page (/<slug>/listings) names its county and state, posts a sale calendar through
 /api/storefront/seller/calendar/index (one entry per sale day, past and future), and embeds the full property table
 for a sale day in /<slug>/listings?salesdate=YYYYMMDD: sheriff number, court case, plaintiff, defendant, attorney, debt
 amount, township, address, parcel number, minimum bid, current or final bid, bid count and status ("Sold to Plaintiff",
 "Sold", "Preview", "Postponed", "Stayed"). A sale day's table disappears a few days after the sale, so this source is
-the upcoming lists plus the outcomes of the last few days. Philadelphia's pages use a different app and are not read
-here. The site answers only browser user agents.
+the upcoming lists plus the outcomes of the last few days. Philadelphia's entry on the county list is a hub in front
+of two landing pages of the same kind (/philataxsales, /philaforeclosures), the largest on the platform. The site
+answers only browser user agents.
 """
 import concurrent.futures
 import datetime as dt
@@ -32,7 +33,8 @@ THREADS = 6
 MONTHS_BACK = 1  # a sale day's table stays online only a few days after the sale, so there is no deep history here
 MONTHS_AHEAD = 6
 BROWSER = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"
-SKIP = {"philadelphia", "phillyhudpa"}  # a different app; the calendar endpoint answers 500 for it
+SKIP = {"phillyhudpa"}  # a HUD page that names no state
+HUBS = {"philadelphia": ["philataxsales", "philaforeclosures"]}  # the Philadelphia entry is a hub page in front of two landing pages
 MAX_PAGES = None  # for tests
 
 LANDING = re.compile(r'<a[^>]+href="/([A-Za-z0-9]+)"[^>]*>(.*?)</a>', re.S)
@@ -100,7 +102,8 @@ def roster():
         label = _text(inner)
         if re.search(r"\b(County|Parish|City)\b", label) and slug.lower() not in SKIP and slug not in seen:
             seen.add(slug)
-            out.append((slug, label))
+            for real in HUBS.get(slug.lower(), [slug]):
+                out.append((real, label))
     return out
 
 

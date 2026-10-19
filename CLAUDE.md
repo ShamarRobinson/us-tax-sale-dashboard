@@ -67,15 +67,14 @@ GitHub Pages serves index.html / analyzer.html / sheet.html, which load that JSO
   sale lists with starting bids (no results) for whichever auctions are open, in CO, TN, PA, TX, CA, IN, MO, WA, KS and
   OK. Bid4Assets (`sources/bid4assets.py`) covers the County Tax Sales calendar (CA, NV, WA, PA, MN, LA) with sale
   lists and, for past sales, winning bids; it answers only browser user agents, and its item pages are read eight at
-  a time because a Pennsylvania upset sale lists thousands of parcels. Its sheriff sale, Philadelphia and Florida
-  (Okaloosa) channels are separate apps and are not read yet. MVBA Tax Sales (`sources/mvba.py`) reads the Texas
+  a time because a Pennsylvania upset sale lists thousands of parcels. MVBA Tax Sales (`sources/mvba.py`) reads the Texas
   online tax sales that MVBA conducts, open sales and about 3,000 past lots with final bids, through the site's JSON
   API; MVBA's in-person sale list on mvbalaw.com refuses data-center addresses. Bid4Assets sheriff's sales
   (`sources/b4a_sheriff.py`) reads the 34 county and parish landing pages on bid4assets.com/sheriffsales (calendar API
   plus the property table embedded in each sale day's page): upcoming lists with judgment amounts, plaintiffs and
-  defendants, and the last few days' outcomes, since a sale day's table disappears soon after the sale. Philadelphia
-  (bid4assets.com/philadelphia) is a different app whose calendar endpoint answers 500; it is the biggest piece not
-  yet read.
+  defendants, and the last few days' outcomes, since a sale day's table disappears soon after the sale. Philadelphia's
+  entry is a hub in front of two landing pages of the same kind (`/philataxsales`, `/philaforeclosures`), the largest
+  on the platform, and is read through the same adapter. `sources/realauction.py` collects six portals at a time.
 - Deal score (`master.py`): value 40, property 20, market 15, competition 15, history 10; 70+ Strong, 50 to 69 Good,
   35 to 49 Fair, under 35 Weak.
 

@@ -15,6 +15,7 @@ The portals answer data-center addresses (GitHub's runners included) with the Re
 calendar, so this adapter only succeeds from an ordinary connection. collect_local.py runs it on a home machine, and
 tools/realauction_console.js does the same job from a browser tab; both drop files that the next refresh keeps.
 """
+import concurrent.futures
 import datetime as dt
 import html as htmllib
 import http.cookiejar
@@ -48,6 +49,7 @@ PAGEOF = re.compile(r"page \d+ of (\d+)")
 MONTHS_BACK = {"taxdeed": 6, "foreclosure": 2, "sheriff": 3}
 KIND_LABEL = {"taxdeed": "Tax deed sale", "foreclosure": "Foreclosure sale", "sheriff": "Sheriff sale"}
 PAUSE = 0.25
+THREADS = 6  # portals collected at once; 212 portals took the GitHub runner 2 hours 42 minutes one at a time
 
 
 def info_for(kind, state, base):
@@ -362,61 +364,72 @@ def collect_day(site, day, kind, base, upcoming):
     return [to_parcel(aid, rows, extra, st.get(aid), base, upcoming, links) for aid, rows, extra, links in items]
 
 
+def collect_site(fips, kind, base, today):
+    """Every sale day with items on one portal: (auctions, refusal). Each portal has its own session, so portals are
+    collected in parallel threads; one portal's requests stay sequential and paced."""
+    site = Site(base)
+    if not site.resolves():
+        return [], None
+    months = []
+    y, m = today.year, today.month
+    for back in range(-2, MONTHS_BACK[kind] + 1):
+        yy, mm = y, m - back
+        while mm < 1:
+            mm += 12; yy -= 1
+        while mm > 12:
+            mm -= 12; yy += 1
+        months.append((yy, mm))
+    days = {}
+    for yy, mm in months:
+        try:
+            for d in site.calendar(yy, mm):
+                if d["active"] or d["scheduled"]:
+                    days[d["date"]] = d
+        except urllib.error.HTTPError as e:
+            return [], f"{urllib.parse.urlparse(base).hostname}: HTTP {e.code}"
+        except Exception as e:
+            return [], f"{urllib.parse.urlparse(base).hostname}: {str(e)[:80]}"
+        time.sleep(PAUSE)
+    aucs = []
+    for day in sorted(days, key=lambda s: (s[6:], s[:2], s[3:5])):
+        iso = f"{day[6:]}-{day[:2]}-{day[3:5]}"
+        upcoming = iso >= today.isoformat()
+        try:
+            ps = collect_day(site, day, kind, base, upcoming)
+        except Exception as e:
+            print(f"  realauction/{base} {day}: {e}")
+            continue
+        if not ps:
+            continue
+        lab = days[day]["label"] or KIND_LABEL[kind]
+        aucs.append(auction(id=f"ra-{kind}-{fips}-{iso}", date=iso, kind="list" if upcoming else "results",
+                            label=f"{lab} {iso}", source=f"{base}/index.cfm?zaction=AUCTION&Zmethod=PREVIEW&AUCTIONDATE={day}",
+                            saleKind=kind, status="upcoming" if upcoming else "past", parcels=ps))
+    return aucs, None
+
+
 def fetch(counties):
     today = dt.date.today()
     checked = dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds")
     by_fips = {c["fips"]: c for c in counties}
     out = {}
     refused = []
-    for fips, kind, base in sites_for(counties):
-        site = Site(base)
-        if not site.resolves():
-            continue
-        c = by_fips[fips]
+    sites = list(sites_for(counties))
+
+    def job(args):
+        fips, kind, base = args
         try:
-            months = []
-            y, m = today.year, today.month
-            for back in range(-2, MONTHS_BACK[kind] + 1):
-                yy, mm = y, m - back
-                while mm < 1:
-                    mm += 12; yy -= 1
-                while mm > 12:
-                    mm -= 12; yy += 1
-                months.append((yy, mm))
-            days = {}
-            blocked = None
-            for yy, mm in months:
-                try:
-                    for d in site.calendar(yy, mm):
-                        if d["active"] or d["scheduled"]:
-                            days[d["date"]] = d
-                except urllib.error.HTTPError as e:
-                    blocked = f"HTTP {e.code}"
-                    break
-                except Exception as e:
-                    blocked = str(e)[:80]
-                    break
-                time.sleep(PAUSE)
+            return collect_site(fips, kind, base, today)
+        except Exception as e:
+            print(f"  realauction/{base}: {e}")
+            return [], None
+
+    with concurrent.futures.ThreadPoolExecutor(max_workers=THREADS) as pool:
+        results = pool.map(job, sites)
+        for (fips, kind, base), (aucs, blocked) in zip(sites, results):
+            c = by_fips[fips]
             if blocked:
-                refused.append(f"{urllib.parse.urlparse(base).hostname}: {blocked}")
-                continue
-            if not days:
-                continue
-            aucs = []
-            for day in sorted(days, key=lambda s: (s[6:], s[:2], s[3:5])):
-                iso = f"{day[6:]}-{day[:2]}-{day[3:5]}"
-                upcoming = iso >= today.isoformat()
-                try:
-                    ps = collect_day(site, day, kind, base, upcoming)
-                except Exception as e:
-                    print(f"  realauction/{base} {day}: {e}")
-                    continue
-                if not ps:
-                    continue
-                lab = days[day]["label"] or KIND_LABEL[kind]
-                aucs.append(auction(id=f"ra-{kind}-{fips}-{iso}", date=iso, kind="list" if upcoming else "results",
-                                    label=f"{lab} {iso}", source=f"{base}/index.cfm?zaction=AUCTION&Zmethod=PREVIEW&AUCTIONDATE={day}",
-                                    saleKind=kind, status="upcoming" if upcoming else "past", parcels=ps))
+                refused.append(blocked)
             if not aucs:
                 continue
             clean_auctions(aucs, kind)
@@ -427,8 +440,6 @@ def fetch(counties):
             if kind != "foreclosure" or "page" not in info:
                 info.update(new_info)
             print(f"  {c['label']}, {c['state']} {kind}: {len(aucs)} sale days, {sum(len(a['parcels']) for a in aucs)} items")
-        except Exception as e:
-            print(f"  realauction/{base}: {e}")
     if refused:
         print(f"  {len(refused)} portals refused or unreachable, e.g. {'; '.join(refused[:5])}")
     for rec in out.values():

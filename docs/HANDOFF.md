@@ -176,13 +176,12 @@ monthly digest.
   GovEase (`sources/govease.py`), Bid4Assets county tax sales (`sources/bid4assets.py`), MVBA Texas online tax sales
   (`sources/mvba.py`) and Bid4Assets sheriff's sales (`sources/b4a_sheriff.py`). Bid4Assets answers only browser user
   agents (a plain Mozilla string, nothing appended).
-- Philadelphia sheriff sales on Bid4Assets (https://www.bid4assets.com/philadelphia, tax and mortgage foreclosure
-  sales, hundreds of properties a month): a different landing app whose calendar endpoint
-  (`/api/storefront/seller/calendar/index`) answers 500 for `/philadelphia`; find its own listing route before writing
-  the adapter.
-- The monthly workflow's fetch step takes about two hours because `sources/realauction.py` probes every portal from
-  the runner with a 40 second timeout; a per-host budget or skipping hosts that answered the marketing page last
-  time would cut it to minutes.
+- Philadelphia sheriff sales (https://www.bid4assets.com/philadelphia) turned out to be a hub in front of two
+  ordinary landing pages, `/philataxsales` and `/philaforeclosures`; `sources/b4a_sheriff.py` reads them since
+  2026-10-19 (about 1,500 properties listed at a time).
+- The monthly workflow's fetch step took 2 hours 42 minutes on 2026-10-19 because `sources/realauction.py` collected
+  212 portals one at a time; it now collects six at a time (`THREADS`), which should bring the run under an hour.
+  Check the next run's timing in the Actions log.
 - Deeper history for the big Florida foreclosure portals (rerun with the default 3 months or more from the Mac).
 - Per-county alert subscriptions and a saved-search feature in the analyzer.
 - A Street View and assessor photo cache like the Atlanta tracker's `photo_store.py` for counties without photos.
