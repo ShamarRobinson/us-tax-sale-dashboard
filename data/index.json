@@ -1,11 +1,11 @@
 {
- "generated": "2026-10-19T06:27:49+00:00",
+ "generated": "2026-10-19T07:57:20+00:00",
  "counties": 3222,
  "states": 52,
- "withData": 380,
- "parcels": 67804,
- "auctions": 3918,
- "withTaxSaleLink": 1175,
+ "withData": 504,
+ "parcels": 118017,
+ "auctions": 4688,
+ "withTaxSaleLink": 1258,
  "withSite": 3061,
  "withSheriffLink": 378,
  "withAssessorLink": 1545,
@@ -125,6 +125,24 @@
    "kind": "posted",
    "parcels": 799,
    "page": "https://volusia.realtaxdeed.com"
+  },
+  {
+   "fips": "18085",
+   "state": "IN",
+   "name": "Kosciusko County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 583,
+   "page": "https://www.sriservices.com/county/IN/Kosciusko"
+  },
+  {
+   "fips": "18095",
+   "state": "IN",
+   "name": "Madison County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 2054,
+   "page": "https://www.sriservices.com/county/IN/Madison"
   },
   {
    "fips": "39001",
@@ -316,6 +334,33 @@
    "page": "https://stlucie.realforeclose.com"
   },
   {
+   "fips": "18103",
+   "state": "IN",
+   "name": "Miami County",
+   "date": "2026-10-20",
+   "kind": "posted",
+   "parcels": 76,
+   "page": "https://www.sriservices.com/county/IN/Miami"
+  },
+  {
+   "fips": "18117",
+   "state": "IN",
+   "name": "Orange County",
+   "date": "2026-10-20",
+   "kind": "posted",
+   "parcels": 51,
+   "page": "https://www.sriservices.com/county/IN/Orange"
+  },
+  {
+   "fips": "18175",
+   "state": "IN",
+   "name": "Washington County",
+   "date": "2026-10-20",
+   "kind": "posted",
+   "parcels": 60,
+   "page": "https://www.sriservices.com/county/IN/Washington"
+  },
+  {
    "fips": "39025",
    "state": "OH",
    "name": "Clermont County",
@@ -375,8 +420,8 @@
    "name": "Douglas County",
    "date": "2026-10-21",
    "kind": "posted",
-   "parcels": 171,
-   "page": "https://liveauctions.govease.com/CO/codouglasforeclosure/1400/browsestandard"
+   "parcels": 798,
+   "page": "https://www.sriservices.com/county/CO/Douglas"
   },
   {
    "fips": "08041",
@@ -429,8 +474,8 @@
    "name": "Teller County",
    "date": "2026-10-21",
    "kind": "posted",
-   "parcels": 691,
-   "page": "https://liveauctions.govease.com/CO/cotellerlien/1555/browsestandard"
+   "parcels": 1306,
+   "page": "https://www.sriservices.com/county/CO/Teller"
   },
   {
    "fips": "12009",
@@ -487,13 +532,49 @@
    "page": "https://putnam.realtaxdeed.com"
   },
   {
+   "fips": "18021",
+   "state": "IN",
+   "name": "Clay County",
+   "date": "2026-10-21",
+   "kind": "posted",
+   "parcels": 215,
+   "page": "https://www.sriservices.com/county/IN/Clay"
+  },
+  {
+   "fips": "18027",
+   "state": "IN",
+   "name": "Daviess County",
+   "date": "2026-10-21",
+   "kind": "posted",
+   "parcels": 30,
+   "page": "https://www.sriservices.com/county/IN/Daviess"
+  },
+  {
+   "fips": "18127",
+   "state": "IN",
+   "name": "Porter County",
+   "date": "2026-10-21",
+   "kind": "posted",
+   "parcels": 629,
+   "page": "https://www.sriservices.com/county/IN/Porter"
+  },
+  {
+   "fips": "18153",
+   "state": "IN",
+   "name": "Sullivan County",
+   "date": "2026-10-21",
+   "kind": "posted",
+   "parcels": 117,
+   "page": "https://www.sriservices.com/county/IN/Sullivan"
+  },
+  {
    "fips": "22015",
    "state": "LA",
    "name": "Bossier Parish",
    "date": "2026-10-21",
    "kind": "posted",
-   "parcels": 50,
-   "page": "https://www.bid4assets.com/BossierSheriff/listings"
+   "parcels": 396,
+   "page": "https://www.sriservices.com/county/LA/Bossier%20City"
   },
   {
    "fips": "22019",
@@ -501,8 +582,8 @@
    "name": "Calcasieu Parish",
    "date": "2026-10-21",
    "kind": "posted",
-   "parcels": 111,
-   "page": "https://www.bid4assets.com/CPSOSheriff/listings"
+   "parcels": 1011,
+   "page": "https://www.sriservices.com/county/LA/Calcasieu"
   },
   {
    "fips": "22033",
@@ -510,8 +591,8 @@
    "name": "East Baton Rouge Parish",
    "date": "2026-10-21",
    "kind": "posted",
-   "parcels": 270,
-   "page": "https://www.bid4assets.com/ebrsosheriffsales"
+   "parcels": 3109,
+   "page": "https://www.sriservices.com/county/LA/East%20Baton%20Rouge"
   },
   {
    "fips": "22073",
@@ -519,8 +600,17 @@
    "name": "Ouachita Parish",
    "date": "2026-10-21",
    "kind": "posted",
-   "parcels": 67,
-   "page": "https://www.bid4assets.com/ouachitasheriffsales"
+   "parcels": 774,
+   "page": "https://www.sriservices.com/county/LA/Ouachita"
+  },
+  {
+   "fips": "22093",
+   "state": "LA",
+   "name": "St. James Parish",
+   "date": "2026-10-21",
+   "kind": "posted",
+   "parcels": 9,
+   "page": "https://www.sriservices.com/county/LA/St.%20James"
   },
   {
    "fips": "22105",
@@ -528,8 +618,8 @@
    "name": "Tangipahoa Parish",
    "date": "2026-10-21",
    "kind": "posted",
-   "parcels": 19,
-   "page": "https://www.bid4assets.com/tangipahoalasheriffsales"
+   "parcels": 323,
+   "page": "https://www.sriservices.com/county/LA/Tangipahoa"
   },
   {
    "fips": "22115",
@@ -627,8 +717,8 @@
    "name": "Jefferson County",
    "date": "2026-10-22",
    "kind": "posted",
-   "parcels": 159,
-   "page": "https://liveauctions.govease.com/CO/cojeffersonforeclosure/1281/browsestandard"
+   "parcels": 1675,
+   "page": "https://www.sriservices.com/county/CO/Jefferson"
   },
   {
    "fips": "08093",
@@ -636,8 +726,8 @@
    "name": "Park County",
    "date": "2026-10-22",
    "kind": "posted",
-   "parcels": 13,
-   "page": "https://liveauctions.govease.com/CO/coparktread/1438/browsestandard"
+   "parcels": 3185,
+   "page": "https://www.sriservices.com/county/CO/Park"
   },
   {
    "fips": "12003",
@@ -674,6 +764,24 @@
    "kind": "posted",
    "parcels": 127,
    "page": "https://walton.realforeclose.com"
+  },
+  {
+   "fips": "18029",
+   "state": "IN",
+   "name": "Dearborn County",
+   "date": "2026-10-22",
+   "kind": "posted",
+   "parcels": 63,
+   "page": "https://www.sriservices.com/county/IN/Dearborn"
+  },
+  {
+   "fips": "18151",
+   "state": "IN",
+   "name": "Steuben County",
+   "date": "2026-10-22",
+   "kind": "posted",
+   "parcels": 203,
+   "page": "https://www.sriservices.com/county/IN/Steuben"
   },
   {
    "fips": "39013",
@@ -892,6 +1000,24 @@
    "page": "https://gilchrist.realtaxdeed.com"
   },
   {
+   "fips": "18047",
+   "state": "IN",
+   "name": "Franklin County",
+   "date": "2026-10-26",
+   "kind": "posted",
+   "parcels": 137,
+   "page": "https://www.sriservices.com/county/IN/Franklin"
+  },
+  {
+   "fips": "18053",
+   "state": "IN",
+   "name": "Grant County",
+   "date": "2026-10-26",
+   "kind": "posted",
+   "parcels": 1390,
+   "page": "https://www.sriservices.com/county/IN/Grant"
+  },
+  {
    "fips": "39133",
    "state": "OH",
    "name": "Portage County",
@@ -928,6 +1054,69 @@
    "page": "https://washington.realtaxdeed.com"
   },
   {
+   "fips": "18005",
+   "state": "IN",
+   "name": "Bartholomew County",
+   "date": "2026-10-27",
+   "kind": "posted",
+   "parcels": 120,
+   "page": "https://www.sriservices.com/county/IN/Bartholomew"
+  },
+  {
+   "fips": "18009",
+   "state": "IN",
+   "name": "Blackford County",
+   "date": "2026-10-27",
+   "kind": "posted",
+   "parcels": 84,
+   "page": "https://www.sriservices.com/county/IN/Blackford"
+  },
+  {
+   "fips": "18025",
+   "state": "IN",
+   "name": "Crawford County",
+   "date": "2026-10-27",
+   "kind": "posted",
+   "parcels": 214,
+   "page": "https://www.sriservices.com/county/IN/Crawford"
+  },
+  {
+   "fips": "18067",
+   "state": "IN",
+   "name": "Howard County",
+   "date": "2026-10-27",
+   "kind": "posted",
+   "parcels": 652,
+   "page": "https://www.sriservices.com/county/IN/Howard"
+  },
+  {
+   "fips": "18069",
+   "state": "IN",
+   "name": "Huntington County",
+   "date": "2026-10-27",
+   "kind": "posted",
+   "parcels": 67,
+   "page": "https://www.sriservices.com/county/IN/Huntington"
+  },
+  {
+   "fips": "18099",
+   "state": "IN",
+   "name": "Marshall County",
+   "date": "2026-10-27",
+   "kind": "posted",
+   "parcels": 75,
+   "page": "https://www.sriservices.com/county/IN/Marshall"
+  },
+  {
+   "fips": "18149",
+   "state": "IN",
+   "name": "Starke County",
+   "date": "2026-10-27",
+   "kind": "posted",
+   "parcels": 128,
+   "page": "https://www.sriservices.com/county/IN/Starke"
+  },
+  {
    "fips": "40109",
    "state": "OK",
    "name": "Oklahoma County",
@@ -935,6 +1124,15 @@
    "kind": "posted",
    "parcels": 87,
    "page": "https://www.bid4assets.com/OKCSheriff"
+  },
+  {
+   "fips": "47157",
+   "state": "TN",
+   "name": "Shelby County",
+   "date": "2026-10-27",
+   "kind": "posted",
+   "parcels": 1000,
+   "page": "https://www.sriservices.com/county/TN/Shelby"
   },
   {
    "fips": "08123",
@@ -946,13 +1144,40 @@
    "page": "https://weld.treasurersdeedsale.realtaxdeed.com"
   },
   {
+   "fips": "18023",
+   "state": "IN",
+   "name": "Clinton County",
+   "date": "2026-10-28",
+   "kind": "posted",
+   "parcels": 22,
+   "page": "https://www.sriservices.com/county/IN/Clinton"
+  },
+  {
+   "fips": "18039",
+   "state": "IN",
+   "name": "Elkhart County",
+   "date": "2026-10-28",
+   "kind": "posted",
+   "parcels": 337,
+   "page": "https://www.sriservices.com/county/IN/Elkhart"
+  },
+  {
+   "fips": "18137",
+   "state": "IN",
+   "name": "Ripley County",
+   "date": "2026-10-28",
+   "kind": "posted",
+   "parcels": 85,
+   "page": "https://www.sriservices.com/county/IN/Ripley"
+  },
+  {
    "fips": "22057",
    "state": "LA",
    "name": "Lafourche Parish",
    "date": "2026-10-28",
    "kind": "posted",
-   "parcels": 20,
-   "page": "https://www.bid4assets.com/LPSOSheriff"
+   "parcels": 248,
+   "page": "https://www.sriservices.com/county/LA/Lafourche"
   },
   {
    "fips": "39003",
@@ -1025,6 +1250,15 @@
    "kind": "posted",
    "parcels": 83,
    "page": "https://okeechobee.realforeclose.com"
+  },
+  {
+   "fips": "18163",
+   "state": "IN",
+   "name": "Vanderburgh County",
+   "date": "2026-10-29",
+   "kind": "posted",
+   "parcels": 553,
+   "page": "https://www.sriservices.com/county/IN/Vanderburgh"
   },
   {
    "fips": "39039",
@@ -1583,240 +1817,6 @@
    "kind": "posted",
    "parcels": 412,
    "page": "https://publicaccess.claytoncountyga.gov/content/home_commissioner.htm"
-  },
-  {
-   "fips": "13089",
-   "state": "GA",
-   "name": "DeKalb County",
-   "date": "2026-11-03",
-   "kind": "posted",
-   "parcels": 436,
-   "page": "https://dekalbtaxga.gov/property-tax/tax-sales/"
-  },
-  {
-   "fips": "39019",
-   "state": "OH",
-   "name": "Carroll County",
-   "date": "2026-11-03",
-   "kind": "posted",
-   "parcels": 3,
-   "page": "https://carroll.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "39057",
-   "state": "OH",
-   "name": "Greene County",
-   "date": "2026-11-03",
-   "kind": "posted",
-   "parcels": 17,
-   "page": "https://greene.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "39069",
-   "state": "OH",
-   "name": "Henry County",
-   "date": "2026-11-03",
-   "kind": "posted",
-   "parcels": 6,
-   "page": "https://henry.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "47053",
-   "state": "TN",
-   "name": "Gibson County",
-   "date": "2026-11-03",
-   "kind": "posted",
-   "parcels": 25,
-   "page": "https://liveauctions.govease.com/TN/gibsonhumboldt/1097/browsestandard"
-  },
-  {
-   "fips": "48055",
-   "state": "TX",
-   "name": "Caldwell County",
-   "date": "2026-11-03",
-   "kind": "posted",
-   "parcels": 10,
-   "page": "https://caldwell.texas.sheriffsaleauctions.com"
-  },
-  {
-   "fips": "48061",
-   "state": "TX",
-   "name": "Cameron County",
-   "date": "2026-11-03",
-   "kind": "posted",
-   "parcels": 117,
-   "page": "https://cameron.texas.sheriffsaleauctions.com"
-  },
-  {
-   "fips": "48073",
-   "state": "TX",
-   "name": "Cherokee County",
-   "date": "2026-11-03",
-   "kind": "posted",
-   "parcels": 272,
-   "page": "https://www.mvbataxsales.com/auction/cherokee-county-online-property-tax-sale-november-3-2026-186/"
-  },
-  {
-   "fips": "48091",
-   "state": "TX",
-   "name": "Comal County",
-   "date": "2026-11-03",
-   "kind": "posted",
-   "parcels": 254,
-   "page": "https://www.mvbataxsales.com/auction/comal-county-online-property-tax-sale-november-3-2026-185/"
-  },
-  {
-   "fips": "48113",
-   "state": "TX",
-   "name": "Dallas County",
-   "date": "2026-11-03",
-   "kind": "posted",
-   "parcels": 149,
-   "page": "https://dallas.texas.sheriffsaleauctions.com"
-  },
-  {
-   "fips": "48121",
-   "state": "TX",
-   "name": "Denton County",
-   "date": "2026-11-03",
-   "kind": "posted",
-   "parcels": 18,
-   "page": "https://liveauctions.govease.com/TX/txdenton/1355/browsestandard"
-  },
-  {
-   "fips": "48141",
-   "state": "TX",
-   "name": "El Paso County",
-   "date": "2026-11-03",
-   "kind": "posted",
-   "parcels": 49,
-   "page": "https://elpaso.texas.sheriffsaleauctions.com"
-  },
-  {
-   "fips": "48167",
-   "state": "TX",
-   "name": "Galveston County",
-   "date": "2026-11-03",
-   "kind": "posted",
-   "parcels": 131,
-   "page": "https://galveston.texas.sheriffsaleauctions.com"
-  },
-  {
-   "fips": "48181",
-   "state": "TX",
-   "name": "Grayson County",
-   "date": "2026-11-03",
-   "kind": "posted",
-   "parcels": 22,
-   "page": "https://liveauctions.govease.com/TX/txgrayson/1280/browsestandard"
-  },
-  {
-   "fips": "48183",
-   "state": "TX",
-   "name": "Gregg County",
-   "date": "2026-11-03",
-   "kind": "posted",
-   "parcels": 99,
-   "page": "https://gregg.texas.sheriffsaleauctions.com"
-  },
-  {
-   "fips": "48309",
-   "state": "TX",
-   "name": "McLennan County",
-   "date": "2026-11-03",
-   "kind": "posted",
-   "parcels": 35,
-   "page": "https://liveauctions.govease.com/TX/txmclennan/1444/browsestandard"
-  },
-  {
-   "fips": "48355",
-   "state": "TX",
-   "name": "Nueces County",
-   "date": "2026-11-03",
-   "kind": "posted",
-   "parcels": 124,
-   "page": "https://nueces.texas.sheriffsaleauctions.com"
-  },
-  {
-   "fips": "48363",
-   "state": "TX",
-   "name": "Palo Pinto County",
-   "date": "2026-11-03",
-   "kind": "posted",
-   "parcels": 11,
-   "page": "https://liveauctions.govease.com/TX/txpalopinto/1558/browsestandard"
-  },
-  {
-   "fips": "48367",
-   "state": "TX",
-   "name": "Parker County",
-   "date": "2026-11-03",
-   "kind": "posted",
-   "parcels": 9,
-   "page": "https://liveauctions.govease.com/TX/txparker/1545/browsestandard"
-  },
-  {
-   "fips": "48423",
-   "state": "TX",
-   "name": "Smith County",
-   "date": "2026-11-03",
-   "kind": "posted",
-   "parcels": 44,
-   "page": "https://smith.texas.sheriffsaleauctions.com"
-  },
-  {
-   "fips": "48485",
-   "state": "TX",
-   "name": "Wichita County",
-   "date": "2026-11-03",
-   "kind": "posted",
-   "parcels": 14,
-   "page": "https://liveauctions.govease.com/TX/txwichita/1429/browsestandard"
-  },
-  {
-   "fips": "08083",
-   "state": "CO",
-   "name": "Montezuma County",
-   "date": "2026-11-04",
-   "kind": "posted",
-   "parcels": 823,
-   "page": "https://liveauctions.govease.com/CO/comontezuma/1233/browsestandard"
-  },
-  {
-   "fips": "08099",
-   "state": "CO",
-   "name": "Prowers County",
-   "date": "2026-11-04",
-   "kind": "posted",
-   "parcels": 482,
-   "page": "https://liveauctions.govease.com/CO/coprowers/1234/browsestandard"
-  },
-  {
-   "fips": "08121",
-   "state": "CO",
-   "name": "Washington County",
-   "date": "2026-11-04",
-   "kind": "posted",
-   "parcels": 376,
-   "page": "https://liveauctions.govease.com/CO/cowashington/1293/browsestandard"
-  },
-  {
-   "fips": "12053",
-   "state": "FL",
-   "name": "Hernando County",
-   "date": "2026-11-04",
-   "kind": "posted",
-   "parcels": 149,
-   "page": "https://hernando.realtaxdeed.com"
-  },
-  {
-   "fips": "22113",
-   "state": "LA",
-   "name": "Vermilion Parish",
-   "date": "2026-11-04",
-   "kind": "posted",
-   "parcels": 15,
-   "page": "https://www.bid4assets.com/vermilionsheriffsales/listings"
   }
  ],
  "sources": {
@@ -1875,6 +1875,13 @@
    "counties": 31,
    "ok": true,
    "checked": "2026-10-19T06:27:46+00:00"
+  },
+  "sri": {
+   "label": "SRI Inc. (Zeus Auction)",
+   "url": "https://www.sriservices.com/properties",
+   "counties": 137,
+   "ok": true,
+   "checked": "2026-10-19T07:57:17+00:00"
   }
  },
  "countiesWithData": [
@@ -1896,28 +1903,40 @@
   "06111",
   "06113",
   "08001",
+  "08003",
   "08009",
   "08011",
+  "08019",
+  "08021",
   "08023",
+  "08029",
   "08031",
   "08035",
   "08037",
   "08041",
   "08045",
+  "08047",
+  "08051",
   "08059",
   "08065",
   "08069",
   "08077",
   "08083",
+  "08087",
+  "08091",
   "08093",
   "08095",
   "08097",
   "08099",
+  "08107",
+  "08109",
   "08113",
+  "08115",
   "08117",
   "08119",
   "08121",
   "08123",
+  "08125",
   "12001",
   "12003",
   "12005",
@@ -2003,12 +2022,119 @@
   "13285",
   "13293",
   "13297",
+  "18001",
+  "18005",
+  "18007",
+  "18009",
+  "18011",
+  "18013",
+  "18015",
+  "18017",
+  "18019",
+  "18021",
+  "18023",
+  "18025",
+  "18027",
+  "18029",
+  "18031",
+  "18033",
+  "18035",
+  "18037",
+  "18039",
+  "18041",
+  "18043",
+  "18045",
+  "18047",
+  "18049",
+  "18051",
+  "18053",
+  "18055",
+  "18057",
+  "18059",
+  "18061",
+  "18063",
+  "18065",
+  "18067",
+  "18069",
+  "18071",
+  "18073",
+  "18075",
+  "18077",
+  "18079",
+  "18081",
+  "18083",
+  "18085",
+  "18089",
+  "18091",
+  "18093",
+  "18095",
+  "18099",
+  "18101",
+  "18103",
+  "18105",
+  "18107",
+  "18111",
+  "18113",
+  "18115",
+  "18117",
+  "18119",
+  "18121",
+  "18123",
+  "18125",
+  "18127",
+  "18129",
+  "18131",
+  "18133",
+  "18135",
+  "18137",
+  "18139",
+  "18141",
+  "18143",
+  "18145",
+  "18147",
+  "18149",
+  "18151",
+  "18153",
+  "18155",
+  "18157",
+  "18159",
+  "18161",
+  "18163",
+  "18165",
+  "18167",
+  "18169",
+  "18171",
+  "18173",
+  "18175",
+  "18177",
+  "18179",
+  "18181",
+  "18183",
+  "22001",
+  "22005",
   "22015",
+  "22017",
   "22019",
+  "22021",
   "22033",
+  "22039",
+  "22045",
+  "22051",
+  "22053",
+  "22055",
   "22057",
+  "22063",
   "22073",
+  "22075",
+  "22083",
+  "22087",
+  "22091",
+  "22093",
+  "22095",
+  "22099",
+  "22103",
   "22105",
+  "22109",
   "22113",
   "22115",
   "22117",
@@ -2056,9 +2182,11 @@
   "26085",
   "26087",
   "26089",
+  "26091",
   "26093",
   "26095",
   "26097",
+  "26099",
   "26101",
   "26103",
   "26105",
@@ -2215,6 +2343,9 @@
   "47083",
   "47099",
   "47119",
+  "47125",
+  "47155",
+  "47157",
   "47161",
   "47163",
   "47179",

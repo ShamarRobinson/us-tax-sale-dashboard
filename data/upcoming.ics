@@ -4,7 +4,7 @@ PRODID:-//US Tax Sale Tracker//EN
 X-WR-CALNAME:US tax sales
 BEGIN:VEVENT
 UID:12005-2026-10-19@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261019
 DTEND;VALUE=DATE:20261020
 SUMMARY:Bay County\, FL: tax sale (330 parcels on file)
@@ -13,7 +13,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/12005
 END:VEVENT
 BEGIN:VEVENT
 UID:12015-2026-10-19@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261019
 DTEND;VALUE=DATE:20261020
 SUMMARY:Charlotte County\, FL: tax sale (693 parcels on file)
@@ -22,7 +22,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/12015
 END:VEVENT
 BEGIN:VEVENT
 UID:12031-2026-10-19@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261019
 DTEND;VALUE=DATE:20261020
 SUMMARY:Duval County\, FL: tax sale (1029 parcels on file)
@@ -31,7 +31,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/12031
 END:VEVENT
 BEGIN:VEVENT
 UID:12057-2026-10-19@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261019
 DTEND;VALUE=DATE:20261020
 SUMMARY:Hillsborough County\, FL: tax sale (1139 parcels on file)
@@ -40,7 +40,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/12057
 END:VEVENT
 BEGIN:VEVENT
 UID:12073-2026-10-19@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261019
 DTEND;VALUE=DATE:20261020
 SUMMARY:Leon County\, FL: tax sale (282 parcels on file)
@@ -49,7 +49,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/12073
 END:VEVENT
 BEGIN:VEVENT
 UID:12083-2026-10-19@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261019
 DTEND;VALUE=DATE:20261020
 SUMMARY:Marion County\, FL: tax sale (1081 parcels on file)
@@ -58,7 +58,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/12083
 END:VEVENT
 BEGIN:VEVENT
 UID:12086-2026-10-19@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261019
 DTEND;VALUE=DATE:20261020
 SUMMARY:Miami-Dade County\, FL: tax sale (2992 parcels on file)
@@ -67,7 +67,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/12086
 END:VEVENT
 BEGIN:VEVENT
 UID:12091-2026-10-19@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261019
 DTEND;VALUE=DATE:20261020
 SUMMARY:Okaloosa County\, FL: tax sale (18 parcels on file)
@@ -76,7 +76,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/12091
 END:VEVENT
 BEGIN:VEVENT
 UID:12095-2026-10-19@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261019
 DTEND;VALUE=DATE:20261020
 SUMMARY:Orange County\, FL: tax sale (1396 parcels on file)
@@ -85,7 +85,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/12095
 END:VEVENT
 BEGIN:VEVENT
 UID:12099-2026-10-19@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261019
 DTEND;VALUE=DATE:20261020
 SUMMARY:Palm Beach County\, FL: tax sale (1269 parcels on file)
@@ -94,7 +94,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/12099
 END:VEVENT
 BEGIN:VEVENT
 UID:12101-2026-10-19@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261019
 DTEND;VALUE=DATE:20261020
 SUMMARY:Pasco County\, FL: tax sale (400 parcels on file)
@@ -103,7 +103,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/12101
 END:VEVENT
 BEGIN:VEVENT
 UID:12127-2026-10-19@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261019
 DTEND;VALUE=DATE:20261020
 SUMMARY:Volusia County\, FL: tax sale (799 parcels on file)
@@ -111,8 +111,26 @@ DESCRIPTION:https://volusia.realtaxdeed.com
 URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/12127
 END:VEVENT
 BEGIN:VEVENT
+UID:18085-2026-10-19@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261020
+SUMMARY:Kosciusko County\, IN: tax sale (583 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Kosciusko
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18085
+END:VEVENT
+BEGIN:VEVENT
+UID:18095-2026-10-19@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261020
+SUMMARY:Madison County\, IN: tax sale (2054 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Madison
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18095
+END:VEVENT
+BEGIN:VEVENT
 UID:39001-2026-10-19@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261019
 DTEND;VALUE=DATE:20261020
 SUMMARY:Adams County\, OH: tax sale (8 parcels on file)
@@ -121,7 +139,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39001
 END:VEVENT
 BEGIN:VEVENT
 UID:39007-2026-10-19@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261019
 DTEND;VALUE=DATE:20261020
 SUMMARY:Ashtabula County\, OH: tax sale (30 parcels on file)
@@ -130,7 +148,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39007
 END:VEVENT
 BEGIN:VEVENT
 UID:39035-2026-10-19@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261019
 DTEND;VALUE=DATE:20261020
 SUMMARY:Cuyahoga County\, OH: tax sale (984 parcels on file)
@@ -139,7 +157,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39035
 END:VEVENT
 BEGIN:VEVENT
 UID:39067-2026-10-19@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261019
 DTEND;VALUE=DATE:20261020
 SUMMARY:Harrison County\, OH: tax sale (8 parcels on file)
@@ -148,7 +166,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39067
 END:VEVENT
 BEGIN:VEVENT
 UID:39077-2026-10-19@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261019
 DTEND;VALUE=DATE:20261020
 SUMMARY:Huron County\, OH: tax sale (26 parcels on file)
@@ -157,7 +175,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39077
 END:VEVENT
 BEGIN:VEVENT
 UID:39085-2026-10-19@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261019
 DTEND;VALUE=DATE:20261020
 SUMMARY:Lake County\, OH: tax sale (86 parcels on file)
@@ -166,7 +184,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39085
 END:VEVENT
 BEGIN:VEVENT
 UID:39151-2026-10-19@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261019
 DTEND;VALUE=DATE:20261020
 SUMMARY:Stark County\, OH: tax sale (69 parcels on file)
@@ -175,7 +193,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39151
 END:VEVENT
 BEGIN:VEVENT
 UID:39175-2026-10-19@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261019
 DTEND;VALUE=DATE:20261020
 SUMMARY:Wyandot County\, OH: tax sale (11 parcels on file)
@@ -184,7 +202,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39175
 END:VEVENT
 BEGIN:VEVENT
 UID:55079-2026-10-19@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261019
 DTEND;VALUE=DATE:20261020
 SUMMARY:Milwaukee County\, WI: tax sale (68 parcels on file)
@@ -193,7 +211,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/55079
 END:VEVENT
 BEGIN:VEVENT
 UID:06037-2026-10-20@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261021
 SUMMARY:Los Angeles County\, CA: tax sale (215 parcels on file)
@@ -202,7 +220,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/06037
 END:VEVENT
 BEGIN:VEVENT
 UID:12001-2026-10-20@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261021
 SUMMARY:Alachua County\, FL: tax sale (118 parcels on file)
@@ -211,7 +229,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/12001
 END:VEVENT
 BEGIN:VEVENT
 UID:12011-2026-10-20@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261021
 SUMMARY:Broward County\, FL: tax sale (918 parcels on file)
@@ -220,7 +238,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/12011
 END:VEVENT
 BEGIN:VEVENT
 UID:12061-2026-10-20@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261021
 SUMMARY:Indian River County\, FL: tax sale (119 parcels on file)
@@ -229,7 +247,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/12061
 END:VEVENT
 BEGIN:VEVENT
 UID:12071-2026-10-20@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261021
 SUMMARY:Lee County\, FL: tax sale (1047 parcels on file)
@@ -238,7 +256,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/12071
 END:VEVENT
 BEGIN:VEVENT
 UID:12089-2026-10-20@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261021
 SUMMARY:Nassau County\, FL: tax sale (55 parcels on file)
@@ -247,7 +265,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/12089
 END:VEVENT
 BEGIN:VEVENT
 UID:12103-2026-10-20@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261021
 SUMMARY:Pinellas County\, FL: tax sale (368 parcels on file)
@@ -256,7 +274,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/12103
 END:VEVENT
 BEGIN:VEVENT
 UID:12105-2026-10-20@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261021
 SUMMARY:Polk County\, FL: tax sale (759 parcels on file)
@@ -265,7 +283,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/12105
 END:VEVENT
 BEGIN:VEVENT
 UID:12113-2026-10-20@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261021
 SUMMARY:Santa Rosa County\, FL: tax sale (148 parcels on file)
@@ -274,7 +292,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/12113
 END:VEVENT
 BEGIN:VEVENT
 UID:12115-2026-10-20@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261021
 SUMMARY:Sarasota County\, FL: tax sale (488 parcels on file)
@@ -283,7 +301,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/12115
 END:VEVENT
 BEGIN:VEVENT
 UID:12117-2026-10-20@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261021
 SUMMARY:Seminole County\, FL: tax sale (173 parcels on file)
@@ -292,7 +310,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/12117
 END:VEVENT
 BEGIN:VEVENT
 UID:12111-2026-10-20@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261021
 SUMMARY:St. Lucie County\, FL: tax sale (300 parcels on file)
@@ -300,8 +318,35 @@ DESCRIPTION:https://stlucie.realforeclose.com
 URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/12111
 END:VEVENT
 BEGIN:VEVENT
+UID:18103-2026-10-20@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261020
+DTEND;VALUE=DATE:20261021
+SUMMARY:Miami County\, IN: tax sale (76 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Miami
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18103
+END:VEVENT
+BEGIN:VEVENT
+UID:18117-2026-10-20@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261020
+DTEND;VALUE=DATE:20261021
+SUMMARY:Orange County\, IN: tax sale (51 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Orange
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18117
+END:VEVENT
+BEGIN:VEVENT
+UID:18175-2026-10-20@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261020
+DTEND;VALUE=DATE:20261021
+SUMMARY:Washington County\, IN: tax sale (60 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Washington
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18175
+END:VEVENT
+BEGIN:VEVENT
 UID:39025-2026-10-20@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261021
 SUMMARY:Clermont County\, OH: tax sale (31 parcels on file)
@@ -310,7 +355,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39025
 END:VEVENT
 BEGIN:VEVENT
 UID:39029-2026-10-20@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261021
 SUMMARY:Columbiana County\, OH: tax sale (22 parcels on file)
@@ -319,7 +364,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39029
 END:VEVENT
 BEGIN:VEVENT
 UID:39063-2026-10-20@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261021
 SUMMARY:Hancock County\, OH: tax sale (13 parcels on file)
@@ -328,7 +373,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39063
 END:VEVENT
 BEGIN:VEVENT
 UID:39153-2026-10-20@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261021
 SUMMARY:Summit County\, OH: tax sale (307 parcels on file)
@@ -337,7 +382,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39153
 END:VEVENT
 BEGIN:VEVENT
 UID:39165-2026-10-20@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261021
 SUMMARY:Warren County\, OH: tax sale (60 parcels on file)
@@ -346,7 +391,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39165
 END:VEVENT
 BEGIN:VEVENT
 UID:08001-2026-10-21@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 SUMMARY:Adams County\, CO: tax sale (109 parcels on file)
@@ -355,16 +400,16 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/08001
 END:VEVENT
 BEGIN:VEVENT
 UID:08035-2026-10-21@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
-SUMMARY:Douglas County\, CO: tax sale (171 parcels on file)
-DESCRIPTION:https://liveauctions.govease.com/CO/codouglasforeclosure/1400/browsestandard
+SUMMARY:Douglas County\, CO: tax sale (798 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/CO/Douglas
 URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/08035
 END:VEVENT
 BEGIN:VEVENT
 UID:08041-2026-10-21@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 SUMMARY:El Paso County\, CO: tax sale (1858 parcels on file)
@@ -373,7 +418,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/08041
 END:VEVENT
 BEGIN:VEVENT
 UID:08045-2026-10-21@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 SUMMARY:Garfield County\, CO: tax sale (11 parcels on file)
@@ -382,7 +427,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/08045
 END:VEVENT
 BEGIN:VEVENT
 UID:08069-2026-10-21@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 SUMMARY:Larimer County\, CO: tax sale (22 parcels on file)
@@ -391,7 +436,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/08069
 END:VEVENT
 BEGIN:VEVENT
 UID:08077-2026-10-21@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 SUMMARY:Mesa County\, CO: tax sale (321 parcels on file)
@@ -400,7 +445,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/08077
 END:VEVENT
 BEGIN:VEVENT
 UID:08117-2026-10-21@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 SUMMARY:Summit County\, CO: tax sale (267 parcels on file)
@@ -409,16 +454,16 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/08117
 END:VEVENT
 BEGIN:VEVENT
 UID:08119-2026-10-21@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
-SUMMARY:Teller County\, CO: tax sale (691 parcels on file)
-DESCRIPTION:https://liveauctions.govease.com/CO/cotellerlien/1555/browsestandard
+SUMMARY:Teller County\, CO: tax sale (1306 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/CO/Teller
 URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/08119
 END:VEVENT
 BEGIN:VEVENT
 UID:12009-2026-10-21@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 SUMMARY:Brevard County\, FL: tax sale (411 parcels on file)
@@ -427,7 +472,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/12009
 END:VEVENT
 BEGIN:VEVENT
 UID:12019-2026-10-21@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 SUMMARY:Clay County\, FL: tax sale (177 parcels on file)
@@ -436,7 +481,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/12019
 END:VEVENT
 BEGIN:VEVENT
 UID:12033-2026-10-21@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 SUMMARY:Escambia County\, FL: tax sale (607 parcels on file)
@@ -445,7 +490,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/12033
 END:VEVENT
 BEGIN:VEVENT
 UID:12055-2026-10-21@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 SUMMARY:Highlands County\, FL: tax sale (716 parcels on file)
@@ -454,7 +499,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/12055
 END:VEVENT
 BEGIN:VEVENT
 UID:12081-2026-10-21@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 SUMMARY:Manatee County\, FL: tax sale (398 parcels on file)
@@ -463,7 +508,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/12081
 END:VEVENT
 BEGIN:VEVENT
 UID:12107-2026-10-21@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 SUMMARY:Putnam County\, FL: tax sale (1214 parcels on file)
@@ -471,53 +516,98 @@ DESCRIPTION:https://putnam.realtaxdeed.com
 URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/12107
 END:VEVENT
 BEGIN:VEVENT
-UID:22015-2026-10-21@ustaxsale
-DTSTAMP:20261019T062749Z
+UID:18021-2026-10-21@ustaxsale
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
-SUMMARY:Bossier Parish\, LA: tax sale (50 parcels on file)
-DESCRIPTION:https://www.bid4assets.com/BossierSheriff/listings
+SUMMARY:Clay County\, IN: tax sale (215 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Clay
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18021
+END:VEVENT
+BEGIN:VEVENT
+UID:18027-2026-10-21@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261021
+DTEND;VALUE=DATE:20261022
+SUMMARY:Daviess County\, IN: tax sale (30 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Daviess
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18027
+END:VEVENT
+BEGIN:VEVENT
+UID:18127-2026-10-21@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261021
+DTEND;VALUE=DATE:20261022
+SUMMARY:Porter County\, IN: tax sale (629 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Porter
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18127
+END:VEVENT
+BEGIN:VEVENT
+UID:18153-2026-10-21@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261021
+DTEND;VALUE=DATE:20261022
+SUMMARY:Sullivan County\, IN: tax sale (117 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Sullivan
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18153
+END:VEVENT
+BEGIN:VEVENT
+UID:22015-2026-10-21@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261021
+DTEND;VALUE=DATE:20261022
+SUMMARY:Bossier Parish\, LA: tax sale (396 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/LA/Bossier%20City
 URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/22015
 END:VEVENT
 BEGIN:VEVENT
 UID:22019-2026-10-21@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
-SUMMARY:Calcasieu Parish\, LA: tax sale (111 parcels on file)
-DESCRIPTION:https://www.bid4assets.com/CPSOSheriff/listings
+SUMMARY:Calcasieu Parish\, LA: tax sale (1011 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/LA/Calcasieu
 URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/22019
 END:VEVENT
 BEGIN:VEVENT
 UID:22033-2026-10-21@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
-SUMMARY:East Baton Rouge Parish\, LA: tax sale (270 parcels on file)
-DESCRIPTION:https://www.bid4assets.com/ebrsosheriffsales
+SUMMARY:East Baton Rouge Parish\, LA: tax sale (3109 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/LA/East%20Baton%20Rouge
 URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/22033
 END:VEVENT
 BEGIN:VEVENT
 UID:22073-2026-10-21@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
-SUMMARY:Ouachita Parish\, LA: tax sale (67 parcels on file)
-DESCRIPTION:https://www.bid4assets.com/ouachitasheriffsales
+SUMMARY:Ouachita Parish\, LA: tax sale (774 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/LA/Ouachita
 URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/22073
 END:VEVENT
 BEGIN:VEVENT
-UID:22105-2026-10-21@ustaxsale
-DTSTAMP:20261019T062749Z
+UID:22093-2026-10-21@ustaxsale
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
-SUMMARY:Tangipahoa Parish\, LA: tax sale (19 parcels on file)
-DESCRIPTION:https://www.bid4assets.com/tangipahoalasheriffsales
+SUMMARY:St. James Parish\, LA: tax sale (9 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/LA/St.%20James
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/22093
+END:VEVENT
+BEGIN:VEVENT
+UID:22105-2026-10-21@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261021
+DTEND;VALUE=DATE:20261022
+SUMMARY:Tangipahoa Parish\, LA: tax sale (323 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/LA/Tangipahoa
 URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/22105
 END:VEVENT
 BEGIN:VEVENT
 UID:22115-2026-10-21@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 SUMMARY:Vernon Parish\, LA: tax sale (14 parcels on file)
@@ -526,7 +616,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/22115
 END:VEVENT
 BEGIN:VEVENT
 UID:39061-2026-10-21@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 SUMMARY:Hamilton County\, OH: tax sale (141 parcels on file)
@@ -535,7 +625,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39061
 END:VEVENT
 BEGIN:VEVENT
 UID:39091-2026-10-21@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 SUMMARY:Logan County\, OH: tax sale (14 parcels on file)
@@ -544,7 +634,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39091
 END:VEVENT
 BEGIN:VEVENT
 UID:39093-2026-10-21@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 SUMMARY:Lorain County\, OH: tax sale (151 parcels on file)
@@ -553,7 +643,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39093
 END:VEVENT
 BEGIN:VEVENT
 UID:39095-2026-10-21@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 SUMMARY:Lucas County\, OH: tax sale (154 parcels on file)
@@ -562,7 +652,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39095
 END:VEVENT
 BEGIN:VEVENT
 UID:39143-2026-10-21@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 SUMMARY:Sandusky County\, OH: tax sale (10 parcels on file)
@@ -571,7 +661,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39143
 END:VEVENT
 BEGIN:VEVENT
 UID:39169-2026-10-21@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 SUMMARY:Wayne County\, OH: tax sale (7 parcels on file)
@@ -580,7 +670,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39169
 END:VEVENT
 BEGIN:VEVENT
 UID:42037-2026-10-21@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 SUMMARY:Columbia County\, PA: tax sale (727 parcels on file)
@@ -589,7 +679,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/42037
 END:VEVENT
 BEGIN:VEVENT
 UID:42101-2026-10-21@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 SUMMARY:Philadelphia County\, PA: tax sale (1564 parcels on file)
@@ -598,7 +688,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/42101
 END:VEVENT
 BEGIN:VEVENT
 UID:47083-2026-10-21@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 SUMMARY:Houston County\, TN: tax sale (11 parcels on file)
@@ -607,25 +697,25 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/47083
 END:VEVENT
 BEGIN:VEVENT
 UID:08059-2026-10-22@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261023
-SUMMARY:Jefferson County\, CO: tax sale (159 parcels on file)
-DESCRIPTION:https://liveauctions.govease.com/CO/cojeffersonforeclosure/1281/browsestandard
+SUMMARY:Jefferson County\, CO: tax sale (1675 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/CO/Jefferson
 URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/08059
 END:VEVENT
 BEGIN:VEVENT
 UID:08093-2026-10-22@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261023
-SUMMARY:Park County\, CO: tax sale (13 parcels on file)
-DESCRIPTION:https://liveauctions.govease.com/CO/coparktread/1438/browsestandard
+SUMMARY:Park County\, CO: tax sale (3185 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/CO/Park
 URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/08093
 END:VEVENT
 BEGIN:VEVENT
 UID:12003-2026-10-22@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261023
 SUMMARY:Baker County\, FL: tax sale (17 parcels on file)
@@ -634,7 +724,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/12003
 END:VEVENT
 BEGIN:VEVENT
 UID:12017-2026-10-22@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261023
 SUMMARY:Citrus County\, FL: tax sale (314 parcels on file)
@@ -643,7 +733,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/12017
 END:VEVENT
 BEGIN:VEVENT
 UID:12063-2026-10-22@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261023
 SUMMARY:Jackson County\, FL: tax sale (315 parcels on file)
@@ -652,7 +742,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/12063
 END:VEVENT
 BEGIN:VEVENT
 UID:12131-2026-10-22@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261023
 SUMMARY:Walton County\, FL: tax sale (127 parcels on file)
@@ -660,8 +750,26 @@ DESCRIPTION:https://walton.realforeclose.com
 URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/12131
 END:VEVENT
 BEGIN:VEVENT
+UID:18029-2026-10-22@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261023
+SUMMARY:Dearborn County\, IN: tax sale (63 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Dearborn
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18029
+END:VEVENT
+BEGIN:VEVENT
+UID:18151-2026-10-22@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261023
+SUMMARY:Steuben County\, IN: tax sale (203 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Steuben
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18151
+END:VEVENT
+BEGIN:VEVENT
 UID:39013-2026-10-22@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261023
 SUMMARY:Belmont County\, OH: tax sale (15 parcels on file)
@@ -670,7 +778,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39013
 END:VEVENT
 BEGIN:VEVENT
 UID:39015-2026-10-22@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261023
 SUMMARY:Brown County\, OH: tax sale (11 parcels on file)
@@ -679,7 +787,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39015
 END:VEVENT
 BEGIN:VEVENT
 UID:39017-2026-10-22@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261023
 SUMMARY:Butler County\, OH: tax sale (91 parcels on file)
@@ -688,7 +796,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39017
 END:VEVENT
 BEGIN:VEVENT
 UID:39051-2026-10-22@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261023
 SUMMARY:Fulton County\, OH: tax sale (5 parcels on file)
@@ -697,7 +805,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39051
 END:VEVENT
 BEGIN:VEVENT
 UID:39089-2026-10-22@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261023
 SUMMARY:Licking County\, OH: tax sale (34 parcels on file)
@@ -706,7 +814,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39089
 END:VEVENT
 BEGIN:VEVENT
 UID:39103-2026-10-22@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261023
 SUMMARY:Medina County\, OH: tax sale (46 parcels on file)
@@ -715,7 +823,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39103
 END:VEVENT
 BEGIN:VEVENT
 UID:39119-2026-10-22@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261023
 SUMMARY:Muskingum County\, OH: tax sale (70 parcels on file)
@@ -724,7 +832,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39119
 END:VEVENT
 BEGIN:VEVENT
 UID:39155-2026-10-22@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261023
 SUMMARY:Trumbull County\, OH: tax sale (48 parcels on file)
@@ -733,7 +841,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39155
 END:VEVENT
 BEGIN:VEVENT
 UID:42005-2026-10-22@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261023
 SUMMARY:Armstrong County\, PA: tax sale (709 parcels on file)
@@ -742,7 +850,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/42005
 END:VEVENT
 BEGIN:VEVENT
 UID:48361-2026-10-22@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261023
 SUMMARY:Orange County\, TX: tax sale (45 parcels on file)
@@ -751,7 +859,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/48361
 END:VEVENT
 BEGIN:VEVENT
 UID:39023-2026-10-23@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261023
 DTEND;VALUE=DATE:20261024
 SUMMARY:Clark County\, OH: tax sale (16 parcels on file)
@@ -760,7 +868,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39023
 END:VEVENT
 BEGIN:VEVENT
 UID:39037-2026-10-23@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261023
 DTEND;VALUE=DATE:20261024
 SUMMARY:Darke County\, OH: tax sale (20 parcels on file)
@@ -769,7 +877,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39037
 END:VEVENT
 BEGIN:VEVENT
 UID:39049-2026-10-23@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261023
 DTEND;VALUE=DATE:20261024
 SUMMARY:Franklin County\, OH: tax sale (206 parcels on file)
@@ -778,7 +886,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39049
 END:VEVENT
 BEGIN:VEVENT
 UID:39059-2026-10-23@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261023
 DTEND;VALUE=DATE:20261024
 SUMMARY:Guernsey County\, OH: tax sale (7 parcels on file)
@@ -787,7 +895,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39059
 END:VEVENT
 BEGIN:VEVENT
 UID:39079-2026-10-23@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261023
 DTEND;VALUE=DATE:20261024
 SUMMARY:Jackson County\, OH: tax sale (9 parcels on file)
@@ -796,7 +904,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39079
 END:VEVENT
 BEGIN:VEVENT
 UID:39083-2026-10-23@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261023
 DTEND;VALUE=DATE:20261024
 SUMMARY:Knox County\, OH: tax sale (42 parcels on file)
@@ -805,7 +913,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39083
 END:VEVENT
 BEGIN:VEVENT
 UID:39105-2026-10-23@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261023
 DTEND;VALUE=DATE:20261024
 SUMMARY:Meigs County\, OH: tax sale (8 parcels on file)
@@ -814,7 +922,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39105
 END:VEVENT
 BEGIN:VEVENT
 UID:39113-2026-10-23@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261023
 DTEND;VALUE=DATE:20261024
 SUMMARY:Montgomery County\, OH: tax sale (119 parcels on file)
@@ -823,7 +931,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39113
 END:VEVENT
 BEGIN:VEVENT
 UID:39123-2026-10-23@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261023
 DTEND;VALUE=DATE:20261024
 SUMMARY:Ottawa County\, OH: tax sale (15 parcels on file)
@@ -832,7 +940,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39123
 END:VEVENT
 BEGIN:VEVENT
 UID:39139-2026-10-23@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261023
 DTEND;VALUE=DATE:20261024
 SUMMARY:Richland County\, OH: tax sale (21 parcels on file)
@@ -841,7 +949,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39139
 END:VEVENT
 BEGIN:VEVENT
 UID:42041-2026-10-23@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261023
 DTEND;VALUE=DATE:20261024
 SUMMARY:Cumberland County\, PA: tax sale (405 parcels on file)
@@ -850,7 +958,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/42041
 END:VEVENT
 BEGIN:VEVENT
 UID:42107-2026-10-23@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261023
 DTEND;VALUE=DATE:20261024
 SUMMARY:Schuylkill County\, PA: tax sale (1715 parcels on file)
@@ -859,7 +967,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/42107
 END:VEVENT
 BEGIN:VEVENT
 UID:08113-2026-10-26@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261026
 DTEND;VALUE=DATE:20261027
 SUMMARY:San Miguel County\, CO: tax sale (215 parcels on file)
@@ -868,7 +976,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/08113
 END:VEVENT
 BEGIN:VEVENT
 UID:12041-2026-10-26@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261026
 DTEND;VALUE=DATE:20261027
 SUMMARY:Gilchrist County\, FL: tax sale (25 parcels on file)
@@ -876,8 +984,26 @@ DESCRIPTION:https://gilchrist.realtaxdeed.com
 URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/12041
 END:VEVENT
 BEGIN:VEVENT
+UID:18047-2026-10-26@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261027
+SUMMARY:Franklin County\, IN: tax sale (137 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Franklin
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18047
+END:VEVENT
+BEGIN:VEVENT
+UID:18053-2026-10-26@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261027
+SUMMARY:Grant County\, IN: tax sale (1390 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Grant
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18053
+END:VEVENT
+BEGIN:VEVENT
 UID:39133-2026-10-26@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261026
 DTEND;VALUE=DATE:20261027
 SUMMARY:Portage County\, OH: tax sale (11 parcels on file)
@@ -886,7 +1012,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39133
 END:VEVENT
 BEGIN:VEVENT
 UID:53053-2026-10-26@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261026
 DTEND;VALUE=DATE:20261027
 SUMMARY:Pierce County\, WA: tax sale (123 parcels on file)
@@ -895,7 +1021,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/53053
 END:VEVENT
 BEGIN:VEVENT
 UID:08023-2026-10-27@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261027
 DTEND;VALUE=DATE:20261028
 SUMMARY:Costilla County\, CO: tax sale (2247 parcels on file)
@@ -904,7 +1030,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/08023
 END:VEVENT
 BEGIN:VEVENT
 UID:12133-2026-10-27@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261027
 DTEND;VALUE=DATE:20261028
 SUMMARY:Washington County\, FL: tax sale (318 parcels on file)
@@ -912,8 +1038,71 @@ DESCRIPTION:https://washington.realtaxdeed.com
 URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/12133
 END:VEVENT
 BEGIN:VEVENT
+UID:18005-2026-10-27@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261027
+DTEND;VALUE=DATE:20261028
+SUMMARY:Bartholomew County\, IN: tax sale (120 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Bartholomew
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18005
+END:VEVENT
+BEGIN:VEVENT
+UID:18009-2026-10-27@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261027
+DTEND;VALUE=DATE:20261028
+SUMMARY:Blackford County\, IN: tax sale (84 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Blackford
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18009
+END:VEVENT
+BEGIN:VEVENT
+UID:18025-2026-10-27@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261027
+DTEND;VALUE=DATE:20261028
+SUMMARY:Crawford County\, IN: tax sale (214 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Crawford
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18025
+END:VEVENT
+BEGIN:VEVENT
+UID:18067-2026-10-27@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261027
+DTEND;VALUE=DATE:20261028
+SUMMARY:Howard County\, IN: tax sale (652 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Howard
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18067
+END:VEVENT
+BEGIN:VEVENT
+UID:18069-2026-10-27@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261027
+DTEND;VALUE=DATE:20261028
+SUMMARY:Huntington County\, IN: tax sale (67 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Huntington
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18069
+END:VEVENT
+BEGIN:VEVENT
+UID:18099-2026-10-27@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261027
+DTEND;VALUE=DATE:20261028
+SUMMARY:Marshall County\, IN: tax sale (75 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Marshall
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18099
+END:VEVENT
+BEGIN:VEVENT
+UID:18149-2026-10-27@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261027
+DTEND;VALUE=DATE:20261028
+SUMMARY:Starke County\, IN: tax sale (128 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Starke
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18149
+END:VEVENT
+BEGIN:VEVENT
 UID:40109-2026-10-27@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261027
 DTEND;VALUE=DATE:20261028
 SUMMARY:Oklahoma County\, OK: tax sale (87 parcels on file)
@@ -921,8 +1110,17 @@ DESCRIPTION:https://www.bid4assets.com/OKCSheriff
 URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/40109
 END:VEVENT
 BEGIN:VEVENT
+UID:47157-2026-10-27@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261027
+DTEND;VALUE=DATE:20261028
+SUMMARY:Shelby County\, TN: tax sale (1000 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/TN/Shelby
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/47157
+END:VEVENT
+BEGIN:VEVENT
 UID:08123-2026-10-28@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261028
 DTEND;VALUE=DATE:20261029
 SUMMARY:Weld County\, CO: tax sale (54 parcels on file)
@@ -930,17 +1128,44 @@ DESCRIPTION:https://weld.treasurersdeedsale.realtaxdeed.com
 URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/08123
 END:VEVENT
 BEGIN:VEVENT
-UID:22057-2026-10-28@ustaxsale
-DTSTAMP:20261019T062749Z
+UID:18023-2026-10-28@ustaxsale
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261028
 DTEND;VALUE=DATE:20261029
-SUMMARY:Lafourche Parish\, LA: tax sale (20 parcels on file)
-DESCRIPTION:https://www.bid4assets.com/LPSOSheriff
+SUMMARY:Clinton County\, IN: tax sale (22 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Clinton
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18023
+END:VEVENT
+BEGIN:VEVENT
+UID:18039-2026-10-28@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261028
+DTEND;VALUE=DATE:20261029
+SUMMARY:Elkhart County\, IN: tax sale (337 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Elkhart
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18039
+END:VEVENT
+BEGIN:VEVENT
+UID:18137-2026-10-28@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261028
+DTEND;VALUE=DATE:20261029
+SUMMARY:Ripley County\, IN: tax sale (85 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Ripley
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18137
+END:VEVENT
+BEGIN:VEVENT
+UID:22057-2026-10-28@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261028
+DTEND;VALUE=DATE:20261029
+SUMMARY:Lafourche Parish\, LA: tax sale (248 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/LA/Lafourche
 URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/22057
 END:VEVENT
 BEGIN:VEVENT
 UID:39003-2026-10-28@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261028
 DTEND;VALUE=DATE:20261029
 SUMMARY:Allen County\, OH: tax sale (26 parcels on file)
@@ -949,7 +1174,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39003
 END:VEVENT
 BEGIN:VEVENT
 UID:39109-2026-10-28@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261028
 DTEND;VALUE=DATE:20261029
 SUMMARY:Miami County\, OH: tax sale (34 parcels on file)
@@ -958,7 +1183,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39109
 END:VEVENT
 BEGIN:VEVENT
 UID:39159-2026-10-28@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261028
 DTEND;VALUE=DATE:20261029
 SUMMARY:Union County\, OH: tax sale (4 parcels on file)
@@ -967,7 +1192,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39159
 END:VEVENT
 BEGIN:VEVENT
 UID:42015-2026-10-28@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261028
 DTEND;VALUE=DATE:20261029
 SUMMARY:Bradford County\, PA: tax sale (9 parcels on file)
@@ -976,7 +1201,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/42015
 END:VEVENT
 BEGIN:VEVENT
 UID:42091-2026-10-28@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261028
 DTEND;VALUE=DATE:20261029
 SUMMARY:Montgomery County\, PA: tax sale (251 parcels on file)
@@ -985,7 +1210,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/42091
 END:VEVENT
 BEGIN:VEVENT
 UID:12051-2026-10-29@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261029
 DTEND;VALUE=DATE:20261030
 SUMMARY:Hendry County\, FL: tax sale (80 parcels on file)
@@ -994,7 +1219,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/12051
 END:VEVENT
 BEGIN:VEVENT
 UID:12085-2026-10-29@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261029
 DTEND;VALUE=DATE:20261030
 SUMMARY:Martin County\, FL: tax sale (62 parcels on file)
@@ -1003,7 +1228,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/12085
 END:VEVENT
 BEGIN:VEVENT
 UID:12093-2026-10-29@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261029
 DTEND;VALUE=DATE:20261030
 SUMMARY:Okeechobee County\, FL: tax sale (83 parcels on file)
@@ -1011,8 +1236,17 @@ DESCRIPTION:https://okeechobee.realforeclose.com
 URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/12093
 END:VEVENT
 BEGIN:VEVENT
+UID:18163-2026-10-29@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261029
+DTEND;VALUE=DATE:20261030
+SUMMARY:Vanderburgh County\, IN: tax sale (553 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Vanderburgh
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18163
+END:VEVENT
+BEGIN:VEVENT
 UID:39039-2026-10-29@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261029
 DTEND;VALUE=DATE:20261030
 SUMMARY:Defiance County\, OH: tax sale (8 parcels on file)
@@ -1021,7 +1255,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39039
 END:VEVENT
 BEGIN:VEVENT
 UID:39071-2026-10-29@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261029
 DTEND;VALUE=DATE:20261030
 SUMMARY:Highland County\, OH: tax sale (7 parcels on file)
@@ -1030,7 +1264,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39071
 END:VEVENT
 BEGIN:VEVENT
 UID:39081-2026-10-29@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261029
 DTEND;VALUE=DATE:20261030
 SUMMARY:Jefferson County\, OH: tax sale (16 parcels on file)
@@ -1039,7 +1273,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39081
 END:VEVENT
 BEGIN:VEVENT
 UID:39125-2026-10-29@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261029
 DTEND;VALUE=DATE:20261030
 SUMMARY:Paulding County\, OH: tax sale (7 parcels on file)
@@ -1048,7 +1282,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39125
 END:VEVENT
 BEGIN:VEVENT
 UID:39157-2026-10-29@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261029
 DTEND;VALUE=DATE:20261030
 SUMMARY:Tuscarawas County\, OH: tax sale (10 parcels on file)
@@ -1057,7 +1291,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39157
 END:VEVENT
 BEGIN:VEVENT
 UID:39161-2026-10-29@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261029
 DTEND;VALUE=DATE:20261030
 SUMMARY:Van Wert County\, OH: tax sale (16 parcels on file)
@@ -1066,7 +1300,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39161
 END:VEVENT
 BEGIN:VEVENT
 UID:42089-2026-10-29@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261029
 DTEND;VALUE=DATE:20261030
 SUMMARY:Monroe County\, PA: tax sale (4225 parcels on file)
@@ -1075,7 +1309,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/42089
 END:VEVENT
 BEGIN:VEVENT
 UID:47119-2026-10-29@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261029
 DTEND;VALUE=DATE:20261030
 SUMMARY:Maury County\, TN: tax sale (1 parcels on file)
@@ -1084,7 +1318,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/47119
 END:VEVENT
 BEGIN:VEVENT
 UID:06069-2026-10-30@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:San Benito County\, CA: tax sale (20 parcels on file)
@@ -1093,7 +1327,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/06069
 END:VEVENT
 BEGIN:VEVENT
 UID:26001-2026-10-30@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Alcona County\, MI: tax sale (32 parcels on file)
@@ -1102,7 +1336,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/26001
 END:VEVENT
 BEGIN:VEVENT
 UID:26005-2026-10-30@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Allegan County\, MI: tax sale (137 parcels on file)
@@ -1111,7 +1345,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/26005
 END:VEVENT
 BEGIN:VEVENT
 UID:26007-2026-10-30@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Alpena County\, MI: tax sale (23 parcels on file)
@@ -1120,7 +1354,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/26007
 END:VEVENT
 BEGIN:VEVENT
 UID:26009-2026-10-30@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Antrim County\, MI: tax sale (346 parcels on file)
@@ -1129,7 +1363,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/26009
 END:VEVENT
 BEGIN:VEVENT
 UID:26011-2026-10-30@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Arenac County\, MI: tax sale (54 parcels on file)
@@ -1138,7 +1372,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/26011
 END:VEVENT
 BEGIN:VEVENT
 UID:26017-2026-10-30@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Bay County\, MI: tax sale (65 parcels on file)
@@ -1147,7 +1381,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/26017
 END:VEVENT
 BEGIN:VEVENT
 UID:26021-2026-10-30@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Berrien County\, MI: tax sale (299 parcels on file)
@@ -1156,7 +1390,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/26021
 END:VEVENT
 BEGIN:VEVENT
 UID:26025-2026-10-30@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Calhoun County\, MI: tax sale (168 parcels on file)
@@ -1165,7 +1399,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/26025
 END:VEVENT
 BEGIN:VEVENT
 UID:26031-2026-10-30@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Cheboygan County\, MI: tax sale (37 parcels on file)
@@ -1174,7 +1408,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/26031
 END:VEVENT
 BEGIN:VEVENT
 UID:26037-2026-10-30@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Clinton County\, MI: tax sale (16 parcels on file)
@@ -1183,7 +1417,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/26037
 END:VEVENT
 BEGIN:VEVENT
 UID:26041-2026-10-30@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Delta County\, MI: tax sale (45 parcels on file)
@@ -1192,7 +1426,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/26041
 END:VEVENT
 BEGIN:VEVENT
 UID:26043-2026-10-30@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Dickinson County\, MI: tax sale (43 parcels on file)
@@ -1201,7 +1435,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/26043
 END:VEVENT
 BEGIN:VEVENT
 UID:26049-2026-10-30@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Genesee County\, MI: tax sale (1950 parcels on file)
@@ -1210,7 +1444,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/26049
 END:VEVENT
 BEGIN:VEVENT
 UID:26051-2026-10-30@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Gladwin County\, MI: tax sale (117 parcels on file)
@@ -1219,7 +1453,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/26051
 END:VEVENT
 BEGIN:VEVENT
 UID:26057-2026-10-30@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Gratiot County\, MI: tax sale (48 parcels on file)
@@ -1228,7 +1462,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/26057
 END:VEVENT
 BEGIN:VEVENT
 UID:26059-2026-10-30@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Hillsdale County\, MI: tax sale (43 parcels on file)
@@ -1237,7 +1471,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/26059
 END:VEVENT
 BEGIN:VEVENT
 UID:26063-2026-10-30@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Huron County\, MI: tax sale (44 parcels on file)
@@ -1246,7 +1480,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/26063
 END:VEVENT
 BEGIN:VEVENT
 UID:26067-2026-10-30@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Ionia County\, MI: tax sale (29 parcels on file)
@@ -1255,7 +1489,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/26067
 END:VEVENT
 BEGIN:VEVENT
 UID:26069-2026-10-30@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Iosco County\, MI: tax sale (103 parcels on file)
@@ -1264,7 +1498,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/26069
 END:VEVENT
 BEGIN:VEVENT
 UID:26071-2026-10-30@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Iron County\, MI: tax sale (36 parcels on file)
@@ -1273,7 +1507,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/26071
 END:VEVENT
 BEGIN:VEVENT
 UID:26075-2026-10-30@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Jackson County\, MI: tax sale (227 parcels on file)
@@ -1282,7 +1516,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/26075
 END:VEVENT
 BEGIN:VEVENT
 UID:26077-2026-10-30@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Kalamazoo County\, MI: tax sale (115 parcels on file)
@@ -1291,7 +1525,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/26077
 END:VEVENT
 BEGIN:VEVENT
 UID:26081-2026-10-30@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Kent County\, MI: tax sale (49 parcels on file)
@@ -1300,7 +1534,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/26081
 END:VEVENT
 BEGIN:VEVENT
 UID:26085-2026-10-30@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Lake County\, MI: tax sale (165 parcels on file)
@@ -1309,7 +1543,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/26085
 END:VEVENT
 BEGIN:VEVENT
 UID:26087-2026-10-30@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Lapeer County\, MI: tax sale (27 parcels on file)
@@ -1318,7 +1552,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/26087
 END:VEVENT
 BEGIN:VEVENT
 UID:26101-2026-10-30@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Manistee County\, MI: tax sale (27 parcels on file)
@@ -1327,7 +1561,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/26101
 END:VEVENT
 BEGIN:VEVENT
 UID:26103-2026-10-30@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Marquette County\, MI: tax sale (47 parcels on file)
@@ -1336,7 +1570,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/26103
 END:VEVENT
 BEGIN:VEVENT
 UID:26105-2026-10-30@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Mason County\, MI: tax sale (35 parcels on file)
@@ -1345,7 +1579,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/26105
 END:VEVENT
 BEGIN:VEVENT
 UID:26109-2026-10-30@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Menominee County\, MI: tax sale (18 parcels on file)
@@ -1354,7 +1588,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/26109
 END:VEVENT
 BEGIN:VEVENT
 UID:26115-2026-10-30@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Monroe County\, MI: tax sale (69 parcels on file)
@@ -1363,7 +1597,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/26115
 END:VEVENT
 BEGIN:VEVENT
 UID:26117-2026-10-30@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Montcalm County\, MI: tax sale (58 parcels on file)
@@ -1372,7 +1606,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/26117
 END:VEVENT
 BEGIN:VEVENT
 UID:26121-2026-10-30@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Muskegon County\, MI: tax sale (140 parcels on file)
@@ -1381,7 +1615,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/26121
 END:VEVENT
 BEGIN:VEVENT
 UID:26125-2026-10-30@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Oakland County\, MI: tax sale (364 parcels on file)
@@ -1390,7 +1624,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/26125
 END:VEVENT
 BEGIN:VEVENT
 UID:26131-2026-10-30@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Ontonagon County\, MI: tax sale (17 parcels on file)
@@ -1399,7 +1633,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/26131
 END:VEVENT
 BEGIN:VEVENT
 UID:26133-2026-10-30@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Osceola County\, MI: tax sale (102 parcels on file)
@@ -1408,7 +1642,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/26133
 END:VEVENT
 BEGIN:VEVENT
 UID:26135-2026-10-30@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Oscoda County\, MI: tax sale (29 parcels on file)
@@ -1417,7 +1651,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/26135
 END:VEVENT
 BEGIN:VEVENT
 UID:26137-2026-10-30@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Otsego County\, MI: tax sale (104 parcels on file)
@@ -1426,7 +1660,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/26137
 END:VEVENT
 BEGIN:VEVENT
 UID:26139-2026-10-30@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Ottawa County\, MI: tax sale (19 parcels on file)
@@ -1435,7 +1669,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/26139
 END:VEVENT
 BEGIN:VEVENT
 UID:26141-2026-10-30@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Presque Isle County\, MI: tax sale (102 parcels on file)
@@ -1444,7 +1678,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/26141
 END:VEVENT
 BEGIN:VEVENT
 UID:26143-2026-10-30@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Roscommon County\, MI: tax sale (79 parcels on file)
@@ -1453,7 +1687,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/26143
 END:VEVENT
 BEGIN:VEVENT
 UID:26145-2026-10-30@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Saginaw County\, MI: tax sale (685 parcels on file)
@@ -1462,7 +1696,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/26145
 END:VEVENT
 BEGIN:VEVENT
 UID:26153-2026-10-30@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Schoolcraft County\, MI: tax sale (43 parcels on file)
@@ -1471,7 +1705,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/26153
 END:VEVENT
 BEGIN:VEVENT
 UID:26155-2026-10-30@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Shiawassee County\, MI: tax sale (39 parcels on file)
@@ -1480,7 +1714,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/26155
 END:VEVENT
 BEGIN:VEVENT
 UID:26147-2026-10-30@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:St. Clair County\, MI: tax sale (64 parcels on file)
@@ -1489,7 +1723,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/26147
 END:VEVENT
 BEGIN:VEVENT
 UID:26149-2026-10-30@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:St. Joseph County\, MI: tax sale (48 parcels on file)
@@ -1498,7 +1732,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/26149
 END:VEVENT
 BEGIN:VEVENT
 UID:26157-2026-10-30@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Tuscola County\, MI: tax sale (65 parcels on file)
@@ -1507,7 +1741,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/26157
 END:VEVENT
 BEGIN:VEVENT
 UID:39097-2026-10-30@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Madison County\, OH: tax sale (12 parcels on file)
@@ -1516,7 +1750,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39097
 END:VEVENT
 BEGIN:VEVENT
 UID:39101-2026-10-30@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Marion County\, OH: tax sale (18 parcels on file)
@@ -1525,7 +1759,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39101
 END:VEVENT
 BEGIN:VEVENT
 UID:42063-2026-10-30@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Indiana County\, PA: tax sale (17 parcels on file)
@@ -1534,7 +1768,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/42063
 END:VEVENT
 BEGIN:VEVENT
 UID:53027-2026-10-30@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Grays Harbor County\, WA: tax sale (20 parcels on file)
@@ -1543,7 +1777,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/53027
 END:VEVENT
 BEGIN:VEVENT
 UID:06085-2026-11-02@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261102
 DTEND;VALUE=DATE:20261103
 SUMMARY:Santa Clara County\, CA: tax sale (52 parcels on file)
@@ -1552,7 +1786,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/06085
 END:VEVENT
 BEGIN:VEVENT
 UID:12069-2026-11-03@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261104
 SUMMARY:Lake County\, FL: tax sale (76 parcels on file)
@@ -1561,7 +1795,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/12069
 END:VEVENT
 BEGIN:VEVENT
 UID:13063-2026-11-03@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261104
 SUMMARY:Clayton County\, GA: tax sale (412 parcels on file)
@@ -1570,7 +1804,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/13063
 END:VEVENT
 BEGIN:VEVENT
 UID:13089-2026-11-03@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261104
 SUMMARY:DeKalb County\, GA: tax sale (436 parcels on file)
@@ -1578,8 +1812,17 @@ DESCRIPTION:https://dekalbtaxga.gov/property-tax/tax-sales/
 URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/13089
 END:VEVENT
 BEGIN:VEVENT
+UID:18143-2026-11-03@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Scott County\, IN: tax sale (99 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Scott
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18143
+END:VEVENT
+BEGIN:VEVENT
 UID:39019-2026-11-03@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261104
 SUMMARY:Carroll County\, OH: tax sale (3 parcels on file)
@@ -1588,7 +1831,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39019
 END:VEVENT
 BEGIN:VEVENT
 UID:39057-2026-11-03@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261104
 SUMMARY:Greene County\, OH: tax sale (17 parcels on file)
@@ -1597,7 +1840,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39057
 END:VEVENT
 BEGIN:VEVENT
 UID:39069-2026-11-03@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261104
 SUMMARY:Henry County\, OH: tax sale (6 parcels on file)
@@ -1606,7 +1849,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39069
 END:VEVENT
 BEGIN:VEVENT
 UID:47053-2026-11-03@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261104
 SUMMARY:Gibson County\, TN: tax sale (25 parcels on file)
@@ -1615,7 +1858,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/47053
 END:VEVENT
 BEGIN:VEVENT
 UID:48055-2026-11-03@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261104
 SUMMARY:Caldwell County\, TX: tax sale (10 parcels on file)
@@ -1624,7 +1867,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/48055
 END:VEVENT
 BEGIN:VEVENT
 UID:48061-2026-11-03@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261104
 SUMMARY:Cameron County\, TX: tax sale (117 parcels on file)
@@ -1633,7 +1876,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/48061
 END:VEVENT
 BEGIN:VEVENT
 UID:48073-2026-11-03@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261104
 SUMMARY:Cherokee County\, TX: tax sale (272 parcels on file)
@@ -1642,7 +1885,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/48073
 END:VEVENT
 BEGIN:VEVENT
 UID:48091-2026-11-03@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261104
 SUMMARY:Comal County\, TX: tax sale (254 parcels on file)
@@ -1651,7 +1894,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/48091
 END:VEVENT
 BEGIN:VEVENT
 UID:48113-2026-11-03@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261104
 SUMMARY:Dallas County\, TX: tax sale (149 parcels on file)
@@ -1660,7 +1903,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/48113
 END:VEVENT
 BEGIN:VEVENT
 UID:48121-2026-11-03@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261104
 SUMMARY:Denton County\, TX: tax sale (18 parcels on file)
@@ -1669,7 +1912,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/48121
 END:VEVENT
 BEGIN:VEVENT
 UID:48141-2026-11-03@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261104
 SUMMARY:El Paso County\, TX: tax sale (49 parcels on file)
@@ -1678,7 +1921,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/48141
 END:VEVENT
 BEGIN:VEVENT
 UID:48167-2026-11-03@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261104
 SUMMARY:Galveston County\, TX: tax sale (131 parcels on file)
@@ -1687,7 +1930,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/48167
 END:VEVENT
 BEGIN:VEVENT
 UID:48181-2026-11-03@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261104
 SUMMARY:Grayson County\, TX: tax sale (22 parcels on file)
@@ -1696,7 +1939,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/48181
 END:VEVENT
 BEGIN:VEVENT
 UID:48183-2026-11-03@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261104
 SUMMARY:Gregg County\, TX: tax sale (99 parcels on file)
@@ -1705,7 +1948,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/48183
 END:VEVENT
 BEGIN:VEVENT
 UID:48309-2026-11-03@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261104
 SUMMARY:McLennan County\, TX: tax sale (35 parcels on file)
@@ -1714,7 +1957,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/48309
 END:VEVENT
 BEGIN:VEVENT
 UID:48355-2026-11-03@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261104
 SUMMARY:Nueces County\, TX: tax sale (124 parcels on file)
@@ -1723,7 +1966,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/48355
 END:VEVENT
 BEGIN:VEVENT
 UID:48363-2026-11-03@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261104
 SUMMARY:Palo Pinto County\, TX: tax sale (11 parcels on file)
@@ -1732,7 +1975,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/48363
 END:VEVENT
 BEGIN:VEVENT
 UID:48367-2026-11-03@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261104
 SUMMARY:Parker County\, TX: tax sale (9 parcels on file)
@@ -1741,7 +1984,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/48367
 END:VEVENT
 BEGIN:VEVENT
 UID:48423-2026-11-03@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261104
 SUMMARY:Smith County\, TX: tax sale (44 parcels on file)
@@ -1750,7 +1993,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/48423
 END:VEVENT
 BEGIN:VEVENT
 UID:48485-2026-11-03@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261104
 SUMMARY:Wichita County\, TX: tax sale (14 parcels on file)
@@ -1759,7 +2002,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/48485
 END:VEVENT
 BEGIN:VEVENT
 UID:GA-2026-11-03@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261104
 SUMMARY:Georgia: statutory sale date (First Tuesday of the month\, 10 a.m. to 4 p.m.\, at the courthouse)
@@ -1768,7 +2011,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#ga
 END:VEVENT
 BEGIN:VEVENT
 UID:TX-2026-11-03@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261104
 SUMMARY:Texas: statutory sale date (First Tuesday of the month\, 10 a.m. to 4 p.m.\, at the courthouse or designated venue)
@@ -1777,7 +2020,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#tx
 END:VEVENT
 BEGIN:VEVENT
 UID:08083-2026-11-04@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261105
 SUMMARY:Montezuma County\, CO: tax sale (823 parcels on file)
@@ -1786,7 +2029,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/08083
 END:VEVENT
 BEGIN:VEVENT
 UID:08099-2026-11-04@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261105
 SUMMARY:Prowers County\, CO: tax sale (482 parcels on file)
@@ -1795,7 +2038,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/08099
 END:VEVENT
 BEGIN:VEVENT
 UID:08121-2026-11-04@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261105
 SUMMARY:Washington County\, CO: tax sale (376 parcels on file)
@@ -1804,7 +2047,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/08121
 END:VEVENT
 BEGIN:VEVENT
 UID:12053-2026-11-04@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261105
 SUMMARY:Hernando County\, FL: tax sale (149 parcels on file)
@@ -1812,17 +2055,44 @@ DESCRIPTION:https://hernando.realtaxdeed.com
 URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/12053
 END:VEVENT
 BEGIN:VEVENT
-UID:22113-2026-11-04@ustaxsale
-DTSTAMP:20261019T062749Z
+UID:18007-2026-11-04@ustaxsale
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261105
-SUMMARY:Vermilion Parish\, LA: tax sale (15 parcels on file)
-DESCRIPTION:https://www.bid4assets.com/vermilionsheriffsales/listings
+SUMMARY:Benton County\, IN: tax sale (19 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Benton
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18007
+END:VEVENT
+BEGIN:VEVENT
+UID:18133-2026-11-04@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:Putnam County\, IN: tax sale (66 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Putnam
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18133
+END:VEVENT
+BEGIN:VEVENT
+UID:18157-2026-11-04@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:Tippecanoe County\, IN: tax sale (82 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Tippecanoe
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18157
+END:VEVENT
+BEGIN:VEVENT
+UID:22113-2026-11-04@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:Vermilion Parish\, LA: tax sale (86 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/LA/Vermilion
 URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/22113
 END:VEVENT
 BEGIN:VEVENT
 UID:39047-2026-11-04@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261105
 SUMMARY:Fayette County\, OH: tax sale (11 parcels on file)
@@ -1831,7 +2101,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39047
 END:VEVENT
 BEGIN:VEVENT
 UID:39107-2026-11-04@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261105
 SUMMARY:Mercer County\, OH: tax sale (13 parcels on file)
@@ -1840,7 +2110,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39107
 END:VEVENT
 BEGIN:VEVENT
 UID:39141-2026-11-04@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261105
 SUMMARY:Ross County\, OH: tax sale (18 parcels on file)
@@ -1849,7 +2119,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39141
 END:VEVENT
 BEGIN:VEVENT
 UID:39145-2026-11-04@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261105
 SUMMARY:Scioto County\, OH: tax sale (16 parcels on file)
@@ -1858,7 +2128,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39145
 END:VEVENT
 BEGIN:VEVENT
 UID:42007-2026-11-04@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261105
 SUMMARY:Beaver County\, PA: tax sale (51 parcels on file)
@@ -1867,7 +2137,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/42007
 END:VEVENT
 BEGIN:VEVENT
 UID:08011-2026-11-05@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261106
 SUMMARY:Bent County\, CO: tax sale (419 parcels on file)
@@ -1876,7 +2146,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/08011
 END:VEVENT
 BEGIN:VEVENT
 UID:08065-2026-11-05@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261106
 SUMMARY:Lake County\, CO: tax sale (320 parcels on file)
@@ -1885,7 +2155,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/08065
 END:VEVENT
 BEGIN:VEVENT
 UID:12121-2026-11-05@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261106
 SUMMARY:Suwannee County\, FL: tax sale (77 parcels on file)
@@ -1893,8 +2163,53 @@ DESCRIPTION:https://suwannee.realtaxdeed.com
 URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/12121
 END:VEVENT
 BEGIN:VEVENT
+UID:18011-2026-11-05@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261106
+SUMMARY:Boone County\, IN: tax sale (14 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Boone
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18011
+END:VEVENT
+BEGIN:VEVENT
+UID:18065-2026-11-05@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261106
+SUMMARY:Henry County\, IN: tax sale (168 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Henry
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18065
+END:VEVENT
+BEGIN:VEVENT
+UID:18139-2026-11-05@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261106
+SUMMARY:Rush County\, IN: tax sale (29 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Rush
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18139
+END:VEVENT
+BEGIN:VEVENT
+UID:18145-2026-11-05@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261106
+SUMMARY:Shelby County\, IN: tax sale (102 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Shelby
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18145
+END:VEVENT
+BEGIN:VEVENT
+UID:18159-2026-11-05@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261106
+SUMMARY:Tipton County\, IN: tax sale (27 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Tipton
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18159
+END:VEVENT
+BEGIN:VEVENT
 UID:39011-2026-11-05@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261106
 SUMMARY:Auglaize County\, OH: tax sale (15 parcels on file)
@@ -1903,7 +2218,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39011
 END:VEVENT
 BEGIN:VEVENT
 UID:39055-2026-11-05@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261106
 SUMMARY:Geauga County\, OH: tax sale (17 parcels on file)
@@ -1912,7 +2227,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39055
 END:VEVENT
 BEGIN:VEVENT
 UID:39173-2026-11-05@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261106
 SUMMARY:Wood County\, OH: tax sale (14 parcels on file)
@@ -1921,7 +2236,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39173
 END:VEVENT
 BEGIN:VEVENT
 UID:47161-2026-11-05@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261106
 SUMMARY:Stewart County\, TN: tax sale (26 parcels on file)
@@ -1930,7 +2245,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/47161
 END:VEVENT
 BEGIN:VEVENT
 UID:06017-2026-11-06@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
 SUMMARY:El Dorado County\, CA: tax sale (143 parcels on file)
@@ -1939,7 +2254,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/06017
 END:VEVENT
 BEGIN:VEVENT
 UID:12035-2026-11-06@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
 SUMMARY:Flagler County\, FL: tax sale (134 parcels on file)
@@ -1948,7 +2263,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/12035
 END:VEVENT
 BEGIN:VEVENT
 UID:39045-2026-11-06@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
 SUMMARY:Fairfield County\, OH: tax sale (23 parcels on file)
@@ -1957,7 +2272,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39045
 END:VEVENT
 BEGIN:VEVENT
 UID:39073-2026-11-06@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
 SUMMARY:Hocking County\, OH: tax sale (6 parcels on file)
@@ -1966,7 +2281,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39073
 END:VEVENT
 BEGIN:VEVENT
 UID:39087-2026-11-06@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
 SUMMARY:Lawrence County\, OH: tax sale (17 parcels on file)
@@ -1975,7 +2290,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39087
 END:VEVENT
 BEGIN:VEVENT
 UID:39127-2026-11-06@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
 SUMMARY:Perry County\, OH: tax sale (6 parcels on file)
@@ -1984,7 +2299,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39127
 END:VEVENT
 BEGIN:VEVENT
 UID:39167-2026-11-06@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
 SUMMARY:Washington County\, OH: tax sale (13 parcels on file)
@@ -1993,7 +2308,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39167
 END:VEVENT
 BEGIN:VEVENT
 UID:39137-2026-11-09@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261109
 DTEND;VALUE=DATE:20261110
 SUMMARY:Putnam County\, OH: tax sale (12 parcels on file)
@@ -2002,7 +2317,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39137
 END:VEVENT
 BEGIN:VEVENT
 UID:08095-2026-11-10@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261110
 DTEND;VALUE=DATE:20261111
 SUMMARY:Phillips County\, CO: tax sale (92 parcels on file)
@@ -2011,7 +2326,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/08095
 END:VEVENT
 BEGIN:VEVENT
 UID:12097-2026-11-10@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261110
 DTEND;VALUE=DATE:20261111
 SUMMARY:Osceola County\, FL: tax sale (187 parcels on file)
@@ -2019,8 +2334,35 @@ DESCRIPTION:https://osceola.realtaxdeed.com
 URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/12097
 END:VEVENT
 BEGIN:VEVENT
+UID:18071-2026-11-10@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:Jackson County\, IN: tax sale (47 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Jackson
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18071
+END:VEVENT
+BEGIN:VEVENT
+UID:18093-2026-11-10@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:Lawrence County\, IN: tax sale (225 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Lawrence
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18093
+END:VEVENT
+BEGIN:VEVENT
+UID:18119-2026-11-10@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:Owen County\, IN: tax sale (80 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Owen
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18119
+END:VEVENT
+BEGIN:VEVENT
 UID:39021-2026-11-10@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261110
 DTEND;VALUE=DATE:20261111
 SUMMARY:Champaign County\, OH: tax sale (12 parcels on file)
@@ -2029,7 +2371,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39021
 END:VEVENT
 BEGIN:VEVENT
 UID:39043-2026-11-10@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261110
 DTEND;VALUE=DATE:20261111
 SUMMARY:Erie County\, OH: tax sale (24 parcels on file)
@@ -2038,7 +2380,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39043
 END:VEVENT
 BEGIN:VEVENT
 UID:47163-2026-11-10@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261110
 DTEND;VALUE=DATE:20261111
 SUMMARY:Sullivan County\, TN: tax sale (3 parcels on file)
@@ -2046,8 +2388,17 @@ DESCRIPTION:https://liveauctions.govease.com/TN/tnsullivanjudicialfc/1557/browse
 URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/47163
 END:VEVENT
 BEGIN:VEVENT
+UID:18041-2026-11-11@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:Fayette County\, IN: tax sale (87 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Fayette
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18041
+END:VEVENT
+BEGIN:VEVENT
 UID:42025-2026-11-11@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261111
 DTEND;VALUE=DATE:20261112
 SUMMARY:Carbon County\, PA: tax sale (80 parcels on file)
@@ -2056,16 +2407,43 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/42025
 END:VEVENT
 BEGIN:VEVENT
 UID:12109-2026-11-12@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261112
 DTEND;VALUE=DATE:20261113
-SUMMARY:St. Johns County\, FL: tax sale (69 parcels on file)
-DESCRIPTION:https://saintjohns.realforeclose.com
+SUMMARY:St. Johns County\, FL: tax sale (3337 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/FL/St.%20Johns
 URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/12109
 END:VEVENT
 BEGIN:VEVENT
+UID:18083-2026-11-12@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:Knox County\, IN: tax sale (327 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Knox
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18083
+END:VEVENT
+BEGIN:VEVENT
+UID:18173-2026-11-12@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:Warrick County\, IN: tax sale (135 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Warrick
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18173
+END:VEVENT
+BEGIN:VEVENT
+UID:22075-2026-11-13@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:Plaquemines Parish\, LA: tax sale (284 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/LA/Plaquemines
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/22075
+END:VEVENT
+BEGIN:VEVENT
 UID:39033-2026-11-13@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261114
 SUMMARY:Crawford County\, OH: tax sale (3 parcels on file)
@@ -2074,7 +2452,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39033
 END:VEVENT
 BEGIN:VEVENT
 UID:39053-2026-11-13@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261114
 SUMMARY:Gallia County\, OH: tax sale (4 parcels on file)
@@ -2083,7 +2461,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39053
 END:VEVENT
 BEGIN:VEVENT
 UID:39121-2026-11-13@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261114
 SUMMARY:Noble County\, OH: tax sale (2 parcels on file)
@@ -2092,7 +2470,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39121
 END:VEVENT
 BEGIN:VEVENT
 UID:39135-2026-11-13@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261114
 SUMMARY:Preble County\, OH: tax sale (7 parcels on file)
@@ -2101,7 +2479,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39135
 END:VEVENT
 BEGIN:VEVENT
 UID:42055-2026-11-13@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261114
 SUMMARY:Franklin County\, PA: tax sale (68 parcels on file)
@@ -2110,7 +2488,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/42055
 END:VEVENT
 BEGIN:VEVENT
 UID:06009-2026-11-16@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261116
 DTEND;VALUE=DATE:20261117
 SUMMARY:Calaveras County\, CA: tax sale (41 parcels on file)
@@ -2119,7 +2497,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/06009
 END:VEVENT
 BEGIN:VEVENT
 UID:06029-2026-11-16@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261116
 DTEND;VALUE=DATE:20261117
 SUMMARY:Kern County\, CA: tax sale (58 parcels on file)
@@ -2128,7 +2506,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/06029
 END:VEVENT
 BEGIN:VEVENT
 UID:53005-2026-11-16@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261116
 DTEND;VALUE=DATE:20261117
 SUMMARY:Benton County\, WA: tax sale (3 parcels on file)
@@ -2136,8 +2514,44 @@ DESCRIPTION:https://liveauctions.govease.com/WA/wabenton/1296/browsestandard
 URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/53005
 END:VEVENT
 BEGIN:VEVENT
+UID:18049-2026-11-17@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+SUMMARY:Fulton County\, IN: tax sale (133 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Fulton
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18049
+END:VEVENT
+BEGIN:VEVENT
+UID:18101-2026-11-17@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+SUMMARY:Martin County\, IN: tax sale (22 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Martin
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18101
+END:VEVENT
+BEGIN:VEVENT
+UID:18131-2026-11-17@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+SUMMARY:Pulaski County\, IN: tax sale (146 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Pulaski
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18131
+END:VEVENT
+BEGIN:VEVENT
+UID:18147-2026-11-17@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+SUMMARY:Spencer County\, IN: tax sale (222 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Spencer
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18147
+END:VEVENT
+BEGIN:VEVENT
 UID:39005-2026-11-17@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261117
 DTEND;VALUE=DATE:20261118
 SUMMARY:Ashland County\, OH: tax sale (5 parcels on file)
@@ -2146,7 +2560,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39005
 END:VEVENT
 BEGIN:VEVENT
 UID:39065-2026-11-17@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261117
 DTEND;VALUE=DATE:20261118
 SUMMARY:Hardin County\, OH: tax sale (11 parcels on file)
@@ -2155,7 +2569,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39065
 END:VEVENT
 BEGIN:VEVENT
 UID:47073-2026-11-17@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261117
 DTEND;VALUE=DATE:20261118
 SUMMARY:Hawkins County\, TN: tax sale (52 parcels on file)
@@ -2164,7 +2578,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/47073
 END:VEVENT
 BEGIN:VEVENT
 UID:53051-2026-11-17@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261117
 DTEND;VALUE=DATE:20261118
 SUMMARY:Pend Oreille County\, WA: tax sale (5 parcels on file)
@@ -2173,7 +2587,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/53051
 END:VEVENT
 BEGIN:VEVENT
 UID:ND-2026-11-17@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261117
 DTEND;VALUE=DATE:20261118
 SUMMARY:North Dakota: statutory sale date (Third Tuesday in November)
@@ -2181,17 +2595,80 @@ DESCRIPTION:The county takes a tax deed after 3 years and sells the parcels at a
 URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#nd
 END:VEVENT
 BEGIN:VEVENT
-UID:22117-2026-11-18@ustaxsale
-DTSTAMP:20261019T062749Z
+UID:18017-2026-11-18@ustaxsale
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261118
 DTEND;VALUE=DATE:20261119
-SUMMARY:Washington Parish\, LA: tax sale (15 parcels on file)
-DESCRIPTION:https://www.bid4assets.com/WPSOSheriffSales/listings
+SUMMARY:Cass County\, IN: tax sale (106 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Cass
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18017
+END:VEVENT
+BEGIN:VEVENT
+UID:18035-2026-11-18@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261119
+SUMMARY:Delaware County\, IN: tax sale (646 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Delaware
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18035
+END:VEVENT
+BEGIN:VEVENT
+UID:18037-2026-11-18@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261119
+SUMMARY:Dubois County\, IN: tax sale (37 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Dubois
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18037
+END:VEVENT
+BEGIN:VEVENT
+UID:18061-2026-11-18@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261119
+SUMMARY:Harrison County\, IN: tax sale (120 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Harrison
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18061
+END:VEVENT
+BEGIN:VEVENT
+UID:18107-2026-11-18@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261119
+SUMMARY:Montgomery County\, IN: tax sale (58 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Montgomery
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18107
+END:VEVENT
+BEGIN:VEVENT
+UID:18123-2026-11-18@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261119
+SUMMARY:Perry County\, IN: tax sale (69 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Perry
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18123
+END:VEVENT
+BEGIN:VEVENT
+UID:18125-2026-11-18@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261119
+SUMMARY:Pike County\, IN: tax sale (222 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Pike
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18125
+END:VEVENT
+BEGIN:VEVENT
+UID:22117-2026-11-18@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261119
+SUMMARY:Washington Parish\, LA: tax sale (20 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/LA/Washington
 URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/22117
 END:VEVENT
 BEGIN:VEVENT
 UID:27153-2026-11-18@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261118
 DTEND;VALUE=DATE:20261119
 SUMMARY:Todd County\, MN: tax sale (35 parcels on file)
@@ -2200,7 +2677,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/27153
 END:VEVENT
 BEGIN:VEVENT
 UID:39027-2026-11-18@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261118
 DTEND;VALUE=DATE:20261119
 SUMMARY:Clinton County\, OH: tax sale (14 parcels on file)
@@ -2209,7 +2686,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39027
 END:VEVENT
 BEGIN:VEVENT
 UID:08009-2026-11-19@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261120
 SUMMARY:Baca County\, CO: tax sale (424 parcels on file)
@@ -2217,8 +2694,89 @@ DESCRIPTION:https://liveauctions.govease.com/CO/cobaca/1235/browsestandard
 URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/08009
 END:VEVENT
 BEGIN:VEVENT
+UID:18045-2026-11-19@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:Fountain County\, IN: tax sale (46 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Fountain
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18045
+END:VEVENT
+BEGIN:VEVENT
+UID:18063-2026-11-19@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:Hendricks County\, IN: tax sale (112 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Hendricks
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18063
+END:VEVENT
+BEGIN:VEVENT
+UID:18077-2026-11-19@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:Jefferson County\, IN: tax sale (43 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Jefferson
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18077
+END:VEVENT
+BEGIN:VEVENT
+UID:18081-2026-11-19@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:Johnson County\, IN: tax sale (148 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Johnson
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18081
+END:VEVENT
+BEGIN:VEVENT
+UID:18121-2026-11-19@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:Parke County\, IN: tax sale (36 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Parke
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18121
+END:VEVENT
+BEGIN:VEVENT
+UID:18129-2026-11-19@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:Posey County\, IN: tax sale (139 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Posey
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18129
+END:VEVENT
+BEGIN:VEVENT
+UID:18141-2026-11-19@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:St. Joseph County\, IN: tax sale (923 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/St%20Joseph
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18141
+END:VEVENT
+BEGIN:VEVENT
+UID:18165-2026-11-19@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:Vermillion County\, IN: tax sale (114 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Vermillion
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18165
+END:VEVENT
+BEGIN:VEVENT
+UID:18167-2026-11-19@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:Vigo County\, IN: tax sale (1042 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Vigo
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18167
+END:VEVENT
+BEGIN:VEVENT
 UID:42029-2026-11-19@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261120
 SUMMARY:Chester County\, PA: tax sale (109 parcels on file)
@@ -2227,7 +2785,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/42029
 END:VEVENT
 BEGIN:VEVENT
 UID:42047-2026-11-19@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261120
 SUMMARY:Elk County\, PA: tax sale (3 parcels on file)
@@ -2235,8 +2793,17 @@ DESCRIPTION:https://www.bid4assets.com/elksheriffsales
 URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/42047
 END:VEVENT
 BEGIN:VEVENT
+UID:18105-2026-11-20@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:Monroe County\, IN: tax sale (32 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Monroe
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18105
+END:VEVENT
+BEGIN:VEVENT
 UID:39131-2026-11-20@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261121
 SUMMARY:Pike County\, OH: tax sale (9 parcels on file)
@@ -2245,7 +2812,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39131
 END:VEVENT
 BEGIN:VEVENT
 UID:42001-2026-11-20@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261121
 SUMMARY:Adams County\, PA: tax sale (49 parcels on file)
@@ -2253,8 +2820,17 @@ DESCRIPTION:https://www.bid4assets.com/adamscountysheriffsales
 URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/42001
 END:VEVENT
 BEGIN:VEVENT
+UID:18001-2026-11-24@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:Adams County\, IN: tax sale (29 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Adams
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18001
+END:VEVENT
+BEGIN:VEVENT
 UID:39099-2026-11-24@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261124
 DTEND;VALUE=DATE:20261125
 SUMMARY:Mahoning County\, OH: tax sale (45 parcels on file)
@@ -2263,7 +2839,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39099
 END:VEVENT
 BEGIN:VEVENT
 UID:08097-2026-11-25@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20261126
 SUMMARY:Pitkin County\, CO: tax sale (6 parcels on file)
@@ -2271,8 +2847,44 @@ DESCRIPTION:https://liveauctions.govease.com/CO/copitkinforeclosure/1327/browses
 URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/08097
 END:VEVENT
 BEGIN:VEVENT
+UID:18015-2026-11-25@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:Carroll County\, IN: tax sale (19 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Carroll
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18015
+END:VEVENT
+BEGIN:VEVENT
+UID:18073-2026-12-02@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261202
+DTEND;VALUE=DATE:20261203
+SUMMARY:Jasper County\, IN: tax sale (38 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Jasper
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18073
+END:VEVENT
+BEGIN:VEVENT
+UID:18055-2026-12-08@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261208
+DTEND;VALUE=DATE:20261209
+SUMMARY:Greene County\, IN: tax sale (192 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Greene
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18055
+END:VEVENT
+BEGIN:VEVENT
+UID:18169-2026-12-08@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261208
+DTEND;VALUE=DATE:20261209
+SUMMARY:Wabash County\, IN: tax sale (93 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Wabash
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18169
+END:VEVENT
+BEGIN:VEVENT
 UID:42017-2026-12-08@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261208
 DTEND;VALUE=DATE:20261209
 SUMMARY:Bucks County\, PA: tax sale (2 parcels on file)
@@ -2280,8 +2892,17 @@ DESCRIPTION:https://liveauctions.govease.com/PA/pabucksjudicial/1554/browsestand
 URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/42017
 END:VEVENT
 BEGIN:VEVENT
+UID:18179-2026-12-09@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261209
+DTEND;VALUE=DATE:20261210
+SUMMARY:Wells County\, IN: tax sale (35 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Wells
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18179
+END:VEVENT
+BEGIN:VEVENT
 UID:42049-2026-12-09@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261209
 DTEND;VALUE=DATE:20261210
 SUMMARY:Erie County\, PA: tax sale (48 parcels on file)
@@ -2289,8 +2910,17 @@ DESCRIPTION:https://liveauctions.govease.com/PA/paeriejudicial/1528/browsestanda
 URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/42049
 END:VEVENT
 BEGIN:VEVENT
+UID:18013-2026-12-10@ustaxsale
+DTSTAMP:20261019T075721Z
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261211
+SUMMARY:Brown County\, IN: tax sale (19 parcels on file)
+DESCRIPTION:https://www.sriservices.com/county/IN/Brown
+URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/18013
+END:VEVENT
+BEGIN:VEVENT
 UID:42009-2026-12-10@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261210
 DTEND;VALUE=DATE:20261211
 SUMMARY:Bedford County\, PA: tax sale (237 parcels on file)
@@ -2299,7 +2929,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/42009
 END:VEVENT
 BEGIN:VEVENT
 UID:39117-2026-12-18@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261218
 DTEND;VALUE=DATE:20261219
 SUMMARY:Morrow County\, OH: tax sale (6 parcels on file)
@@ -2308,7 +2938,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#c/39117
 END:VEVENT
 BEGIN:VEVENT
 UID:SD-2026-12-21@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20261221
 DTEND;VALUE=DATE:20261222
 SUMMARY:South Dakota: statutory sale date (Third Monday in December)
@@ -2317,7 +2947,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#sd
 END:VEVENT
 BEGIN:VEVENT
 UID:NE-2027-03-01@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20270301
 DTEND;VALUE=DATE:20270302
 SUMMARY:Nebraska: statutory sale date (First Monday in March)
@@ -2326,7 +2956,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#ne
 END:VEVENT
 BEGIN:VEVENT
 UID:OK-2027-06-14@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20270614
 DTEND;VALUE=DATE:20270615
 SUMMARY:Oklahoma: statutory sale date (Second Monday in June)
@@ -2335,7 +2965,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#ok
 END:VEVENT
 BEGIN:VEVENT
 UID:IA-2027-06-21@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20270621
 DTEND;VALUE=DATE:20270622
 SUMMARY:Iowa: statutory sale date (Third Monday in June)
@@ -2344,7 +2974,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#ia
 END:VEVENT
 BEGIN:VEVENT
 UID:MO-2027-08-23@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20270823
 DTEND;VALUE=DATE:20270824
 SUMMARY:Missouri: statutory sale date (Fourth Monday in August)
@@ -2353,7 +2983,7 @@ URL:https://shamarrobinson.github.io/us-tax-sale-dashboard/#mo
 END:VEVENT
 BEGIN:VEVENT
 UID:MS-2027-08-30@ustaxsale
-DTSTAMP:20261019T062749Z
+DTSTAMP:20261019T075721Z
 DTSTART;VALUE=DATE:20270830
 DTEND;VALUE=DATE:20270831
 SUMMARY:Mississippi: statutory sale date (Last Monday in August (some counties also the first Monday in April))

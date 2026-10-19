@@ -1,15 +1,285 @@
 {
- "generated": "2026-10-19T06:27:49+00:00",
- "previous": "2026-10-19T03:12:40+00:00",
+ "generated": "2026-10-19T07:57:20+00:00",
+ "previous": "2026-10-19T06:27:49+00:00",
  "newUpcoming": [
   {
-   "fips": "42101",
-   "state": "PA",
-   "name": "Philadelphia County",
+   "fips": "18085",
+   "state": "IN",
+   "name": "Kosciusko County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 583,
+   "page": "https://www.sriservices.com/county/IN/Kosciusko"
+  },
+  {
+   "fips": "18095",
+   "state": "IN",
+   "name": "Madison County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 2054,
+   "page": "https://www.sriservices.com/county/IN/Madison"
+  },
+  {
+   "fips": "18103",
+   "state": "IN",
+   "name": "Miami County",
+   "date": "2026-10-20",
+   "kind": "posted",
+   "parcels": 76,
+   "page": "https://www.sriservices.com/county/IN/Miami"
+  },
+  {
+   "fips": "18117",
+   "state": "IN",
+   "name": "Orange County",
+   "date": "2026-10-20",
+   "kind": "posted",
+   "parcels": 51,
+   "page": "https://www.sriservices.com/county/IN/Orange"
+  },
+  {
+   "fips": "18175",
+   "state": "IN",
+   "name": "Washington County",
+   "date": "2026-10-20",
+   "kind": "posted",
+   "parcels": 60,
+   "page": "https://www.sriservices.com/county/IN/Washington"
+  },
+  {
+   "fips": "18021",
+   "state": "IN",
+   "name": "Clay County",
    "date": "2026-10-21",
    "kind": "posted",
-   "parcels": 1564,
-   "page": "https://www.bid4assets.com/philataxsales"
+   "parcels": 215,
+   "page": "https://www.sriservices.com/county/IN/Clay"
+  },
+  {
+   "fips": "18027",
+   "state": "IN",
+   "name": "Daviess County",
+   "date": "2026-10-21",
+   "kind": "posted",
+   "parcels": 30,
+   "page": "https://www.sriservices.com/county/IN/Daviess"
+  },
+  {
+   "fips": "18127",
+   "state": "IN",
+   "name": "Porter County",
+   "date": "2026-10-21",
+   "kind": "posted",
+   "parcels": 629,
+   "page": "https://www.sriservices.com/county/IN/Porter"
+  },
+  {
+   "fips": "18153",
+   "state": "IN",
+   "name": "Sullivan County",
+   "date": "2026-10-21",
+   "kind": "posted",
+   "parcels": 117,
+   "page": "https://www.sriservices.com/county/IN/Sullivan"
+  },
+  {
+   "fips": "22093",
+   "state": "LA",
+   "name": "St. James Parish",
+   "date": "2026-10-21",
+   "kind": "posted",
+   "parcels": 9,
+   "page": "https://www.sriservices.com/county/LA/St.%20James"
+  },
+  {
+   "fips": "18029",
+   "state": "IN",
+   "name": "Dearborn County",
+   "date": "2026-10-22",
+   "kind": "posted",
+   "parcels": 63,
+   "page": "https://www.sriservices.com/county/IN/Dearborn"
+  },
+  {
+   "fips": "18151",
+   "state": "IN",
+   "name": "Steuben County",
+   "date": "2026-10-22",
+   "kind": "posted",
+   "parcels": 203,
+   "page": "https://www.sriservices.com/county/IN/Steuben"
+  },
+  {
+   "fips": "18047",
+   "state": "IN",
+   "name": "Franklin County",
+   "date": "2026-10-26",
+   "kind": "posted",
+   "parcels": 137,
+   "page": "https://www.sriservices.com/county/IN/Franklin"
+  },
+  {
+   "fips": "18053",
+   "state": "IN",
+   "name": "Grant County",
+   "date": "2026-10-26",
+   "kind": "posted",
+   "parcels": 1390,
+   "page": "https://www.sriservices.com/county/IN/Grant"
+  },
+  {
+   "fips": "18005",
+   "state": "IN",
+   "name": "Bartholomew County",
+   "date": "2026-10-27",
+   "kind": "posted",
+   "parcels": 120,
+   "page": "https://www.sriservices.com/county/IN/Bartholomew"
+  },
+  {
+   "fips": "18009",
+   "state": "IN",
+   "name": "Blackford County",
+   "date": "2026-10-27",
+   "kind": "posted",
+   "parcels": 84,
+   "page": "https://www.sriservices.com/county/IN/Blackford"
+  },
+  {
+   "fips": "18025",
+   "state": "IN",
+   "name": "Crawford County",
+   "date": "2026-10-27",
+   "kind": "posted",
+   "parcels": 214,
+   "page": "https://www.sriservices.com/county/IN/Crawford"
+  },
+  {
+   "fips": "18067",
+   "state": "IN",
+   "name": "Howard County",
+   "date": "2026-10-27",
+   "kind": "posted",
+   "parcels": 652,
+   "page": "https://www.sriservices.com/county/IN/Howard"
+  },
+  {
+   "fips": "18069",
+   "state": "IN",
+   "name": "Huntington County",
+   "date": "2026-10-27",
+   "kind": "posted",
+   "parcels": 67,
+   "page": "https://www.sriservices.com/county/IN/Huntington"
+  },
+  {
+   "fips": "18099",
+   "state": "IN",
+   "name": "Marshall County",
+   "date": "2026-10-27",
+   "kind": "posted",
+   "parcels": 75,
+   "page": "https://www.sriservices.com/county/IN/Marshall"
+  },
+  {
+   "fips": "18149",
+   "state": "IN",
+   "name": "Starke County",
+   "date": "2026-10-27",
+   "kind": "posted",
+   "parcels": 128,
+   "page": "https://www.sriservices.com/county/IN/Starke"
+  },
+  {
+   "fips": "47157",
+   "state": "TN",
+   "name": "Shelby County",
+   "date": "2026-10-27",
+   "kind": "posted",
+   "parcels": 1000,
+   "page": "https://www.sriservices.com/county/TN/Shelby"
+  },
+  {
+   "fips": "18023",
+   "state": "IN",
+   "name": "Clinton County",
+   "date": "2026-10-28",
+   "kind": "posted",
+   "parcels": 22,
+   "page": "https://www.sriservices.com/county/IN/Clinton"
+  },
+  {
+   "fips": "18039",
+   "state": "IN",
+   "name": "Elkhart County",
+   "date": "2026-10-28",
+   "kind": "posted",
+   "parcels": 337,
+   "page": "https://www.sriservices.com/county/IN/Elkhart"
+  },
+  {
+   "fips": "18137",
+   "state": "IN",
+   "name": "Ripley County",
+   "date": "2026-10-28",
+   "kind": "posted",
+   "parcels": 85,
+   "page": "https://www.sriservices.com/county/IN/Ripley"
+  },
+  {
+   "fips": "18163",
+   "state": "IN",
+   "name": "Vanderburgh County",
+   "date": "2026-10-29",
+   "kind": "posted",
+   "parcels": 553,
+   "page": "https://www.sriservices.com/county/IN/Vanderburgh"
+  },
+  {
+   "fips": "18143",
+   "state": "IN",
+   "name": "Scott County",
+   "date": "2026-11-03",
+   "kind": "posted",
+   "parcels": 99,
+   "page": "https://www.sriservices.com/county/IN/Scott"
+  },
+  {
+   "fips": "18007",
+   "state": "IN",
+   "name": "Benton County",
+   "date": "2026-11-04",
+   "kind": "posted",
+   "parcels": 19,
+   "page": "https://www.sriservices.com/county/IN/Benton"
+  },
+  {
+   "fips": "18133",
+   "state": "IN",
+   "name": "Putnam County",
+   "date": "2026-11-04",
+   "kind": "posted",
+   "parcels": 66,
+   "page": "https://www.sriservices.com/county/IN/Putnam"
+  },
+  {
+   "fips": "18157",
+   "state": "IN",
+   "name": "Tippecanoe County",
+   "date": "2026-11-04",
+   "kind": "posted",
+   "parcels": 82,
+   "page": "https://www.sriservices.com/county/IN/Tippecanoe"
+  },
+  {
+   "fips": "39047",
+   "state": "OH",
+   "name": "Fayette County",
+   "date": "2026-11-04",
+   "kind": "posted",
+   "parcels": 11,
+   "page": "https://fayette.sheriffsaleauction.ohio.gov"
   },
   {
    "fips": "39107",
@@ -73,6 +343,51 @@
    "kind": "posted",
    "parcels": 77,
    "page": "https://suwannee.realtaxdeed.com"
+  },
+  {
+   "fips": "18011",
+   "state": "IN",
+   "name": "Boone County",
+   "date": "2026-11-05",
+   "kind": "posted",
+   "parcels": 14,
+   "page": "https://www.sriservices.com/county/IN/Boone"
+  },
+  {
+   "fips": "18065",
+   "state": "IN",
+   "name": "Henry County",
+   "date": "2026-11-05",
+   "kind": "posted",
+   "parcels": 168,
+   "page": "https://www.sriservices.com/county/IN/Henry"
+  },
+  {
+   "fips": "18139",
+   "state": "IN",
+   "name": "Rush County",
+   "date": "2026-11-05",
+   "kind": "posted",
+   "parcels": 29,
+   "page": "https://www.sriservices.com/county/IN/Rush"
+  },
+  {
+   "fips": "18145",
+   "state": "IN",
+   "name": "Shelby County",
+   "date": "2026-11-05",
+   "kind": "posted",
+   "parcels": 102,
+   "page": "https://www.sriservices.com/county/IN/Shelby"
+  },
+  {
+   "fips": "18159",
+   "state": "IN",
+   "name": "Tipton County",
+   "date": "2026-11-05",
+   "kind": "posted",
+   "parcels": 27,
+   "page": "https://www.sriservices.com/county/IN/Tipton"
   },
   {
    "fips": "39011",
@@ -201,6 +516,33 @@
    "page": "https://osceola.realtaxdeed.com"
   },
   {
+   "fips": "18071",
+   "state": "IN",
+   "name": "Jackson County",
+   "date": "2026-11-10",
+   "kind": "posted",
+   "parcels": 47,
+   "page": "https://www.sriservices.com/county/IN/Jackson"
+  },
+  {
+   "fips": "18093",
+   "state": "IN",
+   "name": "Lawrence County",
+   "date": "2026-11-10",
+   "kind": "posted",
+   "parcels": 225,
+   "page": "https://www.sriservices.com/county/IN/Lawrence"
+  },
+  {
+   "fips": "18119",
+   "state": "IN",
+   "name": "Owen County",
+   "date": "2026-11-10",
+   "kind": "posted",
+   "parcels": 80,
+   "page": "https://www.sriservices.com/county/IN/Owen"
+  },
+  {
    "fips": "39021",
    "state": "OH",
    "name": "Champaign County",
@@ -228,6 +570,15 @@
    "page": "https://liveauctions.govease.com/TN/tnsullivanjudicialfc/1557/browsestandard"
   },
   {
+   "fips": "18041",
+   "state": "IN",
+   "name": "Fayette County",
+   "date": "2026-11-11",
+   "kind": "posted",
+   "parcels": 87,
+   "page": "https://www.sriservices.com/county/IN/Fayette"
+  },
+  {
    "fips": "42025",
    "state": "PA",
    "name": "Carbon County",
@@ -242,8 +593,35 @@
    "name": "St. Johns County",
    "date": "2026-11-12",
    "kind": "posted",
-   "parcels": 69,
-   "page": "https://saintjohns.realforeclose.com"
+   "parcels": 3337,
+   "page": "https://www.sriservices.com/county/FL/St.%20Johns"
+  },
+  {
+   "fips": "18083",
+   "state": "IN",
+   "name": "Knox County",
+   "date": "2026-11-12",
+   "kind": "posted",
+   "parcels": 327,
+   "page": "https://www.sriservices.com/county/IN/Knox"
+  },
+  {
+   "fips": "18173",
+   "state": "IN",
+   "name": "Warrick County",
+   "date": "2026-11-12",
+   "kind": "posted",
+   "parcels": 135,
+   "page": "https://www.sriservices.com/county/IN/Warrick"
+  },
+  {
+   "fips": "22075",
+   "state": "LA",
+   "name": "Plaquemines Parish",
+   "date": "2026-11-13",
+   "kind": "posted",
+   "parcels": 284,
+   "page": "https://www.sriservices.com/county/LA/Plaquemines"
   },
   {
    "fips": "39033",
@@ -318,6 +696,42 @@
    "page": "https://liveauctions.govease.com/WA/wabenton/1296/browsestandard"
   },
   {
+   "fips": "18049",
+   "state": "IN",
+   "name": "Fulton County",
+   "date": "2026-11-17",
+   "kind": "posted",
+   "parcels": 133,
+   "page": "https://www.sriservices.com/county/IN/Fulton"
+  },
+  {
+   "fips": "18101",
+   "state": "IN",
+   "name": "Martin County",
+   "date": "2026-11-17",
+   "kind": "posted",
+   "parcels": 22,
+   "page": "https://www.sriservices.com/county/IN/Martin"
+  },
+  {
+   "fips": "18131",
+   "state": "IN",
+   "name": "Pulaski County",
+   "date": "2026-11-17",
+   "kind": "posted",
+   "parcels": 146,
+   "page": "https://www.sriservices.com/county/IN/Pulaski"
+  },
+  {
+   "fips": "18147",
+   "state": "IN",
+   "name": "Spencer County",
+   "date": "2026-11-17",
+   "kind": "posted",
+   "parcels": 222,
+   "page": "https://www.sriservices.com/county/IN/Spencer"
+  },
+  {
    "fips": "39005",
    "state": "OH",
    "name": "Ashland County",
@@ -354,13 +768,76 @@
    "page": "https://www.bid4assets.com/storefront/PendOreilleNov26"
   },
   {
+   "fips": "18017",
+   "state": "IN",
+   "name": "Cass County",
+   "date": "2026-11-18",
+   "kind": "posted",
+   "parcels": 106,
+   "page": "https://www.sriservices.com/county/IN/Cass"
+  },
+  {
+   "fips": "18035",
+   "state": "IN",
+   "name": "Delaware County",
+   "date": "2026-11-18",
+   "kind": "posted",
+   "parcels": 646,
+   "page": "https://www.sriservices.com/county/IN/Delaware"
+  },
+  {
+   "fips": "18037",
+   "state": "IN",
+   "name": "Dubois County",
+   "date": "2026-11-18",
+   "kind": "posted",
+   "parcels": 37,
+   "page": "https://www.sriservices.com/county/IN/Dubois"
+  },
+  {
+   "fips": "18061",
+   "state": "IN",
+   "name": "Harrison County",
+   "date": "2026-11-18",
+   "kind": "posted",
+   "parcels": 120,
+   "page": "https://www.sriservices.com/county/IN/Harrison"
+  },
+  {
+   "fips": "18107",
+   "state": "IN",
+   "name": "Montgomery County",
+   "date": "2026-11-18",
+   "kind": "posted",
+   "parcels": 58,
+   "page": "https://www.sriservices.com/county/IN/Montgomery"
+  },
+  {
+   "fips": "18123",
+   "state": "IN",
+   "name": "Perry County",
+   "date": "2026-11-18",
+   "kind": "posted",
+   "parcels": 69,
+   "page": "https://www.sriservices.com/county/IN/Perry"
+  },
+  {
+   "fips": "18125",
+   "state": "IN",
+   "name": "Pike County",
+   "date": "2026-11-18",
+   "kind": "posted",
+   "parcels": 222,
+   "page": "https://www.sriservices.com/county/IN/Pike"
+  },
+  {
    "fips": "22117",
    "state": "LA",
    "name": "Washington Parish",
    "date": "2026-11-18",
    "kind": "posted",
-   "parcels": 15,
-   "page": "https://www.bid4assets.com/WPSOSheriffSales/listings"
+   "parcels": 20,
+   "page": "https://www.sriservices.com/county/LA/Washington"
   },
   {
    "fips": "27153",
@@ -390,6 +867,87 @@
    "page": "https://liveauctions.govease.com/CO/cobaca/1235/browsestandard"
   },
   {
+   "fips": "18045",
+   "state": "IN",
+   "name": "Fountain County",
+   "date": "2026-11-19",
+   "kind": "posted",
+   "parcels": 46,
+   "page": "https://www.sriservices.com/county/IN/Fountain"
+  },
+  {
+   "fips": "18063",
+   "state": "IN",
+   "name": "Hendricks County",
+   "date": "2026-11-19",
+   "kind": "posted",
+   "parcels": 112,
+   "page": "https://www.sriservices.com/county/IN/Hendricks"
+  },
+  {
+   "fips": "18077",
+   "state": "IN",
+   "name": "Jefferson County",
+   "date": "2026-11-19",
+   "kind": "posted",
+   "parcels": 43,
+   "page": "https://www.sriservices.com/county/IN/Jefferson"
+  },
+  {
+   "fips": "18081",
+   "state": "IN",
+   "name": "Johnson County",
+   "date": "2026-11-19",
+   "kind": "posted",
+   "parcels": 148,
+   "page": "https://www.sriservices.com/county/IN/Johnson"
+  },
+  {
+   "fips": "18121",
+   "state": "IN",
+   "name": "Parke County",
+   "date": "2026-11-19",
+   "kind": "posted",
+   "parcels": 36,
+   "page": "https://www.sriservices.com/county/IN/Parke"
+  },
+  {
+   "fips": "18129",
+   "state": "IN",
+   "name": "Posey County",
+   "date": "2026-11-19",
+   "kind": "posted",
+   "parcels": 139,
+   "page": "https://www.sriservices.com/county/IN/Posey"
+  },
+  {
+   "fips": "18141",
+   "state": "IN",
+   "name": "St. Joseph County",
+   "date": "2026-11-19",
+   "kind": "posted",
+   "parcels": 923,
+   "page": "https://www.sriservices.com/county/IN/St%20Joseph"
+  },
+  {
+   "fips": "18165",
+   "state": "IN",
+   "name": "Vermillion County",
+   "date": "2026-11-19",
+   "kind": "posted",
+   "parcels": 114,
+   "page": "https://www.sriservices.com/county/IN/Vermillion"
+  },
+  {
+   "fips": "18167",
+   "state": "IN",
+   "name": "Vigo County",
+   "date": "2026-11-19",
+   "kind": "posted",
+   "parcels": 1042,
+   "page": "https://www.sriservices.com/county/IN/Vigo"
+  },
+  {
    "fips": "42029",
    "state": "PA",
    "name": "Chester County",
@@ -406,6 +964,15 @@
    "kind": "posted",
    "parcels": 3,
    "page": "https://www.bid4assets.com/elksheriffsales"
+  },
+  {
+   "fips": "18105",
+   "state": "IN",
+   "name": "Monroe County",
+   "date": "2026-11-20",
+   "kind": "posted",
+   "parcels": 32,
+   "page": "https://www.sriservices.com/county/IN/Monroe"
   },
   {
    "fips": "39131",
@@ -426,6 +993,15 @@
    "page": "https://www.bid4assets.com/adamscountysheriffsales"
   },
   {
+   "fips": "18001",
+   "state": "IN",
+   "name": "Adams County",
+   "date": "2026-11-24",
+   "kind": "posted",
+   "parcels": 29,
+   "page": "https://www.sriservices.com/county/IN/Adams"
+  },
+  {
    "fips": "39099",
    "state": "OH",
    "name": "Mahoning County",
@@ -444,6 +1020,42 @@
    "page": "https://liveauctions.govease.com/CO/copitkinforeclosure/1327/browsestandard"
   },
   {
+   "fips": "18015",
+   "state": "IN",
+   "name": "Carroll County",
+   "date": "2026-11-25",
+   "kind": "posted",
+   "parcels": 19,
+   "page": "https://www.sriservices.com/county/IN/Carroll"
+  },
+  {
+   "fips": "18073",
+   "state": "IN",
+   "name": "Jasper County",
+   "date": "2026-12-02",
+   "kind": "posted",
+   "parcels": 38,
+   "page": "https://www.sriservices.com/county/IN/Jasper"
+  },
+  {
+   "fips": "18055",
+   "state": "IN",
+   "name": "Greene County",
+   "date": "2026-12-08",
+   "kind": "posted",
+   "parcels": 192,
+   "page": "https://www.sriservices.com/county/IN/Greene"
+  },
+  {
+   "fips": "18169",
+   "state": "IN",
+   "name": "Wabash County",
+   "date": "2026-12-08",
+   "kind": "posted",
+   "parcels": 93,
+   "page": "https://www.sriservices.com/county/IN/Wabash"
+  },
+  {
    "fips": "42017",
    "state": "PA",
    "name": "Bucks County",
@@ -453,6 +1065,15 @@
    "page": "https://liveauctions.govease.com/PA/pabucksjudicial/1554/browsestandard"
   },
   {
+   "fips": "18179",
+   "state": "IN",
+   "name": "Wells County",
+   "date": "2026-12-09",
+   "kind": "posted",
+   "parcels": 35,
+   "page": "https://www.sriservices.com/county/IN/Wells"
+  },
+  {
    "fips": "42049",
    "state": "PA",
    "name": "Erie County",
@@ -460,6 +1081,15 @@
    "kind": "posted",
    "parcels": 48,
    "page": "https://liveauctions.govease.com/PA/paeriejudicial/1528/browsestandard"
+  },
+  {
+   "fips": "18013",
+   "state": "IN",
+   "name": "Brown County",
+   "date": "2026-12-10",
+   "kind": "posted",
+   "parcels": 19,
+   "page": "https://www.sriservices.com/county/IN/Brown"
   },
   {
    "fips": "42009",
@@ -481,8 +1111,131 @@
   }
  ],
  "newCounties": [
-  "42101"
+  "08003",
+  "08019",
+  "08021",
+  "08029",
+  "08047",
+  "08051",
+  "08087",
+  "08091",
+  "08107",
+  "08109",
+  "08115",
+  "08125",
+  "18001",
+  "18005",
+  "18007",
+  "18009",
+  "18011",
+  "18013",
+  "18015",
+  "18017",
+  "18019",
+  "18021",
+  "18023",
+  "18025",
+  "18027",
+  "18029",
+  "18031",
+  "18033",
+  "18035",
+  "18037",
+  "18039",
+  "18041",
+  "18043",
+  "18045",
+  "18047",
+  "18049",
+  "18051",
+  "18053",
+  "18055",
+  "18057",
+  "18059",
+  "18061",
+  "18063",
+  "18065",
+  "18067",
+  "18069",
+  "18071",
+  "18073",
+  "18075",
+  "18077",
+  "18079",
+  "18081",
+  "18083",
+  "18085",
+  "18089",
+  "18091",
+  "18093",
+  "18095",
+  "18099",
+  "18101",
+  "18103",
+  "18105",
+  "18107",
+  "18111",
+  "18113",
+  "18115",
+  "18117",
+  "18119",
+  "18121",
+  "18123",
+  "18125",
+  "18127",
+  "18129",
+  "18131",
+  "18133",
+  "18135",
+  "18137",
+  "18139",
+  "18141",
+  "18143",
+  "18145",
+  "18147",
+  "18149",
+  "18151",
+  "18153",
+  "18155",
+  "18157",
+  "18159",
+  "18161",
+  "18163",
+  "18165",
+  "18167",
+  "18169",
+  "18171",
+  "18173",
+  "18175",
+  "18177",
+  "18179",
+  "18181",
+  "18183",
+  "22001",
+  "22005",
+  "22017",
+  "22021",
+  "22039",
+  "22045",
+  "22051",
+  "22053",
+  "22055",
+  "22063",
+  "22075",
+  "22083",
+  "22087",
+  "22091",
+  "22093",
+  "22095",
+  "22099",
+  "22103",
+  "22109",
+  "26091",
+  "26099",
+  "47125",
+  "47155",
+  "47157"
  ],
- "parcelDelta": 1564,
- "linkDelta": 0
+ "parcelDelta": 50213,
+ "linkDelta": 83
 }
