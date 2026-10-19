@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19T08:56:41+00:00",
+ "generated": "2026-10-19T09:15:34+00:00",
  "counties": 3222,
  "states": 52,
  "withData": 715,
@@ -1825,105 +1825,98 @@
    "url": "https://shamarrobinson.github.io/atlanta-tax-sale-dashboard/",
    "counties": 40,
    "ok": true,
-   "checked": "2026-10-19T00:07:22+00:00"
+   "checked": "2026-10-19T06:22:44+00:00"
   },
   "clark": {
    "label": "Clark County Tax Auction Tracker",
    "url": "https://shamarrobinson.github.io/clark-county-tax-auction-dashboard/",
    "counties": 1,
    "ok": true,
-   "checked": "2026-10-19T00:07:22+00:00"
+   "checked": "2026-10-19T06:22:45+00:00"
   },
   "michigan": {
    "label": "Tax-Sale.info (Michigan Public Land Auction)",
    "url": "https://www.tax-sale.info/",
    "counties": 79,
    "ok": true,
-   "checked": "2026-10-19T00:12:19+00:00"
+   "checked": "2026-10-19T06:27:19+00:00"
   },
   "realauction": {
    "label": "RealAuction portals (Florida, Arizona and Colorado tax deed sales, Clerk and Public Trustee foreclosure sales, Ohio and Texas sheriff sales)",
    "url": "https://www.realauction.com/",
    "counties": 155,
    "ok": true,
-   "checked": "2026-10-19T02:54:54+00:00"
+   "checked": "2026-10-19T08:58:26+00:00"
   },
   "govease": {
    "label": "GovEase (online tax sale platform)",
    "url": "https://www.govease.com/",
    "counties": 40,
    "ok": true,
-   "checked": "2026-10-19T03:02:25+00:00"
+   "checked": "2026-10-19T09:07:02+00:00"
   },
   "bid4assets": {
    "label": "Bid4Assets (county tax sale auctions)",
    "url": "https://www.bid4assets.com/county-tax-sales",
    "counties": 35,
    "ok": true,
-   "checked": "2026-10-19T03:09:48+00:00"
+   "checked": "2026-10-19T09:12:53+00:00"
   },
   "mvba": {
    "label": "MVBA Tax Sales (Texas online property tax sales)",
    "url": "https://www.mvbataxsales.com/",
    "counties": 9,
    "ok": true,
-   "error": "https://www.mvbataxsales.com/api/auctions: Expecting value: line 1 column 1 (char 0)"
+   "error": "https://www.mvbataxsales.com/api/auctions: not JSON: ''"
   },
   "b4a_sheriff": {
    "label": "Bid4Assets (sheriff and foreclosure sales)",
    "url": "https://www.bid4assets.com/sheriffsales",
    "counties": 31,
    "ok": true,
-   "checked": "2026-10-19T06:27:46+00:00"
+   "checked": "2026-10-19T09:15:12+00:00"
   },
   "sri": {
    "label": "SRI Inc. (Zeus Auction)",
    "url": "https://www.sriservices.com/properties",
    "counties": 138,
-   "ok": true,
-   "checked": "2026-10-19T08:12:55+00:00"
+   "ok": true
   },
   "cosl": {
    "label": "Arkansas Commissioner of State Lands",
    "url": "https://auction.cosl.org/Auctions/ListingsView",
    "counties": 53,
-   "ok": true,
-   "checked": "2026-10-19T08:22:30+00:00"
+   "ok": true
   },
   "iltaxsale": {
    "label": "ILTaxSale.com (Joseph E. Meyer & Associates)",
    "url": "https://iltaxsale.com/new/index.php/main/auctions/",
    "counties": 92,
-   "ok": true,
-   "checked": "2026-10-19T08:26:03+00:00"
+   "ok": true
   },
   "bidwrangler": {
    "label": "For Sale At Auction (BidWrangler)",
    "url": "https://www.forsaleatauction.biz/auctions/tax-delinquent-real-estate",
    "counties": 26,
-   "ok": true,
-   "checked": "2026-10-19T08:30:20+00:00"
+   "ok": true
   },
   "kania": {
    "label": "The Kania Law Firm (North Carolina tax foreclosure sales)",
    "url": "https://kanialawfirm.com/tax-foreclosures/foreclosure-listings/",
    "counties": 24,
-   "ok": true,
-   "checked": "2026-10-19T08:51:25+00:00"
+   "ok": true
   },
   "cttaxsales": {
    "label": "Connecticut Tax Sales (Pullman & Comley)",
    "url": "https://cttaxsales.com/upcoming-tax-sales/",
    "counties": 9,
-   "ok": true,
-   "checked": "2026-10-19T08:51:37+00:00"
+   "ok": true
   },
   "aarauctions": {
    "label": "AAR Auctions (New York tax foreclosure auctions)",
    "url": "https://aarauctions.com/auctions/tax-foreclosures/",
    "counties": 6,
-   "ok": true,
-   "checked": "2026-10-19T08:56:37+00:00"
+   "ok": true
   }
  },
  "countiesWithData": [
