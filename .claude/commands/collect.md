@@ -11,7 +11,7 @@ Collect RealAuction portal data for `$ARGUMENTS` and publish it. Follow the stan
 2. Run it from this Mac (the portals refuse data-center addresses, a home connection works). A full state can take an
    hour; use a long timeout or run it in the background and watch the output. The script rebuilds the registry,
    index, master CSV, changes feed and calendar itself.
-3. Check the result: `python3 -c "import csv;print(sum(1 for _ in csv.DictReader(open('data/master_parcels.csv'))))"`
+3. Check the result: `python3 -c "import json;print(json.load(open('data/master/index.json'))['parcels'])"`
    for the new parcel total, `git status --short data | head`, and spot-check one new county file in
    `data/counties/<fips>.json` (auctions with parcels, statuses, values).
 4. Commit as Shamar with a message of the form `Add <sale kind> sales for <counties or state>`, a body with the

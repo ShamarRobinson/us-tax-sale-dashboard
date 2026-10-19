@@ -18,7 +18,7 @@ Tax deed auctions, tax lien sales, redeemable deed sales and sheriff sales for e
 ## Property Deal Analyzer And Master CSV
 
 - **[Property Deal Analyzer](https://shamarrobinson.github.io/us-tax-sale-dashboard/analyzer.html)** (`analyzer.html`): every parcel on file, rescored with your own assumptions (target discount to county value, repair and closing allowance, budget, value fallback). Filters by state, county, sale type and kind, status, property type, bid and value ranges, photos and coordinates; drill-down charts; a bid-against-value scatter; a map; a sortable grid; a photo and Street View gallery; CSV download of whatever is in view.
-- **Master CSVs**, rebuilt by `fetch_all.py` on every run so every source flows into them: `data/master_parcels.csv` (one row per parcel: county, sale, parcel, address, owner, buyer, bids, multiple, excess, county value, bid-to-value, size, coordinates, Google Maps and Street View links, photo, listing and source links, redemption period, rate, county median multiple, deal score) and `data/master_counties.csv` (every county with its rules, links and next sale). `data/master.json` is the same parcel data for the analyzer page.
+- **Master CSVs**, rebuilt by `fetch_all.py` on every run so every source flows into them: `data/master/<ST>.csv`, one file per state that the site's Master CSV link joins into one download (one row per parcel: county, sale, parcel, address, owner, buyer, bids, multiple, excess, county value, bid-to-value, size, coordinates, Google Maps and Street View links, photo, listing and source links, redemption period, rate, county median multiple, deal score) and `data/master_counties.csv` (every county with its rules, links and next sale). `data/master.json` is the same parcel data for the analyzer page.
 - **Deal score** (0 to 100, a screening aid, identical in the county pages, the analyzer and the master CSV): value 40 (cost against county value, or entry cost when none is published), property 20 (type from county records; improved beats vacant), market 15 (county population), competition 15 (the parcel's own multiple, or the county's median multiple), history 10 (earlier auctions for the same parcel; a prior no-bid scores lowest). 70 and up Strong, 50 to 69 Good, 35 to 49 Fair, under 35 Weak. Every parcel detail shows how its score was built.
 
 ## Email Alerts
@@ -34,7 +34,7 @@ Everything the pages read is a static file you can fetch from the site:
 | `data/registry.json` | every county (FIPS, name, state, coordinates, population, links, next sale, data summary, coverage) and every state's rules |
 | `data/index.json` | national totals, posted upcoming sales, source status |
 | `data/counties/{fips}.json` | every sale and parcel on file for one county |
-| `data/master.json`, `data/master_parcels.csv` | every parcel on file with the deal-analyzer fields |
+| `data/master/<ST>.json`, `data/master/<ST>.csv`, `data/master/index.json` | every parcel on file with the deal-analyzer fields, one JSON and one CSV per state plus an index of the states (GitHub refuses files over 100 MB, so the master file is sharded; the Master CSV link on the site joins the shards) |
 | `data/master_counties.csv` | every county with its rules and links |
 | `data/changes.json` | what changed in the latest refresh |
 | `data/upcoming.ics` | calendar of posted sales and statutory dates |

@@ -1,24 +1,24 @@
 {
- "generated": "2026-10-19T08:30:23+00:00",
- "previous": "2026-10-19T08:26:06+00:00",
+ "generated": "2026-10-19T08:32:48+00:00",
+ "previous": "2026-10-19T08:30:23+00:00",
  "newUpcoming": [
   {
-   "fips": "51073",
-   "state": "VA",
-   "name": "Gloucester County",
-   "date": "2026-10-21",
+   "fips": "39125",
+   "state": "OH",
+   "name": "Paulding County",
+   "date": "2026-10-29",
    "kind": "posted",
-   "parcels": 26,
-   "page": "https://www.forsaleatauction.biz/auctions/tax-delinquent-real-estate"
+   "parcels": 7,
+   "page": "https://paulding.sheriffsaleauction.ohio.gov"
   },
   {
-   "fips": "51033",
-   "state": "VA",
-   "name": "Caroline County",
-   "date": "2026-10-22",
+   "fips": "39157",
+   "state": "OH",
+   "name": "Tuscarawas County",
+   "date": "2026-10-29",
    "kind": "posted",
-   "parcels": 72,
-   "page": "https://www.forsaleatauction.biz/auctions/tax-delinquent-real-estate"
+   "parcels": 10,
+   "page": "https://tuscarawas.sheriffsaleauction.ohio.gov"
   },
   {
    "fips": "39161",
@@ -1911,34 +1911,7 @@
    "page": "https://iltaxsale.com/new/index.php/county/Washington/WAS"
   }
  ],
- "newCounties": [
-  "51033",
-  "51035",
-  "51043",
-  "51049",
-  "51057",
-  "51059",
-  "51065",
-  "51073",
-  "51077",
-  "51085",
-  "51095",
-  "51099",
-  "51101",
-  "51109",
-  "51115",
-  "51119",
-  "51147",
-  "51155",
-  "51163",
-  "51171",
-  "51177",
-  "51179",
-  "51187",
-  "51510",
-  "51630",
-  "51820"
- ],
- "parcelDelta": 624,
- "linkDelta": 22
+ "newCounties": [],
+ "parcelDelta": 0,
+ "linkDelta": 0
 }

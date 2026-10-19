@@ -333,7 +333,7 @@ def main(offline=False, only=None):
     write_ics(os.path.join(DATA, "upcoming.ics"), sorted(events, key=lambda e: e["date"]), "US tax sales")
 
     n = master.build(counties, records, DATA)
-    print(f"wrote data/master_parcels.csv and data/master.json ({n} parcels), data/master_counties.csv")
+    print(f"wrote data/master/<ST>.csv and .json ({n} parcels), data/master_counties.csv")
     print(f"wrote data/registry.json ({os.path.getsize(os.path.join(DATA, 'registry.json'))//1024} KB), "
           f"{index['withData']} counties with parcel data, {index['parcels']} parcels")
 

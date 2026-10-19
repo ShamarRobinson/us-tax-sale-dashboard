@@ -271,10 +271,30 @@
   const matchesP = (p, ts) => ts.every((t) => { if (t.num) { const v = PN[t.num](p); if (v == null || isNaN(v)) return false; return t.op === ">" ? v > t.v : t.op === "<" ? v < t.v : t.op === ">=" ? v >= t.v : t.op === "<=" ? v <= t.v : Math.abs(v - t.v) < 0.5; } if (t.f) return String(PF[t.f](p) || "").toLowerCase().includes(t.s); return hay(p).includes(t.s); });
   async function loadMaster() {
     if (MASTER) return MASTER;
-    const m = await fetch("data/master.json", { cache: "no-cache" }).then((r) => r.json());
-    MASTER = m.rows.map((r) => { const o = {}; m.columns.forEach((c, i) => { o[c] = r[i]; }); o.stateName = STATES[o.state]?.name || ""; return o; });
+    MASTER = (await loadMasterShards()).map((o) => { o.stateName = STATES[o.state]?.name || ""; return o; });
     return MASTER;
   }
+  // the master parcel file is split by state under data/master/ (GitHub refuses files over 100 MB); index.json lists the shards
+  async function loadMasterShards() {
+    const idx = await fetch("data/master/index.json", { cache: "no-cache" }).then((r) => r.json());
+    const shards = await Promise.all(idx.states.map((s) => fetch(`data/master/${s.abbr}.json`, { cache: "no-cache" }).then((r) => r.json())));
+    const out = [];
+    for (const m of shards) for (const r of m.rows) { const o = {}; m.columns.forEach((c, i) => { o[c] = r[i]; }); out.push(o); }
+    return out;
+  }
+  async function downloadMasterCsv(a) {
+    const label = a.textContent; a.textContent = "Joining every state's CSV…";
+    try {
+      const idx = await fetch("data/master/index.json", { cache: "no-cache" }).then((r) => r.json());
+      const parts = await Promise.all(idx.states.map((s) => fetch(`data/master/${s.abbr}.csv`, { cache: "no-cache" }).then((r) => r.text())));
+      const body = parts.map((t, i) => i ? t.slice(t.indexOf("\n") + 1) : t).join("");
+      const url = URL.createObjectURL(new Blob([body], { type: "text/csv" }));
+      const link = Object.assign(document.createElement("a"), { href: url, download: "master_parcels.csv" });
+      document.body.appendChild(link); link.click(); link.remove(); setTimeout(() => URL.revokeObjectURL(url), 60000);
+    } catch (e) { alert("The master CSV could not be assembled: " + e.message); }
+    a.textContent = label;
+  }
+  if ($("masterCsv")) $("masterCsv").onclick = (e) => { e.preventDefault(); downloadMasterCsv(e.currentTarget); };
   async function runParcelSearch(q) {
     showResults("Searching every parcel on file…");
     let all; try { all = await loadMaster(); } catch (e) { $("resTitle").textContent = "The master parcel file could not be loaded."; return; }

@@ -2,9 +2,10 @@
 
 fetch_all.py calls build() on every run, so any source added to sources/ lands in the master files automatically.
 Writes:
-    data/master_parcels.csv    every parcel (spreadsheet-ready)
+    data/master/<ST>.csv       every parcel in one state (spreadsheet-ready); the site joins them into one master CSV on download
     data/master_counties.csv   every county with its rules, links and next sale
-    data/master.json           the parcel rows as {"columns": [...], "rows": [[...]]} for the deal analyzer page
+    data/master/<ST>.json      the state's parcel rows as {"columns": [...], "rows": [[...]]} for the deal analyzer page
+    data/master/index.json     the states on file with parcel and county counts, so the pages know which shards to load
 """
 import csv
 import json
@@ -170,15 +171,32 @@ def build(counties, records, data_dir):
     rows.sort(key=lambda r: (r[2], r[1], r[6] or "", r[9] or ""))
 
     os.makedirs(data_dir, exist_ok=True)
-    with open(os.path.join(data_dir, "master_parcels.csv"), "w", newline="", encoding="utf-8") as f:
-        w = csv.writer(f)
-        w.writerow(PARCEL_COLUMNS)
-        for r in rows:
-            w.writerow(["" if x is None else x for x in r])
-    # the analyzer page derives map and Street View links itself, so the JSON leaves out the long URL columns
-    keep = [i for i, c in enumerate(PARCEL_COLUMNS) if c not in ("googleMaps", "streetView", "desc", "typeDetail")]
-    with open(os.path.join(data_dir, "master.json"), "w", encoding="utf-8") as f:
-        json.dump({"columns": [PARCEL_COLUMNS[i] for i in keep], "rows": [[r[i] for i in keep] for r in rows]}, f, ensure_ascii=False, separators=(",", ":"))
+    # one CSV and one JSON per state: GitHub refuses files over 100 MB and the whole country no longer fits in one
+    shard_dir = os.path.join(data_dir, "master")
+    os.makedirs(shard_dir, exist_ok=True)
+    keep = [i for i, c in enumerate(PARCEL_COLUMNS) if c not in ("googleMaps", "streetView", "desc", "typeDetail")]  # the analyzer derives map links itself
+    by_state = {}
+    for r in rows:
+        by_state.setdefault(r[2], []).append(r)
+    states_out = []
+    for abbr in sorted(by_state):
+        srows = by_state[abbr]
+        with open(os.path.join(shard_dir, f"{abbr}.csv"), "w", newline="", encoding="utf-8") as f:
+            w = csv.writer(f)
+            w.writerow(PARCEL_COLUMNS)
+            for r in srows:
+                w.writerow(["" if x is None else x for x in r])
+        with open(os.path.join(shard_dir, f"{abbr}.json"), "w", encoding="utf-8") as f:
+            json.dump({"columns": [PARCEL_COLUMNS[i] for i in keep], "rows": [[r[i] for i in keep] for r in srows]}, f, ensure_ascii=False, separators=(",", ":"))
+        states_out.append({"abbr": abbr, "parcels": len(srows), "counties": len({r[0] for r in srows})})
+    for old in os.listdir(shard_dir):  # a state that lost all its data drops out
+        if old.endswith((".csv", ".json")) and old != "index.json" and old.split(".")[0] not in by_state:
+            os.remove(os.path.join(shard_dir, old))
+    with open(os.path.join(shard_dir, "index.json"), "w", encoding="utf-8") as f:
+        json.dump({"columns": PARCEL_COLUMNS, "parcels": len(rows), "states": states_out}, f, ensure_ascii=False, separators=(",", ":"))
+    for old in ("master_parcels.csv", "master.json"):  # the single-file layout used until 2026-10-19
+        if os.path.exists(os.path.join(data_dir, old)):
+            os.remove(os.path.join(data_dir, old))
 
     with open(os.path.join(data_dir, "master_counties.csv"), "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)

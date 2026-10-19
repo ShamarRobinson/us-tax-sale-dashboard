@@ -1,4 +1,4 @@
-/* Property Deal Analyzer: every parcel from data/master.json, rescored with the viewer's own assumptions. */
+/* Property Deal Analyzer: every parcel from the per-state shards under data/master/, rescored with the viewer's own assumptions. */
 (function () {
   "use strict";
   const $ = (id) => document.getElementById(id);
@@ -20,11 +20,31 @@
   const haversine = (a, b, c, d) => { const R = 3958.8, toR = (x) => x * Math.PI / 180, dLat = toR(c - a), dLon = toR(d - b); const h = Math.sin(dLat / 2) ** 2 + Math.cos(toR(a)) * Math.cos(toR(c)) * Math.sin(dLon / 2) ** 2; return 2 * R * Math.asin(Math.sqrt(h)); };
 
   // ---------- load ----------
+  // the master parcel file is split by state under data/master/ (GitHub refuses files over 100 MB); index.json lists the shards
+  async function loadMasterShards() {
+    const idx = await fetch("data/master/index.json", { cache: "no-cache" }).then((r) => r.json());
+    const shards = await Promise.all(idx.states.map((s) => fetch(`data/master/${s.abbr}.json`, { cache: "no-cache" }).then((r) => r.json())));
+    const out = [];
+    for (const m of shards) for (const r of m.rows) { const o = {}; m.columns.forEach((c, i) => { o[c] = r[i]; }); out.push(o); }
+    return out;
+  }
+  async function downloadMasterCsv(a) {
+    const label = a.textContent; a.textContent = "Joining every state's CSV…";
+    try {
+      const idx = await fetch("data/master/index.json", { cache: "no-cache" }).then((r) => r.json());
+      const parts = await Promise.all(idx.states.map((s) => fetch(`data/master/${s.abbr}.csv`, { cache: "no-cache" }).then((r) => r.text())));
+      const body = parts.map((t, i) => i ? t.slice(t.indexOf("\n") + 1) : t).join("");
+      const url = URL.createObjectURL(new Blob([body], { type: "text/csv" }));
+      const link = Object.assign(document.createElement("a"), { href: url, download: "master_parcels.csv" });
+      document.body.appendChild(link); link.click(); link.remove(); setTimeout(() => URL.revokeObjectURL(url), 60000);
+    } catch (e) { alert("The master CSV could not be assembled: " + e.message); }
+    a.textContent = label;
+  }
+  if ($("masterCsv")) $("masterCsv").onclick = (e) => { e.preventDefault(); downloadMasterCsv(e.currentTarget); };
   async function load() {
-    const [m, idx, reg] = await Promise.all([fetch("data/master.json", { cache: "no-cache" }).then((r) => r.json()), fetch("data/index.json", { cache: "no-cache" }).then((r) => r.json()).catch(() => null), fetch("data/registry.json", { cache: "no-cache" }).then((r) => r.json()).catch(() => null)]);
+    const [shards, idx, reg] = await Promise.all([loadMasterShards(), fetch("data/index.json", { cache: "no-cache" }).then((r) => r.json()).catch(() => null), fetch("data/registry.json", { cache: "no-cache" }).then((r) => r.json()).catch(() => null)]);
     if (reg) { for (const s of reg.states) STATES[s.abbr] = s; COUNTIES = reg.counties; }
-    const cols = m.columns;
-    ALL = m.rows.map((r) => { const o = {}; cols.forEach((c, i) => { o[c] = r[i]; }); return o; });
+    ALL = shards;
     const CL = {}; for (const c of COUNTIES) CL[c.fips] = c;
     for (const p of ALL) { p.id = `${p.fips}|${p.auctionDate}|${String(p.parcel || p.lot || p.caseNo || "").toUpperCase().replace(/\s+/g, " ").trim()}`; const c = CL[p.fips]; p.clat = p.lat || (c && c.lat); p.clon = p.lon || (c && c.lon); p.geoKind = p.lat ? "parcel" : "county"; }
     $("fHome").innerHTML = `<option value="">Anywhere</option><option value="geo">My location</option>` + COUNTIES.filter((c) => c.pop >= 20000).sort((a, b) => a.state.localeCompare(b.state) || a.name.localeCompare(b.name)).map((c) => `<option value="${c.fips}">${esc(c.label)}, ${c.state}</option>`).join("");

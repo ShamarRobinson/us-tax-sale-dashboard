@@ -69,7 +69,7 @@ def main():
         lines += [f"Posted sales in the next 45 days ({len(soon)}):"] + [f"  {u['date']}  {u['name']}, {u['state']}  ({u.get('parcels') or 0} parcels)  {u.get('page') or ''}" for u in sorted(soon, key=lambda u: u["date"])[:60]] + [""]
     if statutory:
         lines += ["Statutory sale dates in the next 45 days:"] + [f"  {s['nextStatutory']}  {s['name']}: {s['sale_timing']}  {SITE}#{s['abbr'].lower()}" for s in sorted(statutory, key=lambda s: s["nextStatutory"])] + [""]
-    lines += ["Master CSV: " + SITE + "data/master_parcels.csv", "Deal analyzer: " + SITE + "analyzer.html", "Calendar: " + SITE + "data/upcoming.ics", "",
+    lines += ["Master CSV: " + SITE + "analyzer.html (Master CSV link joins every state; per-state files under " + SITE + "data/master/)", "Deal analyzer: " + SITE + "analyzer.html", "Calendar: " + SITE + "data/upcoming.ics", "",
               "Sent by the tracker's monthly refresh. Dates change up to the day of the sale; confirm with the county."]
     if test:
         lines.insert(1, "(test message)")

@@ -45,7 +45,7 @@ data must land in the master CSV at the same time it lands on a county page; `ma
 sources/*.py adapters ──> fetch_all.py ──> data/counties/<fips>.json   (auctions and parcels per county)
                                       ├──> data/registry.json          (every county: rules, links, next sale, summary)
                                       ├──> data/index.json             (national totals, upcoming sales, source status)
-                                      ├──> data/master_parcels.csv + data/master.json   (master.py, with deal score)
+                                      ├──> data/master/<ST>.csv + <ST>.json + index.json   (master.py, with deal score; sharded by state)
                                       ├──> data/master_counties.csv, data/changes.json, data/upcoming.ics
 GitHub Pages serves index.html / analyzer.html / sheet.html, which load that JSON and CSV (Chart.js, Leaflet, d3-geo).
 ```
@@ -91,18 +91,25 @@ GitHub Pages serves index.html / analyzer.html / sheet.html, which load that JSO
 - Deal score (`master.py`): value 40, property 20, market 15, competition 15, history 10; 70+ Strong, 50 to 69 Good,
   35 to 49 Fair, under 35 Weak.
 
-## Data On File (As Of 2026-10-19)
+## Data On File (As Of 2026-10-19, Evening)
 
-67,804 parcels across 364 counties: FL 21,478 (45), PA 14,605 (20), CO 9,155 (23), MI 7,359 (79), GA 3,931 (24), TX
-3,918 (31), OH 3,501 (87), CA 1,591 (17), NV 1,156 (7), LA 582 (10), WA 183 (7), TN 124 (10), OK 87 (1), WI 68 (1), MN
-35 (1), MO 31 (1). By adapter: realauction 28,192, bid4assets 13,234, govease 8,018, michigan 7,359, atlanta 3,931,
-b4a_sheriff 3,367, mvba 2,967, clark 736. Raw portal dumps live in `data/raw/realauction/<fips>-<kind>.json` (135
-files: FL taxdeed 35, FL foreclosure 9, CO taxdeed 4, OH sheriff 87). GovEase data is sale lists only (every auction
-open on the platform that day, with starting bids and sale dates); Bid4Assets data is sale lists plus results with
-winning bids for the past sales on its calendar; MVBA data is the open Texas sales plus every past online sale since
-2017 with final bids; Bid4Assets sheriff's sales are upcoming lists with judgment amounts plus the last few days'
-outcomes. All of these, RealAuction included, refresh on the monthly run and with `python3 fetch_all.py --source
-<adapter>`.
+133,451 parcels across 676 counties: FL 24,746, IN 23,938, CO 18,698, PA 14,605, LA 13,659, IL 11,125, MI 7,389, GA
+3,931, TX 3,918, OH 3,501, AR 3,036, CA 1,591, NV 1,156, TN 1,130, VA 624, WA 183, OK 87, WI 68, MN 35, MO 31. By
+adapter: sri 50,862 (IN, LA, CO, FL, TN, MI), realauction 28,192, bid4assets 13,234, iltaxsale 11,125, govease 8,018,
+michigan 7,359, atlanta 3,931, b4a_sheriff 3,367, cosl 3,036, mvba 2,967, clark 736, bidwrangler 624. The master
+files are sharded by state under `data/master/` (the largest, FL, is about 15 MB); `data/master/index.json` lists the
+shards and the pages join them. Raw portal dumps live in `data/raw/realauction/<fips>-<kind>.json`. GovEase data is
+sale lists only; Bid4Assets is sale lists plus results; MVBA is the open Texas sales plus every past online sale since
+2017; Bid4Assets sheriff's sales are upcoming lists plus the last few days' outcomes; SRI is twelve months of sales
+with prices for the parcels that sold; ILTaxSale.com is fourteen months of results plus the next sale date; the
+Arkansas list is the parcels on the state's online auction today; For Sale At Auction is two years of Virginia
+judicial sales. All of these refresh on the monthly run and with `python3 fetch_all.py --source <adapter>`.
+
+States still without parcel data (30): KY, KS, NC, IA, NE, MS, PR, AL, SD, NY, MT, WV, ND, SC, ID, OR, NM, AK, UT,
+MD, WY, NJ, ME, AZ, MA, VT, NH, CT, HI, RI, DE, DC. Leads checked on 2026-10-19: aarauctions.com (New York tax
+foreclosures, a few parcels per county), wvsao.gov and sos.ms.gov/tfsearch (ASP.NET postback forms), zls-nc.com
+(North Carolina, a Blazor app that needs a browser), govdeals.com (bot protection), civicsource.com and
+iowataxauction.com (unreachable from the cloud).
 
 ## RealAuction Portals: The Main Open Work
 

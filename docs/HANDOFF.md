@@ -33,7 +33,7 @@ monthly `github-actions[bot]` data runs. Keep it that way.
 
 - Static GitHub Pages site, plain HTML, CSS and JavaScript: `index.html` with `app.js` (national and state views),
   `county.js` (county pages at `index.html#c/<fips>`), `common.js` (shared helpers), `analyzer.html` with
-  `analyzer.js` and `analyzer.css` (Property Deal Analyzer over `data/master_parcels.csv` and `data/master.json`),
+  `analyzer.js` and `analyzer.css` (Property Deal Analyzer over the per-state shards in `data/master/`),
   `sheet.html` (printable deal sheet). Libraries: Chart.js, Leaflet, d3-geo, TopoJSON (us-atlas county boundaries in
   `ref/us-counties-10m.json`).
 - Python pipeline, standard library only: `registry.py` (county list from `ref/census_gazetteer_2024.txt`,
@@ -42,7 +42,7 @@ monthly `github-actions[bot]` data runs. Keep it that way.
   sheriff sale, assessor, treasurer and excess funds pages into `ref/discovered_links.json`), `sources/` (adapters),
   `fetch_all.py` (runs everything, `--offline` rebuilds from local files), `master.py` (master CSV, county CSV, deal
   score), `notify.py` (monthly email digest), `collect_local.py` (RealAuction collection and `--import`).
-- Outputs in `data/`: `registry.json`, `index.json`, `counties/<fips>.json`, `master_parcels.csv`, `master.json`,
+- Outputs in `data/`: `registry.json`, `index.json`, `counties/<fips>.json`, `master/<ST>.csv`, `master/<ST>.json`, `master/index.json`,
   `master_counties.csv`, `changes.json`, `upcoming.ics`, `raw/realauction/<fips>-<kind>.json`.
 - Workflow `.github/workflows/update-data.yml`: cron `23 13 1 * *` (the 1st, about 6:23 AM Pacific), manual dispatch
   with an option to recrawl county websites, and pushes to `main` touching `*.py`, `sources/*.py` or the workflow. It
