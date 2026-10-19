@@ -1,16 +1,16 @@
 {
- "generated": "2026-10-19T08:51:41+00:00",
+ "generated": "2026-10-19T08:56:41+00:00",
  "counties": 3222,
  "states": 52,
- "withData": 709,
- "parcels": 133762,
- "auctions": 5008,
- "withTaxSaleLink": 1380,
+ "withData": 715,
+ "parcels": 133795,
+ "auctions": 5015,
+ "withTaxSaleLink": 1384,
  "withSite": 3061,
  "withSheriffLink": 378,
  "withAssessorLink": 1545,
- "withPhotos": 157,
- "photos": 20449,
+ "withPhotos": 160,
+ "photos": 20482,
  "systems": {
   "deed": 1294,
   "lien": 912,
@@ -1135,6 +1135,15 @@
    "page": "https://www.bid4assets.com/vernonsheriffsales/listings"
   },
   {
+   "fips": "36027",
+   "state": "NY",
+   "name": "Dutchess County",
+   "date": "2026-10-21",
+   "kind": "posted",
+   "parcels": 20,
+   "page": "https://aarauctions.com/auctions/tax-foreclosures/"
+  },
+  {
    "fips": "39061",
    "state": "OH",
    "name": "Hamilton County",
@@ -1304,6 +1313,15 @@
    "kind": "posted",
    "parcels": 5,
    "page": "https://kanialawfirm.com/tax-foreclosures/foreclosure-listings/"
+  },
+  {
+   "fips": "36071",
+   "state": "NY",
+   "name": "Orange County",
+   "date": "2026-10-22",
+   "kind": "posted",
+   "parcels": 12,
+   "page": "https://aarauctions.com/auctions/tax-foreclosures/"
   },
   {
    "fips": "39013",
@@ -1799,24 +1817,6 @@
    "kind": "posted",
    "parcels": 80,
    "page": "https://hendry.realtaxdeed.com"
-  },
-  {
-   "fips": "12085",
-   "state": "FL",
-   "name": "Martin County",
-   "date": "2026-10-29",
-   "kind": "posted",
-   "parcels": 62,
-   "page": "https://martin.realtaxdeed.com"
-  },
-  {
-   "fips": "12093",
-   "state": "FL",
-   "name": "Okeechobee County",
-   "date": "2026-10-29",
-   "kind": "posted",
-   "parcels": 83,
-   "page": "https://okeechobee.realforeclose.com"
   }
  ],
  "sources": {
@@ -1917,6 +1917,13 @@
    "counties": 9,
    "ok": true,
    "checked": "2026-10-19T08:51:37+00:00"
+  },
+  "aarauctions": {
+   "label": "AAR Auctions (New York tax foreclosure auctions)",
+   "url": "https://aarauctions.com/auctions/tax-foreclosures/",
+   "counties": 6,
+   "ok": true,
+   "checked": "2026-10-19T08:56:37+00:00"
   }
  },
  "countiesWithData": [
@@ -2419,6 +2426,12 @@
   "32015",
   "32023",
   "32510",
+  "36027",
+  "36031",
+  "36049",
+  "36071",
+  "36073",
+  "36119",
   "37003",
   "37007",
   "37009",

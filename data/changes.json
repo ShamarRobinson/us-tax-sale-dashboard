@@ -1,42 +1,60 @@
 {
- "generated": "2026-10-19T08:51:41+00:00",
- "previous": "2026-10-19T08:32:48+00:00",
+ "generated": "2026-10-19T08:56:41+00:00",
+ "previous": "2026-10-19T08:51:41+00:00",
  "newUpcoming": [
   {
-   "fips": "09110",
-   "state": "CT",
-   "name": "Capitol Planning Region",
-   "date": "2026-10-19",
+   "fips": "36027",
+   "state": "NY",
+   "name": "Dutchess County",
+   "date": "2026-10-21",
    "kind": "posted",
-   "parcels": 74,
-   "page": "https://cttaxsales.com/upcoming-tax-sales/"
+   "parcels": 20,
+   "page": "https://aarauctions.com/auctions/tax-foreclosures/"
   },
   {
-   "fips": "09140",
-   "state": "CT",
-   "name": "Naugatuck Valley Planning Region",
-   "date": "2026-10-19",
-   "kind": "posted",
-   "parcels": 2,
-   "page": "https://cttaxsales.com/upcoming-tax-sales/"
-  },
-  {
-   "fips": "09160",
-   "state": "CT",
-   "name": "Northwest Hills Planning Region",
-   "date": "2026-10-19",
-   "kind": "posted",
-   "parcels": 0,
-   "page": "https://cttaxsales.com/upcoming-tax-sales/"
-  },
-  {
-   "fips": "37109",
-   "state": "NC",
-   "name": "Lincoln County",
+   "fips": "36071",
+   "state": "NY",
+   "name": "Orange County",
    "date": "2026-10-22",
    "kind": "posted",
-   "parcels": 5,
-   "page": "https://kanialawfirm.com/tax-foreclosures/foreclosure-listings/"
+   "parcels": 12,
+   "page": "https://aarauctions.com/auctions/tax-foreclosures/"
+  },
+  {
+   "fips": "18163",
+   "state": "IN",
+   "name": "Vanderburgh County",
+   "date": "2026-10-29",
+   "kind": "posted",
+   "parcels": 553,
+   "page": "https://www.sriservices.com/county/IN/Vanderburgh"
+  },
+  {
+   "fips": "39039",
+   "state": "OH",
+   "name": "Defiance County",
+   "date": "2026-10-29",
+   "kind": "posted",
+   "parcels": 8,
+   "page": "https://defiance.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39071",
+   "state": "OH",
+   "name": "Highland County",
+   "date": "2026-10-29",
+   "kind": "posted",
+   "parcels": 7,
+   "page": "https://highland.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39081",
+   "state": "OH",
+   "name": "Jefferson County",
+   "date": "2026-10-29",
+   "kind": "posted",
+   "parcels": 16,
+   "page": "https://jefferson.sheriffsaleauction.ohio.gov"
   },
   {
    "fips": "39125",
@@ -1290,6 +1308,15 @@
    "page": "https://www.sriservices.com/county/IN/Warrick"
   },
   {
+   "fips": "36031",
+   "state": "NY",
+   "name": "Essex County",
+   "date": "2026-11-12",
+   "kind": "posted",
+   "parcels": 0,
+   "page": "https://aarauctions.com/auctions/tax-foreclosures/"
+  },
+  {
    "fips": "51115",
    "state": "VA",
    "name": "Mathews County",
@@ -1468,6 +1495,15 @@
    "kind": "posted",
    "parcels": 222,
    "page": "https://www.sriservices.com/county/IN/Spencer"
+  },
+  {
+   "fips": "36073",
+   "state": "NY",
+   "name": "Orleans County",
+   "date": "2026-11-17",
+   "kind": "posted",
+   "parcels": 1,
+   "page": "https://aarauctions.com/auctions/tax-foreclosures/"
   },
   {
    "fips": "39005",
@@ -1794,6 +1830,15 @@
    "page": "https://www.sriservices.com/county/IN/Adams"
   },
   {
+   "fips": "36049",
+   "state": "NY",
+   "name": "Lewis County",
+   "date": "2026-11-24",
+   "kind": "posted",
+   "parcels": 0,
+   "page": "https://aarauctions.com/auctions/tax-foreclosures/"
+  },
+  {
    "fips": "39099",
    "state": "OH",
    "name": "Mahoning County",
@@ -1828,6 +1873,15 @@
    "kind": "posted",
    "parcels": 38,
    "page": "https://www.sriservices.com/county/IN/Jasper"
+  },
+  {
+   "fips": "36119",
+   "state": "NY",
+   "name": "Westchester County",
+   "date": "2026-12-02",
+   "kind": "posted",
+   "parcels": 0,
+   "page": "https://aarauctions.com/auctions/tax-foreclosures/"
   },
   {
    "fips": "17013",
@@ -2011,40 +2065,13 @@
   }
  ],
  "newCounties": [
-  "09110",
-  "09120",
-  "09130",
-  "09140",
-  "09150",
-  "09160",
-  "09170",
-  "09180",
-  "09190",
-  "37003",
-  "37007",
-  "37009",
-  "37023",
-  "37027",
-  "37035",
-  "37039",
-  "37043",
-  "37045",
-  "37051",
-  "37057",
-  "37059",
-  "37085",
-  "37109",
-  "37119",
-  "37123",
-  "37129",
-  "37145",
-  "37149",
-  "37159",
-  "37161",
-  "37169",
-  "37171",
-  "37179"
+  "36027",
+  "36031",
+  "36049",
+  "36071",
+  "36073",
+  "36119"
  ],
- "parcelDelta": 311,
- "linkDelta": 31
+ "parcelDelta": 33,
+ "linkDelta": 4
 }
