@@ -180,7 +180,12 @@ monthly digest.
   the Zeus Auction site itself never has to be scraped. If zeusauction.com or civicsource.com ever do have to be read,
   both serve an incomplete TLS chain; load GoDaddy's intermediates (gdig2.crt and gd_tls_issuing_dv-r1v1.crt from
   https://certificates.godaddy.com/repository/) into `ssl.create_default_context()` with `load_verify_locations` and
-  they verify.
+  they verify. Also added on 2026-10-19: the Arkansas Commissioner of State Lands online auction (`sources/cosl.py`)
+  and ILTaxSale.com for Illinois (`sources/iltaxsale.py`, with `sources/pdftext.py` to read the results PDFs without
+  installing anything). Still to try: the New York tax foreclosure auctions on aarauctions.com (a few parcels per
+  county, catalog pages at /servlet/Search.do?auctionId=N), the West Virginia State Auditor's delinquent land search
+  (wvsao.gov, an ASP.NET postback form) and Mississippi's tax-forfeited inventory (sos.ms.gov/tfsearch, the same kind
+  of form; these are state-held parcels at fixed prices rather than auctions).
 - Philadelphia sheriff sales (https://www.bid4assets.com/philadelphia) turned out to be a hub in front of two
   ordinary landing pages, `/philataxsales` and `/philaforeclosures`; `sources/b4a_sheriff.py` reads them since
   2026-10-19 (about 1,500 properties listed at a time).

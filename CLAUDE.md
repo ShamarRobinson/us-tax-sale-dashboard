@@ -62,7 +62,7 @@ GitHub Pages serves index.html / analyzer.html / sheet.html, which load that JSO
 - Adapter contract: a module in `sources/` with `NAME`, `LABEL`, `HOMEPAGE` and `fetch(counties)` that returns county
   records in the shape documented in `sources/__init__.py` (`auction(...)` and `parcel(...)` helpers, `get`,
   `get_json`, `money`). The dashboard needs no change for a new adapter; add its name to `sources.ADAPTERS`
-  (currently `atlanta`, `clark`, `michigan`, `realauction`, `govease`, `bid4assets`, `mvba`, `b4a_sheriff`, `sri`). GovEase (`sources/govease.py`)
+  (currently `atlanta`, `clark`, `michigan`, `realauction`, `govease`, `bid4assets`, `mvba`, `b4a_sheriff`, `sri`, `cosl`, `iltaxsale`). GovEase (`sources/govease.py`)
   is reachable from the GitHub runner and from Claude Code on the web, so it refreshes itself monthly; it publishes
   sale lists with starting bids (no results) for whichever auctions are open, in CO, TN, PA, TX, CA, IN, MO, WA, KS and
   OK. Bid4Assets (`sources/bid4assets.py`) covers the County Tax Sales calendar (CA, NV, WA, PA, MN, LA) with sale
@@ -79,7 +79,12 @@ GitHub Pages serves index.html / analyzer.html / sheet.html, which load that JSO
   sale for owners and minimum bids, `/detail` for the price of each parcel that sold): twelve months of tax sales,
   commissioners' certificate sales, deed sales, tax lien sales and sheriff's foreclosure sales in IN, CO, LA, TN, FL and
   MI, with online bidding on Zeus Auction. Parcels paid, removed or cancelled before a past sale are left out so the
-  master CSV stays under GitHub's 100 MB file limit. `sources/realauction.py` collects six portals at a time.
+  master CSV stays under GitHub's 100 MB file limit. The Arkansas Commissioner of State Lands (`sources/cosl.py`) pages
+  through the cards on auction.cosl.org (`POST /auctions/get-listings`), the statewide list of tax-delinquent parcels
+  offered online after the county auctions. ILTaxSale.com (`sources/iltaxsale.py`) reads the 95 Illinois county pages of
+  Joseph E. Meyer & Associates: the next sealed-bid surplus auction and the free results PDFs, parsed by
+  `sources/pdftext.py` (a standard-library PDF text extractor for FlateDecode page streams; it handles the fixed-column
+  sheets these sites publish, nothing fancier). `sources/realauction.py` collects six portals at a time.
 - Deal score (`master.py`): value 40, property 20, market 15, competition 15, history 10; 70+ Strong, 50 to 69 Good,
   35 to 49 Fair, under 35 Weak.
 

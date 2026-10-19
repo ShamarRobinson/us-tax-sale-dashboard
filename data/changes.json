@@ -1,7 +1,547 @@
 {
- "generated": "2026-10-19T08:12:58+00:00",
- "previous": "2026-10-19T07:57:20+00:00",
+ "generated": "2026-10-19T08:26:06+00:00",
+ "previous": "2026-10-19T08:12:58+00:00",
  "newUpcoming": [
+  {
+   "fips": "05001",
+   "state": "AR",
+   "name": "Arkansas County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 1,
+   "page": "https://auction.cosl.org/Auctions/ListingsView"
+  },
+  {
+   "fips": "05003",
+   "state": "AR",
+   "name": "Ashley County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 5,
+   "page": "https://auction.cosl.org/Auctions/ListingsView"
+  },
+  {
+   "fips": "05005",
+   "state": "AR",
+   "name": "Baxter County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 86,
+   "page": "https://auction.cosl.org/Auctions/ListingsView"
+  },
+  {
+   "fips": "05011",
+   "state": "AR",
+   "name": "Bradley County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 11,
+   "page": "https://auction.cosl.org/Auctions/ListingsView"
+  },
+  {
+   "fips": "05015",
+   "state": "AR",
+   "name": "Carroll County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 1,
+   "page": "https://auction.cosl.org/Auctions/ListingsView"
+  },
+  {
+   "fips": "05017",
+   "state": "AR",
+   "name": "Chicot County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 30,
+   "page": "https://auction.cosl.org/Auctions/ListingsView"
+  },
+  {
+   "fips": "05019",
+   "state": "AR",
+   "name": "Clark County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 5,
+   "page": "https://auction.cosl.org/Auctions/ListingsView"
+  },
+  {
+   "fips": "05021",
+   "state": "AR",
+   "name": "Clay County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 1,
+   "page": "https://auction.cosl.org/Auctions/ListingsView"
+  },
+  {
+   "fips": "05023",
+   "state": "AR",
+   "name": "Cleburne County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 8,
+   "page": "https://auction.cosl.org/Auctions/ListingsView"
+  },
+  {
+   "fips": "05025",
+   "state": "AR",
+   "name": "Cleveland County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 3,
+   "page": "https://auction.cosl.org/Auctions/ListingsView"
+  },
+  {
+   "fips": "05029",
+   "state": "AR",
+   "name": "Conway County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 2,
+   "page": "https://auction.cosl.org/Auctions/ListingsView"
+  },
+  {
+   "fips": "05031",
+   "state": "AR",
+   "name": "Craighead County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 4,
+   "page": "https://auction.cosl.org/Auctions/ListingsView"
+  },
+  {
+   "fips": "05033",
+   "state": "AR",
+   "name": "Crawford County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 15,
+   "page": "https://auction.cosl.org/Auctions/ListingsView"
+  },
+  {
+   "fips": "05035",
+   "state": "AR",
+   "name": "Crittenden County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 1,
+   "page": "https://auction.cosl.org/Auctions/ListingsView"
+  },
+  {
+   "fips": "05037",
+   "state": "AR",
+   "name": "Cross County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 2,
+   "page": "https://auction.cosl.org/Auctions/ListingsView"
+  },
+  {
+   "fips": "05039",
+   "state": "AR",
+   "name": "Dallas County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 12,
+   "page": "https://auction.cosl.org/Auctions/ListingsView"
+  },
+  {
+   "fips": "05041",
+   "state": "AR",
+   "name": "Desha County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 9,
+   "page": "https://auction.cosl.org/Auctions/ListingsView"
+  },
+  {
+   "fips": "05043",
+   "state": "AR",
+   "name": "Drew County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 4,
+   "page": "https://auction.cosl.org/Auctions/ListingsView"
+  },
+  {
+   "fips": "05045",
+   "state": "AR",
+   "name": "Faulkner County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 4,
+   "page": "https://auction.cosl.org/Auctions/ListingsView"
+  },
+  {
+   "fips": "05049",
+   "state": "AR",
+   "name": "Fulton County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 187,
+   "page": "https://auction.cosl.org/Auctions/ListingsView"
+  },
+  {
+   "fips": "05051",
+   "state": "AR",
+   "name": "Garland County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 416,
+   "page": "https://auction.cosl.org/Auctions/ListingsView"
+  },
+  {
+   "fips": "05055",
+   "state": "AR",
+   "name": "Greene County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 24,
+   "page": "https://auction.cosl.org/Auctions/ListingsView"
+  },
+  {
+   "fips": "05059",
+   "state": "AR",
+   "name": "Hot Spring County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 13,
+   "page": "https://auction.cosl.org/Auctions/ListingsView"
+  },
+  {
+   "fips": "05063",
+   "state": "AR",
+   "name": "Independence County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 1,
+   "page": "https://auction.cosl.org/Auctions/ListingsView"
+  },
+  {
+   "fips": "05065",
+   "state": "AR",
+   "name": "Izard County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 49,
+   "page": "https://auction.cosl.org/Auctions/ListingsView"
+  },
+  {
+   "fips": "05067",
+   "state": "AR",
+   "name": "Jackson County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 5,
+   "page": "https://auction.cosl.org/Auctions/ListingsView"
+  },
+  {
+   "fips": "05069",
+   "state": "AR",
+   "name": "Jefferson County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 133,
+   "page": "https://auction.cosl.org/Auctions/ListingsView"
+  },
+  {
+   "fips": "05073",
+   "state": "AR",
+   "name": "Lafayette County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 11,
+   "page": "https://auction.cosl.org/Auctions/ListingsView"
+  },
+  {
+   "fips": "05075",
+   "state": "AR",
+   "name": "Lawrence County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 2,
+   "page": "https://auction.cosl.org/Auctions/ListingsView"
+  },
+  {
+   "fips": "05077",
+   "state": "AR",
+   "name": "Lee County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 8,
+   "page": "https://auction.cosl.org/Auctions/ListingsView"
+  },
+  {
+   "fips": "05079",
+   "state": "AR",
+   "name": "Lincoln County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 6,
+   "page": "https://auction.cosl.org/Auctions/ListingsView"
+  },
+  {
+   "fips": "05081",
+   "state": "AR",
+   "name": "Little River County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 2,
+   "page": "https://auction.cosl.org/Auctions/ListingsView"
+  },
+  {
+   "fips": "05085",
+   "state": "AR",
+   "name": "Lonoke County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 3,
+   "page": "https://auction.cosl.org/Auctions/ListingsView"
+  },
+  {
+   "fips": "05091",
+   "state": "AR",
+   "name": "Miller County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 22,
+   "page": "https://auction.cosl.org/Auctions/ListingsView"
+  },
+  {
+   "fips": "05093",
+   "state": "AR",
+   "name": "Mississippi County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 50,
+   "page": "https://auction.cosl.org/Auctions/ListingsView"
+  },
+  {
+   "fips": "05095",
+   "state": "AR",
+   "name": "Monroe County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 6,
+   "page": "https://auction.cosl.org/Auctions/ListingsView"
+  },
+  {
+   "fips": "05099",
+   "state": "AR",
+   "name": "Nevada County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 8,
+   "page": "https://auction.cosl.org/Auctions/ListingsView"
+  },
+  {
+   "fips": "05103",
+   "state": "AR",
+   "name": "Ouachita County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 35,
+   "page": "https://auction.cosl.org/Auctions/ListingsView"
+  },
+  {
+   "fips": "05105",
+   "state": "AR",
+   "name": "Perry County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 1,
+   "page": "https://auction.cosl.org/Auctions/ListingsView"
+  },
+  {
+   "fips": "05107",
+   "state": "AR",
+   "name": "Phillips County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 87,
+   "page": "https://auction.cosl.org/Auctions/ListingsView"
+  },
+  {
+   "fips": "05111",
+   "state": "AR",
+   "name": "Poinsett County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 2,
+   "page": "https://auction.cosl.org/Auctions/ListingsView"
+  },
+  {
+   "fips": "05115",
+   "state": "AR",
+   "name": "Pope County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 1,
+   "page": "https://auction.cosl.org/Auctions/ListingsView"
+  },
+  {
+   "fips": "05119",
+   "state": "AR",
+   "name": "Pulaski County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 34,
+   "page": "https://auction.cosl.org/Auctions/ListingsView"
+  },
+  {
+   "fips": "05121",
+   "state": "AR",
+   "name": "Randolph County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 1,
+   "page": "https://auction.cosl.org/Auctions/ListingsView"
+  },
+  {
+   "fips": "05125",
+   "state": "AR",
+   "name": "Saline County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 511,
+   "page": "https://auction.cosl.org/Auctions/ListingsView"
+  },
+  {
+   "fips": "05131",
+   "state": "AR",
+   "name": "Sebastian County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 10,
+   "page": "https://auction.cosl.org/Auctions/ListingsView"
+  },
+  {
+   "fips": "05133",
+   "state": "AR",
+   "name": "Sevier County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 1,
+   "page": "https://auction.cosl.org/Auctions/ListingsView"
+  },
+  {
+   "fips": "05135",
+   "state": "AR",
+   "name": "Sharp County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 39,
+   "page": "https://auction.cosl.org/Auctions/ListingsView"
+  },
+  {
+   "fips": "05123",
+   "state": "AR",
+   "name": "St. Francis County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 30,
+   "page": "https://auction.cosl.org/Auctions/ListingsView"
+  },
+  {
+   "fips": "05139",
+   "state": "AR",
+   "name": "Union County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 3,
+   "page": "https://auction.cosl.org/Auctions/ListingsView"
+  },
+  {
+   "fips": "05141",
+   "state": "AR",
+   "name": "Van Buren County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 1128,
+   "page": "https://auction.cosl.org/Auctions/ListingsView"
+  },
+  {
+   "fips": "05143",
+   "state": "AR",
+   "name": "Washington County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 2,
+   "page": "https://auction.cosl.org/Auctions/ListingsView"
+  },
+  {
+   "fips": "05149",
+   "state": "AR",
+   "name": "Yell County",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 1,
+   "page": "https://auction.cosl.org/Auctions/ListingsView"
+  },
+  {
+   "fips": "17073",
+   "state": "IL",
+   "name": "Henry County",
+   "date": "2026-10-23",
+   "kind": "posted",
+   "parcels": 47,
+   "page": "https://iltaxsale.com/new/index.php/county/Henry/HEN"
+  },
+  {
+   "fips": "17095",
+   "state": "IL",
+   "name": "Knox County",
+   "date": "2026-10-23",
+   "kind": "posted",
+   "parcels": 62,
+   "page": "https://iltaxsale.com/new/index.php/county/Knox/KNX"
+  },
+  {
+   "fips": "17131",
+   "state": "IL",
+   "name": "Mercer County",
+   "date": "2026-10-23",
+   "kind": "posted",
+   "parcels": 9,
+   "page": "https://iltaxsale.com/new/index.php/county/Mercer/MER"
+  },
+  {
+   "fips": "17161",
+   "state": "IL",
+   "name": "Rock Island County",
+   "date": "2026-10-23",
+   "kind": "posted",
+   "parcels": 120,
+   "page": "https://iltaxsale.com/new/index.php/county/Rock_Island/ROC"
+  },
+  {
+   "fips": "17051",
+   "state": "IL",
+   "name": "Fayette County",
+   "date": "2026-10-30",
+   "kind": "posted",
+   "parcels": 39,
+   "page": "https://iltaxsale.com/new/index.php/county/Fayette/FAY"
+  },
+  {
+   "fips": "17055",
+   "state": "IL",
+   "name": "Franklin County",
+   "date": "2026-10-30",
+   "kind": "posted",
+   "parcels": 266,
+   "page": "https://iltaxsale.com/new/index.php/county/Franklin/FRA"
+  },
+  {
+   "fips": "17081",
+   "state": "IL",
+   "name": "Jefferson County",
+   "date": "2026-10-30",
+   "kind": "posted",
+   "parcels": 289,
+   "page": "https://iltaxsale.com/new/index.php/county/Jefferson/JEF"
+  },
   {
    "fips": "13089",
    "state": "GA",
@@ -444,6 +984,51 @@
    "page": "https://flagler.realtaxdeed.com"
   },
   {
+   "fips": "17059",
+   "state": "IL",
+   "name": "Gallatin County",
+   "date": "2026-11-06",
+   "kind": "posted",
+   "parcels": 14,
+   "page": "https://iltaxsale.com/new/index.php/county/Gallatin/GAL"
+  },
+  {
+   "fips": "17065",
+   "state": "IL",
+   "name": "Hamilton County",
+   "date": "2026-11-06",
+   "kind": "posted",
+   "parcels": 20,
+   "page": "https://iltaxsale.com/new/index.php/county/Hamilton/HAM"
+  },
+  {
+   "fips": "17069",
+   "state": "IL",
+   "name": "Hardin County",
+   "date": "2026-11-06",
+   "kind": "posted",
+   "parcels": 102,
+   "page": "https://iltaxsale.com/new/index.php/county/Hardin/HAR"
+  },
+  {
+   "fips": "17165",
+   "state": "IL",
+   "name": "Saline County",
+   "date": "2026-11-06",
+   "kind": "posted",
+   "parcels": 309,
+   "page": "https://iltaxsale.com/new/index.php/county/Saline/SAL"
+  },
+  {
+   "fips": "17199",
+   "state": "IL",
+   "name": "Williamson County",
+   "date": "2026-11-06",
+   "kind": "posted",
+   "parcels": 472,
+   "page": "https://iltaxsale.com/new/index.php/county/Williamson/WMS"
+  },
+  {
    "fips": "39045",
    "state": "OH",
    "name": "Fairfield County",
@@ -613,6 +1198,51 @@
    "kind": "posted",
    "parcels": 135,
    "page": "https://www.sriservices.com/county/IN/Warrick"
+  },
+  {
+   "fips": "17003",
+   "state": "IL",
+   "name": "Alexander County",
+   "date": "2026-11-13",
+   "kind": "posted",
+   "parcels": 200,
+   "page": "https://iltaxsale.com/new/index.php/county/Alexander/ALX"
+  },
+  {
+   "fips": "17087",
+   "state": "IL",
+   "name": "Johnson County",
+   "date": "2026-11-13",
+   "kind": "posted",
+   "parcels": 30,
+   "page": "https://iltaxsale.com/new/index.php/county/Johnson/JON"
+  },
+  {
+   "fips": "17127",
+   "state": "IL",
+   "name": "Massac County",
+   "date": "2026-11-13",
+   "kind": "posted",
+   "parcels": 63,
+   "page": "https://iltaxsale.com/new/index.php/county/Massac/MAS"
+  },
+  {
+   "fips": "17151",
+   "state": "IL",
+   "name": "Pope County",
+   "date": "2026-11-13",
+   "kind": "posted",
+   "parcels": 69,
+   "page": "https://iltaxsale.com/new/index.php/county/Pope/POP"
+  },
+  {
+   "fips": "17153",
+   "state": "IL",
+   "name": "Pulaski County",
+   "date": "2026-11-13",
+   "kind": "posted",
+   "parcels": 92,
+   "page": "https://iltaxsale.com/new/index.php/county/Pulaski/PUL"
   },
   {
    "fips": "22075",
@@ -966,6 +1596,42 @@
    "page": "https://www.bid4assets.com/elksheriffsales"
   },
   {
+   "fips": "17077",
+   "state": "IL",
+   "name": "Jackson County",
+   "date": "2026-11-20",
+   "kind": "posted",
+   "parcels": 518,
+   "page": "https://iltaxsale.com/new/index.php/county/Jackson/JAC"
+  },
+  {
+   "fips": "17145",
+   "state": "IL",
+   "name": "Perry County",
+   "date": "2026-11-20",
+   "kind": "posted",
+   "parcels": 313,
+   "page": "https://iltaxsale.com/new/index.php/county/Perry/PER"
+  },
+  {
+   "fips": "17157",
+   "state": "IL",
+   "name": "Randolph County",
+   "date": "2026-11-20",
+   "kind": "posted",
+   "parcels": 101,
+   "page": "https://iltaxsale.com/new/index.php/county/Randolph/RAN"
+  },
+  {
+   "fips": "17181",
+   "state": "IL",
+   "name": "Union County",
+   "date": "2026-11-20",
+   "kind": "posted",
+   "parcels": 39,
+   "page": "https://iltaxsale.com/new/index.php/county/Union/UNI"
+  },
+  {
    "fips": "18105",
    "state": "IN",
    "name": "Monroe County",
@@ -1038,6 +1704,24 @@
    "page": "https://www.sriservices.com/county/IN/Jasper"
   },
   {
+   "fips": "17013",
+   "state": "IL",
+   "name": "Calhoun County",
+   "date": "2026-12-04",
+   "kind": "posted",
+   "parcels": 7,
+   "page": "https://iltaxsale.com/new/index.php/county/Calhoun/CAL"
+  },
+  {
+   "fips": "17119",
+   "state": "IL",
+   "name": "Madison County",
+   "date": "2026-12-04",
+   "kind": "posted",
+   "parcels": 541,
+   "page": "https://iltaxsale.com/new/index.php/county/Madison/MAD"
+  },
+  {
    "fips": "18055",
    "state": "IN",
    "name": "Greene County",
@@ -1101,6 +1785,33 @@
    "page": "https://www.bid4assets.com/BedfordPASheriffSales/listings"
   },
   {
+   "fips": "17047",
+   "state": "IL",
+   "name": "Edwards County",
+   "date": "2026-12-11",
+   "kind": "posted",
+   "parcels": 12,
+   "page": "https://iltaxsale.com/new/index.php/county/Edwards/EDW"
+  },
+  {
+   "fips": "17191",
+   "state": "IL",
+   "name": "Wayne County",
+   "date": "2026-12-11",
+   "kind": "posted",
+   "parcels": 67,
+   "page": "https://iltaxsale.com/new/index.php/county/Wayne/WAY"
+  },
+  {
+   "fips": "17193",
+   "state": "IL",
+   "name": "White County",
+   "date": "2026-12-11",
+   "kind": "posted",
+   "parcels": 41,
+   "page": "https://iltaxsale.com/new/index.php/county/White/WHI"
+  },
+  {
    "fips": "39117",
    "state": "OH",
    "name": "Morrow County",
@@ -1108,11 +1819,209 @@
    "kind": "posted",
    "parcels": 6,
    "page": "https://morrow.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "17089",
+   "state": "IL",
+   "name": "Kane County",
+   "date": "2027-01-08",
+   "kind": "posted",
+   "parcels": 59,
+   "page": "https://iltaxsale.com/new/index.php/county/Kane/KNE"
+  },
+  {
+   "fips": "17005",
+   "state": "IL",
+   "name": "Bond County",
+   "date": "2027-01-15",
+   "kind": "posted",
+   "parcels": 38,
+   "page": "https://iltaxsale.com/new/index.php/county/Bond/BON"
+  },
+  {
+   "fips": "17061",
+   "state": "IL",
+   "name": "Greene County",
+   "date": "2027-01-15",
+   "kind": "posted",
+   "parcels": 9,
+   "page": "https://iltaxsale.com/new/index.php/county/Greene/GRE"
+  },
+  {
+   "fips": "17101",
+   "state": "IL",
+   "name": "Lawrence County",
+   "date": "2027-01-22",
+   "kind": "posted",
+   "parcels": 30,
+   "page": "https://iltaxsale.com/new/index.php/county/Lawrence/LAW"
+  },
+  {
+   "fips": "17185",
+   "state": "IL",
+   "name": "Wabash County",
+   "date": "2027-01-22",
+   "kind": "posted",
+   "parcels": 7,
+   "page": "https://iltaxsale.com/new/index.php/county/Wabash/WAB"
+  },
+  {
+   "fips": "17189",
+   "state": "IL",
+   "name": "Washington County",
+   "date": "2027-02-12",
+   "kind": "posted",
+   "parcels": 18,
+   "page": "https://iltaxsale.com/new/index.php/county/Washington/WAS"
   }
  ],
  "newCounties": [
-  "22097"
+  "05001",
+  "05003",
+  "05005",
+  "05011",
+  "05015",
+  "05017",
+  "05019",
+  "05021",
+  "05023",
+  "05025",
+  "05029",
+  "05031",
+  "05033",
+  "05035",
+  "05037",
+  "05039",
+  "05041",
+  "05043",
+  "05045",
+  "05049",
+  "05051",
+  "05055",
+  "05059",
+  "05063",
+  "05065",
+  "05067",
+  "05069",
+  "05073",
+  "05075",
+  "05077",
+  "05079",
+  "05081",
+  "05085",
+  "05091",
+  "05093",
+  "05095",
+  "05099",
+  "05103",
+  "05105",
+  "05107",
+  "05111",
+  "05115",
+  "05119",
+  "05121",
+  "05123",
+  "05125",
+  "05131",
+  "05133",
+  "05135",
+  "05139",
+  "05141",
+  "05143",
+  "05149",
+  "17001",
+  "17003",
+  "17005",
+  "17009",
+  "17011",
+  "17013",
+  "17015",
+  "17017",
+  "17019",
+  "17021",
+  "17023",
+  "17025",
+  "17027",
+  "17029",
+  "17033",
+  "17035",
+  "17037",
+  "17041",
+  "17045",
+  "17047",
+  "17049",
+  "17051",
+  "17053",
+  "17055",
+  "17057",
+  "17059",
+  "17061",
+  "17063",
+  "17065",
+  "17067",
+  "17069",
+  "17071",
+  "17073",
+  "17075",
+  "17077",
+  "17079",
+  "17081",
+  "17083",
+  "17085",
+  "17087",
+  "17089",
+  "17091",
+  "17095",
+  "17099",
+  "17101",
+  "17103",
+  "17105",
+  "17107",
+  "17109",
+  "17111",
+  "17113",
+  "17115",
+  "17117",
+  "17119",
+  "17121",
+  "17123",
+  "17125",
+  "17127",
+  "17129",
+  "17131",
+  "17135",
+  "17137",
+  "17139",
+  "17141",
+  "17143",
+  "17145",
+  "17147",
+  "17149",
+  "17151",
+  "17153",
+  "17155",
+  "17157",
+  "17159",
+  "17161",
+  "17163",
+  "17165",
+  "17167",
+  "17171",
+  "17173",
+  "17175",
+  "17177",
+  "17179",
+  "17181",
+  "17185",
+  "17187",
+  "17189",
+  "17191",
+  "17193",
+  "17195",
+  "17197",
+  "17199",
+  "17203"
  ],
- "parcelDelta": 649,
- "linkDelta": 1
+ "parcelDelta": 14161,
+ "linkDelta": 68
 }
