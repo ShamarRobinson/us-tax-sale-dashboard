@@ -129,7 +129,9 @@ folders. Everything needed is in the repo:
 
 ### 5.4 Things That Did Not Work (Do Not Retry Them)
 
-- Reaching the portals from GitHub Actions or the Anthropic cloud workspace (marketing page every time).
+- Reaching the portals from the Anthropic cloud workspace (marketing page every time). GitHub Actions was refused the
+  same way while the project was built, but the monthly workflow's run on the night of 2026-10-18 reached 155
+  counties from the runner, so that part no longer holds; keep `collect_local.py` for what the runner misses.
 - Publishing a drop page as a Claude artifact and navigating the built-in browser to claude.ai to upload a dump; the
   browser could not open claude.ai from that session.
 - Requesting Downloads folder access on the Mac (declined). Claude Code on the Mac has the filesystem anyway.

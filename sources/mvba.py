@@ -17,7 +17,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
-from . import UA, parcel, auction, money
+from . import parcel, auction, money
 
 NAME = "mvba"
 LABEL = "MVBA Tax Sales (Texas online property tax sales)"
@@ -25,6 +25,8 @@ HOMEPAGE = "https://www.mvbataxsales.com/"
 BASE = "https://www.mvbataxsales.com"
 PAUSE = 0.8
 MAX_PAGES = None  # for tests
+# the API answered the GitHub runner's request with a non-JSON page while answering a browser string with JSON
+BROWSER = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"
 
 TAGS = re.compile(r"<[^>]+>")
 COUNTY_IN_TITLE = re.compile(r"([A-Z][A-Z .'\-]+?) COUNTY\b")
@@ -42,12 +44,17 @@ def _post(path, data, retries=3):
     last = None
     for attempt in range(retries):
         try:
-            req = urllib.request.Request(BASE + path, data=urllib.parse.urlencode(data).encode(), headers={"User-Agent": UA, "Accept": "application/json"})
+            req = urllib.request.Request(BASE + path, data=urllib.parse.urlencode(data).encode(),
+                                         headers={"User-Agent": BROWSER, "Accept": "application/json, text/plain, */*", "X-Requested-With": "XMLHttpRequest", "Referer": HOMEPAGE})
             with urllib.request.urlopen(req, timeout=90) as r:
                 raw = r.read()
             time.sleep(PAUSE)
-            return json.loads(raw.decode("utf-8", "replace"))
-        except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError, ConnectionError, OSError, ValueError) as e:
+            text = raw.decode("utf-8", "replace")
+            try:
+                return json.loads(text)
+            except ValueError:
+                raise RuntimeError(f"not JSON: {text[:120]!r}")
+        except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError, ConnectionError, OSError, RuntimeError) as e:
             last = e
             time.sleep(5 * (attempt + 1))
     raise RuntimeError(f"{BASE}{path}: {last}")

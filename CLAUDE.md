@@ -79,18 +79,18 @@ GitHub Pages serves index.html / analyzer.html / sheet.html, which load that JSO
 - Deal score (`master.py`): value 40, property 20, market 15, competition 15, history 10; 70+ Strong, 50 to 69 Good,
   35 to 49 Fair, under 35 Weak.
 
-## Data On File (As Of 2026-10-18, Night)
+## Data On File (As Of 2026-10-19)
 
-57,660 parcels across 335 counties: FL 16,126 (36), PA 13,041 (19), MI 7,359 (79), CO 6,769 (20), GA 3,931 (24), OH
-3,501 (87), TX 3,076 (15), CA 1,591 (17), NV 1,156 (7), LA 582 (10), WA 183 (7), TN 124 (10), OK 87 (1), WI 68 (1), MN
-35 (1), MO 31 (1). By adapter: realauction 19,612, bid4assets 13,234, govease 8,018, michigan 7,359, atlanta 3,931,
-mvba 2,967, b4a_sheriff 1,803, clark 736. Raw portal dumps live in `data/raw/realauction/<fips>-<kind>.json` (135
-files: FL taxdeed 35, FL foreclosure 9, CO taxdeed 4, OH sheriff 87). GovEase data is sale lists only (every auction
-open on the platform that day, with starting bids and sale dates); Bid4Assets data is sale lists plus results with
-winning bids for the past sales on its calendar; MVBA data is the open Texas sales plus every past online sale since
-2017 with final bids; Bid4Assets sheriff's sales are upcoming lists with judgment amounts plus the last few days'
-outcomes. All four refresh themselves on the monthly run and with `python3 fetch_all.py --source govease` (or
-`bid4assets`, `mvba`, `b4a_sheriff`).
+66,240 parcels across 363 counties after the runner's pass on the night of 2026-10-18: FL 21,478 (45), PA 13,041 (19),
+CO 9,155 (23), MI 7,359 (79), GA 3,931 (24), TX 3,918 (31), OH 3,501 (87), CA 1,591 (17), NV 1,156 (7), LA 582 (10),
+WA 183 (7), TN 124 (10), OK 87 (1), WI 68 (1), MN 35 (1), MO 31 (1). By adapter: realauction 28,192, bid4assets
+13,234, govease 8,018, michigan 7,359, atlanta 3,931, mvba 2,967, b4a_sheriff 1,803, clark 736. Raw portal dumps live
+in `data/raw/realauction/<fips>-<kind>.json` (135 files: FL taxdeed 35, FL foreclosure 9, CO taxdeed 4, OH sheriff
+87). GovEase data is sale lists only (every auction open on the platform that day, with starting bids and sale dates);
+Bid4Assets data is sale lists plus results with winning bids for the past sales on its calendar; MVBA data is the open
+Texas sales plus every past online sale since 2017 with final bids; Bid4Assets sheriff's sales are upcoming lists with
+judgment amounts plus the last few days' outcomes. All of these, RealAuction included, refresh on the monthly run and
+with `python3 fetch_all.py --source <adapter>`.
 
 ## RealAuction Portals: The Main Open Work
 
@@ -98,9 +98,11 @@ RealAuction runs the Florida Clerk tax deed (`{county}.realtaxdeed.com`) and for
 portals, the Ohio sheriff portal (`{county}.sheriffsaleauction.ohio.gov`), the Texas sheriff portals
 (`{county}.texas.sheriffsaleauctions.com`, only the 28 hosts in `TX_SHERIFF` exist), Colorado and Arizona treasurer
 deed portals and two New Jersey foreclosure portals (the roster is `SITES` in `sources/realauction.py`). They refuse
-data-center addresses (GitHub runners and Anthropic's cloud included) with a marketing page, so the previous session
-collected them one browser tab at a time and transcribed the results (see docs/HANDOFF.md). **From Shamar's Mac this
-is unnecessary: `collect_local.py` works from a residential address.**
+Anthropic's cloud addresses with a marketing page, and refused GitHub's runners when the project was built, so the
+first session collected them one browser tab at a time and transcribed the results (see docs/HANDOFF.md). **Two
+things changed on 2026-10-19:** the monthly workflow's run of that night reached the portals from GitHub's runner
+(155 counties, 28,192 parcels, in 2 hours 42 minutes), so the runner now refreshes RealAuction on its own; and
+**from Shamar's Mac `collect_local.py` works from a residential address** for anything the runner misses.
 
 ```bash
 python3 collect_local.py --county pasco,brevard,volusia,seminole,sarasota,manatee   # a few counties, any state
@@ -109,15 +111,12 @@ python3 collect_local.py --import                                               
 git add data && git commit -m "Collect RealAuction portal data for ..." && git push
 ```
 
-Still uncollected (by population, 77 portals): FL foreclosure Pasco, Brevard, Volusia, Seminole, Sarasota, Manatee,
-Marion, St. Lucie, St. Johns, Escambia, Leon, Alachua, Clay, Charlotte, Santa Rosa, Bay, Indian River, Martin,
-Flagler, Nassau, Walton, Putnam, Jackson, Okeechobee, Baker, Washington, Gilchrist, Gulf, Calhoun; FL taxdeed Monroe,
-Gulf; all 28 TX sheriff portals (Harris, Dallas, Bexar, Fort Bend, Hidalgo, El Paso, Cameron, Galveston, Nueces,
-Smith, Ellis, Kaufman, Gregg, Victoria, Angelina, Orange, San Patricio, Wilson, Rusk, Cherokee, Atascosa, Caldwell,
-Hopkins, Matagorda, Aransas, Llano, Jackson, Brooks); CO foreclosure El Paso, Denver, Adams, Larimer, Weld, Mesa,
-Eagle, Summit; CO taxdeed Larimer, Mesa, Eagle, Pitkin; AZ taxdeed Mohave, Coconino, Apache; NJ Essex (newarknj) and
-Sussex (hardystonnj); OH Vinton (the portal is empty). The big Florida foreclosure portals were collected with one
-month of history; a full `--state FL` run from the Mac would deepen every county's history.
+Portals with no data on file after the 2026-10-19 runner pass (21 of 212): TX sheriff Harris, Bexar, Fort Bend,
+Hidalgo, Hopkins, Rusk, San Patricio, Wilson, Brooks; AZ taxdeed Mohave, Coconino, Apache; CO foreclosure Eagle; CO
+taxdeed Larimer, Pitkin; FL foreclosure Calhoun; FL taxdeed Monroe, Gulf; NJ Essex (newarknj) and Sussex
+(hardystonnj); OH Vinton (the portal is empty). Some of these may simply have had no sale in the window; the Mac run
+(`python3 collect_local.py --state TX`, then AZ, CO, FL, NJ) settles it. The big Florida foreclosure portals were first
+collected with one month of history; the runner now refreshes them with the default three months.
 
 If a portal ever has to be read from a browser again, `tools/realauction_console.js` is served from the live site with
 CORS and the transcription helpers are `tools/ingest_chunks.py` and `tools/decode_dumps.py`.
