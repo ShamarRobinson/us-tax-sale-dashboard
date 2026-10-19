@@ -1,11 +1,11 @@
 {
- "generated": "2026-10-19T07:57:20+00:00",
+ "generated": "2026-10-19T08:12:58+00:00",
  "counties": 3222,
  "states": 52,
- "withData": 504,
- "parcels": 118017,
- "auctions": 4688,
- "withTaxSaleLink": 1258,
+ "withData": 505,
+ "parcels": 118666,
+ "auctions": 4696,
+ "withTaxSaleLink": 1259,
  "withSite": 3061,
  "withSheriffLink": 378,
  "withAssessorLink": 1545,
@@ -573,8 +573,8 @@
    "name": "Bossier Parish",
    "date": "2026-10-21",
    "kind": "posted",
-   "parcels": 396,
-   "page": "https://www.sriservices.com/county/LA/Bossier%20City"
+   "parcels": 400,
+   "page": "https://www.sriservices.com/county/LA/Town%20of%20Benton"
   },
   {
    "fips": "22019",
@@ -609,7 +609,7 @@
    "name": "St. James Parish",
    "date": "2026-10-21",
    "kind": "posted",
-   "parcels": 9,
+   "parcels": 32,
    "page": "https://www.sriservices.com/county/LA/St.%20James"
   },
   {
@@ -618,8 +618,8 @@
    "name": "Tangipahoa Parish",
    "date": "2026-10-21",
    "kind": "posted",
-   "parcels": 323,
-   "page": "https://www.sriservices.com/county/LA/Tangipahoa"
+   "parcels": 342,
+   "page": "https://www.sriservices.com/county/LA/Town%20of%20Roseland"
   },
   {
    "fips": "22115",
@@ -1879,9 +1879,9 @@
   "sri": {
    "label": "SRI Inc. (Zeus Auction)",
    "url": "https://www.sriservices.com/properties",
-   "counties": 137,
+   "counties": 138,
    "ok": true,
-   "checked": "2026-10-19T07:57:17+00:00"
+   "checked": "2026-10-19T08:12:55+00:00"
   }
  },
  "countiesWithData": [
@@ -2131,6 +2131,7 @@
   "22091",
   "22093",
   "22095",
+  "22097",
   "22099",
   "22103",
   "22105",

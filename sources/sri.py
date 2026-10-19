@@ -50,8 +50,15 @@ KIND_NAMES = {"F": "Foreclosure Sale", "D": "Deed Sale", "J": "Adjudicated Sale"
               "O": "Tax Lien Sale", "R": "Redemption Sale", "T": "Tax Sale"}
 STATUS = {"DELINQUENT": "Listed", "SALE ACTIVE": "Listed", "PAID": "Paid", "REMOVED": "Withdrawn", "CANCELLED": "Cancelled", "BANKRUPT": "Bankruptcy",
           "WITHDRAWN": "Withdrawn", "SOLD": "Sold", "SOLD CERT SALE": "Sold", "TAX DEED": "Sold", "REDEEMED": "Redeemed", "REDEEMED CERT SALE": "Redeemed",
-          "COUNTY": "Not sold", "STRUCK": "Not sold", "SOLD TO 3RD PARTY": "Sold", "SOLD TO PLAINTIFF": "Sold", "SOLD TO THIRD PARTY": "Sold"}
-CITY_PARISH = {"villeplatte": "Evangeline", "cityofshreveport": "Caddo", "shreveport": "Caddo", "bossiercity": "Bossier"}  # Louisiana cities that hold their own sales
+          "COUNTY": "Not sold", "STRUCK": "Not sold", "SOLD TO 3RD PARTY": "Sold", "SOLD TO PLAINTIFF": "Sold", "SOLD TO THIRD PARTY": "Sold",
+          "PMTPLAN": "Payment plan", "COUNTY REDEEMED": "Redeemed", "INTGOVTRNSFR REDEEMED": "Redeemed", "SALE ACTIVE": "Listed"}
+CITY_PARISH = {  # Louisiana cities and towns that hold their own tax sales, filed under their parish
+    "villeplatte": "Evangeline", "cityofshreveport": "Caddo", "shreveport": "Caddo", "bossiercity": "Bossier", "townofbenton": "Bossier",
+    "cityofnewiberia": "Iberia", "newiberia": "Iberia", "townofroseland": "Tangipahoa", "townoflutcher": "St. James", "townofgramercy": "St. James",
+    "townofgreenwood": "Caddo", "cityofopelousas": "St. Landry", "opelousas": "St. Landry", "cityoflafayette": "Lafayette",
+    "cityofbatonrouge": "East Baton Rouge", "cityofmonroe": "Ouachita", "cityofalexandria": "Rapides", "cityoflakecharles": "Calcasieu",
+    "cityofhouma": "Terrebonne", "cityofslidell": "St. Tammany", "cityofkenner": "Jefferson", "cityofgretna": "Jefferson",
+}
 
 
 def _post(path, body, retries=3, timeout=300):
@@ -141,7 +148,7 @@ def _full_address(p):
     city, zip_ = _clean(p.get("city")), _clean(p.get("zip"))
     if city and street.lower().endswith(city.lower()):
         street = street[:-len(city)].strip(" ,")
-    tail = " ".join(x for x in [city, zip_] if x)
+    tail = " ".join(x for x in [city, zip_] if x and x.lower() not in street.lower())  # sheriff's lists already carry city, state and zip
     return street or None, (f"{street}, {tail}" if street and tail else street or None), redemption
 
 
@@ -230,6 +237,8 @@ def fetch(counties):
         total, matched = 0, set()
         for (county_name, sale_id, date, kind), ps in sorted(sales.items(), key=lambda kv: kv[0][2], reverse=True):
             county = by_state.get(state, {}).get(_norm(county_name)) or by_state.get(state, {}).get(_norm(CITY_PARISH.get(_norm(county_name), "")))
+            if not county and re.match(r"(city|town|village) of ", county_name.lower()):
+                county = by_state.get(state, {}).get(_norm(re.sub(r"^(city|town|village) of ", "", county_name, flags=re.I)))
             if not county:
                 print(f"  sri/{state}: no county match for {county_name!r}")
                 continue
