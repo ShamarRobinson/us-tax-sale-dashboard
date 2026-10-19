@@ -46,8 +46,8 @@ MAXP = re.compile(r'id="max(WA|CA)">\s*(\d+)')
 PAGEOF = re.compile(r"page \d+ of (\d+)")
 
 # Months back to collect results, by portal kind. Upcoming sales are always collected.
-MONTHS_BACK = {"taxdeed": 6, "foreclosure": 2, "sheriff": 3}
-KIND_LABEL = {"taxdeed": "Tax deed sale", "foreclosure": "Foreclosure sale", "sheriff": "Sheriff sale"}
+MONTHS_BACK = {"taxdeed": 6, "foreclosure": 2, "sheriff": 3, "taxlien": 13}  # lien sales are annual, so look back a year and a month
+KIND_LABEL = {"taxdeed": "Tax deed sale", "foreclosure": "Foreclosure sale", "sheriff": "Sheriff sale", "taxlien": "Tax lien sale"}
 PAUSE = 0.25
 THREADS = 6  # portals collected at once; 212 portals took the GitHub runner 2 hours 42 minutes one at a time
 
@@ -64,6 +64,13 @@ def info_for(kind, state, base):
         return dict(run="County Sheriff (foreclosure and tax foreclosure sales)", page=base, note="Sales are read from Ohio's statewide online sheriff sale portal.")
     if kind == "sheriff":
         return dict(run="County Sheriff or Constable (tax sales, resales and foreclosure sales)", page=base, note="Sales are read from the county's online sheriff sale portal.")
+    if kind == "taxlien" and state == "NJ":
+        return dict(run="Municipal Tax Collector (tax lien certificate sales, bid down from 18% interest)", page=base,
+                    note="New Jersey tax sales are held by each municipality; the ones on RealAuction's newjerseytaxsale.com portals are read here and filed under the county.")
+    if kind == "taxlien" and state == "MD":
+        return dict(run="County Treasurer or Director of Finance (tax lien certificate sale)", page=base, note="The annual tax sale is read from the county's RealAuction marylandtaxsale.com portal.")
+    if kind == "taxlien":
+        return dict(run="Tax Collector (tax lien sale)", page=base, note="The tax lien sale is read from the RealAuction portal.")
     if state == "CO":
         return dict(page=base, note="Foreclosure sales are read from the Public Trustee's RealAuction portal.")
     if state == "NJ":
@@ -144,9 +151,39 @@ SITES = {
         "Walton": {"foreclosure": "walton.realforeclose.com"},
         "Washington": {"taxdeed": "washington.realtaxdeed.com", "foreclosure": "washington.realforeclose.com"},
     },
-    "NJ": {
-        "Sussex": {"foreclosure": "hardystonnj.realforeclose.com"},  # Hardyston Township
-        "Essex": {"foreclosure": "newarknj.realforeclose.com"},  # City of Newark
+    "NJ": {  # municipal tax lien sales on newjerseytaxsale.com (the roster on https://www.realauction.com/), filed under the county, plus two sheriff foreclosure portals
+        "Atlantic": {"taxlien": ["buenaborough.newjerseytaxsale.com", "northfield.newjerseytaxsale.com"]},
+        "Bergen": {"taxlien": ["bergenfield.newjerseytaxsale.com", "bogota.newjerseytaxsale.com", "norwood.newjerseytaxsale.com", "oradell.newjerseytaxsale.com", "parkridge.newjerseytaxsale.com", "ridgewood.newjerseytaxsale.com", "uppersaddleriver.newjerseytaxsale.com", "washington-bergen.newjerseytaxsale.com"]},
+        "Burlington": {"taxlien": ["beverly.newjerseytaxsale.com", "bordentowntownship.newjerseytaxsale.com", "burlingtoncity.newjerseytaxsale.com", "cinnaminson.newjerseytaxsale.com", "delran.newjerseytaxsale.com", "evesham.newjerseytaxsale.com", "fieldsboro.newjerseytaxsale.com", "florence.newjerseytaxsale.com", "mansfield-burlington.newjerseytaxsale.com", "mapleshade.newjerseytaxsale.com", "medford.newjerseytaxsale.com", "palmyra.newjerseytaxsale.com", "willingboro.newjerseytaxsale.com"]},
+        "Camden": {"taxlien": ["bellmawr.newjerseytaxsale.com", "berlinborough.newjerseytaxsale.com", "magnolia.newjerseytaxsale.com", "pennsauken.newjerseytaxsale.com", "runnemede.newjerseytaxsale.com", "somerdale.newjerseytaxsale.com", "stratford.newjerseytaxsale.com", "voorhees.newjerseytaxsale.com"]},
+        "Cape May": {"taxlien": ["dennis.newjerseytaxsale.com"]},
+        "Cumberland": {"taxlien": ["hopewelltownship-cumberland.newjerseytaxsale.com", "millville.newjerseytaxsale.com", "shiloh.newjerseytaxsale.com", "vineland.newjerseytaxsale.com"]},
+        "Essex": {"foreclosure": "newarknj.realforeclose.com", "taxlien": ["bloomfield.newjerseytaxsale.com", "caldwellborough.newjerseytaxsale.com", "eastorange.newjerseytaxsale.com", "essexfells.newjerseytaxsale.com", "glenridge.newjerseytaxsale.com", "livingston.newjerseytaxsale.com", "maplewood.newjerseytaxsale.com", "nutley.newjerseytaxsale.com", "southorangevillage.newjerseytaxsale.com", "westorange.newjerseytaxsale.com"]},
+        "Gloucester": {"taxlien": ["clayton.newjerseytaxsale.com", "deptford.newjerseytaxsale.com", "nationalpark.newjerseytaxsale.com", "newfield.newjerseytaxsale.com", "paulsboro.newjerseytaxsale.com", "pitman.newjerseytaxsale.com", "westdeptford.newjerseytaxsale.com", "woodbury.newjerseytaxsale.com"]},
+        "Hudson": {"taxlien": ["secaucus.newjerseytaxsale.com", "weehawken.newjerseytaxsale.com", "westnewyork.newjerseytaxsale.com"]},
+        "Hunterdon": {"taxlien": ["flemington.newjerseytaxsale.com", "kingwood.newjerseytaxsale.com", "lambertville.newjerseytaxsale.com"]},
+        "Mercer": {"taxlien": ["eastwindsor.newjerseytaxsale.com"]},
+        "Middlesex": {"taxlien": ["carteret.newjerseytaxsale.com", "cranbury.newjerseytaxsale.com", "dunellen.newjerseytaxsale.com", "helmetta.newjerseytaxsale.com", "milltown.newjerseytaxsale.com", "monroe-middlesex.newjerseytaxsale.com", "piscataway.newjerseytaxsale.com", "spotswood.newjerseytaxsale.com"]},
+        "Monmouth": {"taxlien": ["aberdeen.newjerseytaxsale.com", "atlantichighlands.newjerseytaxsale.com", "brielle.newjerseytaxsale.com", "eatontown.newjerseytaxsale.com", "hazlet.newjerseytaxsale.com", "holmdel.newjerseytaxsale.com", "howell.newjerseytaxsale.com", "manalapan.newjerseytaxsale.com", "manasquan.newjerseytaxsale.com", "marlboro.newjerseytaxsale.com", "monmouthbeach.newjerseytaxsale.com", "neptune.newjerseytaxsale.com", "neptunecity.newjerseytaxsale.com", "ocean-monmouth.newjerseytaxsale.com", "redbank.newjerseytaxsale.com", "unionbeach.newjerseytaxsale.com", "wall.newjerseytaxsale.com"]},
+        "Morris": {"taxlien": ["boontontown.newjerseytaxsale.com", "chestertownship.newjerseytaxsale.com", "denville.newjerseytaxsale.com", "easthanover.newjerseytaxsale.com", "florhampark.newjerseytaxsale.com", "harding.newjerseytaxsale.com", "kinnelon.newjerseytaxsale.com", "lincolnpark.newjerseytaxsale.com", "longhill.newjerseytaxsale.com", "mendham.newjerseytaxsale.com", "morris.newjerseytaxsale.com", "pequannock.newjerseytaxsale.com", "randolph.newjerseytaxsale.com", "rockaway.newjerseytaxsale.com", "roxbury.newjerseytaxsale.com"]},
+        "Ocean": {"taxlien": ["barnegat.newjerseytaxsale.com", "jackson.newjerseytaxsale.com", "manchester.newjerseytaxsale.com", "oceangate.newjerseytaxsale.com", "pointpleasantborough.newjerseytaxsale.com", "seasidepark.newjerseytaxsale.com"]},
+        "Passaic": {"taxlien": ["clifton.newjerseytaxsale.com", "westmilford.newjerseytaxsale.com"]},
+        "Salem": {"taxlien": ["carneyspoint.newjerseytaxsale.com", "oldmans.newjerseytaxsale.com", "pennsville.newjerseytaxsale.com"]},
+        "Somerset": {"taxlien": ["bernards.newjerseytaxsale.com", "boundbrook.newjerseytaxsale.com", "bridgewater.newjerseytaxsale.com", "hillsborough.newjerseytaxsale.com", "northplainfield.newjerseytaxsale.com", "peapackgladstone.newjerseytaxsale.com", "somerville.newjerseytaxsale.com", "southboundbrook.newjerseytaxsale.com", "watchung.newjerseytaxsale.com"]},
+        "Sussex": {"foreclosure": "hardystonnj.realforeclose.com", "taxlien": ["andovertownship.newjerseytaxsale.com", "byram.newjerseytaxsale.com", "hamburg.newjerseytaxsale.com", "hardyston.newjerseytaxsale.com", "hopatcong.newjerseytaxsale.com", "montague.newjerseytaxsale.com", "newton.newjerseytaxsale.com", "sparta.newjerseytaxsale.com", "stanhope.newjerseytaxsale.com", "vernon.newjerseytaxsale.com"]},
+        "Union": {"taxlien": ["clark.newjerseytaxsale.com", "cranford.newjerseytaxsale.com", "elizabeth.newjerseytaxsale.com", "fanwood.newjerseytaxsale.com", "linden.newjerseytaxsale.com", "scotchplains.newjerseytaxsale.com", "springfield-union.newjerseytaxsale.com"]},
+        "Warren": {"taxlien": ["franklin-warren.newjerseytaxsale.com", "harmony.newjerseytaxsale.com", "mansfield-warren.newjerseytaxsale.com", "oxford.newjerseytaxsale.com", "washingtonborough.newjerseytaxsale.com", "washingtontownship-warren.newjerseytaxsale.com", "white.newjerseytaxsale.com"]},
+    },
+    "MD": {  # county tax lien certificate sales on marylandtaxsale.com
+        "Allegany": {"taxlien": "allegany.marylandtaxsale.com"},
+        "Anne Arundel": {"taxlien": "annearundel.marylandtaxsale.com"},
+        "Carroll": {"taxlien": "carroll.marylandtaxsale.com"},
+        "Cecil": {"taxlien": "cecil.marylandtaxsale.com"},
+        "Garrett": {"taxlien": "garrett.marylandtaxsale.com"},
+        "Harford": {"taxlien": "harford.marylandtaxsale.com"},
+    },
+    "LA": {
+        "Washington": {"taxlien": "bogalusa.louisianarealtaxlien.com"},  # City of Bogalusa
     },
 }
 
@@ -164,9 +201,9 @@ def sites_for(counties):
     for c in counties:
         hosts = SITES.get(c["state"], {}).get(c["name"])
         if hosts:
-            for kind in ("taxdeed", "foreclosure"):
-                if hosts.get(kind):
-                    yield c["fips"], kind, f"https://{hosts[kind]}"
+            for kind in ("taxdeed", "foreclosure", "taxlien"):
+                for host in ([hosts[kind]] if isinstance(hosts.get(kind), str) else hosts.get(kind) or []):  # a county can hold several municipal portals
+                    yield c["fips"], kind, f"https://{host}"
         elif c["state"] == "OH":
             yield c["fips"], "sheriff", f"https://{_host(c['name'])}.sheriffsaleauction.ohio.gov"
         elif c["state"] == "TX" and _host(c["name"]) in TX_SHERIFF:
@@ -286,12 +323,15 @@ def to_parcel(aid, rows, extra, st, base, upcoming, links=None):
             status = "Not published"
     elif not upcoming:
         status = "Not published"
+    parcel_no = next((rows[k] for k in PARCEL_KEYS if rows.get(k)), None)
+    if not parcel_no and rows.get("Block") and rows.get("Lot"):  # New Jersey lien portals identify a property by block, lot and qualifier
+        parcel_no = f"Block {rows['Block']} Lot {rows['Lot']}" + (f" Qual {rows['Qualifier']}" if rows.get("Qualifier") else "")
     return parcel(
-        parcel=next((rows[k] for k in PARCEL_KEYS if rows.get(k)), None),
+        parcel=parcel_no,
         caseNo=rows.get("Case #") or rows.get("Case Number"), certificate=rows.get("Certificate #"),
         address=addr, fullAddress=full, area=city.split(",")[0].strip().title() if city else None, zip=zip_m.group(1) if zip_m else None,
         parcelInfo=next((links[k] for k in PARCEL_KEYS if links.get(k)), None),
-        minBid=money(rows.get("Opening Bid")), value=money(rows.get("Assessed Value") or rows.get("Appraised Value")),
+        minBid=next((money(rows[k]) for k in OWED_KEYS if money(rows.get(k)) is not None), None), value=money(rows.get("Assessed Value") or rows.get("Appraised Value")),
         judgment=money(rows.get("Final Judgment Amount")), type=rows.get("Auction Type"), owner=rows.get("Owner") or rows.get("Defendant"),
         plaintiff=rows.get("Plaintiff"), winningBid=wb, buyer=buyer, status=status, soldDate=sold_date,
         link=f"{base}/index.cfm?zaction=auction&zmethod=details&AID={aid}",
@@ -301,7 +341,9 @@ def to_parcel(aid, rows, extra, st, base, upcoming, links=None):
 PARCEL_ISH = re.compile(r"\d")
 # Row labels the portals use for the parcel number (Hernando says "Parcel Key", Miami-Dade "Folio", and so on).
 PARCEL_KEYS = ["Parcel ID", "Parcel Number", "Parcel Key", "Parcel No", "Parcel #", "Parcel", "Folio", "Folio Number", "Alternate Key", "Alt Key",
-               "Tax ID", "Property ID", "Account #", "Account Number", "Strap", "PIN", "Schedule Number", "Schedule #", "Schedule No"]
+               "Tax ID", "Property ID", "Account #", "Account Number", "Account", "Tax Account Number", "Property Account", "Strap", "PIN",
+               "Schedule Number", "Schedule #", "Schedule No", "Block/Lot", "Block / Lot", "Block-Lot"]
+OWED_KEYS = ["Opening Bid", "Amount Due", "Total Due", "Total Amount Due", "Certificate Amount", "Lien Amount", "Face Amount", "Minimum Bid", "Taxes Due"]
 
 
 def clean_auctions(auctions, kind):

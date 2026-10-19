@@ -116,7 +116,12 @@ iowataxauction.com (unreachable from the cloud).
 RealAuction runs the Florida Clerk tax deed (`{county}.realtaxdeed.com`) and foreclosure (`{county}.realforeclose.com`)
 portals, the Ohio sheriff portal (`{county}.sheriffsaleauction.ohio.gov`), the Texas sheriff portals
 (`{county}.texas.sheriffsaleauctions.com`, only the 28 hosts in `TX_SHERIFF` exist), Colorado and Arizona treasurer
-deed portals and two New Jersey foreclosure portals (the roster is `SITES` in `sources/realauction.py`). They refuse
+deed portals, two New Jersey foreclosure portals, and, since 2026-10-19, the tax lien certificate sale portals listed on
+https://www.realauction.com/ : 145 New Jersey municipalities (`{town}.newjerseytaxsale.com`, filed under their 21
+counties as `"taxlien"` host lists), six Maryland counties (`{county}.marylandtaxsale.com`) and Bogalusa, Louisiana.
+The roster is `SITES` in `sources/realauction.py`; the lien portals were added from the cloud without being read (the
+portals refuse data-center addresses), so the first monthly run that reaches them settles which labels they use
+(`PARCEL_KEYS`, `OWED_KEYS` and the Block/Lot fallback in `to_parcel` are the guesses). They refuse
 Anthropic's cloud addresses with a marketing page, and refused GitHub's runners when the project was built, so the
 first session collected them one browser tab at a time and transcribed the results (see docs/HANDOFF.md). **Two
 things changed on 2026-10-19:** the monthly workflow's run of that night reached the portals from GitHub's runner

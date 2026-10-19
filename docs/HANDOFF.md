@@ -185,7 +185,10 @@ monthly digest.
   installing anything). Still to try: the New York tax foreclosure auctions on aarauctions.com (a few parcels per
   county, catalog pages at /servlet/Search.do?auctionId=N), the West Virginia State Auditor's delinquent land search
   (wvsao.gov, an ASP.NET postback form) and Mississippi's tax-forfeited inventory (sos.ms.gov/tfsearch, the same kind
-  of form; these are state-held parcels at fixed prices rather than auctions).
+  of form; these are state-held parcels at fixed prices rather than auctions). The RealAuction roster gained the 152 tax
+  lien portals listed on realauction.com (New Jersey municipalities, Maryland counties, Bogalusa); they could not be
+  read from the cloud, so check the first monthly run's log for them and fix the row labels in `to_parcel` if the
+  parcels come back without block and lot or amount due.
 - Philadelphia sheriff sales (https://www.bid4assets.com/philadelphia) turned out to be a hub in front of two
   ordinary landing pages, `/philataxsales` and `/philaforeclosures`; `sources/b4a_sheriff.py` reads them since
   2026-10-19 (about 1,500 properties listed at a time).
