@@ -98,10 +98,11 @@ GitHub Pages serves index.html / analyzer.html / sheet.html, which load that JSO
 
 ## Data On File (As Of 2026-10-19, Evening)
 
-133,451 parcels across 676 counties: FL 24,746, IN 23,938, CO 18,698, PA 14,605, LA 13,659, IL 11,125, MI 7,389, GA
-3,931, TX 3,918, OH 3,501, AR 3,036, CA 1,591, NV 1,156, TN 1,130, VA 624, WA 183, OK 87, WI 68, MN 35, MO 31. By
-adapter: sri 50,862 (IN, LA, CO, FL, TN, MI), realauction 28,192, bid4assets 13,234, iltaxsale 11,125, govease 8,018,
-michigan 7,359, atlanta 3,931, b4a_sheriff 3,367, cosl 3,036, mvba 2,967, clark 736, bidwrangler 624. The master
+133,795 parcels across 715 counties: FL 24,746, IN 23,938, CO 18,698, PA 14,605, LA 13,659, IL 11,125, MI 7,389, GA
+3,931, TX 3,918, OH 3,501, AR 3,036, CA 1,591, NV 1,156, TN 1,130, VA 624, NC 195, WA 183, CT 116, OK 87, WI 68, MN
+35, NY 33, MO 31. By adapter: sri 50,862 (IN, LA, CO, FL, TN, MI), realauction 28,192, bid4assets 13,234, iltaxsale
+11,125, govease 8,018, michigan 7,359, atlanta 3,931, b4a_sheriff 3,367, cosl 3,036, mvba 2,967, clark 736,
+bidwrangler 624, kania 195, cttaxsales 116, aarauctions 33. The master
 files are sharded by state under `data/master/` (the largest, FL, is about 15 MB); `data/master/index.json` lists the
 shards and the pages join them. Raw portal dumps live in `data/raw/realauction/<fips>-<kind>.json`. GovEase data is
 sale lists only; Bid4Assets is sale lists plus results; MVBA is the open Texas sales plus every past online sale since

@@ -189,6 +189,20 @@ monthly digest.
   lien portals listed on realauction.com (New Jersey municipalities, Maryland counties, Bogalusa); they could not be
   read from the cloud, so check the first monthly run's log for them and fix the row labels in `to_parcel` if the
   parcels come back without block and lot or amount due.
+- Session of 2026-10-19 (Claude Code on the web, https://claude.ai/code/session_013syr7ojNfy5qo36Kre9L8v), in order:
+  SRI Inc. adapter and two collections, master files sharded by state, Arkansas (cosl), Illinois (iltaxsale with
+  pdftext), Virginia (bidwrangler), the 152 RealAuction lien portals, North Carolina (kania), Connecticut (cttaxsales),
+  New York (aarauctions). 67,804 parcels in 364 counties at the start, 133,795 in 715 at the end; the live site was
+  redeployed and checked after each push. Leads left for next time: the District of Columbia's annual tax sale
+  (otr.cfo.dc.gov links four "Tax Sale Notice" PDFs, but they are the mailed notices, one page per owner and 178 MB each,
+  not a list; look for the advertised list on mytax.dc.gov instead); Delaware's Sussex County sheriff sales run on
+  CivilView (https://salesweb.civilview.com/?id=01020), a platform many sheriffs in Delaware, New Jersey and
+  Pennsylvania use, so one CivilView adapter could cover dozens of counties; Charleston County, SC publishes its own
+  tax sale list; West Virginia's wvsao.gov county collections search is a WebForms postback that returned an error page
+  when driven from Python (needs the exact event sequence); Mississippi's sos.ms.gov/tfsearch is the same kind of form;
+  New Mexico's Property Tax Division posts one auction list PDF per county (Luna County, 48 pages, on 2026-10-22) whose
+  multi-line rows need a column-aware parser; Iowa's iowataxauction.com and Alabama's alabamainteractive.org did not
+  answer from the cloud and should be tried from the Mac or the runner.
 - Philadelphia sheriff sales (https://www.bid4assets.com/philadelphia) turned out to be a hub in front of two
   ordinary landing pages, `/philataxsales` and `/philaforeclosures`; `sources/b4a_sheriff.py` reads them since
   2026-10-19 (about 1,500 properties listed at a time).
