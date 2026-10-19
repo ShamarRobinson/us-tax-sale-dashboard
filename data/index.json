@@ -1,9 +1,9 @@
 {
- "generated": "2026-10-19T09:15:34+00:00",
+ "generated": "2026-10-19T10:34:38+00:00",
  "counties": 3222,
  "states": 52,
  "withData": 715,
- "parcels": 133795,
+ "parcels": 133865,
  "auctions": 5015,
  "withTaxSaleLink": 1384,
  "withSite": 3061,
@@ -610,7 +610,7 @@
    "date": "2026-10-19",
    "kind": "posted",
    "parcels": 1269,
-   "page": "https://www.bid4assets.com/pbsosheriffsales"
+   "page": "https://palmbeach.realtaxdeed.com"
   },
   {
    "fips": "12101",
@@ -925,7 +925,7 @@
    "date": "2026-10-21",
    "kind": "posted",
    "parcels": 798,
-   "page": "https://www.sriservices.com/county/CO/Douglas"
+   "page": "https://liveauctions.govease.com/CO/codouglasforeclosure/1400/browsestandard"
   },
   {
    "fips": "08041",
@@ -979,7 +979,7 @@
    "date": "2026-10-21",
    "kind": "posted",
    "parcels": 1306,
-   "page": "https://www.sriservices.com/county/CO/Teller"
+   "page": "https://liveauctions.govease.com/CO/cotellerlien/1555/browsestandard"
   },
   {
    "fips": "12009",
@@ -1078,7 +1078,7 @@
    "date": "2026-10-21",
    "kind": "posted",
    "parcels": 400,
-   "page": "https://www.sriservices.com/county/LA/Town%20of%20Benton"
+   "page": "https://www.bid4assets.com/BossierSheriff/listings"
   },
   {
    "fips": "22019",
@@ -1087,7 +1087,7 @@
    "date": "2026-10-21",
    "kind": "posted",
    "parcels": 1011,
-   "page": "https://www.sriservices.com/county/LA/Calcasieu"
+   "page": "https://www.bid4assets.com/CPSOSheriff/listings"
   },
   {
    "fips": "22033",
@@ -1096,7 +1096,7 @@
    "date": "2026-10-21",
    "kind": "posted",
    "parcels": 3109,
-   "page": "https://www.sriservices.com/county/LA/East%20Baton%20Rouge"
+   "page": "https://www.bid4assets.com/ebrsosheriffsales"
   },
   {
    "fips": "22073",
@@ -1105,7 +1105,7 @@
    "date": "2026-10-21",
    "kind": "posted",
    "parcels": 774,
-   "page": "https://www.sriservices.com/county/LA/Ouachita"
+   "page": "https://www.bid4assets.com/ouachitasheriffsales"
   },
   {
    "fips": "22093",
@@ -1123,7 +1123,7 @@
    "date": "2026-10-21",
    "kind": "posted",
    "parcels": 342,
-   "page": "https://www.sriservices.com/county/LA/Town%20of%20Roseland"
+   "page": "https://www.bid4assets.com/tangipahoalasheriffsales"
   },
   {
    "fips": "22115",
@@ -1204,7 +1204,7 @@
    "date": "2026-10-21",
    "kind": "posted",
    "parcels": 727,
-   "page": "https://www.bid4assets.com/ColumbiaPASheriffSales"
+   "page": "https://www.bid4assets.com/storefront/ColumbiaPATaxSaleSep26"
   },
   {
    "fips": "42101",
@@ -1240,7 +1240,7 @@
    "date": "2026-10-22",
    "kind": "posted",
    "parcels": 1675,
-   "page": "https://www.sriservices.com/county/CO/Jefferson"
+   "page": "https://liveauctions.govease.com/CO/cojeffersonforeclosure/1281/browsestandard"
   },
   {
    "fips": "08093",
@@ -1249,7 +1249,7 @@
    "date": "2026-10-22",
    "kind": "posted",
    "parcels": 3185,
-   "page": "https://www.sriservices.com/county/CO/Park"
+   "page": "https://liveauctions.govease.com/CO/coparktread/1438/browsestandard"
   },
   {
    "fips": "12003",
@@ -1267,7 +1267,7 @@
    "date": "2026-10-22",
    "kind": "posted",
    "parcels": 314,
-   "page": "https://www.bid4assets.com/CitrusFLForeclosures/listings"
+   "page": "https://citrus.realtaxdeed.com"
   },
   {
    "fips": "12063",
@@ -1402,7 +1402,7 @@
    "date": "2026-10-22",
    "kind": "posted",
    "parcels": 709,
-   "page": "https://www.bid4assets.com/armstrongpasheriffsales"
+   "page": "https://liveauctions.govease.com/PA/paarmstrongupset/1560/browsestandard"
   },
   {
    "fips": "48361",
@@ -1564,7 +1564,7 @@
    "date": "2026-10-23",
    "kind": "posted",
    "parcels": 1715,
-   "page": "https://www.bid4assets.com/SchuylkillSheriffSales"
+   "page": "https://www.bid4assets.com/storefront/SchuylkillPATaxSaleJun26"
   },
   {
    "fips": "08113",
@@ -1762,7 +1762,7 @@
    "date": "2026-10-28",
    "kind": "posted",
    "parcels": 248,
-   "page": "https://www.sriservices.com/county/LA/Lafourche"
+   "page": "https://www.bid4assets.com/LPSOSheriff"
   },
   {
    "fips": "39003",
@@ -1825,42 +1825,42 @@
    "url": "https://shamarrobinson.github.io/atlanta-tax-sale-dashboard/",
    "counties": 40,
    "ok": true,
-   "checked": "2026-10-19T06:22:44+00:00"
+   "checked": "2026-10-19T09:17:38+00:00"
   },
   "clark": {
    "label": "Clark County Tax Auction Tracker",
    "url": "https://shamarrobinson.github.io/clark-county-tax-auction-dashboard/",
    "counties": 1,
    "ok": true,
-   "checked": "2026-10-19T06:22:45+00:00"
+   "checked": "2026-10-19T09:17:39+00:00"
   },
   "michigan": {
    "label": "Tax-Sale.info (Michigan Public Land Auction)",
    "url": "https://www.tax-sale.info/",
    "counties": 79,
    "ok": true,
-   "checked": "2026-10-19T06:27:19+00:00"
+   "checked": "2026-10-19T09:21:05+00:00"
   },
   "realauction": {
    "label": "RealAuction portals (Florida, Arizona and Colorado tax deed sales, Clerk and Public Trustee foreclosure sales, Ohio and Texas sheriff sales)",
    "url": "https://www.realauction.com/",
    "counties": 155,
    "ok": true,
-   "checked": "2026-10-19T08:58:26+00:00"
+   "checked": "2026-10-19T09:50:39+00:00"
   },
   "govease": {
    "label": "GovEase (online tax sale platform)",
    "url": "https://www.govease.com/",
    "counties": 40,
    "ok": true,
-   "checked": "2026-10-19T09:07:02+00:00"
+   "checked": "2026-10-19T09:57:42+00:00"
   },
   "bid4assets": {
    "label": "Bid4Assets (county tax sale auctions)",
    "url": "https://www.bid4assets.com/county-tax-sales",
    "counties": 35,
    "ok": true,
-   "checked": "2026-10-19T09:12:53+00:00"
+   "checked": "2026-10-19T10:04:24+00:00"
   },
   "mvba": {
    "label": "MVBA Tax Sales (Texas online property tax sales)",
@@ -1874,49 +1874,56 @@
    "url": "https://www.bid4assets.com/sheriffsales",
    "counties": 31,
    "ok": true,
-   "checked": "2026-10-19T09:15:12+00:00"
+   "checked": "2026-10-19T10:06:59+00:00"
   },
   "sri": {
    "label": "SRI Inc. (Zeus Auction)",
    "url": "https://www.sriservices.com/properties",
    "counties": 138,
-   "ok": true
+   "ok": true,
+   "checked": "2026-10-19T10:29:50+00:00"
   },
   "cosl": {
    "label": "Arkansas Commissioner of State Lands",
    "url": "https://auction.cosl.org/Auctions/ListingsView",
    "counties": 53,
-   "ok": true
+   "ok": true,
+   "checked": "2026-10-19T10:30:11+00:00"
   },
   "iltaxsale": {
    "label": "ILTaxSale.com (Joseph E. Meyer & Associates)",
    "url": "https://iltaxsale.com/new/index.php/main/auctions/",
    "counties": 92,
-   "ok": true
+   "ok": true,
+   "checked": "2026-10-19T10:33:07+00:00"
   },
   "bidwrangler": {
    "label": "For Sale At Auction (BidWrangler)",
    "url": "https://www.forsaleatauction.biz/auctions/tax-delinquent-real-estate",
    "counties": 26,
-   "ok": true
+   "ok": true,
+   "checked": "2026-10-19T10:34:01+00:00"
   },
   "kania": {
    "label": "The Kania Law Firm (North Carolina tax foreclosure sales)",
    "url": "https://kanialawfirm.com/tax-foreclosures/foreclosure-listings/",
    "counties": 24,
-   "ok": true
+   "ok": true,
+   "checked": "2026-10-19T10:34:03+00:00"
   },
   "cttaxsales": {
    "label": "Connecticut Tax Sales (Pullman & Comley)",
    "url": "https://cttaxsales.com/upcoming-tax-sales/",
    "counties": 9,
-   "ok": true
+   "ok": true,
+   "checked": "2026-10-19T10:34:15+00:00"
   },
   "aarauctions": {
    "label": "AAR Auctions (New York tax foreclosure auctions)",
    "url": "https://aarauctions.com/auctions/tax-foreclosures/",
    "counties": 6,
-   "ok": true
+   "ok": true,
+   "checked": "2026-10-19T10:34:22+00:00"
   }
  },
  "countiesWithData": [
