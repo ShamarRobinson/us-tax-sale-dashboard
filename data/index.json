@@ -1,11 +1,11 @@
 {
- "generated": "2026-10-19T08:32:48+00:00",
+ "generated": "2026-10-19T08:51:41+00:00",
  "counties": 3222,
  "states": 52,
- "withData": 676,
- "parcels": 133451,
- "auctions": 4933,
- "withTaxSaleLink": 1349,
+ "withData": 709,
+ "parcels": 133762,
+ "auctions": 5008,
+ "withTaxSaleLink": 1380,
  "withSite": 3061,
  "withSheriffLink": 378,
  "withAssessorLink": 1545,
@@ -494,6 +494,33 @@
    "kind": "posted",
    "parcels": 1,
    "page": "https://auction.cosl.org/Auctions/ListingsView"
+  },
+  {
+   "fips": "09110",
+   "state": "CT",
+   "name": "Capitol Planning Region",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 74,
+   "page": "https://cttaxsales.com/upcoming-tax-sales/"
+  },
+  {
+   "fips": "09140",
+   "state": "CT",
+   "name": "Naugatuck Valley Planning Region",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 2,
+   "page": "https://cttaxsales.com/upcoming-tax-sales/"
+  },
+  {
+   "fips": "09160",
+   "state": "CT",
+   "name": "Northwest Hills Planning Region",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 0,
+   "page": "https://cttaxsales.com/upcoming-tax-sales/"
   },
   {
    "fips": "12005",
@@ -1270,6 +1297,15 @@
    "page": "https://www.sriservices.com/county/IN/Steuben"
   },
   {
+   "fips": "37109",
+   "state": "NC",
+   "name": "Lincoln County",
+   "date": "2026-10-22",
+   "kind": "posted",
+   "parcels": 5,
+   "page": "https://kanialawfirm.com/tax-foreclosures/foreclosure-listings/"
+  },
+  {
    "fips": "39013",
    "state": "OH",
    "name": "Belmont County",
@@ -1781,42 +1817,6 @@
    "kind": "posted",
    "parcels": 83,
    "page": "https://okeechobee.realforeclose.com"
-  },
-  {
-   "fips": "18163",
-   "state": "IN",
-   "name": "Vanderburgh County",
-   "date": "2026-10-29",
-   "kind": "posted",
-   "parcels": 553,
-   "page": "https://www.sriservices.com/county/IN/Vanderburgh"
-  },
-  {
-   "fips": "39039",
-   "state": "OH",
-   "name": "Defiance County",
-   "date": "2026-10-29",
-   "kind": "posted",
-   "parcels": 8,
-   "page": "https://defiance.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "39071",
-   "state": "OH",
-   "name": "Highland County",
-   "date": "2026-10-29",
-   "kind": "posted",
-   "parcels": 7,
-   "page": "https://highland.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "39081",
-   "state": "OH",
-   "name": "Jefferson County",
-   "date": "2026-10-29",
-   "kind": "posted",
-   "parcels": 16,
-   "page": "https://jefferson.sheriffsaleauction.ohio.gov"
   }
  ],
  "sources": {
@@ -1903,6 +1903,20 @@
    "counties": 26,
    "ok": true,
    "checked": "2026-10-19T08:30:20+00:00"
+  },
+  "kania": {
+   "label": "The Kania Law Firm (North Carolina tax foreclosure sales)",
+   "url": "https://kanialawfirm.com/tax-foreclosures/foreclosure-listings/",
+   "counties": 24,
+   "ok": true,
+   "checked": "2026-10-19T08:51:25+00:00"
+  },
+  "cttaxsales": {
+   "label": "Connecticut Tax Sales (Pullman & Comley)",
+   "url": "https://cttaxsales.com/upcoming-tax-sales/",
+   "counties": 9,
+   "ok": true,
+   "checked": "2026-10-19T08:51:37+00:00"
   }
  },
  "countiesWithData": [
@@ -2011,6 +2025,15 @@
   "08121",
   "08123",
   "08125",
+  "09110",
+  "09120",
+  "09130",
+  "09140",
+  "09150",
+  "09160",
+  "09170",
+  "09180",
+  "09190",
   "12001",
   "12003",
   "12005",
@@ -2396,6 +2419,30 @@
   "32015",
   "32023",
   "32510",
+  "37003",
+  "37007",
+  "37009",
+  "37023",
+  "37027",
+  "37035",
+  "37039",
+  "37043",
+  "37045",
+  "37051",
+  "37057",
+  "37059",
+  "37085",
+  "37109",
+  "37119",
+  "37123",
+  "37129",
+  "37145",
+  "37149",
+  "37159",
+  "37161",
+  "37169",
+  "37171",
+  "37179",
   "39001",
   "39003",
   "39005",

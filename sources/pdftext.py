@@ -2,6 +2,9 @@
 enough to read the fixed-column result sheets that iltaxsale.com publishes. Returns lines ordered top to bottom with
 text placed by x coordinate, like `pdftotext -layout`."""
 import re
+import shutil
+import subprocess
+import tempfile
 import zlib
 
 STREAM_START = re.compile(rb"stream\r?\n")
@@ -70,7 +73,26 @@ def page_streams(data):
 
 
 def extract(data, scale=0.185):
-    """Lines of text for every page, in reading order. scale converts PDF points to character columns."""
+    """Lines of text for every page, in reading order. scale converts PDF points to character columns.
+
+    PDFs whose fonts use identity (glyph id) encodings come out as noise from the pure-Python reader; when the result
+    looks like that and pdftotext (poppler) happens to be installed, its layout output is used instead."""
+    pages = _extract(data, scale)
+    sample = " ".join(" ".join(p) for p in pages)[:4000]
+    odd = sum(1 for ch in sample if ord(ch) > 126 or (ord(ch) < 32 and ch not in "\t\n"))
+    if (not pages or odd > 0.15 * max(len(sample), 1)) and shutil.which("pdftotext"):
+        with tempfile.NamedTemporaryFile(suffix=".pdf", delete=False) as f:
+            f.write(data)
+        try:
+            text = subprocess.run(["pdftotext", "-layout", f.name, "-"], capture_output=True, text=True, timeout=120).stdout
+            if text.strip():
+                return [page.splitlines() for page in text.split("\f") if page.strip()]
+        except (OSError, subprocess.SubprocessError):
+            pass
+    return pages
+
+
+def _extract(data, scale):
     pages = []
     for stream in page_streams(data):
         if b"BT" not in stream:

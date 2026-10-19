@@ -62,7 +62,7 @@ GitHub Pages serves index.html / analyzer.html / sheet.html, which load that JSO
 - Adapter contract: a module in `sources/` with `NAME`, `LABEL`, `HOMEPAGE` and `fetch(counties)` that returns county
   records in the shape documented in `sources/__init__.py` (`auction(...)` and `parcel(...)` helpers, `get`,
   `get_json`, `money`). The dashboard needs no change for a new adapter; add its name to `sources.ADAPTERS`
-  (currently `atlanta`, `clark`, `michigan`, `realauction`, `govease`, `bid4assets`, `mvba`, `b4a_sheriff`, `sri`, `cosl`, `iltaxsale`, `bidwrangler`). GovEase (`sources/govease.py`)
+  (currently `atlanta`, `clark`, `michigan`, `realauction`, `govease`, `bid4assets`, `mvba`, `b4a_sheriff`, `sri`, `cosl`, `iltaxsale`, `bidwrangler`, `kania`, `cttaxsales`). GovEase (`sources/govease.py`)
   is reachable from the GitHub runner and from Claude Code on the web, so it refreshes itself monthly; it publishes
   sale lists with starting bids (no results) for whichever auctions are open, in CO, TN, PA, TX, CA, IN, MO, WA, KS and
   OK. Bid4Assets (`sources/bid4assets.py`) covers the County Tax Sales calendar (CA, NV, WA, PA, MN, LA) with sale
@@ -86,7 +86,10 @@ GitHub Pages serves index.html / analyzer.html / sheet.html, which load that JSO
   `sources/pdftext.py` (a standard-library PDF text extractor for FlateDecode page streams; it handles the fixed-column
   sheets these sites publish, nothing fancier). For Sale At Auction (`sources/bidwrangler.py`) reads the open
   BidWrangler JSON API behind bid.forsaleatauction.biz (`/api/auctions`, `/api/auctions/<id>/items`) for Virginia's
-  judicial sales of tax delinquent real estate; other auctioneers on BidWrangler can be added to its `HOSTS` list.
+  judicial sales of tax delinquent real estate; other auctioneers on BidWrangler can be added to its `HOSTS` list. The
+  Kania Law Firm (`sources/kania.py`) reads the Ninja Tables JSON behind its North Carolina tax sales listings (the
+  page carries the table id and nonce), and Connecticut Tax Sales (`sources/cttaxsales.py`) reads Pullman & Comley's
+  upcoming sales page and results notices, filing towns under the planning regions the registry uses for Connecticut.
   `sources/realauction.py` collects six portals at a time.
 - Deal score (`master.py`): value 40, property 20, market 15, competition 15, history 10; 70+ Strong, 50 to 69 Good,
   35 to 49 Fair, under 35 Weak.
@@ -105,11 +108,11 @@ with prices for the parcels that sold; ILTaxSale.com is fourteen months of resul
 Arkansas list is the parcels on the state's online auction today; For Sale At Auction is two years of Virginia
 judicial sales. All of these refresh on the monthly run and with `python3 fetch_all.py --source <adapter>`.
 
-States still without parcel data (30): KY, KS, NC, IA, NE, MS, PR, AL, SD, NY, MT, WV, ND, SC, ID, OR, NM, AK, UT,
-MD, WY, NJ, ME, AZ, MA, VT, NH, CT, HI, RI, DE, DC. Leads checked on 2026-10-19: aarauctions.com (New York tax
+States still without parcel data (28): KY, KS, IA, NE, MS, PR, AL, SD, NY, MT, WV, ND, SC, ID, OR, NM, AK, UT, MD, WY,
+NJ, ME, AZ, MA, VT, NH, HI, RI, DE, DC (MD and NJ should fill in when the monthly run reaches their RealAuction portals). Leads checked on 2026-10-19: aarauctions.com (New York tax
 foreclosures, a few parcels per county), wvsao.gov and sos.ms.gov/tfsearch (ASP.NET postback forms), zls-nc.com
 (North Carolina, a Blazor app that needs a browser), govdeals.com (bot protection), civicsource.com and
-iowataxauction.com (unreachable from the cloud).
+iowataxauction.com (unreachable from the cloud), auctionsinternational.com (New York, an Angular app), nctaxforeclosures.com (paid).
 
 ## RealAuction Portals: The Main Open Work
 

@@ -1,7 +1,43 @@
 {
- "generated": "2026-10-19T08:32:48+00:00",
- "previous": "2026-10-19T08:30:23+00:00",
+ "generated": "2026-10-19T08:51:41+00:00",
+ "previous": "2026-10-19T08:32:48+00:00",
  "newUpcoming": [
+  {
+   "fips": "09110",
+   "state": "CT",
+   "name": "Capitol Planning Region",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 74,
+   "page": "https://cttaxsales.com/upcoming-tax-sales/"
+  },
+  {
+   "fips": "09140",
+   "state": "CT",
+   "name": "Naugatuck Valley Planning Region",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 2,
+   "page": "https://cttaxsales.com/upcoming-tax-sales/"
+  },
+  {
+   "fips": "09160",
+   "state": "CT",
+   "name": "Northwest Hills Planning Region",
+   "date": "2026-10-19",
+   "kind": "posted",
+   "parcels": 0,
+   "page": "https://cttaxsales.com/upcoming-tax-sales/"
+  },
+  {
+   "fips": "37109",
+   "state": "NC",
+   "name": "Lincoln County",
+   "date": "2026-10-22",
+   "kind": "posted",
+   "parcels": 5,
+   "page": "https://kanialawfirm.com/tax-foreclosures/foreclosure-listings/"
+  },
   {
    "fips": "39125",
    "state": "OH",
@@ -579,6 +615,15 @@
    "page": "https://www.sriservices.com/county/IN/Scott"
   },
   {
+   "fips": "37149",
+   "state": "NC",
+   "name": "Polk County",
+   "date": "2026-11-03",
+   "kind": "posted",
+   "parcels": 1,
+   "page": "https://kanialawfirm.com/tax-foreclosures/foreclosure-listings/"
+  },
+  {
    "fips": "39019",
    "state": "OH",
    "name": "Carroll County",
@@ -1110,6 +1155,15 @@
    "page": "https://liveauctions.govease.com/CO/cophillips/1356/browsestandard"
   },
   {
+   "fips": "09190",
+   "state": "CT",
+   "name": "Western Connecticut Planning Region",
+   "date": "2026-11-10",
+   "kind": "posted",
+   "parcels": 6,
+   "page": "https://cttaxsales.com/upcoming-tax-sales/"
+  },
+  {
    "fips": "12097",
    "state": "FL",
    "name": "Osceola County",
@@ -1144,6 +1198,15 @@
    "kind": "posted",
    "parcels": 80,
    "page": "https://www.sriservices.com/county/IN/Owen"
+  },
+  {
+   "fips": "37159",
+   "state": "NC",
+   "name": "Rowan County",
+   "date": "2026-11-10",
+   "kind": "posted",
+   "parcels": 23,
+   "page": "https://kanialawfirm.com/tax-foreclosures/foreclosure-listings/"
   },
   {
    "fips": "39021",
@@ -1189,6 +1252,15 @@
    "kind": "posted",
    "parcels": 80,
    "page": "https://www.bid4assets.com/CarbonPASheriffSales"
+  },
+  {
+   "fips": "09120",
+   "state": "CT",
+   "name": "Greater Bridgeport Planning Region",
+   "date": "2026-11-12",
+   "kind": "posted",
+   "parcels": 0,
+   "page": "https://cttaxsales.com/upcoming-tax-sales/"
   },
   {
    "fips": "12109",
@@ -1351,6 +1423,15 @@
    "kind": "posted",
    "parcels": 3,
    "page": "https://liveauctions.govease.com/WA/wabenton/1296/browsestandard"
+  },
+  {
+   "fips": "09130",
+   "state": "CT",
+   "name": "Lower Connecticut River Valley Planning Region",
+   "date": "2026-11-17",
+   "kind": "posted",
+   "parcels": 19,
+   "page": "https://cttaxsales.com/upcoming-tax-sales/"
   },
   {
    "fips": "18049",
@@ -1522,6 +1603,15 @@
    "kind": "posted",
    "parcels": 424,
    "page": "https://liveauctions.govease.com/CO/cobaca/1235/browsestandard"
+  },
+  {
+   "fips": "09150",
+   "state": "CT",
+   "name": "Northeastern Connecticut Planning Region",
+   "date": "2026-11-19",
+   "kind": "posted",
+   "parcels": 11,
+   "page": "https://cttaxsales.com/upcoming-tax-sales/"
   },
   {
    "fips": "18045",
@@ -1821,6 +1911,15 @@
    "page": "https://www.bid4assets.com/BedfordPASheriffSales/listings"
   },
   {
+   "fips": "09170",
+   "state": "CT",
+   "name": "South Central Connecticut Planning Region",
+   "date": "2026-12-11",
+   "kind": "posted",
+   "parcels": 3,
+   "page": "https://cttaxsales.com/upcoming-tax-sales/"
+  },
+  {
    "fips": "17047",
    "state": "IL",
    "name": "Edwards County",
@@ -1911,7 +2010,41 @@
    "page": "https://iltaxsale.com/new/index.php/county/Washington/WAS"
   }
  ],
- "newCounties": [],
- "parcelDelta": 0,
- "linkDelta": 0
+ "newCounties": [
+  "09110",
+  "09120",
+  "09130",
+  "09140",
+  "09150",
+  "09160",
+  "09170",
+  "09180",
+  "09190",
+  "37003",
+  "37007",
+  "37009",
+  "37023",
+  "37027",
+  "37035",
+  "37039",
+  "37043",
+  "37045",
+  "37051",
+  "37057",
+  "37059",
+  "37085",
+  "37109",
+  "37119",
+  "37123",
+  "37129",
+  "37145",
+  "37149",
+  "37159",
+  "37161",
+  "37169",
+  "37171",
+  "37179"
+ ],
+ "parcelDelta": 311,
+ "linkDelta": 31
 }
