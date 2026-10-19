@@ -1,16 +1,16 @@
 {
- "generated": "2026-10-19T08:26:06+00:00",
+ "generated": "2026-10-19T08:30:23+00:00",
  "counties": 3222,
  "states": 52,
- "withData": 650,
- "parcels": 132827,
- "auctions": 4891,
- "withTaxSaleLink": 1327,
+ "withData": 676,
+ "parcels": 133451,
+ "auctions": 4933,
+ "withTaxSaleLink": 1349,
  "withSite": 3061,
  "withSheriffLink": 378,
  "withAssessorLink": 1545,
- "withPhotos": 132,
- "photos": 19825,
+ "withPhotos": 157,
+ "photos": 20449,
  "systems": {
   "deed": 1294,
   "lien": 912,
@@ -1189,6 +1189,15 @@
    "page": "https://liveauctions.govease.com/TN/tnhouston/1551/browsestandard"
   },
   {
+   "fips": "51073",
+   "state": "VA",
+   "name": "Gloucester County",
+   "date": "2026-10-21",
+   "kind": "posted",
+   "parcels": 26,
+   "page": "https://www.forsaleatauction.biz/auctions/tax-delinquent-real-estate"
+  },
+  {
    "fips": "08059",
    "state": "CO",
    "name": "Jefferson County",
@@ -1349,6 +1358,15 @@
    "kind": "posted",
    "parcels": 45,
    "page": "https://orange.texas.sheriffsaleauctions.com"
+  },
+  {
+   "fips": "51033",
+   "state": "VA",
+   "name": "Caroline County",
+   "date": "2026-10-22",
+   "kind": "posted",
+   "parcels": 72,
+   "page": "https://www.forsaleatauction.biz/auctions/tax-delinquent-real-estate"
   },
   {
    "fips": "17073",
@@ -1799,24 +1817,6 @@
    "kind": "posted",
    "parcels": 16,
    "page": "https://jefferson.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "39125",
-   "state": "OH",
-   "name": "Paulding County",
-   "date": "2026-10-29",
-   "kind": "posted",
-   "parcels": 7,
-   "page": "https://paulding.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "39157",
-   "state": "OH",
-   "name": "Tuscarawas County",
-   "date": "2026-10-29",
-   "kind": "posted",
-   "parcels": 10,
-   "page": "https://tuscarawas.sheriffsaleauction.ohio.gov"
   }
  ],
  "sources": {
@@ -1896,6 +1896,13 @@
    "counties": 92,
    "ok": true,
    "checked": "2026-10-19T08:26:03+00:00"
+  },
+  "bidwrangler": {
+   "label": "For Sale At Auction (BidWrangler)",
+   "url": "https://www.forsaleatauction.biz/auctions/tax-delinquent-real-estate",
+   "counties": 26,
+   "ok": true,
+   "checked": "2026-10-19T08:30:20+00:00"
   }
  },
  "countiesWithData": [
@@ -2541,6 +2548,32 @@
   "48423",
   "48469",
   "48485",
+  "51033",
+  "51035",
+  "51043",
+  "51049",
+  "51057",
+  "51059",
+  "51065",
+  "51073",
+  "51077",
+  "51085",
+  "51095",
+  "51099",
+  "51101",
+  "51109",
+  "51115",
+  "51119",
+  "51147",
+  "51155",
+  "51163",
+  "51171",
+  "51177",
+  "51179",
+  "51187",
+  "51510",
+  "51630",
+  "51820",
   "53005",
   "53011",
   "53027",
