@@ -1,1114 +1,7 @@
 {
- "generated": "2026-10-19T10:34:38+00:00",
- "previous": "2026-10-19T10:34:24+00:00",
+ "generated": "2026-11-01T19:41:57+00:00",
+ "previous": "2026-11-01T19:41:43+00:00",
  "newUpcoming": [
-  {
-   "fips": "12085",
-   "state": "FL",
-   "name": "Martin County",
-   "date": "2026-10-29",
-   "kind": "posted",
-   "parcels": 62,
-   "page": "https://martin.realtaxdeed.com"
-  },
-  {
-   "fips": "12093",
-   "state": "FL",
-   "name": "Okeechobee County",
-   "date": "2026-10-29",
-   "kind": "posted",
-   "parcels": 83,
-   "page": "https://okeechobee.realforeclose.com"
-  },
-  {
-   "fips": "18163",
-   "state": "IN",
-   "name": "Vanderburgh County",
-   "date": "2026-10-29",
-   "kind": "posted",
-   "parcels": 553,
-   "page": "https://www.sriservices.com/county/IN/Vanderburgh"
-  },
-  {
-   "fips": "39039",
-   "state": "OH",
-   "name": "Defiance County",
-   "date": "2026-10-29",
-   "kind": "posted",
-   "parcels": 8,
-   "page": "https://defiance.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "39071",
-   "state": "OH",
-   "name": "Highland County",
-   "date": "2026-10-29",
-   "kind": "posted",
-   "parcels": 7,
-   "page": "https://highland.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "39081",
-   "state": "OH",
-   "name": "Jefferson County",
-   "date": "2026-10-29",
-   "kind": "posted",
-   "parcels": 16,
-   "page": "https://jefferson.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "39125",
-   "state": "OH",
-   "name": "Paulding County",
-   "date": "2026-10-29",
-   "kind": "posted",
-   "parcels": 7,
-   "page": "https://paulding.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "39157",
-   "state": "OH",
-   "name": "Tuscarawas County",
-   "date": "2026-10-29",
-   "kind": "posted",
-   "parcels": 10,
-   "page": "https://tuscarawas.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "39161",
-   "state": "OH",
-   "name": "Van Wert County",
-   "date": "2026-10-29",
-   "kind": "posted",
-   "parcels": 16,
-   "page": "https://vanwert.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "42089",
-   "state": "PA",
-   "name": "Monroe County",
-   "date": "2026-10-29",
-   "kind": "posted",
-   "parcels": 4225,
-   "page": "https://www.bid4assets.com/storefront/MonroePATaxMay26"
-  },
-  {
-   "fips": "47119",
-   "state": "TN",
-   "name": "Maury County",
-   "date": "2026-10-29",
-   "kind": "posted",
-   "parcels": 1,
-   "page": "https://liveauctions.govease.com/TN/tnmaurycircuitcourt/1562/browsestandard"
-  },
-  {
-   "fips": "06069",
-   "state": "CA",
-   "name": "San Benito County",
-   "date": "2026-10-30",
-   "kind": "posted",
-   "parcels": 20,
-   "page": "https://liveauctions.govease.com/CA/casanbenito/1376/browsestandard"
-  },
-  {
-   "fips": "17051",
-   "state": "IL",
-   "name": "Fayette County",
-   "date": "2026-10-30",
-   "kind": "posted",
-   "parcels": 39,
-   "page": "https://iltaxsale.com/new/index.php/county/Fayette/FAY"
-  },
-  {
-   "fips": "17055",
-   "state": "IL",
-   "name": "Franklin County",
-   "date": "2026-10-30",
-   "kind": "posted",
-   "parcels": 266,
-   "page": "https://iltaxsale.com/new/index.php/county/Franklin/FRA"
-  },
-  {
-   "fips": "17081",
-   "state": "IL",
-   "name": "Jefferson County",
-   "date": "2026-10-30",
-   "kind": "posted",
-   "parcels": 305,
-   "page": "https://iltaxsale.com/new/index.php/county/Jefferson/JEF"
-  },
-  {
-   "fips": "26001",
-   "state": "MI",
-   "name": "Alcona County",
-   "date": "2026-10-30",
-   "kind": "posted",
-   "parcels": 32,
-   "page": "https://www.tax-sale.info/listings/catalog/2982"
-  },
-  {
-   "fips": "26005",
-   "state": "MI",
-   "name": "Allegan County",
-   "date": "2026-10-30",
-   "kind": "posted",
-   "parcels": 137,
-   "page": "https://www.tax-sale.info/listings/catalog/2956"
-  },
-  {
-   "fips": "26007",
-   "state": "MI",
-   "name": "Alpena County",
-   "date": "2026-10-30",
-   "kind": "posted",
-   "parcels": 23,
-   "page": "https://www.tax-sale.info/listings/catalog/2983"
-  },
-  {
-   "fips": "26009",
-   "state": "MI",
-   "name": "Antrim County",
-   "date": "2026-10-30",
-   "kind": "posted",
-   "parcels": 346,
-   "page": "https://www.tax-sale.info/listings/catalog/2981"
-  },
-  {
-   "fips": "26011",
-   "state": "MI",
-   "name": "Arenac County",
-   "date": "2026-10-30",
-   "kind": "posted",
-   "parcels": 54,
-   "page": "https://www.tax-sale.info/listings/catalog/2946"
-  },
-  {
-   "fips": "26017",
-   "state": "MI",
-   "name": "Bay County",
-   "date": "2026-10-30",
-   "kind": "posted",
-   "parcels": 65,
-   "page": "https://www.tax-sale.info/listings/catalog/2947"
-  },
-  {
-   "fips": "26021",
-   "state": "MI",
-   "name": "Berrien County",
-   "date": "2026-10-30",
-   "kind": "posted",
-   "parcels": 299,
-   "page": "https://www.tax-sale.info/listings/catalog/2957"
-  },
-  {
-   "fips": "26025",
-   "state": "MI",
-   "name": "Calhoun County",
-   "date": "2026-10-30",
-   "kind": "posted",
-   "parcels": 168,
-   "page": "https://www.tax-sale.info/listings/catalog/2953"
-  },
-  {
-   "fips": "26031",
-   "state": "MI",
-   "name": "Cheboygan County",
-   "date": "2026-10-30",
-   "kind": "posted",
-   "parcels": 37,
-   "page": "https://www.tax-sale.info/listings/catalog/2984"
-  },
-  {
-   "fips": "26037",
-   "state": "MI",
-   "name": "Clinton County",
-   "date": "2026-10-30",
-   "kind": "posted",
-   "parcels": 16,
-   "page": "https://www.tax-sale.info/listings/catalog/3015"
-  },
-  {
-   "fips": "26041",
-   "state": "MI",
-   "name": "Delta County",
-   "date": "2026-10-30",
-   "kind": "posted",
-   "parcels": 45,
-   "page": "https://www.tax-sale.info/listings/catalog/2971"
-  },
-  {
-   "fips": "26043",
-   "state": "MI",
-   "name": "Dickinson County",
-   "date": "2026-10-30",
-   "kind": "posted",
-   "parcels": 43,
-   "page": "https://www.tax-sale.info/listings/catalog/2973"
-  },
-  {
-   "fips": "26049",
-   "state": "MI",
-   "name": "Genesee County",
-   "date": "2026-10-30",
-   "kind": "posted",
-   "parcels": 1950,
-   "page": "https://www.tax-sale.info/listings/catalog/3013"
-  },
-  {
-   "fips": "26051",
-   "state": "MI",
-   "name": "Gladwin County",
-   "date": "2026-10-30",
-   "kind": "posted",
-   "parcels": 117,
-   "page": "https://www.tax-sale.info/listings/catalog/2948"
-  },
-  {
-   "fips": "26057",
-   "state": "MI",
-   "name": "Gratiot County",
-   "date": "2026-10-30",
-   "kind": "posted",
-   "parcels": 48,
-   "page": "https://www.tax-sale.info/listings/catalog/2958"
-  },
-  {
-   "fips": "26059",
-   "state": "MI",
-   "name": "Hillsdale County",
-   "date": "2026-10-30",
-   "kind": "posted",
-   "parcels": 43,
-   "page": "https://www.tax-sale.info/listings/catalog/3006"
-  },
-  {
-   "fips": "26063",
-   "state": "MI",
-   "name": "Huron County",
-   "date": "2026-10-30",
-   "kind": "posted",
-   "parcels": 44,
-   "page": "https://www.tax-sale.info/listings/catalog/2949"
-  },
-  {
-   "fips": "26067",
-   "state": "MI",
-   "name": "Ionia County",
-   "date": "2026-10-30",
-   "kind": "posted",
-   "parcels": 29,
-   "page": "https://www.tax-sale.info/listings/catalog/2959"
-  },
-  {
-   "fips": "26069",
-   "state": "MI",
-   "name": "Iosco County",
-   "date": "2026-10-30",
-   "kind": "posted",
-   "parcels": 103,
-   "page": "https://www.tax-sale.info/listings/catalog/2985"
-  },
-  {
-   "fips": "26071",
-   "state": "MI",
-   "name": "Iron County",
-   "date": "2026-10-30",
-   "kind": "posted",
-   "parcels": 36,
-   "page": "https://www.tax-sale.info/listings/catalog/2974"
-  },
-  {
-   "fips": "26075",
-   "state": "MI",
-   "name": "Jackson County",
-   "date": "2026-10-30",
-   "kind": "posted",
-   "parcels": 227,
-   "page": "https://www.tax-sale.info/listings/catalog/3009"
-  },
-  {
-   "fips": "26077",
-   "state": "MI",
-   "name": "Kalamazoo County",
-   "date": "2026-10-30",
-   "kind": "posted",
-   "parcels": 115,
-   "page": "https://www.tax-sale.info/listings/catalog/2954"
-  },
-  {
-   "fips": "26081",
-   "state": "MI",
-   "name": "Kent County",
-   "date": "2026-10-30",
-   "kind": "posted",
-   "parcels": 49,
-   "page": "https://www.tax-sale.info/listings/catalog/3000"
-  },
-  {
-   "fips": "26085",
-   "state": "MI",
-   "name": "Lake County",
-   "date": "2026-10-30",
-   "kind": "posted",
-   "parcels": 165,
-   "page": "https://www.tax-sale.info/listings/catalog/3008"
-  },
-  {
-   "fips": "26087",
-   "state": "MI",
-   "name": "Lapeer County",
-   "date": "2026-10-30",
-   "kind": "posted",
-   "parcels": 27,
-   "page": "https://www.tax-sale.info/listings/catalog/2950"
-  },
-  {
-   "fips": "26101",
-   "state": "MI",
-   "name": "Manistee County",
-   "date": "2026-10-30",
-   "kind": "posted",
-   "parcels": 27,
-   "page": "https://www.tax-sale.info/listings/catalog/3003"
-  },
-  {
-   "fips": "26103",
-   "state": "MI",
-   "name": "Marquette County",
-   "date": "2026-10-30",
-   "kind": "posted",
-   "parcels": 47,
-   "page": "https://www.tax-sale.info/listings/catalog/2975"
-  },
-  {
-   "fips": "26105",
-   "state": "MI",
-   "name": "Mason County",
-   "date": "2026-10-30",
-   "kind": "posted",
-   "parcels": 35,
-   "page": "https://www.tax-sale.info/listings/catalog/3005"
-  },
-  {
-   "fips": "26109",
-   "state": "MI",
-   "name": "Menominee County",
-   "date": "2026-10-30",
-   "kind": "posted",
-   "parcels": 18,
-   "page": "https://www.tax-sale.info/listings/catalog/2976"
-  },
-  {
-   "fips": "26115",
-   "state": "MI",
-   "name": "Monroe County",
-   "date": "2026-10-30",
-   "kind": "posted",
-   "parcels": 69,
-   "page": "https://www.tax-sale.info/listings/catalog/3010"
-  },
-  {
-   "fips": "26117",
-   "state": "MI",
-   "name": "Montcalm County",
-   "date": "2026-10-30",
-   "kind": "posted",
-   "parcels": 58,
-   "page": "https://www.tax-sale.info/listings/catalog/2960"
-  },
-  {
-   "fips": "26121",
-   "state": "MI",
-   "name": "Muskegon County",
-   "date": "2026-10-30",
-   "kind": "posted",
-   "parcels": 140,
-   "page": "https://www.tax-sale.info/listings/catalog/3001"
-  },
-  {
-   "fips": "26125",
-   "state": "MI",
-   "name": "Oakland County",
-   "date": "2026-10-30",
-   "kind": "posted",
-   "parcels": 364,
-   "page": "https://www.tax-sale.info/listings/catalog/2999"
-  },
-  {
-   "fips": "26131",
-   "state": "MI",
-   "name": "Ontonagon County",
-   "date": "2026-10-30",
-   "kind": "posted",
-   "parcels": 17,
-   "page": "https://www.tax-sale.info/listings/catalog/2977"
-  },
-  {
-   "fips": "26133",
-   "state": "MI",
-   "name": "Osceola County",
-   "date": "2026-10-30",
-   "kind": "posted",
-   "parcels": 102,
-   "page": "https://www.tax-sale.info/listings/catalog/2970"
-  },
-  {
-   "fips": "26135",
-   "state": "MI",
-   "name": "Oscoda County",
-   "date": "2026-10-30",
-   "kind": "posted",
-   "parcels": 29,
-   "page": "https://www.tax-sale.info/listings/catalog/2978"
-  },
-  {
-   "fips": "26137",
-   "state": "MI",
-   "name": "Otsego County",
-   "date": "2026-10-30",
-   "kind": "posted",
-   "parcels": 104,
-   "page": "https://www.tax-sale.info/listings/catalog/2979"
-  },
-  {
-   "fips": "26139",
-   "state": "MI",
-   "name": "Ottawa County",
-   "date": "2026-10-30",
-   "kind": "posted",
-   "parcels": 19,
-   "page": "https://www.tax-sale.info/listings/catalog/3002"
-  },
-  {
-   "fips": "26141",
-   "state": "MI",
-   "name": "Presque Isle County",
-   "date": "2026-10-30",
-   "kind": "posted",
-   "parcels": 102,
-   "page": "https://www.tax-sale.info/listings/catalog/2986"
-  },
-  {
-   "fips": "26143",
-   "state": "MI",
-   "name": "Roscommon County",
-   "date": "2026-10-30",
-   "kind": "posted",
-   "parcels": 79,
-   "page": "https://www.tax-sale.info/listings/catalog/2980"
-  },
-  {
-   "fips": "26145",
-   "state": "MI",
-   "name": "Saginaw County",
-   "date": "2026-10-30",
-   "kind": "posted",
-   "parcels": 685,
-   "page": "https://www.tax-sale.info/listings/catalog/3011"
-  },
-  {
-   "fips": "26153",
-   "state": "MI",
-   "name": "Schoolcraft County",
-   "date": "2026-10-30",
-   "kind": "posted",
-   "parcels": 43,
-   "page": "https://www.tax-sale.info/listings/catalog/2972"
-  },
-  {
-   "fips": "26155",
-   "state": "MI",
-   "name": "Shiawassee County",
-   "date": "2026-10-30",
-   "kind": "posted",
-   "parcels": 39,
-   "page": "https://www.tax-sale.info/listings/catalog/2961"
-  },
-  {
-   "fips": "26147",
-   "state": "MI",
-   "name": "St. Clair County",
-   "date": "2026-10-30",
-   "kind": "posted",
-   "parcels": 64,
-   "page": "https://www.tax-sale.info/listings/catalog/2951"
-  },
-  {
-   "fips": "26149",
-   "state": "MI",
-   "name": "St. Joseph County",
-   "date": "2026-10-30",
-   "kind": "posted",
-   "parcels": 48,
-   "page": "https://www.tax-sale.info/listings/catalog/2955"
-  },
-  {
-   "fips": "26157",
-   "state": "MI",
-   "name": "Tuscola County",
-   "date": "2026-10-30",
-   "kind": "posted",
-   "parcels": 65,
-   "page": "https://www.tax-sale.info/listings/catalog/2952"
-  },
-  {
-   "fips": "39097",
-   "state": "OH",
-   "name": "Madison County",
-   "date": "2026-10-30",
-   "kind": "posted",
-   "parcels": 12,
-   "page": "https://madison.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "39101",
-   "state": "OH",
-   "name": "Marion County",
-   "date": "2026-10-30",
-   "kind": "posted",
-   "parcels": 18,
-   "page": "https://marion.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "42063",
-   "state": "PA",
-   "name": "Indiana County",
-   "date": "2026-10-30",
-   "kind": "posted",
-   "parcels": 17,
-   "page": "https://www.bid4assets.com/IndianaCountyPASheriff/listings"
-  },
-  {
-   "fips": "53027",
-   "state": "WA",
-   "name": "Grays Harbor County",
-   "date": "2026-10-30",
-   "kind": "posted",
-   "parcels": 20,
-   "page": "https://www.bid4assets.com/storefront/GraysHarborSept26"
-  },
-  {
-   "fips": "06085",
-   "state": "CA",
-   "name": "Santa Clara County",
-   "date": "2026-11-02",
-   "kind": "posted",
-   "parcels": 52,
-   "page": "https://www.bid4assets.com/storefront/SantaClaraOct26"
-  },
-  {
-   "fips": "12069",
-   "state": "FL",
-   "name": "Lake County",
-   "date": "2026-11-03",
-   "kind": "posted",
-   "parcels": 76,
-   "page": "https://lake.realtaxdeed.com"
-  },
-  {
-   "fips": "13063",
-   "state": "GA",
-   "name": "Clayton County",
-   "date": "2026-11-03",
-   "kind": "posted",
-   "parcels": 412,
-   "page": "https://publicaccess.claytoncountyga.gov/content/home_commissioner.htm"
-  },
-  {
-   "fips": "13089",
-   "state": "GA",
-   "name": "DeKalb County",
-   "date": "2026-11-03",
-   "kind": "posted",
-   "parcels": 436,
-   "page": "https://dekalbtaxga.gov/property-tax/tax-sales/"
-  },
-  {
-   "fips": "18143",
-   "state": "IN",
-   "name": "Scott County",
-   "date": "2026-11-03",
-   "kind": "posted",
-   "parcels": 99,
-   "page": "https://www.sriservices.com/county/IN/Scott"
-  },
-  {
-   "fips": "37149",
-   "state": "NC",
-   "name": "Polk County",
-   "date": "2026-11-03",
-   "kind": "posted",
-   "parcels": 1,
-   "page": "https://kanialawfirm.com/tax-foreclosures/foreclosure-listings/"
-  },
-  {
-   "fips": "39019",
-   "state": "OH",
-   "name": "Carroll County",
-   "date": "2026-11-03",
-   "kind": "posted",
-   "parcels": 3,
-   "page": "https://carroll.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "39057",
-   "state": "OH",
-   "name": "Greene County",
-   "date": "2026-11-03",
-   "kind": "posted",
-   "parcels": 17,
-   "page": "https://greene.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "39069",
-   "state": "OH",
-   "name": "Henry County",
-   "date": "2026-11-03",
-   "kind": "posted",
-   "parcels": 6,
-   "page": "https://henry.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "47053",
-   "state": "TN",
-   "name": "Gibson County",
-   "date": "2026-11-03",
-   "kind": "posted",
-   "parcels": 25,
-   "page": "https://liveauctions.govease.com/TN/gibsonhumboldt/1097/browsestandard"
-  },
-  {
-   "fips": "48055",
-   "state": "TX",
-   "name": "Caldwell County",
-   "date": "2026-11-03",
-   "kind": "posted",
-   "parcels": 10,
-   "page": "https://caldwell.texas.sheriffsaleauctions.com"
-  },
-  {
-   "fips": "48061",
-   "state": "TX",
-   "name": "Cameron County",
-   "date": "2026-11-03",
-   "kind": "posted",
-   "parcels": 117,
-   "page": "https://cameron.texas.sheriffsaleauctions.com"
-  },
-  {
-   "fips": "48073",
-   "state": "TX",
-   "name": "Cherokee County",
-   "date": "2026-11-03",
-   "kind": "posted",
-   "parcels": 272,
-   "page": "https://www.mvbataxsales.com/auction/cherokee-county-online-property-tax-sale-november-3-2026-186/"
-  },
-  {
-   "fips": "48091",
-   "state": "TX",
-   "name": "Comal County",
-   "date": "2026-11-03",
-   "kind": "posted",
-   "parcels": 254,
-   "page": "https://www.mvbataxsales.com/auction/comal-county-online-property-tax-sale-november-3-2026-185/"
-  },
-  {
-   "fips": "48113",
-   "state": "TX",
-   "name": "Dallas County",
-   "date": "2026-11-03",
-   "kind": "posted",
-   "parcels": 149,
-   "page": "https://dallas.texas.sheriffsaleauctions.com"
-  },
-  {
-   "fips": "48121",
-   "state": "TX",
-   "name": "Denton County",
-   "date": "2026-11-03",
-   "kind": "posted",
-   "parcels": 18,
-   "page": "https://liveauctions.govease.com/TX/txdenton/1355/browsestandard"
-  },
-  {
-   "fips": "48141",
-   "state": "TX",
-   "name": "El Paso County",
-   "date": "2026-11-03",
-   "kind": "posted",
-   "parcels": 49,
-   "page": "https://elpaso.texas.sheriffsaleauctions.com"
-  },
-  {
-   "fips": "48167",
-   "state": "TX",
-   "name": "Galveston County",
-   "date": "2026-11-03",
-   "kind": "posted",
-   "parcels": 131,
-   "page": "https://galveston.texas.sheriffsaleauctions.com"
-  },
-  {
-   "fips": "48181",
-   "state": "TX",
-   "name": "Grayson County",
-   "date": "2026-11-03",
-   "kind": "posted",
-   "parcels": 22,
-   "page": "https://liveauctions.govease.com/TX/txgrayson/1280/browsestandard"
-  },
-  {
-   "fips": "48183",
-   "state": "TX",
-   "name": "Gregg County",
-   "date": "2026-11-03",
-   "kind": "posted",
-   "parcels": 99,
-   "page": "https://gregg.texas.sheriffsaleauctions.com"
-  },
-  {
-   "fips": "48309",
-   "state": "TX",
-   "name": "McLennan County",
-   "date": "2026-11-03",
-   "kind": "posted",
-   "parcels": 35,
-   "page": "https://liveauctions.govease.com/TX/txmclennan/1444/browsestandard"
-  },
-  {
-   "fips": "48355",
-   "state": "TX",
-   "name": "Nueces County",
-   "date": "2026-11-03",
-   "kind": "posted",
-   "parcels": 124,
-   "page": "https://nueces.texas.sheriffsaleauctions.com"
-  },
-  {
-   "fips": "48363",
-   "state": "TX",
-   "name": "Palo Pinto County",
-   "date": "2026-11-03",
-   "kind": "posted",
-   "parcels": 11,
-   "page": "https://liveauctions.govease.com/TX/txpalopinto/1558/browsestandard"
-  },
-  {
-   "fips": "48367",
-   "state": "TX",
-   "name": "Parker County",
-   "date": "2026-11-03",
-   "kind": "posted",
-   "parcels": 9,
-   "page": "https://liveauctions.govease.com/TX/txparker/1545/browsestandard"
-  },
-  {
-   "fips": "48423",
-   "state": "TX",
-   "name": "Smith County",
-   "date": "2026-11-03",
-   "kind": "posted",
-   "parcels": 44,
-   "page": "https://smith.texas.sheriffsaleauctions.com"
-  },
-  {
-   "fips": "48485",
-   "state": "TX",
-   "name": "Wichita County",
-   "date": "2026-11-03",
-   "kind": "posted",
-   "parcels": 14,
-   "page": "https://liveauctions.govease.com/TX/txwichita/1429/browsestandard"
-  },
-  {
-   "fips": "08083",
-   "state": "CO",
-   "name": "Montezuma County",
-   "date": "2026-11-04",
-   "kind": "posted",
-   "parcels": 823,
-   "page": "https://liveauctions.govease.com/CO/comontezuma/1233/browsestandard"
-  },
-  {
-   "fips": "08099",
-   "state": "CO",
-   "name": "Prowers County",
-   "date": "2026-11-04",
-   "kind": "posted",
-   "parcels": 482,
-   "page": "https://liveauctions.govease.com/CO/coprowers/1234/browsestandard"
-  },
-  {
-   "fips": "08121",
-   "state": "CO",
-   "name": "Washington County",
-   "date": "2026-11-04",
-   "kind": "posted",
-   "parcels": 376,
-   "page": "https://liveauctions.govease.com/CO/cowashington/1293/browsestandard"
-  },
-  {
-   "fips": "12053",
-   "state": "FL",
-   "name": "Hernando County",
-   "date": "2026-11-04",
-   "kind": "posted",
-   "parcels": 149,
-   "page": "https://hernando.realtaxdeed.com"
-  },
-  {
-   "fips": "18007",
-   "state": "IN",
-   "name": "Benton County",
-   "date": "2026-11-04",
-   "kind": "posted",
-   "parcels": 19,
-   "page": "https://www.sriservices.com/county/IN/Benton"
-  },
-  {
-   "fips": "18133",
-   "state": "IN",
-   "name": "Putnam County",
-   "date": "2026-11-04",
-   "kind": "posted",
-   "parcels": 66,
-   "page": "https://www.sriservices.com/county/IN/Putnam"
-  },
-  {
-   "fips": "18157",
-   "state": "IN",
-   "name": "Tippecanoe County",
-   "date": "2026-11-04",
-   "kind": "posted",
-   "parcels": 82,
-   "page": "https://www.sriservices.com/county/IN/Tippecanoe"
-  },
-  {
-   "fips": "22113",
-   "state": "LA",
-   "name": "Vermilion Parish",
-   "date": "2026-11-04",
-   "kind": "posted",
-   "parcels": 86,
-   "page": "https://www.bid4assets.com/vermilionsheriffsales/listings"
-  },
-  {
-   "fips": "39047",
-   "state": "OH",
-   "name": "Fayette County",
-   "date": "2026-11-04",
-   "kind": "posted",
-   "parcels": 11,
-   "page": "https://fayette.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "39107",
-   "state": "OH",
-   "name": "Mercer County",
-   "date": "2026-11-04",
-   "kind": "posted",
-   "parcels": 13,
-   "page": "https://mercer.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "39141",
-   "state": "OH",
-   "name": "Ross County",
-   "date": "2026-11-04",
-   "kind": "posted",
-   "parcels": 18,
-   "page": "https://ross.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "39145",
-   "state": "OH",
-   "name": "Scioto County",
-   "date": "2026-11-04",
-   "kind": "posted",
-   "parcels": 16,
-   "page": "https://scioto.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "42007",
-   "state": "PA",
-   "name": "Beaver County",
-   "date": "2026-11-04",
-   "kind": "posted",
-   "parcels": 51,
-   "page": "https://www.bid4assets.com/beavercountypasheriffsales"
-  },
-  {
-   "fips": "08011",
-   "state": "CO",
-   "name": "Bent County",
-   "date": "2026-11-05",
-   "kind": "posted",
-   "parcels": 419,
-   "page": "https://liveauctions.govease.com/CO/cobent/1295/browsestandard"
-  },
-  {
-   "fips": "08065",
-   "state": "CO",
-   "name": "Lake County",
-   "date": "2026-11-05",
-   "kind": "posted",
-   "parcels": 320,
-   "page": "https://liveauctions.govease.com/CO/colake/1386/browsestandard"
-  },
-  {
-   "fips": "12121",
-   "state": "FL",
-   "name": "Suwannee County",
-   "date": "2026-11-05",
-   "kind": "posted",
-   "parcels": 77,
-   "page": "https://suwannee.realtaxdeed.com"
-  },
-  {
-   "fips": "18011",
-   "state": "IN",
-   "name": "Boone County",
-   "date": "2026-11-05",
-   "kind": "posted",
-   "parcels": 14,
-   "page": "https://www.sriservices.com/county/IN/Boone"
-  },
-  {
-   "fips": "18065",
-   "state": "IN",
-   "name": "Henry County",
-   "date": "2026-11-05",
-   "kind": "posted",
-   "parcels": 168,
-   "page": "https://www.sriservices.com/county/IN/Henry"
-  },
-  {
-   "fips": "18139",
-   "state": "IN",
-   "name": "Rush County",
-   "date": "2026-11-05",
-   "kind": "posted",
-   "parcels": 29,
-   "page": "https://www.sriservices.com/county/IN/Rush"
-  },
-  {
-   "fips": "18145",
-   "state": "IN",
-   "name": "Shelby County",
-   "date": "2026-11-05",
-   "kind": "posted",
-   "parcels": 102,
-   "page": "https://www.sriservices.com/county/IN/Shelby"
-  },
-  {
-   "fips": "18159",
-   "state": "IN",
-   "name": "Tipton County",
-   "date": "2026-11-05",
-   "kind": "posted",
-   "parcels": 27,
-   "page": "https://www.sriservices.com/county/IN/Tipton"
-  },
-  {
-   "fips": "39011",
-   "state": "OH",
-   "name": "Auglaize County",
-   "date": "2026-11-05",
-   "kind": "posted",
-   "parcels": 15,
-   "page": "https://auglaize.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "39055",
-   "state": "OH",
-   "name": "Geauga County",
-   "date": "2026-11-05",
-   "kind": "posted",
-   "parcels": 17,
-   "page": "https://geauga.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "39173",
-   "state": "OH",
-   "name": "Wood County",
-   "date": "2026-11-05",
-   "kind": "posted",
-   "parcels": 14,
-   "page": "https://wood.sheriffsaleauction.ohio.gov"
-  },
-  {
-   "fips": "47161",
-   "state": "TN",
-   "name": "Stewart County",
-   "date": "2026-11-05",
-   "kind": "posted",
-   "parcels": 26,
-   "page": "https://liveauctions.govease.com/TN/tnstewart/1244/browsestandard"
-  },
-  {
-   "fips": "06017",
-   "state": "CA",
-   "name": "El Dorado County",
-   "date": "2026-11-06",
-   "kind": "posted",
-   "parcels": 143,
-   "page": "https://www.bid4assets.com/storefront/ElDoradoNov26"
-  },
-  {
-   "fips": "12035",
-   "state": "FL",
-   "name": "Flagler County",
-   "date": "2026-11-06",
-   "kind": "posted",
-   "parcels": 134,
-   "page": "https://flagler.realtaxdeed.com"
-  },
-  {
-   "fips": "17059",
-   "state": "IL",
-   "name": "Gallatin County",
-   "date": "2026-11-06",
-   "kind": "posted",
-   "parcels": 14,
-   "page": "https://iltaxsale.com/new/index.php/county/Gallatin/GAL"
-  },
-  {
-   "fips": "17065",
-   "state": "IL",
-   "name": "Hamilton County",
-   "date": "2026-11-06",
-   "kind": "posted",
-   "parcels": 29,
-   "page": "https://iltaxsale.com/new/index.php/county/Hamilton/HAM"
-  },
-  {
-   "fips": "17069",
-   "state": "IL",
-   "name": "Hardin County",
-   "date": "2026-11-06",
-   "kind": "posted",
-   "parcels": 102,
-   "page": "https://iltaxsale.com/new/index.php/county/Hardin/HAR"
-  },
-  {
-   "fips": "17165",
-   "state": "IL",
-   "name": "Saline County",
-   "date": "2026-11-06",
-   "kind": "posted",
-   "parcels": 309,
-   "page": "https://iltaxsale.com/new/index.php/county/Saline/SAL"
-  },
-  {
-   "fips": "17199",
-   "state": "IL",
-   "name": "Williamson County",
-   "date": "2026-11-06",
-   "kind": "posted",
-   "parcels": 472,
-   "page": "https://iltaxsale.com/new/index.php/county/Williamson/WMS"
-  },
   {
    "fips": "39045",
    "state": "OH",
@@ -1119,13 +12,40 @@
    "page": "https://fairfield.sheriffsaleauction.ohio.gov"
   },
   {
+   "fips": "39049",
+   "state": "OH",
+   "name": "Franklin County",
+   "date": "2026-11-06",
+   "kind": "posted",
+   "parcels": 170,
+   "page": "https://franklin.sheriffsaleauction.ohio.gov"
+  },
+  {
    "fips": "39073",
    "state": "OH",
    "name": "Hocking County",
    "date": "2026-11-06",
    "kind": "posted",
-   "parcels": 6,
+   "parcels": 5,
    "page": "https://hocking.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39079",
+   "state": "OH",
+   "name": "Jackson County",
+   "date": "2026-11-06",
+   "kind": "posted",
+   "parcels": 10,
+   "page": "https://jackson.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39083",
+   "state": "OH",
+   "name": "Knox County",
+   "date": "2026-11-06",
+   "kind": "posted",
+   "parcels": 44,
+   "page": "https://knox.sheriffsaleauction.ohio.gov"
   },
   {
    "fips": "39087",
@@ -1133,8 +53,35 @@
    "name": "Lawrence County",
    "date": "2026-11-06",
    "kind": "posted",
-   "parcels": 17,
+   "parcels": 10,
    "page": "https://lawrence.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39101",
+   "state": "OH",
+   "name": "Marion County",
+   "date": "2026-11-06",
+   "kind": "posted",
+   "parcels": 21,
+   "page": "https://marion.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39113",
+   "state": "OH",
+   "name": "Montgomery County",
+   "date": "2026-11-06",
+   "kind": "posted",
+   "parcels": 117,
+   "page": "https://montgomery.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39123",
+   "state": "OH",
+   "name": "Ottawa County",
+   "date": "2026-11-06",
+   "kind": "posted",
+   "parcels": 17,
+   "page": "https://ottawa.sheriffsaleauction.ohio.gov"
   },
   {
    "fips": "39127",
@@ -1142,8 +89,17 @@
    "name": "Perry County",
    "date": "2026-11-06",
    "kind": "posted",
-   "parcels": 6,
+   "parcels": 4,
    "page": "https://perry.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39139",
+   "state": "OH",
+   "name": "Richland County",
+   "date": "2026-11-06",
+   "kind": "posted",
+   "parcels": 17,
+   "page": "https://richland.sheriffsaleauction.ohio.gov"
   },
   {
    "fips": "39167",
@@ -1151,8 +107,35 @@
    "name": "Washington County",
    "date": "2026-11-06",
    "kind": "posted",
-   "parcels": 13,
+   "parcels": 10,
    "page": "https://washington.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "08101",
+   "state": "CO",
+   "name": "Pueblo County",
+   "date": "2026-11-09",
+   "kind": "posted",
+   "parcels": 2713,
+   "page": "https://www.sriservices.com/county/CO/Pueblo"
+  },
+  {
+   "fips": "12041",
+   "state": "FL",
+   "name": "Gilchrist County",
+   "date": "2026-11-09",
+   "kind": "posted",
+   "parcels": 28,
+   "page": "https://gilchrist.realtaxdeed.com"
+  },
+  {
+   "fips": "39133",
+   "state": "OH",
+   "name": "Portage County",
+   "date": "2026-11-09",
+   "kind": "posted",
+   "parcels": 7,
+   "page": "https://portage.sheriffsaleauction.ohio.gov"
   },
   {
    "fips": "39137",
@@ -1160,7 +143,7 @@
    "name": "Putnam County",
    "date": "2026-11-09",
    "kind": "posted",
-   "parcels": 12,
+   "parcels": 7,
    "page": "https://putnam.sheriffsaleauction.ohio.gov"
   },
   {
@@ -1173,12 +156,21 @@
    "page": "https://liveauctions.govease.com/CO/cophillips/1356/browsestandard"
   },
   {
+   "fips": "08125",
+   "state": "CO",
+   "name": "Yuma County",
+   "date": "2026-11-10",
+   "kind": "posted",
+   "parcels": 565,
+   "page": "https://www.sriservices.com/county/CO/Yuma"
+  },
+  {
    "fips": "09190",
    "state": "CT",
    "name": "Western Connecticut Planning Region",
    "date": "2026-11-10",
    "kind": "posted",
-   "parcels": 6,
+   "parcels": 4,
    "page": "https://cttaxsales.com/upcoming-tax-sales/"
   },
   {
@@ -1187,8 +179,17 @@
    "name": "Osceola County",
    "date": "2026-11-10",
    "kind": "posted",
-   "parcels": 187,
+   "parcels": 157,
    "page": "https://osceola.realtaxdeed.com"
+  },
+  {
+   "fips": "18067",
+   "state": "IN",
+   "name": "Howard County",
+   "date": "2026-11-10",
+   "kind": "posted",
+   "parcels": 269,
+   "page": "https://www.sriservices.com/county/IN/Howard"
   },
   {
    "fips": "18071",
@@ -1196,7 +197,7 @@
    "name": "Jackson County",
    "date": "2026-11-10",
    "kind": "posted",
-   "parcels": 47,
+   "parcels": 49,
    "page": "https://www.sriservices.com/county/IN/Jackson"
   },
   {
@@ -1223,8 +224,17 @@
    "name": "Rowan County",
    "date": "2026-11-10",
    "kind": "posted",
-   "parcels": 23,
+   "parcels": 19,
    "page": "https://kanialawfirm.com/tax-foreclosures/foreclosure-listings/"
+  },
+  {
+   "fips": "39005",
+   "state": "OH",
+   "name": "Ashland County",
+   "date": "2026-11-10",
+   "kind": "posted",
+   "parcels": 7,
+   "page": "https://ashland.sheriffsaleauction.ohio.gov"
   },
   {
    "fips": "39021",
@@ -1232,7 +242,7 @@
    "name": "Champaign County",
    "date": "2026-11-10",
    "kind": "posted",
-   "parcels": 12,
+   "parcels": 7,
    "page": "https://champaign.sheriffsaleauction.ohio.gov"
   },
   {
@@ -1241,8 +251,17 @@
    "name": "Erie County",
    "date": "2026-11-10",
    "kind": "posted",
-   "parcels": 24,
+   "parcels": 17,
    "page": "https://erie.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "40109",
+   "state": "OK",
+   "name": "Oklahoma County",
+   "date": "2026-11-10",
+   "kind": "posted",
+   "parcels": 63,
+   "page": "https://www.bid4assets.com/OKCSheriff"
   },
   {
    "fips": "47163",
@@ -1254,13 +273,31 @@
    "page": "https://liveauctions.govease.com/TN/tnsullivanjudicialfc/1557/browsestandard"
   },
   {
+   "fips": "53053",
+   "state": "WA",
+   "name": "Pierce County",
+   "date": "2026-11-10",
+   "kind": "posted",
+   "parcels": 123,
+   "page": "https://www.bid4assets.com/storefront/PierceFDOct26"
+  },
+  {
    "fips": "18041",
    "state": "IN",
    "name": "Fayette County",
    "date": "2026-11-11",
    "kind": "posted",
-   "parcels": 87,
+   "parcels": 89,
    "page": "https://www.sriservices.com/county/IN/Fayette"
+  },
+  {
+   "fips": "39041",
+   "state": "OH",
+   "name": "Delaware County",
+   "date": "2026-11-11",
+   "kind": "posted",
+   "parcels": 10,
+   "page": "https://delaware.sheriffsaleauction.ohio.gov"
   },
   {
    "fips": "42025",
@@ -1268,8 +305,17 @@
    "name": "Carbon County",
    "date": "2026-11-11",
    "kind": "posted",
-   "parcels": 80,
+   "parcels": 63,
    "page": "https://www.bid4assets.com/CarbonPASheriffSales"
+  },
+  {
+   "fips": "08087",
+   "state": "CO",
+   "name": "Morgan County",
+   "date": "2026-11-12",
+   "kind": "posted",
+   "parcels": 324,
+   "page": "https://www.sriservices.com/county/CO/Morgan"
   },
   {
    "fips": "09120",
@@ -1286,7 +332,7 @@
    "name": "St. Johns County",
    "date": "2026-11-12",
    "kind": "posted",
-   "parcels": 3337,
+   "parcels": 3319,
    "page": "https://saintjohns.realforeclose.com"
   },
   {
@@ -1295,7 +341,7 @@
    "name": "Knox County",
    "date": "2026-11-12",
    "kind": "posted",
-   "parcels": 327,
+   "parcels": 184,
    "page": "https://www.sriservices.com/county/IN/Knox"
   },
   {
@@ -1304,17 +350,26 @@
    "name": "Warrick County",
    "date": "2026-11-12",
    "kind": "posted",
-   "parcels": 135,
+   "parcels": 138,
    "page": "https://www.sriservices.com/county/IN/Warrick"
   },
   {
-   "fips": "36031",
-   "state": "NY",
-   "name": "Essex County",
+   "fips": "39119",
+   "state": "OH",
+   "name": "Muskingum County",
    "date": "2026-11-12",
    "kind": "posted",
-   "parcels": 0,
-   "page": "https://aarauctions.com/auctions/tax-foreclosures/"
+   "parcels": 37,
+   "page": "https://muskingum.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "42089",
+   "state": "PA",
+   "name": "Monroe County",
+   "date": "2026-11-12",
+   "kind": "posted",
+   "parcels": 5159,
+   "page": "https://www.bid4assets.com/storefront/MonroePATaxMay26"
   },
   {
    "fips": "51115",
@@ -1322,7 +377,7 @@
    "name": "Mathews County",
    "date": "2026-11-12",
    "kind": "posted",
-   "parcels": 17,
+   "parcels": 8,
    "page": "https://www.forsaleatauction.biz/auctions/tax-delinquent-real-estate"
   },
   {
@@ -1349,7 +404,7 @@
    "name": "Massac County",
    "date": "2026-11-13",
    "kind": "posted",
-   "parcels": 63,
+   "parcels": 76,
    "page": "https://iltaxsale.com/new/index.php/county/Massac/MAS"
   },
   {
@@ -1367,8 +422,17 @@
    "name": "Pulaski County",
    "date": "2026-11-13",
    "kind": "posted",
-   "parcels": 93,
+   "parcels": 99,
    "page": "https://iltaxsale.com/new/index.php/county/Pulaski/PUL"
+  },
+  {
+   "fips": "18095",
+   "state": "IN",
+   "name": "Madison County",
+   "date": "2026-11-13",
+   "kind": "posted",
+   "parcels": 1058,
+   "page": "https://www.sriservices.com/county/IN/Madison"
   },
   {
    "fips": "22075",
@@ -1398,6 +462,15 @@
    "page": "https://gallia.sheriffsaleauction.ohio.gov"
   },
   {
+   "fips": "39097",
+   "state": "OH",
+   "name": "Madison County",
+   "date": "2026-11-13",
+   "kind": "posted",
+   "parcels": 12,
+   "page": "https://madison.sheriffsaleauction.ohio.gov"
+  },
+  {
    "fips": "39121",
    "state": "OH",
    "name": "Noble County",
@@ -1412,7 +485,7 @@
    "name": "Preble County",
    "date": "2026-11-13",
    "kind": "posted",
-   "parcels": 7,
+   "parcels": 6,
    "page": "https://preble.sheriffsaleauction.ohio.gov"
   },
   {
@@ -1421,8 +494,17 @@
    "name": "Franklin County",
    "date": "2026-11-13",
    "kind": "posted",
-   "parcels": 68,
+   "parcels": 84,
    "page": "https://www.bid4assets.com/franklincountypasheriffsales"
+  },
+  {
+   "fips": "53027",
+   "state": "WA",
+   "name": "Grays Harbor County",
+   "date": "2026-11-13",
+   "kind": "posted",
+   "parcels": 19,
+   "page": "https://www.bid4assets.com/storefront/GraysHarborSept26"
   },
   {
    "fips": "06009",
@@ -1443,6 +525,15 @@
    "page": "https://liveauctions.govease.com/CA/cakernreoffer/1564/browsestandard"
   },
   {
+   "fips": "06101",
+   "state": "CA",
+   "name": "Sutter County",
+   "date": "2026-11-16",
+   "kind": "posted",
+   "parcels": 52,
+   "page": "https://www.bid4assets.com/storefront/SutterNov26"
+  },
+  {
    "fips": "53005",
    "state": "WA",
    "name": "Benton County",
@@ -1452,13 +543,49 @@
    "page": "https://liveauctions.govease.com/WA/wabenton/1296/browsestandard"
   },
   {
+   "fips": "08025",
+   "state": "CO",
+   "name": "Crowley County",
+   "date": "2026-11-17",
+   "kind": "posted",
+   "parcels": 132,
+   "page": "https://liveauctions.govease.com/CO/cocrowley/1353/browsestandard"
+  },
+  {
+   "fips": "08047",
+   "state": "CO",
+   "name": "Gilpin County",
+   "date": "2026-11-17",
+   "kind": "posted",
+   "parcels": 419,
+   "page": "https://www.sriservices.com/county/CO/Gilpin"
+  },
+  {
+   "fips": "08051",
+   "state": "CO",
+   "name": "Gunnison County",
+   "date": "2026-11-17",
+   "kind": "posted",
+   "parcels": 577,
+   "page": "https://www.sriservices.com/county/CO/Gunnison"
+  },
+  {
    "fips": "09130",
    "state": "CT",
    "name": "Lower Connecticut River Valley Planning Region",
    "date": "2026-11-17",
    "kind": "posted",
-   "parcels": 19,
+   "parcels": 17,
    "page": "https://cttaxsales.com/upcoming-tax-sales/"
+  },
+  {
+   "fips": "18025",
+   "state": "IN",
+   "name": "Crawford County",
+   "date": "2026-11-17",
+   "kind": "posted",
+   "parcels": 54,
+   "page": "https://www.sriservices.com/county/IN/Crawford"
   },
   {
    "fips": "18049",
@@ -1479,12 +606,21 @@
    "page": "https://www.sriservices.com/county/IN/Martin"
   },
   {
+   "fips": "18117",
+   "state": "IN",
+   "name": "Orange County",
+   "date": "2026-11-17",
+   "kind": "posted",
+   "parcels": 51,
+   "page": "https://www.sriservices.com/county/IN/Orange"
+  },
+  {
    "fips": "18131",
    "state": "IN",
    "name": "Pulaski County",
    "date": "2026-11-17",
    "kind": "posted",
-   "parcels": 146,
+   "parcels": 148,
    "page": "https://www.sriservices.com/county/IN/Pulaski"
   },
   {
@@ -1493,8 +629,35 @@
    "name": "Spencer County",
    "date": "2026-11-17",
    "kind": "posted",
-   "parcels": 222,
+   "parcels": 225,
    "page": "https://www.sriservices.com/county/IN/Spencer"
+  },
+  {
+   "fips": "18175",
+   "state": "IN",
+   "name": "Washington County",
+   "date": "2026-11-17",
+   "kind": "posted",
+   "parcels": 60,
+   "page": "https://www.sriservices.com/county/IN/Washington"
+  },
+  {
+   "fips": "22121",
+   "state": "LA",
+   "name": "West Baton Rouge Parish",
+   "date": "2026-11-17",
+   "kind": "posted",
+   "parcels": 3,
+   "page": "https://www.bid4assets.com/storefront/WestBatonRougeSep26"
+  },
+  {
+   "fips": "37035",
+   "state": "NC",
+   "name": "Catawba County",
+   "date": "2026-11-17",
+   "kind": "posted",
+   "parcels": 4,
+   "page": "https://kanialawfirm.com/tax-foreclosures/foreclosure-listings/"
   },
   {
    "fips": "36073",
@@ -1506,22 +669,31 @@
    "page": "https://aarauctions.com/auctions/tax-foreclosures/"
   },
   {
-   "fips": "39005",
-   "state": "OH",
-   "name": "Ashland County",
-   "date": "2026-11-17",
-   "kind": "posted",
-   "parcels": 5,
-   "page": "https://ashland.sheriffsaleauction.ohio.gov"
-  },
-  {
    "fips": "39065",
    "state": "OH",
    "name": "Hardin County",
    "date": "2026-11-17",
    "kind": "posted",
-   "parcels": 11,
+   "parcels": 10,
    "page": "https://hardin.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39165",
+   "state": "OH",
+   "name": "Warren County",
+   "date": "2026-11-17",
+   "kind": "posted",
+   "parcels": 52,
+   "page": "https://warren.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "42005",
+   "state": "PA",
+   "name": "Armstrong County",
+   "date": "2026-11-17",
+   "kind": "posted",
+   "parcels": 588,
+   "page": "https://liveauctions.govease.com/PA/paarmstrongupset/1560/browsestandard"
   },
   {
    "fips": "47073",
@@ -1533,6 +705,15 @@
    "page": "https://liveauctions.govease.com/TN/tnhawkins/1283/browsestandard"
   },
   {
+   "fips": "47131",
+   "state": "TN",
+   "name": "Obion County",
+   "date": "2026-11-17",
+   "kind": "posted",
+   "parcels": 2,
+   "page": "https://liveauctions.govease.com/TN/tncobionspeccommissioner/1379/browsestandard"
+  },
+  {
    "fips": "53051",
    "state": "WA",
    "name": "Pend Oreille County",
@@ -1540,6 +721,24 @@
    "kind": "posted",
    "parcels": 5,
    "page": "https://www.bid4assets.com/storefront/PendOreilleNov26"
+  },
+  {
+   "fips": "53073",
+   "state": "WA",
+   "name": "Whatcom County",
+   "date": "2026-11-17",
+   "kind": "posted",
+   "parcels": 38,
+   "page": "https://www.bid4assets.com/storefront/WhatcomWANovNov26TaxTitle"
+  },
+  {
+   "fips": "12093",
+   "state": "FL",
+   "name": "Okeechobee County",
+   "date": "2026-11-18",
+   "kind": "posted",
+   "parcels": 69,
+   "page": "https://okeechobee.realforeclose.com"
   },
   {
    "fips": "18017",
@@ -1551,12 +750,21 @@
    "page": "https://www.sriservices.com/county/IN/Cass"
   },
   {
+   "fips": "18021",
+   "state": "IN",
+   "name": "Clay County",
+   "date": "2026-11-18",
+   "kind": "posted",
+   "parcels": 214,
+   "page": "https://www.sriservices.com/county/IN/Clay"
+  },
+  {
    "fips": "18035",
    "state": "IN",
    "name": "Delaware County",
    "date": "2026-11-18",
    "kind": "posted",
-   "parcels": 646,
+   "parcels": 650,
    "page": "https://www.sriservices.com/county/IN/Delaware"
   },
   {
@@ -1565,7 +773,7 @@
    "name": "Dubois County",
    "date": "2026-11-18",
    "kind": "posted",
-   "parcels": 37,
+   "parcels": 39,
    "page": "https://www.sriservices.com/county/IN/Dubois"
   },
   {
@@ -1574,7 +782,7 @@
    "name": "Harrison County",
    "date": "2026-11-18",
    "kind": "posted",
-   "parcels": 120,
+   "parcels": 77,
    "page": "https://www.sriservices.com/county/IN/Harrison"
   },
   {
@@ -1592,7 +800,7 @@
    "name": "Perry County",
    "date": "2026-11-18",
    "kind": "posted",
-   "parcels": 69,
+   "parcels": 70,
    "page": "https://www.sriservices.com/county/IN/Perry"
   },
   {
@@ -1601,8 +809,26 @@
    "name": "Pike County",
    "date": "2026-11-18",
    "kind": "posted",
-   "parcels": 222,
+   "parcels": 123,
    "page": "https://www.sriservices.com/county/IN/Pike"
+  },
+  {
+   "fips": "22047",
+   "state": "LA",
+   "name": "Iberville Parish",
+   "date": "2026-11-18",
+   "kind": "posted",
+   "parcels": 22,
+   "page": "https://www.bid4assets.com/IbervilleSheriffSales/listings"
+  },
+  {
+   "fips": "22105",
+   "state": "LA",
+   "name": "Tangipahoa Parish",
+   "date": "2026-11-18",
+   "kind": "posted",
+   "parcels": 342,
+   "page": "https://www.bid4assets.com/tangipahoalasheriffsales"
   },
   {
    "fips": "22117",
@@ -1610,7 +836,7 @@
    "name": "Washington Parish",
    "date": "2026-11-18",
    "kind": "posted",
-   "parcels": 20,
+   "parcels": 17,
    "page": "https://www.bid4assets.com/WPSOSheriffSales/listings"
   },
   {
@@ -1628,8 +854,35 @@
    "name": "Clinton County",
    "date": "2026-11-18",
    "kind": "posted",
-   "parcels": 14,
+   "parcels": 12,
    "page": "https://clinton.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39091",
+   "state": "OH",
+   "name": "Logan County",
+   "date": "2026-11-18",
+   "kind": "posted",
+   "parcels": 15,
+   "page": "https://logan.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39143",
+   "state": "OH",
+   "name": "Sandusky County",
+   "date": "2026-11-18",
+   "kind": "posted",
+   "parcels": 8,
+   "page": "https://sandusky.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39149",
+   "state": "OH",
+   "name": "Shelby County",
+   "date": "2026-11-18",
+   "kind": "posted",
+   "parcels": 6,
+   "page": "https://shelby.sheriffsaleauction.ohio.gov"
   },
   {
    "fips": "08009",
@@ -1637,7 +890,7 @@
    "name": "Baca County",
    "date": "2026-11-19",
    "kind": "posted",
-   "parcels": 424,
+   "parcels": 368,
    "page": "https://liveauctions.govease.com/CO/cobaca/1235/browsestandard"
   },
   {
@@ -1646,7 +899,7 @@
    "name": "Northeastern Connecticut Planning Region",
    "date": "2026-11-19",
    "kind": "posted",
-   "parcels": 11,
+   "parcels": 9,
    "page": "https://cttaxsales.com/upcoming-tax-sales/"
   },
   {
@@ -1682,7 +935,7 @@
    "name": "Johnson County",
    "date": "2026-11-19",
    "kind": "posted",
-   "parcels": 148,
+   "parcels": 149,
    "page": "https://www.sriservices.com/county/IN/Johnson"
   },
   {
@@ -1700,7 +953,7 @@
    "name": "Posey County",
    "date": "2026-11-19",
    "kind": "posted",
-   "parcels": 139,
+   "parcels": 145,
    "page": "https://www.sriservices.com/county/IN/Posey"
   },
   {
@@ -1709,8 +962,17 @@
    "name": "St. Joseph County",
    "date": "2026-11-19",
    "kind": "posted",
-   "parcels": 923,
+   "parcels": 938,
    "page": "https://www.sriservices.com/county/IN/St%20Joseph"
+  },
+  {
+   "fips": "18163",
+   "state": "IN",
+   "name": "Vanderburgh County",
+   "date": "2026-11-19",
+   "kind": "posted",
+   "parcels": 536,
+   "page": "https://www.sriservices.com/county/IN/Vanderburgh"
   },
   {
    "fips": "18165",
@@ -1727,8 +989,71 @@
    "name": "Vigo County",
    "date": "2026-11-19",
    "kind": "posted",
-   "parcels": 1042,
+   "parcels": 1044,
    "page": "https://www.sriservices.com/county/IN/Vigo"
+  },
+  {
+   "fips": "37009",
+   "state": "NC",
+   "name": "Ashe County",
+   "date": "2026-11-19",
+   "kind": "posted",
+   "parcels": 7,
+   "page": "https://kanialawfirm.com/tax-foreclosures/foreclosure-listings/"
+  },
+  {
+   "fips": "39089",
+   "state": "OH",
+   "name": "Licking County",
+   "date": "2026-11-19",
+   "kind": "posted",
+   "parcels": 29,
+   "page": "https://licking.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39103",
+   "state": "OH",
+   "name": "Medina County",
+   "date": "2026-11-19",
+   "kind": "posted",
+   "parcels": 35,
+   "page": "https://medina.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39147",
+   "state": "OH",
+   "name": "Seneca County",
+   "date": "2026-11-19",
+   "kind": "posted",
+   "parcels": 7,
+   "page": "https://seneca.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39157",
+   "state": "OH",
+   "name": "Tuscarawas County",
+   "date": "2026-11-19",
+   "kind": "posted",
+   "parcels": 7,
+   "page": "https://tuscarawas.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39161",
+   "state": "OH",
+   "name": "Van Wert County",
+   "date": "2026-11-19",
+   "kind": "posted",
+   "parcels": 11,
+   "page": "https://vanwert.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39171",
+   "state": "OH",
+   "name": "Williams County",
+   "date": "2026-11-19",
+   "kind": "posted",
+   "parcels": 7,
+   "page": "https://williams.sheriffsaleauction.ohio.gov"
   },
   {
    "fips": "42029",
@@ -1736,7 +1061,7 @@
    "name": "Chester County",
    "date": "2026-11-19",
    "kind": "posted",
-   "parcels": 109,
+   "parcels": 107,
    "page": "https://www.bid4assets.com/chestercopasheriffsales"
   },
   {
@@ -1749,12 +1074,21 @@
    "page": "https://www.bid4assets.com/elksheriffsales"
   },
   {
+   "fips": "42107",
+   "state": "PA",
+   "name": "Schuylkill County",
+   "date": "2026-11-19",
+   "kind": "posted",
+   "parcels": 1660,
+   "page": "https://www.bid4assets.com/storefront/SchuylkillPATaxSaleJun26"
+  },
+  {
    "fips": "51820",
    "state": "VA",
    "name": "Waynesboro city",
    "date": "2026-11-19",
    "kind": "posted",
-   "parcels": 0,
+   "parcels": 6,
    "page": "https://www.forsaleatauction.biz/auctions/tax-delinquent-real-estate"
   },
   {
@@ -1763,7 +1097,7 @@
    "name": "Jackson County",
    "date": "2026-11-20",
    "kind": "posted",
-   "parcels": 518,
+   "parcels": 532,
    "page": "https://iltaxsale.com/new/index.php/county/Jackson/JAC"
   },
   {
@@ -1772,7 +1106,7 @@
    "name": "Perry County",
    "date": "2026-11-20",
    "kind": "posted",
-   "parcels": 313,
+   "parcels": 331,
    "page": "https://iltaxsale.com/new/index.php/county/Perry/PER"
   },
   {
@@ -1794,6 +1128,15 @@
    "page": "https://iltaxsale.com/new/index.php/county/Union/UNI"
   },
   {
+   "fips": "18097",
+   "state": "IN",
+   "name": "Marion County",
+   "date": "2026-11-20",
+   "kind": "posted",
+   "parcels": 78,
+   "page": "https://liveauctions.govease.com/IN/inmarionsheriff/1375/browsestandard"
+  },
+  {
    "fips": "18105",
    "state": "IN",
    "name": "Monroe County",
@@ -1803,12 +1146,21 @@
    "page": "https://www.sriservices.com/county/IN/Monroe"
   },
   {
+   "fips": "39115",
+   "state": "OH",
+   "name": "Morgan County",
+   "date": "2026-11-20",
+   "kind": "posted",
+   "parcels": 5,
+   "page": "https://morgan.sheriffsaleauction.ohio.gov"
+  },
+  {
    "fips": "39131",
    "state": "OH",
    "name": "Pike County",
    "date": "2026-11-20",
    "kind": "posted",
-   "parcels": 9,
+   "parcels": 8,
    "page": "https://pike.sheriffsaleauction.ohio.gov"
   },
   {
@@ -1817,8 +1169,17 @@
    "name": "Adams County",
    "date": "2026-11-20",
    "kind": "posted",
-   "parcels": 49,
+   "parcels": 56,
    "page": "https://www.bid4assets.com/adamscountysheriffsales"
+  },
+  {
+   "fips": "42063",
+   "state": "PA",
+   "name": "Indiana County",
+   "date": "2026-11-20",
+   "kind": "posted",
+   "parcels": 23,
+   "page": "https://www.bid4assets.com/IndianaCountyPASheriff/listings"
   },
   {
    "fips": "18001",
@@ -1826,8 +1187,62 @@
    "name": "Adams County",
    "date": "2026-11-24",
    "kind": "posted",
-   "parcels": 29,
+   "parcels": 22,
    "page": "https://www.sriservices.com/county/IN/Adams"
+  },
+  {
+   "fips": "18069",
+   "state": "IN",
+   "name": "Huntington County",
+   "date": "2026-11-24",
+   "kind": "posted",
+   "parcels": 61,
+   "page": "https://www.sriservices.com/county/IN/Huntington"
+  },
+  {
+   "fips": "18085",
+   "state": "IN",
+   "name": "Kosciusko County",
+   "date": "2026-11-24",
+   "kind": "posted",
+   "parcels": 200,
+   "page": "https://www.sriservices.com/county/IN/Kosciusko"
+  },
+  {
+   "fips": "18099",
+   "state": "IN",
+   "name": "Marshall County",
+   "date": "2026-11-24",
+   "kind": "posted",
+   "parcels": 74,
+   "page": "https://www.sriservices.com/county/IN/Marshall"
+  },
+  {
+   "fips": "18149",
+   "state": "IN",
+   "name": "Starke County",
+   "date": "2026-11-24",
+   "kind": "posted",
+   "parcels": 125,
+   "page": "https://www.sriservices.com/county/IN/Starke"
+  },
+  {
+   "fips": "37039",
+   "state": "NC",
+   "name": "Cherokee County",
+   "date": "2026-11-24",
+   "kind": "posted",
+   "parcels": 8,
+   "page": "https://kanialawfirm.com/tax-foreclosures/foreclosure-listings/"
+  },
+  {
+   "fips": "37043",
+   "state": "NC",
+   "name": "Clay County",
+   "date": "2026-11-24",
+   "kind": "posted",
+   "parcels": 5,
+   "page": "https://kanialawfirm.com/tax-foreclosures/foreclosure-listings/"
   },
   {
    "fips": "36049",
@@ -1835,7 +1250,7 @@
    "name": "Lewis County",
    "date": "2026-11-24",
    "kind": "posted",
-   "parcels": 0,
+   "parcels": 1,
    "page": "https://aarauctions.com/auctions/tax-foreclosures/"
   },
   {
@@ -1844,7 +1259,7 @@
    "name": "Mahoning County",
    "date": "2026-11-24",
    "kind": "posted",
-   "parcels": 45,
+   "parcels": 37,
    "page": "https://mahoning.sheriffsaleauction.ohio.gov"
   },
   {
@@ -1866,6 +1281,87 @@
    "page": "https://www.sriservices.com/county/IN/Carroll"
   },
   {
+   "fips": "18023",
+   "state": "IN",
+   "name": "Clinton County",
+   "date": "2026-11-25",
+   "kind": "posted",
+   "parcels": 18,
+   "page": "https://www.sriservices.com/county/IN/Clinton"
+  },
+  {
+   "fips": "18039",
+   "state": "IN",
+   "name": "Elkhart County",
+   "date": "2026-11-25",
+   "kind": "posted",
+   "parcels": 334,
+   "page": "https://www.sriservices.com/county/IN/Elkhart"
+  },
+  {
+   "fips": "22057",
+   "state": "LA",
+   "name": "Lafourche Parish",
+   "date": "2026-11-25",
+   "kind": "posted",
+   "parcels": 249,
+   "page": "https://www.bid4assets.com/LPSOSheriff"
+  },
+  {
+   "fips": "42015",
+   "state": "PA",
+   "name": "Bradford County",
+   "date": "2026-11-25",
+   "kind": "posted",
+   "parcels": 10,
+   "page": "https://www.bid4assets.com/BradfordPASheriffSales"
+  },
+  {
+   "fips": "39001",
+   "state": "OH",
+   "name": "Adams County",
+   "date": "2026-11-30",
+   "kind": "posted",
+   "parcels": 8,
+   "page": "https://adams.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39077",
+   "state": "OH",
+   "name": "Huron County",
+   "date": "2026-11-30",
+   "kind": "posted",
+   "parcels": 26,
+   "page": "https://huron.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "18009",
+   "state": "IN",
+   "name": "Blackford County",
+   "date": "2026-12-01",
+   "kind": "posted",
+   "parcels": 81,
+   "page": "https://www.sriservices.com/county/IN/Blackford"
+  },
+  {
+   "fips": "37119",
+   "state": "NC",
+   "name": "Mecklenburg County",
+   "date": "2026-12-01",
+   "kind": "posted",
+   "parcels": 6,
+   "page": "https://kanialawfirm.com/tax-foreclosures/foreclosure-listings/"
+  },
+  {
+   "fips": "36031",
+   "state": "NY",
+   "name": "Essex County",
+   "date": "2026-12-01",
+   "kind": "posted",
+   "parcels": 0,
+   "page": "https://aarauctions.com/auctions/tax-foreclosures/"
+  },
+  {
    "fips": "18073",
    "state": "IN",
    "name": "Jasper County",
@@ -1884,12 +1380,66 @@
    "page": "https://aarauctions.com/auctions/tax-foreclosures/"
   },
   {
+   "fips": "42091",
+   "state": "PA",
+   "name": "Montgomery County",
+   "date": "2026-12-02",
+   "kind": "posted",
+   "parcels": 310,
+   "page": "https://www.bid4assets.com/MontcoPASheriff"
+  },
+  {
+   "fips": "39015",
+   "state": "OH",
+   "name": "Brown County",
+   "date": "2026-12-03",
+   "kind": "posted",
+   "parcels": 10,
+   "page": "https://brown.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39071",
+   "state": "OH",
+   "name": "Highland County",
+   "date": "2026-12-03",
+   "kind": "posted",
+   "parcels": 8,
+   "page": "https://highland.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39081",
+   "state": "OH",
+   "name": "Jefferson County",
+   "date": "2026-12-03",
+   "kind": "posted",
+   "parcels": 18,
+   "page": "https://jefferson.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "53061",
+   "state": "WA",
+   "name": "Snohomish County",
+   "date": "2026-12-03",
+   "kind": "posted",
+   "parcels": 71,
+   "page": "https://www.bid4assets.com/storefront/SnohomishCoDec26"
+  },
+  {
+   "fips": "53077",
+   "state": "WA",
+   "name": "Yakima County",
+   "date": "2026-12-03",
+   "kind": "posted",
+   "parcels": 32,
+   "page": "https://www.bid4assets.com/storefront/YakimaDec26"
+  },
+  {
    "fips": "17013",
    "state": "IL",
    "name": "Calhoun County",
    "date": "2026-12-04",
    "kind": "posted",
-   "parcels": 7,
+   "parcels": 0,
    "page": "https://iltaxsale.com/new/index.php/county/Calhoun/CAL"
   },
   {
@@ -1900,6 +1450,51 @@
    "kind": "posted",
    "parcels": 547,
    "page": "https://iltaxsale.com/new/index.php/county/Madison/MAD"
+  },
+  {
+   "fips": "39059",
+   "state": "OH",
+   "name": "Guernsey County",
+   "date": "2026-12-04",
+   "kind": "posted",
+   "parcels": 7,
+   "page": "https://guernsey.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "39111",
+   "state": "OH",
+   "name": "Monroe County",
+   "date": "2026-12-04",
+   "kind": "posted",
+   "parcels": 2,
+   "page": "https://monroe.sheriffsaleauction.ohio.gov"
+  },
+  {
+   "fips": "53065",
+   "state": "WA",
+   "name": "Stevens County",
+   "date": "2026-12-04",
+   "kind": "posted",
+   "parcels": 11,
+   "page": "https://liveauctions.govease.com/WA/wastevens/1300/browsestandard"
+  },
+  {
+   "fips": "37051",
+   "state": "NC",
+   "name": "Cumberland County",
+   "date": "2026-12-07",
+   "kind": "posted",
+   "parcels": 6,
+   "page": "https://kanialawfirm.com/tax-foreclosures/foreclosure-listings/"
+  },
+  {
+   "fips": "12003",
+   "state": "FL",
+   "name": "Baker County",
+   "date": "2026-12-08",
+   "kind": "posted",
+   "parcels": 12,
+   "page": "https://baker.realforeclose.com"
   },
   {
    "fips": "18055",
@@ -1916,7 +1511,7 @@
    "name": "Wabash County",
    "date": "2026-12-08",
    "kind": "posted",
-   "parcels": 93,
+   "parcels": 97,
    "page": "https://www.sriservices.com/county/IN/Wabash"
   },
   {
@@ -1925,7 +1520,7 @@
    "name": "Bucks County",
    "date": "2026-12-08",
    "kind": "posted",
-   "parcels": 2,
+   "parcels": 70,
    "page": "https://liveauctions.govease.com/PA/pabucksjudicial/1554/browsestandard"
   },
   {
@@ -1934,8 +1529,26 @@
    "name": "Wells County",
    "date": "2026-12-09",
    "kind": "posted",
-   "parcels": 35,
+   "parcels": 37,
    "page": "https://www.sriservices.com/county/IN/Wells"
+  },
+  {
+   "fips": "22093",
+   "state": "LA",
+   "name": "St. James Parish",
+   "date": "2026-12-09",
+   "kind": "posted",
+   "parcels": 31,
+   "page": "https://www.sriservices.com/county/LA/St.%20James"
+  },
+  {
+   "fips": "42037",
+   "state": "PA",
+   "name": "Columbia County",
+   "date": "2026-12-09",
+   "kind": "posted",
+   "parcels": 712,
+   "page": "https://www.bid4assets.com/storefront/ColumbiaPATaxSaleSep26"
   },
   {
    "fips": "42049",
@@ -1943,7 +1556,7 @@
    "name": "Erie County",
    "date": "2026-12-09",
    "kind": "posted",
-   "parcels": 48,
+   "parcels": 47,
    "page": "https://liveauctions.govease.com/PA/paeriejudicial/1528/browsestandard"
   },
   {
@@ -1961,7 +1574,7 @@
    "name": "Bedford County",
    "date": "2026-12-10",
    "kind": "posted",
-   "parcels": 237,
+   "parcels": 239,
    "page": "https://www.bid4assets.com/storefront/BedfordPATaxSept26"
   },
   {
@@ -2001,12 +1614,21 @@
    "page": "https://iltaxsale.com/new/index.php/county/White/WHI"
   },
   {
+   "fips": "39175",
+   "state": "OH",
+   "name": "Wyandot County",
+   "date": "2026-12-14",
+   "kind": "posted",
+   "parcels": 6,
+   "page": "https://wyandot.sheriffsaleauction.ohio.gov"
+  },
+  {
    "fips": "39117",
    "state": "OH",
    "name": "Morrow County",
    "date": "2026-12-18",
    "kind": "posted",
-   "parcels": 6,
+   "parcels": 5,
    "page": "https://morrow.sheriffsaleauction.ohio.gov"
   },
   {
@@ -2055,6 +1677,24 @@
    "page": "https://iltaxsale.com/new/index.php/county/Wabash/WAB"
   },
   {
+   "fips": "18151",
+   "state": "IN",
+   "name": "Steuben County",
+   "date": "2027-01-28",
+   "kind": "posted",
+   "parcels": 203,
+   "page": "https://www.sriservices.com/county/IN/Steuben"
+  },
+  {
+   "fips": "18113",
+   "state": "IN",
+   "name": "Noble County",
+   "date": "2027-02-11",
+   "kind": "posted",
+   "parcels": 74,
+   "page": "https://www.sriservices.com/county/IN/Noble"
+  },
+  {
    "fips": "17189",
    "state": "IL",
    "name": "Washington County",
@@ -2062,6 +1702,24 @@
    "kind": "posted",
    "parcels": 18,
    "page": "https://iltaxsale.com/new/index.php/county/Washington/WAS"
+  },
+  {
+   "fips": "18103",
+   "state": "IN",
+   "name": "Miami County",
+   "date": "2027-02-16",
+   "kind": "posted",
+   "parcels": 84,
+   "page": "https://www.sriservices.com/county/IN/Miami"
+  },
+  {
+   "fips": "18027",
+   "state": "IN",
+   "name": "Daviess County",
+   "date": "2027-02-17",
+   "kind": "posted",
+   "parcels": 30,
+   "page": "https://www.sriservices.com/county/IN/Daviess"
   }
  ],
  "newCounties": [],
